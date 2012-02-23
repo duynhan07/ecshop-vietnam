@@ -1,20 +1,4 @@
 <?php
-
-/**
- * ECSHOP Install program language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: en_us.php 17217 2011-01-19 06:29:08Z liubo $
- */
-
 /* Common language item */
 $_LANG['prev_step'] = 'Previous:';
 $_LANG['next_step'] = 'Next:';
@@ -24,8 +8,7 @@ $_LANG['copyright'] = '&copy; 2005-2011 <a href="http://www.ecshop.com" target="
 /* Welcome page */
 $_LANG['welcome_title'] = 'You are welcome to use the ECShop e-commerce management system!';
 $_LANG['select_installer_lang'] = 'Language :   ';
-$_LANG['simplified_chinese'] = 'Simplified Chinese';
-$_LANG['traditional_chinese'] = 'Traditional Chinese';
+$_LANG['vietnamese'] = 'Tiếng Việt';
 $_LANG['americanese'] = 'English';
 $_LANG['agree_license'] = 'I have read carefully，I accept the terms of the License Agreement';
 $_LANG['check_system_environment'] = 'Checking system environment';
