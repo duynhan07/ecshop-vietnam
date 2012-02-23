@@ -367,7 +367,7 @@ case 'get_ver_list' :
         }
         else
         {
-            $sql_files = array(ROOT_PATH . 'demo/zh_cn.sql');
+            $sql_files = array(ROOT_PATH . 'demo/vi_vn.sql');
         }
         if (!install_data($sql_files))
         {            

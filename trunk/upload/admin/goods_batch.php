@@ -33,8 +33,6 @@ if ($_REQUEST['act'] == 'add')
     $dir = opendir('../languages');
     $lang_list = array(
         'UTF8'      => $_LANG['charset']['utf8'],
-        'GB2312'    => $_LANG['charset']['zh_cn'],
-        'BIG5'      => $_LANG['charset']['zh_tw'],
     );
     $download_list = array();
     while (@$file = readdir($dir))
@@ -895,16 +893,7 @@ elseif ($_REQUEST['act'] == 'download')
     }
     if (isset($_LANG['upload_goods']))
     {
-        /* 创建字符集转换对象 */
-        if ($_GET['charset'] == 'zh_cn' || $_GET['charset'] == 'zh_tw')
-        {
-            $to_charset = $_GET['charset'] == 'zh_cn' ? 'GB2312' : 'BIG5';
-            echo ecs_iconv(EC_CHARSET, $to_charset, join(',', $_LANG['upload_goods']));
-        }
-        else
-        {
-            echo join(',', $_LANG['upload_goods']);
-        }
+		echo join(',', $_LANG['upload_goods']);
     }
     else
     {

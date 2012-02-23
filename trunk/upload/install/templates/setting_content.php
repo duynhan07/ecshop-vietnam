@@ -84,18 +84,11 @@
 <h3><?php echo $lang['mix_options'];?></h3>
 <table width="450" class="list">
 <tr>
-    <?php if (EC_CHARSET == 'gbk'){ ?>
+    <?php if (EC_CHARSET == 'utf-8') { ?>
     <td width="90" align="left"><?php echo $lang['select_lang_package'];?></td>
-    <td align="left"><input type="radio" class="p" name="js-system-lang" id="js-system-lang-zh_cn" value="zh_cn" checked='true'/><label for="js-system-lang-zh_cn"><?php echo $lang['simplified_chinese'];?></label></td>
-    <?php } elseif (EC_CHARSET == 'utf-8') { ?>
-    <td width="90" align="left"><?php echo $lang['select_lang_package'];?></td>
-    <td align="left"><input type="radio" class="p" name="js-system-lang" id="js-system-lang-zh_cn" value="zh_cn" /><label for="js-system-lang-zh_cn"><?php echo $lang['simplified_chinese'];?></label>
-    <input type="radio" name="js-system-lang" id="js-system-lang-zh_tw" value="zh_tw" /><label for="js-system-lang-zh_tw"><?php echo $lang['traditional_chinese'];?></label>
+    <td align="left"><input type="radio" class="p" name="js-system-lang" id="js-system-lang-vi_vn" value="vi_vn" /><label for="js-system-lang-vi_vn"><?php echo $lang['vietnamese'];?></label>
         <input type="radio" name="js-system-lang" id="js-system-lang-en_us" value="en_us" /><label for="js-system-lang-en_us"><?php echo $lang['americanese'];?></label>
         </td>
-    <?php } elseif (EC_CHARSET == 'big5') { ?>
-    <td width="90" align="left"><?php echo $lang['select_lang_package'];?></td>
-    <td align="left"><input type="radio" name="js-system-lang" id="js-system-lang-zh_tw" value="zh_tw" checked='true'/><label for="js-system-lang-zh_tw"><?php echo $lang['traditional_chinese'];?></label></td>
     <?php } ?>
 </tr>
 <?php if ($show_timezone == "yes"):?>

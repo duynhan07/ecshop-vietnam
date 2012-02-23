@@ -22,11 +22,11 @@ if (isset($_REQUEST['dbhost']) || isset($_REQUEST['dbname']) || isset($_REQUEST[
 require(dirname(__FILE__) . '/includes/init.php');
 session_start();
 /* 初始化语言变量 */
-$installer_lang = isset($_REQUEST['lang']) ? trim($_REQUEST['lang']) : 'zh_cn';
+$installer_lang = isset($_REQUEST['lang']) ? trim($_REQUEST['lang']) : 'vi_vn';
 
-if ($installer_lang != 'zh_cn' && $installer_lang != 'zh_tw' && $installer_lang != 'en_us')
+if ($installer_lang != 'vi_vn' && $installer_lang != 'en_us')
 {
-    $installer_lang = 'zh_cn';
+    $installer_lang = 'vi_vn';
 }
 $_SESSION['ecs_lang'] = $installer_lang;
 /* 加载安装程序所使用的语言包 */
@@ -137,7 +137,7 @@ case 'setting_ui' :
     }
     else
     {
-        include_once(ROOT_PATH . 'install/data/inc_goods_type_zh_cn.php');
+        include_once(ROOT_PATH . 'install/data/inc_goods_type_vi_vn.php');
     }
     $goods_types = array();
     foreach ($attributes AS $key=>$val)
@@ -326,7 +326,7 @@ case 'create_database' :
     break;
 
 case 'install_base_data' :
-    $system_lang = isset($_POST['system_lang']) ? $_POST['system_lang'] : 'zh_cn';
+    $system_lang = isset($_POST['system_lang']) ? $_POST['system_lang'] : 'vi_vn';
 
     if (file_exists(ROOT_PATH . 'install/data/data_' . $system_lang . '.sql'))
     {
@@ -334,7 +334,7 @@ case 'install_base_data' :
     }
     else
     {
-        $data_path = ROOT_PATH . 'install/data/data_zh_cn.sql';
+        $data_path = ROOT_PATH . 'install/data/data_vi_vn.sql';
     }
 
     $sql_files = array(
@@ -375,7 +375,7 @@ case 'create_admin_passport' :
     break;
 
 case 'do_others' :
-    $system_lang = isset($_POST['system_lang'])     ? $_POST['system_lang'] : 'zh_cn';
+    $system_lang = isset($_POST['system_lang'])     ? $_POST['system_lang'] : 'vi_vn';
     $captcha = isset($_POST['disable_captcha'])     ? intval($_POST['disable_captcha']) : '0';
     $goods_types = isset($_POST['goods_types'])     ? $_POST['goods_types'] : array();
     $install_demo = isset($_POST['install_demo'])   ? $_POST['install_demo'] : 0;

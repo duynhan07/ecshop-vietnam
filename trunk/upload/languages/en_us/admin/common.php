@@ -96,10 +96,7 @@ $_LANG['n_a'] = 'N/A';
 
 /* Coding */
 $_LANG['charset']['utf8'] = 'Internationalization coding(utf8)';
-$_LANG['charset']['zh_cn'] = 'Simplified chinese';
-$_LANG['charset']['zh_tw'] = 'Traditional Chinese';
 $_LANG['charset']['en_us'] = 'America english';
-$_LANG['charset']['en_uk'] = 'English';
 
 /* New order notify */
 $_LANG['order_notify'] = 'New order notify';

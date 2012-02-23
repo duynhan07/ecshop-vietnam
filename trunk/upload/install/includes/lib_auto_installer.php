@@ -204,7 +204,7 @@ function get_timezone_list($lang)
     }
     else
     {
-        include_once(ROOT_PATH . 'install/data/inc_timezones_zh_cn.php');
+        include_once(ROOT_PATH . 'install/data/inc_timezones_vi_vn.php');
     }
 
     return array_unique($timezones);
@@ -401,10 +401,10 @@ function install_data($sql_files)
  */
 function create_admin_passport($admin_name, $admin_password, $admin_password2, $admin_email)
 {
-    if(trim($_REQUEST['lang'])!='zh_cn')
+    if(trim($_REQUEST['lang'])!='vi_vn')
     {
         global $err,$_LANG;
-        $system_lang = isset($_POST['system_lang'])     ? $_POST['system_lang'] : 'zh_cn';
+        $system_lang = isset($_POST['system_lang'])     ? $_POST['system_lang'] : 'vi_vn';
         include_once(ROOT_PATH . 'install/languages/' . $system_lang . '.php');
     }
     else
@@ -479,7 +479,7 @@ function install_goods_types($goods_types, $lang)
     }
     else
     {
-        include(ROOT_PATH . 'install/data/inc_goods_type_zh_cn.php');
+        include(ROOT_PATH . 'install/data/inc_goods_type_vi_vn.php');
     }
     foreach ($attributes as $key=>$val)
     {
@@ -577,7 +577,7 @@ function do_others($system_lang, $captcha, $goods_types, $install_demo, $integra
         }
         else
         {
-            $sql_files = array(ROOT_PATH . 'demo/zh_cn.sql');
+            $sql_files = array(ROOT_PATH . 'demo/vi_vn.sql');
         }
         if (!install_data($sql_files))
         {

@@ -609,10 +609,10 @@ function load_config()
         }
 
         //限定语言项
-        $lang_array = array('zh_cn', 'zh_tw', 'en_us');
+        $lang_array = array('vi_vn', 'en_us');
         if (empty($arr['lang']) || !in_array($arr['lang'], $lang_array))
         {
-            $arr['lang'] = 'zh_cn'; // 默认语言为简体中文
+            $arr['lang'] = 'vi_vn'; // 默认语言为简体中文
         }
 
         if (empty($arr['integrate_code']))

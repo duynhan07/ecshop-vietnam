@@ -18,11 +18,11 @@ require(dirname(__FILE__) . '/includes/auto_init.php');
 require_once('../includes/cls_json.php');
 
 /* 初始化语言变量 */
-$installer_lang = isset($_REQUEST['lang']) ? trim($_REQUEST['lang']) : 'zh_cn';
+$installer_lang = isset($_REQUEST['lang']) ? trim($_REQUEST['lang']) : 'vi_vn';
 
-if ($installer_lang != 'zh_cn' && $installer_lang != 'zh_tw' && $installer_lang != 'en_us')
+if ($installer_lang != 'vi_vn' && $installer_lang != 'en_us')
 {
-    $installer_lang = 'zh_cn';
+    $installer_lang = 'vi_vn';
 }
 
 /* 加载安装程序所使用的语言包 */
@@ -91,7 +91,7 @@ if (file_exists(ROOT_PATH . 'data/install.lock'))
     }
 
 
-    $system_lang = isset($_POST['system_lang']) ? $_POST['system_lang'] : 'zh_cn';
+    $system_lang = isset($_POST['system_lang']) ? $_POST['system_lang'] : 'vi_vn';
 
     if (file_exists(ROOT_PATH . 'install/data/data_' . $system_lang . '.sql'))
     {
@@ -99,7 +99,7 @@ if (file_exists(ROOT_PATH . 'data/install.lock'))
     }
     else
     {
-        $data_path = ROOT_PATH . 'install/data/data_zh_cn.sql';
+        $data_path = ROOT_PATH . 'install/data/data_vi_vn.sql';
     }
 
     $sql_files = array(
@@ -128,7 +128,7 @@ if (file_exists(ROOT_PATH . 'data/install.lock'))
     }
 
 
-    $system_lang = isset($_POST['system_lang'])     ? $_POST['system_lang'] : 'zh_cn';
+    $system_lang = isset($_POST['system_lang'])     ? $_POST['system_lang'] : 'vi_vn';
     $captcha = isset($_POST['disable_captcha'])     ? intval($_POST['disable_captcha']) : '0';
     $install_demo = isset($_POST['data'])           ? $_POST['data'] : 1;
     $integrate = isset($_POST['userinterface'])   ? trim($_POST['userinterface']) : 'ecshop';
