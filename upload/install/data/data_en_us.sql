@@ -1,20 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 2.8.0.3
--- http://www.phpmyadmin.net
---
--- 主机: localhost
--- 生成日期: 2006 年 11 月 02 日 16:55
--- 服务器版本: 3.23.58
--- PHP 版本: 4.4.2
---
--- 数据库: `ecs_liuw`
---
-
-
---
--- 导出表中的数据 `ecs_admin_action`
---
-
 INSERT INTO `ecs_admin_action` (`action_id`, `parent_id`, `action_code`, `relevance`) VALUES
 (1, 0, 'goods', ''),
 (2, 0, 'cms_manage', ''),
@@ -126,28 +109,36 @@ INSERT INTO `ecs_admin_action` (`action_id`, `parent_id`, `action_code`, `releva
 (134, 4, 'suppliers_manage', ''),
 (135, 4, 'role_manage', '');
 
---
---  `ecs_mail_templates`
---
-INSERT INTO `ecs_mail_templates` (`template_id`, `template_code`, `is_html`, `template_subject`, `template_content`, `last_modify`, `last_send`, `type`) VALUES
-(1, 'send_password', 1, 'Retrieve password', '{$user_name}HELLO！<br>\n<br>\n You have a password reset operation, please click the link (or copy to your browser):<br>\n<br>\n<a href="{$reset_email}" target="_blank">{$reset_email}</a><br>\n<br>\n To confirm your new password reset operation！<br>\n<br>\n{$shop_name}<br>\n{$send_date}', 1194824789, 0, 'template'),
-(2, 'order_confirm', 0, 'Order confirmation', 'Dear{$order.consignee}，Hello！ \n\n We have received your {$order.formated_add_time} Submit the order，This order Numbers for：{$order.order_sn} This order Numbers for。\n\n{$shop_name}\n{$sent_date}\n\n\n', 1158226370, 0, 'template'),
-(3, 'deliver_notice', 1, 'Shipment notification', 'Dear{$order.consignee}。Hello！</br></br>\n\n Your order{$order.order_sn}Already in{$send_time}According to your reserved for your goods distribution mode。</br>\n</br>\n{if $order.invoice_no}Invoice number is{$order.invoice_no}。</br>{/if}\n</br>\n When you receive the goods, please click the link below to confirm that you have received the goods：</br>\n<a href="{$confirm_url}" target="_blank">{$confirm_url}</a></br></br>\n If you haven\'t received the goods can click on the links below for our message：</br></br>\n<a href="{$send_msg_url}" target="_blank">{$send_msg_url}</a></br>\n<br>\n Thanks again for your support. Welcome to come again。 <br>\n<br>\n{$shop_name} </br>\n{$send_date}', 1194823291, 0, 'template'),
-(4, 'order_cancel', 0, 'Cancel the order', 'Dear{$order.consignee}，Hello！ \n\n The Numbers for you：{$order.order_sn}The order has been cancelled。\n\n{$shop_name}\n{$send_date}', 1156491130, 0, 'template'),
-(5, 'order_invalid', 0, 'Order is invalid', 'Dear{$order.consignee}，Hello！\n\n The Numbers for you：{$order.order_sn}The order is invalid。\n\n{$shop_name}\n{$send_date}', 1156491164, 0, 'template'),
-(6, 'send_bonus', 0, 'Red hair', 'Dear{$user_name}Hello！\n\n Congratulations, you get {$count} envelopes，amount{if $count > 1}Respectively{/if}for{$money}\n\n{$shop_name}\n{$send_date}\n', 1156491184, 0, 'template'),
-(7, 'group_buy', 1, 'Buy goods', 'Dear{$consignee}，Hello！<br>\n<br>\n{$order_time}In the restaurant you buy goods to participate in activities, the purchase of goods by the name of：{$goods_name}，quantity：{$goods_number}，Order number：{$order_sn}，Amount of orders：{$order_amount}<br>\n<br>\n The group now has to end date of goods, and achieve the lowest price, you can now on the order of payment。<br>\n<br>\n Please click the link below：<br>\n<a href="{$shop_url}" target="_blank">{$shop_url}</a><br>\n<br>\n Please login to the user, check your order center for information。 <br>\n<br>\n{$shop_name} <br>\n<br>\n{$send_date}', 1194824668, 0, 'template'),
-(8, 'register_validate', 1, 'E-mail verification', '{$user_name}Hello！<br><br>\r\n\r\n This email is sent {$shop_name}。You receive this E-mail is to test your registered email address is effective. If you have verified through the mail, please ignore。<br>\r\n Please click on the links below (or copy to your browser) to verify your email address:<br>\r\n<a href="{$validate_email}" target="_blank">{$validate_email}</a><br><br>\r\n\r\n{$shop_name}<br>\r\n{$send_date}', 1162201031, 0, 'template'),
-(9, 'virtual_card', 0, 'Virtual CARDS', 'Dear{$order.consignee}\r\n Hello！Your order{$order.order_sn}{$goods.goods_name} commodities in the detailed information below: \r\n{foreach from=$virtual_card item=card}\r\n{if $card.card_sn}card：{$card.card_sn}{/if}{if $card.card_password}Card password：{$card.card_password}{/if}{if $card.end_date}Deadline：{$card.end_date}{/if}\r\n{/foreach}\r\n Thanks again for your support。Welcome to come again。\r\n\r\n{$shop_name} \r\n{$send_date}', 1162201031, 0, 'template'),
-(10, 'attention_list', 0, 'Concern commodity', 'Dear{$user_name}Hello~\n\n Your attention : {$goods_name} Recently has been updated, please check the latest product information \n\n{$goods_url}\r\n\r\n{$shop_name} \r\n{$send_date}', 1183851073, 0, 'template'),
-(11, 'remind_of_new_order', 0, 'The new order', 'Hello, my dear manager：\n   Quick see, new orders。\n    Orders:{$order.order_sn} \n Order amount:{$order.order_amount}，\n Users to buy goods:{foreach from=$goods_list item=goods_data}{$goods_data.goods_name}(item:{$goods_data.goods_sn})    {/foreach} \n\n The consignee:{$order.consignee}， \n The consignee address:{$order.address}，\n The consignee:{$order.tel} {$order.mobile}, \n Distribution mode:{$order.shipping_name}(expenses:{$order.shipping_fee}), \n Payment:{$order.pay_name}(expenses:{$order.pay_fee})。\n\n               System remind\n               {$send_date}', 1196239170, 0, 'template'),
-(12, 'goods_booking', 1, 'Reply to goods booking', 'Dear{$user_name}.Hello！</br></br>{$dispose_note}</br></br>the link of goods you refered</br></br><a href="{$goods_link}" target="_blank">{$goods_name}</a></br><br>{$shop_name} </br>{$send_date}', 0, 0, 'template'),
-(13, 'user_message', 1, 'Reply to message', 'Dear{$user_name}.Hello！</br></br>For your message：</br>{$message_content}</br></br>the admin replyed as follow：</br>{$message_note}</br></br>you can back to shop to communicate with the seller anytime you want.</br>{$shop_name}</br>{$send_date}', 0, 0, 'template'),
-(14, 'recomment', 1, 'Reply to comment', 'Dear{$user_name}.Hello！</br></br>For your comment：</br>“{$comment}”</br></br>the admin replyed as follow：</br>“{$recomment}”</br></br>you can back to shop to communicate with the seller anytime you want.</br>{$shop_name}</br>{$send_date}', 0, 0, 'template');
 
---
---  `ecs_region`
---
+INSERT INTO `ecs_mail_templates` (`template_id`, `template_code`, `is_html`, `template_subject`, `template_content`, `last_modify`, `last_send`, `type`) VALUES
+(1, 'send_password', 1, 'Lấy lại mật khẩu', '<p>Xin ch&agrave;o{$user_name}!<br />\r\n<br />\r\nBạn hoặc ai đ&oacute; đ&atilde; gửi y&ecirc;u cầu kh&ocirc;i phục mật khẩu, vui l&ograve;ng nhấn v&agrave;o li&ecirc;n kết dưới đ&acirc;y (hoặc copy v&agrave;o tr&igrave;nh duyệt):<br />\r\n<br />\r\n<a target=\"_blank\" href=\"{$reset_email}\">{$reset_email}</a><br />\r\n<br />\r\nĐể x&aacute;c nhận rằng bạn muốn kh&ocirc;i phục lại mật khẩu tại website.</p>\r\n<p>Nếu như kh&ocirc;ng phải bạn gửi y&ecirc;u cầu lấy lại mật khẩu, vui l&ograve;ng kh&ocirc;ng nhấn v&agrave;o li&ecirc;n kết ở tr&ecirc;n, hệ thống sẽ kh&ocirc;ng thực hiện bất kỳ thay đổi n&agrave;o với t&agrave;i khoản của bạn<br />\r\n<br />\r\n{$shop_name}<br />\r\n{$send_date}</p>', 1194824789, 0, 'template'),
+
+(2, 'order_confirm', 0, 'Xác nhận đơn hàng', 'Kính gửi {$order.consignee}\r\n\r\nChúng tôi đã nhận được đơn hàng của bạn vào lúc {$order.formated_add_time}, mã đơn hàng là:{$order.order_sn} \r\n\r\n{$shop_name}\r\n{$sent_date}', 1158226370, 0, 'template'),
+
+(3, 'deliver_notice', 1, 'Thông báo chuyển hàng', '<p>Kính gửi {$order.consignee}<br />\r\n<br />\r\nĐơn hàng có mã số {$order.order_sn} đã được gửi vào lúc {$send_time} theo cách chuyển hàng mà quý khách hàng đã chọn lúc mua sản phẩm<br />\r\n<br />\r\n{if $order.invoice_no}Mã hóa đơn là: {$order.invoice_no}.<br />\r\n{/if} <br />\r\nKhi quý khách nhận được sản phẩm, vui lòng nhấn vào liên kết dưới đây để xác nhận<br />\r\n<a target=\"_blank\" href=\"{$confirm_url}\">{$confirm_url}</a><br />\r\n<br />\r\nNếu như quý khách không nhận được sản phẩm, vui lòng nhấn vào liên kết dưới đây để gửi tin nhắn cho chúng tôi:<br />\r\n<br />\r\n<a target=\"_blank\" href=\"{$send_msg_url}\">{$send_msg_url}</a><br />\r\n<br />\r\nCảm ơn bạn đã mua hàng. Rất mong được tiếp tục giao dịch với bạn. <br />\r\n<br />\r\n{$shop_name} <br />\r\n{$send_date}</p>', 1194823291, 0, 'template'),
+
+(4, 'order_cancel', 0, 'Hủy đơn hàng', 'Xin chào {$order.consignee} \r\n\r\nMã đơn hàng: {$order.order_sn} mà bạn đã đặt hàng đã được hủy bỏ.\r\n\r\n{$shop_name}\r\n{$send_date}', 1156491130, 0, 'template'),
+
+(5, 'order_invalid', 0, 'Đơn hàng không hợp lệ', 'Xin chào {$order.consignee}\r\n\r\nMã đơn hàng: {$order.order_sn} mà bạn đã đặt hàng không hợp lệ!\r\n\r\n{$shop_name}\r\n{$send_date}', 1156491164, 0, 'template'),
+
+(6, 'send_bonus', 0, 'Bonus gift - ECMS', 'Kính gửi {$user_name}\r\n\r\nChúc mừng bạn, bạn nhận được  {$count}  quà tặng, trị giá {if $count > 1}tương đường{/if} với {$money}\r\n\r\n{$shop_name}\r\n{$send_date}', 1156491184, 0, 'template'),
+
+(7, 'group_buy', 1, 'Mua hàng - Nhóm mua', '<p>Kính gửi {$consignee}<br />\r\n<br />\r\nVào thời điểm {$order_time} bạn đã tham gia hoạt động nhóm mua và mua sản phẩm {$goods_name}, với số lượng là: {$goods_number}, mã đơn hàng: {$order_sn}, tổng số tiền: {$order_amount}<br />\r\n<br />\r\nHiện hoạt động nhóm mua đã kết thúc và bạn có thể mua sản phẩm với giá rẻ nhất!<br />\r\n<br />\r\nVui lòng nhấn vào liên kết dưới đây<br />\r\n<a target=\"_blank\" href=\"{$shop_url}\">{$shop_url}</a><br />\r\n<br />\r\nVui lòng sử dụng tài khoản của bạn để đăng nhập vào hệ thống và kiểm tra thông tin tại trung tâm thành viên. <br />\r\n<br />\r\n{$shop_name} <br />\r\n<br />\r\n{$send_date}</p>', 1194824668, 0, 'template'),
+
+(8, 'register_validate', 1, 'Xác nhận địa chỉ email', '<p>Xin chào {$user_name}!<br />\r\n<br />\r\nEmail này được gửi từ {$shop_name}. Bạn nhận được email này vì bạn hoặc ai đó đã đăng ký tài khoản tại shop của chúng tôi, nếu bạn đã xác nhận email, vui lòng bỏ qua email này<br />\r\nVui lòng nhấn vào liên kết dưới đây (hoặc dán vào trình duyệt) để xác nhận địa chỉ email của bạn:<br />\r\n<a target=\"_blank\" href=\"{$validate_email}\">{$validate_email}</a><br />\r\n<br />\r\n{$shop_name}<br />\r\n{$send_date}</p>', 1162201031, 0, 'template'),
+
+(9, 'virtual_card', 0, 'Thẻ thanh toán trực tuyến', 'Kính gửi {$order.consignee}!\r\nXin chào! đơn hàng  {$order.order_sn}{$goods.goods_name}  - Thông tin chi tiết:\r\n{foreach from=$virtual_card item=card}\r\n{if $card.card_sn}Mã thẻ: {$card.card_sn}{/if}{if $card.card_password}Mật khẩu: {$card.card_password}{/if}{if $card.end_date}Hết hạn:{$card.end_date}{/if}\r\n{/foreach}\r\nCảm ơn bạn đã mua hàng, rất mong bạn tiếp tục mua hàng tại gian hàng của chúng tôi\r\n\r\n{$shop_name} \r\n{$send_date}', 1162201031, 0, 'template'),
+
+(10, 'attention_list', 0, 'Sản phẩm quan tâm', 'Kính gửi {$user_name}\r\n\r\nBạn đã đặt quan tâm tới sản phẩm  {$goods_name}, sản phẩm này hiện có thông tin cập nhật mới, vui lòng xem chi tiết tại liên kết\r\n\r\n{$goods_url}\r\n\r\n{$shop_name} \r\n{$send_date}', 1183851073, 0, 'template'),
+
+(11, 'remind_of_new_order', 0, 'Đơn hàng mới', 'Xin chào quản trị viên yêu quý:\r\nHãy xem ngay đơn hàng mới!\r\nMã đơn hàng: {$order.order_sn} \r\nSố tiền: $order.order_amount}，\r\nKhách mua: {foreach from=$goods_list item=goods_data}{$goods_data.goods_name}(Mã sản phẩm: {$goods_data.goods_sn})    {/foreach} \r\n\r\nNgười nhận: {$order.consignee},\r\nĐịa chỉ người nhận: {$order.address},\r\nĐiện thoại: {$order.tel} {$order.mobile}, \r\nHình thức chuyển hàng: {$order.shipping_name}(expenses:{$order.shipping_fee}), \r\nHình thức thanh toán: {$order.pay_name}(Chi phí: {$order.pay_fee}).\r\n\r\n               Nhắc nhở hệ thống\r\n               {$send_date}', 1196239170, 0, 'template'),
+
+(12, 'goods_booking', 1, 'Trả lời đơn đăng ký đặt hàng', '<p>Kính gửi {$user_name}<br />\r\n<br />\r\n{$dispose_note}<br />\r\n<br />\r\nliên kết sản phẩm mà bạn đã giới thiệu<br />\r\n<br />\r\n<a target=\"_blank\" href=\"{$goods_link}\">{$goods_name}</a><br />\r\n<br />\r\n{$shop_name} <br />\r\n{$send_date}</p>', 0, 0, 'template'),
+
+(13, 'user_message', 1, 'Trả lời tin nhắn', '<p>Kính gửi {$user_name}<br />\r\n<br />\r\nNội dung tin nhắn của bạn:<br />\r\n{$message_content}<br />\r\n<br />\r\nQuản trị viên đã phản hồi như sau:<br />\r\n{$message_note}<br />\r\n<br />\r\nbạn có thể truy cập gian hàng của chúng tôi và tiếp tục gửi trả lời lại.<br />\r\n{$shop_name}<br />\r\n{$send_date}</p>', 0, 0, 'template'),
+
+(14, 'recomment', 1, 'Trả lời nhận xét', '<p>Kính gửi {$user_name}<br />\r\n<br />\r\nNhận xét của bạn:<br />\r\n&ldquo;{$comment}&rdquo;<br />\r\n<br />\r\nQuản trị viên đã trả lời như sau:<br />\r\n&ldquo;{$recomment}&rdquo;<br />\r\n<br />\r\nBạn có thể truy cập gian hàng của chúng tôi và trả lời bất kỳ lúc nào.<br />\r\n{$shop_name}<br />\r\n{$send_date}</p>', 0, 0, 'template');
+
 
 INSERT INTO `ecs_region` (`region_id`, `parent_id`, `region_name`, `region_type`, `agency_id`) VALUES (1, 0, 'Việt Nam', 0, 0),
 (2, 1, 'Hà Nội', 1, 0),
@@ -155,9 +146,6 @@ INSERT INTO `ecs_region` (`region_id`, `parent_id`, `region_name`, `region_type`
 (4, 1, 'Hồ Chí Minh', 1, 0),
 (5, 2, 'Quận Ba Đình', 1, 0);
 
---
--- `ecs_shop_config`
---
 
 INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`, `store_dir`, `value`, `sort_order`) VALUES
 (1, 0, 'shop_info', 'group', '', '', '', '1'),
@@ -169,10 +157,10 @@ INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`,
 (7, 0, 'goods', 'group', '', '', '', '1'),
 (8, 0, 'sms', 'group', '', '', '', '1'),
 (9, 0, 'wap', 'group', '', '', '', '1'),
-(101, 1, 'shop_name', 'text', '', '', 'ECSHOP', '1'),
-(102, 1, 'shop_title', 'text', '', '', 'ECSHOP Demo site', '1'),
-(103, 1, 'shop_desc', 'text', '', '', 'ECSHOP Demo site', '1'),
-(104, 1, 'shop_keywords', 'text', '', '', 'ECSHOP Demo site', '1'),
+(101, 1, 'shop_name', 'text', '', '', 'Gian hàng trực tuyến', '1'),
+(102, 1, 'shop_title', 'text', '', '', 'Việt Nam E-commerce Online', '1'),
+(103, 1, 'shop_desc', 'text', '', '', 'Gian hàng trực tuyến, bán hàng qua mạng, thanh toán trực tuyến', '1'),
+(104, 1, 'shop_keywords', 'text', '', '', 'bán hàng trực tuyến, thương mại điện tử', '1'),
 (105, 1, 'shop_country', 'manual', '', '', '1', '1'),
 (106, 1, 'shop_province', 'manual', '', '', '2', '1'),
 (107, 1, 'shop_city', 'manual', '', '', '52', '1'),
@@ -188,7 +176,7 @@ INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`,
 (117, 1, 'close_comment', 'textarea', '', '', '', '1'),
 (118, 1, 'shop_logo', 'file', '', '../themes/{$template}/images/', '', '1'),
 (119, 1, 'licensed', 'select', '0,1', '', '0', '1'),
-(120, 1, 'user_notice', 'textarea', '', '', 'Users shall make public announcement！', '1'),
+(120, 1, 'user_notice', 'textarea', '', '', 'Quản trị viên có thể tạo thông báo', '1'),
 (121, 1, 'shop_notice', 'textarea', '', '', '', '1'),
 (122, 1, 'shop_reg_closed', 'select', '1,0', '', '0', '1'),
 (201, 2, 'lang', 'manual', '', '', 'en_us', '1'),
@@ -203,7 +191,7 @@ INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`,
 (210, 2, 'integral_name', 'text', '', '', 'integral', '1'),
 (211, 2, 'integral_scale', 'text', '', '', '1', '1'),
 (212, 2, 'integral_percent', 'text', '', '', '1', '1'),
-(213, 2, 'sn_prefix', 'text', '', '', 'ECS', '1'),
+(213, 2, 'sn_prefix', 'text', '', '', 'ECMS', '1'),
 (214, 2, 'comment_check', 'select', '0,1', '', '1', '1'),
 (215, 2, 'no_picture', 'file', '', '../images/', '', '1'),
 (218, 2, 'stats_code', 'textarea', '', '', '', '1'),
@@ -232,9 +220,9 @@ INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`,
 (244, 2, 'ent_ac', 'hidden', '', '', '', '1'),
 (245, 2, 'ent_sign', 'hidden', '', '', '', '1'),
 (246, 2, 'ent_email', 'hidden', '', '', '', '1'),
-(301, 3, 'date_format', 'hidden', '', '', 'Y-m-d', '1'),
-(302, 3, 'time_format', 'text', '', '', 'Y-m-d H:i:s', '1'),
-(303, 3, 'currency_format', 'text', '', '', '$%s', '1'),
+(301, 3, 'date_format', 'hidden', '', '', 'd-m-Y', '1'),
+(302, 3, 'time_format', 'text', '', '', 'd-m-Y H:i:s', '1'),
+(303, 3, 'currency_format', 'text', '', '', '%s đ', '1'),
 (304, 3, 'thumb_width', 'text', '', '', '100', '1'),
 (305, 3, 'thumb_height', 'text', '', '', '100', '1'),
 (306, 3, 'image_width', 'text', '', '', '230', '1'),
@@ -253,10 +241,10 @@ INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`,
 (323, 3, 'attr_related_number', 'text', '', '', '5', '1'),
 (324, 3, 'goods_gallery_number', 'text', '', '', '5', '1'),
 (325, 3, 'article_title_length', 'text', '', '', '16', '1'),
-(326, 3, 'name_of_region_1', 'text', '', '', 'national', '1'),
-(327, 3, 'name_of_region_2', 'text', '', '', 'Countries', '1'),
-(328, 3, 'name_of_region_3', 'text', '', '', 'City', '1'),
-(329, 3, 'name_of_region_4', 'text', '', '', 'District', '1'),
+(326, 3, 'name_of_region_1', 'text', '', '', 'Quốc gia', '1'),
+(327, 3, 'name_of_region_2', 'text', '', '', 'Tỉnh/Thành', '1'),
+(328, 3, 'name_of_region_3', 'text', '', '', 'Quận/Huyện', '1'),
+(329, 3, 'name_of_region_4', 'text', '', '', 'Phường/Xã', '1'),
 (330, 3, 'search_keywords', 'text', '', '', '', '0'),
 (332, 3, 'related_goods_number', 'text', '', '', '4', '1'),
 (333, 3, 'help_open', 'select', '0,1', '', '1', '1'),
@@ -296,7 +284,7 @@ INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`,
 (503, 5, 'smtp_user', 'text', '', '', '', '1'),
 (504, 5, 'smtp_pass', 'password', '', '', '', '1'),
 (505, 5, 'smtp_mail', 'text', '', '', '', '1'),
-(506, 5, 'mail_charset', 'select', 'UTF8,GB2312,BIG5', '', 'UTF8', '1'),
+(506, 5, 'mail_charset', 'select', 'UTF8', '', 'UTF8', '1'),
 (507, 5, 'mail_service', 'select', '0,1', '', '0', '0'),
 (508, 5, 'smtp_ssl', 'select', '0,1', '', '0', '0'),
 (601, 6, 'integrate_code', 'hidden', '', '', 'ecshop', '1'),
@@ -335,23 +323,16 @@ INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`,
 (901, 9, 'wap_config', 'select', '1,0', '', '0', '1'),
 (902, 9, 'wap_logo', 'file', '', '../images/', '', '1'),
 (903, 2, 'message_check', 'select', '1,0', '', '1', '1');
---
--- user_rank
---
+
+
 INSERT INTO `ecs_user_rank` (`rank_id`, `rank_name`, `min_points`, `max_points`, `discount`, `show_price`, `special_rank`)
 VALUES (NULL, 'Registered users', '0', '10000', '100', 1, 0);
 
 
-
-
--- 文章默认分类
 INSERT INTO `ecs_article_cat` (`cat_id`, `cat_name`, `cat_type`, `keywords`, `cat_desc`, `sort_order`, `parent_id`) VALUES (1, 'Classification system', 2, '', 'Reserved classification', 50, 0);
 INSERT INTO `ecs_article_cat` (`cat_id`, `cat_name`, `cat_type`, `keywords`, `cat_desc`, `sort_order`, `parent_id`) VALUES (2, 'Online information', 3, '', 'Online information classification', 50, 1);
 INSERT INTO `ecs_article_cat` (`cat_id`, `cat_name`, `cat_type`, `keywords`, `cat_desc`, `sort_order`, `parent_id`) VALUES (3, 'Online help classification', 4, '', 'Online help classification', 50, 1);
 
---
--- `ecs_article`
---
 
 INSERT INTO `ecs_article` (`article_id`, `cat_id`, `title`, `content`, `author`, `author_email`, `keywords`, `article_type`, `is_open`, `add_time`, `file_url`, `open_type`) VALUES
 (1, 2, 'Disclaimer', '', '', '', '', 0, 1, UNIX_TIMESTAMP(), '', 0),
@@ -361,43 +342,36 @@ INSERT INTO `ecs_article` (`article_id`, `cat_id`, `title`, `content`, `author`,
 (5, 2, 'Company profile', '', '', '', '', 0, 1, UNIX_TIMESTAMP(), '', 0),
 (6, -1, 'User agreement', '', '', '', '', 0, 1, UNIX_TIMESTAMP(), '', 0);
 
---
--- `ecs_template`
---
 
 INSERT INTO `ecs_template` (`filename`, `region`, `library`, `sort_order`, `id`, `number`, `type`, `theme`, `remarks`) VALUES
-('index', '左边区域', '/library/vote_list.lbi', 8, 0, 0, 0, 'default', ''),
-('index', '左边区域', '/library/email_list.lbi', 9, 0, 0, 0, 'default', ''),
-('index', '左边区域', '/library/order_query.lbi', 6, 0, 0, 0, 'default', ''),
-('index', '左边区域', '/library/cart.lbi', 0, 0, 0, 0, 'default', ''),
-('index', '左边区域', '/library/promotion_info.lbi', 3, 0, 0, 0, 'default', ''),
-('index', '左边区域', '/library/auction.lbi', 4, 0, 3, 0, 'default', ''),
-('index', '左边区域', '/library/group_buy.lbi', 5, 0, 3, 0, 'default', ''),
+('index', 'Left area', '/library/vote_list.lbi', 8, 0, 0, 0, 'default', ''),
+('index', 'Left area', '/library/email_list.lbi', 9, 0, 0, 0, 'default', ''),
+('index', 'Left area', '/library/order_query.lbi', 6, 0, 0, 0, 'default', ''),
+('index', 'Left area', '/library/cart.lbi', 0, 0, 0, 0, 'default', ''),
+('index', 'Left area', '/library/promotion_info.lbi', 3, 0, 0, 0, 'default', ''),
+('index', 'Left area', '/library/auction.lbi', 4, 0, 3, 0, 'default', ''),
+('index', 'Left area', '/library/group_buy.lbi', 5, 0, 3, 0, 'default', ''),
 ('index', '', '/library/recommend_promotion.lbi', 0, 0, 4, 0, 'default', ''),
-('index', '右边主区域', '/library/recommend_hot.lbi', 2, 0, 10, 0, 'default', ''),
-('index', '右边主区域', '/library/recommend_new.lbi', 1, 0, 10, 0, 'default', ''),
-('index', '右边主区域', '/library/recommend_best.lbi', 0, 0, 10, 0, 'default', ''),
-('index', '左边区域', '/library/invoice_query.lbi', 7, 0, 0, 0, 'default', ''),
-('index', '左边区域', '/library/top10.lbi', 2, 0, 0, 0, 'default', ''),
-('index', '左边区域', '/library/category_tree.lbi', 1, 0, 0, 0, 'default', ''),
+('index', 'Right main', '/library/recommend_hot.lbi', 2, 0, 10, 0, 'default', ''),
+('index', 'Right main', '/library/recommend_new.lbi', 1, 0, 10, 0, 'default', ''),
+('index', 'Right main', '/library/recommend_best.lbi', 0, 0, 10, 0, 'default', ''),
+('index', 'Left area', '/library/invoice_query.lbi', 7, 0, 0, 0, 'default', ''),
+('index', 'Left area', '/library/top10.lbi', 2, 0, 0, 0, 'default', ''),
+('index', 'Left area', '/library/category_tree.lbi', 1, 0, 0, 0, 'default', ''),
 ('index', '', '/library/brands.lbi', '0', '0', '11', '0', 'default', ''),
-('category', '左边区域', '/library/category_tree.lbi', 1, 0, 0, 0, 'default', ''),
-('category', '右边区域', '/library/recommend_best.lbi', 0, 0, 5, 0, 'default', ''),
-('category', '右边区域', '/library/goods_list.lbi', 1, 0, 0, 0, 'default', ''),
-('category', '右边区域', '/library/pages.lbi', 2, 0, 0, 0, 'default', ''),
-('category', '左边区域', '/library/cart.lbi', 0, 0, 0, 0, 'default', ''),
-('category', '左边区域', '/library/price_grade.lbi', 3, 0, 0, 0, 'default', ''),
-('category', '左边区域', '/library/filter_attr.lbi', 2, 0, 0, 0, 'default', '');
+('category', 'Left area', '/library/category_tree.lbi', 1, 0, 0, 0, 'default', ''),
+('category', 'Right area', '/library/recommend_best.lbi', 0, 0, 5, 0, 'default', ''),
+('category', 'Right area', '/library/goods_list.lbi', 1, 0, 0, 0, 'default', ''),
+('category', 'Right area', '/library/pages.lbi', 2, 0, 0, 0, 'default', ''),
+('category', 'Left area', '/library/cart.lbi', 0, 0, 0, 0, 'default', ''),
+('category', 'Left area', '/library/price_grade.lbi', 3, 0, 0, 0, 'default', ''),
+('category', 'Left area', '/library/filter_attr.lbi', 2, 0, 0, 0, 'default', '');
 
-
---
--- 会员注册项 ecs_reg_fields
---
 
 INSERT INTO `ecs_reg_fields` (`id`, `reg_field_name`, `dis_order`, `display`, `type`, `is_need`) VALUES 
 (1, 'MSN', 0, 1, 1, 1), 
-(2, 'QQ', 0, 1, 1, 1), 
-(3, 'Office phone', 0, 1, 1, 1), 
-(4, 'Home phone', 0, 1, 1, 1), 
-(5, 'Mobile phone', 0, 1, 1, 1),
-(6, 'Get back password by question', 0, 1, 1, 1);
+(2, 'Yahoo', 0, 1, 1, 1), 
+(3, 'Số đt công ty', 0, 1, 1, 1), 
+(4, 'Số cố định', 0, 1, 1, 1), 
+(5, 'Di động', 0, 1, 1, 1),
+(6, 'Khôi phục mật khẩu bằng câu hỏi bí mật', 0, 1, 1, 1);

@@ -24,7 +24,7 @@ form {
 }
 
 input, textarea, select {
-  font: 12px "courier new";
+  font: 12px Arial, Helvetica, sans-serif;
 }
 
 a:visited {

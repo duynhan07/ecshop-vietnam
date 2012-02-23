@@ -1,20 +1,5 @@
 <?php
-/**
- * ECSHOP Control panel mail template manage language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: mail_template.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
-$_LANG['select_template'] = 'Please select mail template:';
+$_LANG['select_template'] = 'Hãy chọn mẫu mail:';
 $_LANG['update_success'] = 'Saved template content successfully.';
 $_LANG['update_failed'] = 'Saved template content failed.';
 $_LANG['mail_subject'] = 'Mail subject';

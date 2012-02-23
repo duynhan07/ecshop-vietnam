@@ -552,17 +552,6 @@ $_LANG['email_checked'] = 'Email has been checked!';
 $_LANG['hash_wrong'] = 'Hash wrong! Recheck the hash and enter email address to send hash again!';
 $_LANG['email_canceled'] = 'Email is canceled!';
 $_LANG['goods_click_count'] = 'Goods click count';
-$_LANG['p_y']['link_start'] = '<a href="http://www.ecshop.com" target="_blank" style=" font-family:Verdana; font-size:11px;">';
-$_LANG['p_y']['link_p'] = 'Powe';
-$_LANG['p_y']['link_r'] = 'red&nbsp;';
-$_LANG['p_y']['link_b'] = 'by&nbsp;';
-$_LANG['p_y']['main_start'] = '<strong><span style="color: #3366FF">';
-$_LANG['p_y']['main_e'] = 'E';
-$_LANG['p_y']['main_c'] = 'CSho';
-$_LANG['p_y']['main_p'] = 'p</span>&nbsp;';
-$_LANG['p_y']['v_s'] = '<span style="color: #FF9966">';
-$_LANG['p_y']['v'] = VERSION;
-$_LANG['p_y']['link_end'] = '</span></strong></a>&nbsp;';
 
 /* 虚拟卡 */
 $_LANG['card_sn'] = 'Card SN';
