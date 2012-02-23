@@ -1,15 +1,14 @@
 <?php
-
 define('IN_ECS', true);
 
-/* 鎶ュ憡鎵€鏈夐敊璇 */
+/* 报告所有错误 */
 ini_set('display_errors',  1);
 error_reporting(E_ALL ^ E_NOTICE);
 
-/* 娓呴櫎鎵€鏈夊拰鏂囦欢鎿嶄綔鐩稿叧鐨勭姸鎬佷俊鎭 */
+/* 清除所有和文件操作相关的状态信息 */
 clearstatcache();
 
-/* 瀹氫箟绔欑偣鏍 */
+/* 定义站点根 */
 define('ROOT_PATH', str_replace('demo/includes/init.php', '', str_replace('\\', '/', __FILE__)));
 
 require(ROOT_PATH . 'includes/lib_common.php');
@@ -18,7 +17,7 @@ require(ROOT_PATH . 'admin/includes/lib_main.php');
 require(ROOT_PATH . 'includes/lib_time.php');
 clear_all_files();
 
-/* 鍔犺浇鏁版嵁搴撻厤缃?枃浠 */
+/* 加载数据库配置文件 */
 if (file_exists(ROOT_PATH . 'data/config.php'))
 {
     include(ROOT_PATH . 'data/config.php');
@@ -38,15 +37,15 @@ else
 
 require(ROOT_PATH . 'includes/cls_ecshop.php');
 require(ROOT_PATH . 'includes/cls_mysql.php');
-/* 鍒涘缓 ECSHOP 瀵硅薄 */
+/* 创建 ECSHOP 对象 */
 $ecs = new ECS($db_name, $prefix);
 
-/* 鐗堟湰瀛楃?闆嗗彉閲
+/* 版本字符集变量
 $ec_version_charset = 'gbk';
 */
 
 $mysql_charset = $ecshop_charset = '';
-/* 鑷?姩鑾峰彇鏁版嵁琛ㄧ殑瀛楃?闆 */
+/* 自动获取数据表的字符集 */
 $tmp_link = @mysql_connect($db_host, $db_user, $db_pass);
 if (!$tmp_link)
 {
@@ -92,16 +91,16 @@ if ($ec_version_charset != EC_CHARSET)
 }
 */
 
-/* 鍒濆?鍖栨暟鎹?簱绫 */
+/* 初始化数据库类 */
 $db = new cls_mysql($db_host, $db_user, $db_pass, $db_name, $ecshop_charset);
 
-/* 鍒涘缓閿欒?澶勭悊瀵硅薄 */
+/* 创建错误处理对象 */
 require(ROOT_PATH . 'includes/cls_error.php');
 $err = new ecs_error('message.dwt');
 
 require(ROOT_PATH . 'includes/cls_sql_executor.php');
 
-/* 鍒濆?鍖栨ā鏉垮紩鎿 */
+/* 初始化模板引擎 */
 require(ROOT_PATH . 'demo/includes/cls_template.php');
 $smarty = new template(ROOT_PATH . 'demo/templates/');
 

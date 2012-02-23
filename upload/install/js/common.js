@@ -7,7 +7,7 @@ function $(id, winHDL) {
 
 function getAddressLang() {
     var addressLang = location.search.match(/lang=(\w+)/);
-    addressLang = addressLang ? addressLang[1] : "zh_cn";
+    addressLang = addressLang ? addressLang[1] : "vi_vn";
 
     return addressLang;
 }

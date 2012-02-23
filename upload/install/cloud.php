@@ -25,7 +25,7 @@ $data['version'] = VERSION;
 $data['charset'] = strtoupper(EC_CHARSET);
 $ecs_charset = $data['charset'];
 $data['patch'] = file_get_contents(ROOT_PATH."admin/patch_num");
-$data['ecs_lang'] = !empty($_SESSION['ecs_lang']) ? $_SESSION['ecs_lang'] : 'zh_cn';
+$data['ecs_lang'] = !empty($_SESSION['ecs_lang']) ? $_SESSION['ecs_lang'] : 'vi_vn';
 $data['release'] = RELEASE;
 $step = isset($_REQUEST['step']) ? trim($_REQUEST['step']) : '';
 

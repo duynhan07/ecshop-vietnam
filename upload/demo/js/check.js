@@ -1,4 +1,4 @@
-/* 鍒濆?鍖栦竴浜涘叏灞€鍙橀噺 */
+/* 初始化一些全局变量 */
 var lf = "<br />";
 var needupVerList = [];
 var curVer = "";
@@ -7,11 +7,11 @@ var iframe = null;
 var notice = null;
 var ui = "";
 
-/* Ajax璁剧疆 */
+/* Ajax设置 */
 Ajax.onRunning  = null;
 Ajax.onComplete = null;
 
-/* 鍦ㄥ崌绾ц繃绋嬩腑璋冪敤璇ユ柟娉 */
+/* 在升级过程中调用该方法 */
 function startNotice() {
     $("js-monitor-loading").src = "images/loading.gif";
     $("js-monitor-wait-please").innerHTML = "<strong style='color:blue'>"
@@ -19,14 +19,14 @@ function startNotice() {
     $("js-monitor-rollback").innerHTML = '';
 };
 
-/* 鍗囩骇瀹屾瘯璋冪敤璇ユ柟娉 */
+/* 升级完毕调用该方法 */
 function stopNotice() {
     $("js-monitor-loading").src = "images/loading2.gif";
     $("js-monitor-wait-please").innerHTML = $_LANG["has_been_stopped"];
     $("js-monitor-rollback").innerHTML = $_LANG["rollback"];
 };
 
-/* 椤甸潰鍔犺浇瀹屾瘯鎵ц?涓€浜涙搷浣 */
+/* 页面加载完毕执行一些操作 */
 window.onload = function () {
     if ($("js-submit")) {
         $("js-submit").onclick = function () {
@@ -83,7 +83,7 @@ window.onload = function () {
 };
 
 /**
- * 鍗囩骇绋嬪簭涓绘柟娉
+ * 升级程序主方法
  */
 function upgrade() {
     startNotice();
@@ -115,7 +115,7 @@ function upgrade() {
 }
 
 /**
- * 鐢ㄤ簬閫掕?璋冪敤鐨勬柟娉
+ * 用于递规调用的方法
  */
 function go() {
     if (needupVerList.length === 0) {
@@ -136,7 +136,7 @@ function go() {
 }
 
 /**
- * 澶囦唤鏂囦欢
+ * 备份文件
  */
 function dump_database()
 {
@@ -159,7 +159,7 @@ function dump_database()
 }
 
 /**
- * 鍗囩骇鏂囦欢
+ * 升级文件
  */
 function updateFiles() {
     localize("js-bottom", iframe);
@@ -196,7 +196,7 @@ function updateFiles() {
 }
 
 /**
- * 鍗囩骇鏁版嵁缁撴瀯
+ * 升级数据结构
  */
 function updateStructure(curPos, recNum) {
     localize("js-bottom", iframe);
@@ -230,7 +230,7 @@ function updateStructure(curPos, recNum) {
 }
 
 /**
- * 鍗囩骇鏁版嵁
+ * 升级数据
  */
 function updateData() {
     localize("js-bottom", iframe);
@@ -256,7 +256,7 @@ function updateData() {
 }
 
 /**
- * 鍗囩骇鐗堟湰
+ * 升级版本
  */
 function updateVersion() {
     if ((ui == 'ucenter') && (nextVer == 'v2.6.0') && typeof(arguments[0]) == 'undefined') {
@@ -276,7 +276,7 @@ function updateVersion() {
 }
 
 /**
- * 鑾峰緱鐗堟湰鍒楄〃
+ * 获得版本列表
  */
 function getVerList() {
     var params = "IS_AJAX_REQUEST=yes",
@@ -292,7 +292,7 @@ function getVerList() {
 }
 
 /**
- * 鑾峰緱璁板綍鏁
+ * 获得记录数
  */
 function getRecordNumber(type) {
     var params = "next_ver=" + nextVer + "&" + "type=" + type,
@@ -340,7 +340,7 @@ function rollback()
 }
 
 /**
- * 璺冲埌瀹屾垚椤
+ * 跳到完成页
  */
 function goToDone() {
     stopNotice();
@@ -350,7 +350,7 @@ function goToDone() {
 }
 
 /**
- * 鐢ㄤ簬寤舵椂鐨勬柟娉
+ * 用于延时的方法
  */
 function delay(seconds) {
     window.setTimeout(function () {
@@ -358,7 +358,7 @@ function delay(seconds) {
 }
 
 /**
- * 鏄剧ず閿欒?淇℃伅
+ * 显示错误信息
  */
 function displayErrorMsg() {
     stopNotice();
@@ -368,7 +368,7 @@ function displayErrorMsg() {
 }
 
 /**
- * 椤甸潰鍏冪礌瀹氫綅鏂规硶
+ * 页面元素定位方法
  */
 function localize(target, winHDL) {
     if (typeof(winHDL) === "undefined") {
@@ -384,7 +384,7 @@ function localize(target, winHDL) {
 }
 
 /**
- * 璺冲埌 UCenter 瀹夎?椤甸潰
+ * 跳到 UCenter 安装页面
  */
 function goToUCenter(){
     stopNotice();
@@ -394,7 +394,7 @@ function goToUCenter(){
 }
 
 /**
- * 瀹夎?UCenter鐨勬暟鎹
+ * 安装UCenter的数据
  */
 function importUCenterData() {
     startNotice();

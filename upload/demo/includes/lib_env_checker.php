@@ -1,27 +1,12 @@
 <?php
-
 /**
- * ECSHOP 绯荤粺鐜??妫€娴嬪嚱鏁板簱
- * ============================================================================
- * 鐗堟潈鎵€鏈 2005-2011 涓婃捣鍟嗘淳缃戠粶绉戞妧鏈夐檺鍏?徃锛屽苟淇濈暀鎵€鏈夋潈鍒┿€
- * 缃戠珯鍦板潃: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * 杩欎笉鏄?竴涓?嚜鐢辫蒋浠讹紒鎮ㄥ彧鑳藉湪涓嶇敤浜庡晢涓氱洰鐨勭殑鍓嶆彁涓嬪?绋嬪簭浠ｇ爜杩涜?淇?敼鍜
- * 浣跨敤锛涗笉鍏佽?瀵圭▼搴忎唬鐮佷互浠讳綍褰㈠紡浠讳綍鐩?殑鐨勫啀鍙戝竷銆
- * ============================================================================
- * $Author: liubo $
- * $Date: 2009-12-14 17:22:19 +0800 (涓€, 2009-12-14) $
- * $Id: lib_env_checker.php 16882 2009-12-14 09:22:19Z liubo $
- */
-
-/**
- * 妫€鏌ョ洰褰曠殑璇诲啓鏉冮檺
+ * 检查目录的读写权限
  *
  * @access  public
- * @param   array     $checking_dirs     鐩?綍鍒楄〃
- * @return  array     妫€鏌ュ悗鐨勬秷鎭?暟缁勶紝
- *    鎴愬姛鏍煎紡褰㈠?array('result' => 'OK', 'detail' => array(array($dir, $_LANG['can_write']), array(), ...))
- *    澶辫触鏍煎紡褰㈠?array('result' => 'ERROR', 'd etail' => array(array($dir, $_LANG['cannt_write']), array(), ...))
+ * @param   array     $checking_dirs     目录列表
+ * @return  array     检查后的消息数组，
+ *    成功格式形如array('result' => 'OK', 'detail' => array(array($dir, $_LANG['can_write']), array(), ...))
+ *    失败格式形如array('result' => 'ERROR', 'd etail' => array(array($dir, $_LANG['cannt_write']), array(), ...))
  */
 function check_dirs_priv($checking_dirs)
 {
@@ -54,11 +39,11 @@ function check_dirs_priv($checking_dirs)
 }
 
 /**
- * 妫€鏌ユā鏉跨殑璇诲啓鏉冮檺
+ * 检查模板的读写权限
  *
  * @access  public
- * @param   array      $templates_root        妯℃澘鏂囦欢绫诲瀷鎵€鍦ㄧ殑鏍硅矾寰勬暟缁勶紝褰㈠?锛歛rray('dwt'=>'', 'lbi'=>'')
- * @return  array      妫€鏌ュ悗鐨勬秷鎭?暟缁勶紝鍏ㄩ儴鍙?啓涓虹┖鏁扮粍锛屽惁鍒欐槸涓€涓?互涓嶅彲鍐欑殑鏂囦欢璺?緞缁勬垚鐨勬暟缁
+ * @param   array      $templates_root        模板文件类型所在的根路径数组，形如：array('dwt'=>'', 'lbi'=>'')
+ * @return  array      检查后的消息数组，全部可写为空数组，否则是一个以不可写的文件路径组成的数组
  */
 function check_templates_priv($templates_root)
 {
@@ -91,7 +76,7 @@ function check_templates_priv($templates_root)
 
     return $msgs;
 }/**
- *  妫€鏌ョ壒瀹氱洰褰曟槸鍚︽湁鎵ц?rename鍑芥暟鏉冮檺
+ *  检查特定目录是否有执行rename函数权限
  *
  * @access  public
  * @param   void
@@ -100,12 +85,12 @@ function check_templates_priv($templates_root)
  */
 function check_rename_priv()
 {
-    /* 鑾峰彇瑕佹?鏌ョ殑鐩?綍 */
+    /* 获取要检查的目录 */
     $dir_list   = array();
     $dir_list[] = 'templates/caches';
     $dir_list[] = 'templates/compiled';
     $dir_list[] = 'templates/compiled/admin';
-    /* 鑾峰彇images鐩?綍涓嬪浘鐗囩洰褰 */
+    /* 获取images目录下图片目录 */
     $folder = opendir(ROOT_PATH . 'images');
     while ($dir = readdir($folder))
     {
@@ -115,14 +100,14 @@ function check_rename_priv()
         }
     }
     closedir($folder);
-    /* 妫€鏌ョ洰褰曟槸鍚︽湁鎵ц?rename鍑芥暟鐨勬潈闄 */
+    /* 检查目录是否有执行rename函数的权限 */
     $msgs = array();
     foreach ($dir_list AS $dir)
     {
         $mask = file_mode_info(ROOT_PATH .$dir);
         if ((($mask & 2) > 0) && (($mask & 8) < 1))
         {
-            /* 鍙?湁鍙?啓鏃舵墠妫€鏌?ename鏉冮檺 */
+            /* 只有可写时才检查rename权限 */
             $msgs[] = $dir . ' ' . $GLOBALS['_LANG']['cannt_modify'];
         }
     }

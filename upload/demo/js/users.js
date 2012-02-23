@@ -1,14 +1,14 @@
-/* 鍒濆?鍖栦竴浜涘叏灞€鍙橀噺 */
+/* 初始化一些全局变量 */
 var lf = "<br />";
 var iframe = null;
 var notice = null;
 var oriDisabledInputs = [];
 
-/* Ajax璁剧疆 */
+/* Ajax设置 */
 Ajax.onRunning = null;
 Ajax.onComplete = null;
 
-/* 椤甸潰鍔犺浇瀹屾瘯锛屾墽琛屼竴浜涙搷浣 */
+/* 页面加载完毕，执行一些操作 */
 window.onload = function () {
     var f = $("js-setup");
 

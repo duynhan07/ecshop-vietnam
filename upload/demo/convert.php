@@ -1,6 +1,6 @@
 <?php
 
-/* 鍒濆?鍖栧彉閲忓畾涔 */
+/* 初始化变量定义 */
 $charset = 'utf-8';
 $tools_version = "v1.0";
 $mysql_version = '';
@@ -9,9 +9,9 @@ $mysql_charset = '';
 $ecshop_charset = '';
 $convert_charset = array('utf-8' => 'gbk', 'gbk' => 'utf-8');
 $convert_tables_file = 'data/convert_tables.php';
-$rpp = 500; // 姣忔?澶勭悊鐨勮?褰曟暟
+$rpp = 500; // 每次处理的记录数
 
-/* ECShop鐨勭珯鐐圭洰褰 */
+/* ECShop的站点目录 */
 define('ROOT_PATH', str_replace('\\', '/', substr(__FILE__, 0, -19)));
 define('IN_ECS', true);
 
@@ -21,7 +21,7 @@ require(ROOT_PATH . 'includes/cls_mysql.php');
 require(ROOT_PATH . 'includes/lib_common.php');
 require(ROOT_PATH . 'includes/lib_base.php');
 
-/* 鏈?崌绾у墠锛岃?甯搁噺涓嶅瓨鍦 */
+/* 未升级前，该常量不存在 */
 if (defined('EC_CHARSET')) {
     $ec_charset = EC_CHARSET;
 } else {
@@ -44,29 +44,29 @@ ob_start();
 instheader();
 if ($step == 1) {
     if (!empty($ecshop_charset) && !empty($mysql_charset) && $ecshop_charset == $mysql_charset) {
-        $ext_msg = '<span style="color:red;font-size:14px;font-weight:bold">鎮ㄧ殑绋嬪簭缂栫爜涓庢暟鎹?簱缂栫爜涓€鑷达紝鏃犻渶杩涜?杞?崲銆侟/span><br /><a href="index.php"><font size="2"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄩ渶瑕佹墽琛屽崌绾х▼搴忥紝璇风偣杩欓噷杩涜?鍗囩骇</b></font></a>';
+        $ext_msg = '<span style="color:red;font-size:14px;font-weight:bold">您的程序编码与数据库编码一致，无需进行转换。</span><br /><a href="index.php"><font size="2"><b>&gt;&gt;&nbsp;如果您需要执行升级程序，请点这里进行升级</b></font></a>';
     } elseif(empty($ecshop_charset) && !empty($mysql_charset)) {
-        $ext_msg = '<form name="convert_form" method="post" action="?step=start"><b>鐢变簬鏈?兘纭?畾鎮ㄧ殑绋嬪簭缂栫爜锛岃?缂栫爜鐢辨偍鎵嬪姩纭?畾銆侟/b><br />
-                    <b>鎮ㄧ殑鏁版嵁搴撶紪鐮佷负锛欬span style="color:blue">'. $mysql_charset .'</span> 锛岀‘璁ゆ偍鐨勭▼搴忕紪鐮佹槸锛欬span style="color:red">'. $convert_charset[$mysql_charset] .'</span> 鎵嶈兘杩涜?杞?崲</b><br /><br />
-        <a href="###" id="runturn"><font size="2"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄥ凡纭??瀹屾垚涓婇潰鐨勮?鏄?璇风偣杩欓噷杩涜?杞?崲</b></font></a><input type="hidden" name="ecshop_charset" value="'. $convert_charset[$mysql_charset] .'" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php"><font size="2">&gt;&gt;&nbsp;濡傛灉鎮ㄧ‘璁ょ▼搴忎笌鏁版嵁搴撶殑缂栫爜涓€鑷达紝璇风偣杩欓噷杩涜?鍗囩骇</font></a></form>';
-        $ecshop_charset = '<span style="color:red">鏈?煡</span>';
+        $ext_msg = '<form name="convert_form" method="post" action="?step=start"><b>由于未能确定您的程序编码，该编码由您手动确定。</b><br />
+                    <b>您的数据库编码为：<span style="color:blue">'. $mysql_charset .'</span> ，确认您的程序编码是：<span style="color:red">'. $convert_charset[$mysql_charset] .'</span> 才能进行转换</b><br /><br />
+        <a href="###" id="runturn"><font size="2"><b>&gt;&gt;&nbsp;如果您已确认完成上面的说明,请点这里进行转换</b></font></a><input type="hidden" name="ecshop_charset" value="'. $convert_charset[$mysql_charset] .'" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php"><font size="2">&gt;&gt;&nbsp;如果您确认程序与数据库的编码一致，请点这里进行升级</font></a></form>';
+        $ecshop_charset = '<span style="color:red">未知</span>';
     } elseif(empty($mysql_charset) && !empty($ecshop_charset)) {
-        $ext_msg = '<form name="convert_form" method="post" action="?step=start"><b>鐢变簬鏈?兘纭?畾鎮ㄧ殑鏁版嵁搴撶紪鐮侊紝璇ョ紪鐮佺敱鎮ㄦ墜鍔ㄧ‘瀹氥€侟/b><br />
-                    <b>鎮ㄧ殑绋嬪簭缂栫爜涓猴細<span style="color:blue">'. $ecshop_charset .'</span> 锛岀‘璁ゆ偍鐨勬暟鎹?簱缂栫爜鏄?細<span style="color:red">'. $convert_charset[$ecshop_charset] .'</span> 鎵嶈兘杩涜?杞?崲</b><br /><br />
-        <a href="###" id="runturn"><font size="2"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄥ凡纭??瀹屾垚涓婇潰鐨勮?鏄?璇风偣杩欓噷杩涜?杞?崲</b></font></a><input type="hidden" name="mysql_charset" value="'. $convert_charset[$ecshop_charset] .'" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php"><font size="2">&gt;&gt;&nbsp;濡傛灉鎮ㄧ‘璁ょ▼搴忎笌鏁版嵁搴撶殑缂栫爜涓€鑷达紝璇风偣杩欓噷杩涜?鍗囩骇</font></a></form>';
-        $mysql_charset = '<span style="color:red">鏈?煡</span>';
+        $ext_msg = '<form name="convert_form" method="post" action="?step=start"><b>由于未能确定您的数据库编码，该编码由您手动确定。</b><br />
+                    <b>您的程序编码为：<span style="color:blue">'. $ecshop_charset .'</span> ，确认您的数据库编码是：<span style="color:red">'. $convert_charset[$ecshop_charset] .'</span> 才能进行转换</b><br /><br />
+        <a href="###" id="runturn"><font size="2"><b>&gt;&gt;&nbsp;如果您已确认完成上面的说明,请点这里进行转换</b></font></a><input type="hidden" name="mysql_charset" value="'. $convert_charset[$ecshop_charset] .'" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php"><font size="2">&gt;&gt;&nbsp;如果您确认程序与数据库的编码一致，请点这里进行升级</font></a></form>';
+        $mysql_charset = '<span style="color:red">未知</span>';
     } elseif(empty($ecshop_charset) && empty($mysql_charset)) {
         $charset_option = '';
         foreach($convert_charset as $c_charset) {
             $charset_option .= '<option value="'.$c_charset.'">'.$c_charset.'</option>';
         }
-        $ext_msg = '<form name="convert_form" method="post" action="?step=start"><b>鐢变簬鏈?兘纭?畾鎮ㄧ殑绋嬪簭涓庢暟鎹?簱缂栫爜锛岃?缂栫爜鐢辨偍鎵嬪姩纭?畾銆侟/b><br />
-                    <b>鎮ㄧ殑绋嬪簭缂栫爜涓猴細<select name="ecshop_charset" id="ecshop_charset">'. $charset_option .'</select> 锛屾偍鐨勬暟鎹?簱缂栫爜涓猴細<select name="mysql_charset" id="mysql_charset">'. $charset_option .'</select></b><br /><b></b><br /><br />
-        <a href="###" id="runturn"><font size="2"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄥ凡纭??瀹屾垚涓婇潰鐨勮?鏄?璇风偣杩欓噷杩涜?杞?崲</b></font></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php"><font size="2"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄧ‘璁ょ▼搴忎笌鏁版嵁搴撶殑缂栫爜涓€鑷达紝璇风偣杩欓噷杩涜?鍗囩骇</font></a></form>';
-        $mysql_charset = '<span style="color:red">鏈?煡</span>';
-        $ecshop_charset = '<span style="color:red">鏈?煡</span>';
+        $ext_msg = '<form name="convert_form" method="post" action="?step=start"><b>由于未能确定您的程序与数据库编码，该编码由您手动确定。</b><br />
+                    <b>您的程序编码为：<select name="ecshop_charset" id="ecshop_charset">'. $charset_option .'</select> ，您的数据库编码为：<select name="mysql_charset" id="mysql_charset">'. $charset_option .'</select></b><br /><b></b><br /><br />
+        <a href="###" id="runturn"><font size="2"><b>&gt;&gt;&nbsp;如果您已确认完成上面的说明,请点这里进行转换</b></font></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php"><font size="2"><b>&gt;&gt;&nbsp;如果您确认程序与数据库的编码一致，请点这里进行升级</font></a></form>';
+        $mysql_charset = '<span style="color:red">未知</span>';
+        $ecshop_charset = '<span style="color:red">未知</span>';
     }else {
-        $ext_msg ='<a href="?step=start"><font size="2"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄥ凡纭??瀹屾垚涓婇潰鐨勮?鏄?璇风偣杩欓噷杩涜?杞?崲</b></font></a>';
+        $ext_msg ='<a href="?step=start"><font size="2"><b>&gt;&gt;&nbsp;如果您已确认完成上面的说明,请点这里进行转换</b></font></a>';
     }
     $ext_msg .= '
 <script type="text/javascript">
@@ -102,45 +102,45 @@ if ($step == 1) {
 </script>
 ';
     echo <<<EOT
-<h4>鏈?浆鎹㈢▼搴忓彧鑳介拡ECShop2.6.0鎴栬€呬互涓婄増鏈?▼搴忕殑杞?崲<br /></h4>
-杞?崲涔嬪墠<b>鍔″繀澶囦唤鏁版嵁搴撹祫鏂橖/b>锛岄伩鍏嶈浆鎹㈠け璐ョ粰鎮ㄥ甫鏉ユ崯澶变笌涓嶄究<br /><br />
+<h4>本转换程序只能针ECShop2.6.0或者以上版本程序的转换<br /></h4>
+转换之前<b>务必备份数据库资料</b>，避免转换失败给您带来损失与不便<br /><br />
 
-<p>杞?崲绋嬪簭浣跨敤璇存槑锛欬/p>
+<p>转换程序使用说明：</p>
 <ol>
-    <li>鍙?敮鎸丒CShop鏁版嵁搴撶殑杞?崲
-    <li>鏍规嵁鎮ㄤ笂浼犵▼搴忕殑缂栫爜鑷?姩杞?崲鏁版嵁搴撶紪鐮侊紝鐜板湪鍙?敮鎸 UTF-8 涓 GBK 缂栫爜鐨勪簰鎹?€
-    <li>鏈?伐鍏峰湪鎵ц?杩囩▼涓?笉浼氬?鎮ㄧ殑鍘熸暟鎹?簱杩涜?鐮村潖锛屼細灏嗘偍鐨勫師鏁版嵁琛ㄥ懡鍚嶄负澶囦唤鏂囦欢锛岃浆鎹㈠悗鐨勬暟鎹?瓨鍦ㄥ師鏉ョ殑琛ㄦ槑涓?€備緥濡傦細鍘熻〃鍚嶄负members锛堢紪鐮佷负UTF-8锛夐渶瑕佽浆涓篏BK缂栫爜锛屽垯杞?崲鍚庝负members锛堢紪鐮佷负GBK锛夛紝members_bak锛堢紪鐮佷负UTF-8锛屽嵆涓哄師琛ㄧ殑澶囦唤锛夈€
-    <li>濡傛灉涓?€斿け璐ワ紝璇锋仮澶嶆暟鎹?簱鐨勫埌鍘熷?浠芥暟鎹?簱锛屽幓闄ら敊璇?悗閲嶆柊杩愯?鏈?▼搴
-    <li><span style="color:red">杩涜?璇ユ搷鍋氬墠璇蜂竴瀹氬?浠芥偍鐨勬暟鎹?簱锛岃?杞?崲鍙?兘杩涜?涓€娆★紝濡傛灉杞?崲澶辫触璇蜂娇鐢ㄦ偍鐨勬暟鎹?簱澶囦唤杩樺師鏁版嵁搴撳悗閲嶆柊杩涜?杞?崲銆侟/span>
+    <li>只支持ECShop数据库的转换
+    <li>根据您上传程序的编码自动转换数据库编码，现在只支持 UTF-8 与 GBK 编码的互换。
+    <li>本工具在执行过程中不会对您的原数据库进行破坏，会将您的原数据表命名为备份文件，转换后的数据存在原来的表明中。例如：原表名为members（编码为UTF-8）需要转为GBK编码，则转换后为members（编码为GBK），members_bak（编码为UTF-8，即为原表的备份）。
+    <li>如果中途失败，请恢复数据库的到原备份数据库，去除错误后重新运行本程序
+    <li><span style="color:red">进行该操做前请一定备份您的数据库，该转换只能进行一次，如果转换失败请使用您的数据库备份还原数据库后重新进行转换。</span>
 </ol>
 
-<p>鎮ㄥ綋鍓嶇▼搴忎笌鏁版嵁搴撶殑淇℃伅锛欬/p>
+<p>您当前程序与数据库的信息：</p>
 <ul>
-    <li>绋嬪簭鐗堟湰锛?ecshop_version</li>
-    <li>绋嬪簭缂栫爜锛?ecshop_charset</li>
-    <li>MySQL鐗堟湰锛?mysql_version</li>
-    <li>MySQL缂栫爜锛?mysql_charset</li>
+    <li>程序版本：$ecshop_version</li>
+    <li>程序编码：$ecshop_charset</li>
+    <li>MySQL版本：$mysql_version</li>
+    <li>MySQL编码：$mysql_charset</li>
 </ul>
 $ext_msg
 EOT;
     instfooter();
 } elseif ($step == 'halt') {
     echo <<<EOT
-    <br /><p><h4>鎮ㄥ綋鍓嶇殑绋嬪簭鐗堟湰灏忎簬2.6.0 锛岃?鍏堟洿鏂版偍鐨勭▼搴忓啀杩涜?杞?崲銆侟/h4></p><br />
+    <br /><p><h4>您当前的程序版本小于2.6.0 ，请先更新您的程序再进行转换。</h4></p><br />
 EOT;
     instfooter();
 } elseif ($step == 'start') {
     $ecshop_charset = isset($_POST['ecshop_charset'])? $_POST['ecshop_charset'] : $ecshop_charset;
     $mysql_charset = isset($_POST['mysql_charset'])? $_POST['mysql_charset'] : $mysql_charset;
     if ($ecshop_charset == $mysql_charset) {
-        $ext_msg = '<span style="color:red;font-size:14px;font-weight:bold">鎮ㄧ殑绋嬪簭缂栫爜涓庢暟鎹?簱缂栫爜涓€鑷达紝鏃犻渶杩涜?杞?崲銆侟/span><br /><a href="index.php"><font size="2"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄩ渶瑕佹墽琛屽崌绾х▼搴忥紝璇风偣杩欓噷杩涜?鍗囩骇</b></font></a>';
+        $ext_msg = '<span style="color:red;font-size:14px;font-weight:bold">您的程序编码与数据库编码一致，无需进行转换。</span><br /><a href="index.php"><font size="2"><b>&gt;&gt;&nbsp;如果您需要执行升级程序，请点这里进行升级</b></font></a>';
         showmessage($ext_msg);
     }
     $act = getgpc('act', 'P');
     if (init_convert_tables($convert_tables_file)) {
         include( ROOT_PATH . $convert_tables_file);
     } else {
-        showmessage('<span style="color:red;font-size:14px;font-weight:bold">娌℃湁鏁版嵁琛ㄥ彲浠ヨ浆鎹↑/span>');
+        showmessage('<span style="color:red;font-size:14px;font-weight:bold">没有数据表可以转换</span>');
     }
     $tables_keys = array_keys($convert_tables);
 
@@ -151,7 +151,7 @@ EOT;
         <input type="hidden" name="mysql_charset" value="'. $mysql_charset .'" />
         <input type="hidden" name="act" value="convert" />
         <input type="hidden" name="table_name" value="'.$tables_keys[0].'" />';
-        showmessage("鏁版嵁搴撳?浠藉畬鎴愶紝".$backup_count." 涓?師鏁版嵁琛ㄥ潎閲嶅懡鍚嶄负浠 _bak 涓哄悗缂€锛?, '?step=start', 'form', $extra );
+        showmessage("数据库备份完成，".$backup_count." 个原数据表均重命名为以 _bak 为后缀！", '?step=start', 'form', $extra );
     } else {
         convert_table(getgpc('table_name', 'P'));
     }
@@ -163,7 +163,7 @@ function instheader() {
 
     echo "<html><head>".
         "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=$charset\">".
-        "<title>ECShop 鏁版嵁搴撶紪鐮佽浆鎹㈠伐鍏?tools_version</title>".
+        "<title>ECShop 数据库编码转换工具$tools_version</title>".
         "<style type=\"text/css\">
         a {
             color: #3A4273;
@@ -251,7 +251,7 @@ function instheader() {
         "<body bgcolor=\"#298296\" text=\"#000000\"><div id=\"append_parent\"></div>".
         "<table width=\"95%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" bgcolor=\"#FFFFFF\" align=\"center\"><tr><td>".
               "<table width=\"98%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"><tr>".
-              "<td class=\"install\" height=\"30\" valign=\"bottom\"><font color=\"#FF0000\">&gt;&gt;</font> ECShop 鏁版嵁搴撶紪鐮佽浆鎹㈠伐鍏?tools_version".
+              "<td class=\"install\" height=\"30\" valign=\"bottom\"><font color=\"#FF0000\">&gt;&gt;</font> ECShop 数据库编码转换工具$tools_version".
               "</td></tr><tr><td><hr noshade align=\"center\" width=\"100%\" size=\"1\"></td></tr><tr><td colspan=\"2\">";
 }
 
@@ -259,13 +259,13 @@ function instfooter() {
     echo "</td></tr><tr><td><hr noshade align=\"center\" width=\"100%\" size=\"1\"></td></tr>".
             "<tr><td align=\"center\">".
                 "<b style=\"font-size: 11px\">Powered by <a href=\"http://www.ecshop.com\" target=\"_blank\"><span style=\"color:#FF6100\">ECShop</span>".
-              "</a></b>&nbsp; &copy; 2005-2011 涓婃捣鍟嗘淳缃戠粶绉戞妧鏈夐檺鍏?徃銆侟br /><br />".
+              "</a></b>&nbsp; &copy; 2005-2011 上海商派网络科技有限公司。<br /><br />".
               "</td></tr></table></td></tr></table>".
         "</body></html>";
 }
 
 function showmessage($message, $url_forward = '', $msgtype = 'message', $extra = '', $delaymsec = 1000) {
-    //浠ヨ〃鍗曠殑褰㈠紡鏄剧ず淇℃伅
+    //以表单的形式显示信息
     if($msgtype == 'form') {
         $message = "<form method=\"post\" action=\"$url_forward\" name=\"hidden_form\">".
         "<br><p class=\"p_indent\">$message</p>\n $extra</form><br>".
@@ -275,7 +275,7 @@ function showmessage($message, $url_forward = '', $msgtype = 'message', $extra =
     } else {
         if($url_forward) {
             $message .= "<script>setTimeout(\"redirect('$url_forward');\", $delaymsec);</script>";
-            $message .= "<br><div align=\"right\">[<a href=\"$script_name\" style=\"color:red\">鍋滄?杩愯?</a>]<br><br><a href=\"$url_forward\">濡傛灉鎮ㄧ殑娴忚?鍣ㄩ暱鏃堕棿娌℃湁鑷?姩璺宠浆锛岃?鐐瑰嚮杩欓噷锛?/a></div>";
+            $message .= "<br><div align=\"right\">[<a href=\"$script_name\" style=\"color:red\">停止运行</a>]<br><br><a href=\"$url_forward\">如果您的浏览器长时间没有自动跳转，请点击这里！</a></div>";
         } else {
             $message .= "<br /><br /><br />";
         }
@@ -328,9 +328,9 @@ function init_convert_tables($file) {
     $query = $db->query('SHOW TABLE STATUS');
     while($result = $db->fetch_array($query)) {
         if (empty($prefix) || (!empty($prefix) && strpos($result['Name'], $prefix) === 0)) {
-            //妫€鏌ヤ笉鑳芥湁浠 _bak 缁撳熬鐨勮〃
+            //检查不能有以 _bak 结尾的表
             if (preg_match('/_bak$/', $result['Name'])) {
-                showmessage('鎮ㄧ殑鏁版嵁搴撳凡缁忓仛杩囪?瑷€缂栫爜杞?崲锛屽?闇€閲嶆柊杞?崲璇峰厛杩樺師鏁版嵁搴撳悗鍐嶆?鎵ц?鏈?▼搴忥紒');
+                showmessage('您的数据库已经做过语言编码转换，如需重新转换请先还原数据库后再此执行本程序！');
             }
             $tables[$result['Name']] = 0;
         }
@@ -360,7 +360,7 @@ function backup_tables($tables) {
     global $convert_tables, $convert_tables_file;
     $suffix = '_bak';
     $backup_count = 0;
-    display('姝ｅ湪杩涜?澶囦唤鏁版嵁琛?);
+    display('正在进行备份数据表');
     if (!empty($tables)) {
         foreach($tables as $tablename) {
             $db->query("DROP TABLE IF EXISTS `{$tablename}{$suffix}`;", 'SILENT');
@@ -378,9 +378,9 @@ function backup_tables($tables) {
 
 function convert_table($table) {
     if (empty($table)) {
-        showmessage('鏁版嵁琛ㄥ悕涓嶈兘涓虹┖锛岃浆鎹?腑姝?紝濡傞渶閲嶆柊杞?崲璇峰厛杩樺師鏁版嵁搴撳悗鍐嶆?鎵ц?鏈?▼搴忥紒');
+        showmessage('数据表名不能为空，转换中止，如需重新转换请先还原数据库后再此执行本程序！');
     }
-    display('姝ｅ湪杞?崲 '. $table .' 鏁版嵁琛?紝璇峰嬁鍏抽棴鏈?〉闈㈡垨鍒锋柊銆?);
+    display('正在转换 '. $table .' 数据表，请勿关闭本页面或刷新。');
     global $ecshop_charset, $mysql_charset, $mysql_version;
     global $db, $prefix;
     global $convert_tables, $convert_tables_file, $tables_keys, $rpp;
@@ -400,7 +400,7 @@ function convert_table($table) {
                 $convert_tables[$table] = 2;
                 write_tables($convert_tables, $convert_tables_file, 'convert_tables');
             } else {
-                showmessage('鍒涘缓琛 ' . $table . ' 鏃跺け璐ワ紒<br /> ' . $createtable . '<br /> ' . mysql_error($db->link_id));
+                showmessage('创建表 ' . $table . ' 时失败！<br /> ' . $createtable . '<br /> ' . mysql_error($db->link_id));
             }
         }
     }
@@ -427,7 +427,7 @@ function convert_table($table) {
                 $db->query("SET sql_mode=''");
             }
             if (!$db->query($insert_query, 'SILENT')) {
-                showmessage('鎻掑叆 ' . $table . ' 琛ㄦ暟鎹?け璐ワ紒<br /> ' . $insert_query . '<br /> ' . mysql_error($db->link_id));
+                showmessage('插入 ' . $table . ' 表数据失败！<br /> ' . $insert_query . '<br /> ' . mysql_error($db->link_id));
             }
         }
         if ($start + $rpp > $count) {
@@ -436,7 +436,7 @@ function convert_table($table) {
             if (count($convert_tables) < 1) {
                 @unlink(ROOT_PATH.$convert_tables_file);
                 @setcookie('ECCC', $ecshop_charset, 0);
-                showmessage('<br /><span style="font-size:14px;font-size:weight">杞?崲缁撴潫锛?/span><br /><a href="index.php"><font size="2"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄩ渶瑕佹墽琛屽崌绾х▼搴忥紝璇风偣杩欓噷杩涜?鍗囩骇</b></font></a>');
+                showmessage('<br /><span style="font-size:14px;font-size:weight">转换结束！</span><br /><a href="index.php"><font size="2"><b>&gt;&gt;&nbsp;如果您需要执行升级程序，请点这里进行升级</b></font></a>');
             } else {
                 array_shift($tables_keys);
                 $extra = '
@@ -444,7 +444,7 @@ function convert_table($table) {
                 <input type="hidden" name="mysql_charset" value="'. $mysql_charset .'" />
                 <input type="hidden" name="act" value="convert" />
                 <input type="hidden" name="table_name" value="'.$tables_keys[0].'" />';
-                showmessage("鏁版嵁琛 {$table} 杞?崲瀹屾垚锛屾?鍦ㄨ繘鍏ヤ笅涓€涓?暟鎹?〃", '?step=start', 'form', $extra );
+                showmessage("数据表 {$table} 转换完成，正在进入下一个数据表", '?step=start', 'form', $extra );
             }
         } else {
             $next_start = $start + $rpp;
@@ -455,7 +455,7 @@ function convert_table($table) {
             <input type="hidden" name="start" value="'.$next_start.'" />
             <input type="hidden" name="count" value="'.$count.'" />
             <input type="hidden" name="table_name" value="'.$tables_keys[0].'" />';
-            showmessage("姝ｅ湪杞?崲鏁版嵁琛 $table 鐨勭? $start - ".((($start+$rpp) > $count) ? $count : ($start+$rpp))." 鏉℃暟鎹?, '?step=start', 'form', $extra );
+            showmessage("正在转换数据表 $table 的第 $start - ".((($start+$rpp) > $count) ? $count : ($start+$rpp))." 条数据", '?step=start', 'form', $extra );
         }
     }
 }

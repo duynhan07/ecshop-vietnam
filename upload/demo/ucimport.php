@@ -1,6 +1,6 @@
 <?php
 
-/* 鍒濆?鍖栧彉閲忓畾涔 */
+/* 初始化变量定义 */
 $charset = 'utf-8';
 $tools_version = "v1.0";
 $mysql_version = '';
@@ -9,9 +9,9 @@ $mysql_charset = '';
 $ecshop_charset = '';
 $convert_charset = array('utf-8' => 'gbk', 'gbk' => 'utf-8');
 $convert_tables_file = 'data/convert_tables.php';
-$rpp = 500; // 姣忔?澶勭悊鐨勮?褰曟暟
+$rpp = 500; // 每次处理的记录数
 
-/* ECShop鐨勭珯鐐圭洰褰 */
+/* ECShop的站点目录 */
 define('ROOT_PATH', str_replace('\\', '/', substr(__FILE__, 0, -20)));
 define('IN_ECS', true);
 
@@ -20,7 +20,7 @@ require(ROOT_PATH . 'includes/cls_ecshop.php');
 require(ROOT_PATH . 'includes/cls_mysql.php');
 require(ROOT_PATH . 'includes/lib_common.php');
 
-/* 鏈?崌绾у墠锛岃?甯搁噺涓嶅瓨鍦 */
+/* 未升级前，该常量不存在 */
 if (defined('EC_CHARSET')) {
     $ec_charset = EC_CHARSET;
 } else {
@@ -68,37 +68,37 @@ if (!defined('UC_DBUSER') && !defined('UC_DBPW') && !defined('UC_DBNAME'))
 ob_start();
 instheader();
 if ($step == 1) {
-    $ext_msg = '<a href="?step=start"><font size="3" color="red"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄥ凡纭??涓婇潰鐨勪娇鐢ㄨ?鏄?璇风偣杩欓噷杩涜?瀵煎叆</b></font></a><br /><br /><a href="index.php"><font size="2"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄩ渶瑕佹墽琛屽崌绾х▼搴忥紝璇风偣杩欓噷杩涜?鍗囩骇</b></font></a>';
+    $ext_msg = '<a href="?step=start"><font size="3" color="red"><b>&gt;&gt;&nbsp;如果您已确认上面的使用说明,请点这里进行导入</b></font></a><br /><br /><a href="index.php"><font size="2"><b>&gt;&gt;&nbsp;如果您需要执行升级程序，请点这里进行升级</b></font></a>';
     echo <<<EOT
-<h4>鏈?浆鎹㈢▼搴忓彧鑳介拡ECShop2.6.0鎴栬€呬互涓婄増鏈?▼搴忕殑鏁版嵁瀵煎叆<br /></h4>
-瀵煎叆涔嬪墠<b>鍔″繀澶囦唤鏁版嵁搴撹祫鏂橖/b>锛岄伩鍏嶅?鍏ュけ璐ョ粰鎮ㄥ甫鏉ユ崯澶变笌涓嶄究<br /><br />
+<h4>本转换程序只能针ECShop2.6.0或者以上版本程序的数据导入<br /></h4>
+导入之前<b>务必备份数据库资料</b>，避免导入失败给您带来损失与不便<br /><br />
 
-<p>瀵煎叆绋嬪簭浣跨敤璇存槑锛欬/p>
+<p>导入程序使用说明：</p>
 <ol>
-    <li>鍙?敮鎸佷粠UCenter鏁版嵁搴撳埌ECShop鏁版嵁搴撶殑瀵煎叆</li>
-    <li>鍙??鍏ヤ細鍛樼殑鐢ㄦ埛鍚嶃€侀偖绠便€佸瘑鐮侊紝杩欎簺鍩烘湰淇℃伅銆備笉浼氱牬鍧忓師鏈変細鍛樻暟鎹?/li>
+    <li>只支持从UCenter数据库到ECShop数据库的导入</li>
+    <li>只导入会员的用户名、邮箱、密码，这些基本信息。不会破坏原有会员数据</li>
 </ol>
 
-<p>鎮ㄥ綋鍓嶇▼搴忎笌鏁版嵁搴撶殑淇℃伅锛欬/p>
+<p>您当前程序与数据库的信息：</p>
 <ul>
-    <li>绋嬪簭鐗堟湰锛?ecshop_version</li>
-    <li>绋嬪簭缂栫爜锛?ecshop_charset</li>
-    <li>MySQL鐗堟湰锛?mysql_version</li>
-    <li>MySQL缂栫爜锛?mysql_charset</li>
+    <li>程序版本：$ecshop_version</li>
+    <li>程序编码：$ecshop_charset</li>
+    <li>MySQL版本：$mysql_version</li>
+    <li>MySQL编码：$mysql_charset</li>
 </ul>
 $ext_msg
 EOT;
     instfooter();
 } elseif ($step == 'halt') {
     echo <<<EOT
-    <p><h4>鍑洪敊浜嗭紒</h4></p>
+    <p><h4>出错了！</h4></p>
     <p>
         <ol>
-            <li>鎮ㄥ綋鍓嶇殑绋嬪簭鐗堟湰灏忎簬2.6.0锛汓/li>
-            <li>鎮ㄧ殑閰嶇疆鏂囦欢涓庢暟鎹?〃涓?己灏慤Center鐨勯厤缃?俊鎭?€侟/li>
+            <li>您当前的程序版本小于2.6.0；</li>
+            <li>您的配置文件与数据表中缺少UCenter的配置信息。</li>
         </ol>
     </p>
-    <p><h4>璇峰厛鍗囩骇鎮ㄧ殑绋嬪簭鍐嶈繘琛屽?鍏ャ€侟/h4></p>
+    <p><h4>请先升级您的程序再进行导入。</h4></p>
 EOT;
     instfooter();
 } elseif ($step == 'start') {
@@ -107,7 +107,7 @@ EOT;
     $insert = getgpc('insert', 'P');
     $success = getgpc('success', 'P');
     $error = getgpc('error', 'P');
-    $item_num = 500; // 姣忔?澶勭悊1000涓?細鍛樻暟鎹
+    $item_num = 500; // 每次处理1000个会员数据
     $statistics = array('update' => 0, 'insert' => 0, 'success' => 0, 'error' => 0);
     if (empty($limit)) {
         $limit = 0;
@@ -137,7 +137,7 @@ EOT;
         $insert += $statistics['insert'];
         $success += $statistics['success'];
         $error += $statistics['error'];
-        $message = "<p>鍏辨湁 <strong>$total_members</strong> 涓?細鍛樻暟鎹?/p><p>瀵煎叆瀹屾垚锛?/p><p><ul><li>鏇存柊鐨勭敤鎴锋暟鎹?細$update 鏉狘/li><li>鏂板?鐨勭敤鎴锋暟鎹?細$insert 鏉狘/li><li>鎴愬姛鐨勭敤鎴锋暟鎹?細$success 鏉狘/li><li>鍑洪敊鐨勭敤鎴锋暟鎹?細$error 鏉狘/li></ul></p><p><a href=\"index.php\"><b>&gt;&gt;&nbsp;濡傛灉鎮ㄩ渶瑕佹墽琛屽崌绾х▼搴忥紝璇风偣杩欓噷杩涜?鍗囩骇</b></a></p>";
+        $message = "<p>共有 <strong>$total_members</strong> 个会员数据</p><p>导入完成！</p><p><ul><li>更新的用户数据：$update 条</li><li>新增的用户数据：$insert 条</li><li>成功的用户数据：$success 条</li><li>出错的用户数据：$error 条</li></ul></p><p><a href=\"index.php\"><b>&gt;&gt;&nbsp;如果您需要执行升级程序，请点这里进行升级</b></a></p>";
         showmessage($message);
     } else {
         $update += $statistics['update'];
@@ -146,7 +146,7 @@ EOT;
         $error += $statistics['error'];
         $total_item = $limit+$item_num;
         $extra = '<input type="hidden" name="update" value="'.$update.'" /><input type="hidden" name="insert" value="'.$insert.'" /><input type="hidden" name="success" value="'.$success.'" /><input type="hidden" name="error" value="'.$error.'" /><input type="hidden" name="limit" value="'.$total_item.'" />';
-        $message = "<p>鍏辨湁 <strong>$total_members</strong> 涓?細鍛樻暟鎹?/p><p>褰撳墠鍦ㄥ?鍏 $limit - $total_item 鐨勪細鍛樻暟鎹?/p><p><ul><li>鏇存柊鐨勭敤鎴锋暟鎹?細$update 鏉狘/li><li>鏂板?鐨勭敤鎴锋暟鎹?細$insert 鏉狘/li><li>鎴愬姛鐨勭敤鎴锋暟鎹?細$success 鏉狘/li><li>鍑洪敊鐨勭敤鎴锋暟鎹?細$error 鏉狘/li></ul></p>";
+        $message = "<p>共有 <strong>$total_members</strong> 个会员数据</p><p>当前在导入 $limit - $total_item 的会员数据</p><p><ul><li>更新的用户数据：$update 条</li><li>新增的用户数据：$insert 条</li><li>成功的用户数据：$success 条</li><li>出错的用户数据：$error 条</li></ul></p>";
         showmessage($message, '?step=start', 'form', $extra);
     }
 }
@@ -157,7 +157,7 @@ function instheader() {
 
     echo "<html><head>".
         "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=$charset\">".
-        "<title>UCenter 浼氬憳鏁版嵁瀵煎叆宸ュ叿$tools_version</title>".
+        "<title>UCenter 会员数据导入工具$tools_version</title>".
         "<style type=\"text/css\">
         a {
             color: #3A4273;
@@ -245,7 +245,7 @@ function instheader() {
         "<body bgcolor=\"#298296\" text=\"#000000\"><div id=\"append_parent\"></div>".
         "<table width=\"95%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" bgcolor=\"#FFFFFF\" align=\"center\"><tr><td>".
               "<table width=\"98%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"><tr>".
-              "<td class=\"install\" height=\"30\" valign=\"bottom\"><font color=\"#FF0000\">&gt;&gt;</font> UCenter 浼氬憳鏁版嵁瀵煎叆宸ュ叿$tools_version".
+              "<td class=\"install\" height=\"30\" valign=\"bottom\"><font color=\"#FF0000\">&gt;&gt;</font> UCenter 会员数据导入工具$tools_version".
               "</td></tr><tr><td><hr noshade align=\"center\" width=\"100%\" size=\"1\"></td></tr><tr><td colspan=\"2\">";
 }
 
@@ -253,13 +253,13 @@ function instfooter() {
     echo "</td></tr><tr><td><hr noshade align=\"center\" width=\"100%\" size=\"1\"></td></tr>".
             "<tr><td align=\"center\">".
                 "<b style=\"font-size: 11px\">Powered by <a href=\"http://www.ecshop.com\" target=\"_blank\"><span style=\"color:#FF6100\">ECShop</span>".
-              "</a></b>&nbsp; &copy; 2005-2011 涓婃捣鍟嗘淳缃戠粶绉戞妧鏈夐檺鍏?徃銆侟br /><br />".
+              "</a></b>&nbsp; &copy; 2005-2011 上海商派网络科技有限公司。<br /><br />".
               "</td></tr></table></td></tr></table>".
         "</body></html>";
 }
 
 function showmessage($message, $url_forward = '', $msgtype = 'message', $extra = '', $delaymsec = 1000) {
-    //浠ヨ〃鍗曠殑褰㈠紡鏄剧ず淇℃伅
+    //以表单的形式显示信息
     if($msgtype == 'form') {
         $message = "<form method=\"post\" action=\"$url_forward\" name=\"hidden_form\">".
         "<br><p class=\"p_indent\">$message</p>\n $extra</form><br>".
@@ -269,7 +269,7 @@ function showmessage($message, $url_forward = '', $msgtype = 'message', $extra =
     } else {
         if($url_forward) {
             $message .= "<script>setTimeout(\"redirect('$url_forward');\", $delaymsec);</script>";
-            $message .= "<br><div align=\"right\">[<a href=\"$script_name\" style=\"color:red\">鍋滄?杩愯?</a>]<br><br><a href=\"$url_forward\">濡傛灉鎮ㄧ殑娴忚?鍣ㄩ暱鏃堕棿娌℃湁鑷?姩璺宠浆锛岃?鐐瑰嚮杩欓噷锛?/a></div>";
+            $message .= "<br><div align=\"right\">[<a href=\"$script_name\" style=\"color:red\">停止运行</a>]<br><br><a href=\"$url_forward\">如果您的浏览器长时间没有自动跳转，请点击这里！</a></div>";
         } else {
             $message .= "<br /><br /><br />";
         }

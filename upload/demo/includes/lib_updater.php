@@ -1,28 +1,6 @@
 <?php
-
-/**
- * ECSHOP 鍗囩骇绋嬪簭 涔 妯″瀷
- * ============================================================================
- * 鐗堟潈鎵€鏈 2005-2011 涓婃捣鍟嗘淳缃戠粶绉戞妧鏈夐檺鍏?徃锛屽苟淇濈暀鎵€鏈夋潈鍒┿€
- * 缃戠珯鍦板潃: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * 杩欎笉鏄?竴涓?嚜鐢辫蒋浠讹紒鎮ㄥ彧鑳藉湪涓嶇敤浜庡晢涓氱洰鐨勭殑鍓嶆彁涓嬪?绋嬪簭浠ｇ爜杩涜?淇?敼鍜
- * 浣跨敤锛涗笉鍏佽?瀵圭▼搴忎唬鐮佷互浠讳綍褰㈠紡浠讳綍鐩?殑鐨勫啀鍙戝竷銆
- * ============================================================================
- * $Author: liubo $
- * $Date: 2009-12-14 17:22:19 +0800 (涓€, 2009-12-14) $
- * $Id: lib_updater.php 16882 2009-12-14 09:22:19Z liubo $
- */
-
-/**
- * 鑾峰緱闇€瑕佸崌绾х殑鐗堟湰鍙峰垪琛ㄣ€
- * @param   string      $old_version    鏃х増鏈?彿
- * @param   string      $new_version    鏂扮増鏈?彿
- * @return  array
- */
 function get_needup_version_list($old_version, $new_version)
 {
-    /* 闇€瑕佸崌绾х殑鐗堟湰鍙峰垪琛 */
     $old_version = explode(' ',$old_version);
     $old_version = $old_version[0];
     $need_list = array();
@@ -51,10 +29,6 @@ function get_needup_version_list($old_version, $new_version)
     return $need_list;
 }
 
-/**
- * 璇诲彇鐗堟湰鍘嗗彶璁板綍锛屽苟鎸夊瓧鍏稿簭鎺掑簭銆
- * @return  array
- */
 function read_version_history()
 {
     $ver_history = array('v2.0.5');
@@ -73,10 +47,6 @@ function read_version_history()
     return $ver_history;
 }
 
-/**
- * 鑾峰緱鍘熸湁绯荤粺鐨勮?瑷€銆
- * @return  mixed       鎴愬姛杩斿洖鍏蜂綋鐨勮?瑷€锛屽け璐ヨ繑鍥瀎alse銆
- */
 function  get_current_lang()
 {
     global $db, $ecs;
@@ -87,19 +57,11 @@ function  get_current_lang()
     return $lang;
 }
 
-/**
- * 鑾峰緱鏈€鏂扮殑鐗堟湰鍙枫€
- * @return  string
- */
 function get_new_version()
 {
     return  preg_replace('/(?:\.|\s+)[a-z]*$/i', '', VERSION);
 }
 
-/**
- * 鑾峰緱鍘熸湁绯荤粺鐨勭増鏈?彿銆
- * @return  string
- */
 function  get_current_version()
 {
     global $db, $ecs;
@@ -111,10 +73,6 @@ function  get_current_version()
     return $ver;
 }
 
-/**
- * 鑾峰緱鏌愪釜SQL鏂囦欢鐨勮?褰曟暟(SQL璇?彞鏁伴噺)銆
- * @return  int
- */
 function get_record_number($next_ver, $type)
 {
     global $db, $prefix;
@@ -133,10 +91,6 @@ function get_record_number($next_ver, $type)
     return count($query_items);
 }
 
-/**
- * 鑾峰緱閰嶇疆淇℃伅銆
- * @return  array
- */
 function get_config_info()
 {
     global $_LANG;
@@ -164,10 +118,6 @@ function get_config_info()
     return $config;
 }
 
-/**
- * 鍒涘缓鐗堟湰瀵硅薄銆
- * @return  mixed   鎴愬姛杩斿洖鐗堟湰瀵硅薄锛屽け璐ヨ繑鍥瀎alse銆
- */
 function create_ver_obj($version)
 {
     global $err, $_LANG;
@@ -177,7 +127,6 @@ function create_ver_obj($version)
     {
         include_once($file_path);
 
-        // 鎶 . 鏇挎崲鎴 _锛屾妸绌烘牸鍘绘帀锛屽墠闈㈠姞 up_
         $classname = 'up_' . str_replace('.', '_', str_replace(' ', '', $version));
         $ver_obj = new $classname();
 
@@ -191,10 +140,6 @@ function create_ver_obj($version)
     }
 }
 
-/**
- * 鏈烘?鍖栧湴鍗囩骇鏁版嵁搴撶粨鏋勩€
- * @return  boolean
- */
 function update_structure_automatically($next_ver, $cur_pos)
 {
     global $db, $prefix, $err;
@@ -223,10 +168,6 @@ function update_structure_automatically($next_ver, $cur_pos)
     return true;
 }
 
-/**
- * 鏈烘?鍖栧湴鍗囩骇鏁版嵁搴撴暟鎹?€
- * @return  boolean
- */
 function update_data_automatically($next_ver)
 {
     global $db, $ecs, $prefix, $err;
@@ -249,7 +190,7 @@ function update_data_automatically($next_ver)
         $lang = EC_LANGUAGE . '_' . EC_CHARSET;
         if (!isset($ver_obj->sql_files['data'][$lang]))
         {
-           $lang = 'zh_cn_utf-8';
+           $lang = 'vi_vn_utf-8';
         }
         $data_path = $ver_root . $ver_obj->sql_files['data'][$lang];
     }
@@ -268,10 +209,6 @@ function update_data_automatically($next_ver)
     return true;
 }
 
-/**
- * 闅忓績鎵€娆插湴鍗囩骇鏁版嵁搴撱€
- * @return  boolean
- */
 function update_database_optionally($next_ver)
 {
     $ver_obj = create_ver_obj($next_ver);
@@ -285,10 +222,6 @@ function update_database_optionally($next_ver)
     return true;
 }
 
-/**
- * 鍗囩骇鏂囦欢銆
- * @return  array
- */
 function update_files($next_ver)
 {
     global $err;
@@ -314,10 +247,6 @@ function update_files($next_ver)
     return array('msg'=>'OK');
 }
 
-/**
- * 鍗囩骇鐗堟湰銆
- * @return  void
- */
 function update_version($next_ver)
 {
     global $db, $ecs;
@@ -332,7 +261,6 @@ function dump_database($next_ver)
     include_once(ROOT_PATH . 'admin/includes/cls_sql_dump.php');
     require_once(ROOT_PATH . 'demo/packages/' . $next_ver . '/dump_table.php');
 
-    /* 澶囦唤琛ㄤ负绌烘椂涓嶄綔澶囦唤锛岃繑鍥炵湡 */
     if (empty($temp))
     {
         return true;
@@ -345,11 +273,10 @@ function dump_database($next_ver)
     $max_size = '2048';
     $vol = 1;
 
-    /* 鍙橀噺楠岃瘉 */
-    $allow_max_size = intval(@ini_get('upload_max_filesize')); //鍗曚綅M
+    $allow_max_size = intval(@ini_get('upload_max_filesize'));
     if ($allow_max_size > 0 && $max_size > ($allow_max_size * 1024))
     {
-        $max_size = $allow_max_size * 1024; //鍗曚綅K
+        $max_size = $allow_max_size * 1024;
     }
 
     if ($max_size > 0)
@@ -365,7 +292,6 @@ function dump_database($next_ver)
 
     $dump->put_tables_list($run_log, $tables);
 
-    /* 寮€濮嬪?浠 */
     $tables = $dump->dump_table($run_log, $vol);
 
     if ($tables === false)
@@ -407,32 +333,15 @@ function rollback($next_ver)
     return true;
 }
 
-
-/**
- * 鑾峰緱 ECSHOP 褰撳墠鐜??鐨 HTTP 鍗忚?鏂瑰紡
- *
- * @access  public
- *
- * @return  void
- */
 function http()
 {
     return (isset($_SERVER['HTTPS']) && (strtolower($_SERVER['HTTPS']) != 'off')) ? 'https://' : 'http://';
 }
 
-/**
- * 鍙栧緱褰撳墠鐨勫煙鍚
- *
- * @access  public
- *
- * @return  string      褰撳墠鐨勫煙鍚
- */
 function get_domain()
 {
-    /* 鍗忚? */
     $protocol = http();
 
-    /* 鍩熷悕鎴朓P鍦板潃 */
     if (isset($_SERVER['HTTP_X_FORWARDED_HOST']))
     {
         $host = $_SERVER['HTTP_X_FORWARDED_HOST'];
@@ -443,7 +352,6 @@ function get_domain()
     }
     else
     {
-        /* 绔?彛 */
         if (isset($_SERVER['SERVER_PORT']))
         {
             $port = ':' . $_SERVER['SERVER_PORT'];
@@ -471,13 +379,6 @@ function get_domain()
     return $protocol . $host;
 }
 
-/**
- * 鑾峰緱 ECSHOP 褰撳墠鐜??鐨 URL 鍦板潃
- *
- * @access  public
- *
- * @return  void
- */
 function url()
 {
     define(PHP_SELF, $_SERVER['PHP_SELF']);
@@ -671,7 +572,6 @@ function insertconfig($s, $find, $replace)
     }
     else
     {
-        // 鎻掑叆鍒版渶鍚庝竴琛
         $s .= "\r\n".$replace;
     }
     return $s;

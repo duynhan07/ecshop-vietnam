@@ -13,11 +13,11 @@
  * $Id: calendar.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
-$lang = (!empty($_GET['lang'])) ? trim($_GET['lang']) : 'zh_cn';
+$lang = (!empty($_GET['lang'])) ? trim($_GET['lang']) : 'vi_vn';
 
 if (!file_exists('../languages/' . $lang . '/calendar.php') || strrchr($lang,'.'))
 {
-    $lang = 'zh_cn';
+    $lang = 'vi_vn';
 }
 
 require(dirname(dirname(__FILE__)) . '/data/config.php');
