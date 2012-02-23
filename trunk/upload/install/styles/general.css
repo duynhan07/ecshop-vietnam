@@ -110,7 +110,7 @@ input.button {
 }
 
 th {
-  font:12px 宋体, Arial, Helvetica, sans-serif;
+  font:12px Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -120,7 +120,7 @@ form {
 }
 
 input, textarea, select {
-  font:12px 宋体, Arial, Helvetica, sans-serif;
+  font:12px Arial, Helvetica, sans-serif;
 }
 
 input.p, label {

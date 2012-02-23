@@ -14,6 +14,7 @@ $timezones = array(
     'Asia/Macau'        => 'Asia/Macau',
     'Asia/Macao'        => 'Asia/Macao',
     'Asia/Singapore'    => '亚洲，新加坡',
+	'Asia/Ho_Chi_Minh'	=>	'Asia/Ho_Chi_Minh',
     'Singapore'         => 'Asia/Singapore',
     'Asia/Seoul'        => 'Asia/Seoul',
     'Asia/Tokyo'        => 'Asia/Tokyo',
