@@ -60,17 +60,17 @@ $_LANG['not_writable_warning']='The %s directory can\'t be wrote, you need to co
 $_LANG['goods_cat'] ='All Categories';
 $_LANG['goods_brand'] ='All Brands';
 $_LANG['intro_type'] =' All';
-$_LANG['keyword'] ='Keywords';
-$_LANG['is_best'] ='Best';
-$_LANG['is_new'] ='New';
-$_LANG['is_hot'] ='Hot';
+$_LANG['keyword'] ='Từ khóa';
+$_LANG['is_best'] ='Tốt nhất';
+$_LANG['is_new'] ='Mới nhất';
+$_LANG['is_hot'] ='Hot nhất';
 $_LANG['is_promote'] ='Sales promotion';
 $_LANG['all_type'] = 'All recommend';
 $_LANG['sort_order'] = 'Recommend to sort';
 
 $_LANG['goods_name'] ='Name';
 $_LANG['goods_sn'] ='NO.';
-$_LANG['shop_price'] ='Price';
+$_LANG['shop_price'] ='Giá';
 $_LANG['is_on_sale'] ='On sale';
 $_LANG['goods_number'] ='Stock';
 
@@ -111,7 +111,7 @@ $_LANG['lab_goods_name'] ='Name:';
 $_LANG['lab_goods_sn'] ='NO.:';
 $_LANG['lab_goods_cat'] ='Category:';
 $_LANG['lab_other_cat'] ='Extend category:';
-$_LANG['lab_goods_brand'] ='Brand:';
+$_LANG['lab_goods_brand'] ='Thương hiệu:';
 $_LANG['lab_shop_price'] ='Shop price:';
 $_LANG['lab_market_price'] ='Market price:';
 $_LANG['lab_user_price'] ='Member price:';
@@ -127,7 +127,7 @@ $_LANG['lab_goods_type'] = 'Goods type：';
 $_LANG['lab_picture_url'] = 'Merchandise picture external URL';
 $_LANG['lab_thumb_url'] = 'External merchandise Thumbnail URL';
 
-$_LANG['lab_goods_weight'] ='Weight:';
+$_LANG['lab_goods_weight'] ='Trọng lượng:';
 $_LANG['unit_g'] ='Gram';
 $_LANG['unit_kg'] ='Kilogram';
 $_LANG['lab_goods_number'] ='Stock quantity:';
@@ -207,7 +207,7 @@ $_LANG['top_cat'] = 'Top Categories';
 /*------------------------------------------------------ */
 
 $_LANG['group_goods'] ='Accessories';
-$_LANG['price'] ='Price';
+$_LANG['price'] ='Giá';
 
 /*------------------------------------------------------ */
 //-- Product gallery

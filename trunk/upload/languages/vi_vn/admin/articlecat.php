@@ -23,7 +23,7 @@ $_LANG['type_name'][INFO_CAT]   = 'Shop information';
 $_LANG['type_name'][UPHELP_CAT] = 'Help Category';
 $_LANG['type_name'][HELP_CAT]   = 'Shop help';
 
-$_LANG['cat_keywords'] = 'Keywords';
+$_LANG['cat_keywords'] = 'Từ khóa';
 $_LANG['cat_desc'] = 'Description';
 $_LANG['parent_cat'] = 'Superior Categories';
 $_LANG['cat_top'] = 'Top Categories';

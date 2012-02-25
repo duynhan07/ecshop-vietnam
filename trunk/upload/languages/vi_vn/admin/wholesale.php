@@ -43,7 +43,7 @@ $_LANG['search_result_empty'] = 'Did not find merchandise, please re-english';
 $_LANG['quantity'] = 'quantity';
 $_LANG['price'] = 'price';
 $_LANG['custom_goods_cat'] = 'All Categories';
-$_LANG['custom_goods_brand'] = 'All brands';
+$_LANG['custom_goods_brand'] = 'Tất cả thương hiệu';
 
 $_LANG['js_languages']['act_name_not_null'] = 'Please enter the name of the wholesale program';
 

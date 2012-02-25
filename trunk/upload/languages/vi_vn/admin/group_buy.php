@@ -34,9 +34,9 @@ $_LANG['current_status'] = 'Status';
 $_LANG['view_order'] = 'View order';
 
 /* Add/Edit associates page */
-$_LANG['goods_cat'] = 'Category';
-$_LANG['all_cat'] = 'All categories';
-$_LANG['goods_brand'] = 'Brand';
+$_LANG['goods_cat'] = 'Danh mục';
+$_LANG['all_cat'] = 'Tất cả danh mục';
+$_LANG['goods_brand'] = 'Thương hiệu';
 $_LANG['all_brand'] = 'All brand';
 
 $_LANG['label_goods_name'] = 'Associates product:';
@@ -50,7 +50,7 @@ $_LANG['notice_restrict_amount']= 'Reach the quantity, associates stop automatic
 $_LANG['label_gift_integral'] = 'Present points:';
 $_LANG['label_price_ladder'] = 'Price step:';
 $_LANG['notice_ladder_amount'] = 'Reach quantity';
-$_LANG['notice_ladder_price'] = 'Price';
+$_LANG['notice_ladder_price'] = 'Giá';
 $_LANG['label_desc'] = 'Description:';
 $_LANG['label_status'] = 'Status';
 $_LANG['gbs'][GBS_PRE_START] = 'Preparing';

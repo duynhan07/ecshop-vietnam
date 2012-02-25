@@ -125,9 +125,9 @@ $_LANG['download_amount_sort'] = 'Download to rate statements';
 $_LANG['goods_name'] = 'Name';
 $_LANG['goods_sn'] = 'Product NO.';
 $_LANG['order_sn'] = 'Order NO.';
-$_LANG['amount'] = 'Quantity';
+$_LANG['amount'] = 'Số lượng';
 $_LANG['to'] = 'to';
-$_LANG['sell_price'] = 'Price';
+$_LANG['sell_price'] = 'Giá';
 $_LANG['sell_date'] = 'Date';
 $_LANG['down_sales'] = 'Download sales list';
 $_LANG['sales_list'] = 'Sales list';
@@ -138,8 +138,8 @@ $_LANG['buy_times'] = 'Time';
 $_LANG['visit_buy'] ='Purchase rate';
 $_LANG['download_visit_buy'] = 'Download visit purchase rate statements';
 
-$_LANG['goods_cat'] = 'Category';
-$_LANG['goods_brand'] = 'Brand';
+$_LANG['goods_cat'] = 'Danh mục';
+$_LANG['goods_brand'] = 'Thương hiệu';
 
 /* 搜索引擎 */
 $_LANG['down_search_stats'] = 'Download search keyword statements';

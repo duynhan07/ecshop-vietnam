@@ -1,49 +1,33 @@
 <?php
+$_LANG['require_login'] = 'Thao tác không hợp lệ.<br />Bạn không thể thực hiện thao tác khi chưa đăng nhập.';
 
-/**
- * ECSHOP User Center language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: user.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
-$_LANG['require_login'] = 'Illegal entry.<br />You can\'t finish the operation until login.';
-
-$_LANG['no_records'] = 'No record';
-$_LANG['shot_message'] = "Short message";
+$_LANG['no_records'] = 'Không có bản ghi nào';
+$_LANG['shot_message'] = "Tin nhắn riêng";
 
 /* 用户菜单 */
-$_LANG['label_welcome'] = 'Welcome';
-$_LANG['label_profile'] = 'My Information';
-$_LANG['label_order'] = 'My Order';
-$_LANG['label_address'] = 'Consignee Address';
-$_LANG['label_message'] = 'My Feedback';
-$_LANG['label_tag'] = 'My Tag';
-$_LANG['label_collection'] = 'My Favorite';
-$_LANG['label_bonus'] = 'My Bonus';
-$_LANG['label_comment'] = 'My comment';
+$_LANG['label_welcome'] = 'Chào mừng';
+$_LANG['label_profile'] = 'T.tin của tôi';
+$_LANG['label_order'] = 'Đ.hàng của tôi';
+$_LANG['label_address'] = 'Đ.chỉ người nhận';
+$_LANG['label_message'] = 'Phản hồi của tôi';
+$_LANG['label_tag'] = 'Tag của tôi';
+$_LANG['label_collection'] = 'Y.thích của tôi';
+$_LANG['label_bonus'] = 'Quà của tôi';
+$_LANG['label_comment'] = 'N.xét của tôi';
 $_LANG['label_affiliate'] = 'My recommendation';
 $_LANG['label_group_buy'] = 'My Associates';
 $_LANG['label_booking'] = 'Booking Records';
-$_LANG['label_user_surplus'] = 'Account Details';
+$_LANG['label_user_surplus'] = 'Chi tiết tài khoản';
 $_LANG['label_track_packages'] = 'Tracking packages';
 $_LANG['label_transform_points'] = 'Points transform';
-$_LANG['label_logout'] = 'Logout';
+$_LANG['label_logout'] = 'Thoát';
 
 /* 会员余额(预付款) */
 $_LANG['add_surplus_log'] = 'Details';
 $_LANG['view_application'] = 'View application record';
 $_LANG['surplus_pro_type'] = 'Type';
 $_LANG['repay_money'] = 'Refund money';
-$_LANG['money'] = 'Quantity';
+$_LANG['money'] = 'Số lượng';
 $_LANG['surplus_type_0'] = 'Advance payment';
 $_LANG['surplus_type_1'] = 'Apply for refund';
 $_LANG['deposit_money'] = 'Payment';
@@ -85,7 +69,7 @@ $_LANG['account_js']['payment_empty'] = 'Please select a payment method!';
 /* 缺货登记 */
 $_LANG['oos_booking'] = 'Booking records';
 $_LANG['booking_goods_name'] = 'Name';
-$_LANG['booking_amount'] = 'Quantity';
+$_LANG['booking_amount'] = 'Số lượng';
 $_LANG['booking_time'] = 'Time';
 $_LANG['process_desc'] = 'Remarks';
 $_LANG['describe'] = 'Description';
@@ -329,7 +313,7 @@ $_LANG['to_order_sn'] = 'Secondary order NO.:';
 $_LANG['merge'] = 'Merge';
 $_LANG['notice_order_sn'] = 'The combined information of the order form(such as payment method, shipping method packaging,card,bonus etc) will be correct information, if there are some distinction between two order forms.';
 $_LANG['subtotal'] = 'Subtotal';
-$_LANG['goods_price'] = 'Price';
+$_LANG['goods_price'] = 'Giá';
 $_LANG['goods_attr'] = 'Attribute';
 $_LANG['use_balance'] = 'Balance';
 $_LANG['order_postscript'] = 'Order postscript';
