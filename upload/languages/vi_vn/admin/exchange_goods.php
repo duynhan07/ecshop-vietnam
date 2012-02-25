@@ -17,10 +17,10 @@ $_LANG['goods_id'] ='No.';
 $_LANG['goods_name'] ='Goods';
 $_LANG['exchange_integral'] = 'Using integral';
 $_LANG['is_exchange'] ='Exchange';
-$_LANG['is_hot'] ='Hot';
+$_LANG['is_hot'] ='Hot nhất';
 $_LANG['button_remove'] ='Batch delete';
 
-$_LANG['keywords'] = 'Keywords';
+$_LANG['keywords'] = 'Từ khóa';
 $_LANG['goodsid'] ='Goods';
 $_LANG['make_option'] = 'Please search the options list of products.';
 $_LANG['integral'] ='Integral value';

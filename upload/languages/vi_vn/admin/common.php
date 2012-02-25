@@ -15,108 +15,108 @@
  * $Id: common.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
-$_LANG['app_name'] = 'ECSHOP';
-$_LANG['cp_home'] = 'ECSHOP Management';
-$_LANG['copyright'] = ' &copy; 2005-2011 ECSHOP Copyright, <br> All Right Reserved.';
-$_LANG['query_info'] = 'Run %d queries, spend %s seconds';
-$_LANG['memory_info'] = ',memory occupied:%0.3f MB';
-$_LANG['gzip_enabled'] = ',Gzip enabled';
-$_LANG['gzip_disabled'] = ',Gzip disabled';
-$_LANG['loading'] = 'Processing...';
-$_LANG['js_languages']['process_request'] = 'Processing...';
-$_LANG['js_languages']['todolist_caption'] = 'To do list';
-$_LANG['js_languages']['todolist_autosave'] = 'Auto save';
-$_LANG['js_languages']['todolist_save'] = 'Save';
-$_LANG['js_languages']['todolist_clear'] = 'Clear';
-$_LANG['js_languages']['todolist_confirm_save'] = 'Are you sure save change to To do list?';
-$_LANG['js_languages']['todolist_confirm_clear'] = 'Are you sure clear text?';
-$_LANG['auto_redirection'] = 'If you don\'t select, <span id="spanSeconds">3</span> seconds ago, it will jump to the first URL.';
-$_LANG['password_rule'] = 'Password should only contain english character, figure, long between 6 and 16 bits.';
-$_LANG['username_rule'] = 'Username should be chinese ,english character, figure combination, between 3 and 15 bits.';
-$_LANG['plugins_not_found'] = 'Plug-in %s can\'t be fixed position';
-$_LANG['no_records'] = 'Did not find any record';
-$_LANG['role_describe'] = 'Description';
+$_LANG['app_name'] = 'ECMS Shop';
+$_LANG['cp_home'] = 'Trang quản trị';
+$_LANG['copyright'] = ' &copy; 2009-2012 ECMS Copyright, <br> All Right Reserved.';
+$_LANG['query_info'] = 'Thực thi %d truy vấn, mất %s giây';
+$_LANG['memory_info'] = ', sử dụng:%0.3f MB bộ nhớ';
+$_LANG['gzip_enabled'] = ',Gzip đã bật';
+$_LANG['gzip_disabled'] = ',Gzip đã tắt';
+$_LANG['loading'] = 'Đang xử lý...';
+$_LANG['js_languages']['process_request'] = 'Đang xử lý...';
+$_LANG['js_languages']['todolist_caption'] = 'Việc cần làm';
+$_LANG['js_languages']['todolist_autosave'] = 'Tự động lưu';
+$_LANG['js_languages']['todolist_save'] = 'Lưu lại';
+$_LANG['js_languages']['todolist_clear'] = 'Xóa bỏ';
+$_LANG['js_languages']['todolist_confirm_save'] = 'Bạn có chắc bạn muốn lưu thay đổi việc cần làm?';
+$_LANG['js_languages']['todolist_confirm_clear'] = 'Bạn có muốn xóa nội dung?';
+$_LANG['auto_redirection'] = 'Nếu bạn không chọn trang nào khác, sau <span id="spanSeconds">3</span> giây hệ thống sẽ tự động chuyển.';
+$_LANG['password_rule'] = 'Mật khẩu chỉ bao gồm từ tiếng Anh, số, độ dài trong khoảng 6~16 ký tự.';
+$_LANG['username_rule'] = 'Tài khoản có thể bao gồm tiếng Việt, chữ, số và nằm trong khoảng 3~15 ký tự.';
+$_LANG['plugins_not_found'] = 'Không tìm thấy plugin %s';
+$_LANG['no_records'] = 'Không tìm thấy dữ liệu nào';
+$_LANG['role_describe'] = 'Mô tả';
 
 $_LANG['require_field'] = '<span class="require-field">*</span>';
-$_LANG['yes'] = 'Yes';
-$_LANG['no'] = 'No';
+$_LANG['yes'] = 'Có';
+$_LANG['no'] = 'Không';
 $_LANG['record_id'] = 'ID';
-$_LANG['handler'] = 'Operate';
-$_LANG['install'] = 'Install';
-$_LANG['uninstall'] = 'Uninstall';
-$_LANG['list'] = 'List';
-$_LANG['add'] = 'Add';
-$_LANG['edit'] = 'Edit';
-$_LANG['view'] = 'View';
-$_LANG['remove'] = 'Remove';
-$_LANG['drop'] = 'Delete';
-$_LANG['confirm_delete'] = 'Are you sure you want to delete?';
-$_LANG['disabled'] = 'Disabled';
-$_LANG['enabled'] = 'Enabled';
-$_LANG['setup'] = 'Setup';
-$_LANG['success'] = 'Success';
-$_LANG['sort_order'] = 'Sort';
-$_LANG['trash'] = 'Recycle bin';
-$_LANG['restore'] = 'Restore';
-$_LANG['close_window'] = 'Close Window';
-$_LANG['btn_select'] = 'Choose';
+$_LANG['handler'] = 'Thao tác';
+$_LANG['install'] = 'Cài đặt';
+$_LANG['uninstall'] = 'Gỡ bỏ';
+$_LANG['list'] = 'D.sách';
+$_LANG['add'] = 'Thêm';
+$_LANG['edit'] = 'Sửa';
+$_LANG['view'] = 'Xem';
+$_LANG['remove'] = 'Loại bỏ';
+$_LANG['drop'] = 'Xóa';
+$_LANG['confirm_delete'] = 'Bạn có chắc bạn muốn xóa?';
+$_LANG['disabled'] = 'Đã tắt';
+$_LANG['enabled'] = 'Đã bật';
+$_LANG['setup'] = 'Thiết lập';
+$_LANG['success'] = 'Thành công';
+$_LANG['sort_order'] = 'Sắp xếp';
+$_LANG['trash'] = 'Thùng rác';
+$_LANG['restore'] = 'Khôi phục';
+$_LANG['close_window'] = 'Đóng cửa sổ';
+$_LANG['btn_select'] = 'Chọn';
 $_LANG['operator'] = 'Operator';
-$_LANG['cancel'] = 'Cancel';
+$_LANG['cancel'] = 'Hủy bỏ';
 
-$_LANG['empty'] = 'Can\'t be blank';
-$_LANG['repeat'] = 'Existed';
-$_LANG['is_int'] = 'It must be an integer';
+$_LANG['empty'] = 'Không được để trống';
+$_LANG['repeat'] = 'Đã tồn tại';
+$_LANG['is_int'] = 'Phải là một số';
 
-$_LANG['button_submit'] = ' Submit ';
-$_LANG['button_save'] = ' Save ';
-$_LANG['button_reset'] = ' Reset ';
-$_LANG['button_search'] = ' Search ';
+$_LANG['button_submit'] = ' Gửi đi ';
+$_LANG['button_save'] = ' Lưu lại ';
+$_LANG['button_reset'] = ' Làm lại ';
+$_LANG['button_search'] = ' Tìm kiếm ';
 
-$_LANG['priv_error'] = 'Sorry, you haven\'t authorization to run this operation!';
-$_LANG['drop_confirm'] = 'Are you sure delete this record?';
-$_LANG['form_notice'] = 'View notices';
-$_LANG['upfile_type_error'] = 'Upload file type error!';
-$_LANG['upfile_error'] = 'Upload file error!';
-$_LANG['no_operation'] = 'You do not choose any action';
+$_LANG['priv_error'] = 'Xin lỗi, bạn không có đủ quyền hạn để thực thi thao tác này!';
+$_LANG['drop_confirm'] = 'Bạn có chắc bạn muốn xóa dữ liệu này?';
+$_LANG['form_notice'] = 'Xem thông báo';
+$_LANG['upfile_type_error'] = 'Định dạng tệp upload không hợp lệ!';
+$_LANG['upfile_error'] = 'Có lỗi phát sinh trong quá trình upload tệp tin!';
+$_LANG['no_operation'] = 'Bạn không chọn thao tác nào!';
 
-$_LANG['go_back'] = 'Previous';
-$_LANG['back'] = 'Back';
-$_LANG['continue'] = 'Continue';
-$_LANG['system_message'] = 'System information';
-$_LANG['check_all'] = 'Check all';
-$_LANG['select_please'] = 'Please select...';
-$_LANG['all_category'] = 'All categories';
-$_LANG['all_brand'] = 'All brand';
-$_LANG['refresh'] = 'Refresh';
-$_LANG['update_sort'] = 'Update sort';
-$_LANG['modify_failure'] = 'Modify failure!';
-$_LANG['attradd_succed'] = 'Operate successfully!';
-$_LANG['todolist'] = 'To do list';
+$_LANG['go_back'] = 'Quay lại';
+$_LANG['back'] = 'Quay về';
+$_LANG['continue'] = 'Tiếp tục';
+$_LANG['system_message'] = 'Thông tin hệ thống';
+$_LANG['check_all'] = 'Chọn tất';
+$_LANG['select_please'] = 'PVui lòng chọn...';
+$_LANG['all_category'] = 'Tất cả danh mục';
+$_LANG['all_brand'] = 'Tất cả thương hiệu';
+$_LANG['refresh'] = 'Làm mới';
+$_LANG['update_sort'] = 'Cập nhật thứ tự';
+$_LANG['modify_failure'] = 'Chỉnh sửa không thành công!';
+$_LANG['attradd_succed'] = 'Thục thi thao tác thành công!';
+$_LANG['todolist'] = 'Việc cần làm';
 $_LANG['n_a'] = 'N/A';
 
 /* Coding */
-$_LANG['charset']['utf8'] = 'Internationalization coding(utf8)';
+$_LANG['charset']['utf8'] = 'Code chuẩn(utf8)';
 $_LANG['charset']['en_us'] = 'America english';
 /* New order notify */
-$_LANG['order_notify'] = 'New order notify';
-$_LANG['new_order_1'] = 'You have ';
-$_LANG['new_order_2'] = ' New orders and ';
-$_LANG['new_order_3'] = ' New paid orders';
-$_LANG['new_order_link'] = 'View new orders';
+$_LANG['order_notify'] = 'Thông báo đơn hàng mới';
+$_LANG['new_order_1'] = 'Bạn có ';
+$_LANG['new_order_2'] = ' đơn hàng mới và ';
+$_LANG['new_order_3'] = ' đơn hàng đã thanh toán';
+$_LANG['new_order_link'] = 'Xem các đơn hàng mới';
 
 /* Language item*/
-$_LANG['chinese_simplified'] = 'Simplified chinese';
+$_LANG['vietnamese'] = 'Tiếng Việt';
 $_LANG['english'] = 'English';
 
 /* Pagination */
-$_LANG['total_records'] = 'Total ';
-$_LANG['total_pages'] = 'records, divided into ';
-$_LANG['page_size'] = 'page, per page';
-$_LANG['page_current'] = 'pages,  current No.';
-$_LANG['page_first'] = 'First';
-$_LANG['page_prev'] = 'Prev';
-$_LANG['page_next'] = 'Next';
-$_LANG['page_last'] = 'Last';
+$_LANG['total_records'] = 'Tổng cộng ';
+$_LANG['total_pages'] = 'dữ liệu, chia thành ';
+$_LANG['page_size'] = 'trang, mỗi trang';
+$_LANG['page_current'] = 'trang, trang hiện tại';
+$_LANG['page_first'] = 'Đầu';
+$_LANG['page_prev'] = 'Trước';
+$_LANG['page_next'] = 'Sau';
+$_LANG['page_last'] = 'Cuối';
 $_LANG['admin_home'] = 'HOME';
 
 /* Weight */
@@ -124,54 +124,54 @@ $_LANG['gram'] = 'Gram';
 $_LANG['kilogram'] = 'Kilogram';
 
 /* Menu category */
-$_LANG['02_cat_and_goods'] = 'Product';
+$_LANG['02_cat_and_goods'] = 'Sản phẩm';
 $_LANG['03_promotion'] = 'Sales promotion';
-$_LANG['04_order'] = 'Order';
-$_LANG['05_banner'] = 'Advertisement';
-$_LANG['06_stats'] = 'Reports Statistic';
-$_LANG['07_content'] = 'Article';
-$_LANG['08_members'] = 'Member';
-$_LANG['09_others'] = 'Others';
-$_LANG['10_priv_admin'] = 'Authorization';
-$_LANG['11_system'] = 'System Setup';
-$_LANG['12_template'] = 'Template';
-$_LANG['13_backup'] = 'Database';
-$_LANG['14_sms'] = 'Short Message';
+$_LANG['04_order'] = 'Đơn hàng';
+$_LANG['05_banner'] = 'Quảng cáo';
+$_LANG['06_stats'] = 'Báo cáo thống kê';
+$_LANG['07_content'] = 'Bài viết';
+$_LANG['08_members'] = 'Thành viên';
+$_LANG['09_others'] = 'Khác';
+$_LANG['10_priv_admin'] = 'Quyền hạn';
+$_LANG['11_system'] = 'Thiết lập hệ thống';
+$_LANG['12_template'] = 'Giao diện';
+$_LANG['13_backup'] = 'Dữ liệu';
+$_LANG['14_sms'] = 'Tin nhắn riêng';
 $_LANG['15_rec'] = 'Recommend management';
-$_LANG['16_email_manage'] = 'Mass-mailing management';
+$_LANG['16_email_manage'] = 'Gửi mail thông báo';
 
 /* Product management */
-$_LANG['01_goods_list'] = 'Product List';
-$_LANG['02_goods_add'] = 'New Product';
-$_LANG['03_category_list'] = 'Product Category';
-$_LANG['04_category_add'] = 'New Category';
-$_LANG['05_comment_manage'] = 'User Comments';
-$_LANG['06_goods_brand_list'] = 'Product Brand';
-$_LANG['07_brand_add'] = 'New Brand';
-$_LANG['08_goods_type'] = 'Product Type';
-$_LANG['09_attribute_list'] = 'Product Attribute';
-$_LANG['10_attribute_add'] = 'Add Attribute';
-$_LANG['11_goods_trash'] = 'Recycle Bin';
-$_LANG['12_batch_pic'] = 'Pictures Processor ';
-$_LANG['13_batch_add'] = 'Upload Products';
-$_LANG['15_batch_edit'] = 'Batch Edit';
-$_LANG['16_goods_script'] = 'Product Code';
+$_LANG['01_goods_list'] = 'Danh sách sản phẩm';
+$_LANG['02_goods_add'] = 'Sản phẩm mới';
+$_LANG['03_category_list'] = 'Danh mục sản phẩm';
+$_LANG['04_category_add'] = 'Thêm danh mục mới';
+$_LANG['05_comment_manage'] = 'Nhận xét thành viên';
+$_LANG['06_goods_brand_list'] = 'Thương hiệu sản phẩm';
+$_LANG['07_brand_add'] = 'Thêm thương hiệu mới';
+$_LANG['08_goods_type'] = 'Loại sản phẩm';
+$_LANG['09_attribute_list'] = 'Thuộc tính sản phẩm';
+$_LANG['10_attribute_add'] = 'Thêm thuộc tính';
+$_LANG['11_goods_trash'] = 'Thùng rác';
+$_LANG['12_batch_pic'] = 'Xử lý hình ảnh';
+$_LANG['13_batch_add'] = 'Upload sản phẩm';
+$_LANG['15_batch_edit'] = 'Sửa loạt sản phẩm';
+$_LANG['16_goods_script'] = 'Mã sản phẩm JS';
 $_LANG['17_tag_manage'] = 'Tag';
-$_LANG['52_attribute_add'] = 'Edit Attribute';
-$_LANG['53_suppliers_goods'] = 'Management of suppliers of goods';
+$_LANG['52_attribute_add'] = 'Sửa thuộc tính';
+$_LANG['53_suppliers_goods'] = 'Quản lý nhà cung cấp sản phẩm';
 
-$_LANG['14_goods_export'] = 'Merchandise export volume';
+$_LANG['14_goods_export'] = 'Export sản phẩm';
 
-$_LANG['50_virtual_card_list'] = 'Virtual Goods List';
-$_LANG['51_virtual_card_add'] = 'New Virtual Goods';
-$_LANG['52_virtual_card_change'] = 'Change encrypt string';
-$_LANG['goods_auto'] = 'Automatic merchandise from top to bottom rack';
-$_LANG['article_auto'] = 'Published article automatically';
-$_LANG['navigator'] = 'Custom navigation bar';
+$_LANG['50_virtual_card_list'] = 'Danh sách sản phẩm ảo';
+$_LANG['51_virtual_card_add'] = 'Thêm sản phẩm ảo';
+$_LANG['52_virtual_card_change'] = 'Đổi chuỗi mã hóa';
+$_LANG['goods_auto'] = 'Tự động đẩy sản phẩm lên top';
+$_LANG['article_auto'] = 'Tự động đẩy bài';
+$_LANG['navigator'] = 'Tùy chọn NAV';
 
 /* Sales promotion management */
-$_LANG['02_snatch_list'] = 'Dutch Auction';
-$_LANG['snatch_add'] = 'Add Dutch Auction';
+$_LANG['02_snatch_list'] = 'Đấu giá ngược';
+$_LANG['snatch_add'] = 'Thêm đấu giá';
 $_LANG['04_bonustype_list'] = 'Bonus Type';
 $_LANG['bonustype_add'] = 'Add Bonus Type';
 $_LANG['05_bonus_list'] = 'Bonus Offline';
@@ -180,7 +180,7 @@ $_LANG['06_pack_list'] = 'Product Packing';
 $_LANG['07_card_list'] = 'Greetings Card';
 $_LANG['pack_add'] = 'New Packing';
 $_LANG['card_add'] = 'New Card';
-$_LANG['08_group_buy'] = 'Associates';
+$_LANG['08_group_buy'] = 'Nhóm mua';
 $_LANG['09_topic'] = 'Topic';
 $_LANG['topic_add'] = 'Add Topic';
 $_LANG['topic_list'] = 'Topic List';
@@ -192,47 +192,47 @@ $_LANG['14_package_list'] = 'Preferential Packeage';
 $_LANG['package_add'] = 'Add Preferential Packeage';
 
 /* Orders management */
-$_LANG['02_order_list'] = 'Order List';
-$_LANG['03_order_query'] = 'Order Query';
-$_LANG['04_merge_order'] = 'Combine Orders';
-$_LANG['05_edit_order_print'] = 'Print Orders';
+$_LANG['02_order_list'] = 'Danh sách đơn hàng';
+$_LANG['03_order_query'] = 'Tìm đơn hàng';
+$_LANG['04_merge_order'] = 'Gộp đơn hàng';
+$_LANG['05_edit_order_print'] = 'In đơn hàng';
 $_LANG['06_undispose_booking'] = 'Booking Records';
-$_LANG['08_add_order'] = 'Add Order';
-$_LANG['09_delivery_order'] = 'Delivery Order';
-$_LANG['10_back_order'] = 'Returned Order';
+$_LANG['08_add_order'] = 'Thêm đơn hàng';
+$_LANG['09_delivery_order'] = 'Đơn hàng đã chuyển';
+$_LANG['10_back_order'] = 'Đơn hàng trả về';
 
 /* AD management */
-$_LANG['ad_position'] = 'AD Position';
-$_LANG['ad_list'] = 'AD List';
+$_LANG['ad_position'] = 'Vị trí quảng cáo';
+$_LANG['ad_list'] = 'Danh sách quảng cáo';
 
 /* Report statistic */
-$_LANG['flow_stats'] = 'Flux Analyse';
-$_LANG['searchengine_stats'] = 'Search engine';
-$_LANG['report_order'] = 'Order Statistic';
-$_LANG['report_sell'] = 'Sales Survey';
-$_LANG['sell_stats'] = 'Sales Ranking';
-$_LANG['sale_list'] = 'Sales Details';
-$_LANG['report_guest'] = 'Client Statistic';
-$_LANG['report_users'] = 'User Ranking';
-$_LANG['visit_buy_per'] = 'Visit Purchase Rate';
-$_LANG['z_clicks_stats'] = 'External Laid JS';
+$_LANG['flow_stats'] = 'Biểu đồ thống kê';
+$_LANG['searchengine_stats'] = 'Bộ máy tìm keiems';
+$_LANG['report_order'] = 'Thống kê đơn hàng';
+$_LANG['report_sell'] = 'Báo cáo kinh doanh';
+$_LANG['sell_stats'] = 'Thống kê kinh doanh';
+$_LANG['sale_list'] = 'Chi tiết bán hàng';
+$_LANG['report_guest'] = 'Thống kê khách hàng';
+$_LANG['report_users'] = 'Báo cáo về người dùng';
+$_LANG['visit_buy_per'] = 'Tỷ lệ mua hàng';
+$_LANG['z_clicks_stats'] = 'Mã js cho site ngoài';
 
 /* Article management */
-$_LANG['02_articlecat_list'] = 'Article Category';
-$_LANG['articlecat_add'] = 'New Article Category';
-$_LANG['03_article_list'] = 'Articles';
-$_LANG['article_add'] = 'New Article';
-$_LANG['shop_article'] = 'Shop Article';
-$_LANG['shop_info'] = 'Shop Information';
-$_LANG['shop_help'] = 'Shop Help';
-$_LANG['vote_list'] = 'Vote Online';
+$_LANG['02_articlecat_list'] = 'Danh mục bài viết';
+$_LANG['articlecat_add'] = 'Thêm danh mục mới';
+$_LANG['03_article_list'] = 'Bài viết';
+$_LANG['article_add'] = 'Viết bài mới';
+$_LANG['shop_article'] = 'Bài viết từ cửa hàng';
+$_LANG['shop_info'] = 'Thông tin cửa hàng';
+$_LANG['shop_help'] = 'Trợ giúp gian hàng';
+$_LANG['vote_list'] = 'Bình chọn trực tuyến';
 
 /* User management */
-$_LANG['08_unreply_msg'] = 'User Message';
-$_LANG['03_users_list'] = 'Users';
-$_LANG['04_users_add'] = 'New User';
-$_LANG['05_user_rank_list'] = 'User Rank';
-$_LANG['06_list_integrate'] = 'Integrate User';
+$_LANG['08_unreply_msg'] = 'Tin nhắn riêng';
+$_LANG['03_users_list'] = 'Người dùng';
+$_LANG['04_users_add'] = 'Thêm tài khoản';
+$_LANG['05_user_rank_list'] = 'Cấp bậc';
+$_LANG['06_list_integrate'] = 'Thành viên đồng bộ';
 $_LANG['09_user_account'] = 'Saving and drawing application';
 $_LANG['10_user_account_manage'] = 'account_manage';
 

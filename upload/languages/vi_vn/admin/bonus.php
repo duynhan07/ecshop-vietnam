@@ -50,9 +50,9 @@ $_LANG['report_form'] = 'Report';
 $_LANG['send'] = 'Send';
 $_LANG['bonus_excel_file'] = 'Offline bonus information list ';
 
-$_LANG['goods_cat'] = 'Category';
-$_LANG['goods_brand'] = 'Brand';
-$_LANG['goods_key'] = 'Keywords';
+$_LANG['goods_cat'] = 'Danh mục';
+$_LANG['goods_brand'] = 'Thương hiệu';
+$_LANG['goods_key'] = 'Từ khóa';
 $_LANG['all_goods'] = 'Optional product';
 $_LANG['send_bouns_goods'] = 'Provide the type bonus product';
 $_LANG['remove_bouns'] = 'Remove bonus';

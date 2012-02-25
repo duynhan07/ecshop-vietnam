@@ -67,7 +67,7 @@ $_LANG['search_result_empty'] = 'Record not found a corresponding, re-search';
 $_LANG['label_search_and_add_gift'] = 'Search and add gifts (goods ex-gratia)';
 $_LANG['js_languages']['price_need_not_search'] = 'Concessions is to enjoy price discounts do not need this operation';
 $_LANG['js_languages']['gift'] = 'Gifts (goods ex-gratia)';
-$_LANG['js_languages']['price'] = 'Price';
+$_LANG['js_languages']['price'] = 'Giá';
 
 $_LANG['js_languages']['act_name_not_null'] = 'Please enter the name of concessions Events';
 $_LANG['js_languages']['min_amount_not_number'] = 'The minimum amount is not formatted correctly (figure)';

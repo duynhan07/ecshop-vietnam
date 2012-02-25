@@ -110,7 +110,7 @@ $_LANG['api_errors']['send'][6] = 'Account is stoped.';
 $_LANG['api_errors']['send'][7] = 'Port error.';
 //--History record
 $_LANG['api_errors']['get_history'][1] = 'Password is invalid.';
-$_LANG['api_errors']['get_history'][2] = 'No record.';
+$_LANG['api_errors']['get_history'][2] = 'Không có bản ghi nào.';
 //--User verify
 $_LANG['api_errors']['auth'][1] = 'Password error.';
 $_LANG['api_errors']['auth'][2] = 'No user.';

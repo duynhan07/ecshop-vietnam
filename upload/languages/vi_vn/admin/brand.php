@@ -15,7 +15,7 @@
  * $Id: brand.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
-$_LANG['brand_name'] = 'Brand';
+$_LANG['brand_name'] = 'Thương hiệu';
 $_LANG['site_url'] = 'Website';
 $_LANG['brand_desc'] = 'Description';
 $_LANG['brand_logo'] = 'LOGO';

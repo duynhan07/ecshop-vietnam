@@ -1,24 +1,11 @@
 <?php
 
-/**
- * ECSHOP Front language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: common.php 17217 2011-01-19 06:29:08Z liubo $
-*/
+/* Ngôn ngữ sử dụng khi người dùng đăng nhập */
+$_LANG['empty_username_password'] = 'Vui lòng nhập tên tài khoản hoặc mật khẩu.';
+$_LANG['shot_message'] = "Tin nhắn riêng";
 
-/* 用户登录语言项 */
-$_LANG['empty_username_password'] = 'Please enter username and password.';
-$_LANG['shot_message'] = "Short message";
-
-/* 公共语言项 */
-$_LANG['sys_msg'] = 'System Message';
+/* Ngôn ngữ thường dùng */
+$_LANG['sys_msg'] = 'Tin nhắn hệ thống';
 $_LANG['catalog'] = 'Catalog';
 $_LANG['please_view_order_detail'] = 'Please view order detail in Member Center';
 $_LANG['user_center'] = 'User Center';
@@ -35,22 +22,22 @@ $_LANG['back_up_page'] = 'Previous';
 $_LANG['close_window'] = 'superman wear the underwear out of the trousers';
 $_LANG['back_home'] = 'Home';
 $_LANG['ur_here'] = 'Your Position:';
-$_LANG['all_goods'] = 'All products';
+$_LANG['all_goods'] = 'Tất cả sản phẩm';
 $_LANG['all_recommend'] = "All recommend";
 $_LANG['all_attribute'] = "All";
 $_LANG['promotion_goods'] = 'Promotion products';
-$_LANG['best_goods'] = 'Best';
-$_LANG['new_goods'] = 'New';
-$_LANG['hot_goods'] = 'Hot';
+$_LANG['best_goods'] = 'Tốt nhất';
+$_LANG['new_goods'] = 'Mới nhất';
+$_LANG['hot_goods'] = 'Hot nhất';
 $_LANG['view_cart'] = 'Cart';
 $_LANG['catalog'] = 'Categories';
-$_LANG['regist_login'] = 'Register/Login';
-$_LANG['profile'] = 'Profile';
-$_LANG['query_info'] = 'Run %d queries, spents %f seconds, %d people online';
+$_LANG['regist_login'] = 'Đăng ký/Đăng nhập';
+$_LANG['profile'] = 'Hồ sơ';
+$_LANG['query_info'] = 'Thực thi %d truy vấn, mất %f giây, %d người trực tuyến';
 $_LANG['gzip_enabled'] = '，Gzip enabled';
 $_LANG['gzip_disabled'] = '，Gzip disabled';
 $_LANG['memory_info'] = '，take up memory %0.3f MB';
-$_LANG['cart_info'] = '%d products in your cart, total money %s.';
+$_LANG['cart_info'] = '%d sản phẩm, tổng tiền %s.';
 $_LANG['shopping_and_other'] = 'Customers who bought this item also bought.';
 $_LANG['bought_notes'] = 'Bought notes';
 $_LANG['later_bought_amounts'] = 'bought amounts latest';
@@ -67,14 +54,14 @@ $_LANG['collect'] = 'Collect';
 $_LANG['add_to_cart'] = '| Add to cart |';
 $_LANG['return_to_cart'] = 'Return to cart';
 $_LANG['search_goods'] = 'Product search';
-$_LANG['search'] = 'Search';
+$_LANG['search'] = 'Tìm kiếm';
 $_LANG['wholesale_search'] = 'Search for wholesale merchandise';
 $_LANG['article_title'] = 'Article title';
 $_LANG['article_author'] = 'Author';
 $_LANG['article_add_time'] = 'Date';
 $_LANG['relative_file'] = '[ Helpful Links ]';
-$_LANG['category'] = 'Category';
-$_LANG['brand'] = 'Brand';
+$_LANG['category'] = 'Danh mục';
+$_LANG['brand'] = 'Thương hiệu';
 $_LANG['price_min'] = 'Min price';
 $_LANG['price_max'] = 'Max price';
 $_LANG['goods_name'] = 'Name';
@@ -85,7 +72,7 @@ $_LANG['shop_prices'] = 'Shop price';
 $_LANG['market_prices'] = 'Market price';
 $_LANG['deposit'] = 'Associates bail';
 $_LANG['amount'] = 'Total';
-$_LANG['number'] = 'Quantity';
+$_LANG['number'] = 'Số lượng';
 $_LANG['handle'] = 'Operate';
 $_LANG['add'] = 'Add';
 $_LANG['edit'] = 'Edit';
@@ -101,26 +88,26 @@ $_LANG['order_number'] = 'NO.';
 $_LANG['consignment'] = 'Invoice';
 $_LANG['activities'] = 'Goods activities';
 $_LANG['remark_package'] = 'Preferential Packeage';
-$_LANG['old_price'] = 'Old Price：';
+$_LANG['old_price'] = 'Giá cũ:';
 $_LANG['package_price'] = 'Packeage Price：';
 $_LANG['then_old_price'] = 'Then old Price：';
 $_LANG['free_goods'] = 'Free shipping goods';
 
-$_LANG['searchkeywords_notice'] = 'Search by more keywords, can be linked by keywords or "AND". Eg. win32 AND unix<br /> Search by part of "+", can be linked by rank or "OR". Eg. win32 OR unix';
-$_LANG['hidden_outstock'] = 'Hide outstock products';
-$_LANG['keywords'] = 'Keywords';
-$_LANG['sc_ds'] = 'Search description';
-$_LANG['button_search'] = 'Search';
-$_LANG['no_search_result'] = 'Cannot find products';
-$_LANG['all_category'] = 'All categories';
-$_LANG['all_brand'] = 'All brands';
+$_LANG['searchkeywords_notice'] = 'Để tìm kiếm nhiều từ khóa, bạn có thể liên kết từ khóa bằng "AND". VD. win32 AND unix<br /> Tìm từng phần bằng "+", có thể liên kết bằng "OR". VD. win32 OR unix';
+$_LANG['hidden_outstock'] = 'Ẩn sản phẩm đã hết hàng';
+$_LANG['keywords'] = 'Từ khóa';
+$_LANG['sc_ds'] = 'Tìm trong mô tả';
+$_LANG['button_search'] = 'Tìm kiếm';
+$_LANG['no_search_result'] = 'Không tìm thấy sản phẩm nào...';
+$_LANG['all_category'] = 'Tất cả danh mục';
+$_LANG['all_brand'] = 'Tất cả thương hiệu';
 $_LANG['all_option'] = 'All options';
 $_LANG['extension'] = 'Extension';
 $_LANG['gram'] = 'gram';
 $_LANG['kilogram'] = 'kilogram';
 $_LANG['goods_sn'] = 'NO.:';
-$_LANG['goods_brand'] = 'Brand:';
-$_LANG['goods_weight'] = 'Weight:';
+$_LANG['goods_brand'] = 'Thương hiệu:';
+$_LANG['goods_weight'] = 'Trọng lượng:';
 $_LANG['goods_number'] = 'Quantity:';
 $_LANG['goods_give_integral'] = 'gifts for buying:';
 $_LANG['goods_integral'] = 'Limit points for buying:';
@@ -141,14 +128,14 @@ $_LANG['number_to'] = 'number';
 $_LANG['article_list'] = 'Article list';
 
 /* 商品比较JS语言项 */
-$_LANG['compare_js']['button_compare'] = 'Compare chosen products';
-$_LANG['compare_js']['exist'] = 'You have chosen %s';
-$_LANG['compare_js']['count_limit'] = 'Maximum 4 products can be chosen for comparison';
-$_LANG['compare_js']['goods_type_different'] = '\"%s\"cannot be compared with products chosen due to types differences';
+$_LANG['compare_js']['button_compare'] = 'So sánh sản phẩm đã chọn';
+$_LANG['compare_js']['exist'] = 'Bạn đã chọn %s';
+$_LANG['compare_js']['count_limit'] = 'Chỉ có thể chọn tối đa 4 sản phẩm để so sánh';
+$_LANG['compare_js']['goods_type_different'] = '\"%s\" không thể so sánh với sản phẩm đã chọn vì khác loại';
 
 $_LANG['bonus'] = 'Bonus:';
-$_LANG['no_comments'] = 'No comment';
-$_LANG['give_comments_rank'] = 'Give comment';
+$_LANG['no_comments'] = 'Không có nhận xét nào';
+$_LANG['give_comments_rank'] = 'Gửi nhận xét';
 $_LANG['comments_rank'] = 'Comment';
 $_LANG['comment_num'] = "%d comments";
 $_LANG['login_please'] = 'You can\'t shopping until login.';
@@ -175,7 +162,7 @@ $_LANG['tag_anonymous'] = 'Sorry, you can\'t submit the tag until register and l
 $_LANG['tag_cloud_desc'] = 'A tag cloud or word cloud is a visual depiction of user-generated tags , or simply the word content of a site, used typically to describe the content of web sites.';
 
 /* AJAX 相关 */
-$_LANG['invalid_captcha'] = 'Please enter a valid verification code.';
+$_LANG['invalid_captcha'] = 'Vui lòng nhập đúng mã xác thực.';
 $_LANG['goods_exists'] = 'Sorry, the same product has existed in your cart.';
 $_LANG['fitting_goods_exists'] = 'Sorry，The accessories in your shopping cart already exists。';
 $_LANG['invalid_number'] = 'Please enter a valid number.';
@@ -288,7 +275,7 @@ $_LANG['order_placed'] = 'Your order has been placed, if you would like to repur
 $_LANG['select_spe'] = 'Please choose attributes of the goods';
 
 /* 购物流程中的订单部分 */
-$_LANG['price'] = 'Price';
+$_LANG['price'] = 'Giá';
 $_LANG['name'] = 'Name';
 $_LANG['describe'] = 'Description';
 $_LANG['fee'] = 'Money';
@@ -401,8 +388,8 @@ $_LANG['gbs_finished'] = 'Associates has closed, processing...';
 $_LANG['gbs_succeed'] = 'Associates has closed successfully!';
 $_LANG['gbs_fail'] = 'Failure, associates has closed.';
 $_LANG['gb_price_ladder'] = 'Price step:';
-$_LANG['gb_ladder_amount'] = 'Quantity';
-$_LANG['gb_ladder_price'] = 'Price';
+$_LANG['gb_ladder_amount'] = 'Số lượng';
+$_LANG['gb_ladder_price'] = 'Giá';
 $_LANG['gb_deposit'] = 'Insurance:';
 $_LANG['gb_restrict_amount'] = 'Limit quantity:';
 $_LANG['gb_gift_integral'] = 'Present points:';
@@ -498,9 +485,9 @@ $_LANG['balance'] = 'balance';
 $_LANG['along_with'] = 'and';
 $_LANG['preferential'] = 'bonus.';
 $_LANG['edit_user_info'] = 'Member Center';
-$_LANG['logout'] = 'Logout';
-$_LANG['user_logout'] = 'Logout';
-$_LANG['welcome'] = 'Welcome';
+$_LANG['logout'] = 'Thoát';
+$_LANG['user_logout'] = 'Thoát';
+$_LANG['welcome'] = 'Chào mừng';
 $_LANG['user_login'] = 'User login';
 $_LANG['login_now'] = 'Login now';
 $_LANG['reg_now'] = 'Register now';
@@ -508,7 +495,7 @@ $_LANG['reg_now'] = 'Register now';
 /* 商品品牌页 */
 $_LANG['official_site'] = 'Official website:';
 $_LANG['brand_category'] = 'Brand categories:';
-$_LANG['all_category'] = 'All categories';
+$_LANG['all_category'] = 'Tất cả danh mục';
 
 /* 商品分类页 */
 $_LANG['goods_filter'] = 'Goods filter';
@@ -709,8 +696,8 @@ $_LANG['orgtotal'] = 'Original Price';
 $_LANG['heart_buy'] = 'Take Action';
 
 /* 其他模板涉及常用语言项 */
-$_LANG['label_regist'] = 'regist';
-$_LANG['label_login'] = 'login';
+$_LANG['label_regist'] = 'Đăng ký';
+$_LANG['label_login'] = 'Đăng nhập';
 $_LANG['label_profile'] = 'user profile';
 $_LANG['label_collection'] = 'my collection';
 $_LANG['article_list'] = 'article list';

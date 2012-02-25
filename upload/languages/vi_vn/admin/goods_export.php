@@ -245,7 +245,7 @@ $_LANG['custom']['is_real'] = 'is_real';
 
 $_LANG['custom_keyword'] = 'Keyword';
 $_LANG['custom_goods_cat'] = 'All Categories';
-$_LANG['custom_goods_brand'] = 'All brands';
+$_LANG['custom_goods_brand'] = 'Tất cả thương hiệu';
 $_LANG['custom_goods_list'] = 'Select merchandise data columns';
 $_LANG['custom_goods_type'] = 'All types of merchandise';
 $_LANG['custom_export_list'] = 'Merchandise export data columns';
@@ -256,7 +256,7 @@ $_LANG['custom_goods_field_not_null'] = 'Output data out of the merchandise shou
 
 // 导出条件
 $_LANG['export_condition'] = 'Export volume of goods data';
-$_LANG['export_condition_search'] = 'Search';
+$_LANG['export_condition_search'] = 'Tìm kiếm';
 $_LANG['export_format'] = 'Data Format';
 
 ?>

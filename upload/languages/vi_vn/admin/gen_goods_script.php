@@ -14,7 +14,7 @@
  * $Id: gen_goods_script.php 17217 2011-01-19 06:29:08Z liubo $
  */
 $_LANG['label_category'] = 'Category:';
-$_LANG['label_brand'] = 'Brand:';
+$_LANG['label_brand'] = 'Thương hiệu:';
 $_LANG['label_intro_type'] = 'Recommend type:';
 $_LANG['label_need_image'] = 'Display product image:';
 $_LANG['label_goods_num'] = 'Display product quantity:';
@@ -23,7 +23,7 @@ $_LANG['label_rows_num'] = 'Showing entries with a few:';
 $_LANG['label_charset'] = 'Charset:';
 $_LANG['label_sitename'] = 'Quote website:';
 
-$_LANG['all_category'] = 'All categories';
+$_LANG['all_category'] = 'Tất cả danh mục';
 $_LANG['all_brand'] = 'All brand';
 $_LANG['all_intro_type'] = 'All recommend type';
 $_LANG['need'] = 'Display';
@@ -32,9 +32,9 @@ $_LANG['horizontal'] = 'Horizontal';
 $_LANG['verticle'] = 'Vertical';
 $_LANG['generate'] = 'Create code';
 
-$_LANG['intro']['is_best'] = 'Best';
-$_LANG['intro']['is_new'] = 'New';
-$_LANG['intro']['is_hot'] = 'Hot';
+$_LANG['intro']['is_best'] = 'Tốt nhất';
+$_LANG['intro']['is_new'] = 'Mới nhất';
+$_LANG['intro']['is_hot'] = 'Hot nhất';
 $_LANG['intro']['is_promote'] = 'Sales promotion';
 $_LANG['intro']['is_random'] = 'Random';
 

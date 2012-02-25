@@ -16,12 +16,12 @@
 */
 
 $_LANG['title'] ='Title';
-$_LANG['cat'] ='Category';
+$_LANG['cat'] ='Danh mục';
 $_LANG['reserve'] = 'Reserve';
 $_LANG['article_type'] ='Importance';
 $_LANG['author'] ='Author';
 $_LANG['email'] ='Email';
-$_LANG['keywords'] ='Keywords';
+$_LANG['keywords'] ='Từ khóa';
 $_LANG['lable_description'] ='Page Description';
 $_LANG['content'] ='Content';
 $_LANG['is_open'] ='Display';
@@ -58,7 +58,7 @@ $_LANG['tab_content'] = 'Content';
 $_LANG['tab_goods'] = 'Relational product';
 
 $_LANG['link_goods'] = 'Products related to article';
-$_LANG['keyword'] = 'Keywords';
+$_LANG['keyword'] = 'Từ khóa';
 
 /* Prompting message */
 $_LANG['title_exist'] ='%s already exists.';

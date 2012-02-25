@@ -24,7 +24,7 @@ $_LANG['end_time'] = 'Deadline';
 $_LANG['min_price'] = 'Min price';
 $_LANG['max_price'] = 'Max price';
 $_LANG['price'] = 'Payment at most';
-$_LANG['short_price'] = 'Price';
+$_LANG['short_price'] = 'Giá';
 $_LANG['integral'] = 'Consume points';
 $_LANG['view_detail'] = 'View details';
 $_LANG['snatch_edit'] = 'Edit Dutch auction';
@@ -32,7 +32,7 @@ $_LANG['desc'] = 'Description';
 $_LANG['more_goods'] = 'More...';
 
 $_LANG['make_option'] = 'Please search the options list of products.';
-$_LANG['keywords'] = 'Keywords';
+$_LANG['keywords'] = 'Từ khóa';
 
 $_LANG['log_id'] = 'Log ID';
 $_LANG['bid_time'] = 'Dutch auction time';
