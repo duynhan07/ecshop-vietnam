@@ -84,7 +84,7 @@ $_LANG['back'] = 'Quay về';
 $_LANG['continue'] = 'Tiếp tục';
 $_LANG['system_message'] = 'Thông tin hệ thống';
 $_LANG['check_all'] = 'Chọn tất';
-$_LANG['select_please'] = 'PVui lòng chọn...';
+$_LANG['select_please'] = 'Vui lòng chọn...';
 $_LANG['all_category'] = 'Tất cả danh mục';
 $_LANG['all_brand'] = 'Tất cả thương hiệu';
 $_LANG['refresh'] = 'Làm mới';
@@ -111,7 +111,7 @@ $_LANG['english'] = 'English';
 /* Pagination */
 $_LANG['total_records'] = 'Tổng cộng ';
 $_LANG['total_pages'] = 'dữ liệu, chia thành ';
-$_LANG['page_size'] = 'trang, mỗi trang';
+$_LANG['page_size'] = 'mỗi trang';
 $_LANG['page_current'] = 'trang, trang hiện tại';
 $_LANG['page_first'] = 'Đầu';
 $_LANG['page_prev'] = 'Trước';
@@ -141,13 +141,13 @@ $_LANG['15_rec'] = 'Recommend management';
 $_LANG['16_email_manage'] = 'Gửi mail thông báo';
 
 /* Product management */
-$_LANG['01_goods_list'] = 'Danh sách sản phẩm';
+$_LANG['01_goods_list'] = 'Danh sách s.phẩm';
 $_LANG['02_goods_add'] = 'Sản phẩm mới';
-$_LANG['03_category_list'] = 'Danh mục sản phẩm';
+$_LANG['03_category_list'] = 'Danh mục s.phẩm';
 $_LANG['04_category_add'] = 'Thêm danh mục mới';
-$_LANG['05_comment_manage'] = 'Nhận xét thành viên';
-$_LANG['06_goods_brand_list'] = 'Thương hiệu sản phẩm';
-$_LANG['07_brand_add'] = 'Thêm thương hiệu mới';
+$_LANG['05_comment_manage'] = 'Nhận xét t.viên';
+$_LANG['06_goods_brand_list'] = 'Thương hiệu';
+$_LANG['07_brand_add'] = 'Thêm t.hiệu mới';
 $_LANG['08_goods_type'] = 'Loại sản phẩm';
 $_LANG['09_attribute_list'] = 'Thuộc tính sản phẩm';
 $_LANG['10_attribute_add'] = 'Thêm thuộc tính';
@@ -162,10 +162,10 @@ $_LANG['53_suppliers_goods'] = 'Quản lý nhà cung cấp sản phẩm';
 
 $_LANG['14_goods_export'] = 'Export sản phẩm';
 
-$_LANG['50_virtual_card_list'] = 'Danh sách sản phẩm ảo';
+$_LANG['50_virtual_card_list'] = 'Danh sách s.phẩm ảo';
 $_LANG['51_virtual_card_add'] = 'Thêm sản phẩm ảo';
 $_LANG['52_virtual_card_change'] = 'Đổi chuỗi mã hóa';
-$_LANG['goods_auto'] = 'Tự động đẩy sản phẩm lên top';
+$_LANG['goods_auto'] = 'Tự động đẩy s.phẩm';
 $_LANG['article_auto'] = 'Tự động đẩy bài';
 $_LANG['navigator'] = 'Tùy chọn NAV';
 
@@ -260,15 +260,15 @@ $_LANG['08_friendlink_list'] = 'Links';
 $_LANG['shipping_area_list'] = 'Shipping Area';
 $_LANG['sitemap'] = 'Sitemap';
 $_LANG['check_file_priv'] = 'File Authorization';
-$_LANG['captcha_manage'] = 'Verification Code Management';
+$_LANG['captcha_manage'] = 'Q.lý mã xác thực';
 $_LANG['fckfile_manage'] = 'Fck From document management';
 $_LANG['ucenter_setup'] = 'UCenter Set';
-$_LANG['file_check'] = 'Check File';
+$_LANG['file_check'] = 'Kiểm tra tệp';
 $_LANG['021_reg_fields'] = 'Register options settings';
 
 /* Template management */
-$_LANG['02_template_select'] = 'Select Template';
-$_LANG['03_template_setup'] = 'Setup Template';
+$_LANG['02_template_select'] = 'Chọn giao diện';
+$_LANG['03_template_setup'] = 'Thiết lập giao diện';
 $_LANG['04_template_library'] = 'Library Item';
 $_LANG['mail_template_manage'] = 'Mail Template';
 $_LANG['05_edit_languages'] = 'Language Item';
@@ -326,13 +326,13 @@ $_LANG['smtp_refuse'] = 'SMTP server refuse to send this mail.';
 $_LANG['disabled_fsockopen'] = 'Fsocketopen server function is disabled.';
 
 /* 虚拟卡 */
-$_LANG['virtual_card_oos'] = 'Virtual card out of stock';
+$_LANG['virtual_card_oos'] = 'Thẻ ảo này đã hết hàng';
 
-$_LANG['span_edit_help'] = 'Click to edit content';
-$_LANG['href_sort_help'] = 'Click on the list to sort';
+$_LANG['span_edit_help'] = 'Nhấn để sửa nội dung';
+$_LANG['href_sort_help'] = 'Nhấn vào danh sách để sắp xếp';
 
-$_LANG['catname_exist'] = 'Has exist the same category!';
-$_LANG['brand_name_exist'] = 'Has exist the same brand!';
+$_LANG['catname_exist'] = 'Danh mục này đã có trong hệ thống rồi!';
+$_LANG['brand_name_exist'] = 'Thương hiệu này đã có trong hệ thống!';
 
 $_LANG['alipay_login'] = '<a href="https://www.alipay.com/user/login.htm?goto=https%3A%2F%2Fwww.alipay.com%2Fhimalayas%2Fpracticality_profile_edit.htm%3Fmarket_type%3Dfrom_agent_contract%26customer_external_id%3D%2BC4335319945672464113" target="_blank">Immediate payment interface for free jurisdiction</a>';
 $_LANG['alipay_look'] = '<a href=\"https://www.alipay.com/himalayas/practicality.htm\" target=\"_blank\">Please apply after successful login pay treasure account check</a>';

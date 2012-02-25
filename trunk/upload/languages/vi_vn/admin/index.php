@@ -51,54 +51,54 @@ $_LANG['js_languages']['collapse_all'] ='Shut';
 //-- Calculator
 /*------------------------------------------------------ */
 
-$_LANG['calculator']='Calculator';
-$_LANG['clear_calculator']='Clearance';
-$_LANG['backspace']='Back a space';
+$_LANG['calculator']='Máy tính';
+$_LANG['clear_calculator']='Xóa bỏ';
+$_LANG['backspace']='Xóa số';
 
 /*------------------------------------------------------ */
 //-- Start page
 /*------------------------------------------------------ */
-$_LANG['pm_title'] ='Title';
-$_LANG['pm_username'] ='Username';
-$_LANG['pm_time'] ='Time';
+$_LANG['pm_title'] ='Tiêu đề';
+$_LANG['pm_username'] ='Tài khoản';
+$_LANG['pm_time'] ='Thời gian';
 
-$_LANG['order_stat'] ='Orders Statistics Information';
-$_LANG['unconfirmed'] ='Unconfirmed orders:';
-$_LANG['await_ship'] ='Not shipping orders:';
-$_LANG['await_pay'] ='Unpaid orders:';
-$_LANG['finished'] ='Finished orders:';
-$_LANG['new_booking'] ='Booking [New]:';
+$_LANG['order_stat'] ='Thông tin thống kê đơn hàng';
+$_LANG['unconfirmed'] ='Đơn hàng chưa xác nhận:';
+$_LANG['await_ship'] ='Đơn hàng chờ chuyển:';
+$_LANG['await_pay'] ='Đơn hàng chưa thanh toán:';
+$_LANG['finished'] ='Đơn hàng đã hoàn thành:';
+$_LANG['new_booking'] ='Đặt hàng [New]:';
 $_LANG['new_reimburse'] ='Refund application:';
 $_LANG['shipped_part'] = 'Parts delivery order:';
 
 $_LANG['goods_stat'] ='Products Statistics Information';
 $_LANG['virtual_card_stat'] = 'Virtual Card Statistics Information';
-$_LANG['goods_count'] ='Products quantity:';
-$_LANG['sales_count'] ='Promotion products:';
-$_LANG['new_goods'] ='New products:';
-$_LANG['recommed_goods'] ='Best products:';
+$_LANG['goods_count'] ='Số lượng sản phẩm:';
+$_LANG['sales_count'] ='Sản phẩm khuyến mại:';
+$_LANG['new_goods'] ='Sản phẩm mới:';
+$_LANG['recommed_goods'] ='Sản phẩm tốt nhất:';
 $_LANG['hot_goods'] ='Hot products:';
 $_LANG['warn_goods'] ='Stock warning quantity:';
 $_LANG['clear_cache'] ='Clear cache';
 $_LANG['ebao_commend'] = 'Epro Recommend';
 
-$_LANG['acess_stat'] ='Visit Statistics';
-$_LANG['acess_today'] ='Visit today:';
-$_LANG['online_users'] ='Online:';
+$_LANG['acess_stat'] ='Thống kê truy cập';
+$_LANG['acess_today'] ='Ghé thăm hôm nay:';
+$_LANG['online_users'] ='Trực tuyến:';
 $_LANG['user_count'] ='Member amount:';
 $_LANG['today_register'] ='Register today:';
 $_LANG['new_feedback'] ='Latest message:';
 $_LANG['new_comments'] ='Latest comments:';
 
-$_LANG['system_info'] ='System Information';
-$_LANG['os'] ='Server operate system:';
+$_LANG['system_info'] ='Thông tin hệ thống';
+$_LANG['os'] ='Hệ điều hành:';
 $_LANG['web_server'] ='Web server:';
 $_LANG['php_version'] ='PHP version:';
 $_LANG['mysql_version'] ='MySQL version:';
 $_LANG['gd_version'] ='GD version:';
 $_LANG['zlib'] ='Zlib support:';
-$_LANG['ecs_version'] ='ECShop version:';
-$_LANG['install_date'] ='Install date:';
+$_LANG['ecs_version'] ='Phiên bản ECMS:';
+$_LANG['install_date'] ='Ngày cài đặt:';
 $_LANG['ip_version'] ='IP database version:';
 $_LANG['max_filesize'] ='Limit size of upload file:';
 $_LANG['safe_mode'] ='Safe mode:';
@@ -108,11 +108,11 @@ $_LANG['no_timezone'] = 'n/a';
 $_LANG['socket'] = 'Socket enabled:';
 $_LANG['ec_charset'] = 'Coding:';
 
-$_LANG['remove_install'] ='You haven\'t yet delete the install directory, we suggest you delete the install file for the system safety.';
-$_LANG['remove_upgrade'] ='You haven\'t yet delete the upgrade directory, we suggest you delete the upgrade file for the system safety.';
-$_LANG['remove_demo'] ='You haven\'t yet delete the demo directory, we suggest you delete the demo file for the system safety.';
+$_LANG['remove_install'] ='Bạn chưa xóa thư mục install, để đảm bảo an toàn hệ thống, bạn hãy xóa thư mục này.';
+$_LANG['remove_upgrade'] ='Bạn chưa xóa thư mục upgrade, để đảm bảo an toàn hệ thống, bạn hãy xóa thư mục này.';
+$_LANG['remove_demo'] ='Bạn chưa xóa thư mục demo, để đảm bảo an toàn hệ thống, bạn hãy xóa thư mục này.';
 $_LANG['temp_dir_cannt_read'] = 'Your server has set open_base_dir without %s, the file will can\'t be uploaded.';
-$_LANG['not_writable'] = '%s directory can\'t be wrote in，%s';
+$_LANG['not_writable'] = 'Thư mục %s không thể ghi tại %s';
 $_LANG['data_cannt_write'] = 'You will not update packing, card, brand picture and so on.';
 $_LANG['afficheimg_cannt_write'] = 'You will not update the AD picture.';
 $_LANG['brandlogo_cannt_write'] = 'You will not update the brand picyure.';
