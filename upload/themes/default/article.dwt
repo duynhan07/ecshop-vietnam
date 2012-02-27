@@ -57,7 +57,7 @@
  <!-- #BeginLibraryItem "/library/article_category_tree.lbi" --><!-- #EndLibraryItem -->
  <!-- #BeginLibraryItem "/library/filter_attr.lbi" --><!-- #EndLibraryItem -->
  <!-- #BeginLibraryItem "/library/price_grade.lbi" --><!-- #EndLibraryItem -->
-<!-- TemplateBeginEditable name="左边区域" -->
+<!-- TemplateBeginEditable name="Left area" -->
 <!-- #BeginLibraryItem "/library/goods_related.lbi" -->
 
 <!-- {if $related_goods} -->

@@ -28,7 +28,7 @@ $_LANG['short_price'] = 'Giá';
 $_LANG['integral'] = 'Consume points';
 $_LANG['view_detail'] = 'View details';
 $_LANG['snatch_edit'] = 'Edit Dutch auction';
-$_LANG['desc'] = 'Description';
+$_LANG['desc'] = 'Mô tả';
 $_LANG['more_goods'] = 'More...';
 
 $_LANG['make_option'] = 'Please search the options list of products.';

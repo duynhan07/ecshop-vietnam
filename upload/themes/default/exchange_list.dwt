@@ -27,7 +27,7 @@
 <div class="block clearfix">
   <!--left start-->
   <div class="AreaL">
-    <!-- TemplateBeginEditable name="左边区域" -->
+    <!-- TemplateBeginEditable name="Left area" -->
     <!-- #BeginLibraryItem "/library/cart.lbi" --><!-- #EndLibraryItem -->
     <!-- #BeginLibraryItem "/library/category_tree.lbi" --><!-- #EndLibraryItem -->
     <!-- #BeginLibraryItem "/library/filter_attr.lbi" --><!-- #EndLibraryItem -->

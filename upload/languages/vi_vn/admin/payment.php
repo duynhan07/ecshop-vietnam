@@ -18,7 +18,7 @@
 $_LANG['payment'] = 'Payment mothod';
 $_LANG['payment_name'] = 'Name';
 $_LANG['version'] = 'Version';
-$_LANG['payment_desc'] = 'Description';
+$_LANG['payment_desc'] = 'Mô tả';
 $_LANG['short_pay_fee'] = 'Money';
 $_LANG['payment_author'] = 'Author';
 $_LANG['payment_is_cod'] = 'Pay after received?';

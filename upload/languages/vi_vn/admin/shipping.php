@@ -17,7 +17,7 @@
 
 $_LANG['shipping_name'] = 'Name';
 $_LANG['shipping_version'] = 'Version';
-$_LANG['shipping_desc'] = 'Description';
+$_LANG['shipping_desc'] = 'Mô tả';
 $_LANG['shipping_author'] = 'Author';
 $_LANG['insure'] = 'Insurance';
 $_LANG['support_cod'] = 'COD?';

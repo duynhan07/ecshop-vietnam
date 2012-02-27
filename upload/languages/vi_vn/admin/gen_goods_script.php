@@ -13,7 +13,7 @@
  * $Author: liubo $
  * $Id: gen_goods_script.php 17217 2011-01-19 06:29:08Z liubo $
  */
-$_LANG['label_category'] = 'Category:';
+$_LANG['label_category'] = 'Danh mục:';
 $_LANG['label_brand'] = 'Thương hiệu:';
 $_LANG['label_intro_type'] = 'Recommend type:';
 $_LANG['label_need_image'] = 'Display product image:';

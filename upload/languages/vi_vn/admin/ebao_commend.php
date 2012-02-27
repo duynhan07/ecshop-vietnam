@@ -41,7 +41,7 @@ $_LANG['searchkey'] = 'Merchandise search keywords';
 $_LANG['ebao_list'] = 'Epro recommend a list of';
 
 //
-$_LANG['goods_cat'] = 'All Categories';
+$_LANG['goods_cat'] = 'Tất cả danh mục';
 $_LANG['goods_brand'] = 'Tất cả thương hiệu';
 $_LANG['intro_type'] = 'Recommend';
 $_LANG['keyword'] = 'Keyword';

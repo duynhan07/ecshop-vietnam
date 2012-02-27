@@ -124,7 +124,7 @@ $_LANG['download_amount_sort'] = 'Download to rate statements';
 /* Sales details */
 $_LANG['goods_name'] = 'Name';
 $_LANG['goods_sn'] = 'Product NO.';
-$_LANG['order_sn'] = 'Order NO.';
+$_LANG['order_sn'] = 'Mã đ.hàng';
 $_LANG['amount'] = 'Số lượng';
 $_LANG['to'] = 'to';
 $_LANG['sell_price'] = 'Giá';

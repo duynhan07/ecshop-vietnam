@@ -1,18 +1,4 @@
 <?php
-
-/**
- * ECSHOP 安装程序商品类型
- * ============================================================================
- * 版权所有 2005-2011 上海商派网络科技有限公司，并保留所有权利。
- * 网站地址: http://www.ecshop.com；
- * ----------------------------------------------------------------------------
- * 这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
- * 使用；不允许对程序代码以任何形式任何目的的再发布。
- * ============================================================================
- * $Author: testyang $
- * $Id: inc_goods_type_en_us.php 15103 2008-10-27 12:06:58Z testyang $
-*/
-
 $attributes['book'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr_id`, `cat_id`, `attr_name`, `attr_input_type`, `attr_type`, `attr_values`, `sort_order`) VALUES
                                 (NULL, {cat_id}, '作者', 0, 0, '', 0),
                                 (NULL, {cat_id}, '出版社', 0, 0, '', 0),
@@ -26,7 +12,7 @@ $attributes['book'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr_i
                                 (NULL, {cat_id}, '印张', 0, 0, '', 0),
                                 (NULL, {cat_id}, '字数', 0, 0, '', 0),
                                 (NULL, {cat_id}, '所属分类', 0, 0, '', 0)",
-                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, '书', 1);");
+                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, 'Sách báo', 1);");
 
 $attributes['music'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr_id`, `cat_id`, `attr_name`, `attr_input_type`, `attr_type`, `attr_values`, `sort_order`) VALUES
                                 (NULL, {cat_id}, '中文片名', 0, 0, '', 0),
@@ -48,7 +34,7 @@ $attributes['music'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr_
                                 (NULL, {cat_id}, '出版号', 0, 0, '', 0),
                                 (NULL, {cat_id}, '引进号', 0, 0, '', 0),
                                 (NULL, {cat_id}, '版权号', 0, 0, '', 0);",
-                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, '音乐', 1);");
+                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, 'Âm nhạc', 1);");
 
 $attributes['movie'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr_id`, `cat_id`, `attr_name`, `attr_input_type`, `attr_type`, `attr_values`, `sort_order`) VALUES
                                 (NULL, {cat_id}, '中文片名', 0, 0, '', 0),
@@ -75,7 +61,7 @@ $attributes['movie'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr_
                                 (NULL, {cat_id}, '出版号', 0, 0, '', 0),
                                 (NULL, {cat_id}, '引进号', 0, 0, '', 0),
                                 (NULL, {cat_id}, '版权号', 0, 0, '', 0);",
-                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, '电影', 1);");
+                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, 'Phim ảnh', 1);");
 
 $attributes['mobile'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr_id`, `cat_id`, `attr_name`, `attr_input_type`, `attr_type`, `attr_values`, `sort_order`) VALUES
                                 (NULL, {cat_id}, '网络制式', 0, 0, '', 0),
@@ -104,7 +90,7 @@ $attributes['mobile'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr
                                 (NULL, {cat_id}, '彩信/彩e', 1, 0, '支持\r\n不支持', 0),
                                 (NULL, {cat_id}, '红外/蓝牙', 0, 0, '', 0),
                                 (NULL, {cat_id}, '价格等级', 1, 0, '高价机\r\n中价机\r\n低价机', 0);",
-                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, '手机', 1);");
+                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, 'Điện thoại TQ', 1);");
 
 $attributes['notebook'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr_id`, `cat_id`, `attr_name`, `attr_input_type`, `attr_type`, `attr_values`, `sort_order`) VALUES
                                 (NULL, {cat_id}, '型号', 0, 0, '', 0),
@@ -126,7 +112,7 @@ $attributes['notebook'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`at
                                 (NULL, {cat_id}, '光驱类型', 0, 0, '', 0),
                                 (NULL, {cat_id}, '电池容量', 0, 0, '', 0),
                                 (NULL, {cat_id}, '其他配置', 0, 0, '', 0);",
-                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, '笔记本电脑', 1);");
+                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, 'Máy tính xách tay', 1);");
 
 $attributes['dc'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr_id`, `cat_id`, `attr_name`, `attr_input_type`, `attr_type`, `attr_values`, `sort_order`) VALUES
                                 (NULL, {cat_id}, '类型', 0, 0, '', 0),
@@ -206,7 +192,7 @@ $attributes['cosmetics'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`a
                                 (NULL, {cat_id}, '使用部位', 0, 0, '', 0),
                                 (NULL, {cat_id}, '适合肤质', 1, 0, '油性\r\n中性\r\n干性', 0),
                                 (NULL, {cat_id}, '适用人群', 1, 0, '女性\r\n男性', 0);",
-                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, '化妆品', 1);");
+                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, 'Mỹ phẩm', 1);");
 
 $attributes['mobile2'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`attr_id`, `cat_id`, `attr_name`, `attr_input_type`, `attr_type`, `attr_values`, `attr_index`, `sort_order`, `is_linked`, `attr_group`) VALUES
                                 (NULL, {cat_id}, '上市日期', 1, 0, '2008年01月\r\n2008年02月\r\n2008年03月\r\n2008年04月\r\n2008年05月\r\n2008年06月\r\n2008年07月\r\n2008年08月\r\n2008年09月\r\n2008年10月\r\n2008年11月\r\n2008年12月\r\n2007年01月\r\n2007年02月\r\n2007年03月\r\n2007年04月\r\n2007年05月\r\n2007年06月\r\n2007年07月\r\n2007年08月\r\n2007年09月\r\n2007年10月\r\n2007年11月\r\n2007年12月', 1, 0, 0, 0),
@@ -248,6 +234,6 @@ $attributes['mobile2'] = array("attr"=>"INSERT INTO `".$prefix."attribute` (`att
                                 (NULL, {cat_id}, '闪光灯', 0, 0, '', 0, 0, 0, 3),
                                 (NULL, {cat_id}, '浏览器', 0, 0, '', 0, 0, 0, 2),
                                 (NULL, {cat_id}, '配件', 1, 2, '线控耳机\r\n蓝牙耳机\r\n数据线', 0, 0, 0, 0);",
-                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, '精品手机', 1);");
+                        "cat"=>"INSERT INTO `".$prefix."goods_type` (`cat_id`, `cat_name`, `enabled`) VALUES (NULL, 'Điện thoại di động', 1);");
 
 ?>

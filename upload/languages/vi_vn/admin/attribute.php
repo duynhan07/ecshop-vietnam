@@ -33,7 +33,7 @@ $_LANG['drop_confirm'] = 'Are you sure delete the attribute?';
 
 /* Add/Edit */
 $_LANG['label_attr_name'] = 'Attribute name:';
-$_LANG['label_cat_id'] = 'Category:';
+$_LANG['label_cat_id'] = 'Danh mục:';
 $_LANG['label_attr_index'] = 'Index:';
 $_LANG['label_is_linked'] = 'Relational products with same attribute?';
 $_LANG['no_index'] = 'Needn\'t index';
