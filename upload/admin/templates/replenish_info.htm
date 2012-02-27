@@ -18,7 +18,7 @@
   </tr>
   <tr>
     <td class="label">{$lang.lab_end_date}</td>
-    <td>{html_select_date prefix="end_date" field_order="YMD" month_format="%m"  day_value_format="%02d" start_year="-1" end_year="+10" display_days=yes time=$card.end_date}</td>
+    <td>{html_select_date prefix="end_date" field_order="DMY" month_format="%m"  day_value_format="%02d" start_year="-1" end_year="+10" display_days=yes time=$card.end_date}</td>
   </tr>
   <tr>
     <td class="label"><input type="hidden" name="act" value="action" /><input type="hidden" name="goods_id" value="{$card.goods_id}" /><input type="hidden" name="old_card_sn" value="{$card.card_sn}" /><input type="hidden" name="card_id" value="{$card.card_id}" /></td>

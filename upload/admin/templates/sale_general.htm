@@ -11,9 +11,9 @@
   <input type="submit" name="query_by_year" value="{$lang.query}" class="button" />
   <br />
   <strong>{$lang.month_status}</strong>
-  {html_select_date prefix="month_begin" time=$start_time start_year="2006" end_year="+1" display_days=false field_order="YMD" month_format="%m"}
+  {html_select_date prefix="month_begin" time=$start_time start_year="2006" end_year="+1" display_days=false field_order="DMY" month_format="%m"}
   -
-  {html_select_date prefix="month_end" time=$end_time start_year="2006" end_year="+1" display_days=false field_order="YMD" month_format="%m"}
+  {html_select_date prefix="month_end" time=$end_time start_year="2006" end_year="+1" display_days=false field_order="DMY" month_format="%m"}
   <input type="submit" name="query_by_month" value="{$lang.query}" class="button" />
   </form>
 </div>
