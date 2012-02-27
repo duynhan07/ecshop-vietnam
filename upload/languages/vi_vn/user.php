@@ -23,7 +23,7 @@ $_LANG['label_transform_points'] = 'Points transform';
 $_LANG['label_logout'] = 'Thoát';
 
 /* 会员余额(预付款) */
-$_LANG['add_surplus_log'] = 'Details';
+$_LANG['add_surplus_log'] = 'Chi tiết';
 $_LANG['view_application'] = 'View application record';
 $_LANG['surplus_pro_type'] = 'Type';
 $_LANG['repay_money'] = 'Refund money';

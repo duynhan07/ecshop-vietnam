@@ -1,20 +1,4 @@
 <?php
-
-/**
- * ECSHOP EMS plug-in's language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it mean that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: ems.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
 $_LANG['ems']                   = 'EMS express mail service';
 $_LANG['ems_express_desc']      = 'EMS express mail service\'s description';
 //$_LANG['fee_compute_mode']      = 'Cost calculation method';
