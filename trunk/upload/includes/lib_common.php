@@ -1495,7 +1495,7 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
             {
                 if ($rewrite)
                 {
-                    $uri = 'category-' . $cid;
+                    $uri = 'danh-muc-' . $cid;
                     if (isset($bid))
                     {
                         $uri .= '-b' . $bid;
@@ -1568,7 +1568,7 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
             }
             else
             {
-                $uri = $rewrite ? 'goods-' . $gid : 'goods.php?id=' . $gid;
+                $uri = $rewrite ? 'product-' . $gid : 'goods.php?id=' . $gid;
             }
 
             break;
@@ -1717,6 +1717,17 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
 
             break;
         case 'search':
+		if ($rewrite){
+			$uri = 'search';
+			//Phần này cần nghiên cứu thêm
+			}
+            break;
+        case 'flow':
+		if ($rewrite){
+			$uri = 'gio-hang';
+			}else{
+				$uri = 'flow.php';
+				}//Cần nghiên cứu, chỉnh lý thêm!
             break;
         case 'exchange':
             if ($rewrite)
@@ -1790,7 +1801,82 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
     {
         if ($rewrite == 2 && !empty($append))
         {
-            $uri .= '-' . urlencode(preg_replace('/[\.|\/|\?|&|\+|\\\|\'|"|,]+/', '', $append));
+           /* $uri .= '-' . urlencode(preg_replace('/[\.|\/|\?|&|\+|\\\|\'|"|,]+/', '', $append));*/
+        $ecms_trans = array(
+        '/(à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ)/',
+        '/(è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ)/',
+        '/(ì|í|ị|ỉ|ĩ)/',
+        '/(ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ)/',
+        '/(ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ)/',
+        '/(ỳ|ý|ỵ|ỷ|ỹ)/',
+        '/(đ)/',
+        '/(À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ|A)/',
+        '/(È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ|E)/',
+        '/(Ì|Í|Ị|Ỉ|Ĩ|I)/',
+        '/(Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ|O)/',
+        '/(Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ|U)/',
+        '/(Ỳ|Ý|Ỵ|Ỷ|Ỹ|Y)/',
+        '/(Đ|D)/',
+        '/(B)/',
+        '/(C)/',
+        '/(F)/',
+        '/(G)/',
+        '/(H)/',
+        '/(J)/',
+        '/(K)/',
+        '/(L)/',
+        '/(M)/',
+        '/(N)/',
+        '/(P)/',
+        '/(Q)/',
+        '/(R)/',
+        '/(S)/',
+        '/(T)/',
+        '/(V)/',
+        '/(W)/',
+        '/(X)/',
+        '/(Z)/',
+        '/[^a-zA-Z0-9]/',
+        '/[\_|\-|\.|\/|\?|&|\+|\\\|\'|"|,]+/',
+        );
+        $replace = array(
+        'a',
+        'e',
+        'i',
+        'o',
+        'u',
+        'y',
+        'd',
+        'a',
+        'e',
+        'i',
+        'o',
+        'u',
+        'y',
+        'd',
+        'b',
+        'c',
+        'f',
+        'g',
+        'h',
+        'j',
+        'k',
+        'l',
+        'm',
+        'n',
+        'p',
+        'q',
+        'r',
+        's',
+        't',
+        'v',
+        'w',
+        'x',
+        'z',
+        '-',
+        '-',
+        );
+            $uri .= '-' . urlencode(preg_replace($ecms_trans, $replace, $append));
         }
 
         $uri .= '.html';

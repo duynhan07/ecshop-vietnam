@@ -99,7 +99,7 @@ $_LANG['goods_sn_exists'] ='The product NO. already exist, please change a numbe
 //-- Add /edit a product information
 /*------------------------------------------------------ */
 $_LANG['tab_general'] ='Brief';
-$_LANG['tab_detail'] ='Details';
+$_LANG['tab_detail'] ='Chi tiết';
 $_LANG['tab_mix'] ='Others';
 $_LANG['tab_properties'] ='Attribute';
 $_LANG['tab_gallery'] ='Gallery';

@@ -8,6 +8,8 @@ RewriteEngine On
 
 # direct one-word access
 RewriteRule ^index\.html$    index\.php [L]
+RewriteRule ^tim-kiem\.html$    search\.php [L]
+RewriteRule ^gio-hang\.html$    flow\.php [L]
 RewriteRule ^category$      index\.php [L]
 
 # access any object by its numeric identifier

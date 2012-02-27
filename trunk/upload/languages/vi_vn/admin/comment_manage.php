@@ -46,7 +46,7 @@ $_LANG['search_comment'] = 'Enter';
 $_LANG['no_reply_comment'] = 'Not replied comment';
 $_LANG['all_comment'] = 'View all comments';
 $_LANG['reply_comment'] = 'Reply';
-$_LANG['comment_info'] = 'Details';
+$_LANG['comment_info'] = 'Chi tiết';
 
 $_LANG['comment_rank'] = 'Rank';
 $_LANG['comment_list'] = 'List';
