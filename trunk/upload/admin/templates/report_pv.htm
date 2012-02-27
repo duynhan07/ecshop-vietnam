@@ -14,9 +14,9 @@
   <div class="form-div">
   <form action="" method="post" name="theForm" enctype="multipart/form-data">
     {$lang.start_date}
-    {html_select_date prefix="start_date" field_order="YMD" month_format="%m"  day_value_format="%02d" start_year="-1" end_year="+10" display_days=yes}
+    {html_select_date prefix="start_date" field_order="DMY" month_format="%m"  day_value_format="%02d" start_year="-1" end_year="+10" display_days=yes}
     {$lang.end_date}
-    {html_select_date prefix="end_date" field_order="YMD" month_format="%m"  day_value_format="%02d" start_year="-1" end_year="+10" display_days=yes time=$ads.start_date}
+    {html_select_date prefix="end_date" field_order="DMY" month_format="%m"  day_value_format="%02d" start_year="-1" end_year="+10" display_days=yes time=$ads.start_date}
   <input type="submit" value="{$lang.query}" class="button" />
   <input type="reset"  value="{$lang.button_reset}" class="button" />
   </form>
