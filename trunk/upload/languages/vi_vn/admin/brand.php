@@ -17,7 +17,7 @@
 
 $_LANG['brand_name'] = 'Thương hiệu';
 $_LANG['site_url'] = 'Website';
-$_LANG['brand_desc'] = 'Description';
+$_LANG['brand_desc'] = 'Mô tả';
 $_LANG['brand_logo'] = 'LOGO';
 $_LANG['sort_order'] = 'Sort';
 $_LANG['is_show'] = 'Display';

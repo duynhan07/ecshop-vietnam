@@ -16,7 +16,7 @@
  */
 
 /* Order search*/
-$_LANG['order_sn'] = 'Order NO.';
+$_LANG['order_sn'] = 'Mã đ.hàng';
 $_LANG['consignee'] = 'Consignee';
 $_LANG['all_status'] = 'Status';
 
@@ -99,7 +99,7 @@ $_LANG['exchange_goods'] = '(Points Exchange)';
 $_LANG['js_languages']['remove_confirm']='All informations will be deleted if you delete the order. Are you sure delete it?';
 
 /* The order search*/
-$_LANG['label_order_sn'] = 'Order NO.:';
+$_LANG['label_order_sn'] = 'Mã đ.hàng:';
 $_LANG['label_all_status'] = 'Status:';
 $_LANG['label_user_name'] = 'Buyer:';
 $_LANG['label_consignee'] = 'Consignee:';
@@ -121,7 +121,7 @@ $_LANG['prev'] = 'Previous order';
 $_LANG['next'] = 'Next order';
 $_LANG['print_order'] = 'Print order';
 $_LANG['print_shipping'] = 'Print Express Single';
-$_LANG['print_order_sn'] = 'Order NO.:';
+$_LANG['print_order_sn'] = 'Mã đ.hàng:';
 $_LANG['print_buy_name'] = 'Buyer:';
 $_LANG['label_consignee_address'] = 'Receipt address';
 $_LANG['no_print_shipping'] = 'sorry,not print';
@@ -287,7 +287,7 @@ $_LANG['button_next'] ='Next';
 $_LANG['button_finish'] ='Completion';
 $_LANG['button_cancel'] ='Cancel';
 $_LANG['name'] ='Name';
-$_LANG['desc'] ='Description';
+$_LANG['desc'] ='Mô tả';
 $_LANG['shipping_fee'] ='Shipping money';
 $_LANG['free_money'] ='Free limit';
 $_LANG['insure'] ='Insrance money';

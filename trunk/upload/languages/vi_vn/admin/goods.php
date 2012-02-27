@@ -57,9 +57,9 @@ $_LANG['not_writable_warning']='The %s directory can\'t be wrote, you need to co
 /*------------------------------------------------------ */
 //-- Product list
 /*------------------------------------------------------ */
-$_LANG['goods_cat'] ='All Categories';
-$_LANG['goods_brand'] ='All Brands';
-$_LANG['intro_type'] =' All';
+$_LANG['goods_cat'] ='Tất cả danh mục';
+$_LANG['goods_brand'] ='Tất cả thương hiệu';
+$_LANG['intro_type'] ='Tất cả';
 $_LANG['keyword'] ='Từ khóa';
 $_LANG['is_best'] ='Tốt nhất';
 $_LANG['is_new'] ='Mới nhất';
@@ -103,35 +103,35 @@ $_LANG['tab_detail'] ='Details';
 $_LANG['tab_mix'] ='Others';
 $_LANG['tab_properties'] ='Attribute';
 $_LANG['tab_gallery'] ='Gallery';
-$_LANG['tab_linkgoods'] ='Relational products';
-$_LANG['tab_groupgoods'] ='Accessories';
-$_LANG['tab_article'] ='Relational articles';
+$_LANG['tab_linkgoods'] ='S.phẩm liên quan';
+$_LANG['tab_groupgoods'] ='Phụ kiện';
+$_LANG['tab_article'] ='Bài viết liên quan';
 
-$_LANG['lab_goods_name'] ='Name:';
+$_LANG['lab_goods_name'] ='Tên sản phẩm:';
 $_LANG['lab_goods_sn'] ='NO.:';
-$_LANG['lab_goods_cat'] ='Category:';
-$_LANG['lab_other_cat'] ='Extend category:';
+$_LANG['lab_goods_cat'] ='Danh mục:';
+$_LANG['lab_other_cat'] ='Mục mở rộng:';
 $_LANG['lab_goods_brand'] ='Thương hiệu:';
-$_LANG['lab_shop_price'] ='Shop price:';
-$_LANG['lab_market_price'] ='Market price:';
-$_LANG['lab_user_price'] ='Member price:';
-$_LANG['lab_promote_price'] ='Promotion price:';
-$_LANG['lab_promote_date'] ='Promotion date:';
-$_LANG['lab_picture'] ='Upload picture:';
-$_LANG['lab_thumb'] ='Upload thumbnail:';
-$_LANG['auto_thumb'] ='Create thumbnail automatically';
-$_LANG['lab_keywords'] ='Keywords:';
-$_LANG['lab_goods_brief'] ='Brief:';
-$_LANG['lab_seller_note'] ='Shop notice:';
-$_LANG['lab_goods_type'] = 'Goods type：';
+$_LANG['lab_shop_price'] ='Giá tại shop:';
+$_LANG['lab_market_price'] ='Giá t.trường:';
+$_LANG['lab_user_price'] ='Giá t.viên:';
+$_LANG['lab_promote_price'] ='Giá k.mại:';
+$_LANG['lab_promote_date'] ='Ngày k.mại:';
+$_LANG['lab_picture'] ='Upload hình:';
+$_LANG['lab_thumb'] ='Upload hình nhỏ:';
+$_LANG['auto_thumb'] ='Tự động tạo hình thu nhỏ';
+$_LANG['lab_keywords'] ='Từ khóa:';
+$_LANG['lab_goods_brief'] ='Tóm lược:';
+$_LANG['lab_seller_note'] ='Thông báo:';
+$_LANG['lab_goods_type'] = 'Loại sản phẩm:';
 $_LANG['lab_picture_url'] = 'Merchandise picture external URL';
 $_LANG['lab_thumb_url'] = 'External merchandise Thumbnail URL';
 
 $_LANG['lab_goods_weight'] ='Trọng lượng:';
 $_LANG['unit_g'] ='Gram';
 $_LANG['unit_kg'] ='Kilogram';
-$_LANG['lab_goods_number'] ='Stock quantity:';
-$_LANG['lab_warn_number'] ='Stock warning quantity:';
+$_LANG['lab_goods_number'] ='Số lượng trong kho:';
+$_LANG['lab_warn_number'] ='Số lượng cảnh báo:';
 $_LANG['lab_integral'] ='Integral purchase amount:';
 $_LANG['lab_give_integral'] = 'Consumption presented a few points:';
 $_LANG['lab_rank_integral'] = 'Presented a number of grade points:';
@@ -143,7 +143,7 @@ $_LANG['lab_is_free_shipping'] = 'Free shipping：';
 
 $_LANG['compute_by_mp'] ='Calculate';
 
-$_LANG['notice_goods_sn'] ='If you don\'t enter product NO., the system will create unique NO. automatically.';
+$_LANG['notice_goods_sn'] ='Nếu bạn không nhập mã sản phẩm, hệ thống sẽ tự thêm tiền tố No. vào.';
 $_LANG['notice_integral'] ='（This required amount）Buy the goods can use points.';
 $_LANG['notice_give_integral'] = 'Purchase the merchandise when presented fraction of consumption, express -1 presented by commodity prices';
 $_LANG['notice_rank_integral'] = 'Purchase the merchandise when presented fraction grading, express -1 presented by commodity prices';
@@ -179,9 +179,9 @@ $_LANG['category_manage'] = 'Category manage';
 $_LANG['brand_manage'] = 'Brand manage';
 $_LANG['hide'] = 'Hide';
 
-$_LANG['lab_volume_price'] = 'Goods favourable price：';
-$_LANG['volume_number'] = 'volume number';
-$_LANG['volume_price'] = 'Favourable price';
+$_LANG['lab_volume_price'] = 'Giá mua nhiều:';
+$_LANG['volume_number'] = 'số lượng';
+$_LANG['volume_price'] = 'giá giảm theo nhóm';
 $_LANG['notice_volume_price'] = 'Purchase quantity discount when the total number of preferential prices';
 $_LANG['volume_number_continuous'] = 'Repeat quantity discount!';
 
@@ -195,25 +195,25 @@ $_LANG['lab_to_shopex']         = 'Transferred to the Shop';
 /*------------------------------------------------------ */
 
 $_LANG['all_goods'] ='Choose product';
-$_LANG['link_goods'] ='Relational products';
+$_LANG['link_goods'] ='S.phẩm liên quan';
 $_LANG['single'] ='Single';
 $_LANG['double'] ='Double';
 $_LANG['all_article'] ='Choose product';
-$_LANG['goods_article'] ='Relational articles';
+$_LANG['goods_article'] ='Bài viết liên quan';
 $_LANG['top_cat'] = 'Top Categories';
 
 /*------------------------------------------------------ */
 //-- Combine a product
 /*------------------------------------------------------ */
 
-$_LANG['group_goods'] ='Accessories';
+$_LANG['group_goods'] ='Phụ kiện';
 $_LANG['price'] ='Giá';
 
 /*------------------------------------------------------ */
 //-- Product gallery
 /*------------------------------------------------------ */
 
-$_LANG['img_desc'] ='Description';
+$_LANG['img_desc'] ='Mô tả';
 $_LANG['img_url'] ='Upload a file';
 $_LANG['img_file'] = 'or input the url of the image';
 

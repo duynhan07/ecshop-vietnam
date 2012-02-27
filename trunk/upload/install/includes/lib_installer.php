@@ -708,7 +708,7 @@ function deal_aftermath()
     $sql = "INSERT INTO $prefix"."friend_link ".
                 "(link_name, link_url, show_order)".
             "VALUES ".
-                "('".$_LANG['maifou_friend_link']."', 'http://www.maifou.net/','51')";
+                "('".$_LANG['maifou_friend_link']."', 'http://www.ecms.asia/','51')";
     if (!$db->query($sql, 'SILENT'))
     {
         $err->add($db->errno() .' '. $db->error());

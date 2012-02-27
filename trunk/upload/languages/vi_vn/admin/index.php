@@ -78,7 +78,7 @@ $_LANG['sales_count'] ='Sản phẩm khuyến mại:';
 $_LANG['new_goods'] ='Sản phẩm mới:';
 $_LANG['recommed_goods'] ='Sản phẩm tốt nhất:';
 $_LANG['hot_goods'] ='Hot products:';
-$_LANG['warn_goods'] ='Stock warning quantity:';
+$_LANG['warn_goods'] ='Số lượng cảnh báo:';
 $_LANG['clear_cache'] ='Clear cache';
 $_LANG['ebao_commend'] = 'Epro Recommend';
 

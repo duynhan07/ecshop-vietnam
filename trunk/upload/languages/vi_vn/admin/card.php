@@ -19,7 +19,7 @@ $_LANG['card_name'] = 'Card name';
 $_LANG['card_fee'] = 'Card money';
 $_LANG['free_money'] = 'Card free allowance';
 $_LANG['card_img'] = 'Card image';
-$_LANG['card_desc'] = 'Description';
+$_LANG['card_desc'] = 'Mô tả';
 
 $_LANG['card_edit'] = 'Edit card';
 

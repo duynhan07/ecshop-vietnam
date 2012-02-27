@@ -33,7 +33,7 @@
     </div>
     <div class="blank5"></div>
     <!--站内公告 end-->
-  <!-- TemplateBeginEditable name="左边区域" -->
+  <!-- TemplateBeginEditable name="Left area" -->
 <!-- #BeginLibraryItem "/library/cart.lbi" -->
 
 {insert_scripts files='transport.js'}
@@ -247,7 +247,7 @@ function check_email()
        <div id="mallNews" class="f_r">
         <div class="NewsTit"></div>
         <div class="NewsList tc">
-         <!-- TemplateBeginEditable name="站内快讯上广告位（宽：210px）" -->
+         <!-- TemplateBeginEditable name="News Advertising(width:210px)" -->
 <!-- TemplateEndEditable -->
         <!-- #BeginLibraryItem "/library/new_articles.lbi" --><!-- #EndLibraryItem -->
         </div>
@@ -269,7 +269,7 @@ function check_email()
       </div>
     </div>
     <div class="blank5"></div>
-   <!-- TemplateBeginEditable name="右边主区域" -->
+   <!-- TemplateBeginEditable name="Right main" -->
 <!-- #BeginLibraryItem "/library/recommend_best.lbi" -->
 
 <!-- {if $best_goods} -->

@@ -25,7 +25,7 @@ $_LANG['pay_mothed'] = 'Payment method';
 $_LANG['process_type'] = 'Type';
 $_LANG['confirm_date'] = 'Confirm date';
 $_LANG['surplus_notic'] = 'Remarks';
-$_LANG['surplus_desc'] = 'Description';
+$_LANG['surplus_desc'] = 'Mô tả';
 $_LANG['surplus_type'] = 'Operation type';
 
 $_LANG['no_user'] = 'Anonymous buying';

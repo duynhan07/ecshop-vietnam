@@ -326,12 +326,12 @@ INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`,
 
 
 INSERT INTO `ecs_user_rank` (`rank_id`, `rank_name`, `min_points`, `max_points`, `discount`, `show_price`, `special_rank`)
-VALUES (NULL, 'Registered users', '0', '10000', '100', 1, 0);
+VALUES (NULL, 'Thành viên đăng ký', '0', '10000', '100', 1, 0);
 
 
 INSERT INTO `ecs_article_cat` (`cat_id`, `cat_name`, `cat_type`, `keywords`, `cat_desc`, `sort_order`, `parent_id`) VALUES (1, 'Classification system', 2, '', 'Reserved classification', 50, 0);
 INSERT INTO `ecs_article_cat` (`cat_id`, `cat_name`, `cat_type`, `keywords`, `cat_desc`, `sort_order`, `parent_id`) VALUES (2, 'Online information', 3, '', 'Online information classification', 50, 1);
-INSERT INTO `ecs_article_cat` (`cat_id`, `cat_name`, `cat_type`, `keywords`, `cat_desc`, `sort_order`, `parent_id`) VALUES (3, 'Online help classification', 4, '', 'Online help classification', 50, 1);
+INSERT INTO `ecs_article_cat` (`cat_id`, `cat_name`, `cat_type`, `keywords`, `cat_desc`, `sort_order`, `parent_id`) VALUES (3, 'Trợ giúp trực tuyến', 4, '', 'Danh mục trợ giúp online', 50, 1);
 
 
 INSERT INTO `ecs_article` (`article_id`, `cat_id`, `title`, `content`, `author`, `author_email`, `keywords`, `article_type`, `is_open`, `add_time`, `file_url`, `open_type`) VALUES

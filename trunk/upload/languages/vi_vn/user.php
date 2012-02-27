@@ -43,7 +43,7 @@ $_LANG['pay'] = 'Payment';
 $_LANG['is_cancel'] = 'Cancel';
 $_LANG['account_inc'] = 'Increase';
 $_LANG['account_dec'] = 'Decrease';
-$_LANG['change_desc'] = 'Description';
+$_LANG['change_desc'] = 'Mô tả';
 $_LANG['surplus_amount'] = 'Your advance payment is:';
 $_LANG['payment_name'] = 'The payment method of yours is:';
 $_LANG['payment_fee'] = 'Poundage is:';
@@ -72,7 +72,7 @@ $_LANG['booking_goods_name'] = 'Name';
 $_LANG['booking_amount'] = 'Số lượng';
 $_LANG['booking_time'] = 'Time';
 $_LANG['process_desc'] = 'Remarks';
-$_LANG['describe'] = 'Description';
+$_LANG['describe'] = 'Mô tả';
 $_LANG['contact_username'] = 'Contact';
 $_LANG['contact_phone'] = 'Phone';
 $_LANG['submit_booking_goods'] = 'Submit';
@@ -134,7 +134,7 @@ $_LANG['profile_js']['no_select_question'] = '- You do not complete the operatio
 
 /* 支付方式 */
 $_LANG['pay_name'] = 'Name';
-$_LANG['pay_desc'] = 'Description';
+$_LANG['pay_desc'] = 'Mô tả';
 $_LANG['pay_fee'] = 'Poundage';
 
 /* 收货地址 */

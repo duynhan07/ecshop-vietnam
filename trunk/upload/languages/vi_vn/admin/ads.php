@@ -18,7 +18,7 @@
 $_LANG['position_name'] = 'Name';
 $_LANG['ad_width'] = 'Width';
 $_LANG['ad_height'] = 'Height';
-$_LANG['position_desc'] = 'Description';
+$_LANG['position_desc'] = 'Mô tả';
 $_LANG['posit_width'] = 'Width';
 $_LANG['posit_height'] = 'Height';
 $_LANG['posit_style'] = 'AD-position ';

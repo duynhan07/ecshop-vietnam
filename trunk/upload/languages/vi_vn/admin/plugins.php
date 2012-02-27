@@ -16,7 +16,7 @@
 */
 
 $_LANG['plugin_name'] = 'Name';
-$_LANG['plugin_desc'] = 'Description';
+$_LANG['plugin_desc'] = 'Mô tả';
 $_LANG['plugin_version'] = 'Version';
 $_LANG['plugin_author'] = 'Author';
 

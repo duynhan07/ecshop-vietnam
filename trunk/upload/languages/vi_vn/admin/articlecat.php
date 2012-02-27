@@ -24,13 +24,13 @@ $_LANG['type_name'][UPHELP_CAT] = 'Help Category';
 $_LANG['type_name'][HELP_CAT]   = 'Shop help';
 
 $_LANG['cat_keywords'] = 'Từ khóa';
-$_LANG['cat_desc'] = 'Description';
+$_LANG['cat_desc'] = 'Mô tả';
 $_LANG['parent_cat'] = 'Superior Categories';
 $_LANG['cat_top'] = 'Top Categories';
 $_LANG['not_allow_add'] = 'Classification does not allow you to add the selected sub-classification';
 $_LANG['not_allow_remove'] = 'System to retain the classification does not allow delete';
 $_LANG['is_fullcat'] = 'There are sub-classified under the classification, first delete its sub-classification';
-$_LANG['show_in_nav'] = 'Display in navigation';
+$_LANG['show_in_nav'] = 'Hiển thị tại NAV';
 
 $_LANG['isopen'] = 'Yes';
 $_LANG['isclose'] = 'No';

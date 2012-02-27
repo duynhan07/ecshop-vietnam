@@ -26,7 +26,7 @@
 <div class="block clearfix">
   <!--left start-->
   <div class="AreaL">
-    <!-- TemplateBeginEditable name="左边区域" -->
+    <!-- TemplateBeginEditable name="Left area" -->
 <!-- #BeginLibraryItem "/library/cart.lbi" -->
 
 {insert_scripts files='transport.js'}

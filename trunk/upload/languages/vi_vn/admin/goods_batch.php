@@ -18,7 +18,7 @@
 $_LANG['select_method'] ='Product method:';
 $_LANG['by_cat'] ='Basis product category, brand.';
 $_LANG['by_sn'] ='Basis product NO.';
-$_LANG['select_cat'] ='Category:';
+$_LANG['select_cat'] ='Danh mục:';
 $_LANG['select_brand'] ='Thương hiệu:';
 $_LANG['goods_list'] ='List:';
 $_LANG['src_list'] ='Choose product:';
@@ -52,7 +52,7 @@ $_LANG['export_paipai'] = 'paipai Assistant to support data formats';
 $_LANG['export_paipai3'] = 'paipai 3.0 Assistant to support data formats';
 $_LANG['batch_edit_ok'] ='Batch modify successfully.';
 
-$_LANG['goods_cat'] ='Category:';
+$_LANG['goods_cat'] ='Danh mục:';
 $_LANG['csv_file'] ='Upload csv files:';
 $_LANG['notice_file'] ='(The product quantity once upload had better be less than 1000 in CSV file, the CSV file size had better be less than 500K.)';
 $_LANG['file_charset'] ='Character set:';
