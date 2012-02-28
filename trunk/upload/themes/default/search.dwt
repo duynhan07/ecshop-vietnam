@@ -10,18 +10,18 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-{* 包含脚本文件 *}
+{* Load các tệp js *}
 {insert_scripts files='utils.js,common.js,global.js,compare.js'}
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<!--当前位置 start-->
+<!--Trang hiện tại start-->
 <div class="block box">
  <div id="ur_here">
   <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
  </div>
 </div>
-<!--当前位置 end-->
+<!--Trang hiện tại end-->
 <div class="blank"></div>
 <div class="block clearfix">
   <!--left start-->
@@ -34,7 +34,7 @@
     <!-- #BeginLibraryItem "/library/goods_article.lbi" --><!-- #EndLibraryItem -->
     <!-- #BeginLibraryItem "/library/goods_attrlinked.lbi" --><!-- #EndLibraryItem -->
     <!-- TemplateEndEditable -->
-    <!-- TemplateBeginEditable name="左边广告区域（宽200px）" -->
+    <!-- TemplateBeginEditable name="Quảng cáo trái(width:200px)" -->
     <!-- TemplateEndEditable -->
     <!--AD end-->
     <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
@@ -51,7 +51,7 @@
       <form action="search.php" method="get" name="advancedSearchForm" id="advancedSearchForm">
     <table border="0" align="center" cellpadding="3">
       <tr>
-        <td valign="top">{$lang.keywords}：</td>
+        <td valign="top">{$lang.keywords}: </td>
         <td>
           <input name="keywords" id="keywords" type="text" size="40" maxlength="120" class="inputBg" value="{$adv_val.keywords}" />
           <label for="sc_ds"><input type="checkbox" name="sc_ds" value="1" id="sc_ds" {$scck} />{$lang.sc_ds}</label>
@@ -59,13 +59,13 @@
         </td>
       </tr>
       <tr>
-        <td>{$lang.category}：</td>
+        <td>{$lang.category}: </td>
         <td><select name="category" id="select" style="border:1px solid #ccc;">
             <option value="0">{$lang.all_category}</option>{$cat_list}</select>
         </td>
       </tr>
       <tr>
-        <td>{$lang.brand}：</td>
+        <td>{$lang.brand}: </td>
         <td><select name="brand" id="brand" style="border:1px solid #ccc;">
             <option value="0">{$lang.all_brand}</option>
             {html_options options=$brand_list selected=$adv_val.brand}
@@ -73,7 +73,7 @@
         </td>
       </tr>
       <tr>
-        <td>{$lang.price}：</td>
+        <td>{$lang.price}: </td>
         <td><input name="min_price" type="text" id="min_price" class="inputBg" value="{$adv_val.min_price}" size="10" maxlength="8" />
           -
           <input name="max_price" type="text" id="max_price" class="inputBg" value="{$adv_val.max_price}" size="10" maxlength="8" />
@@ -81,7 +81,7 @@
       </tr>
       <!--{if $goods_type_list}-->
       <tr>
-        <td>{$lang.extension}：</td>
+        <td>{$lang.extension}: </td>
         <td><select name="goods_type" onchange="this.form.submit()" style="border:1px solid #ccc;">
             <option value="0">{$lang.all_option}</option>
             {html_options options=$goods_type_list selected=$goods_type_selected}
@@ -93,13 +93,13 @@
       <!--{foreach from=$goods_attributes item=item}-->
       <!--{if $item.type eq 1}-->
       <tr>
-        <td>{$item.attr}：</td>
+        <td>{$item.attr}: </td>
         <td colspan="3"><input name="attr[{$item.id}]" value="{$item.value}" class="inputBg" type="text" size="20" maxlength="120" /></td>
       </tr>
       <!--{/if}-->
       <!--{if $item.type eq 2}-->
       <tr>
-        <td>{$item.attr}：</td>
+        <td>{$item.attr}: </td>
         <td colspan="3"><input name="attr[{$item.id}][from]" class="inputBg" value="{$item.value.from}" type="text" size="5" maxlength="5" />
           -
           <input name="attr[{$item.id}][to]" value="{$item.value.to}"  class="inputBg" type="text" maxlength="5" /></td>
@@ -107,7 +107,7 @@
       <!--{/if}-->
       <!--{if $item.type eq 3}-->
       <tr>
-        <td>{$item.attr}：</td>
+        <td>{$item.attr}: </td>
         <td colspan="3"><select name="attr[{$item.id}]" style="border:1px solid #ccc;">
             <option value="0">{$lang.all_option}</option>
             {html_options options=$item.options selected=$item.value}
@@ -322,7 +322,7 @@
   <!--right end-->
 </div>
 <div class="blank5"></div>
-<!--帮助-->
+<!--Trợ giúp-->
 <div class="block">
   <div class="box">
    <div class="helpTitBg clearfix">
@@ -331,25 +331,25 @@
   </div>
 </div>
 <div class="blank"></div>
-<!--帮助-->
-<!--友情链接 start-->
+<!--Trợ giúp-->
+<!--Liên kết bạn bè start-->
 <!--{if $img_links  or $txt_links }-->
 <div id="bottomNav" class="box">
  <div class="box_1">
   <div class="links clearfix">
-    <!--开始图片类型的友情链接{foreach from=$img_links item=link}-->
+    <!--Bắt đầu liên kết hình{foreach from=$img_links item=link}-->
     <a href="{$link.url}" target="_blank" title="{$link.name}"><img src="{$link.logo}" alt="{$link.name}" border="0" /></a>
-    <!--结束图片类型的友情链接{/foreach}-->
+    <!--End liên kết hình ảnh{/foreach}-->
     <!-- {if $txt_links} -->
-    <!--开始文字类型的友情链接{foreach from=$txt_links item=link}-->
+    <!--Bắt đầu liên kết văn bản{foreach from=$txt_links item=link}-->
     [<a href="{$link.url}" target="_blank" title="{$link.name}">{$link.name}</a>]
-    <!--结束文字类型的友情链接{/foreach}-->
+    <!--End liên kết văn bản{/foreach}-->
     <!-- {/if} -->
   </div>
  </div>
 </div>
 <!--{/if}-->
-<!--友情链接 end-->
+<!--Liên kết bạn bè end-->
 <div class="blank"></div>
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
 </body>

@@ -153,7 +153,7 @@ visibility:hidden;
   color:#fff; padding-left:40px;
   }
   #search .go{background:url(images/bnt_search.gif); border:none; width:52px; height:19px;/* position:relative; top:2px; utf8下*/}
-  /*当前位置*/
+  /*Trang hiện tại*/
   #ur_here{border:1px solid #f0989a; border-top:none; background:url(images/pink/uh_bg.gif) repeat-x left top;
   height:36px; line-height:36px; padding:0 12px;
   }
@@ -422,7 +422,7 @@ visibility:hidden;
    .pagebar .page_now{display:block; float:left; margin:0 5px; color:#ff5a6a; font-weight:bold; background:#fff;}
    #pager a{color:#cb0f26; text-decoration:none;}
 
-   /*底部导航+友情链接*/
+   /*底部导航+Liên kết bạn bè*/
    #bottomNav{width:958px;}
    .bNavList{border:1px solid #fff; background:#fef7f9; height:27px; line-height:27px; padding:0 12px;}
    .links{border:1px solid #fff; background:#fef7f9; padding:0 12px;}
