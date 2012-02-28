@@ -32,7 +32,7 @@ $_LANG['sms_domain'] = 'Domain:';
 $_LANG['sms_num'] = 'Sms special service number:';
 $_LANG['sms_count'] = 'Send smsquantity:';
 $_LANG['sms_total_money'] = 'Total money:';
-$_LANG['sms_balance'] = 'Balance:';
+$_LANG['sms_balance'] = 'Số dư:';
 $_LANG['sms_last_request'] = 'Latest request time:';
 $_LANG['disable'] = 'Disable sms service';
 
