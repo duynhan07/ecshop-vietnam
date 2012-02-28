@@ -26,7 +26,7 @@ $_LANG['sort_order'] = 'Serial number';
 $_LANG['contents'] = 'Content';
 $_LANG['number'] = 'Số lượng';
 $_LANG['display'] = 'Display';
-$_LANG['select_plz'] = 'Please select...';
+$_LANG['select_plz'] = 'Hãy chọn...';
 $_LANG['button_restore'] = 'Repeal';
 
 /* Prompting message */
@@ -142,7 +142,7 @@ $_LANG['restore_backup_ok'] = 'The success of the restoration of the backup';
 $_LANG['js_languages']['setupConfirm'] = "Enable new template and disable old template. \\nAre you sure enable the new template?";
 $_LANG['js_languages']['reinstall'] = 'Reinstall current template';
 $_LANG['backup'] =  'Back-up current template';
-$_LANG['js_languages']['selectPlease'] = 'Please select...';
+$_LANG['js_languages']['selectPlease'] = 'Hãy chọn...';
 $_LANG['js_languages']['removeConfirm'] = 'Are you sure delete the selected contents?';
 $_LANG['js_languages']['empty_content'] = 'Sorry, library content can\'t be blank.';
 $_LANG['js_languages']['save_confirm'] = 'You have edit template, are you sure don\'t save it?';

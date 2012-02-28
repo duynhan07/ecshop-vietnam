@@ -233,7 +233,7 @@ $_LANG['js_languages']['goods_cat_not_leaf'] ='You selected product category isn
 $_LANG['js_languages']['shop_price_not_null']='The shop selling price can\'t be blank.';
 $_LANG['js_languages']['shop_price_not_number']='The shop selling price isn\'t a figure.';
 
-$_LANG['js_languages']['select_please'] ='Please select...';
+$_LANG['js_languages']['select_please'] ='Hãy chọn...';
 $_LANG['js_languages']['button_add'] ='Add';
 $_LANG['js_languages']['button_del'] ='Delete';
 $_LANG['js_languages']['spec_value_not_null'] ='The specification can\'t be blank.';

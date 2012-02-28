@@ -139,12 +139,11 @@ INSERT INTO `ecs_mail_templates` (`template_id`, `template_code`, `is_html`, `te
 
 (14, 'recomment', 1, 'Trả lời nhận xét', '<p>Kính gửi {$user_name}<br />\r\n<br />\r\nNhận xét của bạn:<br />\r\n&ldquo;{$comment}&rdquo;<br />\r\n<br />\r\nQuản trị viên đã trả lời như sau:<br />\r\n&ldquo;{$recomment}&rdquo;<br />\r\n<br />\r\nBạn có thể truy cập gian hàng của chúng tôi và trả lời bất kỳ lúc nào.<br />\r\n{$shop_name}<br />\r\n{$send_date}</p>', 0, 0, 'template');
 
-
 INSERT INTO `ecs_region` (`region_id`, `parent_id`, `region_name`, `region_type`, `agency_id`) VALUES (1, 0, 'Việt Nam', 0, 0),
-(2, 1, 'Hà Nội', 1, 0),
-(3, 1, 'Đà Nẵng', 1, 0),
+(2, 1, 'Hà Nội', 1, '0'),
+(3, 1, 'Đà Nẵng', 1, '0'),
 (4, 1, 'Hồ Chí Minh', 1, 0),
-(5, 2, 'Quận Ba Đình', 1, 0);
+(5, 2, 'Quận Ba Đình', 2, 0);
 
 
 INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`, `store_dir`, `value`, `sort_order`) VALUES
@@ -199,7 +198,7 @@ INSERT INTO `ecs_shop_config` (`id`, `parent_id`, `code`, `type`, `store_range`,
 (220, 2, 'register_points', 'text', '', '', '0', '1'),
 (221, 2, 'enable_gzip', 'select', '0,1', '', '0', '1'),
 (222, 2, 'top10_time', 'select', '0,1,2,3,4', '', '0', '1'),
-(223, 2, 'timezone', 'options', '-12,-11,-10,-9,-8,-7,-6,-5,-4,-3.5,-3,-2,-1,0,1,2,3,3.5,4,4.5,5,5.5,5.75,6,6.5,7,8,9,9.5,10,11,12', '', '8', '1'),
+(223, 2, 'timezone', 'options', '-12,-11,-10,-9,-8,-7,-6,-5,-4,-3.5,-3,-2,-1,0,1,2,3,3.5,4,4.5,5,5.5,5.75,6,6.5,7,8,9,9.5,10,11,12', '', '7', '1'),
 (224, 2, 'upload_size_limit', 'options', '-1,0,64,128,256,512,1024,2048,4096', '', '64', '1'),
 (226, 2, 'cron_method', 'select', '0,1', '', '0', '1'),
 (227, 2, 'comment_factor', 'select', '0,1,2,3', '', '0', '1'),

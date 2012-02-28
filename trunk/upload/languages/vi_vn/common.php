@@ -69,7 +69,7 @@ $_LANG['goods_attr'] = 'Attribute';
 $_LANG['goods_price_ladder'] = 'Price Ladder';
 $_LANG['ladder_price'] = 'Ladder price';
 $_LANG['shop_prices'] = 'Shop price';
-$_LANG['market_prices'] = 'Market price';
+$_LANG['market_prices'] = 'Giá t.trường';
 $_LANG['deposit'] = 'Associates bail';
 $_LANG['amount'] = 'Total';
 $_LANG['number'] = 'Số lượng';
@@ -479,7 +479,7 @@ $_LANG['confirm_password'] = 'Re-enter password.';
 $_LANG['sign_up'] = 'Register';
 $_LANG['forgot_password'] = 'Forgot your password?';
 $_LANG['hello'] = 'Hello';
-$_LANG['welcome_return'] = 'Welcome you back';
+$_LANG['welcome_return'] = 'Chào mừng bạn';
 $_LANG['now_account'] = 'Your account:';
 $_LANG['balance'] = 'balance';
 $_LANG['along_with'] = 'and';
@@ -498,7 +498,7 @@ $_LANG['brand_category'] = 'Brand categories:';
 $_LANG['all_category'] = 'Tất cả danh mục';
 
 /* 商品分类页 */
-$_LANG['goods_filter'] = 'Goods filter';
+$_LANG['goods_filter'] = 'Bộ lọc sản phẩm';
 
 /* cls_image类的语言项 */
 $_LANG['directory_readonly'] = 'The directory % is not existed or unable to write';

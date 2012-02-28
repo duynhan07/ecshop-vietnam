@@ -24,9 +24,9 @@ $_LANG['ip_address'] = 'IP';
 $_LANG['drop_logs'] = 'Delete';
 
 $_LANG['view_ip'] = 'IP';
-$_LANG['select_ip'] = 'Please select...';
+$_LANG['select_ip'] = 'Hãy chọn...';
 $_LANG['drop_logs'] = 'Delete logs';
-$_LANG['select_date'] = 'Please select...';
+$_LANG['select_date'] = 'Hãy chọn...';
 $_LANG['comfrom'] = 'OK';
 
 $_LANG['week_date'] = 'One week ago';
