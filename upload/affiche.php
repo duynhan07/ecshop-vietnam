@@ -40,12 +40,6 @@ if ($_GET['act'] == 'js')
 
     if (!empty($ad_info))
     {
-        /* 转换编码 */
-        if ($_GET['charset'] != 'UTF8')
-        {
-            $ad_info['ad_name'] = ecs_iconv('UTF8', $_GET['charset'], $ad_info['ad_name']);
-            $ad_info['ad_code'] = ecs_iconv('UTF8', $_GET['charset'], $ad_info['ad_code']);
-        }
 
         /* 初始化广告的类型和来源 */
         $_GET['type'] = !empty($_GET['type']) ? intval($_GET['type'])    : 0;

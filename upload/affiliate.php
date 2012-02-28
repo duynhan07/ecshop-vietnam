@@ -58,12 +58,6 @@ if (!$smarty->is_cached($tpl, $cache_id))
     $goods['goods_img'] = (strpos($goods['goods_img'], 'http://') === false && strpos($goods['goods_img'], 'https://') === false) ? $ecs->url() . $goods['goods_img'] : $goods['goods_img'];
     $goods['shop_price'] = price_format($goods['shop_price']);
 
-    /*if ($charset != 'UTF8')
-    {
-        $goods['goods_name']  = ecs_iconv('UTF8', $charset, htmlentities($goods['goods_name'], ENT_QUOTES, 'UTF-8'));
-        $goods['shop_price'] = ecs_iconv('UTF8', $charset, $goods['shop_price']);
-    }*/
-
     $smarty->assign('goods', $goods);
     $smarty->assign('userid', $userid);
     $smarty->assign('type', $type);

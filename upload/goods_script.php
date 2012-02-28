@@ -87,14 +87,8 @@ if (!$smarty->is_cached($tpl, $cache_id))
         $goods['goods_price'] = price_format($goods['goods_price']);
         if ($charset != EC_CHARSET)
         {
-            if (EC_CHARSET == 'gbk')
-            {
-                $tmp_goods_name = htmlentities($goods['goods_name'], ENT_QUOTES, 'gb2312');
-            }
-            else
-            {
-                $tmp_goods_name = htmlentities($goods['goods_name'], ENT_QUOTES, EC_CHARSET);
-            }
+			//Chỉ sử dụng UTF-8 encoding
+			$tmp_goods_name = htmlentities($goods['goods_name'], ENT_QUOTES, EC_CHARSET);
             $goods['goods_name']  = ecs_iconv(EC_CHARSET, $charset, $tmp_goods_name);
             $goods['goods_price'] = ecs_iconv(EC_CHARSET, $charset, $goods['goods_price']);
         }
