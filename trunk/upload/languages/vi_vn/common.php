@@ -83,7 +83,7 @@ $_LANG['is_cancel'] = 'Cancel';
 $_LANG['amend_amount'] = 'Modify quantity';
 $_LANG['end'] = 'End';
 $_LANG['require_field'] = '<span class="require-field">*</span>';
-$_LANG['search_result'] = 'Search result';
+$_LANG['search_result'] = 'Kết quả tìm kiếm';
 $_LANG['order_number'] = 'NO.';
 $_LANG['consignment'] = 'Invoice';
 $_LANG['activities'] = 'Goods activities';

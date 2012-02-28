@@ -21,15 +21,15 @@ $_LANG['all_goods_type'] = 'All products type';
 $_LANG['attr_id'] = 'ID';
 $_LANG['cat_id'] = 'Product type';
 $_LANG['attr_name'] = 'Tên thuộc tính';
-$_LANG['attr_input_type'] = 'Enter mode';
-$_LANG['attr_values'] = 'Choice value list';
+$_LANG['attr_input_type'] = 'Chế độ nhập';
+$_LANG['attr_values'] = 'Chọn danh sách giá trị';
 $_LANG['attr_type'] = 'Whether need select the value of attribute for shopping?';
 
-$_LANG['value_attr_input_type'][ATTR_TEXT] = 'Manual enter';
-$_LANG['value_attr_input_type'][ATTR_OPTIONAL] = 'Select from list';
-$_LANG['value_attr_input_type'][ATTR_TEXTAREA] = 'Multirow textbox';
+$_LANG['value_attr_input_type'][ATTR_TEXT] = 'Nhập thủ công';
+$_LANG['value_attr_input_type'][ATTR_OPTIONAL] = 'Chọn từ danh sách';
+$_LANG['value_attr_input_type'][ATTR_TEXTAREA] = 'Đoạn văn bản';
 
-$_LANG['drop_confirm'] = 'Are you sure delete the attribute?';
+$_LANG['drop_confirm'] = 'Bạn có chắc bạn muốn xóa thuộc tính?';
 
 /* Add/Edit */
 $_LANG['label_attr_name'] = 'Tên thuộc tính:';
