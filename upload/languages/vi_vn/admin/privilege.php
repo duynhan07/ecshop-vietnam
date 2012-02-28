@@ -49,7 +49,7 @@ $_LANG['move_down'] = 'Move down';
 $_LANG['continue_add'] = 'Continue add administrator.';
 $_LANG['back_list'] = 'Return to administrator list.';
 $_LANG['select_role'] = 'Choose role';
-$_LANG['select_please'] = 'Please select...';
+$_LANG['select_please'] = 'Hãy chọn...';
 
 $_LANG['admin_edit'] = 'Edit administrator';
 $_LANG['edit_pwd'] = 'Edit password';

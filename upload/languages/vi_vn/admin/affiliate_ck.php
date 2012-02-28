@@ -12,7 +12,7 @@ $_LANG['sch_order'] = 'Search Order No.';
 
 $_LANG['sch_stats']['name'] = 'Operational status';
 $_LANG['sch_stats']['info'] = 'According to operational status search:';
-$_LANG['sch_stats']['all'] = 'All';
+$_LANG['sch_stats']['all'] = 'Tất cả';
 $_LANG['sch_stats'][0] = 'Wait for treatment';
 $_LANG['sch_stats'][1] = 'Has been divided into';
 $_LANG['sch_stats'][2] = 'Cancel divided into';

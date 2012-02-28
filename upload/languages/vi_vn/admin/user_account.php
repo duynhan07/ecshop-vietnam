@@ -39,7 +39,7 @@ $_LANG['confirm'] = 'Confirmed';
 $_LANG['unconfirm'] = 'Unconfirmed';
 $_LANG['cancel'] = 'Cancel';
 
-$_LANG['please_select'] = 'Please select...';
+$_LANG['please_select'] = 'Hãy chọn...';
 $_LANG['surplus_info'] = 'Balance information';
 $_LANG['check'] = 'Check';
 

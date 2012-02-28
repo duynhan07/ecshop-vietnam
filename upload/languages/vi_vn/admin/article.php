@@ -31,7 +31,7 @@ $_LANG['upload_file'] ='Upload file';
 $_LANG['file_url'] ='Or enter file address';
 $_LANG['invalid_file'] = 'The file type is invalid';
 $_LANG['article_name_exist'] = 'The title already exists.';
-$_LANG['select_plz'] = 'Please select...';
+$_LANG['select_plz'] = 'Hãy chọn...';
 $_LANG['external_links'] = 'External links';
 
 $_LANG['top'] ='Top';

@@ -140,7 +140,7 @@ $_LANG['pay_fee'] = 'Poundage';
 /* 收货地址 */
 $_LANG['consignee_name'] = 'Name';
 $_LANG['country_province'] = 'Country/Province';
-$_LANG['please_select'] = 'Please select...';
+$_LANG['please_select'] = 'Hãy chọn...';
 $_LANG['city_district'] = 'City/District';
 $_LANG['email_address'] = 'Email';
 $_LANG['detailed_address'] = 'Email';
@@ -163,7 +163,7 @@ $_LANG['search_ship'] = 'Search shipping methods';
 
 $_LANG['del_address_false'] = 'Delete failed!';
 $_LANG['add_address_success'] = 'Add successfully!';
-$_LANG['edit_address_success'] = 'Your shipping address information has already modified successfully!';
+$_LANG['edit_address_success'] = 'Thông tin nhận hàng của bạn đã được thay đổi thành công!';
 $_LANG['address_list_lnk'] = 'Return the address list';
 $_LANG['add_address'] = 'Add a new place of receipt';
 $_LANG['confirm_edit'] = 'Submit';
@@ -587,8 +587,8 @@ $_LANG['validate_ok'] = '%s hello, youremail %s is validated';
 $_LANG['validate_fail'] = 'Validate failed, please check your link';
 $_LANG['validate_mail_ok'] = 'Validated mail sent successfully';
 
-$_LANG['not_validated'] = 'Not validated';
-$_LANG['resend_hash_mail'] = 'Resend hash mail';
+$_LANG['not_validated'] = 'Chưa xác thực';
+$_LANG['resend_hash_mail'] = 'Gửi lại email xác thực';
 
 $_LANG['query_status'] = 'Query status';
 

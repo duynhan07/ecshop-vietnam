@@ -37,7 +37,7 @@ $_LANG['cat_name_empty'] = 'Name of category can\'t be blank!';
 $_LANG['article_list'] = 'Help articles list';
 $_LANG['cat_list'] = 'Help categories list';
 
-$_LANG['select_plz'] = 'Please select...';
+$_LANG['select_plz'] = 'Hãy chọn...';
 
 /* Prompting message */
 $_LANG['catname_exist'] = '%s already exists.';
