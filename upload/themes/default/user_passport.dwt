@@ -10,18 +10,18 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-{* 包含脚本文件 *}
+{* Load các tệp js *}
 {insert_scripts files='common.js,user.js,transport.js'}
 
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<!--当前位置 start-->
+<!--Trang hiện tại start-->
 <div class="block box">
  <div id="ur_here">
   <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
   </div>
 </div>
-<!--当前位置 end-->
+<!--Trang hiện tại end-->
 <div class="blank"></div>
 <!--#登录界面 start-->
 <!-- {if $action eq 'login'} -->
@@ -64,14 +64,14 @@
   </div>
   <div class="usTxt">
     <strong>{$lang.user_reg_info[0]}</strong>  <br />
-    <strong class="f4">{$lang.user_reg_info[1]}：</strong><br />
+    <strong class="f4">{$lang.user_reg_info[1]}: </strong><br />
     <!-- {if $car_off eq 1} -->
     {$lang.user_reg_info[2]}<br />
     <!--{/if}-->
     <!-- {if $car_off eq 0} -->
     {$lang.user_reg_info[8]}<br />
     <!--{/if}-->
-    {$lang.user_reg_info[3]}：<br />
+    {$lang.user_reg_info[3]}: <br />
     1. {$lang.user_reg_info[4]}<br />
     2. {$lang.user_reg_info[5]}<br />
     3. {$lang.user_reg_info[6]}<br />
@@ -279,11 +279,11 @@
             <td colspan="2" align="center"><strong>{$lang.input_answer}</strong></td>
           </tr>
           <tr>
-            <td width="29%" align="right">{$lang.passwd_question}：</td>
+            <td width="29%" align="right">{$lang.passwd_question}: </td>
             <td width="61%">{$passwd_question}</td>
           </tr>
           <tr>
-            <td align="right">{$lang.passwd_answer}：</td>
+            <td align="right">{$lang.passwd_answer}: </td>
             <td><input name="passwd_answer" type="text" size="20" class="inputBg" /></td>
           </tr>
           <!-- 判断是否启用验证码{if $enabled_captcha} -->

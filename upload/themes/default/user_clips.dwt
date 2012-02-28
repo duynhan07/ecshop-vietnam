@@ -10,18 +10,18 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-{* 包含脚本文件 *}
+{* Load các tệp js *}
 {insert_scripts files='transport.js,common.js,user.js'}
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<!--当前位置 start-->
+<!--Trang hiện tại start-->
 <div class="block box">
  <div id="ur_here">
   <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
  </div>
 </div>
-<!--当前位置 end-->
+<!--Trang hiện tại end-->
 <div class="blank"></div>
 <div class="block clearfix">
   <!--left start-->
@@ -125,7 +125,7 @@
                     </tr>
                     {else}
                     <tr>
-                      <td align="right">{$lang.message_type}：</td>
+                      <td align="right">{$lang.message_type}: </td>
                       <td><input name="msg_type" type="radio" value="0" checked="checked" />
                         {$lang.type[0]}
                         <input type="radio" name="msg_type" value="1" />
@@ -139,15 +139,15 @@
                     </tr>
                     {/if}
                     <tr>
-                      <td align="right">{$lang.message_title}：</td>
+                      <td align="right">{$lang.message_title}: </td>
                       <td><input name="msg_title" type="text" size="30" class="inputBg" /></td>
                     </tr>
                     <tr>
-                      <td align="right" valign="top">{$lang.message_content}：</td>
+                      <td align="right" valign="top">{$lang.message_content}: </td>
                       <td><textarea name="msg_content" cols="50" rows="4" wrap="virtual" class="B_blue"></textarea></td>
                     </tr>
                     <tr>
-                      <td align="right">{$lang.upload_img}：</td>
+                      <td align="right">{$lang.upload_img}: </td>
                       <td><input type="file" name="message_img"  size="45"  class="inputBg" /></td>
                     </tr>
                     <tr>
@@ -181,7 +181,7 @@
           <div class="msgBottomBorder">
           {$comment.content|escape}<br />
           <!--{if $comment.reply_content}-->
-          <b>{$lang.reply_comment}：</b><br />
+          <b>{$lang.reply_comment}: </b><br />
           {$comment.reply_content}
            <!--{/if}-->
           </div>

@@ -76,7 +76,7 @@
       <form action="javascript:;" onsubmit="submitComment(this)" method="post" name="commentForm" id="commentForm">
        <table width="710" border="0" cellspacing="5" cellpadding="0">
         <tr>
-          <td width="64" align="right">{$lang.username}：</td>
+          <td width="64" align="right">{$lang.username}: </td>
           <td width="631"{if !$enabled_captcha}{/if}><!--{if $smarty.session.user_name}-->{$smarty.session.user_name}<!--{else}-->{$lang.anonymous}<!--{/if}--></td>
         </tr>
         <tr>
@@ -86,7 +86,7 @@
           </td>
         </tr>
         <tr>
-          <td align="right">{$lang.comment_rank}：</td>
+          <td align="right">{$lang.comment_rank}: </td>
           <td>
           <input name="comment_rank" type="radio" value="1" id="comment_rank1" /> <img src="../images/stars1.gif" />
           <input name="comment_rank" type="radio" value="2" id="comment_rank2" /> <img src="../images/stars2.gif" />
@@ -96,7 +96,7 @@
           </td>
         </tr>
         <tr>
-          <td align="right" valign="top">{$lang.comment_content}：</td>
+          <td align="right" valign="top">{$lang.comment_content}: </td>
           <td>
           <textarea name="content" class="inputBorder" style="height:50px; width:620px;"></textarea>
           <input type="hidden" name="cmt_type" value="{$comment_type}" />
@@ -107,7 +107,7 @@
           <td colspan="2">
           <!-- 判断是否启用验证码{if $enabled_captcha} -->
           <div style="padding-left:15px; text-align:left; float:left;">
-          {$lang.comment_captcha}：<input type="text" name="captcha"  class="inputBorder" style="width:50px; margin-left:5px;"/>
+          {$lang.comment_captcha}: <input type="text" name="captcha"  class="inputBorder" style="width:50px; margin-left:5px;"/>
           <img src="captcha.php?{$rand}" alt="captcha" onClick="this.src='captcha.php?'+Math.random()" class="captcha">
           </div>
           <!-- {/if} -->

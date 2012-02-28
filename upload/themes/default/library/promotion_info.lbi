@@ -1,6 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!-- {if $promotion_info} -->
-<!-- 促销信息 -->
+<!-- Thông tin khuyến mại -->
 <div class="box">
  <div class="box_1">
   <h3><span>{$lang.promotion_info}</span></h3>
