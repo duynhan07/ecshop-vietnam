@@ -43,30 +43,13 @@ function get_wap_pager($num, $perpage, $curr_page, $mpurl,$pvar)
         $setp = strpos($mpurl, '?') === false ? "?" : '&amp;';
         if($curr_page > 1)
         {
-            $multipage .= "<a href=\"$mpurl${setp}${pvar}=".($curr_page-1)."\">上一页</a>";
+            $multipage .= "<a href=\"$mpurl${setp}${pvar}=".($curr_page-1)."\">T.trước</a>";
         }
         $multipage .= $curr_page."/".$pages;
         if(($curr_page++) < $pages)
         {
-            $multipage .= "<a href=\"$mpurl${setp}${pvar}=".$curr_page++."\">下一页</a><br/>";
+            $multipage .= "<a href=\"$mpurl${setp}${pvar}=".$curr_page++."\">T.sau</a><br/>";
         }
-        //$multipage .= $pages > $page ? " ... <a href=\"$mpurl&amp;$pvar=$pages\"> [$pages] &gt;&gt;</a>" : " 页/".$all_pages."页";
-        //$url_array = explode("?" , $mpurl);
-       // $field_str = "";
-       // if (isset($url_array[1]))
-       // {
-          //  $filed_array = explode("&amp;" , $url_array[1]);
-           // if (count($filed_array) > 0)
-            //{
-             //   foreach ($filed_array AS $data)
-              //  {
-               //     $value_array = explode("=" , $data);
-                //    $field_str .= "<postfield name='".$value_array[0]."' value='".encode_output($value_array[1])."'/>\n";
-               // }
-           // }
-      //  }
-        //$multipage .= "跳转到第<input type='text' name='pageno' format='*N' size='4' value='' maxlength='2' emptyok='true' />页<anchor>[GO]<go href='{$url_array[0]}' method='get'>{$field_str}<postfield name='".$pvar."' value='$(pageno)'/></go></anchor>";
-        //<postfield name='snid' value='".session_id()."'/>
     }
     return $multipage;
 }
@@ -80,11 +63,11 @@ function get_footer()
 {
     if ($_SESSION['user_id'] > 0)
     {
-        $footer = "<br/><a href='user.php?act=user_center'>用户中心</a>|<a href='user.php?act=logout'>退出</a>|<a href='javascript:scroll(0,0)' hidefocus='true'>回到顶部</a><br/>Copyright 2009<br/>Powered by ECShop v2.7.2";
+        $footer = "<br/><a href='user.php?act=user_center'>Trang người dùng</a>|<a href='user.php?act=logout'>Thoát</a>|<a href='javascript:scroll(0,0)' hidefocus='true'>Lên đầu trang</a><br/>Copyright 2009<br/>Phát triển bởi ECMS.ASIA";
     }
     else
     {
-        $footer = "<br/><a href='user.php?act=login'>登陆</a>|<a href='user.php?act=register'>免费注册</a>|<a href='javascript:scroll(0,0)' hidefocus='true'>回到顶部</a><br/>Copyright 2009<br/>Powered by ECShop v2.7.2";
+        $footer = "<br/><a href='user.php?act=login'>Đăng nhập</a>|<a href='user.php?act=register'>Đăng ký</a>|<a href='javascript:scroll(0,0)' hidefocus='true'>Lên đầu trang</a><br/>Copyright 2009<br/>Phát triển bởi ECMS.ASIA";
     }
 
     return $footer;
