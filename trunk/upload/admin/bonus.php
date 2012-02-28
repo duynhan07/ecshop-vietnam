@@ -599,24 +599,12 @@ if ($_REQUEST['act'] == 'gen_excel')
     header("Content-Disposition: attachment; filename=$bonus_filename.xls");
 
     /* 文件标题 */
-    if (EC_CHARSET != 'gbk')
-    {
-        echo ecs_iconv('UTF8', 'GB2312', $_LANG['bonus_excel_file']) . "\t\n";
-        /* 红包序列号, 红包金额, 类型名称(红包名称), 使用结束日期 */
-        echo ecs_iconv('UTF8', 'GB2312', $_LANG['bonus_sn']) ."\t";
-        echo ecs_iconv('UTF8', 'GB2312', $_LANG['type_money']) ."\t";
-        echo ecs_iconv('UTF8', 'GB2312', $_LANG['type_name']) ."\t";
-        echo ecs_iconv('UTF8', 'GB2312', $_LANG['use_enddate']) ."\t\n";
-    }
-    else
-    {
         echo $_LANG['bonus_excel_file'] . "\t\n";
         /* 红包序列号, 红包金额, 类型名称(红包名称), 使用结束日期 */
         echo $_LANG['bonus_sn'] ."\t";
         echo $_LANG['type_money'] ."\t";
         echo $_LANG['type_name'] ."\t";
         echo $_LANG['use_enddate'] ."\t\n";
-    }
 
     $val = array();
     $sql = "SELECT ub.bonus_id, ub.bonus_type_id, ub.bonus_sn, bt.type_name, bt.type_money, bt.use_end_date ".
@@ -631,17 +619,12 @@ if ($_REQUEST['act'] == 'gen_excel')
         echo $val['type_money'] . "\t";
         if (!isset($code_table[$val['type_name']]))
         {
-            if (EC_CHARSET != 'gbk')
-            {
-                $code_table[$val['type_name']] = ecs_iconv('UTF8', 'GB2312', $val['type_name']);
-            }
-            else
-            {
+			//Chỉ sử dụng UTF-8 encoding
                 $code_table[$val['type_name']] = $val['type_name'];
-            }
+
         }
         echo $code_table[$val['type_name']] . "\t";
-        echo local_date('Y-m-d', $val['use_end_date']);
+        echo local_date('d-m-Y', $val['use_end_date']);
         echo "\t\n";
     }
 }

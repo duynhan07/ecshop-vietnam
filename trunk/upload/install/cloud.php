@@ -121,10 +121,6 @@ function api_request($apiget)
     if (!empty($api_arr) && $api_arr['error'] == 0 && md5($api_arr['content']) == $api_arr['hash'])
     {
         $api_arr['content'] = urldecode($api_arr['content']);
-        if ($ecs_charset != 'UTF-8')
-        {
-            $api_arr['content'] = ecs_iconv('UTF-8',$ecs_charset,$api_arr['content']);
-        }
         return $api_arr['content'];
     }
     else

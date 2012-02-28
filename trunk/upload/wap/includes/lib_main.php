@@ -44,12 +44,12 @@ function get_wap_pager($num, $perpage, $curr_page, $mpurl,$pvar)
         $setp = strpos($mpurl, '?') === false ? "?" : '&amp;';
         if($curr_page > 1)
         {
-            $multipage .= "<a href=\"$mpurl${setp}${pvar}=".($curr_page-1)."\">上一页</a>";
+            $multipage .= "<a href=\"$mpurl${setp}${pvar}=".($curr_page-1)."\">T.trước</a>";
         }
         $multipage .= $curr_page."/".$pages;
         if(($curr_page++) < $pages)
         {
-            $multipage .= "<a href=\"$mpurl${setp}${pvar}=".$curr_page++."\">下一页</a><br/>";
+            $multipage .= "<a href=\"$mpurl${setp}${pvar}=".$curr_page++."\">T.sau</a><br/>";
         }
         //$multipage .= $pages > $page ? " ... <a href=\"$mpurl&amp;$pvar=$pages\"> [$pages] &gt;&gt;</a>" : " 页/".$all_pages."页";
         $url_array = explode("?" , $mpurl);
@@ -66,7 +66,7 @@ function get_wap_pager($num, $perpage, $curr_page, $mpurl,$pvar)
                 }
             }
         }
-        $multipage .= "跳转到第<input type='text' name='pageno' format='*N' size='4' value='' maxlength='2' emptyok='true' />页<anchor>[GO]<go href='{$url_array[0]}' method='get'>{$field_str}<postfield name='".$pvar."' value='$(pageno)'/></go></anchor>";
+        $multipage .= "Chuyển tới <input type='text' name='pageno' format='*N' size='4' value='' maxlength='2' emptyok='true' />Trang<anchor>[GO]<go href='{$url_array[0]}' method='get'>{$field_str}<postfield name='".$pvar."' value='$(pageno)'/></go></anchor>";
         //<postfield name='snid' value='".session_id()."'/>
     }
     return $multipage;
@@ -85,7 +85,7 @@ function get_footer()
     }
     else
     {
-        $footer = "<br/><select><option onpick='index.php'>快速通道</option><option onpick='goods_list.php?type=best'>精品推荐</option><option onpick='goods_list.php?type=promote'>商家促销</option><option onpick='goods_list.php?type=hot'>热门商品</option><option onpick='goods_list.php?type=new'>最新产品</option></select>";
+        $footer = "<br/><select><option onpick='index.php'>Chuyển nhanh</option><option onpick='goods_list.php?type=best'>Sản phẩm tốt nhất</option><option onpick='goods_list.php?type=promote'>Sản phẩm k.mại</option><option onpick='goods_list.php?type=hot'>Sản phẩm hot</option><option onpick='goods_list.php?type=new'>Sản phẩm mới</option></select>";
     }
 
     return $footer;
