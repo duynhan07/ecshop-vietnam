@@ -156,7 +156,7 @@ $_LANG['12_batch_pic'] = 'Xử lý hình ảnh';
 $_LANG['13_batch_add'] = 'Upload sản phẩm';
 $_LANG['15_batch_edit'] = 'Sửa loạt sản phẩm';
 $_LANG['16_goods_script'] = 'Mã sản phẩm JS';
-$_LANG['17_tag_manage'] = 'Tag';
+$_LANG['17_tag_manage'] = 'Tag sản phẩm';
 $_LANG['52_attribute_add'] = 'Sửa thuộc tính';
 $_LANG['53_suppliers_goods'] = 'Quản lý nhà cung cấp sản phẩm';
 
@@ -272,7 +272,7 @@ $_LANG['03_template_setup'] = 'Thiết lập giao diện';
 $_LANG['04_template_library'] = 'Library Item';
 $_LANG['mail_template_manage'] = 'Mail Template';
 $_LANG['05_edit_languages'] = 'Language Item';
-$_LANG['06_template_backup'] = 'Template Settings backup';
+$_LANG['06_template_backup'] = 'Sao lưu t.lập g.diện';
 /* Database management */
 $_LANG['02_db_manage'] = 'Backup';
 $_LANG['03_db_optimize'] = 'Optimize';
@@ -289,7 +289,7 @@ $_LANG['06_sms_charge_history'] = 'Charge History';
 
 $_LANG['affiliate'] = 'Recommended settings';
 $_LANG['affiliate_ck'] = 'Divided into management';
-$_LANG['flashplay'] = 'Flash Player Management';
+$_LANG['flashplay'] = 'Q.lý flash slide';
 $_LANG['search_log'] = 'Search keywords';
 $_LANG['email_list'] = 'E-mail subscription management';
 $_LANG['magazine_list'] = 'Journal of Management';

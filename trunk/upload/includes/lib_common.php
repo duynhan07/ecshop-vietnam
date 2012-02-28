@@ -920,10 +920,10 @@ function price_format($price, $change_price = true)
         switch ($GLOBALS['_CFG']['price_format'])
         {
             case 0:
-                $price = number_format($price, 2, '.', '');
+                $price = number_format($price, 0, ',', '.');
                 break;
             case 1: // 保留不为 0 的尾数
-                $price = preg_replace('/(.*)(\\.)([0-9]*?)0+$/', '\1\2\3', number_format($price, 2, '.', ''));
+				$price = preg_replace('/(.*)(\\.)([0-9]*?)0+$/', '\1\2\3', number_format($price, 0, ',', '.'));
 
                 if (substr($price, -1) == '.')
                 {
@@ -931,13 +931,13 @@ function price_format($price, $change_price = true)
                 }
                 break;
             case 2: // 不四舍五入，保留1位
-                $price = substr(number_format($price, 2, '.', ''), 0, -1);
+				$price = substr(number_format($price, 0, ',', '.'), 0, -1);
                 break;
             case 3: // 直接取整
                 $price = intval($price);
                 break;
             case 4: // 四舍五入，保留 1 位
-                $price = number_format($price, 1, '.', '');
+				$price = number_format($price, 0, ',', '.');
                 break;
             case 5: // 先四舍五入，不保留小数
                 $price = round($price);
@@ -946,7 +946,7 @@ function price_format($price, $change_price = true)
     }
     else
     {
-        $price = number_format($price, 2, '.', '');
+		$price = number_format($price, 0, ',', '.');
     }
 
     return sprintf($GLOBALS['_CFG']['currency_format'], $price);

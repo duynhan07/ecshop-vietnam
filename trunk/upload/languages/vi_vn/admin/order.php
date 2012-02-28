@@ -18,7 +18,7 @@
 /* Order search*/
 $_LANG['order_sn'] = 'Mã đ.hàng';
 $_LANG['consignee'] = 'Consignee';
-$_LANG['all_status'] = 'Status';
+$_LANG['all_status'] = 'Trạng thái';
 
 $_LANG['cs'][OS_UNCONFIRMED] = 'Unconfirmed';
 $_LANG['cs'][CS_AWAIT_PAY] = 'Await pay';
@@ -163,7 +163,7 @@ $_LANG['suppliers_name'] = 'Suppliers';
 
 $_LANG['product_sn'] = 'Item No';
 $_LANG['goods_info'] = 'Product information';
-$_LANG['goods_name'] = 'Product name';
+$_LANG['goods_name'] = 'Tên sản phẩm';
 $_LANG['goods_name_brand'] = 'Product name [ Brand ]';
 $_LANG['goods_sn'] = 'NO.';
 $_LANG['goods_price'] = 'Giá';

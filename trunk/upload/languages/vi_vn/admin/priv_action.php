@@ -135,7 +135,7 @@ $_LANG['template_select'] = 'Template Chooser ';
 $_LANG['template_setup']  = ' Template Settings ';
 $_LANG['library_manage']  = ' Library Project Management ';
 $_LANG['lang_edit']       = ' Language of editing ';
-$_LANG['backup_setting']  = ' Template Settings backup ';
+$_LANG['backup_setting']  = ' Sao lưu t.lập g.diện ';
 $_LANG['mail_template']  = ' E-mail template management';
 
 //Database Management

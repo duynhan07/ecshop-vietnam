@@ -34,7 +34,7 @@ $_LANG['rec_chip'] ='Fragment';
 $_LANG['start_optimize'] ='Start optimize.';
 $_LANG['chip_count'] ='Total fragments quantity';
 $_LANG['charset'] ='Character list';
-$_LANG['status'] ='Status';
+$_LANG['status'] ='Trạng thái';
 
 $_LANG['backup_type'] ='Backup type';
 $_LANG['full_backup'] ='Full backup';

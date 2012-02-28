@@ -19,10 +19,10 @@ $_LANG['goods_type_list'] = 'List the type of merchandise';
 $_LANG['edit_goods_type'] = 'Edit the type of merchandise';
 $_LANG['attr_groups'] = 'Property division';
 $_LANG['new_goods_type'] = 'Create new product type';
-$_LANG['goods_type_status'] = 'Status';
-$_LANG['goods_type_name'] = 'Type name';
-$_LANG['attribute_number'] = 'Attribute quantity';
-$_LANG['attribute'] = 'Attribute list';
+$_LANG['goods_type_status'] = 'Trạng thái';
+$_LANG['goods_type_name'] = 'Tên loại';
+$_LANG['attribute_number'] = 'Số lượng t.tính';
+$_LANG['attribute'] = 'D.sách t.tính';
 
 $_LANG['arr_goods_status'][0] = 'Disabled';
 $_LANG['arr_goods_status'][1] = 'Enabled';

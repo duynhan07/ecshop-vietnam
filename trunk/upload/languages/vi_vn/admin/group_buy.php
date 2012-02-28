@@ -1,27 +1,11 @@
 <?php
-
-/**
- * ECSHOP Control panel associates product language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it mean that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: group_buy.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
 /* Current page title and useable link name */
 $_LANG['group_buy_list'] = 'Associates list';
 $_LANG['add_group_buy'] = 'Add Associates';
 $_LANG['edit_group_buy'] = 'Edit';
 
 /* Associates list page */
-$_LANG['goods_name'] = 'Product name';
+$_LANG['goods_name'] = 'Tên sản phẩm';
 $_LANG['start_date'] = 'Start date';
 $_LANG['end_date'] = 'Deadline';
 $_LANG['deposit'] = 'Insurance';
@@ -30,7 +14,7 @@ $_LANG['gift_integral'] = 'Present points';
 $_LANG['valid_order'] = 'Order';
 $_LANG['valid_goods'] = 'Order product';
 $_LANG['current_price'] = 'Current price';
-$_LANG['current_status'] = 'Status';
+$_LANG['current_status'] = 'Trạng thái';
 $_LANG['view_order'] = 'View order';
 
 /* Add/Edit associates page */
@@ -52,7 +36,7 @@ $_LANG['label_price_ladder'] = 'Price step:';
 $_LANG['notice_ladder_amount'] = 'Reach quantity';
 $_LANG['notice_ladder_price'] = 'Giá';
 $_LANG['label_desc'] = 'Mô tả:';
-$_LANG['label_status'] = 'Status';
+$_LANG['label_status'] = 'Trạng thái';
 $_LANG['gbs'][GBS_PRE_START] = 'Preparing';
 $_LANG['gbs'][GBS_UNDER_WAY] = 'In progress';
 $_LANG['gbs'][GBS_FINISHED] = 'Finished but undisposed';
