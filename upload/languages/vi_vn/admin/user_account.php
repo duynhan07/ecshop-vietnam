@@ -34,7 +34,7 @@ $_LANG['surplus_type_0'] = 'Saving';
 $_LANG['surplus_type_1'] = 'Drawing';
 $_LANG['admin_user'] = 'Administrator';
 
-$_LANG['status'] = 'Status';
+$_LANG['status'] = 'Trạng thái';
 $_LANG['confirm'] = 'Confirmed';
 $_LANG['unconfirm'] = 'Unconfirmed';
 $_LANG['cancel'] = 'Cancel';

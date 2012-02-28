@@ -41,7 +41,7 @@ $_LANG['batch_not_new_confirm'] = 'Are you sure cancel the checked new product?'
 $_LANG['batch_hot_confirm']     = 'Are you sure set the checked product as hot?';;
 $_LANG['batch_not_hot_confirm']='Are you surecancel the checked hot product?';
 $_LANG['cannot_found_goods'] = 'Don\'t find appointed product.';
-$_LANG['sel_goods_type'] = 'Please choose the type of merchandise';
+$_LANG['sel_goods_type'] = 'Hãy chọn loại sản phẩm';
 $_LANG['sel_goods_suppliers'] = 'Please select the suppliers';
 
 /*------------------------------------------------------ */
@@ -98,7 +98,7 @@ $_LANG['goods_sn_exists'] ='The product NO. already exist, please change a numbe
 /*------------------------------------------------------ */
 //-- Add /edit a product information
 /*------------------------------------------------------ */
-$_LANG['tab_general'] ='Brief';
+$_LANG['tab_general'] ='Tóm lược';
 $_LANG['tab_detail'] ='Chi tiết';
 $_LANG['tab_mix'] ='Others';
 $_LANG['tab_properties'] ='Attribute';

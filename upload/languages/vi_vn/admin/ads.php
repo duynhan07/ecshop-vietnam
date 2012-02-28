@@ -92,7 +92,7 @@ $_LANG['adsense_js_goods'] = 'External JS invoke product';
 $_LANG['ad_name_empty'] = 'The AD name can\'t be blank!';
 $_LANG['ads_stats_info'] = 'AD statistics information';
 
-$_LANG['flag'] = 'Status';
+$_LANG['flag'] = 'Trạng thái';
 $_LANG['enabled'] = 'Enabled';
 $_LANG['is_enabled'] = 'Enabled';
 $_LANG['no_enabled'] = 'Disabled';

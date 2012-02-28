@@ -35,14 +35,14 @@ $_LANG['is_show'] = 'Hiển thị hay không?';
 $_LANG['show_in_index'] = 'Hiển thị trên index?';
 $_LANG['notice_show_in_index'] = 'This setting can be the latest in the home, hot, Department recommend that the classification of merchandise under Recommend';
 $_LANG['goods_number'] = 'Số lượng sản phẩm';
-$_LANG['grade'] = 'Price range of the number of';
+$_LANG['grade'] = 'Dải giá sản phẩm';
 $_LANG['notice_grade'] = 'This option indicates that the classification of merchandise under the lowest and the highest price level of the division between the number of express no grading fill 0';
 $_LANG['short_grade'] = 'Price classification';
 
 $_LANG['nav'] = 'Navigation';
-$_LANG['index_new'] = 'Latest';
-$_LANG['index_best'] = 'Boutique';
-$_LANG['index_hot'] = 'Top';
+$_LANG['index_new'] = 'Mới nhất';
+$_LANG['index_best'] = 'Tốt nhất';
+$_LANG['index_hot'] = 'Hot nhất';
 
 $_LANG['back_list'] = 'Return to category list.';
 $_LANG['continue_add'] = 'Continue add category.';
@@ -74,9 +74,9 @@ $_LANG['cat_move_notic'] = 'In add product or pruduct management, if you want to
 
 $_LANG['cat_move_empty'] = 'Please select category rightly!';
 
-$_LANG['sel_goods_type'] = 'Please choose the type of merchandise';
-$_LANG['sel_filter_attr'] = 'Please select filter property';
-$_LANG['filter_attr'] = 'Filter property';
+$_LANG['sel_goods_type'] = 'Hãy chọn loại sản phẩm';
+$_LANG['sel_filter_attr'] = 'Hãy chọn loại thuộc tính';
+$_LANG['filter_attr'] = 'Bộ lọc thuộc tính';
 $_LANG['filter_attr_notic'] = 'Filter property page to the previous classification of merchandise selection';
 $_LANG['filter_attr_not_repeated'] = 'Filter property can`t be repeated';
 

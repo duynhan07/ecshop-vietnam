@@ -18,7 +18,7 @@
 $_LANG['snatch_id'] = 'ID';
 $_LANG['snatch_name'] = 'Name';
 $_LANG['goodsid'] = 'Product ID';
-$_LANG['goods_name'] = 'Product name';
+$_LANG['goods_name'] = 'Tên sản phẩm';
 $_LANG['start_time'] = 'Start time';
 $_LANG['end_time'] = 'Deadline';
 $_LANG['min_price'] = 'Min price';

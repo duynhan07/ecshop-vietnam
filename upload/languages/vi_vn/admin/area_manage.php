@@ -29,10 +29,10 @@ $_LANG['cantonal'] = 'Cantonal';
 $_LANG['back_page'] = 'Previous';
 $_LANG['manage_area'] = 'Manage';
 $_LANG['region_name_empty'] = 'Please enter a region name!';
-$_LANG['add_country'] = 'Add new country';
-$_LANG['add_province'] = 'Add new province';
-$_LANG['add_city'] = 'Add new city';
-$_LANG['add_cantonal'] = 'Add new cantonal';
+$_LANG['add_country'] = 'Thêm quốc gia mới';
+$_LANG['add_province'] = 'Thêm tỉnh/thành mới';
+$_LANG['add_city'] = 'Thêm quận/huyện mới';
+$_LANG['add_cantonal'] = 'Thêm xã/t.trấn/đường/phố mới';
 
 /* JS language item */
 $_LANG['js_languages']['region_name_empty'] = 'Please enter a region name!';

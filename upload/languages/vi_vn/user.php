@@ -36,7 +36,7 @@ $_LANG['admin_notic'] = 'Admin remarks';
 $_LANG['submit_request'] = 'Submi';
 $_LANG['process_time'] = 'Time';
 $_LANG['use_time'] = 'Use time';
-$_LANG['is_paid'] = 'Status';
+$_LANG['is_paid'] = 'Trạng thái';
 $_LANG['is_confirm'] = 'Confirmed';
 $_LANG['un_confirm'] = 'Unconfirmed';
 $_LANG['pay'] = 'Payment';
@@ -243,7 +243,7 @@ $_LANG['order_list_lnk'] = 'My order list';
 $_LANG['order_number'] = 'NO.';
 $_LANG['order_addtime'] = 'Time';
 $_LANG['order_money'] = 'Total';
-$_LANG['order_status'] = 'Status';
+$_LANG['order_status'] = 'Trạng thái';
 $_LANG['first_order'] = 'First orde';
 $_LANG['second_order'] = 'Secondary order';
 $_LANG['merge_order'] = 'Combine orders';
@@ -340,7 +340,7 @@ $_LANG['error_surplus_not_enough'] = 'You have not enough balance.';
 
 /* 订单状态 */
 $_LANG['detail_order_sn'] = 'You have not enough balance.';
-$_LANG['detail_order_status'] = 'Status';
+$_LANG['detail_order_status'] = 'Trạng thái';
 $_LANG['detail_pay_status'] = 'Payment status';
 $_LANG['detail_shipping_status'] = 'Shipping status';
 $_LANG['detail_order_sn'] = 'NO.';
@@ -515,7 +515,7 @@ $_LANG['bonus_name'] = 'Name ';
 $_LANG['bonus_amount'] = 'Money ';
 $_LANG['min_goods_amount'] = 'Minimum goods amount';
 $_LANG['bonus_end_date'] = 'Deadline ';
-$_LANG['bonus_status'] = 'Status';
+$_LANG['bonus_status'] = 'Trạng thái';
 
 $_LANG['not_start'] = 'Not start';
 $_LANG['overdue'] = 'Overdue';
