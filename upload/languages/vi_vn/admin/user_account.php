@@ -35,8 +35,8 @@ $_LANG['surplus_type_1'] = 'Drawing';
 $_LANG['admin_user'] = 'Administrator';
 
 $_LANG['status'] = 'Trạng thái';
-$_LANG['confirm'] = 'Confirmed';
-$_LANG['unconfirm'] = 'Unconfirmed';
+$_LANG['confirm'] = 'Đã xác nhận';
+$_LANG['unconfirm'] = 'Chưa xác nhận';
 $_LANG['cancel'] = 'Cancel';
 
 $_LANG['please_select'] = 'Hãy chọn...';

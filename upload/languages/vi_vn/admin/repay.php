@@ -40,7 +40,7 @@ $_LANG['reply'] = 'Reply';
 $_LANG['had_reply_content'] = 'TIP: This application has be disposed, and the money of user\'s application has be deducted, the old message will be rewrote if continue reply! But don\'t deduct the money again.';
 $_LANG['have_reply_content'] = 'TIP: This application has be neglected, the old message will be rewrote if continue reply!';
 
-$_LANG['user_money'] = 'Balance';
+$_LANG['user_money'] = 'Số dư';
 $_LANG['action_note'] = 'Disposal remark';
 
 $_LANG['dispose'] = 'Process application for refundment';

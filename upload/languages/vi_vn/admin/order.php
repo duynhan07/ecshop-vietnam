@@ -20,7 +20,7 @@ $_LANG['order_sn'] = 'Mã đ.hàng';
 $_LANG['consignee'] = 'Consignee';
 $_LANG['all_status'] = 'Trạng thái';
 
-$_LANG['cs'][OS_UNCONFIRMED] = 'Unconfirmed';
+$_LANG['cs'][OS_UNCONFIRMED] = 'Chưa xác nhận';
 $_LANG['cs'][CS_AWAIT_PAY] = 'Await pay';
 $_LANG['cs'][CS_AWAIT_SHIP] = 'Await ship';
 $_LANG['cs'][CS_FINISHED] = 'Finished';
@@ -31,8 +31,8 @@ $_LANG['cs'][OS_RETURNED] = 'Returned';
 $_LANG['cs'][OS_SHIPPED_PART] = 'Partial shipment';
 
 /* Order status */
-$_LANG['os'][OS_UNCONFIRMED] = 'Unconfirmed';
-$_LANG['os'][OS_CONFIRMED] = 'Confirmed';
+$_LANG['os'][OS_UNCONFIRMED] = 'Chưa xác nhận';
+$_LANG['os'][OS_CONFIRMED] = 'Đã xác nhận';
 $_LANG['os'][OS_CANCELED] = 'Canceled';
 $_LANG['os'][OS_INVALID] = 'Invalid';
 $_LANG['os'][OS_RETURNED] = 'Returned';
