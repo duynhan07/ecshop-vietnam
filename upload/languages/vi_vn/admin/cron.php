@@ -18,12 +18,12 @@ $_LANG['cron_do'] = 'Perform';
 $_LANG['do_ok'] = 'Implementation of successful';
 $_LANG['cron_month'] = 'Monthly';
 $_LANG['cron_day'] = 'Date';
-$_LANG['cron_week'] = 'Weekly';
+$_LANG['cron_week'] = 'Hàng tuần';
 $_LANG['cron_thatday'] = 'Day';
 $_LANG['cron_hour'] = 'Hours';
 $_LANG['cron_minute'] = 'Minutes';
 $_LANG['cron_unlimit'] = 'Daily';
-$_LANG['cron_advance'] = 'Advanced Options';
+$_LANG['cron_advance'] = 'Tùy chọn nâng cao';
 $_LANG['cron_show_advance'] = 'Show advanced options';
 $_LANG['install_ok'] = 'Installed successfully';
 $_LANG['edit_ok'] = 'Editor successful';
@@ -42,17 +42,17 @@ $_LANG['name_is_null'] = 'You do not have plans to enter the name of mission!';
 $_LANG['js_languages']['lang_removeconfirm'] = 'Are you sure you want to uninstall the program mission?';
 
 
-$_LANG['page']['index'] = 'Home';
+$_LANG['page']['index'] = 'Trang chủ';
 
-$_LANG['page']['user'] = 'User Center';
-$_LANG['page']['pick_out'] = 'Shopping center';
-$_LANG['page']['flow'] = 'Shopping Cart';
-$_LANG['page']['group_buy'] = 'Buy merchandise';
-$_LANG['page']['snatch'] = 'Indiana Jones';
+$_LANG['page']['user'] = 'Trang người dùng';
+$_LANG['page']['pick_out'] = 'Trang mua sắm';
+$_LANG['page']['flow'] = 'SGiỏ hàng';
+$_LANG['page']['group_buy'] = 'Nhóm mua';
+$_LANG['page']['snatch'] = 'Đấu giá ngược';
 $_LANG['page']['tag_cloud'] = 'Tag cloud';
 
-$_LANG['page']['category'] = 'Merchandise list page';
-$_LANG['page']['goods'] = 'Merchandise page';
+$_LANG['page']['category'] = 'Trang danh mục sản phẩm';
+$_LANG['page']['goods'] = 'Trang sản phẩm';
 $_LANG['page']['article_cat'] = 'Article list page';
 $_LANG['page']['article'] = 'Article page';
 $_LANG['page']['brand'] = 'Brand Area';

@@ -2,7 +2,7 @@
 $_LANG['tab_general'] = 'General information';
 $_LANG['tab_desc'] = 'Thematic Introduction';
 $_LANG['tab_goods'] = 'Topic merchandise';
-$_LANG['tab_advanced'] = 'Advanced Options';
+$_LANG['tab_advanced'] = 'Tùy chọn nâng cao';
 $_LANG['back_list'] = 'Return a list of topics';
 $_LANG['continue_add'] = 'Continue to add topics';
 $_LANG['topic_class'] = 'Thematic Classification';
