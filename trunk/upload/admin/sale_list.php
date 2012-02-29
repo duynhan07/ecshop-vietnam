@@ -12,8 +12,8 @@ if (isset($_REQUEST['act']) && ($_REQUEST['act'] == 'query' ||  $_REQUEST['act']
     check_authz_json('sale_order_stats');
     if (strstr($_REQUEST['start_date'], '-') === false)
     {
-        $_REQUEST['start_date'] = local_date('Y-m-d', $_REQUEST['start_date']);
-        $_REQUEST['end_date'] = local_date('Y-m-d', $_REQUEST['end_date']);
+        $_REQUEST['start_date'] = local_date('d-m-Y', $_REQUEST['start_date']);
+        $_REQUEST['end_date'] = local_date('d-m-Y', $_REQUEST['end_date']);
     }
     /*------------------------------------------------------ */
     //--Excel文件下载
@@ -79,8 +79,8 @@ else
     $smarty->assign('goods_sales_list', $sale_list_data['sale_list_data']);
     $smarty->assign('ur_here',          $_LANG['sell_stats']);
     $smarty->assign('full_page',        1);
-    $smarty->assign('start_date',       local_date('Y-m-d', $start_date));
-    $smarty->assign('end_date',         local_date('Y-m-d', $end_date));
+    $smarty->assign('start_date',       local_date('d-m-Y', $start_date));
+    $smarty->assign('end_date',         local_date('d-m-Y', $end_date));
     $smarty->assign('ur_here',      $_LANG['sale_list']);
     $smarty->assign('cfg_lang',     $_CFG['lang']);
     $smarty->assign('action_link',  array('text' => $_LANG['down_sales'],'href'=>'#download'));

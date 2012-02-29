@@ -109,7 +109,7 @@ elseif ($_REQUEST['act'] == 'add')
             {
                 sys_msg($_LANG['invalid_type']);
             }
-            $name = date('Ymd');
+            $name = date('dmY');
             for ($i = 0; $i < 6; $i++)
             {
                 $name .= chr(mt_rand(97, 122));
@@ -213,7 +213,7 @@ elseif ($_REQUEST['act'] == 'edit')
                 sys_msg($_LANG['invalid_type']);
             }
             //有上传
-            $name = date('Ymd');
+            $name = date('dmY');
             for ($i = 0; $i < 6; $i++)
             {
                 $name .= chr(mt_rand(97, 122));
@@ -422,7 +422,7 @@ elseif ($_REQUEST['act'] == 'custom_insert')
         }
 
         /* 处理 */
-        $name = date('Ymd');
+        $name = date('dmY');
         for ($i = 0; $i < 6; $i++)
         {
             $name .= chr(mt_rand(97, 122));
@@ -649,7 +649,7 @@ elseif ($_REQUEST['act'] == 'custom_update')
         }
 
         /* 处理 */
-        $name = date('Ymd');
+        $name = date('dmY');
         for ($i = 0; $i < 6; $i++)
         {
             $name .= chr(mt_rand(97, 122));
@@ -761,7 +761,7 @@ function get_url_image($url)
         return $url;
     }
 
-    $name = date('Ymd');
+    $name = date('dmY');
     for ($i = 0; $i < 6; $i++)
     {
         $name .= chr(mt_rand(97, 122));

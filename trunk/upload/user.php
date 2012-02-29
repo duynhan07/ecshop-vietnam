@@ -2276,7 +2276,7 @@ elseif ($action =='email_list')
             $db->query($sql);
             $info = $_LANG['email_check'];
             $url = $ecs->url() . "user.php?act=email_list&job=add_check&hash=$hash&email=$email";
-            send_mail('', $email, $_LANG['check_mail'], sprintf($_LANG['check_mail_content'], $email, $_CFG['shop_name'], $url, $url, $_CFG['shop_name'], local_date('Y-m-d')), 1);
+            send_mail('', $email, $_LANG['check_mail'], sprintf($_LANG['check_mail_content'], $email, $_CFG['shop_name'], $url, $url, $_CFG['shop_name'], local_date('d-m-Y')), 1);
         }
         elseif ($ck['stat'] == 1)
         {
@@ -2289,7 +2289,7 @@ elseif ($action =='email_list')
             $db->query($sql);
             $info = $_LANG['email_re_check'];
             $url = $ecs->url() . "user.php?act=email_list&job=add_check&hash=$hash&email=$email";
-            send_mail('', $email, $_LANG['check_mail'], sprintf($_LANG['check_mail_content'], $email, $_CFG['shop_name'], $url, $url, $_CFG['shop_name'], local_date('Y-m-d')), 1);
+            send_mail('', $email, $_LANG['check_mail'], sprintf($_LANG['check_mail_content'], $email, $_CFG['shop_name'], $url, $url, $_CFG['shop_name'], local_date('d-m-Y')), 1);
         }
         die($info);
     }
@@ -2306,7 +2306,7 @@ elseif ($action =='email_list')
             $db->query($sql);
             $info = $_LANG['email_check'];
             $url = $ecs->url() . "user.php?act=email_list&job=del_check&hash=$hash&email=$email";
-            send_mail('', $email, $_LANG['check_mail'], sprintf($_LANG['check_mail_content'], $email, $_CFG['shop_name'], $url, $url, $_CFG['shop_name'], local_date('Y-m-d')), 1);
+            send_mail('', $email, $_LANG['check_mail'], sprintf($_LANG['check_mail_content'], $email, $_CFG['shop_name'], $url, $url, $_CFG['shop_name'], local_date('d-m-Y')), 1);
         }
         else
         {

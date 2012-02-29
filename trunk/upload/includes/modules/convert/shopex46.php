@@ -584,7 +584,7 @@ class shopex46
                 $birthday           = strtotime($row['birthday']);
                 if ($birthday != -1 && $birthday !== false)
                 {
-                    $user['birthday']   = date('Y-m-d', $birthday);
+                    $user['birthday']   = date('d-m-Y', $birthday);
                 }
             }
             $user['user_money']     = $row['advance'];

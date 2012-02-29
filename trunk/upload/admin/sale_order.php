@@ -12,8 +12,8 @@ if (isset($_REQUEST['act']) && ($_REQUEST['act'] == 'query' ||  $_REQUEST['act']
     check_authz_json('sale_order_stats');
     if (strstr($_REQUEST['start_date'], '-') === false)
     {
-        $_REQUEST['start_date'] = local_date('Y-m-d', $_REQUEST['start_date']);
-        $_REQUEST['end_date'] = local_date('Y-m-d', $_REQUEST['end_date']);
+        $_REQUEST['start_date'] = local_date('d-m-Y', $_REQUEST['start_date']);
+        $_REQUEST['end_date'] = local_date('d-m-Y', $_REQUEST['end_date']);
     }
 
     /* 下载报表 */
@@ -82,8 +82,8 @@ else
     $smarty->assign('filter',           $goods_order_data['filter']);
     $smarty->assign('full_page',        1);
     $smarty->assign('sort_goods_num',   '<img src="images/sort_desc.gif">');
-    $smarty->assign('start_date',       local_date('Y-m-d', $_REQUEST['start_date']));
-    $smarty->assign('end_date',         local_date('Y-m-d', $_REQUEST['end_date']));
+    $smarty->assign('start_date',       local_date('d-m-Y', $_REQUEST['start_date']));
+    $smarty->assign('end_date',         local_date('d-m-Y', $_REQUEST['end_date']));
     $smarty->assign('action_link',      array('text' => $_LANG['download_sale_sort'], 'href' => '#download' ));
 
     /* 显示页面 */

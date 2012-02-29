@@ -704,7 +704,7 @@ function get_promotion_info($goods_id = '')
             case GAT_SNATCH: //夺宝奇兵
                 $snatch[$data['act_id']]['act_name'] = $data['act_name'];
                 $snatch[$data['act_id']]['url'] = build_uri('snatch', array('sid' => $data['act_id']));
-                $snatch[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $data['start_time']), local_date('Y-m-d', $data['end_time']));
+                $snatch[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('d-m-Y', $data['start_time']), local_date('d-m-Y', $data['end_time']));
                 $snatch[$data['act_id']]['sort'] = $data['start_time'];
                 $snatch[$data['act_id']]['type'] = 'snatch';
                 break;
@@ -712,7 +712,7 @@ function get_promotion_info($goods_id = '')
             case GAT_GROUP_BUY: //团购
                 $group[$data['act_id']]['act_name'] = $data['act_name'];
                 $group[$data['act_id']]['url'] = build_uri('group_buy', array('gbid' => $data['act_id']));
-                $group[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $data['start_time']), local_date('Y-m-d', $data['end_time']));
+                $group[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('d-m-Y', $data['start_time']), local_date('d-m-Y', $data['end_time']));
                 $group[$data['act_id']]['sort'] = $data['start_time'];
                 $group[$data['act_id']]['type'] = 'group_buy';
                 break;
@@ -720,7 +720,7 @@ function get_promotion_info($goods_id = '')
             case GAT_AUCTION: //拍卖
                 $auction[$data['act_id']]['act_name'] = $data['act_name'];
                 $auction[$data['act_id']]['url'] = build_uri('auction', array('auid' => $data['act_id']));
-                $auction[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $data['start_time']), local_date('Y-m-d', $data['end_time']));
+                $auction[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('d-m-Y', $data['start_time']), local_date('d-m-Y', $data['end_time']));
                 $auction[$data['act_id']]['sort'] = $data['start_time'];
                 $auction[$data['act_id']]['type'] = 'auction';
                 break;
@@ -728,7 +728,7 @@ function get_promotion_info($goods_id = '')
             case GAT_PACKAGE: //礼包
                 $package[$data['act_id']]['act_name'] = $data['act_name'];
                 $package[$data['act_id']]['url'] = 'package.php#' . $data['act_id'];
-                $package[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $data['start_time']), local_date('Y-m-d', $data['end_time']));
+                $package[$data['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('d-m-Y', $data['start_time']), local_date('d-m-Y', $data['end_time']));
                 $package[$data['act_id']]['sort'] = $data['start_time'];
                 $package[$data['act_id']]['type'] = 'package';
                 break;
@@ -750,7 +750,7 @@ function get_promotion_info($goods_id = '')
         {
             $favourable[$rows['act_id']]['act_name'] = $rows['act_name'];
             $favourable[$rows['act_id']]['url'] = 'activity.php';
-            $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $rows['start_time']), local_date('Y-m-d', $rows['end_time']));
+            $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('d-m-Y', $rows['start_time']), local_date('d-m-Y', $rows['end_time']));
             $favourable[$rows['act_id']]['sort'] = $rows['start_time'];
             $favourable[$rows['act_id']]['type'] = 'favourable';
         }
@@ -769,7 +769,7 @@ function get_promotion_info($goods_id = '')
             {
                 $favourable[$rows['act_id']]['act_name'] = $rows['act_name'];
                 $favourable[$rows['act_id']]['url'] = 'activity.php';
-                $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $rows['start_time']), local_date('Y-m-d', $rows['end_time']));
+                $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('d-m-Y', $rows['start_time']), local_date('d-m-Y', $rows['end_time']));
                 $favourable[$rows['act_id']]['sort'] = $rows['start_time'];
                 $favourable[$rows['act_id']]['type'] = 'favourable';
             }
@@ -788,7 +788,7 @@ function get_promotion_info($goods_id = '')
                 {
                     $favourable[$rows['act_id']]['act_name'] = $rows['act_name'];
                     $favourable[$rows['act_id']]['url'] = 'activity.php';
-                    $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $rows['start_time']), local_date('Y-m-d', $rows['end_time']));
+                    $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('d-m-Y', $rows['start_time']), local_date('d-m-Y', $rows['end_time']));
                     $favourable[$rows['act_id']]['sort'] = $rows['start_time'];
                     $favourable[$rows['act_id']]['type'] = 'favourable';
                 }
@@ -799,7 +799,7 @@ function get_promotion_info($goods_id = '')
                 {
                     $favourable[$rows['act_id']]['act_name'] = $rows['act_name'];
                     $favourable[$rows['act_id']]['url'] = 'activity.php';
-                    $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $rows['start_time']), local_date('Y-m-d', $rows['end_time']));
+                    $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('d-m-Y', $rows['start_time']), local_date('d-m-Y', $rows['end_time']));
                     $favourable[$rows['act_id']]['sort'] = $rows['start_time'];
                     $favourable[$rows['act_id']]['type'] = 'favourable';
                 }
@@ -810,7 +810,7 @@ function get_promotion_info($goods_id = '')
                 {
                     $favourable[$rows['act_id']]['act_name'] = $rows['act_name'];
                     $favourable[$rows['act_id']]['url'] = 'activity.php';
-                    $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('Y-m-d', $rows['start_time']), local_date('Y-m-d', $rows['end_time']));
+                    $favourable[$rows['act_id']]['time'] = sprintf($GLOBALS['_LANG']['promotion_time'], local_date('d-m-Y', $rows['start_time']), local_date('d-m-Y', $rows['end_time']));
                     $favourable[$rows['act_id']]['sort'] = $rows['start_time'];
                     $favourable[$rows['act_id']]['type'] = 'favourable';
                 }
@@ -1137,10 +1137,10 @@ function virtual_card_shipping ($goods, $order_sn, &$msg, $process = 'other')
     $GLOBALS['smarty']->assign('order',                          $order);
     $GLOBALS['smarty']->assign('goods',                          $goods);
 
-    $GLOBALS['smarty']->assign('send_time', date('Y-m-d H:i:s'));
+    $GLOBALS['smarty']->assign('send_time', date('d-m-Y H:i:s'));
     $GLOBALS['smarty']->assign('shop_name', $GLOBALS['_CFG']['shop_name']);
-    $GLOBALS['smarty']->assign('send_date', date('Y-m-d'));
-    $GLOBALS['smarty']->assign('sent_date', date('Y-m-d'));
+    $GLOBALS['smarty']->assign('send_date', date('d-m-Y'));
+    $GLOBALS['smarty']->assign('sent_date', date('d-m-Y'));
 
     $tpl = get_mail_template('virtual_card');
     $content = $GLOBALS['smarty']->fetch('str:' . $tpl['template_content']);
@@ -2532,8 +2532,8 @@ function get_package_info($id)
     {
         $package['is_on_sale'] = "0";
     }
-    $package['start_time'] = local_date('Y-m-d H:i', $package['start_time']);
-    $package['end_time']   = local_date('Y-m-d H:i', $package['end_time']);
+    $package['start_time'] = local_date('d-m-Y H:i', $package['start_time']);
+    $package['end_time']   = local_date('d-m-Y H:i', $package['end_time']);
     $row = unserialize($package['ext_info']);
     unset($package['ext_info']);
     if ($row)

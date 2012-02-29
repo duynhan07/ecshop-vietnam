@@ -65,7 +65,7 @@ if ($_REQUEST['act'] == 'list')
     }
     else
     {
-        $today      = strtotime(local_date('Y-m-d'));   //本地时间
+        $today      = strtotime(local_date('d-m-Y'));   //本地时间
         $start_date = $today - 86400 * 6;
         $end_date   = $today + 86400;               //至明天零时
     }
@@ -88,7 +88,7 @@ if ($_REQUEST['act'] == 'list')
     }
     else
     {
-        $tmp_time = local_strtotime(local_date('Y-m-d'));
+        $tmp_time = local_strtotime(local_date('d-m-Y'));
         $start_date_arr[] = local_strtotime(local_date('Y-m') . '-1');
         $end_date_arr[]   = local_strtotime(local_date('Y-m') . '-31');;
     }
@@ -298,7 +298,7 @@ if ($_REQUEST['act'] == 'list')
 
     if (!$is_multi)
     {
-        $filename = local_date('Ymd', $start_date) . '_' . local_date('Ymd', $end_date);
+        $filename = local_date('dmY', $start_date) . '_' . local_date('dmY', $end_date);
         $smarty->assign('action_link',  array('text' => $_LANG['down_order_statistics'], 'href' => 'order_stats.php?act=download&start_date=' . $start_date . '&end_date=' . $end_date . '&filename=' . $filename));
     }
 

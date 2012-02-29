@@ -13,8 +13,8 @@ if ($_REQUEST['act'] == 'add')
     admin_priv('snatch_manage');
 
     /* 初始化信息 */
-    $start_time = local_date('Y-m-d H:i');
-    $end_time   = local_date('Y-m-d H:i', strtotime('+1 week'));
+    $start_time = local_date('d-m-Y H:i');
+    $end_time   = local_date('d-m-Y H:i', strtotime('+1 week'));
     $snatch     = array('start_price'=>'1.00','end_price'=>'800.00','max_price'=>'0', 'cost_points'=>'1','start_time' => $start_time,'end_time' => $end_time,'option'=>'<option value="0">'.$_LANG['make_option'].'</option>');
 
     $smarty->assign('snatch',       $snatch);
@@ -440,8 +440,8 @@ function get_snatch_info($id)
     $snatch = $db->GetRow($sql);
 
     /* 将时间转成可阅读格式 */
-    $snatch['start_time'] = local_date('Y-m-d H:i', $snatch['start_time']);
-    $snatch['end_time']   = local_date('Y-m-d H:i', $snatch['end_time']);
+    $snatch['start_time'] = local_date('d-m-Y H:i', $snatch['start_time']);
+    $snatch['end_time']   = local_date('d-m-Y H:i', $snatch['end_time']);
     $row = unserialize($snatch['ext_info']);
     unset($snatch['ext_info']);
     if ($row)

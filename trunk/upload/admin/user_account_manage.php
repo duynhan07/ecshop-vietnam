@@ -37,7 +37,7 @@ elseif (isset($_GET['start_date']) && !empty($_GET['end_date']))
 }
 else
 {
-    $today  = local_strtotime(local_date('Y-m-d'));
+    $today  = local_strtotime(local_date('d-m-Y'));
     $start_date = $today - 86400 * 7;
     $end_date   = $today;
 }
@@ -66,8 +66,8 @@ if ($_REQUEST['act'] == 'list')
 
     /* 赋值到模板 */
     $smarty->assign('account', $account);
-    $smarty->assign('start_date',   local_date('Y-m-d', $start_date));
-    $smarty->assign('end_date',     local_date('Y-m-d', $end_date));
+    $smarty->assign('start_date',   local_date('d-m-Y', $start_date));
+    $smarty->assign('end_date',     local_date('d-m-Y', $end_date));
     $smarty->assign('ur_here',      $_LANG['user_account_manage']);
 
     /* 显示页面 */
@@ -86,7 +86,7 @@ elseif ($_REQUEST['act'] == 'surplus')
     $smarty->assign('record_count', $order_list['record_count']);
     $smarty->assign('page_count',   $order_list['page_count']);
     $smarty->assign('full_page',    1);
-    $smarty->assign('action_link',  array('text' => $_LANG['user_account_manage'], 'href'=>'user_account_manage.php?act=list&start_date='.local_date('Y-m-d', $start_date).'&end_date='.local_date('Y-m-d', $end_date)));
+    $smarty->assign('action_link',  array('text' => $_LANG['user_account_manage'], 'href'=>'user_account_manage.php?act=list&start_date='.local_date('d-m-Y', $start_date).'&end_date='.local_date('d-m-Y', $end_date)));
 
     /* 显示页面 */
     assign_query_info();
@@ -153,8 +153,8 @@ function order_list()
 
         $filter['sort_by']    = empty($_REQUEST['sort_by'])    ? 'order_id' : trim($_REQUEST['sort_by']);
         $filter['sort_order'] = empty($_REQUEST['sort_order']) ? 'DESC'     : trim($_REQUEST['sort_order']);
-        $filter['start_date'] = local_date('Y-m-d', $start_date);
-        $filter['end_date']   = local_date('Y-m-d', $end_date);
+        $filter['start_date'] = local_date('d-m-Y', $start_date);
+        $filter['end_date']   = local_date('d-m-Y', $end_date);
 
         $ex_where = ' WHERE 1 ';
         if ($filter['keywords'])

@@ -144,7 +144,7 @@ function register($username, $password, $email, $other = array())
 
         //定义other合法的变量数组
         $other_key_array = array('msn', 'qq', 'office_phone', 'home_phone', 'mobile_phone');
-        $update_data['reg_time'] = local_strtotime(local_date('Y-m-d H:i:s'));
+        $update_data['reg_time'] = local_strtotime(local_date('d-m-Y H:i:s'));
         if ($other)
         {
             foreach ($other as $key=>$val)
@@ -267,8 +267,8 @@ function send_pwd_email($uid, $user_name, $email, $code)
     $GLOBALS['smarty']->assign('user_name',   $user_name);
     $GLOBALS['smarty']->assign('reset_email', $reset_email);
     $GLOBALS['smarty']->assign('shop_name',   $GLOBALS['_CFG']['shop_name']);
-    $GLOBALS['smarty']->assign('send_date',   date('Y-m-d'));
-    $GLOBALS['smarty']->assign('sent_date',   date('Y-m-d'));
+    $GLOBALS['smarty']->assign('send_date',   date('d-m-Y'));
+    $GLOBALS['smarty']->assign('sent_date',   date('d-m-Y'));
 
     $content = $GLOBALS['smarty']->fetch('str:' . $template['template_content']);
 

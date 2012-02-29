@@ -379,7 +379,7 @@ switch ($action)
 //            $sms_last_request = $sms_my_info['sms_last_request']
 //                    ? $sms_my_info['sms_last_request']
 //                    : 0;//赋0防出错
-//            $sms_my_info['sms_last_request'] = local_date('Y-m-d H:i:s O', $sms_my_info['sms_last_request']);
+//            $sms_my_info['sms_last_request'] = local_date('d-m-Y H:i:s O', $sms_my_info['sms_last_request']);
 //
 //            $smarty->assign('sms_my_info', $sms_my_info);
 //            $smarty->assign('ur_here', $_LANG['02_sms_my_info']);

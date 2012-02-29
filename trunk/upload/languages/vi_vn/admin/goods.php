@@ -173,11 +173,11 @@ $_LANG['drop_img_confirm'] = 'Are you sure delete the picture?';
 $_LANG['select_font'] = 'Font Style';
 $_LANG['font_styles'] = array('strong' => 'Bold', 'em' => 'Italic', 'u' => 'Underline', 'strike' => 'Strike Through');
 
-$_LANG['rapid_add_cat'] = 'Add category';
-$_LANG['rapid_add_brand'] = 'Rapid add brand';
-$_LANG['category_manage'] = 'Category manage';
-$_LANG['brand_manage'] = 'Brand manage';
-$_LANG['hide'] = 'Hide';
+$_LANG['rapid_add_cat'] = 'Thêm danh mục';
+$_LANG['rapid_add_brand'] = 'Thêm thương hiệu';
+$_LANG['category_manage'] = 'Quản lý danh mục';
+$_LANG['brand_manage'] = 'Quản lý thương hiệu';
+$_LANG['hide'] = 'Ẩn đi';
 
 $_LANG['lab_volume_price'] = 'Giá mua nhiều:';
 $_LANG['volume_number'] = 'số lượng';
@@ -194,11 +194,11 @@ $_LANG['lab_to_shopex']         = 'Transferred to the Shop';
 //-- Connection product
 /*------------------------------------------------------ */
 
-$_LANG['all_goods'] ='Choose product';
+$_LANG['all_goods'] ='Chọn sản phẩm';
 $_LANG['link_goods'] ='S.phẩm liên quan';
 $_LANG['single'] ='Single';
 $_LANG['double'] ='Double';
-$_LANG['all_article'] ='Choose product';
+$_LANG['all_article'] ='Chọn sản phẩm';
 $_LANG['goods_article'] ='Bài viết liên quan';
 $_LANG['top_cat'] = 'Top Categories';
 

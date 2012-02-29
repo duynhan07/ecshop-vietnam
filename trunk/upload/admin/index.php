@@ -477,7 +477,7 @@ elseif ($_REQUEST['act'] == 'main_api')
     require_once(ROOT_PATH . '/includes/lib_base.php');
     $data = read_static_cache('api_str');
 
-    if($data === false || API_TIME < date('Y-m-d H:i:s',time()-43200))
+    if($data === false || API_TIME < date('d-m-Y H:i:s',time()-43200))
     {
         include_once(ROOT_PATH . 'includes/cls_transport.php');
         $ecs_version = VERSION;
@@ -513,7 +513,7 @@ elseif ($_REQUEST['act'] == 'main_api')
         echo $api_str;
         
         $f=ROOT_PATH . 'data/config.php'; 
-        file_put_contents($f,str_replace("'API_TIME', '".API_TIME."'","'API_TIME', '".date('Y-m-d H:i:s',time())."'",file_get_contents($f)));
+        file_put_contents($f,str_replace("'API_TIME', '".API_TIME."'","'API_TIME', '".date('d-m-Y H:i:s',time())."'",file_get_contents($f)));
         
         write_static_cache('api_str', $api_str);
     }
@@ -532,7 +532,7 @@ elseif ($_REQUEST['act'] == 'menu_api')
     require_once(ROOT_PATH . '/includes/lib_base.php');
     $data = read_static_cache('menu_api');
 
-    if($data === false || (isset($data['api_time']) && $data['api_time']<date('Ymd')))
+    if($data === false || (isset($data['api_time']) && $data['api_time']<date('dmY')))
     {
         include_once(ROOT_PATH . 'includes/cls_transport.php');
         $ecs_lang = $_CFG['lang'];
@@ -555,7 +555,7 @@ elseif ($_REQUEST['act'] == 'menu_api')
                     $api_arr['content'] = ecs_iconv('UTF-8',$ecs_charset,$api_arr['content']);
                 }
                 echo $api_arr['content'];
-                $api_arr['api_time'] = date('Ymd');
+                $api_arr['api_time'] = date('dmY');
                 write_static_cache('menu_api', $api_arr);
                 exit();
             }

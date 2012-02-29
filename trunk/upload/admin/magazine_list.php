@@ -251,8 +251,8 @@ function get_magazine()
 
     foreach($magazinedb as $k => $v)
     {
-        $magazinedb[$k]['last_modify'] = local_date('Y-m-d', $v['last_modify']);
-        $magazinedb[$k]['last_send'] = local_date('Y-m-d', $v['last_send']);
+        $magazinedb[$k]['last_modify'] = local_date('d-m-Y', $v['last_modify']);
+        $magazinedb[$k]['last_send'] = local_date('d-m-Y', $v['last_send']);
     }
 
     $arr = array('magazinedb' => $magazinedb, 'filter' => $filter, 'page_count' => $filter['page_count'], 'record_count' => $filter['record_count']);

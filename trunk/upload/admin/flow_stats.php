@@ -33,7 +33,7 @@ if ($_REQUEST['act'] == 'view')
     }
     else
     {
-        $today  = local_strtotime(local_date('Y-m-d'));
+        $today  = local_strtotime(local_date('d-m-Y'));
         $start_date = $today - 86400 * 7;
         $end_date   = $today;
     }
@@ -56,7 +56,7 @@ if ($_REQUEST['act'] == 'view')
     }
     else
     {
-        $tmp_time = local_strtotime(local_date('Y-m-d'));
+        $tmp_time = local_strtotime(local_date('d-m-Y'));
         $start_date_arr[] = local_strtotime(local_date('Y-m') . '-1');
         $end_date_arr[]   = local_strtotime(local_date('Y-m') . '-31');;
     }
@@ -313,8 +313,8 @@ if ($_REQUEST['act'] == 'view')
     $smarty->assign('from_data',    $from_xml);
     /* 显示日期 */
 
-    $smarty->assign('start_date',   local_date('Y-m-d', $start_date));
-    $smarty->assign('end_date',     local_date('Y-m-d', $end_date));
+    $smarty->assign('start_date',   local_date('d-m-Y', $start_date));
+    $smarty->assign('end_date',     local_date('d-m-Y', $end_date));
 
     for ($i = 0; $i < 5; $i++)
     {

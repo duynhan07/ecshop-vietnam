@@ -20,8 +20,8 @@ if ($_REQUEST['act'] == 'add')
     $db->query($sql);
 
     /* 初始化信息 */
-    $start_time = local_date('Y-m-d H:i');
-    $end_time   = local_date('Y-m-d H:i', strtotime('+1 month'));
+    $start_time = local_date('d-m-Y H:i');
+    $end_time   = local_date('d-m-Y H:i', strtotime('+1 month'));
     $package     = array('package_price'=>'', 'start_time' => $start_time, 'end_time' => $end_time);
 
     $smarty->assign('package',      $package);

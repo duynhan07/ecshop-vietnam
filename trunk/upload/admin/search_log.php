@@ -14,8 +14,8 @@ if ($_REQUEST['act'] == 'list')
     $smarty->assign('filter',       $logdb['filter']);
     $smarty->assign('record_count', $logdb['record_count']);
     $smarty->assign('page_count',   $logdb['page_count']);
-    $smarty->assign('start_date',   local_date('Y-m-d'));
-    $smarty->assign('end_date',     local_date('Y-m-d'));
+    $smarty->assign('start_date',   local_date('d-m-Y'));
+    $smarty->assign('end_date',     local_date('d-m-Y'));
     assign_query_info();
     $smarty->display('search_log_list.htm');
 }
@@ -28,8 +28,8 @@ elseif ($_REQUEST['act'] == 'query')
     $smarty->assign('filter',       $logdb['filter']);
     $smarty->assign('record_count', $logdb['record_count']);
     $smarty->assign('page_count',   $logdb['page_count']);
-    $smarty->assign('start_date',   local_date('Y-m-d'));
-    $smarty->assign('end_date',     local_date('Y-m-d'));
+    $smarty->assign('start_date',   local_date('d-m-Y'));
+    $smarty->assign('end_date',     local_date('d-m-Y'));
     make_json_result($smarty->fetch('search_log_list.htm'), '',
         array('filter' => $logdb['filter'], 'page_count' => $logdb['page_count']));
 }

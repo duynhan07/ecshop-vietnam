@@ -170,7 +170,7 @@ elseif ($_REQUEST['act'] == 'insert')
     $other['user_rank']  = $rank;
     $other['sex']        = $sex;
     $other['birthday']   = $birthday;
-    $other['reg_time'] = local_strtotime(local_date('Y-m-d H:i:s'));
+    $other['reg_time'] = local_strtotime(local_date('d-m-Y H:i:s'));
 
     $other['msn'] = isset($_POST['extend_field1']) ? htmlspecialchars(trim($_POST['extend_field1'])) : '';
     $other['qq'] = isset($_POST['extend_field2']) ? htmlspecialchars(trim($_POST['extend_field2'])) : '';

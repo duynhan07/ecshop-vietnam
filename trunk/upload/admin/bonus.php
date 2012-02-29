@@ -169,10 +169,10 @@ if ($_REQUEST['act'] == 'add')
     $smarty->assign('cfg_lang',     $_CFG['lang']);
 
     $next_month = local_strtotime('+1 months');
-    $bonus_arr['send_start_date']   = local_date('Y-m-d');
-    $bonus_arr['use_start_date']    = local_date('Y-m-d');
-    $bonus_arr['send_end_date']     = local_date('Y-m-d', $next_month);
-    $bonus_arr['use_end_date']      = local_date('Y-m-d', $next_month);
+    $bonus_arr['send_start_date']   = local_date('d-m-Y');
+    $bonus_arr['use_start_date']    = local_date('d-m-Y');
+    $bonus_arr['send_end_date']     = local_date('d-m-Y', $next_month);
+    $bonus_arr['use_end_date']      = local_date('d-m-Y', $next_month);
 
     $smarty->assign('bonus_arr',    $bonus_arr);
 
@@ -246,10 +246,10 @@ if ($_REQUEST['act'] == 'edit')
     $type_id = !empty($_GET['type_id']) ? intval($_GET['type_id']) : 0;
     $bonus_arr = $db->getRow("SELECT * FROM " .$ecs->table('bonus_type'). " WHERE type_id = '$type_id'");
 
-    $bonus_arr['send_start_date']   = local_date('Y-m-d', $bonus_arr['send_start_date']);
-    $bonus_arr['send_end_date']     = local_date('Y-m-d', $bonus_arr['send_end_date']);
-    $bonus_arr['use_start_date']    = local_date('Y-m-d', $bonus_arr['use_start_date']);
-    $bonus_arr['use_end_date']      = local_date('Y-m-d', $bonus_arr['use_end_date']);
+    $bonus_arr['send_start_date']   = local_date('d-m-Y', $bonus_arr['send_start_date']);
+    $bonus_arr['send_end_date']     = local_date('d-m-Y', $bonus_arr['send_end_date']);
+    $bonus_arr['use_start_date']    = local_date('d-m-Y', $bonus_arr['use_start_date']);
+    $bonus_arr['use_end_date']      = local_date('d-m-Y', $bonus_arr['use_end_date']);
 
     $smarty->assign('lang',        $_LANG);
     $smarty->assign('ur_here',     $_LANG['bonustype_edit']);

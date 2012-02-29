@@ -202,7 +202,7 @@ else
                 $goods_ids[] = $row['goods_id'];
             }
 
-            $db->autoReplace($ecs->table('keywords'), array('date' => local_date('Y-m-d'),
+            $db->autoReplace($ecs->table('keywords'), array('date' => local_date('d-m-Y'),
                 'searchengine' => 'ecshop', 'keyword' => htmlspecialchars_decode(str_replace('%', '', $val)), 'count' => 1), array('count' => 1));
         }
         $keywords .= ')';

@@ -187,11 +187,11 @@ function get_auto_goods()
     {
         if (!empty($rt['starttime']))
         {
-            $rt['starttime'] = local_date('Y-m-d',$rt['starttime']);
+            $rt['starttime'] = local_date('d-m-Y',$rt['starttime']);
         }
         if (!empty($rt['endtime']))
         {
-            $rt['endtime'] = local_date('Y-m-d',$rt['endtime']);
+            $rt['endtime'] = local_date('d-m-Y',$rt['endtime']);
         }
         $goodsdb[] = $rt;
     }

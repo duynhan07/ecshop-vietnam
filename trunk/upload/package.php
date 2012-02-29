@@ -30,8 +30,8 @@ $res = $db->query($sql);
 $list = array();
 while ($row = $db->fetchRow($res))
 {
-    $row['start_time']  = local_date('Y-m-d H:i', $row['start_time']);
-    $row['end_time']    = local_date('Y-m-d H:i', $row['end_time']);
+    $row['start_time']  = local_date('d-m-Y H:i', $row['start_time']);
+    $row['end_time']    = local_date('d-m-Y H:i', $row['end_time']);
     $ext_arr = unserialize($row['ext_info']);
     unset($row['ext_info']);
     if ($ext_arr)

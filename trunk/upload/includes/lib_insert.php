@@ -300,7 +300,7 @@ function insert_bought_notes($arr)
 
     foreach ($bought_notes as $key => $val)
     {
-        $bought_notes[$key]['add_time'] = local_date("Y-m-d G:i:s", $val['add_time']);
+        $bought_notes[$key]['add_time'] = local_date("d-m-Y G:i:s", $val['add_time']);
     }
 
     $sql = 'SELECT count(*) ' .

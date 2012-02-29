@@ -27,8 +27,8 @@ if ($_REQUEST['act'] == 'list')
             $modules[$i]['desc'] = $cron_list[$code]['cron_desc'];
             $modules[$i]['cron_order'] = $cron_list[$code]['cron_order'];
             $modules[$i]['enable'] = $cron_list[$code]['enable'];
-            $modules[$i]['nextime'] = local_date('Y-m-d/H:i:s',$cron_list[$code]['nextime']);
-            $modules[$i]['thistime'] = $cron_list[$code]['thistime'] ? local_date('Y-m-d/H:i:s',$cron_list[$code]['thistime']) : '-';
+            $modules[$i]['nextime'] = local_date('d-m-Y/H:i:s',$cron_list[$code]['nextime']);
+            $modules[$i]['thistime'] = $cron_list[$code]['thistime'] ? local_date('d-m-Y/H:i:s',$cron_list[$code]['thistime']) : '-';
             $modules[$i]['install'] = '1';
         }
         else

@@ -561,7 +561,7 @@ if ($_REQUEST['act'] == 'backup')
 
     $tpl = trim($_REQUEST['tpl_name']);
 
-    $filename = '../temp/backup/' . $tpl . '_' . date('Ymd') . '.zip';
+    $filename = '../temp/backup/' . $tpl . '_' . date('dmY') . '.zip';
 
     $zip = new PHPZip;
     $done = $zip->zip('../themes/' . $tpl . '/', $filename);

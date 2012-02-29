@@ -6230,10 +6230,10 @@ function package_virtual_card_shipping($goods, $order_sn)
             $GLOBALS['smarty']->assign('order',                          $order);
             $GLOBALS['smarty']->assign('goods',                          $virtual_goods_value);
 
-            $GLOBALS['smarty']->assign('send_time', date('Y-m-d H:i:s'));
+            $GLOBALS['smarty']->assign('send_time', date('d-m-Y H:i:s'));
             $GLOBALS['smarty']->assign('shop_name', $GLOBALS['_CFG']['shop_name']);
-            $GLOBALS['smarty']->assign('send_date', date('Y-m-d'));
-            $GLOBALS['smarty']->assign('sent_date', date('Y-m-d'));
+            $GLOBALS['smarty']->assign('send_date', date('d-m-Y'));
+            $GLOBALS['smarty']->assign('sent_date', date('d-m-Y'));
 
             $tpl = get_mail_template('virtual_card');
             $content = $GLOBALS['smarty']->fetch('str:' . $tpl['template_content']);

@@ -314,7 +314,7 @@ class cls_sql_dump
         $sys_info['web_server'] = $GLOBALS['ecs']->get_domain();
         $sys_info['php_ver']    = PHP_VERSION;
         $sys_info['mysql_ver']  = $this->db->version();
-        $sys_info['date']       = date('Y-m-d H:i:s');
+        $sys_info['date']       = date('d-m-Y H:i:s');
 
         $head = "-- ecshop v2.x SQL Dump Program\r\n".
                  "-- " . $sys_info['web_server'] . "\r\n".
@@ -463,7 +463,7 @@ class cls_sql_dump
      */
     function get_random_name()
     {
-        $str = date('Ymd');
+        $str = date('dmY');
 
         for ($i = 0; $i < 6; $i++)
         {
