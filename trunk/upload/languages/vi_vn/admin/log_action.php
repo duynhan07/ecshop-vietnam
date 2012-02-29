@@ -18,9 +18,9 @@
 /*------------------------------------------------------ */
 //-- Operation type
 /*------------------------------------------------------ */
-$_LANG['log_action']['add'] = 'Add';
-$_LANG['log_action']['remove'] = 'Delete';
-$_LANG['log_action']['edit'] = 'Edit';
+$_LANG['log_action']['add'] = 'Thêm';
+$_LANG['log_action']['remove'] = 'Xóa';
+$_LANG['log_action']['edit'] = 'Sửa';
 $_LANG['log_action']['install'] = 'Install';
 $_LANG['log_action']['uninstall'] = 'Uninstall';
 $_LANG['log_action']['setup'] = 'Setup';

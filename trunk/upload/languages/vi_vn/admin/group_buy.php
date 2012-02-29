@@ -2,7 +2,7 @@
 /* Current page title and useable link name */
 $_LANG['group_buy_list'] = 'Associates list';
 $_LANG['add_group_buy'] = 'Add Associates';
-$_LANG['edit_group_buy'] = 'Edit';
+$_LANG['edit_group_buy'] = 'Sửa';
 
 /* Associates list page */
 $_LANG['goods_name'] = 'Tên sản phẩm';

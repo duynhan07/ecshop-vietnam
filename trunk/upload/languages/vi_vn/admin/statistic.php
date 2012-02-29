@@ -47,7 +47,7 @@ $_LANG['month_format'] = '%c';
 
 $_LANG['from'] = 'from';
 $_LANG['to'] = 'to';
-$_LANG['view'] = 'View';
+$_LANG['view'] = 'Xem';
 
 /* Sales general situation */
 $_LANG['overall_sell_circs'] = 'Current overall sell circs';

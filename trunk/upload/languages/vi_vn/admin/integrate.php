@@ -133,7 +133,7 @@ $_LANG['bbs'] = 'bbs';
 $_LANG['shop_pay_points'] = 'Shangcheng consumption points';
 $_LANG['shop_rank_points'] = 'Mall grade points';
 $_LANG['add_rule'] = 'New rules';
-$_LANG['modify'] = 'Modify';
+$_LANG['modify'] = 'Sửa đổi';
 $_LANG['rule_name'] = 'Exchange rules';
 $_LANG['rule_rate'] = 'Exchange ratio';
 

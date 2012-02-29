@@ -27,8 +27,8 @@ $_LANG['username'] = 'Username';
 $_LANG['email'] = 'Email';
 $_LANG['is_validated'] = 'is_validated';
 $_LANG['reg_date'] = 'Register date';
-$_LANG['button_remove'] = 'Delete';
-$_LANG['users_edit'] = 'Edit';
+$_LANG['button_remove'] = 'Xóa';
+$_LANG['users_edit'] = 'Sửa';
 $_LANG['goto_list'] = 'Return list';
 $_LANG['username_empty'] = 'Please enter a username!';
 

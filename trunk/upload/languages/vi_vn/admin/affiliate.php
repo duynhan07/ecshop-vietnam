@@ -17,7 +17,7 @@ $_LANG['level_error'] = 'Set up to level 5!';
 $_LANG['levels'] = 'Recommend people level';
 $_LANG['js_languages']['lang_removeconfirm'] = 'Are you sure you want to delete this grade it?';
 $_LANG['js_languages']['save'] = 'Save';
-$_LANG['js_languages']['cancel'] = 'Cancel';
+$_LANG['js_languages']['cancel'] = 'Hủy bỏ';
 
 $_LANG['unit']['hour'] = 'Hours';
 $_LANG['unit']['day'] = 'Days';

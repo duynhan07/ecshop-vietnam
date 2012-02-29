@@ -15,7 +15,7 @@
  * $Id: goods.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
-$_LANG['edit_goods'] ='Edit';
+$_LANG['edit_goods'] ='Sửa';
 $_LANG['copy_goods'] ='Copy';
 $_LANG['continue_add_goods'] ='Continue add new product';
 $_LANG['back_goods_list'] ='Return product list';
@@ -234,8 +234,8 @@ $_LANG['js_languages']['shop_price_not_null']='The shop selling price can\'t be 
 $_LANG['js_languages']['shop_price_not_number']='The shop selling price isn\'t a figure.';
 
 $_LANG['js_languages']['select_please'] ='Hãy chọn...';
-$_LANG['js_languages']['button_add'] ='Add';
-$_LANG['js_languages']['button_del'] ='Delete';
+$_LANG['js_languages']['button_add'] ='Thêm';
+$_LANG['js_languages']['button_del'] ='Xóa';
 $_LANG['js_languages']['spec_value_not_null'] ='The specification can\'t be blank.';
 $_LANG['js_languages']['spec_price_not_number'] ='The price markup isn\'t a fugure.';
 $_LANG['js_languages']['market_price_not_number']='The market price isn\'t a figure.';

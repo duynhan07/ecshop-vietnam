@@ -1,7 +1,7 @@
 <?php
 $_LANG['order_id'] = 'Order No.';
 $_LANG['affiliate_separate'] = 'Divided into';
-$_LANG['affiliate_cancel'] = 'Cancel';
+$_LANG['affiliate_cancel'] = 'Hủy bỏ';
 $_LANG['affiliate_rollback'] = 'Revocation';
 $_LANG['log_info'] = 'Operation information';
 $_LANG['edit_ok'] = 'Successful operation';

@@ -42,7 +42,7 @@ $_LANG['position_desc_empty'] = 'Wrong, the description of AD-position is blank!
 $_LANG['view_static'] = 'View statistics information.';
 $_LANG['add_js_code'] = 'Produce and copy the JS code.';
 $_LANG['position_add'] = 'Add AD-position';
-$_LANG['position_edit'] = 'Edit';
+$_LANG['position_edit'] = 'Sửa';
 $_LANG['posit_name_exist'] = 'The AD-position has existed!';
 $_LANG['download_ad_statistics'] = 'Download Advertisement statistics';
 

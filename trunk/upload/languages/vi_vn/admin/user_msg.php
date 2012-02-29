@@ -46,7 +46,7 @@ $_LANG['reply_content'] = 'Reply content';
 
 $_LANG['have_reply_content'] = 'TIP: The message have replied, if you continue, you will lose the old contents!';
 
-$_LANG['edit_reply'] = 'Edit';
+$_LANG['edit_reply'] = 'Sửa';
 
 $_LANG['reply_content'] = 'Reply content';
 $_LANG['email'] = 'email';

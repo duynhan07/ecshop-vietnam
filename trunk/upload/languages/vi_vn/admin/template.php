@@ -65,7 +65,7 @@ $_LANG['template_files']['exchange_list'] = 'Mall points list';
 /* Every library item's description */
 $_LANG['template_libs']['ad_position'] = 'AD position';
 $_LANG['template_libs']['index_ad'] = 'Homepage AD position';
-$_LANG['template_libs']['cat_articles'] = 'Article list';
+$_LANG['template_libs']['cat_articles'] = 'Danh sách bài viết';
 $_LANG['template_libs']['articles'] = 'Articles';
 $_LANG['template_libs']['goods_attrlinked'] = 'Product attrlinked';
 $_LANG['template_libs']['recommend_best'] = 'Recommend';

@@ -18,7 +18,7 @@
 $_LANG['email_val'] = 'E-mail address';
 $_LANG['email_error'] = 'Error Hits';
 $_LANG['email_subject'] = 'Message headers';
-$_LANG['delete'] = 'Delete';
+$_LANG['delete'] = 'Xóa';
 $_LANG['ckdelete'] = 'Determined delete?';
 $_LANG['del_ok'] = 'Delete success!';
 $_LANG['no_select'] = 'No choice!';
@@ -29,7 +29,7 @@ $_LANG['pri'][1] = 'High';
 $_LANG['type']['name'] = 'Mail Type';
 $_LANG['type']['magazine'] = 'Magazine Subscriptions';
 $_LANG['type']['template'] = 'Concern Subscribe';
-$_LANG['button_remove'] = 'Delete';
+$_LANG['button_remove'] = 'Xóa';
 $_LANG['batch_send'] = 'Select Send';
 $_LANG['all_send'] = 'All sent';
 $_LANG['mailsend_null'] = 'E-mail list empty!';
