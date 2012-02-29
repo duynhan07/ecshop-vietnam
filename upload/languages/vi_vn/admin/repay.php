@@ -33,7 +33,7 @@ $_LANG['is_repayed'] = 'Repay?';
 $_LANG['repayed'] = 'Repayed';
 $_LANG['unrepayed'] = 'Unrepayed';
 
-$_LANG['view'] = 'View';
+$_LANG['view'] = 'Xem';
 
 $_LANG['from'] = 'From';
 $_LANG['reply'] = 'Reply';

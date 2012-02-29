@@ -53,7 +53,7 @@ $_LANG['add_option_error'] = 'Error!';
 $_LANG['js_languages']['vote_name_empty'] = 'Vote name can\'t be blank!';
 $_LANG['js_languages']['option_name_empty'] = 'Vote name option can\'t be blank!';
 $_LANG['js_languages']['drop_confirm'] = 'Are you sure delete the record?';
-$_LANG['js_languages']['drop'] = 'Delete';
+$_LANG['js_languages']['drop'] = 'Xóa';
 
 /* option of vote field */
 $_LANG['option_id'] = 'Option ID';

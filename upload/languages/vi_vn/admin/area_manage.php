@@ -39,7 +39,7 @@ $_LANG['js_languages']['region_name_empty'] = 'Please enter a region name!';
 $_LANG['js_languages']['option_name_empty'] = 'Please enter a option name of survey!';
 $_LANG['js_languages']['drop_confirm'] = 'Are you sure delete this record?';
 
-$_LANG['js_languages']['drop'] = 'Delete';
+$_LANG['js_languages']['drop'] = 'Xóa';
 $_LANG['js_languages']['country'] = 'Country';
 $_LANG['js_languages']['province'] = 'Province';
 $_LANG['js_languages']['city'] = 'City';

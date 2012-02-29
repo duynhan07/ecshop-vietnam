@@ -40,7 +40,7 @@ $_LANG['is_paid'] = 'Trạng thái';
 $_LANG['is_confirm'] = 'Đã xác nhận';
 $_LANG['un_confirm'] = 'Chưa xác nhận';
 $_LANG['pay'] = 'Payment';
-$_LANG['is_cancel'] = 'Cancel';
+$_LANG['is_cancel'] = 'Hủy bỏ';
 $_LANG['account_inc'] = 'Increase';
 $_LANG['account_dec'] = 'Decrease';
 $_LANG['change_desc'] = 'Mô tả';
@@ -101,7 +101,7 @@ $_LANG['account_balance'] = 'Account balance';
 $_LANG['user_bonus'] = 'User bonus';
 $_LANG['user_bonus_info'] = 'Total %d, value %s';
 $_LANG['not_bonus'] = 'No bonus';
-$_LANG['add_user_bonus'] = 'Add';
+$_LANG['add_user_bonus'] = 'Thêm';
 $_LANG['bonus_number'] = 'Bonus NO.';
 $_LANG['old_password'] = 'Primary password';
 $_LANG['new_password'] = 'New password';
@@ -577,7 +577,7 @@ $_LANG['affiliate_expire'] = 'Time valid';
 $_LANG['affiliate_lever'] = 'Level';
 $_LANG['affiliate_num'] = 'Number';
 
-$_LANG['affiliate_view'] = 'View';
+$_LANG['affiliate_view'] = 'Xem';
 $_LANG['affiliate_code'] = 'Code';
 
 $_LANG['register_affiliate'] = 'Points for recommended memberID %s ( %s ) registration';

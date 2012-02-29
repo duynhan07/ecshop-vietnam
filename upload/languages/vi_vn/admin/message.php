@@ -24,11 +24,11 @@ $_LANG['deleted'] = 'Deleted';
 $_LANG['title'] = 'Title';
 $_LANG['message'] = 'Content';
 
-$_LANG['view_msg'] = 'View';
+$_LANG['view_msg'] = 'Xem';
 $_LANG['reply_msg'] = 'Reply';
 $_LANG['send_msg'] = 'Send';
-$_LANG['edit_msg'] = 'Edit';
-$_LANG['drop_msg'] = 'Delete';
+$_LANG['edit_msg'] = 'Sửa';
+$_LANG['drop_msg'] = 'Xóa';
 $_LANG['all_amdin'] = 'All administrators';
 $_LANG['msg_list'] = 'Message list';
 $_LANG['no_read'] = 'Not read';

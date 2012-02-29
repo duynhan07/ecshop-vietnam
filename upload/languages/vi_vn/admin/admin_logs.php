@@ -21,7 +21,7 @@ $_LANG['user_id'] = 'Operator';
 $_LANG['log_info'] = 'Operation log';
 $_LANG['ip_address'] = 'IP';
 
-$_LANG['drop_logs'] = 'Delete';
+$_LANG['drop_logs'] = 'Xóa';
 
 $_LANG['view_ip'] = 'IP';
 $_LANG['select_ip'] = 'Hãy chọn...';
