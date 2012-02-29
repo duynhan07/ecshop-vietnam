@@ -27,8 +27,8 @@ if ($_REQUEST['act'] == 'view')
     }
     else
     {
-        $start_date = local_date('Y-m-d', strtotime('-1 week'));
-        $end_date   = local_date('Y-m-d');
+        $start_date = local_date('d-m-Y', strtotime('-1 week'));
+        $end_date   = local_date('d-m-Y');
     }
     /* ------------------------------------- */
     /* --综合流量
@@ -109,7 +109,7 @@ if ($_REQUEST['act'] == 'view')
     $smarty->assign('start_date',   $start_date);
     $smarty->assign('end_date',     $end_date);
 
-    $filename = local_date('Ymd', $start_date) . '_' . local_date('Ymd', $end_date);
+    $filename = local_date('dmY', $start_date) . '_' . local_date('dmY', $end_date);
     $smarty->assign('action_link',  array('text' => $_LANG['down_search_stats'], 'href' => 'searchengine_stats.php?act=download&start_date=' . $start_date . '&end_date=' . $end_date . '&filename=' . $filename));
 
     $smarty->assign('lang', $_LANG);

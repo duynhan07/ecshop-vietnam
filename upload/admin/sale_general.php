@@ -70,8 +70,8 @@ $data_list = $db->getAll($sql);
 if ($_REQUEST['act'] == 'list')
 {
     /* 赋值查询时间段 */
-    $smarty->assign('start_time',   local_date('Y-m-d', $start_time));
-    $smarty->assign('end_time',     local_date('Y-m-d', $end_time));
+    $smarty->assign('start_time',   local_date('d-m-Y', $start_time));
+    $smarty->assign('end_time',     local_date('d-m-Y', $end_time));
 
     /* 赋值统计数据 */
     $xml = "<chart caption='' xAxisName='%s' showValues='0' decimals='0' formatNumberScale='0'>%s</chart>";

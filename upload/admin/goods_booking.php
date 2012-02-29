@@ -110,7 +110,7 @@ if ($_REQUEST['act'] =='update')
         $smarty->assign('goods_name', $booking_info['goods_name']);
         $smarty->assign('dispose_note', $dispose_note);
         $smarty->assign('shop_name',   "<a href='".$ecs->url()."'>" . $_CFG['shop_name'] . '</a>');
-        $smarty->assign('send_date',   date('Y-m-d'));
+        $smarty->assign('send_date',   date('d-m-Y'));
 
         $content = $smarty->fetch('str:' . $template['template_content']);
 

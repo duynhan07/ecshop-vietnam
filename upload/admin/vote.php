@@ -63,7 +63,7 @@ elseif ($_REQUEST['act'] == 'add')
     admin_priv('vote_priv');
 
     /* 日期初始化 */
-    $vote = array('start_time' => local_date('Y-m-d'), 'end_time' => local_date('Y-m-d', local_strtotime('+2 weeks')));
+    $vote = array('start_time' => local_date('d-m-Y'), 'end_time' => local_date('d-m-Y', local_strtotime('+2 weeks')));
 
     /* 模板赋值 */
     $smarty->assign('ur_here',      $_LANG['add_vote']);
@@ -131,8 +131,8 @@ elseif ($_REQUEST['act'] == 'edit')
 
     /* 获取数据 */
     $vote_arr = $db->GetRow("SELECT * FROM ".$ecs->table('vote')." WHERE vote_id='$_REQUEST[id]'");
-    $vote_arr['start_time'] = local_date('Y-m-d', $vote_arr['start_time']);
-    $vote_arr['end_time']   = local_date('Y-m-d', $vote_arr['end_time']);
+    $vote_arr['start_time'] = local_date('d-m-Y', $vote_arr['start_time']);
+    $vote_arr['end_time']   = local_date('d-m-Y', $vote_arr['end_time']);
 
     /* 模板赋值 */
     $smarty->assign('ur_here',      $_LANG['edit_vote']);
@@ -378,8 +378,8 @@ function get_votelist()
     $list = array();
     while ($rows = $GLOBALS['db']->fetchRow($res))
     {
-        $rows['begin_date'] = local_date('Y-m-d', $rows['start_time']);
-        $rows['end_date']   = local_date('Y-m-d', $rows['end_time']);
+        $rows['begin_date'] = local_date('d-m-Y', $rows['start_time']);
+        $rows['end_date']   = local_date('d-m-Y', $rows['end_time']);
         $list[] = $rows;
     }
 

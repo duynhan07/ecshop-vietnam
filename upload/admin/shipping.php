@@ -218,7 +218,7 @@ elseif ($_REQUEST['act'] == 'print_upload')
             exit;
         }
 
-        $name = date('Ymd');
+        $name = date('dmY');
         for ($i = 0; $i < 6; $i++)
         {
             $name .= chr(mt_rand(97, 122));

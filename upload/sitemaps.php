@@ -37,7 +37,7 @@ else
     $config = unserialize($_CFG['sitemap']);
     $item = array(
         'loc'        =>  "$site_url/",
-        'lastmod'     =>  local_date('Y-m-d'),
+        'lastmod'     =>  local_date('d-m-Y'),
         'changefreq' => $config['homepage_changefreq'],
         'priority' => $config['homepage_priority'],
     );
@@ -50,7 +50,7 @@ else
     {
         $item = array(
             'loc'        =>  "$site_url/" . build_uri('category', array('cid' => $row['cat_id']), $row['cat_name']),
-            'lastmod'     =>  local_date('Y-m-d'),
+            'lastmod'     =>  local_date('d-m-Y'),
             'changefreq' => $config['category_changefreq'],
             'priority' => $config['category_priority'],
         );
@@ -64,7 +64,7 @@ else
     {
         $item = array(
             'loc'        =>  "$site_url/" . build_uri('article_cat', array('acid' => $row['cat_id']), $row['cat_name']),
-            'lastmod'     =>  local_date('Y-m-d'),
+            'lastmod'     =>  local_date('d-m-Y'),
             'changefreq' => $config['category_changefreq'],
             'priority' => $config['category_priority'],
         );
@@ -78,7 +78,7 @@ else
     {
         $item = array(
             'loc'        =>  "$site_url/" . build_uri('goods', array('gid' => $row['goods_id']), $row['goods_name']),
-            'lastmod'     =>  local_date('Y-m-d', $row['last_update']),
+            'lastmod'     =>  local_date('d-m-Y', $row['last_update']),
             'changefreq' => $config['content_changefreq'],
             'priority' => $config['content_priority'],
         );
@@ -93,7 +93,7 @@ else
         $article_url=$row['open_type'] != 1 ? build_uri('article', array('aid'=>$row['article_id']), $row['title']) : trim($row['file_url']);
         $item = array(
             'loc'        =>  "$site_url/" . $article_url,
-            'lastmod'     =>  local_date('Y-m-d', $row['add_time']),
+            'lastmod'     =>  local_date('d-m-Y', $row['add_time']),
             'changefreq' => $config['content_changefreq'],
             'priority' => $config['content_priority'],
         );

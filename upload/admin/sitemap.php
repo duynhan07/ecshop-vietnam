@@ -27,7 +27,7 @@ else
     include_once('includes/cls_google_sitemap.php');
 
     $domain = $ecs->url();
-    $today  = local_date('Y-m-d');
+    $today  = local_date('d-m-Y');
 
     $sm     =& new google_sitemap();
     $smi    =& new google_sitemap_item($domain, $today, $_POST['homepage_changefreq'], $_POST['homepage_priority']);

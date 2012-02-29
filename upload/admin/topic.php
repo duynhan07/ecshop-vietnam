@@ -82,8 +82,8 @@ if ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit')
     {
         $sql = "SELECT * FROM " . $ecs->table('topic') . " WHERE topic_id = '$topic_id'";
         $topic = $db->getRow($sql);
-        $topic['start_time'] = local_date('Y-m-d', $topic['start_time']);
-        $topic['end_time']   = local_date('Y-m-d', $topic['end_time']);
+        $topic['start_time'] = local_date('d-m-Y', $topic['start_time']);
+        $topic['end_time']   = local_date('d-m-Y', $topic['end_time']);
 
         create_html_editor('topic_intro', $topic['intro']);
 
@@ -147,7 +147,7 @@ elseif ($_REQUEST['act'] == 'insert' || $_REQUEST['act'] == 'update')
                 }
 
                 /* 处理 */
-                $name = date('Ymd');
+                $name = date('dmY');
                 for ($i = 0; $i < 6; $i++)
                 {
                     $name .= chr(mt_rand(97, 122));
@@ -198,7 +198,7 @@ elseif ($_REQUEST['act'] == 'insert' || $_REQUEST['act'] == 'update')
         }
 
         /* 处理 */
-        $name = date('Ymd');
+        $name = date('dmY');
         for ($i = 0; $i < 6; $i++)
         {
             $name .= chr(mt_rand(97, 122));
@@ -362,8 +362,8 @@ function get_topic_list()
     $res = array();
 
     while($topic = $GLOBALS['db']->fetch_array($query)){
-        $topic['start_time'] = local_date('Y-m-d',$topic['start_time']);
-        $topic['end_time']   = local_date('Y-m-d',$topic['end_time']);
+        $topic['start_time'] = local_date('d-m-Y',$topic['start_time']);
+        $topic['end_time']   = local_date('d-m-Y',$topic['end_time']);
         $topic['url']        = $GLOBALS['ecs']->url() . 'topic.php?topic_id=' . $topic['topic_id'];
         $res[] = $topic;
     }
@@ -444,7 +444,7 @@ function get_url_image($url)
         return $url;
     }
 
-    $name = date('Ymd');
+    $name = date('dmY');
     for ($i = 0; $i < 6; $i++)
     {
         $name .= chr(mt_rand(97, 122));

@@ -24,7 +24,7 @@ $merchantMbrCode='10017518267';
 
 //申请编号，不可空
 //只允许是字母、数字、“_”等，以字母或数字开头
-$requestId=date('YmdHis');
+$requestId=date('dmYHis');
 
 
 //注册类型，不可空
@@ -34,7 +34,7 @@ $registerType='1';
 
 //用户在商户系统的ID，不可空
 //只允许是字母、数字、“_”等，以字母或数字开头
-$userId=date('YmdHis');
+$userId=date('dmYHis');
 
 //用户类型，不可空
 //固定值：1、2

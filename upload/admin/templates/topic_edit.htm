@@ -94,10 +94,10 @@
         <tr>
           <td class="label">{$lang.cycle}</td>
           <td><input name="start_time" type="text" id="start_time" size="12" value='{$topic.start_time}' readonly="readonly" />
-            <input name="selbtn1" type="button" id="selbtn1" onclick="return showCalendar('start_time', '%Y-%m-%d', false, false, 'selbtn1');" value="{$lang.btn_select}" class="button"/>
+            <input name="selbtn1" type="button" id="selbtn1" onclick="return showCalendar('start_time', '%d-%m-%Y', false, false, 'selbtn1');" value="{$lang.btn_select}" class="button"/>
             -
             <input name="end_time" type="text" id="end_time" size="12" value='{$topic.end_time}' readonly="readonly" />
-            <input name="selbtn2" type="button" id="selbtn2" onclick="return showCalendar('end_time', '%Y-%m-%d', false, false, 'selbtn2');" value="{$lang.btn_select}" class="button"/></td>
+            <input name="selbtn2" type="button" id="selbtn2" onclick="return showCalendar('end_time', '%d-%m-%Y', false, false, 'selbtn2');" value="{$lang.btn_select}" class="button"/></td>
         </tr>
       </table>
       <table width="90%" border="0"  align="center" cellpadding="0" cellspacing="0" id="goods-table" style="display:none;" >

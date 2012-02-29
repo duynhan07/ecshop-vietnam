@@ -12,8 +12,8 @@ if (isset($_REQUEST['act']) && ($_REQUEST['act'] == 'query' ||  $_REQUEST['act']
     check_authz_json('client_flow_stats');
     if (strstr($_REQUEST['start_date'], '-') === false)
     {
-        $_REQUEST['start_date'] = local_date('Y-m-d', $_REQUEST['start_date']);
-        $_REQUEST['end_date'] = local_date('Y-m-d', $_REQUEST['end_date']);
+        $_REQUEST['start_date'] = local_date('d-m-Y', $_REQUEST['start_date']);
+        $_REQUEST['end_date'] = local_date('d-m-Y', $_REQUEST['end_date']);
     }
 
     if ($_REQUEST['act'] == 'download')
@@ -73,8 +73,8 @@ else
     $smarty->assign('page_count',       $user_orderinfo['page_count']);
     $smarty->assign('user_orderinfo', $user_orderinfo['user_orderinfo']);
     $smarty->assign('full_page',        1);
-    $smarty->assign('start_date',     local_date('Y-m-d', $start_date));
-    $smarty->assign('end_date',       local_date('Y-m-d', $end_date));
+    $smarty->assign('start_date',     local_date('d-m-Y', $start_date));
+    $smarty->assign('end_date',       local_date('d-m-Y', $end_date));
     $smarty->assign('sort_order_num',   '<img src="images/sort_desc.gif">');
     /* 页面显示 */
     assign_query_info();

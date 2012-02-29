@@ -112,11 +112,11 @@ elseif ($step == 3)
         $filemtime = @filemtime(ROOT_PATH.$file);
         if ($filemtime > $weekbefore)
         {
-            $filemtime = '<b>'.date("Y-m-d H:i:s", $filemtime).'</b>';
+            $filemtime = '<b>'.date("d-m-Y H:i:s", $filemtime).'</b>';
         }
         else
         {
-            $filemtime = date("Y-m-d H:i:s", $filemtime);
+            $filemtime = date("d-m-Y H:i:s", $filemtime);
             $statust = 0;
         }
 

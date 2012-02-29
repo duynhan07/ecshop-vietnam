@@ -71,8 +71,8 @@ elseif ($_REQUEST['act'] == 'add')
     $ad_link = empty($_GET['ad_link']) ? '' : trim($_GET['ad_link']);
     $ad_name = empty($_GET['ad_name']) ? '' : trim($_GET['ad_name']);
 
-    $start_time = local_date('Y-m-d');
-    $end_time   = local_date('Y-m-d', gmtime() + 3600 * 24 * 30);  // 默认结束时间为1个月以后
+    $start_time = local_date('d-m-Y');
+    $end_time   = local_date('d-m-Y', gmtime() + 3600 * 24 * 30);  // 默认结束时间为1个月以后
 
     $smarty->assign('ads',
         array('ad_link' => $ad_link, 'ad_name' => $ad_name, 'start_time' => $start_time,
@@ -154,7 +154,7 @@ elseif ($_REQUEST['act'] == 'insert')
             }
 
             /* 生成文件名 */
-            $urlstr = date('Ymd');
+            $urlstr = date('dmY');
             for ($i = 0; $i < 6; $i++)
             {
                 $urlstr .= chr(mt_rand(97, 122));
@@ -266,8 +266,8 @@ elseif ($_REQUEST['act'] == 'edit')
 
     $ads_arr['ad_name'] = htmlspecialchars($ads_arr['ad_name']);
     /* 格式化广告的有效日期 */
-    $ads_arr['start_time']  = local_date('Y-m-d', $ads_arr['start_time']);
-    $ads_arr['end_time']    = local_date('Y-m-d', $ads_arr['end_time']);
+    $ads_arr['start_time']  = local_date('d-m-Y', $ads_arr['start_time']);
+    $ads_arr['end_time']    = local_date('d-m-Y', $ads_arr['end_time']);
 
     if ($ads_arr['media_type'] == '0')
     {
@@ -378,7 +378,7 @@ elseif ($_REQUEST['act'] == 'update')
                 sys_msg($_LANG['upfile_flash_type'], 0, $link);
             }
             /* 生成文件名 */
-            $urlstr = date('Ymd');
+            $urlstr = date('dmY');
             for ($i = 0; $i < 6; $i++)
             {
                 $urlstr .= chr(mt_rand(97, 122));

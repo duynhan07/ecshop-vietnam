@@ -30,7 +30,7 @@ if ($_REQUEST['act'] == 'replenish')
         }
     }
 
-    $card = array('goods_id'=>$_REQUEST['goods_id'],'goods_name'=>$goods_name, 'end_date'=>date('Y-m-d', strtotime('+1 year')));
+    $card = array('goods_id'=>$_REQUEST['goods_id'],'goods_name'=>$goods_name, 'end_date'=>date('d-m-Y', strtotime('+1 year')));
     $smarty->assign('card', $card);
 
     $smarty->assign('ur_here', $_LANG['replenish']);

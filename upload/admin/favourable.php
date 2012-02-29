@@ -154,8 +154,8 @@ elseif ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit')
         $favourable = array(
             'act_id'        => 0,
             'act_name'      => '',
-            'start_time'    => date('Y-m-d', time() + 86400),
-            'end_time'      => date('Y-m-d', time() + 4 * 86400),
+            'start_time'    => date('d-m-Y', time() + 86400),
+            'end_time'      => date('d-m-Y', time() + 4 * 86400),
             'user_rank'     => '',
             'act_range'     => FAR_ALL,
             'act_range_ext' => '',
@@ -461,8 +461,8 @@ function favourable_list()
     $list = array();
     while ($row = $GLOBALS['db']->fetchRow($res))
     {
-        $row['start_time']  = local_date('Y-m-d H:i', $row['start_time']);
-        $row['end_time']    = local_date('Y-m-d H:i', $row['end_time']);
+        $row['start_time']  = local_date('d-m-Y H:i', $row['start_time']);
+        $row['end_time']    = local_date('d-m-Y H:i', $row['end_time']);
 
         $list[] = $row;
     }

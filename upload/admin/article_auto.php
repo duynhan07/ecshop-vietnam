@@ -162,11 +162,11 @@ function get_auto_goods()
     {
         if (!empty($rt['starttime']))
         {
-            $rt['starttime'] = local_date('Y-m-d',$rt['starttime']);
+            $rt['starttime'] = local_date('d-m-Y',$rt['starttime']);
         }
         if (!empty($rt['endtime']))
         {
-            $rt['endtime'] = local_date('Y-m-d',$rt['endtime']);
+            $rt['endtime'] = local_date('d-m-Y',$rt['endtime']);
         }
         $rt['goods_id'] = $rt['article_id'];
         $rt['goods_name'] = $rt['title'];

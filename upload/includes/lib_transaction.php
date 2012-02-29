@@ -127,7 +127,7 @@ function get_profile($user_id)
         $info['rank_name'] = $GLOBALS['_LANG']['undifine_rank'];
     }
 
-    $cur_date = date('Y-m-d H:i:s');
+    $cur_date = date('d-m-Y H:i:s');
 
     /* 会员红包 */
     $bonus = array();

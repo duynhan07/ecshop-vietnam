@@ -78,8 +78,8 @@ if (!empty($license['certificate_id']) && !empty($license['token']) && !empty($l
             }
 
             $smarty->assign('lic_code', $license['certificate_id']);    //证书ID
-            $smarty->assign('lic_btime', local_date('Y-m-d', $request_arr['info']['service_open_time']));   //服务开始时间
-            $smarty->assign('lic_etime', local_date('Y-m-d', $request_arr['info']['service_close_time']));   //服务结束时间
+            $smarty->assign('lic_btime', local_date('d-m-Y', $request_arr['info']['service_open_time']));   //服务开始时间
+            $smarty->assign('lic_etime', local_date('d-m-Y', $request_arr['info']['service_close_time']));   //服务结束时间
             $smarty->assign('col_goods_num', $request_arr['info']['collect_num']);   //收录商品数量
             $smarty->assign('col_goods', $request_arr['info']['collect_se']);   //收录商品详情
         }

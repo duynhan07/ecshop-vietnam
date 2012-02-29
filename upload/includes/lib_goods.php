@@ -115,16 +115,16 @@ function get_top10($cats = '')
     switch ($GLOBALS['_CFG']['top10_time'])
     {
         case 1: // 一年
-            $top10_time = "AND o.order_sn >= '" . date('Ymd', gmtime() - 365 * 86400) . "'";
+            $top10_time = "AND o.order_sn >= '" . date('dmY', gmtime() - 365 * 86400) . "'";
         break;
         case 2: // 半年
-            $top10_time = "AND o.order_sn >= '" . date('Ymd', gmtime() - 180 * 86400) . "'";
+            $top10_time = "AND o.order_sn >= '" . date('dmY', gmtime() - 180 * 86400) . "'";
         break;
         case 3: // 三个月
-            $top10_time = "AND o.order_sn >= '" . date('Ymd', gmtime() - 90 * 86400) . "'";
+            $top10_time = "AND o.order_sn >= '" . date('dmY', gmtime() - 90 * 86400) . "'";
         break;
         case 4: // 一个月
-            $top10_time = "AND o.order_sn >= '" . date('Ymd', gmtime() - 30 * 86400) . "'";
+            $top10_time = "AND o.order_sn >= '" . date('dmY', gmtime() - 30 * 86400) . "'";
         break;
         default:
             $top10_time = '';
@@ -969,8 +969,8 @@ function group_buy_info($group_buy_id, $current_num = 0)
     $group_buy = array_merge($group_buy, $ext_info);
 
     /* 格式化时间 */
-    $group_buy['formated_start_date'] = local_date('Y-m-d H:i', $group_buy['start_time']);
-    $group_buy['formated_end_date'] = local_date('Y-m-d H:i', $group_buy['end_time']);
+    $group_buy['formated_start_date'] = local_date('d-m-Y H:i', $group_buy['start_time']);
+    $group_buy['formated_end_date'] = local_date('d-m-Y H:i', $group_buy['end_time']);
 
     /* 格式化保证金 */
     $group_buy['formated_deposit'] = price_format($group_buy['deposit'], false);
@@ -1154,8 +1154,8 @@ function auction_info($act_id, $config = false)
     if ($config == true)
     {
 
-        $auction['start_time'] = local_date('Y-m-d H:i', $auction['start_time']);
-        $auction['end_time'] = local_date('Y-m-d H:i', $auction['end_time']);
+        $auction['start_time'] = local_date('d-m-Y H:i', $auction['start_time']);
+        $auction['end_time'] = local_date('d-m-Y H:i', $auction['end_time']);
     }
     else
     {

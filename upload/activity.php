@@ -40,8 +40,8 @@ $res = $db->query($sql);
 $list = array();
 while ($row = $db->fetchRow($res))
 {
-    $row['start_time']  = local_date('Y-m-d H:i', $row['start_time']);
-    $row['end_time']    = local_date('Y-m-d H:i', $row['end_time']);
+    $row['start_time']  = local_date('d-m-Y H:i', $row['start_time']);
+    $row['end_time']    = local_date('d-m-Y H:i', $row['end_time']);
 
     //享受优惠会员等级
     $user_rank = explode(',', $row['user_rank']);

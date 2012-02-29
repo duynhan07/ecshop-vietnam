@@ -184,8 +184,8 @@ elseif ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit')
             'goods_id'      => 0,
             'product_id'    => 0,
             'goods_name'    => $_LANG['pls_search_goods'],
-            'start_time'    => date('Y-m-d', time() + 86400),
-            'end_time'      => date('Y-m-d', time() + 4 * 86400),
+            'start_time'    => date('d-m-Y', time() + 86400),
+            'end_time'      => date('d-m-Y', time() + 4 * 86400),
             'deposit'       => 0,
             'start_price'   => 0,
             'end_price'     => 0,
@@ -473,8 +473,8 @@ function auction_list()
         $ext_info = unserialize($row['ext_info']);
         $arr = array_merge($row, $ext_info);
 
-        $arr['start_time']  = local_date('Y-m-d H:i', $arr['start_time']);
-        $arr['end_time']    = local_date('Y-m-d H:i', $arr['end_time']);
+        $arr['start_time']  = local_date('d-m-Y H:i', $arr['start_time']);
+        $arr['end_time']    = local_date('d-m-Y H:i', $arr['end_time']);
 
         $list[] = $arr;
     }

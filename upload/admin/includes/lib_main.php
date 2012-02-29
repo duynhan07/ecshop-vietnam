@@ -369,7 +369,7 @@ function get_yes_no($var)
  */
 function get_where_sql($filter)
 {
-    $time = date('Y-m-d');
+    $time = date('d-m-Y');
 
     $where  = isset($filter->is_delete) && $filter->is_delete == '1' ?
         ' WHERE is_delete = 1 ' : ' WHERE is_delete = 0 ';

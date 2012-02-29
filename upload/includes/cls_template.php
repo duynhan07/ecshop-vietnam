@@ -1201,7 +1201,7 @@ class cls_template
         {
             if (intval($arr['time']) > 10000)
             {
-                $arr['time'] = gmdate('Y-m-d', $arr['time'] + 8*3600);
+                $arr['time'] = gmdate('d-m-Y', $arr['time'] + 8*3600);
             }
             $t     = explode('-', $arr['time']);
             $year  = strval($t[0]);

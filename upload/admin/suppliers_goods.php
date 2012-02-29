@@ -122,8 +122,8 @@ elseif ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit' || $_REQUEST['ac
             'integral'      => 0,
             'goods_number'  => $_CFG['default_storage'],
             'warn_number'   => 1,
-            'promote_start_date' => local_date('Y-m-d'),
-            'promote_end_date'   => local_date('Y-m-d', local_strtotime('+1 month')),
+            'promote_start_date' => local_date('d-m-Y'),
+            'promote_end_date'   => local_date('d-m-Y', local_strtotime('+1 month')),
             'goods_weight'  => 0,
             'give_integral' => -1,
             'rank_integral' => -1
@@ -189,8 +189,8 @@ elseif ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit' || $_REQUEST['ac
                 'integral'      => 0,
                 'goods_number'  => 1,
                 'warn_number'   => 1,
-                'promote_start_date' => local_date('Y-m-d'),
-                'promote_end_date'   => local_date('Y-m-d', gmstr2tome('+1 month')),
+                'promote_start_date' => local_date('d-m-Y'),
+                'promote_end_date'   => local_date('d-m-Y', gmstr2tome('+1 month')),
                 'goods_weight'  => 0,
                 'give_integral' => -1,
                 'rank_integral' => -1
@@ -222,8 +222,8 @@ elseif ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit' || $_REQUEST['ac
         }
         else
         {
-            $goods['promote_start_date'] = local_date('Y-m-d', $goods['promote_start_date']);
-            $goods['promote_end_date'] = local_date('Y-m-d', $goods['promote_end_date']);
+            $goods['promote_start_date'] = local_date('d-m-Y', $goods['promote_start_date']);
+            $goods['promote_end_date'] = local_date('d-m-Y', $goods['promote_end_date']);
         }
 
         /* 如果是复制商品，处理 */

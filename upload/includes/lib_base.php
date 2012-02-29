@@ -542,7 +542,7 @@ function log_write($arg, $file = '', $line = '')
         return;
     }
 
-    $str = "\r\n-- ". date('Y-m-d H:i:s'). " --------------------------------------------------------------\r\n";
+    $str = "\r\n-- ". date('d-m-Y H:i:s'). " --------------------------------------------------------------\r\n";
     $str .= "FILE: $file\r\nLINE: $line\r\n";
 
     if (is_array($arg))

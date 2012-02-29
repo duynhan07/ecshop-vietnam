@@ -18,7 +18,7 @@ function update_user_info()
     }
 
     /* 查询会员信息 */
-    $time = date('Y-m-d');
+    $time = date('d-m-Y');
     $sql = 'SELECT u.user_money,u.email, u.pay_points, u.user_rank, u.rank_points, '.
             ' IFNULL(b.type_money, 0) AS user_bonus, u.last_login, u.last_ip'.
             ' FROM ' .$GLOBALS['ecs']->table('users'). ' AS u ' .
@@ -103,7 +103,7 @@ function get_user_info($id=0)
     {
         $id = $_SESSION['user_id'];
     }
-    $time = date('Y-m-d');
+    $time = date('d-m-Y');
     $sql  = 'SELECT u.user_id, u.email, u.user_name, u.user_money, u.pay_points'.
             ' FROM ' .$GLOBALS['ecs']->table('users'). ' AS u ' .
             " WHERE u.user_id = '$id'";
@@ -925,7 +925,7 @@ function is_spider($record = true)
 
             if ($record === true)
             {
-                $GLOBALS['db']->autoReplace($GLOBALS['ecs']->table('searchengine'), array('date' => local_date('Y-m-d'), 'searchengine' => $spider, 'count' => 1), array('count' => 1));
+                $GLOBALS['db']->autoReplace($GLOBALS['ecs']->table('searchengine'), array('date' => local_date('d-m-Y'), 'searchengine' => $spider, 'count' => 1), array('count' => 1));
             }
 
             return $spider;
@@ -1260,7 +1260,7 @@ function save_searchengine_keyword($domain, $path)
             $keywords = ecs_iconv('UTF8', 'GBK', $keywords);
         }
 
-        $GLOBALS['db']->autoReplace($GLOBALS['ecs']->table('keywords'), array('date' => local_date('Y-m-d'), 'searchengine' => $searchengine, 'keyword' => addslashes($keywords), 'count' => 1), array('count' => 1));
+        $GLOBALS['db']->autoReplace($GLOBALS['ecs']->table('keywords'), array('date' => local_date('d-m-Y'), 'searchengine' => $searchengine, 'keyword' => addslashes($keywords), 'count' => 1), array('count' => 1));
     }
 }
 
@@ -1392,7 +1392,7 @@ function upload_file($upload, $type)
         $ftype = check_file_type($upload['tmp_name'], $upload['name'], '|png|jpg|jpeg|gif|doc|xls|txt|zip|ppt|pdf|rar|docx|xlsx|pptx|');
         if (!empty($ftype))
         {
-            $name = date('Ymd');
+            $name = date('dmY');
             for ($i = 0; $i < 6; $i++)
             {
                 $name .= chr(mt_rand(97, 122));
@@ -1669,7 +1669,7 @@ function assign_template($ctype = '', $catlist = array())
  */
 function time2gmt($time)
 {
-    return strtotime(gmdate('Y-m-d H:i:s', $time));
+    return strtotime(gmdate('d-m-Y H:i:s', $time));
 }
 
 /**

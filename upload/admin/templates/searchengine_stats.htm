@@ -6,9 +6,9 @@
   <form action="" method="post" id="selectForm">
      <div id="group">
        {$lang.start_date}&nbsp;&nbsp;
-       <input name="start_date" value="{$start_date}" style="width:80px;" onclick="return showCalendar(this, '%Y-%m-%d', false, false, this);" />
+       <input name="start_date" value="{$start_date}" style="width:80px;" onclick="return showCalendar(this, '%d-%m-%Y', false, false, this);" />
        {$lang.end_date}&nbsp;&nbsp;
-       <input name="end_date" value="{$end_date}" style="width:80px;" onclick="return showCalendar(this, '%Y-%m-%d', false, false, this);" /> 
+       <input name="end_date" value="{$end_date}" style="width:80px;" onclick="return showCalendar(this, '%d-%m-%Y', false, false, this);" /> 
        <br>{$lang.result_filter}&nbsp;
         {foreach from=$searchengines item=val key=sename}
         <label><input type="checkbox" value="{$sename}" name="filter[]" {if $val}checked{/if}>{$sename}</label>

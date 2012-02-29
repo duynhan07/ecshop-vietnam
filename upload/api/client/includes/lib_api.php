@@ -1062,8 +1062,8 @@
             $result['Data'][$key]['is_promote'] = ($goods['is_promote'] == 1);
             $result['Data'][$key]['goods_desc'] = htmlspecialchars($goods['goods_desc']);
             $result['Data'][$key]['keywords'] = htmlspecialchars($goods['keywords']);
-            $result['Data'][$key]['promote_start_date'] = local_date('Y-m-d', $goods['promote_start_date']);
-            $result['Data'][$key]['promote_end_date'] = local_date('Y-m-d', $goods['promote_end_date']);
+            $result['Data'][$key]['promote_start_date'] = local_date('d-m-Y', $goods['promote_start_date']);
+            $result['Data'][$key]['promote_end_date'] = local_date('d-m-Y', $goods['promote_end_date']);
 
             $tmp = array();
             if($goods['goods_thumb'] != '')

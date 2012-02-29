@@ -70,8 +70,8 @@ elseif ($_REQUEST['act'] == 'add' || $_REQUEST['act'] == 'edit')
     {
         $group_buy = array(
             'act_id'  => 0,
-            'start_time'    => date('Y-m-d', time() + 86400),
-            'end_time'      => date('Y-m-d', time() + 4 * 86400),
+            'start_time'    => date('d-m-Y', time() + 86400),
+            'end_time'      => date('d-m-Y', time() + 4 * 86400),
             'price_ladder'  => array(array('amount' => 0, 'price' => 0))
         );
     }

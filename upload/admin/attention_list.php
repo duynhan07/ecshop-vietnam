@@ -183,7 +183,7 @@ function get_attention()
     $goodsdb = $GLOBALS['db']->getAll($sql);
     foreach($goodsdb as $k=>$v)
     {
-        $goodsdb[$k]['last_update'] = local_date('Y-m-d', $v['last_update']);
+        $goodsdb[$k]['last_update'] = local_date('d-m-Y', $v['last_update']);
     }
 
     $arr = array('goodsdb' => $goodsdb, 'filter' => $filter, 'page_count' => $filter['page_count'], 'record_count' => $filter['record_count']);
