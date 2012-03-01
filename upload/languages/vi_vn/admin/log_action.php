@@ -36,7 +36,7 @@ $_LANG['log_action']['batch_edit'] = 'Batch edit';
 //-- Operation content
 /*------------------------------------------------------ */
 $_LANG['log_action']['users'] = 'User account number';
-$_LANG['log_action']['shipping'] = 'Shipping method';
+$_LANG['log_action']['shipping'] = 'Hình thức v.chuyển';
 $_LANG['log_action']['shipping_area'] = 'Shipping area';
 $_LANG['log_action']['area_region'] = 'Region of shipping area';
 $_LANG['log_action']['brand'] = 'Management brand';

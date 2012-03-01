@@ -98,8 +98,8 @@ $_LANG['email_not_allow'] = 'E-mail does not allow';
 
 /* 地址列表 */
 $_LANG['address_list'] = 'Receiving Address';
-$_LANG['consignee'] = 'Consignee';
-$_LANG['address'] = 'Address';
+$_LANG['consignee'] = 'Người nhận';
+$_LANG['address'] = 'Địa chỉ';
 $_LANG['link'] = 'Contact';
 $_LANG['other'] = 'Other';
 $_LANG['tel'] = 'Phone';

@@ -1,19 +1,19 @@
 <?php
 /* Current page title and useable link name */
-$_LANG['group_buy_list'] = 'Associates list';
-$_LANG['add_group_buy'] = 'Add Associates';
+$_LANG['group_buy_list'] = 'Danh sách nhóm mua';
+$_LANG['add_group_buy'] = 'Thêm nhóm mua';
 $_LANG['edit_group_buy'] = 'Sửa';
 
-/* Associates list page */
+/* Trang danh sách nhóm mua */
 $_LANG['goods_name'] = 'Tên sản phẩm';
 $_LANG['start_date'] = 'Start date';
 $_LANG['end_date'] = 'Deadline';
-$_LANG['deposit'] = 'Insurance';
-$_LANG['restrict_amount'] = 'Limit quantity';
+$_LANG['deposit'] = 'Tiền bảo hiểm';
+$_LANG['restrict_amount'] = 'Số lượng giới hạn';
 $_LANG['gift_integral'] = 'Present points';
 $_LANG['valid_order'] = 'Order';
 $_LANG['valid_goods'] = 'Order product';
-$_LANG['current_price'] = 'Current price';
+$_LANG['current_price'] = 'Giá hiện tại';
 $_LANG['current_status'] = 'Trạng thái';
 $_LANG['view_order'] = 'View order';
 
@@ -28,23 +28,23 @@ $_LANG['notice_goods_name'] = 'Please search product, create options list...';
 $_LANG['label_start_date'] = 'Ngày bắt đầu:';
 $_LANG['label_end_date'] = 'Hạn cuối:';
 $_LANG['notice_datetime'] = '(Year Month Day - Hour)';
-$_LANG['label_deposit'] = 'Insurance:';
-$_LANG['label_restrict_amount'] = 'Limit quantity:';
+$_LANG['label_deposit'] = 'Tiền bảo hiểm:';
+$_LANG['label_restrict_amount'] = 'Số lượng giới hạn:';
 $_LANG['notice_restrict_amount']= 'Reach the quantity, associates stop automatically. 0 means no limit quantity.';
 $_LANG['label_gift_integral'] = 'Present points:';
-$_LANG['label_price_ladder'] = 'Price step:';
+$_LANG['label_price_ladder'] = 'Bước giá:';
 $_LANG['notice_ladder_amount'] = 'Reach quantity';
 $_LANG['notice_ladder_price'] = 'Giá';
 $_LANG['label_desc'] = 'Mô tả:';
 $_LANG['label_status'] = 'Trạng thái';
-$_LANG['gbs'][GBS_PRE_START] = 'Preparing';
+$_LANG['gbs'][GBS_PRE_START] = 'Đang c.bị';
 $_LANG['gbs'][GBS_UNDER_WAY] = 'In progress';
 $_LANG['gbs'][GBS_FINISHED] = 'Finished but undisposed';
 $_LANG['gbs'][GBS_SUCCEED] = 'Succeed';
 $_LANG['gbs'][GBS_FAIL] = 'Fail';
 $_LANG['label_order_qty'] = 'Order quantity / Effective order quantity:';
 $_LANG['label_goods_qty'] = 'Product quantity / Effective product quantity:';
-$_LANG['label_cur_price'] = 'Current price:';
+$_LANG['label_cur_price'] = 'Giá hiện tại:';
 $_LANG['label_end_price'] = 'End price:';
 $_LANG['label_handler'] = 'Operator:';
 $_LANG['error_group_buy'] = 'The associates is nonexistent.';
@@ -76,7 +76,7 @@ $_LANG['error_restrict_amount'] = 'Sales quantity is less than the price ladder 
 
 $_LANG['js_languages']['error_goods_null'] = 'Please select product of associates!';
 $_LANG['js_languages']['error_deposit'] = 'Insurance must be an integer!';
-$_LANG['js_languages']['error_restrict_amount'] = 'Limit quantity must be an integer!';
+$_LANG['js_languages']['error_restrict_amount'] = 'Số lượng giới hạn phải là một số nguyên!';
 $_LANG['js_languages']['error_gift_integral'] = 'Present points must be an integer!';
 $_LANG['js_languages']['search_is_null'] = 'Did not search any products, please re-search';
 

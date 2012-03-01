@@ -20,11 +20,11 @@ $_LANG['user_surplus'] = 'Advanced payment';
 $_LANG['surplus_id'] = 'ID';
 $_LANG['user_id'] = 'Username';
 $_LANG['surplus_amount'] = 'Amount';
-$_LANG['add_date'] = 'Time';
-$_LANG['pay_mothed'] = 'Payment method';
+$_LANG['add_date'] = 'Thời gian';
+$_LANG['pay_mothed'] = 'Hình thức t.toán';
 $_LANG['process_type'] = 'Type';
 $_LANG['confirm_date'] = 'Confirm date';
-$_LANG['surplus_notic'] = 'Remarks';
+$_LANG['surplus_notic'] = 'Ghi chú';
 $_LANG['surplus_desc'] = 'Mô tả';
 $_LANG['surplus_type'] = 'Operation type';
 

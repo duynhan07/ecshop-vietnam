@@ -87,7 +87,7 @@ $_LANG['js_languages']['search_is_null'] = 'Did not search any products, please 
 /* log */
 $_LANG['bid_user'] = 'Buyer';
 $_LANG['bid_price'] = 'Bid';
-$_LANG['bid_time'] = 'Time';
+$_LANG['bid_time'] = 'Thời gian';
 $_LANG['status'] = 'State';
 
 ?>

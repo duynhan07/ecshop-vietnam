@@ -70,7 +70,7 @@
       <!-- {if $cfg.show_goodsweight && 0} -->
       {$lang.goods_weight} {$gb_goods.goods_weight}<br>
       <!-- {/if} -->
-      {$lang.act_time}：{$group_buy.formated_start_date} -- {$group_buy.formated_end_date}<br>
+      {$lang.act_time}: {$group_buy.formated_start_date} -- {$group_buy.formated_end_date}<br>
       {$lang.gb_price_ladder}<br />
       <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
        <tr>

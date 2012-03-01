@@ -71,8 +71,8 @@ $_LANG["confirmed"] = "Confirmed";
 $_LANG["unconfirmed"] = "Unconfirmed";
 $_LANG["invalid"] = "Invalid";
 $_LANG['order_circs'] = 'Order profile';
-$_LANG['shipping_method'] = 'Shipping method';
-$_LANG['pay_method'] = 'Payment method';
+$_LANG['shipping_method'] = 'Hình thức v.chuyển';
+$_LANG['pay_method'] = 'Hình thức t.toán';
 $_LANG['down_order_statistics'] = 'Download order status report';
 
 /* Sales ranking */
@@ -134,7 +134,7 @@ $_LANG['sales_list'] = 'Sales list';
 
 /* Visit and purchase proportion */
 $_LANG['fav_exponential'] = 'Favorite exponential';
-$_LANG['buy_times'] = 'Time';
+$_LANG['buy_times'] = 'Thời gian';
 $_LANG['visit_buy'] ='Purchase rate';
 $_LANG['download_visit_buy'] = 'Download visit purchase rate statements';
 

@@ -1,10 +1,10 @@
 <?php
-$_LANG['ems']                   = 'EMS express mail service';
-$_LANG['ems_express_desc']      = 'EMS express mail service\'s description';
+$_LANG['ems']                   = 'Dịch vụ chuyển thư EMS';
+$_LANG['ems_express_desc']      = 'Mô tả dịch vụ chuyển thư EMS';
 //$_LANG['fee_compute_mode']      = 'Cost calculation method';
-$_LANG['item_fee']              = 'Single commodity costs:';
-$_LANG['base_fee']              = 'Cost less than 500g:';
-$_LANG['step_fee']              = 'In addition, every less than or equal to 500g:';
+$_LANG['item_fee']              = 'Phí chuyển sản phẩm đơn:';
+$_LANG['base_fee']              = 'Phí khối lượng <500g:';
+$_LANG['step_fee']              = 'Trong trường hợp mỗi sản phẩm < hoặc = 500g:';
 $_LANG['shipping_print'] = '<table style="width:18.8cm" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td style="height:3.2cm;">&nbsp;</td>
