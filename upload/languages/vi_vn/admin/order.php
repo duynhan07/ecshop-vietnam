@@ -30,7 +30,7 @@ $_LANG['cs'][OS_INVALID] = 'Invalid';
 $_LANG['cs'][OS_RETURNED] = 'Returned';
 $_LANG['cs'][OS_SHIPPED_PART] = 'Partial shipment';
 
-/* Order status */
+/* Tình trạng đơn hàng */
 $_LANG['os'][OS_UNCONFIRMED] = 'Chưa xác nhận';
 $_LANG['os'][OS_CONFIRMED] = 'Đã xác nhận';
 $_LANG['os'][OS_CANCELED] = 'Canceled';
@@ -74,7 +74,7 @@ $_LANG['op_after_service'] = 'Aftermarket';
 $_LANG['act_ok'] = 'Operate successfully';
 $_LANG['act_false'] = 'Operate failed';
 $_LANG['act_ship_num'] = 'Shipped quantity is more then order quantity';
-$_LANG['act_good_vacancy'] = 'Out of stock';
+$_LANG['act_good_vacancy'] = 'Hết hàng';
 $_LANG['act_good_delivery'] = 'Shipped';
 $_LANG['notice_gb_ship'] = 'Notice: You can\'t shipping until you deal with the associates successfully.';
 $_LANG['back_list'] = 'Return order list.';
@@ -110,8 +110,8 @@ $_LANG['label_tel'] = 'Telephone:';
 $_LANG['label_mobile'] = 'Mobile phone:';
 $_LANG['label_shipping'] = 'Shipping method:';
 $_LANG['label_payment'] = 'Payment method:';
-$_LANG['label_order_status'] = 'Order status:';
-$_LANG['label_pay_status'] = 'Payment status:';
+$_LANG['label_order_status'] = 'Tình trạng đơn hàng:';
+$_LANG['label_pay_status'] = 'Tình trạng t.toán:';
 $_LANG['label_shipping_status'] = 'Shipping status:';
 $_LANG['label_area'] = 'Location:';
 $_LANG['label_time'] = 'Under a single time:';
@@ -198,8 +198,8 @@ $_LANG['notice_gb_order_amount'] = '(Remarks: If associates with insurance, the 
 
 $_LANG['action_user'] ='Customer';
 $_LANG['action_time'] ='Time';
-$_LANG['order_status'] ='Order status';
-$_LANG['pay_status'] ='Payment status';
+$_LANG['order_status'] ='Tình trạng đơn hàng';
+$_LANG['pay_status'] ='Tình trạng t.toán';
 $_LANG['shipping_status'] ='Shipping status';
 $_LANG['action_note'] ='Remarks';
 $_LANG['pay_note'] = 'Pay remarks';

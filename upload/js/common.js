@@ -1,7 +1,6 @@
-/* $Id : common.js 4865 2007-01-31 14:04:10Z paulgao $ */
 
 /* *
- * 添加商品到购物车 
+ * Thêm sản phẩm vào giỏ hàng 
  */
 function addToCart(goodsId, parentId)
 {
@@ -12,7 +11,7 @@ function addToCart(goodsId, parentId)
   var formBuy      = document.forms['ECS_FORMBUY'];
   var quick		   = 0;
 
-  // 检查是否有商品规格 
+  // Kiểm tra thông số sản phẩm 
   if (formBuy)
   {
     spec_arr = getSelectedAttributes(formBuy);
@@ -35,7 +34,7 @@ function addToCart(goodsId, parentId)
 }
 
 /**
- * 获得选定的商品属性
+ * Chọn thuộc tính sản phẩm
  */
 function getSelectedAttributes(formBuy)
 {
@@ -59,13 +58,13 @@ function getSelectedAttributes(formBuy)
 }
 
 /* *
- * 处理添加商品到购物车的反馈信息
+ * Xử lý và thêm sản phẩm vào giỏ hàng, nhận phản hồi
  */
 function addToCartResponse(result)
 {
   if (result.error > 0)
   {
-    // 如果需要缺货登记，跳转
+    // Nếu bắt buộc đăng ký, chuyển sang
     if (result.error == 2)
     {
       if (confirm(result.message))
@@ -73,7 +72,7 @@ function addToCartResponse(result)
         location.href = 'user.php?act=add_booking&id=' + result.goods_id + '&spec=' + result.product_spec;
       }
     }
-    // 没选规格，弹出属性选择框
+    // Nếu không chọn thông số kỹ thuật mỏ rộng, chuyển hộp thuộc tính
     else if (result.error == 6)
     {
       openSpeDiv(result.message, result.goods_id, result.parent);
@@ -117,7 +116,7 @@ function addToCartResponse(result)
 }
 
 /* *
- * 添加商品到收藏夹
+ * Thêm sản phẩm là sản phẩm yêu thích
  */
 function collect(goodsId)
 {
@@ -125,7 +124,7 @@ function collect(goodsId)
 }
 
 /* *
- * 处理收藏商品的反馈信息
+ * Phản hồi thông tin từ mục yêu thích
  */
 function collectResponse(result)
 {
@@ -133,7 +132,7 @@ function collectResponse(result)
 }
 
 /* *
- * 处理会员登录的反馈信息
+ * Xử lý thông tin phản hồi khi đăng nhập
  */
 function signInResponse(result)
 {
@@ -153,7 +152,7 @@ function signInResponse(result)
 }
 
 /* *
- * 评论的翻页函数
+ * Chức năng chuyển trang phần nhận xét
  */
 function gotoPage(page, id, type)
 {
@@ -166,7 +165,7 @@ function gotoPageResponse(result)
 }
 
 /* *
- * 商品购买记录的翻页函数
+ * Chức năng ghi lại thông số mua hàng
  */
 function gotoBuyPage(page, id)
 {
@@ -199,7 +198,7 @@ function getFormatedPrice(price)
 }
 
 /* *
- * 夺宝奇兵会员出价
+ * Đấu giá và bước giá của người dùng
  */
 
 function bid(step)

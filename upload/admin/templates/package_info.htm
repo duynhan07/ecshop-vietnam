@@ -14,7 +14,7 @@
     <td class="label">{$lang.start_time}</td>
     <td>
       <input type="text" name="start_time" maxlength="60" size="40" value="{$package.start_time}" readonly="readonly" id="start_time_id" />
-      <input name="selbtn1" type="button" id="selbtn1" onclick="return showCalendar('start_time_id', '%Y-%m-%d %H:%M', '24', false, 'selbtn1');" value="{$lang.btn_select}" class="button"/>
+      <input name="selbtn1" type="button" id="selbtn1" onclick="return showCalendar('start_time_id', '%d-%m-%Y %H:%M', '24', false, 'selbtn1');" value="{$lang.btn_select}" class="button"/>
       {$lang.require_field}
     </td>
   </tr>
@@ -22,7 +22,7 @@
     <td class="label">{$lang.end_time}</td>
     <td>
       <input type="text" name="end_time" maxlength="60" size="40" value="{$package.end_time}"  readonly="readonly" id ="end_time_id" />
-      <input name="selbtn1" type="button" id="selbtn1" onclick="return showCalendar('end_time_id', '%Y-%m-%d %H:%M', '24', false, 'selbtn1');" value="{$lang.btn_select}" class="button"/>
+      <input name="selbtn1" type="button" id="selbtn1" onclick="return showCalendar('end_time_id', '%d-%m-%Y %H:%M', '24', false, 'selbtn1');" value="{$lang.btn_select}" class="button"/>
       {$lang.require_field}</td>
   </tr>
   <tr>
