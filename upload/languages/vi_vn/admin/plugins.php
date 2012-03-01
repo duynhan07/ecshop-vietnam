@@ -15,7 +15,7 @@
  * $Id: plugins.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
-$_LANG['plugin_name'] = 'Name';
+$_LANG['plugin_name'] = 'Tên';
 $_LANG['plugin_desc'] = 'Mô tả';
 $_LANG['plugin_version'] = 'Version';
 $_LANG['plugin_author'] = 'Author';

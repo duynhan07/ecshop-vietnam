@@ -118,7 +118,7 @@ $_LANG['flow_js']['mobile_invaild'] = 'Mobile No. is invalid';
 
 $_LANG['new_consignee_address'] = 'New consignee address';
 $_LANG['consignee_address'] = 'Địa chỉ';
-$_LANG['consignee_name'] = 'Name';
+$_LANG['consignee_name'] = 'Tên';
 $_LANG['country_province'] = 'Country/Province';
 $_LANG['please_select'] = 'Hãy chọn...';
 $_LANG['city_district'] = 'City/District';
@@ -162,7 +162,7 @@ $_LANG['sms_paid'] = 'Da thanh toan';
 
 $_LANG['notice_gb_order_amount'] = '（(Remarks: If associates with insurance, the insurance and corresponding pay need to be paid in first payment.)';
 
-$_LANG['pay_order'] = 'Pay order %s';
+$_LANG['pay_order'] = 'Thanh toán đơn hàng %s';
 $_LANG['validate_bonus'] = 'Vadidate bonus';
 $_LANG['input_bonus_no'] = 'Input bonus No.';
 $_LANG['select_bonus'] = 'Select existing bonus';

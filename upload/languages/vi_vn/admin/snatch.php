@@ -16,7 +16,7 @@
 */
 
 $_LANG['snatch_id'] = 'ID';
-$_LANG['snatch_name'] = 'Name';
+$_LANG['snatch_name'] = 'Tên';
 $_LANG['goodsid'] = 'Product ID';
 $_LANG['goods_name'] = 'Tên sản phẩm';
 $_LANG['start_time'] = 'Start time';

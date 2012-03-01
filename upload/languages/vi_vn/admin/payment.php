@@ -16,7 +16,7 @@
 */
 
 $_LANG['payment'] = 'Payment mothod';
-$_LANG['payment_name'] = 'Name';
+$_LANG['payment_name'] = 'Tên';
 $_LANG['version'] = 'Version';
 $_LANG['payment_desc'] = 'Mô tả';
 $_LANG['short_pay_fee'] = 'Money';

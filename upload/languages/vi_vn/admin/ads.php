@@ -15,7 +15,7 @@
  * $Id: ads.php 17217 2011-01-19 06:29:08Z liubo $
 */
 /* AD-position field information */
-$_LANG['position_name'] = 'Name';
+$_LANG['position_name'] = 'Tên';
 $_LANG['ad_width'] = 'Width';
 $_LANG['ad_height'] = 'Height';
 $_LANG['position_desc'] = 'Mô tả';
@@ -72,7 +72,7 @@ $_LANG['ja_adcode_notic'] = 'Description of invoked JS AD code.';
 $_LANG['ad_id'] = 'ID';
 $_LANG['position_id'] = 'Position';
 $_LANG['media_type'] = 'Media type';
-$_LANG['ad_name'] = 'Name';
+$_LANG['ad_name'] = 'Tên';
 $_LANG['ad_link'] = 'Link';
 $_LANG['ad_code'] = 'Contents';
 $_LANG['start_date'] = 'Start date';
@@ -83,7 +83,7 @@ $_LANG['link_phone'] = 'Phone';
 $_LANG['click_count'] = 'Click counts';
 $_LANG['ads_stats'] = 'Create order';
 $_LANG['cleck_referer'] = 'Click source';
-$_LANG['adsense_name'] = 'Name';
+$_LANG['adsense_name'] = 'Tên';
 $_LANG['adsense_js_stats'] = 'External laid JS Statistics';
 $_LANG['gen_order_amount'] = 'Total orders quantity';
 $_LANG['confirm_order'] = 'Valid orders';

@@ -71,7 +71,7 @@ $_LANG['log_action']['ads_position'] = ' ADs position';
 $_LANG['log_action']['ads'] = 'Ads';
 $_LANG['log_action']['area'] = 'Area';
 
-$_LANG['log_action']['group_buy'] = 'Associates';
+$_LANG['log_action']['group_buy'] = 'Nhóm mua';
 $_LANG['log_action']['goods_type'] = 'Product type';
 $_LANG['log_action']['booking'] = 'Booking management';
 $_LANG['log_action']['tag_manage'] = 'Tags management';

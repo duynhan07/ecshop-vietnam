@@ -77,7 +77,7 @@ $_LANG['down_order_statistics'] = 'Download order status report';
 
 /* Sales ranking */
 $_LANG['order_by'] = 'Ranking';
-$_LANG['goods_name'] = 'Name';
+$_LANG['goods_name'] = 'Tên';
 $_LANG['sell_amount'] = 'Sales';
 $_LANG['sell_sum'] = 'Saleroom';
 $_LANG['percent_count'] = 'Average price';
@@ -122,7 +122,7 @@ $_LANG['buy_sum_sort'] = 'Sort by money';
 $_LANG['download_amount_sort'] = 'Download to rate statements';
 
 /* Sales details */
-$_LANG['goods_name'] = 'Name';
+$_LANG['goods_name'] = 'Tên';
 $_LANG['goods_sn'] = 'Product NO.';
 $_LANG['order_sn'] = 'Mã đ.hàng';
 $_LANG['amount'] = 'Số lượng';

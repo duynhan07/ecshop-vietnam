@@ -1,7 +1,7 @@
 <?php
 $_LANG['add_new'] = 'Add navigation';
 $_LANG['system_main'] = 'System Properties';
-$_LANG['item_name'] = 'Name';
+$_LANG['item_name'] = 'Tên';
 $_LANG['item_ifshow'] = 'Hiển thị hay không?';
 $_LANG['item_opennew'] = 'Whether the new window';
 $_LANG['item_type'] = 'Location';

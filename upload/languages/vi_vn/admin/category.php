@@ -17,7 +17,7 @@
 
 /* Commodity category field information */
 $_LANG['cat_id'] = 'ID';
-$_LANG['cat_name'] = 'Name';
+$_LANG['cat_name'] = 'Tên';
 $_LANG['isleaf'] = 'Disallow';
 $_LANG['noleaf'] = 'Allow';
 $_LANG['keywords'] = 'Từ khóa';

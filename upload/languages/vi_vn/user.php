@@ -24,16 +24,16 @@ $_LANG['label_logout'] = 'Thoát';
 
 /* 会员余额(预付款) */
 $_LANG['add_surplus_log'] = 'Chi tiết';
-$_LANG['view_application'] = 'View application record';
-$_LANG['surplus_pro_type'] = 'Type';
-$_LANG['repay_money'] = 'Refund money';
+$_LANG['view_application'] = 'Xem log thống kê';
+$_LANG['surplus_pro_type'] = 'Loại';
+$_LANG['repay_money'] = 'Số tiền hoàn lại';
 $_LANG['money'] = 'Số lượng';
-$_LANG['surplus_type_0'] = 'Advance payment';
-$_LANG['surplus_type_1'] = 'Apply for refund';
-$_LANG['deposit_money'] = 'Payment';
-$_LANG['process_notic'] = 'Member remarks';
-$_LANG['admin_notic'] = 'Admin remarks';
-$_LANG['submit_request'] = 'Submi';
+$_LANG['surplus_type_0'] = 'Thanh toán nâng cao';
+$_LANG['surplus_type_1'] = 'Hoàn lại tiền';
+$_LANG['deposit_money'] = 'Số tiền';
+$_LANG['process_notic'] = 'Ghi chú người dùng';
+$_LANG['admin_notic'] = 'Ghi chú quản trị';
+$_LANG['submit_request'] = 'Gửi đi';
 $_LANG['process_time'] = 'Thời gian';
 $_LANG['use_time'] = 'Use time';
 $_LANG['is_paid'] = 'Trạng thái';
@@ -47,8 +47,8 @@ $_LANG['change_desc'] = 'Mô tả';
 $_LANG['surplus_amount'] = 'Your advance payment is:';
 $_LANG['payment_name'] = 'The payment method of yours is:';
 $_LANG['payment_fee'] = 'Poundage is:';
-$_LANG['payment_desc'] = 'Description of payment method:';
-$_LANG['current_surplus'] = 'Description of payment method:';
+$_LANG['payment_desc'] = 'Số dư trong tài khoản:';
+$_LANG['current_surplus'] = 'Số dư trong tài khoản:';
 $_LANG['unit_yuan'] = 'Yuan';
 $_LANG['for_free'] = 'For free';
 $_LANG['surplus_amount_error'] = 'Error, the refundment of your application is more than existing money!';
@@ -68,7 +68,7 @@ $_LANG['account_js']['payment_empty'] = 'Please select a payment method!';
 
 /* 缺货登记 */
 $_LANG['oos_booking'] = 'Booking records';
-$_LANG['booking_goods_name'] = 'Name';
+$_LANG['booking_goods_name'] = 'Tên';
 $_LANG['booking_amount'] = 'Số lượng';
 $_LANG['booking_time'] = 'Thời gian';
 $_LANG['process_desc'] = 'Ghi chú';
@@ -133,12 +133,12 @@ $_LANG['profile_js']['msg_blank'] = 'is blank';
 $_LANG['profile_js']['no_select_question'] = '- You do not complete the operation password prompt problem';
 
 /* 支付方式 */
-$_LANG['pay_name'] = 'Name';
+$_LANG['pay_name'] = 'Tên';
 $_LANG['pay_desc'] = 'Mô tả';
 $_LANG['pay_fee'] = 'Poundage';
 
 /* 收货地址 */
-$_LANG['consignee_name'] = 'Name';
+$_LANG['consignee_name'] = 'Tên';
 $_LANG['country_province'] = 'Country/Province';
 $_LANG['please_select'] = 'Hãy chọn...';
 $_LANG['city_district'] = 'City/District';
@@ -232,7 +232,7 @@ $_LANG['bonus_is_used'] = 'The bonus has used.';
 $_LANG['bonus_is_used_by_other'] = 'The bonus has used by others.';
 $_LANG['bonus_add_success'] = 'Add a new bonus successfully.';
 $_LANG['bonus_not_exist'] = 'The bonus is nonexistent.';
-$_LANG['user_bonus_empty'] = 'You have no bonus now';
+$_LANG['user_bonus_empty'] = 'Hiện bạn không có quà tặng nào';
 $_LANG['add_bonus_sucess'] = 'Add new bonus operate successfully!';
 $_LANG['add_bonus_false'] = 'Add new bonus operate failure!';
 $_LANG['bonus_add_expire'] = 'Bonus expired!';
@@ -267,7 +267,7 @@ $_LANG['gb_deposit'] = '(Bail)';
 $_LANG['order_is_exchange'] = '[Points Mall]';
 $_LANG['notice_gb_order_amount'] = '(Remarks: If associates with insurance, the insurance and corresponding pay need to be paid in first payment.)';
 $_LANG['business_message'] = 'Send/view business message';
-$_LANG['pay_order_by_surplus'] = 'Pay order by balance:%s';
+$_LANG['pay_order_by_surplus'] = 'Thanh toán đơn hàng bằng số dư:%s';
 $_LANG['return_surplus_on_cancel'] = 'Cancel order %s,return advancedly payed balance for order';
 $_LANG['return_integral_on_cancel'] = 'Cancel order %s,return points payed for order';
 
@@ -322,7 +322,7 @@ $_LANG['consignment'] = 'Consignment';
 $_LANG['shopping_money'] = 'Total price';
 $_LANG['invalid_order_id'] = 'Invalid order number';
 $_LANG['shipping'] = 'Shipping type';
-$_LANG['payment'] = 'payment method';
+$_LANG['payment'] = 'Hình thức t.toán';
 $_LANG['use_pack'] = 'Packaging';
 $_LANG['use_card'] = 'Card';
 $_LANG['order_total_fee'] = 'Tổng tiền';

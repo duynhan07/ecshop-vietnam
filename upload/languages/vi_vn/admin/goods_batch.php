@@ -36,7 +36,7 @@ $_LANG['g_class'][G_REAL] = 'Real Goods';
 $_LANG['g_class'][G_CARD] = 'Virtual Card';
 
 $_LANG['goods_sn'] = 'NO';
-$_LANG['goods_name'] ='Name';
+$_LANG['goods_name'] ='Tên';
 $_LANG['market_price'] ='Market price';
 $_LANG['shop_price'] ='Shop price';
 $_LANG['integral'] = 'Purchase Points';
@@ -76,7 +76,7 @@ $_LANG['js_languages']['please_select_cat'] ='Please select belong category.';
 $_LANG['js_languages']['please_upload_file'] ='Please upload batch csv files.';
 
 // Batch upload field of product
-$_LANG['upload_goods']['goods_name'] ='Name';
+$_LANG['upload_goods']['goods_name'] ='Tên';
 $_LANG['upload_goods']['goods_sn'] ='NO.';
 $_LANG['upload_goods']['brand_name'] ='Thương hiệu';   // Need to be convert brand_id
 $_LANG['upload_goods']['market_price'] ='Market price';

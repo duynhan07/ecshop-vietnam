@@ -17,7 +17,7 @@
 /* Bonus type feild information */
 $_LANG['bonus_type'] = 'Bonus Type';
 $_LANG['bonus_list'] = 'Bonus List';
-$_LANG['type_name'] = 'Name';
+$_LANG['type_name'] = 'Tên';
 $_LANG['type_money'] = 'Bonus money';
 $_LANG['min_goods_amount'] = 'Minimum orders amount';
 $_LANG['notice_min_goods_amount'] = 'Only the total amount of merchandise to achieve this the number of orders to use such red packets';

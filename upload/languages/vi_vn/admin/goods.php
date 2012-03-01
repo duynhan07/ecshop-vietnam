@@ -68,7 +68,7 @@ $_LANG['is_promote'] ='Sales promotion';
 $_LANG['all_type'] = 'All recommend';
 $_LANG['sort_order'] = 'Recommend to sort';
 
-$_LANG['goods_name'] ='Name';
+$_LANG['goods_name'] ='Tên';
 $_LANG['goods_sn'] ='NO.';
 $_LANG['shop_price'] ='Giá';
 $_LANG['is_on_sale'] ='On sale';
