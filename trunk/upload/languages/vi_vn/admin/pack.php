@@ -50,7 +50,7 @@ $_LANG['continue_add'] ='Continue add new packing';
 
 /*JS language item*/
 $_LANG['js_languages']['no_packname'] = 'Please enter packing name.';
-$_LANG['js_languages']['packfee_un_num'] = 'Packing money is blank or isn\'t a figure.';
+$_LANG['js_languages']['packfee_un_num'] = 'Phí đóng gói is blank or isn\'t a figure.';
 $_LANG['js_languages']['packmoney_un_num'] = 'The packing free allowance is blank or isn\'t a figure.';
 
 ?>

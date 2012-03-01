@@ -1,4 +1,4 @@
 <?php
-$_LANG['cac']          = 'Door-to-door trade';
-$_LANG['cac_desc']     = 'Purchaser get the product from place of shopkeeper appoint';
+$_LANG['cac']          = 'Lấy hàng trực tiếp';
+$_LANG['cac_desc']     = 'Lấy sản phẩm từ nơi mà cwuar hàng chỉ định (tại gian hàng, kho hàng...)';
 ?>

@@ -49,7 +49,7 @@ $_LANG['ad_text'] = 'Character';
 /* 内容页标签 */
 $_LANG['lable_flash_name'] = 'AD Name:';
 $_LANG['lable_flash_type'] = 'AD Type:';
-$_LANG['lable_flash_status'] = 'Status:';
+$_LANG['lable_flash_status'] = 'Tình trạng:';
 $_LANG['lable_upload'] = 'Upload:';
 $_LANG['lable_url'] = 'Link:';
 $_LANG['lable_from_web'] = 'URL:';

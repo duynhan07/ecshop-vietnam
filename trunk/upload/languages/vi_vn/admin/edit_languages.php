@@ -24,7 +24,7 @@ $_LANG['back_list'] = 'Return to edit language';
 
 $_LANG['item_name'] = 'Language item name';
 $_LANG['item_value'] = 'Language item value';
-$_LANG['notice_edit'] = 'Notice: Language item will be not update if there is blank.';
+$_LANG['notice_edit'] = 'Chú ý: Language item will be not update if there is blank.';
 $_LANG['edit_languages_success'] = 'Congratulations! Edit language item successfully!';
 $_LANG['edit_languages_false'] = 'Sorry! Edit language item has failed!';
 

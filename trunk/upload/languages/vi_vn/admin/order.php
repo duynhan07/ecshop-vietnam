@@ -17,7 +17,7 @@
 
 /* Order search*/
 $_LANG['order_sn'] = 'Mã đ.hàng';
-$_LANG['consignee'] = 'Consignee';
+$_LANG['consignee'] = 'Người nhận';
 $_LANG['all_status'] = 'Trạng thái';
 
 $_LANG['cs'][OS_UNCONFIRMED] = 'Chưa xác nhận';
@@ -36,27 +36,27 @@ $_LANG['os'][OS_CONFIRMED] = 'Đã xác nhận';
 $_LANG['os'][OS_CANCELED] = 'Canceled';
 $_LANG['os'][OS_INVALID] = 'Invalid';
 $_LANG['os'][OS_RETURNED] = 'Returned';
-$_LANG['os'][OS_SPLITED] = 'Had been a single';
+$_LANG['os'][OS_SPLITED] = 'Chỉ có 1 phần';
 $_LANG['os'][OS_SPLITING_PART] = 'Part of the sub-single-';
 
-$_LANG['ss'][SS_UNSHIPPED] = 'Unshipped';
-$_LANG['ss'][SS_PREPARING] = 'Preparing';
-$_LANG['ss'][SS_SHIPPED] = 'Shipped';
-$_LANG['ss'][SS_RECEIVED] = 'Received';
-$_LANG['ss'][SS_SHIPPED_PART] = 'Partially Shipped';
-$_LANG['ss'][SS_SHIPPED_ING] = 'No shippings';// Shipped in
+$_LANG['ss'][SS_UNSHIPPED] = 'Chưa chuyển';
+$_LANG['ss'][SS_PREPARING] = 'Đang c.bị';
+$_LANG['ss'][SS_SHIPPED] = 'Đã chuyển';
+$_LANG['ss'][SS_RECEIVED] = 'Đã nhận hàng';
+$_LANG['ss'][SS_SHIPPED_PART] = 'Đã chuyển 1 phần';
+$_LANG['ss'][SS_SHIPPED_ING] = 'Không chuyển??';// Shipped in
 
-$_LANG['ps'][PS_UNPAYED] = 'Unpaid';
-$_LANG['ps'][PS_PAYING] = 'Paying';
-$_LANG['ps'][PS_PAYED] = 'Paid';
+$_LANG['ps'][PS_UNPAYED] = 'Chưa t.toán';
+$_LANG['ps'][PS_PAYING] = 'Đang t.toán';
+$_LANG['ps'][PS_PAYED] = 'Đã t.toán';
 
 $_LANG['ss_admin'][SS_SHIPPED_ING] = 'Shipped in（Future state：No shippings）';
 /* Order operate */
-$_LANG['label_operable_act'] = 'Current executable operation:';
-$_LANG['label_action_note'] = 'Operate remarks:';
+$_LANG['label_operable_act'] = 'Thao tác có thể thực hiện:';
+$_LANG['label_action_note'] = 'Ghi chú thao tác:';
 $_LANG['label_invoice_note'] = 'Invoice remarks:';
-$_LANG['label_invoice_no'] = 'Invoice NO.:';
-$_LANG['label_cancel_note'] = 'Cause of cancel:';
+$_LANG['label_invoice_no'] = 'Hóa đơn số:';
+$_LANG['label_cancel_note'] = 'Lý do hủy bỏ:';
 $_LANG['notice_cancel_note'] = '(Note in message of shopkeeper)';
 $_LANG['op_confirm'] = 'Confirm';
 $_LANG['op_pay'] = 'Payment';
@@ -66,86 +66,86 @@ $_LANG['op_cancel'] = 'Hủy bỏ';
 $_LANG['op_invalid'] = 'Invalid';
 $_LANG['op_return'] = 'Refundment';
 $_LANG['op_unpay'] = 'Set Unpaid';
-$_LANG['op_unship'] = 'Unshipped';
+$_LANG['op_unship'] = 'Chưa chuyển';
 $_LANG['op_cancel_ship'] = 'Cancellation Shipping';
-$_LANG['op_receive'] = 'Received';
+$_LANG['op_receive'] = 'Đã nhận hàng';
 $_LANG['op_assign'] = 'Assign to';
 $_LANG['op_after_service'] = 'Aftermarket';
 $_LANG['act_ok'] = 'Operate successfully';
 $_LANG['act_false'] = 'Operate failed';
 $_LANG['act_ship_num'] = 'Shipped quantity is more then order quantity';
 $_LANG['act_good_vacancy'] = 'Hết hàng';
-$_LANG['act_good_delivery'] = 'Shipped';
-$_LANG['notice_gb_ship'] = 'Notice: You can\'t shipping until you deal with the associates successfully.';
-$_LANG['back_list'] = 'Return order list.';
+$_LANG['act_good_delivery'] = 'Đã chuyển';
+$_LANG['notice_gb_ship'] = 'Chú ý: Bạn không thể chuyển hàng cho tới khi sự kiện nhóm mua kết thúc thành công!';
+$_LANG['back_list'] = 'Về danh sách đơn hàng.';
 $_LANG['op_remove'] = 'Remove';
 $_LANG['op_you_can'] = 'The operation you can do';
 $_LANG['op_split'] = 'Am single';
 $_LANG['op_to_delivery'] = 'To delivery';
 
 /* order list */
-$_LANG['order_amount'] = 'Orders money';
-$_LANG['total_fee'] = 'Total money';
-$_LANG['shipping_name'] = 'Shipping method';
-$_LANG['pay_name'] = 'Payment method';
-$_LANG['address'] = 'Address';
-$_LANG['order_time'] = 'Time';
+$_LANG['order_amount'] = 'Tiền thanh toán';
+$_LANG['total_fee'] = 'Tổng tiền';
+$_LANG['shipping_name'] = 'Hình thức v.chuyển';
+$_LANG['pay_name'] = 'Hình thức t.toán';
+$_LANG['address'] = 'Địa chỉ';
+$_LANG['order_time'] = 'Thời gian';
 $_LANG['detail'] = 'Xem';
 $_LANG['phone'] = 'Phone';
-$_LANG['group_buy'] = '(Associates)';
+$_LANG['group_buy'] = '(Nhóm mua)';
 $_LANG['error_get_goods_info'] = 'Orders for merchandise to obtain information error';
-$_LANG['exchange_goods'] = '(Points Exchange)';
+$_LANG['exchange_goods'] = '(Đổi điểm)';
 
 $_LANG['js_languages']['remove_confirm']='All informations will be deleted if you delete the order. Are you sure delete it?';
 
 /* The order search*/
 $_LANG['label_order_sn'] = 'Mã đ.hàng:';
-$_LANG['label_all_status'] = 'Status:';
-$_LANG['label_user_name'] = 'Buyer:';
-$_LANG['label_consignee'] = 'Consignee:';
+$_LANG['label_all_status'] = 'Tình trạng:';
+$_LANG['label_user_name'] = 'Người mua:';
+$_LANG['label_consignee'] = 'Người nhận:';
 $_LANG['label_email'] = 'Email:';
-$_LANG['label_address'] = 'Address:';
-$_LANG['label_zipcode'] = 'Postalcode:';
-$_LANG['label_tel'] = 'Telephone:';
-$_LANG['label_mobile'] = 'Mobile phone:';
-$_LANG['label_shipping'] = 'Shipping method:';
-$_LANG['label_payment'] = 'Payment method:';
+$_LANG['label_address'] = 'Địa chỉ:';
+$_LANG['label_zipcode'] = 'Mã bưu điện:';
+$_LANG['label_tel'] = 'Điện thoại:';
+$_LANG['label_mobile'] = 'Di động:';
+$_LANG['label_shipping'] = 'Hình thức v.chuyển:';
+$_LANG['label_payment'] = 'Hình thức t.toán:';
 $_LANG['label_order_status'] = 'Tình trạng đơn hàng:';
 $_LANG['label_pay_status'] = 'Tình trạng t.toán:';
-$_LANG['label_shipping_status'] = 'Shipping status:';
-$_LANG['label_area'] = 'Location:';
+$_LANG['label_shipping_status'] = 'Trạng thái v.chuyển:';
+$_LANG['label_area'] = 'Khu vực:';
 $_LANG['label_time'] = 'Under a single time:';
 
 /* Order details */
-$_LANG['prev'] = 'Previous order';
-$_LANG['next'] = 'Next order';
-$_LANG['print_order'] = 'Print order';
+$_LANG['prev'] = 'Đơn hàng trước';
+$_LANG['next'] = 'Đơn hàng kế tiếp';
+$_LANG['print_order'] = 'In đơn hàng';
 $_LANG['print_shipping'] = 'Print Express Single';
 $_LANG['print_order_sn'] = 'Mã đ.hàng:';
-$_LANG['print_buy_name'] = 'Buyer:';
+$_LANG['print_buy_name'] = 'Người mua:';
 $_LANG['label_consignee_address'] = 'Receipt address';
 $_LANG['no_print_shipping'] = 'sorry,not print';
 $_LANG['suppliers_no'] = 'At my disposal(without suppliers)';
 $_LANG['restaurant'] = 'Restaurant';
 
-$_LANG['order_info'] = 'Order information';
-$_LANG['base_info'] = 'Essential information';
-$_LANG['other_info'] = 'Other information';
-$_LANG['consignee_info'] = 'Consignee information';
-$_LANG['fee_info'] = 'Money information';
-$_LANG['action_info'] = 'Operate information';
-$_LANG['shipping_info'] = 'Shipping Info';
+$_LANG['order_info'] = 'Thông tin đơn hàng';
+$_LANG['base_info'] = 'Thông tin cơ bản';
+$_LANG['other_info'] = 'Thông tin khác';
+$_LANG['consignee_info'] = 'Thông tin người nhận';
+$_LANG['fee_info'] = 'Thông tin chi phí';
+$_LANG['action_info'] = 'Thông tin thao tác';
+$_LANG['shipping_info'] = 'Thông tin vận chuyển';
 
 $_LANG['label_how_oos'] = 'Out of Stock dispose:';
 $_LANG['label_how_surplus'] = 'Balance dispose:';
 $_LANG['label_pack'] = 'Packing:';
 $_LANG['label_card'] = 'Card:';
 $_LANG['label_card_message'] = 'Blessing card:';
-$_LANG['label_order_time'] = 'Order time:';
-$_LANG['label_pay_time'] = 'Payment time:';
-$_LANG['label_shipping_time'] = 'Shipping time:';
+$_LANG['label_order_time'] = 'T.gian đặt hàng:';
+$_LANG['label_pay_time'] = 'T.gian t.toán:';
+$_LANG['label_shipping_time'] = 'T.gian v.chuyển:';
 $_LANG['label_sign_building'] = 'Sign building:';
-$_LANG['label_best_time'] = 'Optimal shipping time:';
+$_LANG['label_best_time'] = 'Thời gian v.chuyển tối ưu:';
 $_LANG['label_inv_type'] = 'Invoice Type:';
 $_LANG['label_inv_payee'] = 'Invoice title:';
 $_LANG['label_inv_content'] = 'Invoice content:';
@@ -153,62 +153,62 @@ $_LANG['label_postscript'] = 'Postscript:';
 $_LANG['label_region'] = 'Region:';
 
 $_LANG['label_shop_url'] = 'URL:';
-$_LANG['label_shop_address'] = 'Address:';
-$_LANG['label_service_phone'] = 'Service phone:';
-$_LANG['label_print_time'] = 'Print time:';
+$_LANG['label_shop_address'] = 'Địa chỉ:';
+$_LANG['label_service_phone'] = 'ĐT dịch vụ:';
+$_LANG['label_print_time'] = 'Thời gian in:';
 
-$_LANG['label_suppliers'] ='Choose suppliers:';
-$_LANG['label_agency'] = 'Agency:';
-$_LANG['suppliers_name'] = 'Suppliers';
+$_LANG['label_suppliers'] ='Chọn nhà cung cấp:';
+$_LANG['label_agency'] = 'Đại lý:';
+$_LANG['suppliers_name'] = 'Nhà cung cấp';
 
-$_LANG['product_sn'] = 'Item No';
-$_LANG['goods_info'] = 'Product information';
+$_LANG['product_sn'] = 'Mã sản phẩm No';
+$_LANG['goods_info'] = 'Thông tin sản phẩm';
 $_LANG['goods_name'] = 'Tên sản phẩm';
-$_LANG['goods_name_brand'] = 'Product name [ Brand ]';
+$_LANG['goods_name_brand'] = 'Tên sản phẩm [ Brand ]';
 $_LANG['goods_sn'] = 'NO.';
 $_LANG['goods_price'] = 'Giá';
 $_LANG['goods_number'] = 'Số lượng';
-$_LANG['goods_attr'] = 'Attribute';
+$_LANG['goods_attr'] = 'Thuộc tính';
 $_LANG['goods_delivery'] = 'Shipped quantity';
 $_LANG['goods_delivery_curr'] = 'Invoice quantity';
-$_LANG['storage'] = 'Storage';
-$_LANG['subtotal'] = 'Subtotal';
-$_LANG['label_total'] = 'Total:';
-$_LANG['label_total_weight'] = 'Total products weight:';
+$_LANG['storage'] = 'Trong kho';
+$_LANG['subtotal'] = 'Tổng giá trị';
+$_LANG['label_total'] = 'Tổng cộng:';
+$_LANG['label_total_weight'] = 'Tổng trọng lượng:';
 
-$_LANG['label_goods_amount'] ='Total products money:';
-$_LANG['label_discount'] = 'Discount:';
-$_LANG['label_tax'] = 'Tax invoice:';
-$_LANG['label_shipping_fee'] ='Shipping money:';
-$_LANG['label_insure_fee'] ='Insurance money:';
-$_LANG['label_insure_yn'] = 'Insurance?(Y/N):';
-$_LANG['label_pay_fee'] ='Payment money:';
-$_LANG['label_pack_fee'] ='Packing money:';
+$_LANG['label_goods_amount'] ='Tổng cộng số tiền:';
+$_LANG['label_discount'] = 'Giảm giá:';
+$_LANG['label_tax'] = 'Thuế VAT:';
+$_LANG['label_shipping_fee'] ='Phí v.chuyển:';
+$_LANG['label_insure_fee'] ='Phí b.hiểm:';
+$_LANG['label_insure_yn'] = 'Bảo hiểm?(Y/N):';
+$_LANG['label_pay_fee'] ='Phí thanh toán:';
+$_LANG['label_pack_fee'] ='Phí đóng gói:';
 $_LANG['label_card_fee'] ='Greeting card money:';
-$_LANG['label_money_paid'] ='Paid money:';
-$_LANG['label_surplus'] ='Use balance:';
-$_LANG['label_integral'] ='Use points:';
-$_LANG['label_bonus'] ='Use bonus:';
-$_LANG['label_order_amount'] ='Total orders money:';
-$_LANG['label_money_dues'] ='Total payable money:';
+$_LANG['label_money_paid'] ='Đã thanh toán:';
+$_LANG['label_surplus'] ='Dùng số dư:';
+$_LANG['label_integral'] ='Sử dụng điểm:';
+$_LANG['label_bonus'] ='Sử dụng quà:';
+$_LANG['label_order_amount'] ='Tổng tiền phải trả:';
+$_LANG['label_money_dues'] ='Tổng tiền mặt có thể trả:';
 $_LANG['label_money_refund'] ='Refundable money:';
 $_LANG['label_to_buyer'] ='Shop message:';
 $_LANG['save_order'] ='Save order';
 $_LANG['notice_gb_order_amount'] = '(Remarks: If associates with insurance, the insurance and corresponding pay need to be paid in first payment.)';
 
-$_LANG['action_user'] ='Customer';
-$_LANG['action_time'] ='Time';
+$_LANG['action_user'] ='Khách hàng';
+$_LANG['action_time'] ='Thời gian';
 $_LANG['order_status'] ='Tình trạng đơn hàng';
 $_LANG['pay_status'] ='Tình trạng t.toán';
-$_LANG['shipping_status'] ='Shipping status';
-$_LANG['action_note'] ='Remarks';
+$_LANG['shipping_status'] ='Trạng thái v.chuyển';
+$_LANG['action_note'] ='Ghi chú';
 $_LANG['pay_note'] = 'Pay remarks';
 
 $_LANG['sms_time_format'] = 'j/m G o\'clock';
 $_LANG['order_shipped_sms'] ='Your order %s hss already shipped in %s. [%s]';
 $_LANG['order_splited_sms'] = 'Your order%s,%sIs%s [%s]';
-$_LANG['order_removed'] ='Delete order successfully.';
-$_LANG['return_list'] ='Return order list';
+$_LANG['order_removed'] ='Đã xóa đơn hàng thành công.';
+$_LANG['return_list'] ='Về danh sách đơn hàng';
 
 /* The order processing hint*/
 $_LANG['surplus_not_enough'] ='The order use %s balance to pay, now the customer balance shortage.';
@@ -216,31 +216,31 @@ $_LANG['integral_not_enough']='The order use %s points to pay, now the customer 
 $_LANG['bonus_not_available']='The order use bonus to pay, the bonus can\'t be used now.';
 
 /* Buy the goods person\'s information*/
-$_LANG['display_buyer'] ='Display buyer information';
-$_LANG['buyer_info'] ='Buyer information';
+$_LANG['display_buyer'] ='Hiện t.tin người mua';
+$_LANG['buyer_info'] ='Thông tin người mua';
 $_LANG['pay_points'] ='Consumption points';
 $_LANG['rank_points'] ='Rank points';
-$_LANG['user_money'] ='Account balance';
+$_LANG['user_money'] ='Số dư tài khoản';
 $_LANG['email'] ='E-mail';
 $_LANG['rank_name'] ='Member\'s rank';
 $_LANG['bonus_count'] ='Bonus quantity';
-$_LANG['zipcode'] ='Postal code';
+$_LANG['zipcode'] ='Mã bưu chính';
 $_LANG['tel'] ='Telephone';
 $_LANG['mobile'] ='Backup telephone';
 
 /* Combine orders */
-$_LANG['order_sn_not_null'] ='Please fill in combine orders NO..';
-$_LANG['two_order_sn_same'] ='Combine orders\' NO. can\'t be same.';
-$_LANG['order_not_exist'] ='Order %s is nonexistent.';
+$_LANG['order_sn_not_null'] ='Vui lòng nhập mã đơn hàng cộng gộp.';
+$_LANG['two_order_sn_same'] ='Mã đơn hàng công gộp không thể giống nhau.';
+$_LANG['order_not_exist'] ='Đơn hàng %s không tồn tại.';
 $_LANG['os_not_unconfirmed_or_confirmed']='% of the order status is not "Unconfirmed" or "Confirmed".';
 $_LANG['ps_not_unpayed'] ='Order the %s payment status is not "Unpaid".';
 $_LANG['ss_not_unshipped'] ='Order the %s shipping status is not "Unshipped".';
 $_LANG['order_user_not_same']='The two orders belong to different customers';
 $_LANG['merge_invalid_order'] = 'Sorry, the orders can\'t be allowed to combine that you have selected.';
 
-$_LANG['from_order_sn'] ='Master order:';
-$_LANG['to_order_sn'] ='Slave order:';
-$_LANG['merge'] ='Combine';
+$_LANG['from_order_sn'] ='Đơn hàng chính:';
+$_LANG['to_order_sn'] ='Đơn hàng phụ:';
+$_LANG['merge'] ='Cộng gộp';
 $_LANG['notice_order_sn'] ='When two order inconformities, order information after merge with the master for standard(such as:Payment mothed, Shipping, Packing, Greeting card, Bonus...etc.).';
 $_LANG['js_languages']['confirm_merge'] = 'Are you sure you want to merge these two order?';
 
@@ -248,11 +248,11 @@ $_LANG['js_languages']['confirm_merge'] = 'Are you sure you want to merge these 
 $_LANG['pls_select_order'] = 'Please choose the operation you want to order';
 $_LANG['no_fulfilled_order'] ='There is no condition satisfy to operate the order.';
 $_LANG['updated_order'] ='More recent order:';
-$_LANG['order'] = 'Order：';
-$_LANG['confirm_order'] = 'Can not modify to confirm';
-$_LANG['invalid_order'] = 'Can not modify to invalid';
-$_LANG['cancel_order'] = 'Can not modify to cancel';
-$_LANG['remove_order'] = 'Can not remove';
+$_LANG['order'] = 'Đơn hàng:';
+$_LANG['confirm_order'] = 'Không thể chỉnh sửa thành đã xác nhận';
+$_LANG['invalid_order'] = 'Không thẻ chỉnh sửa thành không hợp lệ';
+$_LANG['cancel_order'] = 'Không thể chỉnh sửa thành hủy bỏ';
+$_LANG['remove_order'] = 'Không thể xóa bỏ';
 
 /* Edit order to print template*/
 $_LANG['edit_order_templates']='Edit order print template';
@@ -264,8 +264,8 @@ $_LANG['remark_favourable'] = '(Preferential products)';
 $_LANG['remark_package'] = '（Preferential Packeage）';
 
 /* The order source statistics*/
-$_LANG['from_order'] ='Order source:';
-$_LANG['from_ad_js'] ='Advertisement:';
+$_LANG['from_order'] ='Nguồn đơn hàng:';
+$_LANG['from_ad_js'] ='Quảng cáo:';
 $_LANG['from_goods_js'] ='The product stand the outside JS throw in';
 $_LANG['from_self_site'] ='Come from this station';
 $_LANG['from'] ='Come from a station to order:';
@@ -277,7 +277,7 @@ $_LANG['step']['user'] ='Please select which menber is you want to order.';
 $_LANG['step']['goods'] ='Select product';
 $_LANG['step']['consignee'] ='Config consignee information';
 $_LANG['step']['shipping'] ='Select shipping method';
-$_LANG['step']['payment'] ='Payment method';
+$_LANG['step']['payment'] ='Hình thức t.toán';
 $_LANG['step']['other'] ='Create other informations';
 $_LANG['step']['money'] ='Setting money';
 $_LANG['anonymous'] ='Guest';
@@ -288,7 +288,7 @@ $_LANG['button_finish'] ='Completion';
 $_LANG['button_cancel'] ='Hủy bỏ';
 $_LANG['name'] ='Name';
 $_LANG['desc'] ='Mô tả';
-$_LANG['shipping_fee'] ='Shipping money';
+$_LANG['shipping_fee'] ='Phí v.chuyển';
 $_LANG['free_money'] ='Free limit';
 $_LANG['insure'] ='Insrance money';
 $_LANG['pay_fee'] ='Poundage';
@@ -308,7 +308,7 @@ $_LANG['brand'] ='Thương hiệu';
 $_LANG['user_money_not_enough']='Customer blance shortage';
 $_LANG['pay_points_not_enough']='Customer points shortage';
 $_LANG['money_paid_enough'] ='Paid money is more than product total of money and various cost, please refund.';
-$_LANG['price_note'] ='Notice:Have already included the attribute price markup in the product price.';
+$_LANG['price_note'] ='Chú ý:Have already included the attribute price markup in the product price.';
 $_LANG['select_pack'] ='Select packing';
 $_LANG['select_card'] ='Select greeting card';
 $_LANG['select_shipping'] ='Select shipping method';
@@ -323,7 +323,7 @@ $_LANG['refund'] = 'Refundment';
 $_LANG['cannot_edit_order_shipped']='You can\'t modify the shipped order.';
 $_LANG['address_list'] ='Select from existing consignee address:';
 $_LANG['order_amount_change'] ='Total orders money from %s change into %s.';
-$_LANG['shipping_note'] ='Notice: Because the order has already shipped products, modify shipping method wouldn\'t change shipping money and insurance.';
+$_LANG['shipping_note'] ='Chú ý: Because the order has already shipped products, modify shipping method wouldn\'t change shipping money and insurance.';
 $_LANG['change_use_surplus'] = 'Edit orders %s, change the use of the advance payment';
 $_LANG['change_use_integral'] = 'Edit orders %s, change the use of the number of points paid';
 $_LANG['return_order_surplus'] = 'Because of canceled, invalid or return operation, returned to pay for the use of orders %s advances';
@@ -361,9 +361,9 @@ $_LANG['not_handle'] = 'Don\'t process, choose this item when made an error';
 $_LANG['order_refund'] = 'Order refundment: %s.';
 $_LANG['order_pay'] = 'Order payment: %s.';
 
-$_LANG['send_mail_fail'] = 'Send e-mail failure';
+$_LANG['send_mail_fail'] = 'Gửi email thất bại';
 
-$_LANG['send_message'] = 'Send/view message';
+$_LANG['send_message'] = 'Gửi/Xem tin nhắn';
 
 /* 发货单操作 */
 $_LANG['delivery_operate'] = 'Invoice Operation:';
@@ -371,12 +371,12 @@ $_LANG['delivery_sn_number'] = 'Serial number of Invoice:';
 $_LANG['invoice_no_sms'] = 'Input Invoice NO.';
 
 /* 发货单搜索 */
-$_LANG['delivery_sn'] = 'Invoice';
+$_LANG['delivery_sn'] = 'Hóa đơn';
 
 /* 发货单状态 */
-$_LANG['delivery_status'][0] = 'Normal';
-$_LANG['delivery_status'][1] = 'Refunded';
-$_LANG['delivery_status'][2] = 'Has shipped';
+$_LANG['delivery_status'][0] = 'B.thường';
+$_LANG['delivery_status'][1] = 'Đã hoàn tiền';
+$_LANG['delivery_status'][2] = 'Đã chuyển hàng';
 
 /* 发货单标签 */
 $_LANG['label_delivery_status'] = 'Invoice Status';
@@ -387,7 +387,7 @@ $_LANG['label_update_time'] = 'Shipped Time';
 $_LANG['label_send_number'] = 'Shipped quantity';
 
 /* 发货单提示 */
-$_LANG['tips_delivery_del'] = 'Delete invoice success!';
+$_LANG['tips_delivery_del'] = 'Xóa hóa đơn thành công!';
 
 /* 退货单操作 */
 $_LANG['back_operate'] = 'Returned Note Operation：';

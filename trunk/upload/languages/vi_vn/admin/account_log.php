@@ -1,27 +1,11 @@
 <?php
-
-/**
- * ECSHOP account log language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: account_log.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
 /* 菜单 */
 $_LANG['add_account'] = 'Adjustment Member Account';
 $_LANG['account_list'] = 'Member account details change';
 
 /* 列表页 */
-$_LANG['user_not_exist'] = 'The user does not exist';
-$_LANG['all_account'] = 'All accounts';
+$_LANG['user_not_exist'] = 'Tài khoản này không tồn tại';
+$_LANG['all_account'] = 'Tất cả tài khoản';
 $_LANG['label_user_name'] = 'Current members:';
 $_LANG['label_user_money'] = 'Available funds account:';
 $_LANG['label_frozen_money'] = 'The freezing of funds accounts:';

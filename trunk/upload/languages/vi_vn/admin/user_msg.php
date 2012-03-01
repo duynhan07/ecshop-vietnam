@@ -18,7 +18,7 @@
 $_LANG['msg_title'] = 'Title';
 $_LANG['list_all'] = 'View all messages';
 $_LANG['msg_id'] = 'ID';
-$_LANG['msg_time'] = 'Time';
+$_LANG['msg_time'] = 'Thời gian';
 $_LANG['msg_content'] = 'Contents';
 $_LANG['user_name'] = 'Username';
 $_LANG['msg_type'] = 'Type';

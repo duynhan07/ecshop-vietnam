@@ -61,21 +61,21 @@
       <li style="width:555px; line-height:23px;">
       <form name="theForm" action="auction.php" method="post">
       {$lang.goods_name}: <font class="f5">{$auction.goods_name|escape:html}</font>{if $auction.product_id > 0}&nbsp;[{$products_info}]{/if}<br>
-      {$lang.au_current_price}：{$auction.formated_current_price}<br>
-      起止时间：{$auction.start_time} -- {$auction.end_time}<br>
-      {$lang.au_start_price}：{$auction.formated_start_price}<br>
-      {$lang.au_amplitude}：{$auction.formated_amplitude}<br>
+      {$lang.au_current_price}: {$auction.formated_current_price}<br>
+      Thời gian: {$auction.start_time} -- {$auction.end_time}<br>
+      {$lang.au_start_price}: {$auction.formated_start_price}<br>
+      {$lang.au_amplitude}: {$auction.formated_amplitude}<br>
       <!-- {if $auction.end_price gt 0} -->
-      {$lang.au_end_price}：{$auction.formated_end_price}<br>
+      {$lang.au_end_price}: {$auction.formated_end_price}<br>
       <!-- {/if} -->
       <!-- {if $auction.deposit gt 0} -->
-      {$lang.au_deposit}：{$auction.formated_deposit}<br>
+      {$lang.au_deposit}: {$auction.formated_deposit}<br>
       <!-- {/if} -->
       <!-- {if $auction.status_no eq 0} 未开始 -->
       {$lang.au_pre_start}
       <!-- {elseif $auction.status_no eq 1} 进行中 -->
       <font class="f4">{$lang.au_under_way}<span id="leftTime">{$lang.please_waiting}</span></font><br />
-      {$lang.au_i_want_bid}：
+      {$lang.au_i_want_bid}: 
       <input name="price" type="text" class="inputBg" id="price" size="8" />
       <input name="bid" type="submit" class="bnt_blue" id="bid" value="{$lang.button_bid}" style="vertical-align:middle;" />
       <input name="act" type="hidden" value="bid" />

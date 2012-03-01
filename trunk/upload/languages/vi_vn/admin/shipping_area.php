@@ -18,9 +18,9 @@
 $_LANG['shipping_area_name'] = 'Shipping area name';
 $_LANG['shipping_area_districts'] = 'Area list';
 $_LANG['shipping_area_regions'] = 'Region';
-$_LANG['shipping_area_assign'] = 'Shipping method';
+$_LANG['shipping_area_assign'] = 'Hình thức v.chuyển';
 $_LANG['area_region'] = 'Region';
-$_LANG['area_shipping'] = 'Shipping method';
+$_LANG['area_shipping'] = 'Hình thức v.chuyển';
 $_LANG['fee_compute_mode'] = 'Cost calculation';
 $_LANG['fee_by_weight'] = 'By weight';
 $_LANG['fee_by_number'] = 'By number';
@@ -61,6 +61,6 @@ $_LANG['js_languages']['lang_disabled'] = 'Disabled';
 $_LANG['js_languages']['lang_enabled'] = 'Enabled';
 $_LANG['js_languages']['lang_setup'] = 'Setup';
 $_LANG['js_languages']['lang_region'] = 'Region';
-$_LANG['js_languages']['lang_shipping'] = 'Shipping method';
+$_LANG['js_languages']['lang_shipping'] = 'Hình thức v.chuyển';
 $_LANG['js_languages']['region_exists'] = 'The region already exists.';
 ?>

@@ -110,7 +110,7 @@ $_LANG['goods_brand'] = 'Thương hiệu:';
 $_LANG['goods_weight'] = 'Trọng lượng:';
 $_LANG['goods_number'] = 'Quantity:';
 $_LANG['goods_give_integral'] = 'gifts for buying:';
-$_LANG['goods_integral'] = 'Limit points for buying:';
+$_LANG['goods_integral'] = 'Điểm cần để mua:';
 $_LANG['goods_free_shipping'] = 'This goods is Free shipping, it is not included in the total fee distribution when calculating the distribution amount';
 $_LANG['goods_bonus'] = 'Bonus for buying:';
 $_LANG['goods_rank'] = 'Rank:';
@@ -123,8 +123,9 @@ $_LANG['day'] = 'Day';
 $_LANG['hour'] = 'Hour';
 $_LANG['minute'] = 'Minute';
 $_LANG['compare'] = 'So sánh';
-$_LANG['volume_price'] = 'Following the purchase of goods to reach the number that they can enjoy a range of preferential prices';
-$_LANG['number_to'] = 'number';
+$_LANG['volume_price'] = 'Sau khi sản phẩm đạt được số lượng nhất định, bạn có thể hưởng ưu đãi giá từ cửa hàng của chúng tôi';
+$_LANG['number_to'] = 'Số lượng bán ra';
+$_LANG['preferences_price'] = 'Giá ưu đãi';
 $_LANG['article_list'] = 'Danh sách bài viết';
 
 /* 商品比较JS语言项 */
@@ -138,7 +139,7 @@ $_LANG['no_comments'] = 'Không có nhận xét nào';
 $_LANG['give_comments_rank'] = 'Gửi nhận xét';
 $_LANG['comments_rank'] = 'Comment';
 $_LANG['comment_num'] = "%d comments";
-$_LANG['login_please'] = 'You can\'t shopping until login.';
+$_LANG['login_please'] = 'Bạn không thể mua hàng khi chưa đăng nhập.';
 $_LANG['collect_existed'] = 'Collected in your favorite.';
 $_LANG['collect_success'] = 'Collected in your favorite successfully.';
 $_LANG['copyright'] = "&copy; 2005-%s %s Copyright, All Rights Reserved.";
@@ -221,25 +222,25 @@ $_LANG['comment_captcha'] = 'Verification code';
 $_LANG['comment_login'] = 'Please login';
 $_LANG['comment_custom'] = 'No login or not a customer of the shop';
 $_LANG['comment_brought'] = 'No login or never brought the product you would like to comment';
-$_LANG['anonymous'] = 'Anonymous user';
+$_LANG['anonymous'] = 'Ẩn danh';
 
 /* 其他信息 */
-$_LANG['js_languages']['goodsname_not_null'] = 'Please enter a product name!';
+$_LANG['js_languages']['goodsname_not_null'] = 'Vui lòng nhập tên sản phẩm!';
 
 /* 商品比较 */
 $_LANG['compare_remove'] = 'Remove';
 $_LANG['compare_no_goods'] = 'You didn\'t selected any products with comparative or the product number is less than 2.';
 
-$_LANG['no_user_name'] = 'The user is nonexistent';
+$_LANG['no_user_name'] = 'Tài khoản này không tồn tại';
 $_LANG['undifine_rank'] = 'Undefined rank';
 $_LANG['not_login'] = 'No login';
 $_LANG['half_info'] = 'Shortage of necessary information, please enter informations completely.';
 $_LANG['no_id'] = 'No ID';
-$_LANG['save_success'] = 'Saved successfully';
+$_LANG['save_success'] = 'Đã lưu thành công';
 $_LANG['drop_consignee_confirm'] = 'Are you sure delete the consignee information?';
 
 /* 夺宝奇兵 */
-$_LANG['snatch_js']['price_not_null'] = 'Please enter a price.';
+$_LANG['snatch_js']['price_not_null'] = 'Vui lòng nhập giá.';
 $_LANG['snatch_js']['price_not_number'] = 'Please enter a figure.';
 $_LANG['snatch_list'] = 'Dutch auction list';
 $_LANG['not_in_range'] = 'The rang of Dutch auction is %d to %d.';
@@ -284,25 +285,25 @@ $_LANG['img'] = 'Image';
 $_LANG['no_pack'] = 'Don\'t pack';
 $_LANG['no_card'] = 'Don\'t want a greeting card';
 $_LANG['bless_note'] = 'Blessing';
-$_LANG['use_integral'] = 'Use points';
+$_LANG['use_integral'] = 'Sử dụng điểm';
 $_LANG['can_use_integral'] = 'You can use points';
 $_LANG['noworder_can_integral'] = 'The maximum points for the order that you can use.';
-$_LANG['use_surplus'] = 'Use balance';
+$_LANG['use_surplus'] = 'Dùng số dư';
 $_LANG['your_surplus'] = 'Your balance ';
-$_LANG['pay_fee'] = 'Payment money';
-$_LANG['insure_fee'] = 'Insurance money';
+$_LANG['pay_fee'] = 'Phí thanh toán';
+$_LANG['insure_fee'] = 'Phí b.hiểm';
 $_LANG['need_insure'] = 'Whether you need insurance for products?';
 $_LANG['cod'] = 'Dhipping decision';
 
 $_LANG['curr_stauts'] = 'Current stauts';
-$_LANG['use_bonus'] = 'Use bonus';
+$_LANG['use_bonus'] = 'Sử dụng quà';
 $_LANG['use_bonus_kill'] = 'The use of red line';
 $_LANG['invoice'] = 'Invoice';
 $_LANG['invoice_type'] = 'Invoice type';
 $_LANG['invoice_title'] = 'Invoice title';
 $_LANG['invoice_content'] = 'Invoice content';
-$_LANG['order_postscript'] = 'Order postscript';
-$_LANG['booking_process'] = 'Booking process';
+$_LANG['order_postscript'] = 'Ghi chú đặt hàng';
+$_LANG['booking_process'] = 'Quy trình đặt hàng';
 $_LANG['complete_acquisition'] = 'The order is completed, you will receive';
 $_LANG['with_price'] = 'and bonus';
 $_LANG['de'] = '';
@@ -310,19 +311,19 @@ $_LANG['bonus'] = 'bonus';
 $_LANG['goods_all_price'] = 'Total products money';
 $_LANG['discount'] = 'discount';
 $_LANG['tax'] = 'tax';
-$_LANG['shipping_fee'] = 'Shipping money';
-$_LANG['pack_fee'] = 'Packing money';
+$_LANG['shipping_fee'] = 'Phí v.chuyển';
+$_LANG['pack_fee'] = 'Phí đóng gói';
 $_LANG['card_fee'] = 'Card fee';
-$_LANG['total_fee'] = 'Total payable money';
+$_LANG['total_fee'] = 'Tổng tiền mặt có thể trả';
 $_LANG['self_site'] = 'Home';
 $_LANG['order_gift_integral'] = 'Order %s integral gift';
 
-$_LANG['order_payed_sms'] = 'Hello, the order %s has already paid. Consignee: %s; Phone: %s.';
+$_LANG['order_payed_sms'] = 'Hello, the order %s has already paid. Người nhận: %s; Phone: %s.';
 
 /* 缺货处理 */
-$_LANG['oos'][OOS_WAIT] = 'Don\'t shipping until all products on deck.';
-$_LANG['oos'][OOS_CANCEL] = 'Cancellation of order';
-$_LANG['oos'][OOS_CONSULT] = 'Consult with shop owner';
+$_LANG['oos'][OOS_WAIT] = 'Không chuyển hàng khi chưa đủ số lượng mua.';
+$_LANG['oos'][OOS_CANCEL] = 'Hủy đơn hàng';
+$_LANG['oos'][OOS_CONSULT] = 'Tư vấn với cửa hàng';
 
 /* 评论部分 */
 $_LANG['username'] = 'Tài khoản';
@@ -347,7 +348,7 @@ $_LANG['shop_notice'] = 'Shop notice';
 $_LANG['order_already_received'] = 'The order is already received, thanks for your trade, hope you will come again.';
 $_LANG['order_invalid'] = 'Please enter a valid order.';
 $_LANG['act_ok'] = 'Thanks for your notification, thanks for your trade, hope you will come again.';
-$_LANG['receive'] = 'Received';
+$_LANG['receive'] = 'Đã nhận hàng';
 $_LANG['buyer'] = 'Buyer';
 $_LANG['next_article'] = 'Next';
 $_LANG['prev_article'] = 'Previous';
@@ -361,18 +362,18 @@ $_LANG['fit_count'] = "There is(are) %s product(s) match condition.";
 $_LANG['goods_type'] = "Product type";
 $_LANG['remove_all'] = 'Remove all';
 $_LANG['advanced_search'] = 'Tìm kiếm nâng cao ';
-$_LANG['activity'] = 'This product is in some activities as ';
+$_LANG['activity'] = 'Sản phẩm này có trong hoạt động ';
 $_LANG['snatch_goods'] = 'Dutch auction is ongoing for this product, come on!';
 $_LANG['order_not_exists'] = 'Sorry, order does not exist. Please contact the web administrator.';
 
 $_LANG['promotion_time'] = 'promotion time from %s to %s, please hurry up!';
 
 /* 倒计时 */
-$_LANG['goods_js']['day'] = 'day';
-$_LANG['goods_js']['hour'] = 'hour';
-$_LANG['goods_js']['minute'] = 'minute';
-$_LANG['goods_js']['second'] = 'second';
-$_LANG['goods_js']['end'] = 'end';
+$_LANG['goods_js']['day'] = ' ngày ';
+$_LANG['goods_js']['hour'] = ' giờ ';
+$_LANG['goods_js']['minute'] = ' phút ';
+$_LANG['goods_js']['second'] = ' giây ';
+$_LANG['goods_js']['end'] = 'Kết thúc';
 
 $_LANG['favourable'] = 'Favourable';
 
@@ -382,22 +383,22 @@ $_LANG['group_buy_goods'] = 'Associates';
 $_LANG['gb_goods_name'] = 'Sản phẩm mua theo nhóm';
 $_LANG['gb_start_date'] = 'Ngày bắt đầu:';
 $_LANG['gb_end_date'] = 'Hạn cuối:';
-$_LANG['gbs_pre_start'] = 'Associates is preparing, please waiting...';
-$_LANG['gbs_under_way'] = 'Associates is now in progress, left deadline has:';
+$_LANG['gbs_pre_start'] = 'Nhóm mua đang chuẩn bị diễn ra, vui lòng chờ...';
+$_LANG['gbs_under_way'] = 'Nhóm mua đang hoạt động, thời gian còn lại là:';
 $_LANG['gbs_finished'] = 'Associates has closed, processing...';
 $_LANG['gbs_succeed'] = 'Associates has closed successfully!';
 $_LANG['gbs_fail'] = 'Failure, associates has closed.';
-$_LANG['gb_price_ladder'] = 'Price step:';
+$_LANG['gb_price_ladder'] = 'Bước giá:';
 $_LANG['gb_ladder_amount'] = 'Số lượng';
 $_LANG['gb_ladder_price'] = 'Giá';
-$_LANG['gb_deposit'] = 'Insurance:';
-$_LANG['gb_restrict_amount'] = 'Limit quantity:';
+$_LANG['gb_deposit'] = 'Tiền bảo hiểm:';
+$_LANG['gb_restrict_amount'] = 'Số lượng giới hạn:';
 $_LANG['gb_gift_integral'] = 'Present points:';
-$_LANG['gb_cur_price'] = 'Current price:';
-$_LANG['gb_valid_goods'] = 'Current order quantity:';
+$_LANG['gb_cur_price'] = 'Giá hiện tại:';
+$_LANG['gb_valid_goods'] = 'Số lượng đặt hàng:';
 $_LANG['gb_final_price'] = 'Final price:';
 $_LANG['gb_final_amount'] = 'Final amount:';
-$_LANG['gb_notice_login'] = 'Notice: You can\'t participants in the associates until register and login!';
+$_LANG['gb_notice_login'] = 'Chú ý: Bạn không thể tham gia nhóm mua khi bạn chưa đăng ký và đăng nhập!';
 $_LANG['gb_error_goods_lacking'] = 'Sorry, out-of-shock, please edit quantity!';
 $_LANG['gb_error_status'] = 'Sorry, the associates has finished or not start still, you can\'t join associates now!';
 $_LANG['gb_error_login'] = 'Sorry, you can\'t join associates until login!';
@@ -406,7 +407,7 @@ $_LANG['group_goods_empty'] = 'Hiện không có nhóm mua nào.';
 /* 拍卖部分语言项 */
 $_LANG['auction'] = 'Auction';
 $_LANG['act_status'] = 'Auction status';
-$_LANG['au_current_price'] = 'Current price';
+$_LANG['au_current_price'] = 'Giá hiện tại';
 $_LANG['act_start_time'] = 'Start time';
 $_LANG['act_end_time'] = 'End time';
 $_LANG['au_start_price'] = 'Start price';
@@ -415,7 +416,7 @@ $_LANG['au_amplitude'] = 'Amplitude';
 $_LANG['au_deposit'] = 'Deposit';
 $_LANG['no_auction'] = 'No auction';
 $_LANG['au_pre_start'] = 'Auction is preparing, please waiting...';
-$_LANG['au_under_way'] = 'Auction is now in progress, left deadline has:';
+$_LANG['au_under_way'] = 'Đang trong giai đoạn đấu giá, thời gian còn lại: ';
 $_LANG['au_under_way_1'] = 'Auction is now in progress.';
 $_LANG['au_bid_user_count'] = 'Bid user count';
 $_LANG['au_last_bid_price'] = 'Last bid price';
@@ -453,7 +454,7 @@ $_LANG['ws_return_home'] = 'Return home';
 $_LANG['wholesale'] = 'Wholesale';
 $_LANG['no_wholesale'] = 'No product for wholesale';
 $_LANG['ws_price'] = 'Wholesale price';
-$_LANG['ws_subtotal'] = 'Subtotal';
+$_LANG['ws_subtotal'] = 'Tổng giá trị';
 $_LANG['ws_invalid_goods_number'] = 'Please enter valid quantity';
 $_LANG['ws_attr_not_matching'] = 'The attrubute is not matched, please select by wholesale price list';
 $_LANG['ws_goods_number_not_enough'] = 'Goods quantity is not enough, please refer to the wholesale price list';
@@ -538,7 +539,7 @@ $_LANG['check_mail_content'] = "Click the following url \n<a href=\"%s\" target=
 $_LANG['email_checked'] = 'Email has been checked!';
 $_LANG['hash_wrong'] = 'Hash wrong! Recheck the hash and enter email address to send hash again!';
 $_LANG['email_canceled'] = 'Email is canceled!';
-$_LANG['goods_click_count'] = 'Goods click count';
+$_LANG['goods_click_count'] = 'Lượt xem';
 
 /* 虚拟卡 */
 $_LANG['card_sn'] = 'Card SN';
@@ -660,7 +661,7 @@ $_LANG['activity_desc'] = 'Activity Description';
 $_LANG['activity_intro'] = 'Activity Intro';
 $_LANG['get_password'] = 'Get Password';
 $_LANG['fee_total'] = 'Fee Total';
-$_LANG['other_info'] = 'Other Info';
+$_LANG['other_info'] = 'Thông tin khác';
 $_LANG['user_balance'] = 'User Balance';
 $_LANG['wholesale_goods_cart'] = 'Wholesale Goods Cart';
 $_LANG['wholesale_goods_list'] = 'Wholesale Goods List';
@@ -669,9 +670,9 @@ $_LANG['shipping_method'] = 'Shipping Method';
 $_LANG['payment_method'] = 'Payment Method';
 $_LANG['goods_package'] = 'Goods Package';
 $_LANG['goods_card'] = 'Goods Card';
-$_LANG['groupbuy_intro'] = 'Groupbuy Intro';
-$_LANG['groupbuy_goods_info'] = 'Groupbuy Goods Info';
-$_LANG['act_time'] = 'Act Time';
+$_LANG['groupbuy_intro'] = 'Giới thiệu nhóm mua';
+$_LANG['groupbuy_goods_info'] = 'Thông tin sản phẩm mua theo nhóm';
+$_LANG['act_time'] = 'Thời gian diễn ra';
 $_LANG['top10'] = 'Top 10';
 
 /* Events */
