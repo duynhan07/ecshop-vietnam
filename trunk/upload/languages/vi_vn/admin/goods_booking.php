@@ -19,7 +19,7 @@ $_LANG['list_all'] = 'Booking records';
 
 $_LANG['booking'] = 'Order information';
 $_LANG['id'] = 'ID';
-$_LANG['goods_name'] = 'Name';
+$_LANG['goods_name'] = 'Tên';
 $_LANG['user_name'] = 'Enroll user';
 $_LANG['number'] = 'Số lượng';
 $_LANG['booking_time'] = 'Booking time';

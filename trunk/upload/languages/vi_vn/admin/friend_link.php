@@ -17,7 +17,7 @@
 
 /* Links field information */
 $_LANG['link_id'] = 'ID';
-$_LANG['link_name'] = 'Name';
+$_LANG['link_name'] = 'Tên';
 $_LANG['link_url'] = 'URL';
 $_LANG['link_logo'] = 'Logo';
 $_LANG['url_logo'] = 'Or link URL';

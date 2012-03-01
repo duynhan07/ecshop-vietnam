@@ -15,7 +15,7 @@
  * $Id: articlecat.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
-$_LANG['cat_name'] = 'Name';
+$_LANG['cat_name'] = 'Tên';
 $_LANG['type'] = 'Category Type';
 $_LANG['type_name'][COMMON_CAT] = 'General classification';
 $_LANG['type_name'][SYSTEM_CAT] = 'Taxonomy';

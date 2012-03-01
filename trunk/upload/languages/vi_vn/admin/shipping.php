@@ -15,7 +15,7 @@
  * $Id: shipping.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
-$_LANG['shipping_name'] = 'Name';
+$_LANG['shipping_name'] = 'Tên';
 $_LANG['shipping_version'] = 'Version';
 $_LANG['shipping_desc'] = 'Mô tả';
 $_LANG['shipping_author'] = 'Author';

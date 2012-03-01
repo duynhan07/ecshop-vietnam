@@ -258,8 +258,8 @@ $_LANG['or_can'] = 'or can';
 $_LANG['shopping_product'] = 'Buy the prize';
 $_LANG['victory_price_product'] = 'The victory will buy the prize according to the period price of Dutch auction.';
 $_LANG['now_not_snatch'] = 'There is no Dutch auction now.';
-$_LANG['my_integral'] = 'My points';
-$_LANG['bid'] = 'Dutch auction';
+$_LANG['my_integral'] = 'Điểm của tôi';
+$_LANG['bid'] = 'Đấu giá ngược';
 $_LANG['me_bid'] = 'I want to Dutch auction';
 $_LANG['me_now_bid'] = 'My Dutch auction';
 $_LANG['only_price'] = 'Unique price';
@@ -277,7 +277,7 @@ $_LANG['select_spe'] = 'Please choose attributes of the goods';
 
 /* 购物流程中的订单部分 */
 $_LANG['price'] = 'Giá';
-$_LANG['name'] = 'Name';
+$_LANG['name'] = 'Tên';
 $_LANG['describe'] = 'Mô tả';
 $_LANG['fee'] = 'Money';
 $_LANG['free_money'] = 'Free limit';
@@ -286,7 +286,7 @@ $_LANG['no_pack'] = 'Don\'t pack';
 $_LANG['no_card'] = 'Don\'t want a greeting card';
 $_LANG['bless_note'] = 'Blessing';
 $_LANG['use_integral'] = 'Sử dụng điểm';
-$_LANG['can_use_integral'] = 'You can use points';
+$_LANG['can_use_integral'] = 'Bạn có thể sử dụng điểm';
 $_LANG['noworder_can_integral'] = 'The maximum points for the order that you can use.';
 $_LANG['use_surplus'] = 'Dùng số dư';
 $_LANG['your_surplus'] = 'Your balance ';
@@ -344,7 +344,7 @@ $_LANG['pay_fail'] = 'Paid failed, return and try it again!';
 
 /* 文章部分 */
 $_LANG['new_article'] = 'New article';
-$_LANG['shop_notice'] = 'Shop notice';
+$_LANG['shop_notice'] = 'Thông báo';
 $_LANG['order_already_received'] = 'The order is already received, thanks for your trade, hope you will come again.';
 $_LANG['order_invalid'] = 'Please enter a valid order.';
 $_LANG['act_ok'] = 'Thanks for your notification, thanks for your trade, hope you will come again.';
@@ -379,7 +379,7 @@ $_LANG['favourable'] = 'Favourable';
 
 /* 团购部分语言项 */
 $_LANG['group_buy'] = 'Nhóm mua';
-$_LANG['group_buy_goods'] = 'Associates';
+$_LANG['group_buy_goods'] = 'Nhóm mua';
 $_LANG['gb_goods_name'] = 'Sản phẩm mua theo nhóm';
 $_LANG['gb_start_date'] = 'Ngày bắt đầu:';
 $_LANG['gb_end_date'] = 'Hạn cuối:';
@@ -494,8 +494,8 @@ $_LANG['login_now'] = 'Login now';
 $_LANG['reg_now'] = 'Register now';
 
 /* 商品品牌页 */
-$_LANG['official_site'] = 'Official website:';
-$_LANG['brand_category'] = 'Brand categories:';
+$_LANG['official_site'] = 'Trang chủ:';
+$_LANG['brand_category'] = 'Danh mục: ';
 $_LANG['all_category'] = 'Tất cả danh mục';
 
 /* 商品分类页 */
@@ -644,8 +644,8 @@ $_LANG['consignee_info'] = 'Thông tin người nhận';
 $_LANG['user_comment'] = 'Nhận xét thành viên';
 $_LANG['total'] = 'Tổng cộng ';
 $_LANG['user_comment_num'] = ' nhận xét';
-$_LANG['auction_goods'] = 'Auction Goods';
-$_LANG['auction_goods_info'] = 'Auction Goods Info';
+$_LANG['auction_goods'] = 'Sản phẩm đấu giá';
+$_LANG['auction_goods_info'] = 'Thông tin sản phẩm đấu giá';
 $_LANG['article_cat'] = 'Article Cat';
 $_LANG['online_vote'] = 'Online Vote';
 $_LANG['new_price'] = 'New Price';
@@ -659,10 +659,10 @@ $_LANG['package_list'] = 'Package List';
 $_LANG['treasure_info'] = 'Treasure Info';
 $_LANG['activity_desc'] = 'Activity Description';
 $_LANG['activity_intro'] = 'Activity Intro';
-$_LANG['get_password'] = 'Get Password';
-$_LANG['fee_total'] = 'Fee Total';
+$_LANG['get_password'] = 'Lấy lại mật khẩu';
+$_LANG['fee_total'] = 'Tổng chi phí';
 $_LANG['other_info'] = 'Thông tin khác';
-$_LANG['user_balance'] = 'User Balance';
+$_LANG['user_balance'] = 'Số dư tài khoản';
 $_LANG['wholesale_goods_cart'] = 'Wholesale Goods Cart';
 $_LANG['wholesale_goods_list'] = 'Wholesale Goods List';
 $_LANG['bid_record'] = 'Record Bid';

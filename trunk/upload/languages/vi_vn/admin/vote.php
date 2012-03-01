@@ -17,7 +17,7 @@
 
 /* to survey field */
 $_LANG['vote_id'] = 'ID';
-$_LANG['vote_name'] = 'Name';
+$_LANG['vote_name'] = 'Tên';
 $_LANG['show_position'] = 'Display the position.';
 $_LANG['begin_date'] = 'Start date';
 $_LANG['end_date'] = 'Deadline';
