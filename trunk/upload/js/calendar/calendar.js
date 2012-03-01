@@ -1979,8 +1979,8 @@ Calendar._TT["CLOSE"] = calendar_close;
 Calendar._TT["TODAY"] = calendar_today;
 Calendar._TT["TIME_PART"] = time_part;
 
-// date formats
-Calendar._TT["DEF_DATE_FORMAT"] = "%Y-%m-%d";
+// Định dạng ngày tháng
+Calendar._TT["DEF_DATE_FORMAT"] = "%d-%m-%Y";
 Calendar._TT["TT_DATE_FORMAT"] = "%A, %b %e" + calendar_day;
 
 Calendar._TT["WK"] = calendar_wk;

@@ -341,7 +341,7 @@ $_LANG['error_surplus_not_enough'] = 'You have not enough balance.';
 /* 订单状态 */
 $_LANG['detail_order_sn'] = 'You have not enough balance.';
 $_LANG['detail_order_status'] = 'Trạng thái';
-$_LANG['detail_pay_status'] = 'Payment status';
+$_LANG['detail_pay_status'] = 'Tình trạng t.toán';
 $_LANG['detail_shipping_status'] = 'Shipping status';
 $_LANG['detail_order_sn'] = 'NO.';
 $_LANG['detail_to_buyer'] = 'Buyer message';

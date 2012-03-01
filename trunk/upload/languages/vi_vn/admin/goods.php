@@ -132,7 +132,7 @@ $_LANG['unit_g'] ='Gram';
 $_LANG['unit_kg'] ='Kilogram';
 $_LANG['lab_goods_number'] ='Số lượng trong kho:';
 $_LANG['lab_warn_number'] ='Số lượng cảnh báo:';
-$_LANG['lab_integral'] ='Integral purchase amount:';
+$_LANG['lab_integral'] ='Chi trả bằng điểm:';
 $_LANG['lab_give_integral'] = 'Consumption presented a few points:';
 $_LANG['lab_rank_integral'] = 'Presented a number of grade points:';
 $_LANG['lab_intro'] ='Recommend:';
@@ -144,7 +144,7 @@ $_LANG['lab_is_free_shipping'] = 'Free shipping：';
 $_LANG['compute_by_mp'] ='Calculate';
 
 $_LANG['notice_goods_sn'] ='Nếu bạn không nhập mã sản phẩm, hệ thống sẽ tự thêm tiền tố No. vào.';
-$_LANG['notice_integral'] ='（This required amount）Buy the goods can use points.';
+$_LANG['notice_integral'] ='(Đây là bắt buộc) có thể dùng số dư để thanh toán.';
 $_LANG['notice_give_integral'] = 'Purchase the merchandise when presented fraction of consumption, express -1 presented by commodity prices';
 $_LANG['notice_rank_integral'] = 'Purchase the merchandise when presented fraction grading, express -1 presented by commodity prices';
 $_LANG['notice_seller_note'] ='Only provide information for shop owner.';

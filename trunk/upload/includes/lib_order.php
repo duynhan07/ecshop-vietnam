@@ -986,7 +986,7 @@ function cart_weight_price($type = CART_GENERAL_GOODS)
 }
 
 /**
- * 添加商品到购物车
+ * Thêm sản phẩm vào giỏ hàng 
  *
  * @access  public
  * @param   integer $goods_id   商品编号
