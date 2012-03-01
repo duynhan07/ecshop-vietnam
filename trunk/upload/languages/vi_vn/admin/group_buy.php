@@ -7,7 +7,7 @@ $_LANG['edit_group_buy'] = 'Sửa';
 /* Trang danh sách nhóm mua */
 $_LANG['goods_name'] = 'Tên sản phẩm';
 $_LANG['start_date'] = 'Start date';
-$_LANG['end_date'] = 'Deadline';
+$_LANG['end_date'] = 'Hạn chót';
 $_LANG['deposit'] = 'Tiền bảo hiểm';
 $_LANG['restrict_amount'] = 'Số lượng giới hạn';
 $_LANG['gift_integral'] = 'Present points';

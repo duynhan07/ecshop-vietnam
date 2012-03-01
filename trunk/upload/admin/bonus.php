@@ -590,10 +590,6 @@ if ($_REQUEST['act'] == 'gen_excel')
 
     /* 文件名称 */
     $bonus_filename = $type_name .'_bonus_list';
-    if (EC_CHARSET != 'gbk')
-    {
-        $bonus_filename = ecs_iconv('UTF8', 'GB2312',$bonus_filename);
-    }
 
     header("Content-type: application/vnd.ms-excel; charset=utf-8");
     header("Content-Disposition: attachment; filename=$bonus_filename.xls");

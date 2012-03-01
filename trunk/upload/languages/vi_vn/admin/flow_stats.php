@@ -32,7 +32,7 @@ $_LANG['access_query'] = 'Query';
 $_LANG['compare_query'] = 'Compare query';
 
 $_LANG['start_date'] = 'Start date';
-$_LANG['end_date'] = 'Deadline';
+$_LANG['end_date'] = 'Hạn chót';
 
 $_LANG['down_flow_stats'] = 'Download flow statistics';
 $_LANG['flow_statistics'] = 'Flow statistics';
