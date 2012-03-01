@@ -172,9 +172,9 @@ $_LANG['navigator'] = 'Tùy chọn NAV';
 /* Sales promotion management */
 $_LANG['02_snatch_list'] = 'Đấu giá ngược';
 $_LANG['snatch_add'] = 'Thêm đấu giá';
-$_LANG['04_bonustype_list'] = 'Bonus Type';
-$_LANG['bonustype_add'] = 'Add Bonus Type';
-$_LANG['05_bonus_list'] = 'Bonus Offline';
+$_LANG['04_bonustype_list'] = 'Loại quà tặng';
+$_LANG['bonustype_add'] = 'Thêm loại quà';
+$_LANG['05_bonus_list'] = 'Mã quà tặng';
 $_LANG['bonus_add'] = 'Add User Bonus';
 $_LANG['06_pack_list'] = 'Product Packing';
 $_LANG['07_card_list'] = 'Greetings Card';

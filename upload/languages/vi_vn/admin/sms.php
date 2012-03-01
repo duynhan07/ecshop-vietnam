@@ -49,7 +49,7 @@ $_LANG['back_charge_history'] = 'Return to charge history';
 /* Record query interface */
 $_LANG['start_date'] = 'Start date';
 $_LANG['date_notice'] = 'Format:YYYY-MM-DD. Allowed blank.';
-$_LANG['end_date'] = 'Deadline';
+$_LANG['end_date'] = 'Hạn chót';
 $_LANG['page_size'] = 'Display every page';
 $_LANG['page_size_notice'] = 'Can be blank, diaplay every 20 records.';
 $_LANG['page'] = 'Page quantity';

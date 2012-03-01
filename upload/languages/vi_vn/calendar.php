@@ -1,20 +1,4 @@
 <?php
-
-/**
- * ECSHOP Time JS language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: calendar.php 14481 2008-07-20 11:23:01Z apachen$
-*/
-
 /* 时间JS语言项 */
 $_LANG['calendar_lang']['Sunday'] = 'Sunday';
 $_LANG['calendar_lang']['Monday'] = 'Monday';
@@ -23,37 +7,37 @@ $_LANG['calendar_lang']['Wednesday'] = 'Wednesday';
 $_LANG['calendar_lang']['Thursday'] = 'Thursday';
 $_LANG['calendar_lang']['Friday'] = 'Friday';
 $_LANG['calendar_lang']['Saturday'] = 'Saturday';
-$_LANG['calendar_lang']['Sun'] = 'Sun';
-$_LANG['calendar_lang']['Mon'] = 'Mon';
-$_LANG['calendar_lang']['Tue'] = 'Tue';
-$_LANG['calendar_lang']['Wed'] = 'Wed';
-$_LANG['calendar_lang']['Thu'] = 'Thu';
-$_LANG['calendar_lang']['Fri'] = 'Fri';
-$_LANG['calendar_lang']['Sat'] = 'Sat';
-$_LANG['calendar_lang']['January'] = 'January';
-$_LANG['calendar_lang']['February'] = 'February';
-$_LANG['calendar_lang']['March'] = 'March';
-$_LANG['calendar_lang']['April'] = 'April';
-$_LANG['calendar_lang']['May'] = 'May';
-$_LANG['calendar_lang']['June'] = 'June';
-$_LANG['calendar_lang']['July'] = 'July';
-$_LANG['calendar_lang']['Aguest'] = 'August';
-$_LANG['calendar_lang']['September'] = 'September';
-$_LANG['calendar_lang']['October'] = 'October';
-$_LANG['calendar_lang']['November'] = 'November';
-$_LANG['calendar_lang']['December'] = 'December';
-$_LANG['calendar_lang']['Jan'] = 'Jan';
-$_LANG['calendar_lang']['Feb'] = 'Feb';
-$_LANG['calendar_lang']['Mar'] = 'Mar';
-$_LANG['calendar_lang']['Apr'] = 'Apr';
-$_LANG['calendar_lang']['May'] = 'May';
-$_LANG['calendar_lang']['Jun'] = 'Jun';
-$_LANG['calendar_lang']['Jul'] = 'Jul';
-$_LANG['calendar_lang']['Agu'] = 'Aug';
-$_LANG['calendar_lang']['Sep'] = 'Sep';
-$_LANG['calendar_lang']['Oct'] = 'Oct';
-$_LANG['calendar_lang']['Nov'] = 'Nov';
-$_LANG['calendar_lang']['Dec'] = 'Dec';
+$_LANG['calendar_lang']['Sun'] = 'Chn';
+$_LANG['calendar_lang']['Mon'] = 'Th2';
+$_LANG['calendar_lang']['Tue'] = 'Th3';
+$_LANG['calendar_lang']['Wed'] = 'Th4';
+$_LANG['calendar_lang']['Thu'] = 'Th5';
+$_LANG['calendar_lang']['Fri'] = 'Th6';
+$_LANG['calendar_lang']['Sat'] = 'Th7';
+$_LANG['calendar_lang']['January'] = 'Tháng 1';
+$_LANG['calendar_lang']['February'] = 'Tháng 2';
+$_LANG['calendar_lang']['March'] = 'Tháng 3';
+$_LANG['calendar_lang']['April'] = 'Tháng 4';
+$_LANG['calendar_lang']['May'] = 'Tháng 5';
+$_LANG['calendar_lang']['June'] = 'Tháng 6';
+$_LANG['calendar_lang']['July'] = 'Tháng 7';
+$_LANG['calendar_lang']['Aguest'] = 'Tháng 8';
+$_LANG['calendar_lang']['September'] = 'Tháng 9';
+$_LANG['calendar_lang']['October'] = 'Tháng 10';
+$_LANG['calendar_lang']['November'] = 'Tháng 11';
+$_LANG['calendar_lang']['December'] = 'Tháng 12';
+$_LANG['calendar_lang']['Jan'] = 'T01';
+$_LANG['calendar_lang']['Feb'] = 'T02';
+$_LANG['calendar_lang']['Mar'] = 'T03';
+$_LANG['calendar_lang']['Apr'] = 'T04';
+$_LANG['calendar_lang']['May'] = 'T05';
+$_LANG['calendar_lang']['Jun'] = 'T06';
+$_LANG['calendar_lang']['Jul'] = 'T07';
+$_LANG['calendar_lang']['Agu'] = 'T08';
+$_LANG['calendar_lang']['Sep'] = 'T09';
+$_LANG['calendar_lang']['Oct'] = 'T10';
+$_LANG['calendar_lang']['Nov'] = 'T11';
+$_LANG['calendar_lang']['Dec'] = 'T12';
 $_LANG['calendar_lang']['calendar_help'] = 'Help';
 $_LANG['calendar_lang']['calendar_about1'] = 'Select date:\\r\\n- click \\xab, \\xbb to select year \\r\\n- click ';
 $_LANG['calendar_lang']['calendar_about2'] = ' click to select month \\r\\n- press the above button for long can rapidly select year or month';

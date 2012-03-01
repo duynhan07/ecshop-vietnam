@@ -31,7 +31,7 @@ $_LANG['visit_site'] = 'Visit site analyse';
 $_LANG['key_analyse'] = 'Key word analyse';
 
 $_LANG['start_date'] = 'Start date';
-$_LANG['end_date'] = 'Deadline';
+$_LANG['end_date'] = 'Hạn chót';
 $_LANG['query'] = 'Query';
 $_LANG['result_filter'] = '
 Filter results';
