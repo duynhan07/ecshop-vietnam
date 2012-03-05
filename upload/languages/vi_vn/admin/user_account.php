@@ -18,7 +18,7 @@
 
 $_LANG['user_surplus'] = 'Advanced payment';
 $_LANG['surplus_id'] = 'ID';
-$_LANG['user_id'] = 'Username';
+$_LANG['user_id'] = 'Tài khoản';
 $_LANG['surplus_amount'] = 'Amount';
 $_LANG['add_date'] = 'Thời gian';
 $_LANG['pay_mothed'] = 'Hình thức t.toán';
@@ -46,7 +46,7 @@ $_LANG['check'] = 'Check';
 $_LANG['money_type'] = 'Payment mothod';
 $_LANG['surplus_add'] = 'Add application';
 $_LANG['surplus_edit'] = 'Edit application';
-$_LANG['attradd_succed'] = 'Successfully!';
+$_LANG['attradd_succed'] = 'Thực thi thao tác thành công!';
 $_LANG['username_not_exist'] = 'The username is invalid!';
 $_LANG['cancel_surplus'] = 'Are you sure cancel this record?';
 $_LANG['surplus_amount_error'] = 'Wrong, the drawing money is more than your balance!';

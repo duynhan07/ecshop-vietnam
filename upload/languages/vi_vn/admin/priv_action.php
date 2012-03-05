@@ -65,7 +65,7 @@ $_LANG['account_manage'] = 'Member Account Management';
 
 
 //Authority of Authority management
-$_LANG['admin_manage'] = 'Add/Edit administrator';
+$_LANG['admin_manage'] = 'Thêm/Sửa quản trị viên';
 $_LANG['admin_drop'] = 'Delete administrator';
 $_LANG['allot_priv'] = 'Allot authorization';
 $_LANG['logs_manage'] = 'Manage logs list';

@@ -103,13 +103,13 @@ $_LANG['user_bonus_info'] = 'Total %d, value %s';
 $_LANG['not_bonus'] = 'No bonus';
 $_LANG['add_user_bonus'] = 'Thêm';
 $_LANG['bonus_number'] = 'Bonus NO.';
-$_LANG['old_password'] = 'Primary password';
-$_LANG['new_password'] = 'New password';
+$_LANG['old_password'] = 'Mật khẩu cũ';
+$_LANG['new_password'] = 'Mật khẩu mới';
 $_LANG['confirm_password'] = 'Re-enter password';
 
 $_LANG['bonus_sn_exist'] = 'The bonus NO. already exists.';
 $_LANG['bonus_sn_not_exist'] = 'The bonus NO. is nonexistent!';
-$_LANG['add_bonus_sucess'] = 'Successfully!';
+$_LANG['add_bonus_sucess'] = 'Thực thi thao tác thành công!';
 $_LANG['add_bonus_false'] = 'Failure!';
 
 $_LANG['not_login'] = 'Please login firstly';
@@ -128,7 +128,7 @@ $_LANG['profile_js']['email_error'] = 'Please enter a valid email address!';
 $_LANG['profile_js']['old_password_empty'] = 'Please enter your primary password.';
 $_LANG['profile_js']['new_password_empty'] = 'Please enter the new password!';
 $_LANG['profile_js']['confirm_password_empty'] = 'Re-enter password !';
-$_LANG['profile_js']['both_password_error'] = 'The two passwords you entered did not match. Please type it again!';
+$_LANG['profile_js']['both_password_error'] = 'Mật khẩu mà bạn vừa nhập không trùng khớp, hãy nhập lại!';
 $_LANG['profile_js']['msg_blank'] = 'is blank';
 $_LANG['profile_js']['no_select_question'] = '- You do not complete the operation password prompt problem';
 
@@ -191,7 +191,7 @@ $_LANG['password_js']['email_address_empty'] = 'Please enter your email address!
 $_LANG['password_js']['email_address_error'] = 'Please enter a valid email address!';
 $_LANG['password_js']['new_password_empty'] = 'Please enter a new password!';
 $_LANG['password_js']['confirm_password_empty'] = 'Re-enter the password!';
-$_LANG['password_js']['both_password_error'] = 'The two passwords you entered did not match. Please type it again!';
+$_LANG['password_js']['both_password_error'] = 'Mật khẩu mà bạn vừa nhập không trùng khớp, hãy nhập lại!';
 
 /* 会员留言 */
 $_LANG['message_title'] = 'Title';
@@ -356,15 +356,15 @@ $_LANG['update_address'] = 'Update consignee address';
 $_LANG['virtual_card_info'] = 'Virtual card infomation';
 
 /* 取回密码 */
-$_LANG['back_home_lnk'] = 'Return to HOME page.';
-$_LANG['get_password_lnk'] = 'Return to get the password page.';
+$_LANG['back_home_lnk'] = 'Về trang chủ.';
+$_LANG['get_password_lnk'] = 'Trở về trang lấy lại mật khẩu.';
 $_LANG['get_password_by_question'] = 'Fimd back your password by a password question';
 $_LANG['get_password_by_mail'] = 'Fimd back your password by Email';
 $_LANG['back_retry_answer'] = 'back and retry';
 
 /* 登录 注册 */
-$_LANG['label_username'] = 'Username';
-$_LANG['label_email'] = 'email';
+$_LANG['label_username'] = 'Tài khoản';
+$_LANG['label_email'] = 'Email';
 $_LANG['label_password'] = 'Password';
 $_LANG['label_confirm_password'] = 'Re-enter password';
 $_LANG['label_password_intensity'] = 'Password intensity';
@@ -374,7 +374,7 @@ $_LANG['other_qq'] = 'QQ';
 $_LANG['other_office_phone'] = 'Office phone';
 $_LANG['other_home_phone'] = 'Home phone';
 $_LANG['other_mobile_phone'] = 'Mobile phone';
-$_LANG['remember'] = 'Remember my login information.';
+$_LANG['remember'] = 'Ghi nhớ thông tin đăng nhập.';
 
 $_LANG['msg_un_blank'] = 'Username is blank';
 $_LANG['msg_un_length'] = 'Username cannot exceed 7 Chinese charaters';

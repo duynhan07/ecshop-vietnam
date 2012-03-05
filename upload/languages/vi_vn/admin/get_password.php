@@ -29,11 +29,11 @@ $_LANG['login_now'] = 'Login now';
 
 /* Prompting message */
 $_LANG['js_languages']['user_name_empty'] = 'Please enter username!';
-$_LANG['js_languages']['email_empty'] = 'Email address can\'t be blank!';
-$_LANG['js_languages']['email_error'] = 'Email address format is invalid!';
+$_LANG['js_languages']['email_empty'] = 'Địa chỉ email không được để trống!';
+$_LANG['js_languages']['email_error'] = 'Định dạng email không đúng!';
 $_LANG['js_languages']['admin_pwd_empty'] = 'Please enter administrator new password!';
 $_LANG['js_languages']['confirm_pwd_empty'] = 'Please re-enter administrator password!';
-$_LANG['js_languages']['both_pwd_error'] = 'The two passwords you entered did not match. Please type it again!';
+$_LANG['js_languages']['both_pwd_error'] = 'Mật khẩu mà bạn vừa nhập không trùng khớp, hãy nhập lại!';
 
 $_LANG['email_username_error'] = 'Username and Email address must match, please return!';
 $_LANG['send_mail_error'] = 'Error send email, please check your mail server config!';

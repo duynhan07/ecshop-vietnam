@@ -113,7 +113,7 @@ $_LANG['guest_statistics']= 'Client statistics';
 
 /* Member ranking */
 $_LANG['show_num'] = 'Display';
-$_LANG['member_name'] = 'Username';
+$_LANG['member_name'] = 'Tài khoản';
 $_LANG['order_amount'] = 'Order quantity(unit:unit)';
 $_LANG['buy_sum'] = 'Money of shopping';
 

@@ -33,12 +33,12 @@ $_LANG['go_allot_priv'] = 'Administrator authorization config';
 
 $_LANG['view_log'] = 'View logs';
 
-$_LANG['back_home'] = 'Return to HOME';
-$_LANG['forget_pwd'] = 'Do you forget password?';
-$_LANG['get_new_pwd'] = 'Get back administrator password';
-$_LANG['pwd_confirm'] = 'Re-enter';
-$_LANG['new_password'] = 'New password';
-$_LANG['old_password'] = 'Primary password';
+$_LANG['back_home'] = 'Về trang chủ';
+$_LANG['forget_pwd'] = 'Bạn đã quên mật khẩu?';
+$_LANG['get_new_pwd'] = 'Lấy lại mật khẩu quản trị';
+$_LANG['pwd_confirm'] = 'Nhập lại';
+$_LANG['new_password'] = 'Mật khẩu mới';
+$_LANG['old_password'] = 'Mật khẩu cũ';
 $_LANG['agency'] = 'Agency the user be in charge of';
 $_LANG['self_nav'] = 'Individual navigation';
 $_LANG['all_menus'] = 'All menus';
@@ -49,42 +49,42 @@ $_LANG['move_down'] = 'Move down';
 $_LANG['continue_add'] = 'Continue add administrator.';
 $_LANG['back_list'] = 'Return to administrator list.';
 
-$_LANG['admin_edit'] = 'Edit administrator';
-$_LANG['edit_pwd'] = 'Edit password';
+$_LANG['admin_edit'] = 'Sửa quản trị viên';
+$_LANG['edit_pwd'] = 'Đổi mật khẩu';
 
 $_LANG['back_admin_list'] = 'Return to role list.';
 
 /* Prompting message */
 $_LANG['js_languages']['user_name_empty'] = 'Please enter username!';
-$_LANG['js_languages']['password_invaild'] = 'Password must contain both letters and numbers and the length should not be smaller than in 6!';
-$_LANG['js_languages']['email_empty'] = 'Email address can\'t be blank!';
-$_LANG['js_languages']['email_error'] = 'Email address format is invalid!';
-$_LANG['js_languages']['password_error'] = 'The two passwords you entered did not match. Please type it again!';
-$_LANG['js_languages']['captcha_empty'] = 'Please enter verification code!';
-$_LANG['action_succeed'] = 'Successfully!';
-$_LANG['edit_profile_succeed'] = 'You edit account information successfully!';
-$_LANG['edit_password_succeed'] = 'You edit password successfully, please re-login!';
-$_LANG['user_name_exist'] = 'The administrator already exists.';
-$_LANG['email_exist'] = 'Email address already exists.';
-$_LANG['captcha_error'] = 'Your verification code is invalid.';
-$_LANG['login_faild'] = 'Your accounts information is invalid.';
-$_LANG['user_name_drop'] = 'Delete successfully!';
-$_LANG['pwd_error'] = 'Primary password is invalid.';
-$_LANG['old_password_empty'] = 'If you want edit password, you must enter the primary password!';
-$_LANG['edit_admininfo_error'] = 'You can only edit yourself profile!';
-$_LANG['edit_admininfo_cannot'] = 'You can\'t operate for the administrator authorization!';
-$_LANG['edit_remove_cannot'] = 'You can not delete the administrator demo!';
-$_LANG['remove_self_cannot'] = 'Administrator demo can\'t be deleted!';
-$_LANG['remove_cannot'] = 'You have no authorization to delete!';
+$_LANG['js_languages']['password_invaild'] = 'Mật khẩu phải bao gồm cả chữ và số, phải có ít nhất 6 ký tự!';
+$_LANG['js_languages']['email_empty'] = 'Địa chỉ email không được để trống!';
+$_LANG['js_languages']['email_error'] = 'Định dạng email không đúng!';
+$_LANG['js_languages']['password_error'] = 'Mật khẩu mà bạn vừa nhập không trùng khớp, hãy nhập lại!';
+$_LANG['js_languages']['captcha_empty'] = 'Hãy nhập mã xác thực!';
+$_LANG['action_succeed'] = 'Thực thi thao tác thành công!';
+$_LANG['edit_profile_succeed'] = 'Bạn đã chỉnh sửa thông tin tài khoản thành công!';
+$_LANG['edit_password_succeed'] = 'Bạn đã thay đổi mật khẩu thành công, hãy đăng nhập lại!';
+$_LANG['user_name_exist'] = 'Tài khoản quản trị này đã tồn tại.';
+$_LANG['email_exist'] = 'Địa chỉ email này đã tồn tại.';
+$_LANG['captcha_error'] = 'Mã xác thực không hợp lệ.';
+$_LANG['login_faild'] = 'Thông tin tài khoản của bạn không hợp lệ.';
+$_LANG['user_name_drop'] = 'Đã xóa thành công!';
+$_LANG['pwd_error'] = 'Mật khẩu không đúng!';
+$_LANG['old_password_empty'] = 'Nếu bạn muốn thay đổi mật khẩu, bạn phải nhập mật khẩu hiện tại!';
+$_LANG['edit_admininfo_error'] = 'Bạn chỉ có thể sửa hồ sơ của chính bạn!';
+$_LANG['edit_admininfo_cannot'] = 'Bạn không thể thực hiện thao tác danh cho quản trị viên!';
+$_LANG['edit_remove_cannot'] = 'Bạn không thể xóa tài khoản quản trị tối cao!';
+$_LANG['remove_self_cannot'] = 'Không thể xóa tài khoản quản trị tối cao!';
+$_LANG['remove_cannot'] = 'Bạn không có quyền xóa!';
 $_LANG['remove_cannot_user'] = 'This role is in use, not administrator!';
 
 $_LANG['modif_info'] = 'Edit Profile';
 $_LANG['edit_navi'] = 'Config individual navigation';
 
 /* Help */
-$_LANG['password_notic'] = 'If you want to edit the password, please enter primary password, if leave a blank, password isn\'t changed.';
-$_LANG['email_notic'] = 'Enter administrator\'s Email address, the format must be valid.';
-$_LANG['confirm_notic'] = 'Re-enter administrator\'s password, your password entries must match.';
+$_LANG['password_notic'] = 'Nếu bạn muốn thay đổi mật khẩu, vui lòng nhập mật khẩu cũ, nếu bỏ trống, mật khẩu sẽ không được thay đổi.';
+$_LANG['email_notic'] = 'Nhập email quản trị, định dạng phải hợp lệ.';
+$_LANG['confirm_notic'] = 'Nhập lại mật khẩu quản trị, mật khẩu phải trùng khớp.';
 
 /* Login memu */
 $_LANG['label_username'] = 'Username:';
@@ -92,5 +92,5 @@ $_LANG['label_password'] = 'Password:';
 $_LANG['label_captcha'] = 'Verification Code:';
 $_LANG['click_for_another'] = 'Invisibility? Replace an image.';
 $_LANG['signin_now'] = 'Enter';
-$_LANG['remember'] = 'Remember my login information.';
+$_LANG['remember'] = 'Ghi nhớ thông tin đăng nhập.';
 ?>

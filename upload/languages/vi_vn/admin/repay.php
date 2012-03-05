@@ -19,7 +19,7 @@ $_LANG['back_list'] = 'Return to list';
 $_LANG['dispose_succed'] = 'Successfully';
 
 $_LANG['rec_id'] = 'ID';
-$_LANG['user_name'] = 'Username';
+$_LANG['user_name'] = 'Tài khoản';
 $_LANG['amount'] = 'Refundment';
 $_LANG['apply_time'] = 'Apply time';
 $_LANG['action_user'] = 'Action user';

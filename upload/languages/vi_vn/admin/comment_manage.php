@@ -15,11 +15,11 @@
  * $Id: comment_manage.php 17217 2011-01-19 06:29:08Z liubo $
 */
 $_LANG['comment_id'] = 'ID';
-$_LANG['user_name'] = 'Username';
+$_LANG['user_name'] = 'Tài khoản';
 $_LANG['from'] = 'sent comment at ';
 $_LANG['to'] = 'about';
 $_LANG['send_comment'] = '';
-$_LANG['user_name'] = 'Username';
+$_LANG['user_name'] = 'Tài khoản';
 $_LANG['email'] = 'Email';
 $_LANG['anonymous'] = 'Anonymous';
 $_LANG['remail'] = 'Re-issued e-mail';
