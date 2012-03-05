@@ -102,7 +102,7 @@ $_LANG['bonus_sn_notic'] = 'TIP: Bonus NO. is composed of 6 bits serial number s
 $_LANG['creat_bonus'] = 'Created';
 $_LANG['creat_bonus_num'] = 'Bonus NO.';
 $_LANG['bonus_sn_error'] = 'Bonus NO. must be a figure!';
-$_LANG['send_user_notice'] = 'Please enter username when you provide bonus for user , many usres were divided by (,) <br /> such as:liry, wjz, zwj';
+$_LANG['send_user_notice'] = 'Vui lòng nhập tên tài khoản khi bạn tặng quà cho người dùng , phân tách tên tài khoản bằng dấu (,) <br /> ví dụ:liry, wjz, zwj';
 
 /* Bonus information field */
 $_LANG['bonus_id'] = 'ID';
@@ -127,7 +127,7 @@ $_LANG['keywords'] ='Keywords: ';
 $_LANG['userlist'] ='User list: ';
 $_LANG['search_users'] ='Search user';
 $_LANG['confirm_send_bonus'] ='Submit';
-$_LANG['bonus_not_exist'] = 'The bonus is nonexistent.';
+$_LANG['bonus_not_exist'] = 'Quà tặng này không tồn tại.';
 $_LANG['success_send_mail'] = 'Send %d mails successfully.';
 $_LANG['send_continue'] = 'Continue to send bonus.';
 $_LANG['send_to_user'] = 'Disseminate the red envelope to the following users.';

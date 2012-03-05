@@ -15,7 +15,7 @@ $_LANG['valid_order'] = 'Order';
 $_LANG['valid_goods'] = 'Order product';
 $_LANG['current_price'] = 'Giá hiện tại';
 $_LANG['current_status'] = 'Trạng thái';
-$_LANG['view_order'] = 'View order';
+$_LANG['view_order'] = 'Xem đơn hàng';
 
 /* Add/Edit associates page */
 $_LANG['goods_cat'] = 'Danh mục';

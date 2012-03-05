@@ -83,7 +83,7 @@ $_LANG['log_action']['fckfile'] = 'FCK file';
 
 $_LANG['log_action']['db_backup'] = 'Database Backup';
 
-$_LANG['log_action']['package'] = 'Preferential Packeage';
+$_LANG['log_action']['package'] = 'Gói ưu đãi';
 
 $_LANG['log_action']['exchange_goods'] = 'Integral convertible goods';
 

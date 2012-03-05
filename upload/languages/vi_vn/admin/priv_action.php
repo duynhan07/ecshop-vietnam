@@ -121,7 +121,7 @@ $_LANG['auction'] = 'Auctions';
 $_LANG['group_by'] = 'group_buy activities';
 $_LANG['favourable'] = 'Concessions activities';
 $_LANG['whole_sale'] = 'Whole sale management';
-$_LANG['package_manage'] = 'Preferential Packeage';
+$_LANG['package_manage'] = 'Gói ưu đãi';
 $_LANG['exchange_goods'] = 'Integral Mall Goods';
 
 //Email management

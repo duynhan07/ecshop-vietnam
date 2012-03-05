@@ -22,7 +22,7 @@ $_LANG['email'] = 'Email';
 $_LANG['password'] = 'Password';
 $_LANG['domain'] = 'Domain';
 $_LANG['error_tips'] = 'Set in the shop - "SMS settings, first register and properly configure the SMS messaging service!';
-$_LANG['register_new'] = 'Register';
+$_LANG['register_new'] = 'Đăng ký';
 $_LANG['enable_old'] = 'Enable account';
 
 /* Sms special service message */
@@ -129,8 +129,8 @@ $_LANG['server_errors'][10] = 'error cant store.';//ERROR_CANT_STORE
 
 /* Client JS language item */
 //--Register or  invocation
-$_LANG['js_languages']['password_empty_error'] = 'Please enter password.';
-$_LANG['js_languages']['username_empty_error'] = 'Please enter username.';
+$_LANG['js_languages']['password_empty_error'] = 'Vui lòng nhập mật khẩu.';
+$_LANG['js_languages']['username_empty_error'] = 'Vui lòng nhập tên tài khoản.';
 $_LANG['js_languages']['username_format_error'] = 'Username format is invalid.';
 $_LANG['js_languages']['domain_empty_error'] = 'Domain can\'t be blank.';
 $_LANG['js_languages']['domain_format_error'] = 'Domain format is invalid.';

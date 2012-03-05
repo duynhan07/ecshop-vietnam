@@ -23,12 +23,12 @@ $_LANG['confirm_admin_pwd'] = 'Administrator verify password';
 $_LANG['get_newpassword'] = 'Administrator password repossess';
 $_LANG['click_button'] = 'OK';
 $_LANG['reset_button'] = 'Reset';
-$_LANG['admin_login'] = 'Login';
+$_LANG['admin_login'] = 'Đăng nhập';
 
 $_LANG['login_now'] = 'Login now';
 
 /* Prompting message */
-$_LANG['js_languages']['user_name_empty'] = 'Please enter username!';
+$_LANG['js_languages']['user_name_empty'] = 'Vui lòng nhập tên tài khoản!';
 $_LANG['js_languages']['email_empty'] = 'Địa chỉ email không được để trống!';
 $_LANG['js_languages']['email_error'] = 'Định dạng email không đúng!';
 $_LANG['js_languages']['admin_pwd_empty'] = 'Please enter administrator new password!';
