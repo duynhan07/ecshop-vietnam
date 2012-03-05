@@ -63,8 +63,8 @@ $_LANG['select_payment_pls'] = 'Select payment mode';
 //JS语言项
 $_LANG['account_js']['surplus_amount_empty'] = 'Please enter a money amount!';
 $_LANG['account_js']['surplus_amount_error'] = 'Please enter a valid amount!';
-$_LANG['account_js']['process_desc'] = 'Please enter remarks!';
-$_LANG['account_js']['payment_empty'] = 'Please select a payment method!';
+$_LANG['account_js']['process_desc'] = 'Vui lòng nhập nội dung ghi chú!';
+$_LANG['account_js']['payment_empty'] = 'Vui lòng chọn hình thức thanh toán!';
 
 /* 缺货登记 */
 $_LANG['oos_booking'] = 'Booking records';
@@ -76,60 +76,60 @@ $_LANG['describe'] = 'Mô tả';
 $_LANG['contact_username'] = 'Contact';
 $_LANG['contact_phone'] = 'Phone';
 $_LANG['submit_booking_goods'] = 'Submit';
-$_LANG['booking_success'] = 'Your product order have submitted successfully!';
-$_LANG['booking_rec_exist'] = 'The product you have already booked!';
-$_LANG['back_booking_list'] = 'Return booking records list';
+$_LANG['booking_success'] = 'Đơn hàng đặt mua của bạn đã được gửi đi!';
+$_LANG['booking_rec_exist'] = 'Bạn đã đặt trước sản phẩm này rồi!';
+$_LANG['back_booking_list'] = 'Về danh sách đặt trước';
 $_LANG['not_dispose'] = 'Undisposed';
 $_LANG['no_goods_id'] = 'Please appoint to product ID.';
 
 //JS语言项
-$_LANG['booking_js']['booking_amount_empty'] = 'Please enter a quantity of products!';
-$_LANG['booking_js']['booking_amount_error'] = 'Please enter a valid format of quantity!';
-$_LANG['booking_js']['describe_empty'] = 'Please enter a description of your order!';
-$_LANG['booking_js']['contact_username_empty'] = 'Please enter a username!';
-$_LANG['booking_js']['email_empty'] = 'Please enter a email address!';
-$_LANG['booking_js']['email_error'] = 'Please enter a valid email address!';
-$_LANG['booking_js']['contact_phone_empty'] = 'Please enter a telephone number!';
+$_LANG['booking_js']['booking_amount_empty'] = 'Vui lòng nhập số lượng sản phẩm!';
+$_LANG['booking_js']['booking_amount_error'] = 'Vui lòng nhập đúng số lượng!';
+$_LANG['booking_js']['describe_empty'] = 'Vui lòng nhập mô tả đơn hàng của bạn!';
+$_LANG['booking_js']['contact_username_empty'] = 'Vui lòng nhập tên tài khoản!';
+$_LANG['booking_js']['email_empty'] = 'Vui lòng nhập địa chỉ email!';
+$_LANG['booking_js']['email_error'] = 'Vui lòng nhập địa chỉ email hợp lệ!';
+$_LANG['booking_js']['contact_phone_empty'] = 'Vui lòng nhập số điện thoại!';
 
 /* 个人资料 */
-$_LANG['confirm_submit'] = '　Submit　';
-$_LANG['member_rank'] = 'Member rank';
-$_LANG['member_discount'] = 'Member discount';
+$_LANG['confirm_submit'] = '　Gửi đi　';
+$_LANG['member_rank'] = 'Cấp độ';
+$_LANG['member_discount'] = 'Giảm giá thành viên';
 $_LANG['rank_integral'] = 'Rank points';
 $_LANG['consume_integral'] = 'Consume points';
 $_LANG['account_balance'] = 'Số dư tài khoản';
 $_LANG['user_bonus'] = 'User bonus';
-$_LANG['user_bonus_info'] = 'Total %d, value %s';
+$_LANG['user_bonus_info'] = 'Tổng cộng %d, value %s';
 $_LANG['not_bonus'] = 'No bonus';
 $_LANG['add_user_bonus'] = 'Thêm';
 $_LANG['bonus_number'] = 'Bonus NO.';
 $_LANG['old_password'] = 'Mật khẩu cũ';
 $_LANG['new_password'] = 'Mật khẩu mới';
-$_LANG['confirm_password'] = 'Re-enter password';
+$_LANG['confirm_password'] = 'Nhập lại m.khẩu';
 
 $_LANG['bonus_sn_exist'] = 'The bonus NO. already exists.';
 $_LANG['bonus_sn_not_exist'] = 'The bonus NO. is nonexistent!';
 $_LANG['add_bonus_sucess'] = 'Thực thi thao tác thành công!';
 $_LANG['add_bonus_false'] = 'Failure!';
 
-$_LANG['not_login'] = 'Please login firstly';
-$_LANG['profile_lnk'] = 'View My Profile';
-$_LANG['edit_email_failed'] = 'Edit email address failed.';
-$_LANG['edit_profile_success'] = 'Your profile has edited successfully!';
-$_LANG['edit_profile_failed'] = 'Edit profile failed!';
+$_LANG['not_login'] = 'Bạn chưa đăng nhập,  vui lòng đăng nhập';
+$_LANG['profile_lnk'] = 'Xem hồ sơ của tôi';
+$_LANG['edit_email_failed'] = 'Không thể thay đổi địa chỉ email.';
+$_LANG['edit_profile_success'] = 'Chỉnh sửa hồ sơ thành công!';
+$_LANG['edit_profile_failed'] = 'Có lỗi phát sinh khi sửa hồ sơ!';
 $_LANG['oldpassword_error'] = 'Wrong, please enter a valid primary password!';
 
 //JS语言项
 $_LANG['profile_js']['bonus_sn_empty'] = 'Please enter a bonus NO. that you want to add!';
 $_LANG['profile_js']['bonus_sn_error'] = 'Please enter a valid bonus NO.!';
 
-$_LANG['profile_js']['email_empty'] = 'Please enter your email address!';
-$_LANG['profile_js']['email_error'] = 'Please enter a valid email address!';
+$_LANG['profile_js']['email_empty'] = 'Vui lòng nhập địa chỉ email của bạn!';
+$_LANG['profile_js']['email_error'] = 'Vui lòng nhập địa chỉ email hợp lệ!';
 $_LANG['profile_js']['old_password_empty'] = 'Please enter your primary password.';
 $_LANG['profile_js']['new_password_empty'] = 'Please enter the new password!';
-$_LANG['profile_js']['confirm_password_empty'] = 'Re-enter password !';
+$_LANG['profile_js']['confirm_password_empty'] = 'Nhập lại m.khẩu !';
 $_LANG['profile_js']['both_password_error'] = 'Mật khẩu mà bạn vừa nhập không trùng khớp, hãy nhập lại!';
-$_LANG['profile_js']['msg_blank'] = 'is blank';
+$_LANG['profile_js']['msg_blank'] = 'đang để trống';
 $_LANG['profile_js']['no_select_question'] = '- You do not complete the operation password prompt problem';
 
 /* 支付方式 */
@@ -187,8 +187,8 @@ $_LANG['wrong_passwd_answer'] = 'You entered a wrong answer';
 
 //JS语言项
 $_LANG['password_js']['user_name_empty'] = 'Please enter your username!';
-$_LANG['password_js']['email_address_empty'] = 'Please enter your email address!';
-$_LANG['password_js']['email_address_error'] = 'Please enter a valid email address!';
+$_LANG['password_js']['email_address_empty'] = 'Vui lòng nhập địa chỉ email của bạn!';
+$_LANG['password_js']['email_address_error'] = 'Vui lòng nhập địa chỉ email hợp lệ!';
 $_LANG['password_js']['new_password_empty'] = 'Please enter a new password!';
 $_LANG['password_js']['confirm_password_empty'] = 'Re-enter the password!';
 $_LANG['password_js']['both_password_error'] = 'Mật khẩu mà bạn vừa nhập không trùng khớp, hãy nhập lại!';
@@ -231,32 +231,32 @@ $_LANG['confirm_remove_msg'] = 'Are you sure delete those messages?';
 $_LANG['bonus_is_used'] = 'The bonus has used.';
 $_LANG['bonus_is_used_by_other'] = 'The bonus has used by others.';
 $_LANG['bonus_add_success'] = 'Add a new bonus successfully.';
-$_LANG['bonus_not_exist'] = 'The bonus is nonexistent.';
+$_LANG['bonus_not_exist'] = 'Quà tặng này không tồn tại.';
 $_LANG['user_bonus_empty'] = 'Hiện bạn không có quà tặng nào';
 $_LANG['add_bonus_sucess'] = 'Add new bonus operate successfully!';
 $_LANG['add_bonus_false'] = 'Add new bonus operate failure!';
-$_LANG['bonus_add_expire'] = 'Bonus expired!';
-$_LANG['bonus_use_expire'] = 'Bonus expired!';
+$_LANG['bonus_add_expire'] = 'Quà tặng đã hết hạn!';
+$_LANG['bonus_use_expire'] = 'Quà tặng đã hết hạn!';
 
 /* 会员订单 */
-$_LANG['order_list_lnk'] = 'My order list';
+$_LANG['order_list_lnk'] = 'Đơn hàng của tôi';
 $_LANG['order_number'] = 'NO.';
 $_LANG['order_addtime'] = 'Thời gian';
-$_LANG['order_money'] = 'Total';
+$_LANG['order_money'] = 'Tổng cộng';
 $_LANG['order_status'] = 'Trạng thái';
 $_LANG['first_order'] = 'Đơn hàng đầu';
 $_LANG['second_order'] = 'Đơn hàng thứ hai';
 $_LANG['merge_order'] = 'Cộng gộp đơn hàng';
-$_LANG['no_priv'] = 'You have no authorization to operate others\' order.';
+$_LANG['no_priv'] = 'Bạn không có quyền thao tác với đơn hàng của người khác.';
 $_LANG['buyer_cancel'] = 'Buyer cancel';
-$_LANG['cancel'] = 'Cancel order';
+$_LANG['cancel'] = 'Hủy đơn hàng';
 $_LANG['pay_money'] = 'Payment';
-$_LANG['view_order'] = 'View order';
+$_LANG['view_order'] = 'Xem đơn hàng';
 $_LANG['received'] = 'Đã nhận hàng';
 $_LANG['ss_received'] = 'Đã nhận hàng';
 $_LANG['confirm_cancel'] = 'Are you sure cancel this order? After canceled this order will be invalid.';
-$_LANG['merge_ok'] = 'Combine orders successfully!';
-$_LANG['merge_invalid_order'] = 'Sorry, the orders can\'t be combined.';
+$_LANG['merge_ok'] = 'Cộng gộp đơn hàng thành công!';
+$_LANG['merge_invalid_order'] = 'Xin lỗi, đơn hàng này không thể cộng gộp.';
 $_LANG['select'] = 'Select...';
 $_LANG['order_not_pay'] = "Your order status is %s, so you don\'t payment.";
 $_LANG['order_sn_empty'] = 'Please enter NO. of combined main order';
@@ -299,7 +299,7 @@ $_LANG['current_ps_not_cancel'] = 'You can\'t cancel the order until non-payment
 $_LANG['confirm_received'] = 'Are you sure you have received the products?';
 
 /* 合并订单及订单详情 */
-$_LANG['merge_order_success'] = 'Combine orders successfully!';
+$_LANG['merge_order_success'] = 'Cộng gộp đơn hàng thành công!';
 $_LANG['merge_order_failed']  = 'Combine orders has failed! Please type it again!';
 $_LANG['order_sn_not_null'] = 'Please enter orders NO. that you want to combine.';
 $_LANG['two_order_sn_same'] = 'The two NO. that you want to combine must be different.';
@@ -366,7 +366,7 @@ $_LANG['back_retry_answer'] = 'back and retry';
 $_LANG['label_username'] = 'Tài khoản';
 $_LANG['label_email'] = 'Email';
 $_LANG['label_password'] = 'Password';
-$_LANG['label_confirm_password'] = 'Re-enter password';
+$_LANG['label_confirm_password'] = 'Nhập lại m.khẩu';
 $_LANG['label_password_intensity'] = 'Password intensity';
 $_LANG['want_login'] = 'I have a username, and I will login.';
 $_LANG['other_msn'] = 'MSN';
@@ -380,7 +380,7 @@ $_LANG['msg_un_blank'] = 'Username is blank';
 $_LANG['msg_un_length'] = 'Username cannot exceed 7 Chinese charaters';
 $_LANG['msg_un_format'] = 'Username has invalid charater';
 $_LANG['msg_un_registered'] = 'Username exists, please register again';
-$_LANG['msg_can_rg'] = 'Register';
+$_LANG['msg_can_rg'] = 'Đăng ký';
 $_LANG['msg_email_blank'] = 'Email address is blank';
 $_LANG['msg_email_registered'] = 'Email exists, please enter again';
 $_LANG['msg_email_format'] = 'Email address is unvalid';
@@ -462,10 +462,10 @@ $_LANG['no_tag'] = 'No tag';
 $_LANG['confirm_drop_tag'] = 'Are you sure delete the tag?';
 
 /* user_passport.dwt js语言文件 */
-$_LANG['passport_js']['username_empty'] = '- Please enter username.';
+$_LANG['passport_js']['username_empty'] = '- Vui lòng nhập tên tài khoản.';
 $_LANG['passport_js']['username_shorter'] = '- Username length can\'t less than 3 characters.';
 $_LANG['passport_js']['username_invalid'] = '- Username only can be composed of letters, figure and underline.';
-$_LANG['passport_js']['password_empty'] = '- Please enter password.';
+$_LANG['passport_js']['password_empty'] = '- Vui lòng nhập mật khẩu.';
 $_LANG['passport_js']['password_shorter'] = '- Password can\'t less than 6 characters.';
 $_LANG['passport_js']['confirm_password_invalid'] = '- The two passwords you entered did not match.';
 $_LANG['passport_js']['email_empty'] = '- Email can\'t be blank.';

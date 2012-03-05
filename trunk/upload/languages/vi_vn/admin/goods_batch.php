@@ -29,7 +29,7 @@ $_LANG['edit_each'] ='One by one';
 $_LANG['edit_all'] ='Unify';
 $_LANG['go_edit'] ='Enter';
 
-$_LANG['notice_edit'] = 'Member price -1 express Member price will be calculated in proportion to Member discounts grading';
+$_LANG['notice_edit'] = 'Member price -1 express Member price will be calculated in proportion to member discounts grading';
 
 $_LANG['goods_class'] = 'Goods Class';
 $_LANG['g_class'][G_REAL] = 'Real Goods';

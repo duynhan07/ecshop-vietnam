@@ -61,7 +61,7 @@ $_LANG['sales_statistics']= 'Sales statistics';
 $_LANG['down_sales_stats']= 'Download sales status report';
 
 /* Orders\' statistics */
-$_LANG['overall_sum'] = 'Total';
+$_LANG['overall_sum'] = 'Tổng cộng';
 $_LANG['overall_choose'] = ', Clicks sum';
 $_LANG['kilo_buy_amount'] = ', Orders quantity every 1000 clicks.';
 $_LANG['kilo_buy_sum'] = ', Shopping quantum every 1000 clicks.';
@@ -111,7 +111,7 @@ $_LANG['order_all_turnover'] = 'Total turnover';
 $_LANG['down_guest_stats']= 'Customers download statistics';
 $_LANG['guest_statistics']= 'Client statistics';
 
-/* Member ranking */
+/* Cấp độing */
 $_LANG['show_num'] = 'Display';
 $_LANG['member_name'] = 'Tài khoản';
 $_LANG['order_amount'] = 'Order quantity(unit:unit)';

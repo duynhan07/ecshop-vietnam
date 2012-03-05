@@ -55,12 +55,12 @@ $_LANG['back_list'] = 'Return to saving and drawing.';
 $_LANG['continue_add'] = 'Continue add application.';
 
 /* JS language item */
-$_LANG['js_languages']['user_id_empty'] = 'Please enter a username!';
+$_LANG['js_languages']['user_id_empty'] = 'Vui lòng nhập tên tài khoản!';
 $_LANG['js_languages']['deposit_amount_empty'] = 'Please enter saving amount!';
 $_LANG['js_languages']['pay_code_empty'] = 'Please select a payment mothod!';
 $_LANG['js_languages']['deposit_amount_error'] = 'Please enter a valid format of amount!';
 $_LANG['js_languages']['deposit_type_empty'] = 'Please select a type!';
-$_LANG['js_languages']['deposit_notic_empty'] = 'Please enter remarks!';
+$_LANG['js_languages']['deposit_notic_empty'] = 'Vui lòng nhập nội dung ghi chú!';
 $_LANG['js_languages']['deposit_desc_empty'] = 'Please enter description of users!';
 
 ?>

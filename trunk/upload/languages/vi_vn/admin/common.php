@@ -188,8 +188,8 @@ $_LANG['10_auction'] = 'Auction';
 $_LANG['12_favourable'] = 'Favourable Activity';
 $_LANG['13_wholesale'] = 'Wholesale';
 $_LANG['ebao_commend'] = 'Ebao commend';
-$_LANG['14_package_list'] = 'Preferential Packeage';
-$_LANG['package_add'] = 'Add Preferential Packeage';
+$_LANG['14_package_list'] = 'Gói ưu đãi';
+$_LANG['package_add'] = 'Thêm gói ưu đãi';
 
 /* Orders management */
 $_LANG['02_order_list'] = 'Danh sách đơn hàng';

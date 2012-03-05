@@ -55,7 +55,7 @@ $_LANG['edit_pwd'] = 'Đổi mật khẩu';
 $_LANG['back_admin_list'] = 'Return to role list.';
 
 /* Prompting message */
-$_LANG['js_languages']['user_name_empty'] = 'Please enter username!';
+$_LANG['js_languages']['user_name_empty'] = 'Vui lòng nhập tên tài khoản!';
 $_LANG['js_languages']['password_invaild'] = 'Mật khẩu phải bao gồm cả chữ và số, phải có ít nhất 6 ký tự!';
 $_LANG['js_languages']['email_empty'] = 'Địa chỉ email không được để trống!';
 $_LANG['js_languages']['email_error'] = 'Định dạng email không đúng!';

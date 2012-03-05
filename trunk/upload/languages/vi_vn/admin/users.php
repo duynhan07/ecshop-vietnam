@@ -30,7 +30,7 @@ $_LANG['reg_date'] = 'Register date';
 $_LANG['button_remove'] = 'Xóa';
 $_LANG['users_edit'] = 'Sửa';
 $_LANG['goto_list'] = 'Return list';
-$_LANG['username_empty'] = 'Please enter a username!';
+$_LANG['username_empty'] = 'Vui lòng nhập tên tài khoản!';
 
 /* List relative language item */
 $_LANG['password'] = 'Password';
@@ -108,7 +108,7 @@ $_LANG['best_time'] = 'The best delivery time';
 $_LANG['sign_building'] = 'Building signs';
 
 /* JS language item */
-$_LANG['js_languages']['no_username'] = 'Please enter a username.';
+$_LANG['js_languages']['no_username'] = 'Vui lòng nhập tên tài khoản.';
 $_LANG['js_languages']['invalid_email'] = 'Please enter a valid eamil address.';
 $_LANG['js_languages']['no_password'] = 'Please enter your password.';
 $_LANG['js_languages']['less_password'] = 'The password entered can`t less than six.';

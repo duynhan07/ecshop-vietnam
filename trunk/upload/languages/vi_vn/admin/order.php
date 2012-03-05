@@ -261,7 +261,7 @@ $_LANG['edit_template_success']='Edit order print template operation successfull
 $_LANG['remark_fittings'] ='(Accessories)';
 $_LANG['remark_gift'] ='(Gift)';
 $_LANG['remark_favourable'] = '(Preferential products)';
-$_LANG['remark_package'] = '（Preferential Packeage）';
+$_LANG['remark_package'] = '(Gói ưu đãi)';
 
 /* The order source statistics*/
 $_LANG['from_order'] ='Nguồn đơn hàng:';
@@ -342,7 +342,7 @@ $_LANG['js_languages']['pls_select_shipping']='Please select shipping method.';
 $_LANG['js_languages']['pls_select_payment'] ='Please select payment method.';
 $_LANG['js_languages']['pls_select_pack'] ='Please select packing.';
 $_LANG['js_languages']['pls_select_card'] ='Please select card.';
-$_LANG['js_languages']['pls_input_note'] = 'Please enter remarks.';
+$_LANG['js_languages']['pls_input_note'] = 'Vui lòng nhập nội dung ghi chú.';
 $_LANG['js_languages']['pls_input_cancel'] = 'Please fill out the cancellation of the reasons!';
 $_LANG['js_languages']['pls_select_refund'] = 'Please select refundment method.';
 $_LANG['js_languages']['pls_select_agency'] = 'Please select an agency.';
