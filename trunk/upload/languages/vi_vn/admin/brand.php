@@ -40,7 +40,7 @@ $_LANG['brandadd_succed'] = 'Add new brand successsfully!';
 $_LANG['brandedit_succed'] = 'Edit brand %s successfully!';
 $_LANG['brandname_exist'] = '%s already exists.';
 $_LANG['drop_confirm'] = 'Are you sure delete this brand?';
-$_LANG['drop_succeed'] = 'Delete successfully!';
+$_LANG['drop_succeed'] = 'Đã xóa thành công!';
 $_LANG['drop_fail'] = 'Delete has failed!';
 
 $_LANG['no_brandname'] = 'Please enter a brand name!';

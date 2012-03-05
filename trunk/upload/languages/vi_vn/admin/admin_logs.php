@@ -39,7 +39,7 @@ $_LANG['back_list'] = 'Return to logs list.';
 $_LANG['js_languages']['select_date_value'] = 'If you will delete the log, please select date of deletion.';
 
 /* Prompting message */
-$_LANG['drop_sueeccud'] = 'Successfully!';
+$_LANG['drop_sueeccud'] = 'Thực thi thao tác thành công!';
 $_LANG['batch_drop_success'] = 'Delete %d records successfully.';
 
 ?>

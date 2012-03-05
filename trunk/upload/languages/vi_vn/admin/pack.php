@@ -41,7 +41,7 @@ $_LANG['packname_exist'] ='Packing name %s has existed.';
 $_LANG['packadd_succed'] ='Add successfully';
 $_LANG['packedit_succed'] ='Edit packing %s successfully.';
 $_LANG['packedit_falure'] ='Edit packing %s has failed.';
-$_LANG['packremove_falure'] ='Delete successfully!';
+$_LANG['packremove_falure'] ='Đã xóa thành công!';
 $_LANG['enter_num'] ='Please enter a figure!';
 $_LANG['no_packname'] ='Your entered packing name is blank!';
 

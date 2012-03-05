@@ -20,7 +20,7 @@ $_LANG['list_all'] = 'View all messages';
 $_LANG['msg_id'] = 'ID';
 $_LANG['msg_time'] = 'Thời gian';
 $_LANG['msg_content'] = 'Contents';
-$_LANG['user_name'] = 'Username';
+$_LANG['user_name'] = 'Tài khoản';
 $_LANG['msg_type'] = 'Type';
 $_LANG['msg_status'] = 'Trạng thái';
 $_LANG['hidden'] = 'Hide';
@@ -49,7 +49,7 @@ $_LANG['have_reply_content'] = 'TIP: The message have replied, if you continue, 
 $_LANG['edit_reply'] = 'Sửa';
 
 $_LANG['reply_content'] = 'Reply content';
-$_LANG['email'] = 'email';
+$_LANG['email'] = 'Email';
 
 $_LANG['batch_drop_success'] = 'Command successfully!';
 

@@ -33,7 +33,7 @@ $_LANG['all_amdin'] = 'All administrators';
 $_LANG['msg_list'] = 'Message list';
 $_LANG['no_read'] = 'Not read';
 $_LANG['next_list'] = 'Next';
-$_LANG['action_succeed'] = 'Successfully!';
+$_LANG['action_succeed'] = 'Thực thi thao tác thành công!';
 
 $_LANG['back_list'] = 'Return to message list.';
 $_LANG['continue_send_msg'] = 'Continue send message.';

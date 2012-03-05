@@ -67,7 +67,7 @@ class ecshop extends integrate
         $this->ec_salt = 'ec_salt';
         $this->field_name = 'user_name';
         $this->field_pass = 'password';
-        $this->field_email = 'email';
+        $this->field_email = 'Email';
         $this->field_gender = 'sex';
         $this->field_bday = 'birthday';
         $this->field_reg_date = 'reg_time';
