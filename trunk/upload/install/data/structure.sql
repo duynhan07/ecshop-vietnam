@@ -1,7 +1,7 @@
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_ad`
+-- Bảng dữ liệu `ecs_ad`
 --
 
 DROP TABLE IF EXISTS `ecs_ad`;
@@ -27,7 +27,7 @@ CREATE TABLE `ecs_ad` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_ad_position`
+-- Bảng dữ liệu `ecs_ad_position`
 --
 
 DROP TABLE IF EXISTS `ecs_ad_position`;
@@ -44,7 +44,7 @@ CREATE TABLE `ecs_ad_position` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_admin_action`
+-- Bảng dữ liệu `ecs_admin_action`
 --
 
 DROP TABLE IF EXISTS `ecs_admin_action`;
@@ -60,7 +60,7 @@ CREATE TABLE `ecs_admin_action` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_admin_log`
+-- Bảng dữ liệu `ecs_admin_log`
 --
 
 DROP TABLE IF EXISTS `ecs_admin_log`;
@@ -78,7 +78,7 @@ CREATE TABLE `ecs_admin_log` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_admin_message`
+-- Bảng dữ liệu `ecs_admin_message`
 --
 
 DROP TABLE IF EXISTS `ecs_admin_message`;
@@ -100,7 +100,7 @@ CREATE TABLE `ecs_admin_message` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_admin_user`
+-- Bảng dữ liệu `ecs_admin_user`
 --
 
 DROP TABLE IF EXISTS `ecs_admin_user`;
@@ -128,7 +128,7 @@ CREATE TABLE `ecs_admin_user` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_adsense`
+-- Bảng dữ liệu `ecs_adsense`
 --
 
 DROP TABLE IF EXISTS `ecs_adsense`;
@@ -142,7 +142,7 @@ CREATE TABLE `ecs_adsense` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_area_region`
+-- Bảng dữ liệu `ecs_area_region`
 --
 
 DROP TABLE IF EXISTS `ecs_area_region`;
@@ -155,7 +155,7 @@ CREATE TABLE `ecs_area_region` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_article`
+-- Bảng dữ liệu `ecs_article`
 --
 
 DROP TABLE IF EXISTS `ecs_article`;
@@ -181,7 +181,7 @@ CREATE TABLE `ecs_article` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_article_cat`
+-- Bảng dữ liệu `ecs_article_cat`
 --
 
 DROP TABLE IF EXISTS `ecs_article_cat`;
@@ -203,7 +203,7 @@ CREATE TABLE `ecs_article_cat` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_attribute`
+-- Bảng dữ liệu `ecs_attribute`
 --
 
 DROP TABLE IF EXISTS `ecs_attribute`;
@@ -225,7 +225,7 @@ CREATE TABLE `ecs_attribute` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_bonus_type`
+-- Bảng dữ liệu `ecs_bonus_type`
 --
 
 DROP TABLE IF EXISTS `ecs_bonus_type`;
@@ -247,7 +247,7 @@ CREATE TABLE `ecs_bonus_type` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_booking_goods`
+-- Bảng dữ liệu `ecs_booking_goods`
 --
 
 DROP TABLE IF EXISTS `ecs_booking_goods`;
@@ -272,7 +272,7 @@ CREATE TABLE `ecs_booking_goods` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_brand`
+-- Bảng dữ liệu `ecs_brand`
 --
 
 DROP TABLE IF EXISTS `ecs_brand`;
@@ -291,7 +291,7 @@ CREATE TABLE `ecs_brand` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_card`
+-- Bảng dữ liệu `ecs_card`
 --
 
 DROP TABLE IF EXISTS `ecs_card`;
@@ -308,7 +308,7 @@ CREATE TABLE `ecs_card` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_cart`
+-- Bảng dữ liệu `ecs_cart`
 --
 
 DROP TABLE IF EXISTS `ecs_cart`;
@@ -339,7 +339,7 @@ CREATE TABLE `ecs_cart` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_category`
+-- Bảng dữ liệu `ecs_category`
 --
 
 DROP TABLE IF EXISTS `ecs_category`;
@@ -364,7 +364,7 @@ CREATE TABLE `ecs_category` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_collect_goods`
+-- Bảng dữ liệu `ecs_collect_goods`
 --
 
 DROP TABLE IF EXISTS `ecs_collect_goods`;
@@ -383,7 +383,7 @@ CREATE TABLE `ecs_collect_goods` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_comment`
+-- Bảng dữ liệu `ecs_comment`
 --
 
 DROP TABLE IF EXISTS `ecs_comment`;
@@ -408,7 +408,7 @@ CREATE TABLE `ecs_comment` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_crons`
+-- Bảng dữ liệu `ecs_crons`
 --
 
 DROP TABLE IF EXISTS `ecs_crons`;
@@ -438,7 +438,7 @@ CREATE TABLE `ecs_crons` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_error_log`
+-- Bảng dữ liệu `ecs_error_log`
 --
 
 DROP TABLE IF EXISTS `ecs_error_log`;
@@ -454,7 +454,7 @@ CREATE TABLE `ecs_error_log` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_feedback`
+-- Bảng dữ liệu `ecs_feedback`
 --
 
 DROP TABLE IF EXISTS `ecs_feedback`;
@@ -479,7 +479,7 @@ CREATE TABLE `ecs_feedback` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_friend_link`
+-- Bảng dữ liệu `ecs_friend_link`
 --
 
 DROP TABLE IF EXISTS `ecs_friend_link`;
@@ -496,7 +496,7 @@ CREATE TABLE `ecs_friend_link` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_goods`
+-- Bảng dữ liệu `ecs_goods`
 --
 
 DROP TABLE IF EXISTS `ecs_goods`;
@@ -559,7 +559,7 @@ CREATE TABLE `ecs_goods` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_goods_article`
+-- Bảng dữ liệu `ecs_goods_article`
 --
 
 DROP TABLE IF EXISTS `ecs_goods_article`;
@@ -573,7 +573,7 @@ CREATE TABLE `ecs_goods_article` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_goods_attr`
+-- Bảng dữ liệu `ecs_goods_attr`
 --
 
 DROP TABLE IF EXISTS `ecs_goods_attr`;
@@ -591,7 +591,7 @@ CREATE TABLE `ecs_goods_attr` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_goods_cat`
+-- Bảng dữ liệu `ecs_goods_cat`
 --
 
 DROP TABLE IF EXISTS `ecs_goods_cat`;
@@ -604,7 +604,7 @@ CREATE TABLE `ecs_goods_cat` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_goods_gallery`
+-- Bảng dữ liệu `ecs_goods_gallery`
 --
 
 DROP TABLE IF EXISTS `ecs_goods_gallery`;
@@ -622,7 +622,7 @@ CREATE TABLE `ecs_goods_gallery` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_goods_type`
+-- Bảng dữ liệu `ecs_goods_type`
 --
 
 DROP TABLE IF EXISTS `ecs_goods_type`;
@@ -637,7 +637,7 @@ CREATE TABLE `ecs_goods_type` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_group_goods`
+-- Bảng dữ liệu `ecs_group_goods`
 --
 
 DROP TABLE IF EXISTS `ecs_group_goods`;
@@ -652,7 +652,7 @@ CREATE TABLE `ecs_group_goods` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_link_goods`
+-- Bảng dữ liệu `ecs_link_goods`
 --
 
 DROP TABLE IF EXISTS `ecs_link_goods`;
@@ -667,7 +667,7 @@ CREATE TABLE `ecs_link_goods` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_mail_templates`
+-- Bảng dữ liệu `ecs_mail_templates`
 --
 
 DROP TABLE IF EXISTS `ecs_mail_templates`;
@@ -688,7 +688,7 @@ CREATE TABLE `ecs_mail_templates` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_member_price`
+-- Bảng dữ liệu `ecs_member_price`
 --
 
 DROP TABLE IF EXISTS `ecs_member_price`;
@@ -704,7 +704,7 @@ CREATE TABLE `ecs_member_price` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_keywords`
+-- Bảng dữ liệu `ecs_keywords`
 --
 
 DROP TABLE IF EXISTS `ecs_keywords`;
@@ -719,7 +719,7 @@ CREATE TABLE `ecs_keywords` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_order_action`
+-- Bảng dữ liệu `ecs_order_action`
 --
 
 DROP TABLE IF EXISTS `ecs_order_action`;
@@ -740,7 +740,7 @@ CREATE TABLE `ecs_order_action` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_order_goods`
+-- Bảng dữ liệu `ecs_order_goods`
 --
 
 DROP TABLE IF EXISTS `ecs_order_goods`;
@@ -769,7 +769,7 @@ CREATE TABLE `ecs_order_goods` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_order_info`
+-- Bảng dữ liệu `ecs_order_info`
 --
 
 DROP TABLE IF EXISTS `ecs_order_info`;
@@ -851,7 +851,7 @@ CREATE TABLE `ecs_order_info` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_pack`
+-- Bảng dữ liệu `ecs_pack`
 --
 
 DROP TABLE IF EXISTS `ecs_pack`;
@@ -868,7 +868,7 @@ CREATE TABLE `ecs_pack` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_payment`
+-- Bảng dữ liệu `ecs_payment`
 --
 
 DROP TABLE IF EXISTS `ecs_payment`;
@@ -889,7 +889,7 @@ CREATE TABLE `ecs_payment` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_plugins`
+-- Bảng dữ liệu `ecs_plugins`
 --
 
 DROP TABLE IF EXISTS `ecs_plugins`;
@@ -905,7 +905,7 @@ CREATE TABLE `ecs_plugins` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_region`
+-- Bảng dữ liệu `ecs_region`
 --
 
 DROP TABLE IF EXISTS `ecs_region`;
@@ -924,7 +924,7 @@ CREATE TABLE `ecs_region` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_reg_extend_info`
+-- Bảng dữ liệu `ecs_reg_extend_info`
 --
 
 DROP TABLE IF EXISTS `ecs_reg_extend_info`;
@@ -939,7 +939,7 @@ CREATE TABLE `ecs_reg_extend_info` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_reg_fields`
+-- Bảng dữ liệu `ecs_reg_fields`
 --
 
 DROP TABLE IF EXISTS `ecs_reg_fields`;
@@ -956,7 +956,7 @@ CREATE TABLE `ecs_reg_fields` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_searchengine`
+-- Bảng dữ liệu `ecs_searchengine`
 --
 
 DROP TABLE IF EXISTS `ecs_searchengine`;
@@ -970,7 +970,7 @@ CREATE TABLE `ecs_searchengine` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_sessions`
+-- Bảng dữ liệu `ecs_sessions`
 --
 
 DROP TABLE IF EXISTS `ecs_sessions`;
@@ -993,7 +993,7 @@ CREATE TABLE `ecs_sessions` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_sessions_data`
+-- Bảng dữ liệu `ecs_sessions_data`
 --
 
 DROP TABLE IF EXISTS `ecs_sessions_data`;
@@ -1008,7 +1008,7 @@ CREATE TABLE `ecs_sessions_data` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_shipping`
+-- Bảng dữ liệu `ecs_shipping`
 --
 
 DROP TABLE IF EXISTS `ecs_shipping`;
@@ -1032,7 +1032,7 @@ CREATE TABLE `ecs_shipping` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_shipping_area`
+-- Bảng dữ liệu `ecs_shipping_area`
 --
 
 DROP TABLE IF EXISTS `ecs_shipping_area`;
@@ -1048,7 +1048,7 @@ CREATE TABLE `ecs_shipping_area` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_shop_config`
+-- Bảng dữ liệu `ecs_shop_config`
 --
 
 DROP TABLE IF EXISTS `ecs_shop_config`;
@@ -1069,7 +1069,7 @@ CREATE TABLE `ecs_shop_config` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_snatch_log`
+-- Bảng dữ liệu `ecs_snatch_log`
 --
 
 DROP TABLE IF EXISTS `ecs_snatch_log`;
@@ -1086,7 +1086,7 @@ CREATE TABLE `ecs_snatch_log` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_stats`
+-- Bảng dữ liệu `ecs_stats`
 --
 
 DROP TABLE IF EXISTS `ecs_stats`;
@@ -1107,7 +1107,7 @@ CREATE TABLE `ecs_stats` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_tag`
+-- Bảng dữ liệu `ecs_tag`
 --
 
 DROP TABLE IF EXISTS `ecs_tag`;
@@ -1124,7 +1124,7 @@ CREATE TABLE `ecs_tag` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_template`
+-- Bảng dữ liệu `ecs_template`
 --
 
 DROP TABLE IF EXISTS `ecs_template`;
@@ -1146,7 +1146,7 @@ CREATE TABLE `ecs_template` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_user_address`
+-- Bảng dữ liệu `ecs_user_address`
 --
 
 DROP TABLE IF EXISTS `ecs_user_address`;
@@ -1173,7 +1173,7 @@ CREATE TABLE `ecs_user_address` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_user_bonus`
+-- Bảng dữ liệu `ecs_user_bonus`
 --
 
 DROP TABLE IF EXISTS `ecs_user_bonus`;
@@ -1191,7 +1191,7 @@ CREATE TABLE `ecs_user_bonus` (
 
 -- ---------------------------------------------------------
 --
--- 表的结构 `ecs_user_feed`
+-- Bảng dữ liệu `ecs_user_feed`
 --
 
 DROP TABLE IF EXISTS `ecs_user_feed`;
@@ -1209,7 +1209,7 @@ CREATE TABLE IF NOT EXISTS `ecs_user_feed` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_user_rank`
+-- Bảng dữ liệu `ecs_user_rank`
 --
 
 DROP TABLE IF EXISTS `ecs_user_rank`;
@@ -1227,7 +1227,7 @@ CREATE TABLE `ecs_user_rank` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_users`
+-- Bảng dữ liệu `ecs_users`
 --
 
 DROP TABLE IF EXISTS `ecs_users`;
@@ -1276,7 +1276,7 @@ CREATE TABLE `ecs_users` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_vote`
+-- Bảng dữ liệu `ecs_vote`
 --
 
 DROP TABLE IF EXISTS `ecs_vote`;
@@ -1293,7 +1293,7 @@ CREATE TABLE `ecs_vote` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_vote_log`
+-- Bảng dữ liệu `ecs_vote_log`
 --
 
 DROP TABLE IF EXISTS `ecs_vote_log`;
@@ -1309,7 +1309,7 @@ CREATE TABLE `ecs_vote_log` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_vote_option`
+-- Bảng dữ liệu `ecs_vote_option`
 --
 
 DROP TABLE IF EXISTS `ecs_vote_option`;
@@ -1325,7 +1325,7 @@ CREATE TABLE `ecs_vote_option` (
 
 -- --------------------------------------------------------
 --
--- 表的结构 `ecs_pay_log`
+-- Bảng dữ liệu `ecs_pay_log`
 --
 DROP TABLE IF EXISTS `ecs_pay_log`;
 CREATE TABLE `ecs_pay_log` (
@@ -1339,7 +1339,7 @@ CREATE TABLE `ecs_pay_log` (
 
 -- --------------------------------------------------------
 --
--- 表的结构 `ecs_user_account`
+-- Bảng dữ liệu `ecs_user_account`
 --
 DROP TABLE IF EXISTS `ecs_user_account`;
 CREATE TABLE `ecs_user_account` (
@@ -1360,7 +1360,7 @@ CREATE TABLE `ecs_user_account` (
 ) TYPE=MyISAM;
 
 --
--- 表的结构 `ecs_agency`
+-- Bảng dữ liệu `ecs_agency`
 --
 DROP TABLE IF EXISTS `ecs_agency`;
 CREATE TABLE `ecs_agency` (
@@ -1374,7 +1374,7 @@ CREATE TABLE `ecs_agency` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_goods_activity`
+-- Bảng dữ liệu `ecs_goods_activity`
 --
 
 DROP TABLE IF EXISTS `ecs_goods_activity`;
@@ -1397,7 +1397,7 @@ CREATE TABLE `ecs_goods_activity` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `account_log`
+-- Bảng dữ liệu `account_log`
 --
 
 DROP TABLE IF EXISTS `ecs_account_log`;
@@ -1418,7 +1418,7 @@ CREATE TABLE `ecs_account_log` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_topic`
+-- Bảng dữ liệu `ecs_topic`
 --
 
 DROP TABLE IF EXISTS `ecs_topic`;
@@ -1443,7 +1443,7 @@ CREATE TABLE `ecs_topic` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_auction_log`
+-- Bảng dữ liệu `ecs_auction_log`
 --
 
 DROP TABLE IF EXISTS `ecs_auction_log`;
@@ -1460,7 +1460,7 @@ CREATE TABLE `ecs_auction_log` (
 -- --------------------------------------------------------
 
 
--- 增加分成信息纪录
+-- Bảng log thống kê thông tin quảng bá sản phẩm
 DROP TABLE IF EXISTS `ecs_affiliate_log`;
 CREATE TABLE  `ecs_affiliate_log` (
  `log_id` MEDIUMINT( 8 ) NOT NULL auto_increment,
@@ -1477,7 +1477,7 @@ PRIMARY KEY ( `log_id` )
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_favourable_activity`
+-- Bảng dữ liệu `ecs_favourable_activity`
 --
 
 DROP TABLE IF EXISTS `ecs_favourable_activity`;
@@ -1502,7 +1502,7 @@ CREATE TABLE `ecs_favourable_activity` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_virtual_card`
+-- Bảng dữ liệu `ecs_virtual_card`
 --
 DROP TABLE IF EXISTS `ecs_virtual_card`;
 CREATE TABLE `ecs_virtual_card` (
@@ -1524,7 +1524,7 @@ CREATE TABLE `ecs_virtual_card` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_wholesale`
+-- Bảng dữ liệu `ecs_wholesale`
 --
 DROP TABLE IF EXISTS `ecs_wholesale`;
 CREATE TABLE IF NOT EXISTS `ecs_wholesale` (
@@ -1541,7 +1541,7 @@ CREATE TABLE IF NOT EXISTS `ecs_wholesale` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `ecs_nav`
+-- Bảng dữ liệu `ecs_nav`
 --
 DROP TABLE IF EXISTS `ecs_nav`;
 CREATE TABLE `ecs_nav` (
@@ -1559,7 +1559,7 @@ CREATE TABLE `ecs_nav` (
   KEY `ifshow` (`ifshow`)
 ) TYPE=MyISAM;
 
--- 增加发送队列表
+-- Danh sách email đã gửi
 DROP TABLE IF EXISTS `ecs_email_sendlist`;
 CREATE TABLE  `ecs_email_sendlist` (
  `id` MEDIUMINT( 8 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
@@ -1571,7 +1571,7 @@ CREATE TABLE  `ecs_email_sendlist` (
  `last_send` INT( 10 ) NOT NULL
 ) TYPE = MYISAM;
 
--- 增加电子杂志订阅表
+-- Bảng danh sách người dùng nhận email thông báo
 DROP TABLE IF EXISTS `ecs_email_list`;
 CREATE TABLE `ecs_email_list` (
   `id` mediumint(8) NOT NULL auto_increment,
@@ -1581,7 +1581,7 @@ CREATE TABLE `ecs_email_list` (
   PRIMARY KEY  (`id`)
 ) TYPE=MyISAM;
 
--- 增加自动处理的表
+-- Bảng danh sách tự động cập nhật sản phẩm, đẩy lên trang home
 DROP TABLE IF EXISTS `ecs_auto_manage`;
 CREATE TABLE `ecs_auto_manage` (
   `item_id` mediumint(8) NOT NULL,
@@ -1591,7 +1591,7 @@ CREATE TABLE `ecs_auto_manage` (
   PRIMARY KEY  (`item_id`,`type`)
 ) TYPE=MyISAM;
 
--- 增加分类首页推荐表
+-- Bảng danh sách danh mục ưu tiên
 DROP TABLE IF EXISTS `ecs_cat_recommend`;
 CREATE TABLE `ecs_cat_recommend` (
   `cat_id` smallint(5) NOT NULL,
@@ -1599,7 +1599,7 @@ CREATE TABLE `ecs_cat_recommend` (
   PRIMARY KEY  (`cat_id`,`recommend_type`)
 ) TYPE=MyISAM;
 
--- 增加商品批量购买优惠价格表
+-- Bảng giá sản phẩm bán theo loạt số lượng đã bán
 DROP TABLE IF EXISTS `ecs_volume_price`;
 CREATE TABLE IF NOT EXISTS `ecs_volume_price` (
   `price_type` tinyint(1) unsigned NOT NULL,
@@ -1609,7 +1609,7 @@ CREATE TABLE IF NOT EXISTS `ecs_volume_price` (
   PRIMARY KEY (`price_type`,`goods_id`,`volume_number`)
 ) TYPE=MyISAM;
 
--- 增加超值礼包商品表
+-- Bảng sản phẩm đóng gói
 DROP TABLE IF EXISTS `ecs_package_goods`;
 CREATE TABLE `ecs_package_goods` (
   `package_id` mediumint( 8 ) unsigned NOT NULL DEFAULT '0',
@@ -1620,7 +1620,7 @@ CREATE TABLE `ecs_package_goods` (
   PRIMARY KEY  (`package_id`,`goods_id`,`admin_id`,`product_id`)
 ) TYPE = MYISAM;
 
--- 增加积分商城商品表
+-- Bảng dữ liệu sản phẩm có thể mua bằng điểm
 DROP TABLE IF EXISTS `ecs_exchange_goods`;
 CREATE TABLE IF NOT EXISTS `ecs_exchange_goods` (
   `goods_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
@@ -1630,7 +1630,7 @@ CREATE TABLE IF NOT EXISTS `ecs_exchange_goods` (
   PRIMARY KEY (`goods_id`)
 ) TYPE=MYISAM;
 
--- 发货单商品表 `ecs_delivery_goods`
+-- Bảng hóa đơn sản phẩm `ecs_delivery_goods`
 DROP TABLE IF EXISTS `ecs_delivery_goods`;
 CREATE TABLE `ecs_delivery_goods` (
   `rec_id` mediumint(8) unsigned NOT NULL auto_increment,
@@ -1651,7 +1651,7 @@ CREATE TABLE `ecs_delivery_goods` (
   KEY `goods_id` (`goods_id`)
 ) ENGINE=MyISAM;
 
--- 发货单表 `ecs_delivery_order`
+-- Bảng hóa đơn chuyển hàng `ecs_delivery_order`
 DROP TABLE IF EXISTS `ecs_delivery_order`;
 CREATE TABLE `ecs_delivery_order` (
   `delivery_id` mediumint(8) unsigned NOT NULL auto_increment,
@@ -1689,7 +1689,7 @@ CREATE TABLE `ecs_delivery_order` (
   KEY `order_id` (`order_id`)
 ) ENGINE=MyISAM;
 
--- 退货单商品表 `ecs_back_goods`
+-- Bảng sản phẩm trả lại `ecs_back_goods`
 DROP TABLE IF EXISTS `ecs_back_goods`;
 CREATE TABLE `ecs_back_goods` (
   `rec_id` mediumint(8) unsigned NOT NULL auto_increment,
@@ -1708,7 +1708,7 @@ CREATE TABLE `ecs_back_goods` (
   KEY `goods_id` (`goods_id`)
 ) ENGINE=MyISAM;
 
--- 退货单表 `ecs_back_order`
+-- Bảng dữ liệu đơn hàng trả về `ecs_back_order`
 DROP TABLE IF EXISTS `ecs_back_order`;
 CREATE TABLE `ecs_back_order` (
   `back_id` mediumint(8) unsigned NOT NULL auto_increment,
@@ -1747,7 +1747,7 @@ CREATE TABLE `ecs_back_order` (
   KEY `order_id` (`order_id`)
 ) ENGINE=MyISAM;
 
--- 供货商 `ecs_suppliers`
+-- Bảng dữ liệu nhà cung cấp `ecs_suppliers`
 DROP TABLE IF EXISTS `ecs_suppliers`;
 CREATE TABLE `ecs_suppliers` (
   `suppliers_id` smallint(5) unsigned NOT NULL auto_increment,
@@ -1757,7 +1757,7 @@ CREATE TABLE `ecs_suppliers` (
   PRIMARY KEY  (`suppliers_id`)
 ) ENGINE=MyISAM;
 
--- 首页主广告用户自定义表 `ecs_ad_custom`
+-- Bảng quảng cáo do người dùng tự định nghĩa `ecs_ad_custom`
 DROP TABLE IF EXISTS `ecs_ad_custom`;
 CREATE TABLE `ecs_ad_custom` (
 `ad_id` MEDIUMINT( 8 ) UNSIGNED NOT NULL auto_increment,
@@ -1770,7 +1770,7 @@ CREATE TABLE `ecs_ad_custom` (
 PRIMARY KEY ( `ad_id` )
 )ENGINE=MyISAM;
 
--- 角色管理
+-- Bảng quyền hạn quản lý
 
 DROP TABLE IF EXISTS `ecs_role`;
 CREATE TABLE `ecs_role` (
@@ -1782,7 +1782,7 @@ CREATE TABLE `ecs_role` (
   KEY `user_name` (`role_name`)
 ) ENGINE=MyISAM;
 
--- 货品表
+-- Bảng dữ liệu sản phẩm
 
 DROP TABLE IF EXISTS `ecs_products`;
 CREATE TABLE `ecs_products` (
