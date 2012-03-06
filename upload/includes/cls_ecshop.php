@@ -4,9 +4,9 @@ if (!defined('IN_ECS'))
     die('Hacking attempt');
 }
 
-define('APPNAME', 'ECSHOP');
-define('VERSION', 'v2.7.3');
-define('RELEASE', '20120105');
+define('APPNAME', 'ECMS Shop');
+define('VERSION', 'v1.0.0');
+define('RELEASE', '01-03-2012');
 
 class ECS
 {

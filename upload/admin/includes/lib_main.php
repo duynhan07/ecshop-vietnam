@@ -98,12 +98,12 @@ function admin_log($sn = '', $action, $content)
  */
 function sys_joindate($prefix)
 {
-    /* 返回年-月-日的日期格式 */
+    /* Mr.Điệp chỉnh sửa lại theo định dạng D-M-Y */
     $year  = empty($_POST[$prefix . 'Year']) ? '0' :  $_POST[$prefix . 'Year'];
     $month = empty($_POST[$prefix . 'Month']) ? '0' : $_POST[$prefix . 'Month'];
     $day   = empty($_POST[$prefix . 'Day']) ? '0' : $_POST[$prefix . 'Day'];
 
-    return $year . '-' . $month . '-' . $day;
+    return $day . '-' . $month . '-' . $year;
 }
 
 /**

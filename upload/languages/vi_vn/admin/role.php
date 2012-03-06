@@ -19,7 +19,7 @@
 $_LANG['user_id'] = 'ID';
 $_LANG['user_name'] = 'Rolename';
 $_LANG['email'] = 'Email';
-$_LANG['password'] = 'Password';
+$_LANG['password'] = 'Mật khẩu';
 $_LANG['join_time'] = 'Ngày tham gia';
 $_LANG['last_time'] = 'Đăng nhập gần đây';
 $_LANG['last_ip'] = 'The latest visitor\'s IP';

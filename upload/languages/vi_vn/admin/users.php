@@ -33,16 +33,16 @@ $_LANG['goto_list'] = 'Return list';
 $_LANG['username_empty'] = 'Vui lòng nhập tên tài khoản!';
 
 /* List relative language item */
-$_LANG['password'] = 'Password';
-$_LANG['newpass'] = 'Password';
+$_LANG['password'] = 'Mật khẩu';
+$_LANG['newpass'] = 'Mật khẩu';
 $_LANG['confirm_password'] = 'confirm password';
 $_LANG['question'] = 'Secret question';
 $_LANG['answer'] = 'Secret answer';
-$_LANG['gender'] = 'Sex';
-$_LANG['birthday'] = 'Birthday';
-$_LANG['sex'][0] = 'Secrecy';
-$_LANG['sex'][1] = 'Male';
-$_LANG['sex'][2] = 'Female';
+$_LANG['gender'] = 'Giới tính';
+$_LANG['birthday'] = 'Sinh nhật';
+$_LANG['sex'][0] = 'Bí mật';
+$_LANG['sex'][1] = 'Nam';
+$_LANG['sex'][2] = 'Nữ';
 $_LANG['pay_points'] = 'Payment points';
 $_LANG['rank_points'] = 'Rank points';
 $_LANG['user_money'] = 'Available money';

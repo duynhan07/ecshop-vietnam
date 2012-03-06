@@ -134,14 +134,14 @@ $_LANG['compare_js']['exist'] = 'Bạn đã chọn %s';
 $_LANG['compare_js']['count_limit'] = 'Chỉ có thể chọn tối đa 4 sản phẩm để so sánh';
 $_LANG['compare_js']['goods_type_different'] = '\"%s\" không thể so sánh với sản phẩm đã chọn vì khác loại';
 
-$_LANG['bonus'] = 'Bonus:';
+$_LANG['bonus'] = 'Quà tặng:';
 $_LANG['no_comments'] = 'Không có nhận xét nào';
 $_LANG['give_comments_rank'] = 'Gửi nhận xét';
-$_LANG['comments_rank'] = 'Comment';
-$_LANG['comment_num'] = "%d comments";
-$_LANG['login_please'] = 'Bạn không thể mua hàng khi chưa đăng nhập.';
-$_LANG['collect_existed'] = 'Collected in your favorite.';
-$_LANG['collect_success'] = 'Collected in your favorite successfully.';
+$_LANG['comments_rank'] = 'Nhận xét';
+$_LANG['comment_num'] = "%d nhận  xét";
+$_LANG['login_please'] = 'Bạn phải đăng nhập để thực hiện thao tác này.';
+$_LANG['collect_existed'] = 'Sản phẩm này đã được thêm vào sản phẩm quan tâm rồi.';
+$_LANG['collect_success'] = 'Đã thêm vào sản phẩm quan tâm thành công.';
 $_LANG['copyright'] = "&copy; 2005-%s %s Copyright, All Rights Reserved.";
 $_LANG['no_ads_id'] = 'No appoint ID of advertisement and a jump URL address!';
 $_LANG['remove_collection_confirm'] = 'Are you sure delete the product from your favorite?';
@@ -475,7 +475,7 @@ $_LANG['eg_error_number'] = 'Sorry, stock merchandise, and now can not be exchan
 
 /* 会员登录注册 */
 $_LANG['member_name'] = 'User Name';
-$_LANG['password'] = 'Password';
+$_LANG['password'] = 'Mật khẩu';
 $_LANG['confirm_password'] = 'Nhập lại m.khẩu.';
 $_LANG['sign_up'] = 'Đăng ký';
 $_LANG['forgot_password'] = 'Forgot your password?';

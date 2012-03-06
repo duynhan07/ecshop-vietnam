@@ -367,7 +367,7 @@ $_LANG['send_message'] = 'Gửi/Xem tin nhắn';
 
 /* 发货单操作 */
 $_LANG['delivery_operate'] = 'Invoice Operation:';
-$_LANG['delivery_sn_number'] = 'Serial number of Invoice:';
+$_LANG['delivery_sn_number'] = 'Mã hóa đơn:';
 $_LANG['invoice_no_sms'] = 'Input Invoice NO.';
 
 /* 发货单搜索 */
@@ -379,12 +379,12 @@ $_LANG['delivery_status'][1] = 'Đã hoàn tiền';
 $_LANG['delivery_status'][2] = 'Đã chuyển hàng';
 
 /* 发货单标签 */
-$_LANG['label_delivery_status'] = 'Invoice Status';
-$_LANG['label_delivery_time'] = 'Generation Time';
-$_LANG['label_delivery_sn'] = 'Serial number of Invoice';
-$_LANG['label_add_time'] = 'Order Time';
-$_LANG['label_update_time'] = 'Shipped Time';
-$_LANG['label_send_number'] = 'Shipped quantity';
+$_LANG['label_delivery_status'] = 'T.trạng hóa đơn';
+$_LANG['label_delivery_time'] = 'Thời gian tạo';
+$_LANG['label_delivery_sn'] = 'Mã hóa đơn';
+$_LANG['label_add_time'] = 'Thời gian đặt hàng';
+$_LANG['label_update_time'] = 'Thời gian chuyển';
+$_LANG['label_send_number'] = 'Số lượng đã chuyển';
 
 /* 发货单提示 */
 $_LANG['tips_delivery_del'] = 'Xóa hóa đơn thành công!';
