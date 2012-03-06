@@ -72,7 +72,7 @@ $_LANG['goods_name'] ='Tên';
 $_LANG['goods_sn'] ='NO.';
 $_LANG['shop_price'] ='Giá';
 $_LANG['is_on_sale'] ='On sale';
-$_LANG['goods_number'] ='Stock';
+$_LANG['goods_number'] ='Kho hàng';
 
 $_LANG['copy'] ='Copy';
 $_LANG['item_list'] = 'Item List';
