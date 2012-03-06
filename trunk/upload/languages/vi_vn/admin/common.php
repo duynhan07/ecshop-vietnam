@@ -1,20 +1,4 @@
 <?php
-
-/**
- * ECSHOP Control panel common language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: common.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
 $_LANG['app_name'] = 'ECMS Shop';
 $_LANG['cp_home'] = 'Trang quản trị';
 $_LANG['copyright'] = ' &copy; 2009-2012 ECMS Copyright, <br> All Right Reserved.';
@@ -142,7 +126,7 @@ $_LANG['16_email_manage'] = 'Gửi mail thông báo';
 
 /* Product management */
 $_LANG['01_goods_list'] = 'Danh sách s.phẩm';
-$_LANG['02_goods_add'] = 'Sản phẩm mới';
+$_LANG['02_goods_add'] = 'Thêm sản phẩm';
 $_LANG['03_category_list'] = 'Danh mục s.phẩm';
 $_LANG['04_category_add'] = 'Thêm danh mục mới';
 $_LANG['05_comment_manage'] = 'Nhận xét t.viên';

@@ -40,7 +40,7 @@ $_LANG['goods_name'] = 'Trade names';
 $_LANG['goods_sn'] = 'NO';
 $_LANG['shop_price'] = 'Giá';
 $_LANG['is_on_sale'] = 'Shelves';
-$_LANG['goods_number'] = 'Stock';
+$_LANG['goods_number'] = 'Kho hàng';
 
 $_LANG['copy'] = 'Copy';
 

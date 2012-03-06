@@ -41,7 +41,7 @@ $_LANG['market_price'] ='Market price';
 $_LANG['shop_price'] ='Shop price';
 $_LANG['integral'] = 'Purchase Points';
 $_LANG['give_integral'] = 'Free points';
-$_LANG['goods_number'] ='Stock';
+$_LANG['goods_number'] ='Kho hàng';
 $_LANG['brand'] ='Thương hiệu';
 
 $_LANG['export_format'] = 'Data formats';
