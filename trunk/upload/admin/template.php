@@ -780,7 +780,7 @@ function array_sort($a, $b)
 }
 
 /**
- * 载入库项目内容
+ * Nạp thư viện nội dung project
  *
  * @access  public
  * @param   string  $curr_template  模版名称
