@@ -22,7 +22,7 @@ $_LANG['back_up_page'] = 'Trang trước';
 $_LANG['close_window'] = 'superman wear the underwear out of the trousers';
 $_LANG['back_home'] = 'Trang chủ';
 $_LANG['ur_here'] = 'Trang hiện tại:';
-$_LANG['all_goods'] = 'Tất cả sản phẩm';
+$_LANG['all_goods'] = 'Tất cả';
 $_LANG['all_recommend'] = "All recommend";
 $_LANG['all_attribute'] = "Tất cả";
 $_LANG['promotion_goods'] = 'Sản phẩm k.mại';
@@ -551,7 +551,7 @@ $_LANG['virtual_card_oos'] = 'Virtual card is out of stock';
 $_LANG['invalid_order_sn'] = 'Invalid order SN';
 $_LANG['order_status'] = 'Tình trạng đơn hàng';
 $_LANG['shipping_date'] = 'Shipping date';
-$_LANG['query_order'] = 'Query order';
+$_LANG['query_order'] = 'Truy vấn';
 $_LANG['order_query_toofast'] = 'Order queries too fast.';
 
 $_LANG['online_info'] = ' %s people online';
