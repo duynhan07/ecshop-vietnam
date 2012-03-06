@@ -475,7 +475,8 @@ elseif ($_REQUEST['act'] == 'main')
 elseif ($_REQUEST['act'] == 'main_api')
 {
     require_once(ROOT_PATH . '/includes/lib_base.php');
-    $data = read_static_cache('api_str');
+    //$data = read_static_cache('api_str'); // bỏ thông báo phiên bản mới
+	$data = "Nội dung thông báo từ hệ thống ECMS.ASIA";
 
     if($data === false || API_TIME < date('d-m-Y H:i:s',time()-43200))
     {

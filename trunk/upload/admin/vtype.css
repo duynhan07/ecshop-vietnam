@@ -1,0 +1,32 @@
+#VTYPEControl {
+	background-image: url('transparent.png');
+	padding: 2px;
+	border: 1px solid #5b958e;
+	position: absolute;
+	bottom: 5px;/*Chuyển vị trí hiển thị xuống dưới*/
+	left: 5px;
+	width: 320px;
+}
+
+body > #VTYPEControl {
+	position: fixed;
+}
+
+.VTYPEControl {
+	margin: 0;
+	padding: 0;
+	color: #137e70;
+	font-family: Verdana, Tahoma;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+a.VTYPEControl {
+	color: #b62727;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#VTYPEControl input {
+	vertical-align: middle;
+}
