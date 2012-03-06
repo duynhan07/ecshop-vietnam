@@ -48,11 +48,11 @@ $_LANG['tips_title_width_height'] = 'The standard width of the template image:%s
 
 $_LANG['all_goods'] = 'Optional products';
 $_LANG['selected_goods'] = 'Selected product';
-$_LANG['top_img'] = 'Picture';
+$_LANG['top_img'] = 'Hình ảnh';
 $_LANG['top_flash'] = 'Flash';
-$_LANG['top_html'] = 'Code';
+$_LANG['top_html'] = 'Mã HTML';
 
 $_LANG['lable_upload'] = 'Upload';
 $_LANG['lable_from_web'] = 'Hoặc URL ngoài';
-$_LANG['lable_content'] = 'Content';
+$_LANG['lable_content'] = 'Nội dung';
 ?>

@@ -196,7 +196,7 @@ $_LANG['paipai4']['chengBao'] = '诚保';
 $_LANG['paipai4']['shopWindow'] = '橱窗';
 
 // 批量上传商品的字段
-$_LANG['export_ecshop'] = 'Export to ECShop data format';
+$_LANG['export_ecshop'] = 'Export theo định dạng của ECMS';
 $_LANG['ecshop']['goods_name'] = '商品名称';
 $_LANG['ecshop']['goods_sn'] = '商品货号';
 $_LANG['ecshop']['brand_name'] = '商品品牌';   // 需要转换成brand_id
@@ -220,7 +220,7 @@ $_LANG['ecshop']['is_alone_sale'] = '能否作为普通商品销售';
 $_LANG['ecshop']['is_real'] = '是否实体商品';
 
 //自定义导出数据格式
-$_LANG['export_custom'] = 'Export to a custom data format';
+$_LANG['export_custom'] = 'Export theo tùy chọn riêng';
 $_LANG['custom']['goods_name'] = 'goods_name';
 $_LANG['custom']['goods_sn'] = 'goods_sn';
 $_LANG['custom']['brand_name'] = 'brand_name';
@@ -251,12 +251,12 @@ $_LANG['custom_goods_type'] = 'All types of merchandise';
 $_LANG['custom_export_list'] = 'Merchandise export data columns';
 $_LANG['custom_up'] = 'On';
 $_LANG['custom_down'] = 'Under';
-$_LANG['custom_goods_search'] = 'Export conditions';
+$_LANG['custom_goods_search'] = 'Điều kiện sản phẩm';
 $_LANG['custom_goods_field_not_null'] = 'Output data out of the merchandise should not be empty';
 
-// 导出条件
-$_LANG['export_condition'] = 'Export volume of goods data';
+// Export sản phẩm
+$_LANG['export_condition'] = 'Xuất loạt sản phẩm';
 $_LANG['export_condition_search'] = 'Tìm kiếm';
-$_LANG['export_format'] = 'Data Format';
+$_LANG['export_format'] = 'Định dạng dữ liệu';
 
 ?>

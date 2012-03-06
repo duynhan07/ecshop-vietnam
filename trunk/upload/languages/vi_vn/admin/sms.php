@@ -19,7 +19,7 @@ $_LANG['register_sms'] = 'Register Or Enable Sms Account.';
 
 /* Register or enable sms */
 $_LANG['email'] = 'Email';
-$_LANG['password'] = 'Password';
+$_LANG['password'] = 'Mật khẩu';
 $_LANG['domain'] = 'Domain';
 $_LANG['error_tips'] = 'Set in the shop - "SMS settings, first register and properly configure the SMS messaging service!';
 $_LANG['register_new'] = 'Đăng ký';
@@ -37,7 +37,7 @@ $_LANG['sms_last_request'] = 'Latest request time:';
 $_LANG['disable'] = 'Disable sms service';
 
 /* Send sms */
-$_LANG['phone'] = 'Mobile phone';
+$_LANG['phone'] = 'Di động';
 $_LANG['phone_notice'] = 'More than one phone number divided by DBC case comma.';
 $_LANG['msg'] = 'Message';
 $_LANG['msg_notice'] = '70 character at most';

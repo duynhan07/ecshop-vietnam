@@ -54,7 +54,7 @@ $_LANG['email'] = 'Email';
 $_LANG['batch_drop_success'] = 'Command successfully!';
 
 $_LANG['msg_for_order'] = 'Order %s on the Guest Book';
-$_LANG['order_detail'] = 'Order Details';
+$_LANG['order_detail'] = 'Chi tiết đơn hàngs';
 $_LANG['confirm_delete'] = 'Do you confirm that you want to delete the Guest Book';
 
 $_LANG['cfm_allow'] = 'Are you sure you want to allow shows the selected comments?';
