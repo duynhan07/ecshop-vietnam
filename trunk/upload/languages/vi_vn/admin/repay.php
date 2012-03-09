@@ -36,7 +36,7 @@ $_LANG['unrepayed'] = 'Unrepayed';
 $_LANG['view'] = 'Xem';
 
 $_LANG['from'] = 'From';
-$_LANG['reply'] = 'Reply';
+$_LANG['reply'] = 'Trả lời';
 $_LANG['had_reply_content'] = 'TIP: This application has be disposed, and the money of user\'s application has be deducted, the old message will be rewrote if continue reply! But don\'t deduct the money again.';
 $_LANG['have_reply_content'] = 'TIP: This application has be neglected, the old message will be rewrote if continue reply!';
 

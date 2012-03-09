@@ -25,7 +25,7 @@ $_LANG['title'] = 'Title';
 $_LANG['message'] = 'Content';
 
 $_LANG['view_msg'] = 'Xem';
-$_LANG['reply_msg'] = 'Reply';
+$_LANG['reply_msg'] = 'Trả lời';
 $_LANG['send_msg'] = 'Send';
 $_LANG['edit_msg'] = 'Sửa';
 $_LANG['drop_msg'] = 'Xóa';

@@ -24,7 +24,7 @@ $_LANG['user_name'] = 'Tài khoản';
 $_LANG['msg_type'] = 'Type';
 $_LANG['msg_status'] = 'Trạng thái';
 $_LANG['hidden'] = 'Hide';
-$_LANG['display'] = 'display';
+$_LANG['display'] = 'Hiển thị';
 $_LANG['allow'] = 'Allowed to show';
 $_LANG['forbid'] = 'forbid the display';
 $_LANG['user_center'] = 'user center';
@@ -36,7 +36,7 @@ $_LANG['from'] = 'From';
 
 $_LANG['type'] = array('message','appeal','enquiry','after-sale','seek purchase','business message');
 
-$_LANG['reply'] = 'Reply';
+$_LANG['reply'] = 'Trả lời';
 $_LANG['replyed'] = 'Replyed';
 $_LANG['unreplyed'] = 'Unreplyed';
 
