@@ -1,19 +1,4 @@
 <?php
-
-/**
- * ECSHOP Comment management\'s language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: comment_manage.php 17217 2011-01-19 06:29:08Z liubo $
-*/
 $_LANG['comment_id'] = 'ID';
 $_LANG['user_name'] = 'Tài khoản';
 $_LANG['from'] = 'sent comment at ';
@@ -28,7 +13,7 @@ $_LANG['comment_type'] = 'Type';
 $_LANG['comment_obj'] = 'Comment object';
 $_LANG['content'] = 'Content';
 $_LANG['comment_time'] = 'Thời gian';
-$_LANG['reply_content'] = 'Reply';
+$_LANG['reply_content'] = 'Trả lời';
 $_LANG['comment_flag'] = 'Flag';
 $_LANG['no_reply'] = 'No reply';
 $_LANG['yes_reply'] = 'Replied';
@@ -45,18 +30,18 @@ $_LANG['view_content'] = 'View content';
 $_LANG['search_comment'] = 'Enter';
 $_LANG['no_reply_comment'] = 'Not replied comment';
 $_LANG['all_comment'] = 'View all comments';
-$_LANG['reply_comment'] = 'Reply';
+$_LANG['reply_comment'] = 'Trả lời';
 $_LANG['comment_info'] = 'Chi tiết';
 
 $_LANG['comment_rank'] = 'Rank';
 $_LANG['comment_list'] = 'List';
 
-$_LANG['drop_select'] = 'Delete comment';
-$_LANG['reply'] = 'Reply';
+$_LANG['drop_select'] = 'Xóa nhận xét';
+$_LANG['reply'] = 'Trả lời';
 $_LANG['check'] = 'Check';
 $_LANG['allow'] = 'Open';
 $_LANG['forbid'] = 'Close';
-$_LANG['display'] = 'display';
+$_LANG['display'] = 'Hiển thị';
 $_LANG['hidden'] = 'hidden';
 
 $_LANG['no_select_comment'] = 'You have no choice need to delete the comments!';

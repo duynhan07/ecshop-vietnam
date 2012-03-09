@@ -27,22 +27,22 @@ $_LANG['drop_goods_ok'] ='Đã xóa thành công.';
 $_LANG['batch_handle_ok']       = 'Batch operation successfully.';
 $_LANG['drop_goods_confirm']    = 'Are you sure delete the product?';
 $_LANG['batch_drop_confirm']    = 'All related products will be deleted if you thorough delete the pruduct!';
-$_LANG['trash_goods_confirm']   = 'Are you sure move the product to recycle bin?';
-$_LANG['batch_trash_confirm']   = 'Are you sure move the checked product to recycle bin?';
-$_LANG['trash_product_confirm'] = 'Are you sure you take the goods removed?';
-$_LANG['restore_goods_confirm'] = 'Are you sure restore the product?';
-$_LANG['batch_restore_confirm'] = 'Are you sure restore the checked product?';
-$_LANG['batch_on_sale_confirm'] = 'Are you sure set the checked product as on sale?';
-$_LANG['batch_not_on_sale_confirm'] = 'Are you sure cancel the checked on sale product?';
-$_LANG['batch_best_confirm']    = 'Are you sure set the checked product as best?';
-$_LANG['batch_not_best_confirm']    = 'Are you sure cancel the checked best product?';
-$_LANG['batch_new_confirm']     = 'Are you sure set the checked product as new?';
-$_LANG['batch_not_new_confirm'] = 'Are you sure cancel the checked new product?';
-$_LANG['batch_hot_confirm']     = 'Are you sure set the checked product as hot?';;
-$_LANG['batch_not_hot_confirm']='Are you surecancel the checked hot product?';
-$_LANG['cannot_found_goods'] = 'Don\'t find appointed product.';
+$_LANG['trash_goods_confirm']   = 'Bạn có chắc bạn muốn chuyển sản phẩm này thùng rác?';
+$_LANG['batch_trash_confirm']   = 'Bạn có chắc bạn muốn chuyển sản phẩm đã chọn thùng rác?';
+$_LANG['trash_product_confirm'] = 'Bạn có chắc bạn muốn xóa vĩnh viễn sản phẩm này?';
+$_LANG['restore_goods_confirm'] = 'Bạn có chắc bạn muốn khôi phục sản phẩm này?';
+$_LANG['batch_restore_confirm'] = 'Bạn có chắc bạn muốn khôi phục sản phẩm đã chọn?';
+$_LANG['batch_on_sale_confirm'] = 'Bạn có chắc bạn muốn đặt on sale sản phẩm đã chọn?';
+$_LANG['batch_not_on_sale_confirm'] = 'Bạn có chắc bạn muốn hủy on sale sản phẩm đã chọn?';
+$_LANG['batch_best_confirm']    = 'Bạn có chắc bạn muốn đặt sản phẩm đã chọn là tốt nhất?';
+$_LANG['batch_not_best_confirm']    = 'Bạn có chắc bạn muốn hủy đặt sản phẩm đã chọn là tốt nhất?';
+$_LANG['batch_new_confirm']     = 'Bạn có chắc bạn muốn đặt sản phẩm đã chọn là mới nhất?';
+$_LANG['batch_not_new_confirm'] = 'Bạn có chắc bạn muốn hủy đặt sản phẩm đã chọn là mới nhất?';
+$_LANG['batch_hot_confirm']     = 'Bạn có chắc bạn muốn đặt sản phẩm đã chọn là hot nhất?';;
+$_LANG['batch_not_hot_confirm']='Bạn có chắc bạn muốn hủy đặt sản phẩm đã chọn là hot nhất?';
+$_LANG['cannot_found_goods'] = 'Không tìm thấy sản phẩm có yêu cầu này.';
 $_LANG['sel_goods_type'] = 'Hãy chọn loại sản phẩm';
-$_LANG['sel_goods_suppliers'] = 'Please select the suppliers';
+$_LANG['sel_goods_suppliers'] = 'Vui lòng chọn nhà cung cấp';
 
 /*------------------------------------------------------ */
 //-- The picture processing is related to hint an information
