@@ -451,8 +451,8 @@ $_LANG['goods_num_must_over_0'] = 'Goods quantity must be over 0';
 $_LANG['rows_num_must_be_int'] = 'Order entry shows that the number is an integer';
 $_LANG['rows_num_must_over_0'] = 'Order entry shows that the number should be greater than 0';
 
-$_LANG['last_month_order'] = 'In recent 30 days, your have submitted  ';
-$_LANG['order_unit'] = ' order(s)';
+$_LANG['last_month_order'] = 'Trong vòng 30 ngày qua, bạn đã gửi ';
+$_LANG['order_unit'] = ' đơn hàng';
 $_LANG['please_received'] = 'The oreders has shipped, please give attention to receive.';
 $_LANG['your_auction'] = 'You bid for <strong>%s</strong> ，go to <a href="auction.php?act=view&amp;id=%s"><span style="color:#06c;text-decoration:underline;"> to buy </span></a>';
 $_LANG['your_snatch'] = 'You bid in Dutch Auction for <strong>%s</strong> ，go to <a href="snatch.php?act=main&amp;id=%s"><span style="color:#06c;text-decoration:underline;"> to buy </span></a>';

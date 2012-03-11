@@ -17,7 +17,7 @@
 /* Field information */
 $_LANG['log_id'] = 'NO.';
 $_LANG['log_time'] = 'Thời gian';
-$_LANG['user_id'] = 'Operator';
+$_LANG['user_id'] = 'Thao tác';
 $_LANG['log_info'] = 'Operation log';
 $_LANG['ip_address'] = 'IP';
 
