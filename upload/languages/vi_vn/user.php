@@ -139,7 +139,7 @@ $_LANG['pay_fee'] = 'Poundage';
 
 /* 收货地址 */
 $_LANG['consignee_name'] = 'Tên';
-$_LANG['country_province'] = 'Country/Province';
+$_LANG['country_province'] = 'Khu vực';
 $_LANG['please_select'] = 'Hãy chọn...';
 $_LANG['city_district'] = 'City/District';
 $_LANG['email_address'] = 'Email';

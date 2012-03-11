@@ -64,15 +64,15 @@ $_LANG['catdrop_succed'] = 'Delete category successfully!';
 $_LANG['catremove_succed'] = 'Move category successfully!';
 $_LANG['move_cat_success'] = 'Move category has finished!';
 
-$_LANG['cat_move_desc'] = 'What is move category?';
+$_LANG['cat_move_desc'] = 'Di chuyển danh mục nghĩa là gì?';
 $_LANG['select_source_cat'] = 'Please select category that you want to move.';
 $_LANG['select_target_cat'] = 'Please select category that the target.';
-$_LANG['source_cat'] = 'From that category';
-$_LANG['target_cat'] = 'Move to';
+$_LANG['source_cat'] = 'Từ danh mục';
+$_LANG['target_cat'] = 'chuyển tới';
 $_LANG['start_move_cat'] = 'Gửi đi';
 $_LANG['cat_move_notic'] = 'In add product or pruduct management, if you want to change products category, you can manage the products category by the function.';
 
-$_LANG['cat_move_empty'] = 'Please select category rightly!';
+$_LANG['cat_move_empty'] = 'Vui lòng chọn danh mục!';
 
 $_LANG['sel_goods_type'] = 'Hãy chọn loại sản phẩm';
 $_LANG['sel_filter_attr'] = 'Hãy chọn loại thuộc tính';

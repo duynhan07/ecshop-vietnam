@@ -5,7 +5,7 @@ $_LANG['last_update'] = 'Cập nhật mới nhất';
 $_LANG['now_update'] = 'Cập nhật log';
 $_LANG['update_success'] = 'Cập nhật thành công!';
 $_LANG['view_log'] = 'Xem log';
-$_LANG['select_year_month'] = 'Năm/Tháng';
+$_LANG['select_year_month'] = 'Tháng/năm';
 
 $_LANG['pv_stats'] = 'Thông số truy cập';
 $_LANG['integration_visit'] = 'Integration visit';
@@ -121,15 +121,14 @@ $_LANG['fav_exponential'] = 'Favorite exponential';
 $_LANG['buy_times'] = 'Thời gian';
 $_LANG['visit_buy'] ='Purchase rate';
 $_LANG['download_visit_buy'] = 'Download visit purchase rate statements';
-
 $_LANG['goods_cat'] = 'Danh mục';
 $_LANG['goods_brand'] = 'Thương hiệu';
 
 /* 搜索引擎 */
 $_LANG['down_search_stats'] = 'Download search keyword statements';
-$_LANG['tab_keywords'] = 'Keyword Statistics';
-$_LANG['keywords'] = 'Keyword';
-$_LANG['date'] = 'Date';
-$_LANG['hits'] = 'Search Views';
+$_LANG['tab_keywords'] = 'Thống kê từ khóa';
+$_LANG['keywords'] = 'Từ khóa';
+$_LANG['date'] = 'Ngày';
+$_LANG['hits'] = 'Lượt tìm kiếm';
 
 ?>
