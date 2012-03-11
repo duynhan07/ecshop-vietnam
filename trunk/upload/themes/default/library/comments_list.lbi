@@ -9,7 +9,7 @@
        <!-- {foreach from=$comments item=comment} -->
         <li class="word">
         <font class="f2"><!-- {if $comment.username} -->{$comment.username|escape:html}<!-- {else} -->{$lang.anonymous}<!-- {/if} --></font> <font class="f3">( {$comment.add_time} )</font><br />
-        <img src="../images/stars{$comment.rank}.gif" alt="{$comment.comment_rank}" />
+        <img src="../images/stars_{$comment.rank}.png" alt="{$comment.comment_rank}" />
         <p>{$comment.content}</p>
 				<!-- {if $comment.re_content} -->
         <p><font class="f1">{$lang.admin_username}</font>{$comment.re_content}</p>
@@ -88,11 +88,11 @@
         <tr>
           <td align="right">{$lang.comment_rank}: </td>
           <td>
-          <input name="comment_rank" type="radio" value="1" id="comment_rank1" /> <img src="../images/stars1.gif" />
-          <input name="comment_rank" type="radio" value="2" id="comment_rank2" /> <img src="../images/stars2.gif" />
-          <input name="comment_rank" type="radio" value="3" id="comment_rank3" /> <img src="../images/stars3.gif" />
-          <input name="comment_rank" type="radio" value="4" id="comment_rank4" /> <img src="../images/stars4.gif" />
-          <input name="comment_rank" type="radio" value="5" checked="checked" id="comment_rank5" /> <img src="../images/stars5.gif" />
+          <input name="comment_rank" type="radio" value="1" id="comment_rank1" /> <img src="../images/stars_1.png" />
+          <input name="comment_rank" type="radio" value="2" id="comment_rank2" /> <img src="../images/stars_2.png" />
+          <input name="comment_rank" type="radio" value="3" id="comment_rank3" /> <img src="../images/stars_3.png" />
+          <input name="comment_rank" type="radio" value="4" id="comment_rank4" /> <img src="../images/stars_4.png" />
+          <input name="comment_rank" type="radio" value="5" checked="checked" id="comment_rank5" /> <img src="../images/stars_5.png" />
           </td>
         </tr>
         <tr>
