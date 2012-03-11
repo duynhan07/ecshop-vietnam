@@ -113,7 +113,7 @@
 		<div class="blank5"></div>
 	  <!-- {/if} -->
 	 <!--组合搜索 结束-->
-   <!-- TemplateBeginEditable name="右边区域" -->
+   <!-- TemplateBeginEditable name="Right area" -->
 <!-- #BeginLibraryItem "/library/recommend_best.lbi" -->
 
 <!-- {if $best_goods} -->
