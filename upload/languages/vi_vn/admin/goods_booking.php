@@ -43,7 +43,7 @@ $_LANG['note'] = 'Dispose remarks';
 $_LANG['guest_user'] = 'Unregistered user';
 $_LANG['i_dispose'] = 'I will dispose';
 
-$_LANG['detail'] = 'View details';
+$_LANG['detail'] = 'Xem chi tiết';
 
 $_LANG['js_languages']['no_note'] = 'Please enter remark information.';
 

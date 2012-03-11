@@ -25,7 +25,7 @@ $_LANG['drop_tags'] = 'Delete tags';
 $_LANG['tagword_exist'] = 'tag %s has exists！';
 $_LANG['tag_list'] = 'Tag list';
 $_LANG['tag_edit'] = 'Tag Edit';
-$_LANG['goods_name'] = 'Goods name';
+$_LANG['goods_name'] = 'Tên sản phẩm';
 $_LANG['name_search'] = 'Search goods by goods_sn,goods_name,etc';
 $_LANG['tag_edit_success'] = 'Tag edit success';
 $_LANG['tag_add_success'] = 'Add tag success';
@@ -36,7 +36,7 @@ $_LANG['drop_success'] = 'You have delete %d tags.';
 $_LANG['back_list'] = 'Return to tag list.';
 
 /* JS language item */
-$_LANG['drop_confirm'] = 'Are you sure delete the record?';
+$_LANG['drop_confirm'] = 'Bạn có chắc bạn muốn xóa dữ liệu này?';
 
 $_LANG['js_languages']['goods_name_not_empty'] = 'goods name can not empty';
 

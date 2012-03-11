@@ -44,10 +44,10 @@ $_LANG['self_nav'] = 'Individual navigation';
 $_LANG['all_menus'] = 'All menus';
 $_LANG['add_nav'] = 'Thêm';
 $_LANG['remove_nav'] = 'Remove';
-$_LANG['move_up'] = 'Move up';
-$_LANG['move_down'] = 'Move down';
-$_LANG['continue_add'] = 'Continue add administrator.';
-$_LANG['back_list'] = 'Return to administrator list.';
+$_LANG['move_up'] = 'Chuyển lên';
+$_LANG['move_down'] = 'Đẩy xuống';
+$_LANG['continue_add'] = 'Tiếp tục thêm quản trị viên.';
+$_LANG['back_list'] = 'Trở về danh sách quản trị viên.';
 $_LANG['select_role'] = 'Choose role';
 $_LANG['select_please'] = 'Hãy chọn...';
 
@@ -80,7 +80,7 @@ $_LANG['remove_self_cannot'] = 'Không thể xóa tài khoản quản trị tố
 $_LANG['remove_cannot'] = 'Bạn không có quyền xóa!';
 
 $_LANG['modif_info'] = 'Sửa hồ sơ';
-$_LANG['edit_navi'] = 'Config individual navigation';
+$_LANG['edit_navi'] = 'Cấu hình NAV cá nhân';
 
 /* Help */
 $_LANG['password_notic'] = 'Nếu bạn muốn thay đổi mật khẩu, vui lòng nhập mật khẩu cũ, nếu bỏ trống, mật khẩu sẽ không được thay đổi.';

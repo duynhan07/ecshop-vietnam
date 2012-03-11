@@ -1,37 +1,21 @@
 <?php
-
-/**
- * ECSHOP Control panel authorization manage module language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: sxc_shop $
- * $Id: privilege.php 16320 2009-06-23 09:42:41Z sxc_shop $
-*/
-
 /* Field information */
 $_LANG['user_id'] = 'ID';
-$_LANG['user_name'] = 'Rolename';
+$_LANG['user_name'] = 'Tên quyền hạn';
 $_LANG['email'] = 'Email';
 $_LANG['password'] = 'Mật khẩu';
 $_LANG['join_time'] = 'Ngày tham gia';
 $_LANG['last_time'] = 'Đăng nhập gần đây';
-$_LANG['last_ip'] = 'The latest visitor\'s IP';
-$_LANG['action_list'] = 'Operater authorization';
-$_LANG['nav_list'] = 'Navigation';
-$_LANG['language'] = 'language';
+$_LANG['last_ip'] = 'IP truy cập cuối';
+$_LANG['action_list'] = 'Quyền thao tác';
+$_LANG['nav_list'] = 'Thanh định hướng';
+$_LANG['language'] = 'Ngôn ngữ';
 
-$_LANG['allot_priv'] = 'Assign authorization';
-$_LANG['allot_list'] = 'Authorization list';
-$_LANG['go_allot_priv'] = 'Administrator authorization config';
+$_LANG['allot_priv'] = 'Quyền được cấp';
+$_LANG['allot_list'] = 'Danh sách quyền';
+$_LANG['go_allot_priv'] = 'Cấu hình quyền quản trị';
 
-$_LANG['view_log'] = 'View logs';
+$_LANG['view_log'] = 'Xem log thao tác';
 
 $_LANG['back_home'] = 'Về trang chủ';
 $_LANG['forget_pwd'] = 'Bạn đã quên mật khẩu?';
@@ -43,16 +27,16 @@ $_LANG['agency'] = 'Agency the user be in charge of';
 $_LANG['self_nav'] = 'Individual navigation';
 $_LANG['all_menus'] = 'All menus';
 $_LANG['add_nav'] = 'Thêm';
-$_LANG['remove_nav'] = 'Remove';
-$_LANG['move_up'] = 'Move up';
-$_LANG['move_down'] = 'Move down';
-$_LANG['continue_add'] = 'Continue add administrator.';
-$_LANG['back_list'] = 'Return to administrator list.';
+$_LANG['remove_nav'] = 'Xóa bỏ';
+$_LANG['move_up'] = 'Chuyển lên';
+$_LANG['move_down'] = 'Đẩy xuống';
+$_LANG['continue_add'] = 'Tiếp tục thêm quản trị viên.';
+$_LANG['back_list'] = 'Trở về danh sách quản trị viên.';
 
 $_LANG['admin_edit'] = 'Sửa quản trị viên';
 $_LANG['edit_pwd'] = 'Đổi mật khẩu';
 
-$_LANG['back_admin_list'] = 'Return to role list.';
+$_LANG['back_admin_list'] = 'Trở về danh sách quyền hạn.';
 
 /* Prompting message */
 $_LANG['js_languages']['user_name_empty'] = 'Vui lòng nhập tên tài khoản!';
@@ -78,8 +62,8 @@ $_LANG['remove_self_cannot'] = 'Không thể xóa tài khoản quản trị tố
 $_LANG['remove_cannot'] = 'Bạn không có quyền xóa!';
 $_LANG['remove_cannot_user'] = 'This role is in use, not administrator!';
 
-$_LANG['modif_info'] = 'Edit Profile';
-$_LANG['edit_navi'] = 'Config individual navigation';
+$_LANG['modif_info'] = 'Sửa hồ sơ';
+$_LANG['edit_navi'] = 'Cấu hình NAV cá nhân';
 
 /* Help */
 $_LANG['password_notic'] = 'Nếu bạn muốn thay đổi mật khẩu, vui lòng nhập mật khẩu cũ, nếu bỏ trống, mật khẩu sẽ không được thay đổi.';
@@ -87,10 +71,10 @@ $_LANG['email_notic'] = 'Nhập email quản trị, định dạng phải hợp 
 $_LANG['confirm_notic'] = 'Nhập lại mật khẩu quản trị, mật khẩu phải trùng khớp.';
 
 /* Login memu */
-$_LANG['label_username'] = 'Username:';
-$_LANG['label_password'] = 'Password:';
-$_LANG['label_captcha'] = 'Verification Code:';
-$_LANG['click_for_another'] = 'Invisibility? Replace an image.';
-$_LANG['signin_now'] = 'Enter';
+$_LANG['label_username'] = 'Tài khoản:';
+$_LANG['label_password'] = 'Mật khẩu:';
+$_LANG['label_captcha'] = 'Mã xác thực:';
+$_LANG['click_for_another'] = 'Không nhìn rõ? Lấy hình khác.';
+$_LANG['signin_now'] = 'Đăng nhập';
 $_LANG['remember'] = 'Ghi nhớ thông tin đăng nhập.';
 ?>

@@ -27,7 +27,7 @@ $_LANG['input_sn'] ='Enter product NO.:<Br/>(One NO. per line)';
 $_LANG['edit_method'] ='Method:';
 $_LANG['edit_each'] ='One by one';
 $_LANG['edit_all'] ='Unify';
-$_LANG['go_edit'] ='Enter';
+$_LANG['go_edit'] ='Đăng nhập';
 
 $_LANG['notice_edit'] = 'Member price -1 express Member price will be calculated in proportion to member discounts grading';
 

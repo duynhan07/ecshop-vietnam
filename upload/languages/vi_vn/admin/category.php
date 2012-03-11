@@ -69,7 +69,7 @@ $_LANG['select_source_cat'] = 'Please select category that you want to move.';
 $_LANG['select_target_cat'] = 'Please select category that the target.';
 $_LANG['source_cat'] = 'From that category';
 $_LANG['target_cat'] = 'Move to';
-$_LANG['start_move_cat'] = 'Submit';
+$_LANG['start_move_cat'] = 'Gửi đi';
 $_LANG['cat_move_notic'] = 'In add product or pruduct management, if you want to change products category, you can manage the products category by the function.';
 
 $_LANG['cat_move_empty'] = 'Please select category rightly!';

@@ -1,156 +1,139 @@
 <?php
+/* Quyền hạn quản lý đầu */
+$_LANG['goods'] = 'Sản phẩm';
+$_LANG['cms_manage'] = 'Bài viết';
+$_LANG['users_manage'] = 'Người dùng';
+$_LANG['priv_manage'] = 'Quyền hạn';
+$_LANG['sys_manage'] = 'Thiết lập hệ thống';
+$_LANG['order_manage'] = 'Đơn hàng';
+$_LANG['promotion'] = 'Khuyến mại';
+$_LANG['email'] = 'Quản lý email';
+$_LANG['templates_manage'] = 'Quản lý giao diện';
+$_LANG['db_manage'] = 'Quản lý dữ liệu';
+$_LANG['sms_manage'] = 'Quản lý SMS';
 
-/**
- * ECSHOP Authorization  name language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it mean that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: priv_action.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-/* Authorization management\'s the first grouping */
-$_LANG['goods'] = 'Product';
-$_LANG['cms_manage'] = 'Article';
-$_LANG['users_manage'] = 'Users';
-$_LANG['priv_manage'] = 'Authorization';
-$_LANG['sys_manage'] = 'System setup';
-$_LANG['order_manage'] = 'Order';
-$_LANG['promotion'] = 'Promotion';
-$_LANG['email'] = 'Email management';
-$_LANG['templates_manage'] = 'Template management';
-$_LANG['db_manage'] = 'Database Management';
-$_LANG['sms_manage'] = 'SMS Management';
-
-//Authorization of product management
-$_LANG['goods_manage'] = 'Add/Edit product';
-$_LANG['remove_back'] = 'Delete/restore product';
-$_LANG['cat_manage'] = 'Add/Edit category';
-$_LANG['cat_drop'] = 'Shift/Delete category';
-$_LANG['attr_manage'] = 'Product attribute';
-$_LANG['brand_manage'] = 'Product brand';
-$_LANG['comment_priv'] = 'User comment';
-$_LANG['goods_type'] = 'Product type';
+//Quyền hạn quản lý sản phẩm
+$_LANG['goods_manage'] = 'Thêm/sửa sản phẩm';
+$_LANG['remove_back'] = 'Xóa/khôi phục sản phẩm';
+$_LANG['cat_manage'] = 'Thêm/sửa danh mục';
+$_LANG['cat_drop'] = 'Xóa danh mục sản phẩm';
+$_LANG['attr_manage'] = 'Thuộc tính sản phẩm';
+$_LANG['brand_manage'] = 'Thương hiệu sản phẩm';
+$_LANG['comment_priv'] = 'Nhận xét t.viên';
+$_LANG['goods_type'] = 'Loại sản phẩm';
 $_LANG['tag_manage'] = 'Tag';
 $_LANG['topic_manage'] = 'Topic management';
-$_LANG['goods_auto'] = 'Goods automatic top to down';
-$_LANG['virualcard'] = 'Virualcard';
-$_LANG['picture_batch'] = 'Image batch processing';
-$_LANG['goods_export'] = 'Export volume of goods ';
-$_LANG['goods_batch'] = 'Commodity bulk upload / edit';
-$_LANG['gen_goods_script'] = ' Generating commodity code';
+$_LANG['goods_auto'] = 'Tự động đẩy sản phẩm';
+$_LANG['virualcard'] = 'Thẻ ảo';
+$_LANG['picture_batch'] = 'Xử lý hình ảnh';
+$_LANG['goods_export'] = 'Export loạt sản phẩm';
+$_LANG['goods_batch'] = 'Upload/sửa loạt sản phẩm';
+$_LANG['gen_goods_script'] = 'Tạo mã HTML sản phẩm';
 
-//Authorization of article management
-$_LANG['article_cat'] = 'Article category';
-$_LANG['article_manage'] = 'Article content';
-$_LANG['shopinfo_manage'] = 'Shop information';
-$_LANG['shophelp_manage'] = 'Shop help';
-$_LANG['vote_priv'] = 'Vote online';
-$_LANG['article_auto'] = 'Article automatic release';
+//Quyền hạn quản lý bài viết
+$_LANG['article_cat'] = 'Danh mục bài viết';
+$_LANG['article_manage'] = 'Quản lý bài viết';
+$_LANG['shopinfo_manage'] = 'Thông tin gian hàng';
+$_LANG['shophelp_manage'] = 'Trợ giúp cửa hàng';
+$_LANG['vote_priv'] = 'Bình chọn trực tuyến';
+$_LANG['article_auto'] = 'Tự động xuất bản bài';
 
 //User information management
-$_LANG['integrate_users'] = 'User data integrate';
-$_LANG['sync_users'] = 'Synchronization user data';
-$_LANG['users_manages'] = 'Add/Edit user';
-$_LANG['users_drop'] = 'Delete user';
-$_LANG['user_rank'] = 'User rank management';
-$_LANG['feedback_priv'] = 'User message management';
-$_LANG['surplus_manage'] = 'User balance management';
-$_LANG['account_manage'] = 'Member Account Management';
+$_LANG['integrate_users'] = 'Đồng bộ tài khoản người dùng';
+$_LANG['sync_users'] = 'Đồng bộ người dùng';
+$_LANG['users_manages'] = 'Thêm/sửa tài khoản';
+$_LANG['users_drop'] = 'Xóa tài khoản';
+$_LANG['user_rank'] = 'Quản lý nhóm';
+$_LANG['feedback_priv'] = 'Quản lý tin nhắn t.viên';
+$_LANG['surplus_manage'] = 'Quản lý số dư t.khoản';
+$_LANG['account_manage'] = 'Quản lý tài khoản t.viên';
 
 
 //Authority of Authority management
 $_LANG['admin_manage'] = 'Thêm/Sửa quản trị viên';
-$_LANG['admin_drop'] = 'Delete administrator';
+$_LANG['admin_drop'] = 'Xóa quản trị viên';
 $_LANG['allot_priv'] = 'Allot authorization';
-$_LANG['logs_manage'] = 'Manage logs list';
-$_LANG['logs_drop'] = 'Delete management logs';
-$_LANG['template_manage'] = 'Template management';
-$_LANG['agency_manage'] = 'Agency management';
-$_LANG['suppliers_manage'] = 'Supplier management';
-$_LANG['role_manage'] = ' Role Management';
+$_LANG['logs_manage'] = 'Quản lý danh sách log';
+$_LANG['logs_drop'] = 'Xóa log quản trị';
+$_LANG['template_manage'] = 'Quản lý giao diện';
+$_LANG['agency_manage'] = 'Quản lý đại lý';
+$_LANG['suppliers_manage'] = 'Quản lý nhà cung cấp';
+$_LANG['role_manage'] = 'Quản lý nhóm quyền';
 
 //Authorization  of system setup management
-$_LANG['shop_config'] = 'Shop config';
+$_LANG['shop_config'] = 'Cấu hình cửa hàng';
 $_LANG['shop_authorized'] = 'Authorized';
 $_LANG['webcollect_manage'] = 'Webcollect';
-$_LANG['ship_manage'] = 'Shipping method management';
-$_LANG['payment'] = 'Payment method management';
-$_LANG['shiparea_manage'] = 'shipping region management';
-$_LANG['area_manage'] = 'Area list management';
-$_LANG['friendlink'] = 'Links management';
-$_LANG['db_backup'] = 'Backup database ';
-$_LANG['db_renew'] = 'Restore database';
-$_LANG['flash_manage'] = 'Flash player management';
-$_LANG['navigator'] = 'Navigation management';
-$_LANG['cron'] = 'Plan tasks';
-$_LANG['affiliate'] = 'Suggested set';
+$_LANG['ship_manage'] = 'Quản lý h.thức v.chuyển';
+$_LANG['payment'] = 'Quản lý h.thức thanh toán';
+$_LANG['shiparea_manage'] = 'Quản lý khu vực chuyển hàng';
+$_LANG['area_manage'] = 'Quản lý danh sách khu vực';
+$_LANG['friendlink'] = 'Quản lý liên kết bạn bè';
+$_LANG['db_backup'] = 'Sao lưu dữ liệu';
+$_LANG['db_renew'] = 'Khôi phục dữ liệu';
+$_LANG['flash_manage'] = 'Quản lý flash slider';
+$_LANG['navigator'] = 'Quản lý NAV';
+$_LANG['cron'] = 'Quản lý cron job';
+$_LANG['affiliate'] = 'Thiết lập quảng bá';
 $_LANG['affiliate_ck'] = 'Allowances management';
-$_LANG['sitemap'] = 'Site Map Management';
+$_LANG['sitemap'] = 'Quản lý sơ đồ site';
 $_LANG['file_check'] = 'File checksums';
 $_LANG['file_priv'] = 'File permissions test';
 $_LANG['reg_fields'] = 'User register options management';
 
 //Authorization of orders management
-$_LANG['order_os_edit'] = 'Edit order status';
-$_LANG['order_ps_edit'] = 'Edit payment status';
-$_LANG['order_ss_edit'] = 'Edit shipping status';
-$_LANG['order_edit'] = 'Add edit order';
-$_LANG['order_view'] = 'View unfinished order';
-$_LANG['order_view_finished'] = 'View finished order';
-$_LANG['repay_manage'] = 'Refundment application management';
-$_LANG['booking'] = 'Booking management';
-$_LANG['sale_order_stats'] = 'Sale order statistic';
-$_LANG['client_flow_stats'] = 'Client flow statistic';
-$_LANG['delivery_view'] = 'Invoice Note';
-$_LANG['back_view'] = 'Returned Note';
+$_LANG['order_os_edit'] = 'Sửa tình trạng đơn hàng';
+$_LANG['order_ps_edit'] = 'Sửa tình trạng thanh toán';
+$_LANG['order_ss_edit'] = 'Sửa tình trạng vận chuyển';
+$_LANG['order_edit'] = 'Sửa đơn hàng';
+$_LANG['order_view'] = 'Xem đơn hàng chưa hoàn thành';
+$_LANG['order_view_finished'] = 'Xem đơn hàng đã hoàn thành';
+$_LANG['repay_manage'] = 'Quản lý ứng dụng hoàn tiền';
+$_LANG['booking'] = 'Quản lý đặt trước';
+$_LANG['sale_order_stats'] = 'Thống kê doanh số bán hàng';
+$_LANG['client_flow_stats'] = 'Thống kê số lượng khách hàng';
+$_LANG['delivery_view'] = 'Ghi chú hóa đơn';
+$_LANG['back_view'] = 'Ghi chú hoàn tiền';
 
 //Sales promotion management
-$_LANG['snatch_manage'] = 'Dutch auction management';
-$_LANG['bonus_manage'] = 'Bonus management';
+$_LANG['snatch_manage'] = 'Quản lý đấu giá ngược';
+$_LANG['bonus_manage'] = 'Quản lý quà tặng';
 $_LANG['card_manage'] = 'Greetings card';
-$_LANG['pack'] = 'Packing';
-$_LANG['ad_manage'] = 'AD management';
-$_LANG['gift_manage'] = 'Gift management';
-$_LANG['auction'] = 'Auctions';
-$_LANG['group_by'] = 'group_buy activities';
+$_LANG['pack'] = 'Đóng gói';
+$_LANG['ad_manage'] = 'Quản lý quảng cáo';
+$_LANG['gift_manage'] = 'Quản lý gói quà';
+$_LANG['auction'] = 'Đấu giá';
+$_LANG['group_by'] = 'Hoạt động nhóm mua';
 $_LANG['favourable'] = 'Concessions activities';
-$_LANG['whole_sale'] = 'Whole sale management';
+$_LANG['whole_sale'] = 'Quản lý bán sỉ';
 $_LANG['package_manage'] = 'Gói ưu đãi';
-$_LANG['exchange_goods'] = 'Integral Mall Goods';
+$_LANG['exchange_goods'] = 'Sản phẩm trao đổi';
 
-//Email management
-$_LANG['attention_list'] = 'Attention management';
-$_LANG['email_list'] = 'E-mail subscription';
+//Quản lý email
+$_LANG['attention_list'] = 'Quản lý cảnh báo';
+$_LANG['email_list'] = 'Nhận thư thông báo';
 $_LANG['magazine_list'] = 'Magazine management';
-$_LANG['view_sendlist'] = 'Mail Queue Management';
+$_LANG['view_sendlist'] = 'Quản lý mail đợi';
 
-//Template management
-$_LANG['template_select'] = 'Template Chooser ';
-$_LANG['template_setup']  = ' Template Settings ';
-$_LANG['library_manage']  = ' Library Project Management ';
-$_LANG['lang_edit']       = ' Language of editing ';
+//Quản lý giao diện
+$_LANG['template_select'] = 'Chọn giao diện';
+$_LANG['template_setup']  = ' Thiết lập giao diện ';
+$_LANG['library_manage']  = ' Quản lý lib ';
+$_LANG['lang_edit']       = ' Chỉnh sửa ngôn ngữ ';
 $_LANG['backup_setting']  = ' Sao lưu t.lập g.diện ';
-$_LANG['mail_template']  = ' E-mail template management';
+$_LANG['mail_template']  = 'Quản lý mẫu email';
 
-//Database Management
-$_LANG['db_backup']    = 'Data Backup ';
-$_LANG['db_renew']     = 'Data Recovery ';
-$_LANG['db_optimize']  = 'Data sheet optimization';
-$_LANG['sql_query']    = 'SQL query ';
-$_LANG['convert']      = ' Conversion data';
+//Quản lý dữ liệu
+$_LANG['db_backup']    = 'Sao lưu dữ liệu ';
+$_LANG['db_renew']     = 'Khôi phục dữ liệu ';
+$_LANG['db_optimize']  = 'Tối ưu dữ liệu';
+$_LANG['sql_query']    = 'Truy vấn SQL';
+$_LANG['convert']      = 'Chuyển đổi dữ liệu';
 
-//SMS Management
-$_LANG['my_info']         = 'Account Information ';
-$_LANG['sms_send']        = 'Send SMS ';
-$_LANG['sms_charge']      = 'SMS recharge ';
-$_LANG['send_history']    = 'Send record ';
-$_LANG['charge_history']  = 'Voucher record ';
-
-
+//Quản lý SMS
+$_LANG['my_info']         = 'Thông tin tài khoản';
+$_LANG['sms_send']        = 'Gửi SMS';
+$_LANG['sms_charge']      = 'Nạp tài khoản SMS';
+$_LANG['send_history']    = 'Lịch sử gửi SMS';
+$_LANG['charge_history']  = 'Lịch sử nạp tiền';
 ?>

@@ -26,8 +26,8 @@ $_LANG['register_new'] = 'Đăng ký';
 $_LANG['enable_old'] = 'Enable account';
 
 /* Sms special service message */
-$_LANG['sms_user_name'] = 'Username:';
-$_LANG['sms_password'] = 'Password:';
+$_LANG['sms_user_name'] = 'Tài khoản:';
+$_LANG['sms_password'] = 'Mật khẩu:';
 $_LANG['sms_domain'] = 'Domain:';
 $_LANG['sms_num'] = 'Sms special service number:';
 $_LANG['sms_count'] = 'Send smsquantity:';
@@ -47,7 +47,7 @@ $_LANG['back_send_history'] = 'Return to send history';
 $_LANG['back_charge_history'] = 'Return to charge history';
 
 /* Record query interface */
-$_LANG['start_date'] = 'Start date';
+$_LANG['start_date'] = 'Ngày bắt đầu';
 $_LANG['date_notice'] = 'Format:YYYY-MM-DD. Allowed blank.';
 $_LANG['end_date'] = 'Hạn chót';
 $_LANG['page_size'] = 'Display every page';

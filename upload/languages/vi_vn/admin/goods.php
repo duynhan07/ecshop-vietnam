@@ -157,13 +157,13 @@ $_LANG['on_sale_desc'] ='Checked means it can be allowed to sale, otherwise can 
 $_LANG['alone_sale'] ='Checked means it can be sold as common product, otherwise can be sold as accessories or gifts.';
 $_LANG['free_shipping'] = 'Checked means it can shipped free, otherwise as regular.';
 
-$_LANG['invalid_goods_img'] ='Product picture format inaccuracy!';
+$_LANG['invalid_goods_img'] ='Định dạng hình sản phẩm không hợp lệ!';
 $_LANG['invalid_goods_thumb']='Product thumbnail format inaccuracy!';
 $_LANG['invalid_img_url'] ='Product gallery the %s picture format inaccuracy!';
 
-$_LANG['goods_img_too_big'] ='Product picture file is too big(the biggest value: %s), can\'t upload.';
-$_LANG['goods_thumb_too_big']='Product thumbnail file is too big(the biggest value: %s), can\'t upload.';
-$_LANG['img_url_too_big'] ='Product gallery in the %s picture file is too big(the biggest value: %s), can\'t upload.';
+$_LANG['goods_img_too_big'] ='Kích cỡ hình sản phẩm quá lớn(tối đa hỗ trợ là: %s), không thể upload.';
+$_LANG['goods_thumb_too_big']='Product thumbnail file is too big(tối đa hỗ trợ là: %s), không thể upload.';
+$_LANG['img_url_too_big'] ='Product gallery in the %s picture file is too big(tối đa hỗ trợ là: %s), không thể upload.';
 
 $_LANG['integral_market_price']='Take integral';
 $_LANG['upload_images'] ='Upload a picture';
