@@ -75,7 +75,7 @@ $_LANG['process_desc'] = 'Ghi chú';
 $_LANG['describe'] = 'Mô tả';
 $_LANG['contact_username'] = 'Contact';
 $_LANG['contact_phone'] = 'Phone';
-$_LANG['submit_booking_goods'] = 'Submit';
+$_LANG['submit_booking_goods'] = 'Gửi đi';
 $_LANG['booking_success'] = 'Đơn hàng đặt mua của bạn đã được gửi đi!';
 $_LANG['booking_rec_exist'] = 'Bạn đã đặt trước sản phẩm này rồi!';
 $_LANG['back_booking_list'] = 'Về danh sách đặt trước';
@@ -166,7 +166,7 @@ $_LANG['add_address_success'] = 'Add successfully!';
 $_LANG['edit_address_success'] = 'Thông tin nhận hàng của bạn đã được thay đổi thành công!';
 $_LANG['address_list_lnk'] = 'Return the address list';
 $_LANG['add_address'] = 'Add a new place of receipt';
-$_LANG['confirm_edit'] = 'Submit';
+$_LANG['confirm_edit'] = 'Gửi đi';
 
 $_LANG['confirm_drop_address'] = 'Are you sure delete the place of receipt?';
 
@@ -201,7 +201,7 @@ $_LANG['shopman_reply'] = 'Reply of the shop owner';
 $_LANG['send_message'] = 'Send message';
 $_LANG['message_type'] = 'Feedback type';
 $_LANG['message_content'] = 'Contents';
-$_LANG['submit_message'] = 'Submit';
+$_LANG['submit_message'] = 'Gửi đi';
 $_LANG['upload_img'] = 'Upload file';
 $_LANG['img_name'] = 'Image name';
 
@@ -352,22 +352,22 @@ $_LANG['shipping_time'] = 'T.gian v.chuyển %s';
 
 $_LANG['select_payment'] = 'Hình thức t.toán';
 $_LANG['order_amount'] = 'Sum payable';
-$_LANG['update_address'] = 'Update consignee address';
-$_LANG['virtual_card_info'] = 'Virtual card infomation';
+$_LANG['update_address'] = 'Cập nhật địa chỉ người nahanj';
+$_LANG['virtual_card_info'] = 'Thông tin thẻ ảo';
 
 /* 取回密码 */
 $_LANG['back_home_lnk'] = 'Về trang chủ.';
 $_LANG['get_password_lnk'] = 'Trở về trang lấy lại mật khẩu.';
-$_LANG['get_password_by_question'] = 'Fimd back your password by a password question';
-$_LANG['get_password_by_mail'] = 'Fimd back your password by Email';
-$_LANG['back_retry_answer'] = 'back and retry';
+$_LANG['get_password_by_question'] = 'Lấy mật khẩu bằng câu hỏi bảo mật';
+$_LANG['get_password_by_mail'] = 'Lấy lại mật khẩu qua email';
+$_LANG['back_retry_answer'] = 'Quay lại và thử lại';
 
 /* 登录 注册 */
 $_LANG['label_username'] = 'Tài khoản';
 $_LANG['label_email'] = 'Email';
 $_LANG['label_password'] = 'Mật khẩu';
 $_LANG['label_confirm_password'] = 'Nhập lại m.khẩu';
-$_LANG['label_password_intensity'] = 'Password intensity';
+$_LANG['label_password_intensity'] = 'Độ mạnh mật khẩu';
 $_LANG['want_login'] = 'Tôi đã có tài khoản, tôi sẽ đăng nhập.';
 $_LANG['other_msn'] = 'MSN';
 $_LANG['other_qq'] = 'Yahoo';
@@ -386,10 +386,10 @@ $_LANG['msg_email_registered'] = 'Email exists, please enter again';
 $_LANG['msg_email_format'] = 'Email address is unvalid';
 
 $_LANG['login_success'] = 'Đăng nhập thành công.';
-$_LANG['confirm_login'] = 'Enter';
+$_LANG['confirm_login'] = 'Đăng nhập';
 $_LANG['profile_lnk'] = 'Xem hồ sơ của tôi.';
 $_LANG['login_failure'] = 'Tài khoản hoặc mật khẩu không đúng.';
-$_LANG['relogin_lnk'] = 'Return';
+$_LANG['relogin_lnk'] = 'Quay lại';
 
 $_LANG['sex'] = 'Giới tính';
 $_LANG['male'] = 'Nam';
@@ -479,42 +479,42 @@ $_LANG['passport_js']['mobile_phone_invalid'] = '- Mobile No. is invalid';
 $_LANG['passport_js']['msg_un_blank'] = '* Bạn phải nhập tên tài khoản';
 $_LANG['passport_js']['msg_un_length'] = '* Username should not exceed 7 Chinese characters';
 $_LANG['passport_js']['msg_un_format'] = '* Username contain invalid characters';
-$_LANG['passport_js']['msg_un_registered'] = '* Username exists, please enter again';
-$_LANG['passport_js']['msg_can_rg'] = '* You can register';
-$_LANG['passport_js']['msg_email_blank'] = '* Email address is blank';
-$_LANG['passport_js']['msg_email_registered'] = '* Mail-box exists, please enter again';
-$_LANG['passport_js']['msg_email_format'] = '* Email address is invalid';
-$_LANG['passport_js']['msg_blank'] = 'is blank';
-$_LANG['passport_js']['no_select_question'] = '- You have not finished the password question operation';
-$_LANG['passport_js']['passwd_balnk'] = '- The password entered can`t have blank';
+$_LANG['passport_js']['msg_un_registered'] = '* Tên tài khoản này đã có người dùng, hãy chọn tên khác';
+$_LANG['passport_js']['msg_can_rg'] = '* Có thể đăng ký';
+$_LANG['passport_js']['msg_email_blank'] = '* Địa chỉ email không được để trống';
+$_LANG['passport_js']['msg_email_registered'] = '* Địa chỉ email này đã tồn tại, hãy chọn email khác';
+$_LANG['passport_js']['msg_email_format'] = '* Địa chỉ email không hợp lệ';
+$_LANG['passport_js']['msg_blank'] = ' không được để trống';
+$_LANG['passport_js']['no_select_question'] = '- Bạn chưa nhập câu hỏi và trả lời bảo mật';
+$_LANG['passport_js']['passwd_balnk'] = '- Bạn phải nhập mật khẩu';
 
 
 /* user_clips.dwt js 语言文件 */
-$_LANG['clips_js']['msg_title_empty'] = 'Title message is blank.';
-$_LANG['clips_js']['msg_content_empty'] = 'Message content is blank.';
-$_LANG['clips_js']['msg_title_limit'] = 'Message title should not exceed 200 charaters';
+$_LANG['clips_js']['msg_title_empty'] = 'Tiêu đề tin nhắn không được để trống.';
+$_LANG['clips_js']['msg_content_empty'] = 'Bạn phải nhập nội dung tin nhắn.';
+$_LANG['clips_js']['msg_title_limit'] = 'Tiêu đề tin nhắn không được vượt quá 200 ký tự';
 
 /* 合并订单js */
-$_LANG['merge_order_js']['from_order_empty'] = 'Please select secondary orders you want to combine.';
-$_LANG['merge_order_js']['to_order_empty'] = 'Please select the first order you want to combine.';
-$_LANG['merge_order_js']['order_same'] = 'The first order same with secondary order, please select again.';
-$_LANG['merge_order_js']['confirm_merge'] = 'Are you sure to merge the two orders?';
+$_LANG['merge_order_js']['from_order_empty'] = 'Vui lòng chọn đơn hàng thứ cấp mà bạn muốn cộng gộp.';
+$_LANG['merge_order_js']['to_order_empty'] = 'vui lòng chọn đơn hàng chính mà bạn muốn cộng gộp.';
+$_LANG['merge_order_js']['order_same'] = 'Đơn hàng bị trùng, hãy thử lại.';
+$_LANG['merge_order_js']['confirm_merge'] = 'Bạn có chắc bạn muốn cộng gộp đơn hàng?';
 
 /* 将用户订单中商品加入购物车 */
-$_LANG['order_id_empty'] = 'Unspecified order NO.';
-$_LANG['return_to_cart_success'] = 'The product of orders have added in your cart.';
+$_LANG['order_id_empty'] = 'Không xác định đơn hàng có mã ';
+$_LANG['return_to_cart_success'] = 'Đã thêm sản phẩm vào giỏ hàng thành công.';
 
-/* 保存用户订单收货地址 */
-$_LANG['consigness_empty'] = 'Consignee name is blank.';
-$_LANG['address_empty'] = 'Place of receipt is blank.';
+/* Lưu địa chỉ người nhận */
+$_LANG['consigness_empty'] = 'Bạn phải nhập tên người nhận.';
+$_LANG['address_empty'] = 'Hãy nhập địa chỉ người nhận.';
 $_LANG['require_unconfirmed'] = 'You can\'t rechange in the status.';
 
 /* 红包详情 */
 $_LANG['bonus_sn'] = 'NO. ';
 $_LANG['bonus_name'] = 'Name ';
 $_LANG['bonus_amount'] = 'Money ';
-$_LANG['min_goods_amount'] = 'Minimum goods amount';
-$_LANG['bonus_end_date'] = 'Deadline ';
+$_LANG['min_goods_amount'] = 'Số tiền tối thiểu';
+$_LANG['bonus_end_date'] = 'Hạn chót ';
 $_LANG['bonus_status'] = 'Trạng thái';
 
 $_LANG['not_start'] = 'Not start';
@@ -642,15 +642,15 @@ $_LANG['rank_points'] = 'Rank-point ';
 $_LANG['pwd_lower'] = 'Kém';
 $_LANG['pwd_middle'] = 'T.bình';
 $_LANG['pwd_high'] = 'Tốt';
-$_LANG['user_reg_info'][0] = 'If you are not a member, please register';
-$_LANG['user_reg_info'][1] = 'Friendship tips';
-$_LANG['user_reg_info'][2] = 'Registration for non-members can purchase goods at the restaurant';
-$_LANG['user_reg_info'][8] = "Don't register as a member may not purchase goods in the shop";
-$_LANG['user_reg_info'][3] = 'After registration, but you can';
-$_LANG['user_reg_info'][4] = 'Save your personal data';
-$_LANG['user_reg_info'][5] = 'You are concerned about the collection of goods';
-$_LANG['user_reg_info'][6] = 'Members enjoy the points system';
-$_LANG['user_reg_info'][7] = 'We subscribe to information goods';
+$_LANG['user_reg_info'][0] = 'Bạn chưa có tài khoản, hãy đăng ký';
+$_LANG['user_reg_info'][1] = 'Chỉ dẫn';
+$_LANG['user_reg_info'][2] = 'Chỉ thành viên có thể thanh toán cho sản phẩm tại cửa hàng';
+$_LANG['user_reg_info'][8] = "Khách có thể không mua được sản phẩm tại cửa hàng";
+$_LANG['user_reg_info'][3] = 'Sau khi đăng ký, bạn có thể';
+$_LANG['user_reg_info'][4] = 'Lưu thông tin cá nhân';
+$_LANG['user_reg_info'][5] = 'Đặt quan tâm tới sản phẩm';
+$_LANG['user_reg_info'][6] = 'nhận thưởng từ hệ thống';
+$_LANG['user_reg_info'][7] = 'Theo dõi thông tin sản phẩm';
 $_LANG['add_bonus'] = 'Thêm quà tặng';
 
 /* 密码找回问题 */

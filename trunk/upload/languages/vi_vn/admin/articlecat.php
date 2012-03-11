@@ -19,9 +19,9 @@ $_LANG['cat_name'] = 'Tên';
 $_LANG['type'] = 'Category Type';
 $_LANG['type_name'][COMMON_CAT] = 'General classification';
 $_LANG['type_name'][SYSTEM_CAT] = 'Taxonomy';
-$_LANG['type_name'][INFO_CAT]   = 'Shop information';
+$_LANG['type_name'][INFO_CAT]   = 'Thông tin gian hàng';
 $_LANG['type_name'][UPHELP_CAT] = 'Help Category';
-$_LANG['type_name'][HELP_CAT]   = 'Shop help';
+$_LANG['type_name'][HELP_CAT]   = 'Trợ giúp cửa hàng';
 
 $_LANG['cat_keywords'] = 'Từ khóa';
 $_LANG['cat_desc'] = 'Mô tả';

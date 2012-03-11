@@ -22,7 +22,7 @@ $_LANG['enter_admin_pwd'] = 'Administrator new password';
 $_LANG['confirm_admin_pwd'] = 'Administrator verify password';
 $_LANG['get_newpassword'] = 'Administrator password repossess';
 $_LANG['click_button'] = 'OK';
-$_LANG['reset_button'] = 'Reset';
+$_LANG['reset_button'] = 'Làm lại';
 $_LANG['admin_login'] = 'Đăng nhập';
 
 $_LANG['login_now'] = 'Login now';

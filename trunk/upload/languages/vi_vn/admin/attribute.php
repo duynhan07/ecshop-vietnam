@@ -19,7 +19,7 @@ $_LANG['by_goods_type'] = 'Display by product type:';
 $_LANG['all_goods_type'] = 'All products type';
 
 $_LANG['attr_id'] = 'ID';
-$_LANG['cat_id'] = 'Product type';
+$_LANG['cat_id'] = 'Loại sản phẩm';
 $_LANG['attr_name'] = 'Tên thuộc tính';
 $_LANG['attr_input_type'] = 'Chế độ nhập';
 $_LANG['attr_values'] = 'Chọn danh sách giá trị';

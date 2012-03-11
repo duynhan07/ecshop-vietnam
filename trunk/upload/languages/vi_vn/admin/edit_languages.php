@@ -17,8 +17,8 @@
 
 $_LANG['edit_languages'] = 'Edit Language Item';
 $_LANG['enter_keywords'] = 'Enter language keywords';
-$_LANG['edit_button'] = 'Submit';
-$_LANG['reset_button'] = 'Reset';
+$_LANG['edit_button'] = 'Gửi đi';
+$_LANG['reset_button'] = 'Làm lại';
 
 $_LANG['back_list'] = 'Return to edit language';
 

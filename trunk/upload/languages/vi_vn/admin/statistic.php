@@ -1,52 +1,36 @@
 <?php
+/* Thống kê thông số truy cập */
+$_LANG['stats_off'] = 'Thống kê lưu lượng truy cập đã bị đóng. <BR>Nếu bạn muốn bật lại: Thiết lập hệ thống -> Cấu hình -> Cơ bản: để mở thống kê.';
+$_LANG['last_update'] = 'Cập nhật mới nhất';
+$_LANG['now_update'] = 'Cập nhật log';
+$_LANG['update_success'] = 'Cập nhật thành công!';
+$_LANG['view_log'] = 'Xem log';
+$_LANG['select_year_month'] = 'Năm/Tháng';
 
-/**
- * ECSHOP Statistics information language item
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: statistic.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
-/* Count of visitor statistics */
-$_LANG['stats_off'] = 'Web site traffic statistics have been closed. <BR>If necessary go to: System Setup -> Configuration -> Basic to open the site traffic statistics service.';
-$_LANG['last_update'] = 'Latest update';
-$_LANG['now_update'] = 'Update log';
-$_LANG['update_success'] = 'Update successfully!';
-$_LANG['view_log'] = 'View log';
-$_LANG['select_year_month'] = 'Year/month';
-
-$_LANG['pv_stats'] = 'General visit data';
+$_LANG['pv_stats'] = 'Thông số truy cập';
 $_LANG['integration_visit'] = 'Integration visit';
-$_LANG['seo_analyse'] = 'Search engine analyse';
-$_LANG['area_analyse'] = 'Area analyse';
-$_LANG['visit_site'] = 'Visit site analyse';
-$_LANG['key_analyse'] = 'Key word analyse';
+$_LANG['seo_analyse'] = 'Phân tích SE';
+$_LANG['area_analyse'] = 'Phân tích khu vực';
+$_LANG['visit_site'] = 'Phân  tích truy cập';
+$_LANG['key_analyse'] = 'Phân tích từ khóa';
 
-$_LANG['start_date'] = 'Start date';
+$_LANG['start_date'] = 'Ngày bắt đầu';
 $_LANG['end_date'] = 'Hạn chót';
 $_LANG['query'] = 'Query';
 $_LANG['result_filter'] = '
 Filter results';
-$_LANG['compare_query'] = 'Compare query';
+$_LANG['compare_query'] = 'So sánh truy vấn';
 $_LANG['year_status'] = 'Year status';
 $_LANG['month_status'] = 'Mouth status';
 
-$_LANG['year'] = 'year';
-$_LANG['month'] = 'mouth';
-$_LANG['day'] = 'day';
+$_LANG['year'] = 'năm';
+$_LANG['month'] = 'tháng';
+$_LANG['day'] = 'ngày';
 $_LANG['year_format'] = '%Y';
 $_LANG['month_format'] = '%c';
 
-$_LANG['from'] = 'from';
-$_LANG['to'] = 'to';
+$_LANG['from'] = 'từ';
+$_LANG['to'] = 'đến';
 $_LANG['view'] = 'Xem';
 
 /* Sales general situation */
@@ -123,7 +107,7 @@ $_LANG['download_amount_sort'] = 'Download to rate statements';
 
 /* Sales details */
 $_LANG['goods_name'] = 'Tên';
-$_LANG['goods_sn'] = 'Product NO.';
+$_LANG['goods_sn'] = 'Mã sản phẩm';
 $_LANG['order_sn'] = 'Mã đ.hàng';
 $_LANG['amount'] = 'Số lượng';
 $_LANG['to'] = 'to';

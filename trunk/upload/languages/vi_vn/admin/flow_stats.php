@@ -29,9 +29,9 @@ $_LANG['input_url'] = 'Enter URL directly';
 $_LANG['date'] = 'Date';
 $_LANG['access_count'] = 'Visitors count';
 $_LANG['access_query'] = 'Query';
-$_LANG['compare_query'] = 'Compare query';
+$_LANG['compare_query'] = 'So sánh truy vấn';
 
-$_LANG['start_date'] = 'Start date';
+$_LANG['start_date'] = 'Ngày bắt đầu';
 $_LANG['end_date'] = 'Hạn chót';
 
 $_LANG['down_flow_stats'] = 'Download flow statistics';

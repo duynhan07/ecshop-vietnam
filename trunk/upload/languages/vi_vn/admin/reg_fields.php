@@ -16,7 +16,7 @@
 */
 
 $_LANG['field_name'] = 'The name of the uesr register options';
-$_LANG['field_order'] = 'Order';
+$_LANG['field_order'] = 'Đơn hàng';
 $_LANG['field_display'] = 'Display or not';
 $_LANG['field_need'] = 'Need to input or not';
 $_LANG['add_reg_field'] = 'Add a uesr register option';

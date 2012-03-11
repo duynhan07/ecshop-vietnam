@@ -185,7 +185,7 @@ $_LANG['08_add_order'] = 'Thêm đơn hàng';
 $_LANG['09_delivery_order'] = 'Đơn hàng đã chuyển';
 $_LANG['10_back_order'] = 'Đơn hàng trả về';
 
-/* AD management */
+/* Quản lý quảng cáo */
 $_LANG['ad_position'] = 'Vị trí quảng cáo';
 $_LANG['ad_list'] = 'Danh sách quảng cáo';
 
@@ -250,7 +250,7 @@ $_LANG['ucenter_setup'] = 'UCenter Set';
 $_LANG['file_check'] = 'Kiểm tra tệp';
 $_LANG['021_reg_fields'] = 'Register options settings';
 
-/* Template management */
+/* Quản lý giao diện */
 $_LANG['02_template_select'] = 'Chọn giao diện';
 $_LANG['03_template_setup'] = 'Thiết lập giao diện';
 $_LANG['04_template_library'] = 'Library Item';
@@ -266,7 +266,7 @@ $_LANG['convert'] = 'Convertor';
 
 /* Short management */
 $_LANG['02_sms_my_info'] = 'Accounts';
-$_LANG['03_sms_send'] = 'Send Message';
+$_LANG['03_sms_send'] = 'Gửi tin nhắn';
 $_LANG['04_sms_charge'] = 'Accounts Charge';
 $_LANG['05_sms_send_history'] = 'Send Record';
 $_LANG['06_sms_charge_history'] = 'Charge History';

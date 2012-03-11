@@ -6,12 +6,12 @@ $_LANG['edit_group_buy'] = 'Sửa';
 
 /* Trang danh sách nhóm mua */
 $_LANG['goods_name'] = 'Tên sản phẩm';
-$_LANG['start_date'] = 'Start date';
+$_LANG['start_date'] = 'Ngày bắt đầu';
 $_LANG['end_date'] = 'Hạn chót';
 $_LANG['deposit'] = 'Tiền bảo hiểm';
 $_LANG['restrict_amount'] = 'Số lượng giới hạn';
 $_LANG['gift_integral'] = 'Present points';
-$_LANG['valid_order'] = 'Order';
+$_LANG['valid_order'] = 'Đơn hàng';
 $_LANG['valid_goods'] = 'Order product';
 $_LANG['current_price'] = 'Giá hiện tại';
 $_LANG['current_status'] = 'Trạng thái';
@@ -65,7 +65,7 @@ $_LANG['invalid_time'] = 'You have entered an invalid buy time.';
 
 $_LANG['add_success'] = 'Add successfully';
 $_LANG['edit_success'] = 'Edit successfully';
-$_LANG['back_list'] = 'Return';
+$_LANG['back_list'] = 'Quay lại';
 $_LANG['continue_add'] = 'Continue add';
 
 /* Add/Edit associates submit */

@@ -22,7 +22,7 @@ $_LANG['shopinfo_add'] = 'Add New Article';
 $_LANG['shopinfo_list'] = 'Articles List';
 
 $_LANG['back_list'] = 'Return to list';
-$_LANG['continue_add'] = 'Continue';
+$_LANG['continue_add'] = 'Tiếp tục';
 $_LANG['articleadd_succeed']= 'Succeed';
 
 /* Prompting message */
@@ -35,6 +35,6 @@ $_LANG['title_empty'] = 'Title can\'t be blank!';
 
 /*JS language item*/
 $_LANG['js_languages']['no_title'] = 'Please enter a title.';
-$_LANG['js_languages']['remove_confirm'] = 'Are you sure delete the record?';
+$_LANG['js_languages']['remove_confirm'] = 'Bạn có chắc bạn muốn xóa dữ liệu này?';
 
 ?>

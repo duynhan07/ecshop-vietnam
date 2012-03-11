@@ -17,7 +17,7 @@
 require(ROOT_PATH.ADMIN_PATH.'/sms_url.php');
 $_LANG['cfg_name']['basic'] = 'Basic';
 $_LANG['cfg_name']['display'] = 'Display';
-$_LANG['cfg_name']['shop_info'] = 'Shop information';
+$_LANG['cfg_name']['shop_info'] = 'Thông tin gian hàng';
 $_LANG['cfg_name']['shopping_flow'] = 'Shopping flow';
 $_LANG['cfg_name']['smtp'] = 'SMTP';
 $_LANG['cfg_name']['goods'] = 'Product display';

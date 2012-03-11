@@ -19,7 +19,7 @@ $_LANG['no_reply'] = 'No reply';
 $_LANG['yes_reply'] = 'Replied';
 $_LANG['admin_user_name'] = 'Administrator';
 
-$_LANG['type'] = array('Product','Article');
+$_LANG['type'] = array('Sản phẩm','Bài viết');
 $_LANG['send_email_notice'] = 'Email notification';
 
 $_LANG['ip_address'] = 'IP';
@@ -27,7 +27,7 @@ $_LANG['comment_rank'] = 'Rank';
 $_LANG['content'] = 'Contents';
 $_LANG['view_reply'] = 'View reply';
 $_LANG['view_content'] = 'View content';
-$_LANG['search_comment'] = 'Enter';
+$_LANG['search_comment'] = 'Đăng nhập';
 $_LANG['no_reply_comment'] = 'Not replied comment';
 $_LANG['all_comment'] = 'View all comments';
 $_LANG['reply_comment'] = 'Trả lời';

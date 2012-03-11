@@ -15,7 +15,7 @@
  * $Id: users.php 17217 2011-01-19 06:29:08Z liubo $
 */
 /* List page */
-$_LANG['label_user_name'] = 'Username:';
+$_LANG['label_user_name'] = 'Tài khoản:';
 $_LANG['label_pay_points_gt'] = 'Points more than:';
 $_LANG['label_pay_points_lt'] = ' Less than:';
 $_LANG['label_rank_name'] = 'Rank';
@@ -25,7 +25,7 @@ $_LANG['view_order'] = 'View the order';
 $_LANG['view_deposit'] = 'View Account details';
 $_LANG['username'] = 'Tài khoản';
 $_LANG['email'] = 'Email';
-$_LANG['is_validated'] = 'is_validated';
+$_LANG['is_validated'] = 'Xác thực?';
 $_LANG['reg_date'] = 'Register date';
 $_LANG['button_remove'] = 'Xóa';
 $_LANG['users_edit'] = 'Sửa';
@@ -35,9 +35,9 @@ $_LANG['username_empty'] = 'Vui lòng nhập tên tài khoản!';
 /* List relative language item */
 $_LANG['password'] = 'Mật khẩu';
 $_LANG['newpass'] = 'Mật khẩu';
-$_LANG['confirm_password'] = 'confirm password';
-$_LANG['question'] = 'Secret question';
-$_LANG['answer'] = 'Secret answer';
+$_LANG['confirm_password'] = 'Xác nhận';
+$_LANG['question'] = 'Câu hỏi';
+$_LANG['answer'] = 'Trả lời';
 $_LANG['gender'] = 'Giới tính';
 $_LANG['birthday'] = 'Sinh nhật';
 $_LANG['sex'][0] = 'Bí mật';
@@ -50,7 +50,7 @@ $_LANG['frozen_money'] = 'Frozen money';
 $_LANG['credit_line'] = 'Credit line';
 $_LANG['user_rank'] = 'Rank';
 $_LANG['not_special_rank'] = 'Nonspecial rank';
-$_LANG['view_detail_account']='View details.';
+$_LANG['view_detail_account']='sXem chi tiết.';
 $_LANG['parent_user'] = 'Recommend people';
 $_LANG['parent_remove'] = 'From relations recommend';
 $_LANG['affiliate_user'] = 'Recommended Member';
