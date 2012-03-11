@@ -31,13 +31,13 @@
    <form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
         <table width="100%" border="0" align="left" cellpadding="3" cellspacing="5">
           <tr>
-            <td width="15%" align="right">{$lang.label_username}</td>
-            <td width="85%"><input name="username" type="text" size="25" class="inputBg" /></td>
+            <td width="30%" align="right">{$lang.label_username}</td>
+            <td width="70%"><input name="username" type="text" size="20" class="inputBg" /></td>
           </tr>
           <tr>
             <td align="right">{$lang.label_password}</td>
             <td>
-            <input name="password" type="password" size="15"  class="inputBg"/>
+            <input name="password" type="password" size="20"  class="inputBg"/>
             </td>
           </tr>
           <!-- 判断是否启用验证码{if $enabled_captcha} -->
@@ -58,7 +58,7 @@
             <input type="submit" name="submit" value="" class="us_Submit" />
             </td>
           </tr>
-	  <tr><td></td><td><a href="user.php?act=qpassword_name" class="f3">{$lang.get_password_by_question}</a>&nbsp;&nbsp;&nbsp;<a href="user.php?act=get_password" class="f3">{$lang.get_password_by_mail}</a></td></tr>
+	  <tr><td colspan="2"><a href="user.php?act=qpassword_name" class="f3">{$lang.get_password_by_question}</a><br /><a href="user.php?act=get_password" class="f3">{$lang.get_password_by_mail}</a></td></tr>
       </table>
     </form>
   </div>
