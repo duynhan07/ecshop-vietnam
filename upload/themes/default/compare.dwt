@@ -100,7 +100,7 @@ var select_spe = "{$lang.select_spe}";
               <tr>
                 <td align="left" bgcolor="#ffffff">&nbsp;&nbsp;<strong>{$lang.goods_rank}</strong></td>
                 <!-- {foreach name="goods_list" from=$goods_list item=goods} -->
-                <td bgcolor="#ffffff">&nbsp;&nbsp;<span class="goods-price"><img src="images/stars{$goods.comment_rank}.gif" width="64" height="12" alt="comment rank {$goods.comment_rank}" /></span><br /></td>
+                <td bgcolor="#ffffff">&nbsp;&nbsp;<span class="goods-price"><img src="images/stars_{$goods.comment_rank}.png" width="64" height="12" alt="comment rank {$goods.comment_rank}" /></span><br /></td>
                 <!-- {/foreach} -->
               </tr>
               <tr>

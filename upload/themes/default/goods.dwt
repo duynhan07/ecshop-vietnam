@@ -296,7 +296,7 @@ function reg(str){
        </dd>
        <dd style="width:48%; padding-left:7px;">
        <strong>{$lang.goods_rank}</strong>
-      <img src="images/stars{$goods.comment_rank}.gif" alt="comment rank {$goods.comment_rank}" />
+      <img src="images/stars_{$goods.comment_rank}.png" alt="comment rank {$goods.comment_rank}" />
        </dd>
       </li>
 
