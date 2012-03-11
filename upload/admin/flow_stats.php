@@ -57,8 +57,8 @@ if ($_REQUEST['act'] == 'view')
     else
     {
         $tmp_time = local_strtotime(local_date('d-m-Y'));
-        $start_date_arr[] = local_strtotime(local_date('Y-m') . '-1');
-        $end_date_arr[]   = local_strtotime(local_date('Y-m') . '-31');;
+        $start_date_arr[] = local_strtotime(local_date('m-Y') . '-1');
+        $end_date_arr[]   = local_strtotime(local_date('m-Y') . '-31');;
     }
 
     /* ------------------------------------- */
@@ -98,7 +98,7 @@ if ($_REQUEST['act'] == 'view')
         foreach($start_date_arr AS $k => $val)
         {
 
-            $seriesName = local_date('Y-m', $start_date_arr[$k]);
+            $seriesName = local_date('m-Y', $start_date_arr[$k]);
             $general_xml .= "<dataset seriesName='$seriesName' color='" . chart_color($k) . "' anchorBorderColor='" . chart_color($k) . "' anchorBgColor='" . chart_color($k) . "'>";
             $sql = "SELECT FLOOR((access_time - $start_date_arr[$k]) / (24 * 3600)) AS sn, access_time, COUNT(*) AS access_count".
                 " FROM " .$ecs->table('stats').
@@ -178,7 +178,7 @@ if ($_REQUEST['act'] == 'view')
         $area_arr = array();
         while ($val = $db->fetchRow($res))
         {
-           $date = local_date('Y-m', $val['access_time']);
+           $date = local_date('m-Y', $val['access_time']);
            $area_arr[$val['area']] = null;
            if (isset($category[$date][$val['area']]))
            {
@@ -200,7 +200,7 @@ if ($_REQUEST['act'] == 'view')
         foreach($start_date_arr AS $val)
         {
             $key++;
-            $date = local_date('Y-m', $val);
+            $date = local_date('m-Y', $val);
             $area_xml .= "<dataset seriesName='$date' color='" .chart_color($key). "' showValues='0'>";
 
             foreach ($area_arr AS $k => $v)
@@ -263,7 +263,7 @@ if ($_REQUEST['act'] == 'view')
         $domain_arr = array();
         while ($val = $db->fetchRow($res))
         {
-           $date = local_date('Y-m', $val['access_time']);
+           $date = local_date('m-Y', $val['access_time']);
            $domain_arr[$val['referer_domain']] = null;
            if (isset($category[$date][$val['referer_domain']]))
            {
@@ -286,7 +286,7 @@ if ($_REQUEST['act'] == 'view')
         foreach($start_date_arr AS $val)
         {
             $key++;
-            $date = local_date('Y-m', $val);
+            $date = local_date('m-Y', $val);
             $from_xml .= "<dataset seriesName='$date' color='" .chart_color($key). "' showValues='0'>";
 
             foreach ($domain_arr AS $k => $v)
@@ -320,7 +320,7 @@ if ($_REQUEST['act'] == 'view')
     {
         if (isset($start_date_arr[$i]))
         {
-            $start_date_arr[$i] = local_date('Y-m', $start_date_arr[$i]);
+            $start_date_arr[$i] = local_date('m-Y', $start_date_arr[$i]);
         }
         else
         {

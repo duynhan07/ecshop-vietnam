@@ -89,8 +89,8 @@ if ($_REQUEST['act'] == 'list')
     else
     {
         $tmp_time = local_strtotime(local_date('d-m-Y'));
-        $start_date_arr[] = local_strtotime(local_date('Y-m') . '-1');
-        $end_date_arr[]   = local_strtotime(local_date('Y-m') . '-31');;
+        $start_date_arr[] = local_strtotime(local_date('m-Y') . '-1');
+        $end_date_arr[]   = local_strtotime(local_date('m-Y') . '-31');;
     }
 
     /* 按月份交叉查询 */
@@ -104,7 +104,7 @@ if ($_REQUEST['act'] == 'list')
                                 "<category label='$_LANG[invalid]' /></categories>";
         foreach($start_date_arr AS $k => $val)
         {
-            $seriesName = local_date('Y-m',$val);
+            $seriesName = local_date('m-Y',$val);
             $order_info = get_orderinfo($start_date_arr[$k], $end_date_arr[$k]);
             $order_general_xml .= "<dataset seriesName='$seriesName' color='$color_array[$k]' showValues='0'>";
             $order_general_xml .= "<set value='$order_info[confirmed_num]' />";
@@ -134,7 +134,7 @@ if ($_REQUEST['act'] == 'list')
              {
                 $payment[$pay_item['pay_name']] = null;
 
-                $paydate = local_date('Y-m', $pay_item['pay_time']);
+                $paydate = local_date('m-Y', $pay_item['pay_time']);
 
                 $payment_count[$pay_item['pay_name']][$paydate] = $pay_item['order_num'];
              }
@@ -149,7 +149,7 @@ if ($_REQUEST['act'] == 'list')
 
         foreach($start_date_arr AS $k => $val)
         {
-            $date = local_date('Y-m', $start_date_arr[$k]);
+            $date = local_date('m-Y', $start_date_arr[$k]);
             $pay_xml .= "<dataset seriesName='$date' color='$color_array[$k]' showValues='0'>";
             foreach ($payment AS $k => $val)
             {
@@ -184,7 +184,7 @@ if ($_REQUEST['act'] == 'list')
              {
                 $ship[$ship_item['ship_name']] = null;
 
-                $shipdate = local_date('Y-m', $ship_item['shipping_time']);
+                $shipdate = local_date('m-Y', $ship_item['shipping_time']);
 
                 $ship_count[$ship_item['ship_name']][$shipdate] = $ship_item['order_num'];
              }
@@ -199,7 +199,7 @@ if ($_REQUEST['act'] == 'list')
 
         foreach($start_date_arr AS $k => $val)
         {
-            $date = local_date('Y-m', $start_date_arr[$k]);
+            $date = local_date('m-Y', $start_date_arr[$k]);
 
             $ship_xml .= "<dataset seriesName='$date' color='$color_array[$k]' showValues='0'>";
             foreach ($ship AS $k => $val)
@@ -287,7 +287,7 @@ if ($_REQUEST['act'] == 'list')
     {
         if (isset($start_date_arr[$i]))
         {
-            $start_date_arr[$i] = local_date('Y-m', $start_date_arr[$i]);
+            $start_date_arr[$i] = local_date('m-Y', $start_date_arr[$i]);
         }
         else
         {
