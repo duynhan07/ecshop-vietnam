@@ -53,7 +53,7 @@ else
 }
 
 /* 分组统计订单数和销售额：已发货时间为准 */
-$format = ($query_type == 'year') ? '%Y' : '%Y-%m';
+$format = ($query_type == 'year') ? '%Y' : '%m-%Y';
 $sql = "SELECT DATE_FORMAT(FROM_UNIXTIME(shipping_time), '$format') AS period, COUNT(*) AS order_count, " .
             "SUM(goods_amount + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee - discount) AS order_amount " .
         "FROM " . $ecs->table('order_info') .
