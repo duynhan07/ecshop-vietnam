@@ -120,7 +120,7 @@ $_LANG['fee_info'] = 'Thông tin chi phí';
 $_LANG['action_info'] = 'Thông tin thao tác';
 $_LANG['shipping_info'] = 'Thông tin vận chuyển';
 
-$_LANG['label_how_oos'] = 'Out of Stock dispose:';
+$_LANG['label_how_oos'] = 'Xử lý khi hết hàng:';
 $_LANG['label_how_surplus'] = 'Balance dispose:';
 $_LANG['label_pack'] = 'Packing:';
 $_LANG['label_card'] = 'Card:';

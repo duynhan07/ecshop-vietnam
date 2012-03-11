@@ -44,7 +44,7 @@ $_LANG['trash'] = 'Thùng rác';
 $_LANG['restore'] = 'Khôi phục';
 $_LANG['close_window'] = 'Đóng cửa sổ';
 $_LANG['btn_select'] = 'Chọn';
-$_LANG['operator'] = 'Operator';
+$_LANG['operator'] = 'Thao tác';
 $_LANG['cancel'] = 'Hủy bỏ';
 
 $_LANG['empty'] = 'Không được để trống';
