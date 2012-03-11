@@ -165,12 +165,12 @@ $_LANG['07_card_list'] = 'Greetings Card';
 $_LANG['pack_add'] = 'New Packing';
 $_LANG['card_add'] = 'New Card';
 $_LANG['08_group_buy'] = 'Nhóm mua';
-$_LANG['09_topic'] = 'Topic';
-$_LANG['topic_add'] = 'Add Topic';
-$_LANG['topic_list'] = 'Topic List';
-$_LANG['10_auction'] = 'Auction';
+$_LANG['09_topic'] = 'Topic sản phẩm';
+$_LANG['topic_add'] = 'Thêm topic';
+$_LANG['topic_list'] = 'Danh sách topic';
+$_LANG['10_auction'] = 'Đấu giá';
 $_LANG['12_favourable'] = 'Favourable Activity';
-$_LANG['13_wholesale'] = 'Wholesale';
+$_LANG['13_wholesale'] = 'Bán sỉ';
 $_LANG['ebao_commend'] = 'Ebao commend';
 $_LANG['14_package_list'] = 'Gói ưu đãi';
 $_LANG['package_add'] = 'Thêm gói ưu đãi';
@@ -191,7 +191,7 @@ $_LANG['ad_list'] = 'Danh sách quảng cáo';
 
 /* Report statistic */
 $_LANG['flow_stats'] = 'Biểu đồ thống kê';
-$_LANG['searchengine_stats'] = 'Bộ máy tìm keiems';
+$_LANG['searchengine_stats'] = 'Bộ máy tìm kiếm';
 $_LANG['report_order'] = 'Thống kê đơn hàng';
 $_LANG['report_sell'] = 'Báo cáo kinh doanh';
 $_LANG['sell_stats'] = 'Thống kê kinh doanh';
@@ -217,64 +217,64 @@ $_LANG['03_users_list'] = 'Người dùng';
 $_LANG['04_users_add'] = 'Thêm tài khoản';
 $_LANG['05_user_rank_list'] = 'Cấp bậc';
 $_LANG['06_list_integrate'] = 'Thành viên đồng bộ';
-$_LANG['09_user_account'] = 'Saving and drawing application';
+$_LANG['09_user_account'] = 'Nạp tiền và rút tiền';
 $_LANG['10_user_account_manage'] = 'account_manage';
 
 /* Authorization  management */
-$_LANG['admin_list'] = 'Administrators';
+$_LANG['admin_list'] = 'Quản trị viên';
 $_LANG['admin_list_role'] = 'Role list';
 $_LANG['admin_role'] = 'Management role';
-$_LANG['admin_add'] = 'New Administrator';
+$_LANG['admin_add'] = 'Thêm quản trị';
 $_LANG['admin_add_role'] = 'Add role';
 $_LANG['admin_edit_role'] = 'Modify role';
-$_LANG['admin_logs'] = 'Logs';
-$_LANG['agency_list'] = 'Agency';
-$_LANG['suppliers_list'] = 'Suppliers';
+$_LANG['admin_logs'] = 'Log quản trị';
+$_LANG['agency_list'] = 'Đại lý';
+$_LANG['suppliers_list'] = 'Nhà cung cấp';
 
 /* System setup */
-$_LANG['01_shop_config'] = 'Configuration';
+$_LANG['01_shop_config'] = 'Cấu hình';
 $_LANG['shop_authorized'] = 'Authorized';
 $_LANG['shp_webcollect'] = 'Webcollect';
 $_LANG['02_payment_list'] = 'Payment';
 $_LANG['03_shipping_list'] = 'Shipping';
 $_LANG['04_mail_settings'] = 'Mail Settings';
-$_LANG['05_area_list'] = 'Area List';
-$_LANG['07_cron_schcron'] = 'Cron';
-$_LANG['08_friendlink_list'] = 'Links';
-$_LANG['shipping_area_list'] = 'Shipping Area';
-$_LANG['sitemap'] = 'Sitemap';
+$_LANG['05_area_list'] = 'Danh sách khu vực';
+$_LANG['07_cron_schcron'] = 'Lịch trình việc';
+$_LANG['08_friendlink_list'] = 'Liên kết bạn bè';
+$_LANG['shipping_area_list'] = 'Khu vực chuyển hàng';
+$_LANG['sitemap'] = 'Sơ đố website';
 $_LANG['check_file_priv'] = 'File Authorization';
 $_LANG['captcha_manage'] = 'Q.lý mã xác thực';
 $_LANG['fckfile_manage'] = 'Fck From document management';
 $_LANG['ucenter_setup'] = 'UCenter Set';
 $_LANG['file_check'] = 'Kiểm tra tệp';
-$_LANG['021_reg_fields'] = 'Register options settings';
+$_LANG['021_reg_fields'] = 'Tùy chọn đăng ký';
 
 /* Quản lý giao diện */
 $_LANG['02_template_select'] = 'Chọn giao diện';
 $_LANG['03_template_setup'] = 'Thiết lập giao diện';
 $_LANG['04_template_library'] = 'Library Item';
-$_LANG['mail_template_manage'] = 'Mail Template';
+$_LANG['mail_template_manage'] = 'Mẫu email';
 $_LANG['05_edit_languages'] = 'Language Item';
 $_LANG['06_template_backup'] = 'Sao lưu t.lập g.diện';
 /* Database management */
 $_LANG['02_db_manage'] = 'Backup';
-$_LANG['03_db_optimize'] = 'Optimize';
-$_LANG['04_sql_query'] = 'SQL Query';
+$_LANG['03_db_optimize'] = 'Tối ưu dữ liệu';
+$_LANG['04_sql_query'] = 'Truy vấn SQL';
 $_LANG['05_synchronous'] = 'Synchronous';
-$_LANG['convert'] = 'Convertor';
+$_LANG['convert'] = 'Chuyển đổi';
 
 /* Short management */
-$_LANG['02_sms_my_info'] = 'Accounts';
+$_LANG['02_sms_my_info'] = 'Tài khoản';
 $_LANG['03_sms_send'] = 'Gửi tin nhắn';
-$_LANG['04_sms_charge'] = 'Accounts Charge';
-$_LANG['05_sms_send_history'] = 'Send Record';
-$_LANG['06_sms_charge_history'] = 'Charge History';
+$_LANG['04_sms_charge'] = 'Nạp tiền';
+$_LANG['05_sms_send_history'] = 'Lịch sử gửi tin';
+$_LANG['06_sms_charge_history'] = 'Lịch sử nạp tiền';
 
 $_LANG['affiliate'] = 'Recommended settings';
 $_LANG['affiliate_ck'] = 'Divided into management';
 $_LANG['flashplay'] = 'Q.lý flash slide';
-$_LANG['search_log'] = 'Search keywords';
+$_LANG['search_log'] = 'Từ khóa tìm kiếm';
 $_LANG['email_list'] = 'E-mail subscription management';
 $_LANG['magazine_list'] = 'Journal of Management';
 $_LANG['attention_list'] = 'Concerned about the management';
@@ -283,23 +283,23 @@ $_LANG['view_sendlist'] = 'Mail queue management';
 /* 积分兑换管理 */
 $_LANG['15_exchange_goods'] = 'Integral Mall Goods';
 $_LANG['15_exchange_goods_list'] = 'Points Mall commodity list';
-$_LANG['exchange_goods_add'] = 'Add new merchandise';
+$_LANG['exchange_goods_add'] = 'Thêm sản phẩm mới';
 
 /* cls_image */
 $_LANG['directory_readonly'] = 'The directory % is not existed or unable to write.';
-$_LANG['invalid_upload_image_type'] = 'Not a allowable image type.';
-$_LANG['upload_failure'] = '%s failed to upload';
+$_LANG['invalid_upload_image_type'] = 'Định dạng hình không hợp lệ(hoặc bạn chưa chọn hình).';
+$_LANG['upload_failure'] = '%s upload không thành công';
 $_LANG['missing_gd'] = 'GD is missing';
-$_LANG['missing_orgin_image'] = 'Can not find %s.';
+$_LANG['missing_orgin_image'] = 'Không tìm thấy %s.';
 $_LANG['nonsupport_type'] = 'Nonsupport type of %s.';
-$_LANG['creating_failure'] = 'Fail to create image.';
-$_LANG['writting_failure'] = 'Fail to write image.';
+$_LANG['creating_failure'] = 'Không thể tạo hình ảnh.';
+$_LANG['writting_failure'] = 'Không thể ghi hình.';
 $_LANG['empty_watermark'] = 'The parameter of watermark is empty.';
-$_LANG['missing_watermark'] = 'Can not find %s.';
-$_LANG['create_watermark_res'] = 'Fail to create resource of watermark. The image type is %s.';
-$_LANG['create_origin_image_res'] = 'Fail to create resource of origin image. The image type is %s.';
-$_LANG['invalid_image_type'] = 'Unknown watermark image %s.';
-$_LANG['file_unavailable'] = 'File %s don\'t exist or are unreadable.';
+$_LANG['missing_watermark'] = 'Không tìm thấy %s.';
+$_LANG['create_watermark_res'] = 'Không thể tạo nguồn watermark. Định dạng hình là %s.';
+$_LANG['create_origin_image_res'] = 'Không thể tạo nguồn từ hình gốc. Định dạng hình là %s.';
+$_LANG['invalid_image_type'] = 'Không nhận dạng được hình watermark %s.';
+$_LANG['file_unavailable'] = 'Tệp tin %s không tồn tại hoặc không thể đọc.';
 
 /* SMTP ERROR */
 $_LANG['smtp_setting_error'] = 'There is an error in SMTP setting.';

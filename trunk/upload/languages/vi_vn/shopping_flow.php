@@ -103,7 +103,7 @@ $_LANG['flow_js']['mobile_invaild'] = 'Mobile No. is invalid';
 $_LANG['new_consignee_address'] = 'New consignee address';
 $_LANG['consignee_address'] = 'Địa chỉ';
 $_LANG['consignee_name'] = 'Tên';
-$_LANG['country_province'] = 'Country/Province';
+$_LANG['country_province'] = 'Khu vực';
 $_LANG['please_select'] = 'Hãy chọn...';
 $_LANG['city_district'] = 'City/District';
 $_LANG['email_address'] = 'Email';
@@ -136,7 +136,7 @@ $_LANG['balance_not_enough'] = 'Your balance is not enough, please select anothe
 $_LANG['select_shipping'] = 'Hình thức vận chuyển là';
 $_LANG['select_payment'] = 'Hình thức thanh toán là';
 $_LANG['order_amount'] = 'Số tiền thanh toán là';
-$_LANG['remember_order_number'] = 'Cảm ơn bạn đã mua hàng, đơn hàng của bạn đã được gửi đi, vui lòng ghi nhớ mã đơn hàng của bạn.';
+$_LANG['remember_order_number'] = 'Cảm ơn bạn đã mua hàng, đơn hàng của bạn đã được gửi đi, vui lòng ghi nhớ mã đơn hàng của bạn';
 $_LANG['back_home'] = '<a href="index.php">Về trang chủ</a>';
 $_LANG['goto_user_center'] = '<a href="user.php">Trung tâm thành viên</a>';
 $_LANG['order_submit_back'] = 'Bạn có thể %s hoặc đi tới %s';
@@ -147,10 +147,10 @@ $_LANG['sms_paid'] = 'Da thanh toan';
 $_LANG['notice_gb_order_amount'] = '（(Remarks: If associates with insurance, the insurance and corresponding pay need to be paid in first payment.)';
 
 $_LANG['pay_order'] = 'Thanh toán đơn hàng %s';
-$_LANG['validate_bonus'] = 'Vadidate bonus';
-$_LANG['input_bonus_no'] = 'Input bonus No.';
-$_LANG['select_bonus'] = 'Select existing bonus';
-$_LANG['bonus_sn_error'] = 'Please enter valid bonus No.';
+$_LANG['validate_bonus'] = 'Xác thực';
+$_LANG['input_bonus_no'] = 'Nhập mã quà tặng';
+$_LANG['select_bonus'] = 'Chọn quà tặng';
+$_LANG['bonus_sn_error'] = 'Vui lòng nhập đúng mã quà tặng.';
 $_LANG['bonus_min_amount_error'] = 'Order amount is less than the minimum amount of bonus %s';
 $_LANG['bonus_is_ok'] = 'Bonus No. is avaible, can be used as %s';
 

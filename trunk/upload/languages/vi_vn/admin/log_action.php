@@ -59,7 +59,7 @@ $_LANG['log_action']['friendlink'] = 'Friendly links';
 $_LANG['log_action']['goods'] = 'Sản phẩm';
 $_LANG['log_action']['payment'] = 'Payment';
 $_LANG['log_action']['order'] = 'Đơn hàng';
-$_LANG['log_action']['agency'] = 'Agency';
+$_LANG['log_action']['agency'] = 'Đại lý';
 $_LANG['log_action']['auction'] = 'Auction';
 $_LANG['log_action']['favourable'] = 'Favourable Activity';
 $_LANG['log_action']['wholesale'] = 'Wholesale';
@@ -87,7 +87,7 @@ $_LANG['log_action']['package'] = 'Gói ưu đãi';
 
 $_LANG['log_action']['exchange_goods'] = 'Integral convertible goods';
 
-$_LANG['log_action']['suppliers'] = 'Suppliers';
+$_LANG['log_action']['suppliers'] = 'Nhà cung cấp';
 
 $_LANG['log_action']['reg_fields'] = 'User register options';
 

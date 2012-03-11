@@ -111,7 +111,7 @@ $_LANG['tpl_backup_cannt_write'] = 'Your will not backup the current template fi
 $_LANG['order_print_canntwrite'] = 'Attribute of order_print.html can\'t be wrote in the date directory, you will not modify order print template.';
 $_LANG['shop_closed_tips'] = 'Your shop has closed temporarily. Please open your shop after the system has be installed!';
 $_LANG['empty_upload_tmp_dir'] = 'The current update temporary directory is blank, you may not update file, please check the config in php.ini.';
-$_LANG['caches_cleared'] = 'The page cache has be cleared successfully.';
+$_LANG['caches_cleared'] = 'Đã xóa bộ nhớ đệm trang thành công.';
 
 /*------------------------------------------------------ */
 //-- About us
