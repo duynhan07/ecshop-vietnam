@@ -1,20 +1,4 @@
 <?php
-
-/**
- * ECSHOP Orders management language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: order.php 17217 2011-01-19 06:29:08Z liubo $
- */
-
 /* Order search*/
 $_LANG['order_sn'] = 'Mã đ.hàng';
 $_LANG['consignee'] = 'Người nhận';
@@ -71,7 +55,7 @@ $_LANG['op_cancel_ship'] = 'Cancellation Shipping';
 $_LANG['op_receive'] = 'Đã nhận hàng';
 $_LANG['op_assign'] = 'Assign to';
 $_LANG['op_after_service'] = 'Aftermarket';
-$_LANG['act_ok'] = 'Operate successfully';
+$_LANG['act_ok'] = 'Thực thi thao tác thành công';
 $_LANG['act_false'] = 'Operate failed';
 $_LANG['act_ship_num'] = 'Shipped quantity is more then order quantity';
 $_LANG['act_good_vacancy'] = 'Hết hàng';
