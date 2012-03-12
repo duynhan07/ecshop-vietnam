@@ -13,7 +13,7 @@ $_LANG['batch_remove_succeed'] = 'You have successfully deleted %d files';
 
 $_LANG['edit'] = 'Editor';
 $_LANG['item_url'] = 'Link Address';
-$_LANG['item_vieworder'] = 'Sort';
+$_LANG['item_vieworder'] = 'Thứ tự';
 $_LANG['top'] = 'Top';
 $_LANG['middle'] = 'Between';
 $_LANG['bottom'] = 'Bottom';

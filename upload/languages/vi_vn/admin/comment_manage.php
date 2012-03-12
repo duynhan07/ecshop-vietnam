@@ -17,19 +17,19 @@ $_LANG['reply_content'] = 'Trả lời';
 $_LANG['comment_flag'] = 'Flag';
 $_LANG['no_reply'] = 'No reply';
 $_LANG['yes_reply'] = 'Replied';
-$_LANG['admin_user_name'] = 'Administrator';
+$_LANG['admin_user_name'] = 'Quản trị viên';
 
 $_LANG['type'] = array('Sản phẩm','Bài viết');
-$_LANG['send_email_notice'] = 'Email notification';
+$_LANG['send_email_notice'] = 'Email thông báo';
 
 $_LANG['ip_address'] = 'IP';
-$_LANG['comment_rank'] = 'Rank';
-$_LANG['content'] = 'Contents';
-$_LANG['view_reply'] = 'View reply';
-$_LANG['view_content'] = 'View content';
+$_LANG['comment_rank'] = 'Đánh giá';
+$_LANG['content'] = 'Nội dung';
+$_LANG['view_reply'] = 'Xem trả lời';
+$_LANG['view_content'] = 'Xem nội dung';
 $_LANG['search_comment'] = 'Đăng nhập';
-$_LANG['no_reply_comment'] = 'Not replied comment';
-$_LANG['all_comment'] = 'View all comments';
+$_LANG['no_reply_comment'] = 'Không có trả lời nhận xét';
+$_LANG['all_comment'] = 'Xem tất cả nhận xét';
 $_LANG['reply_comment'] = 'Trả lời';
 $_LANG['comment_info'] = 'Chi tiết';
 
@@ -42,17 +42,17 @@ $_LANG['check'] = 'Check';
 $_LANG['allow'] = 'Open';
 $_LANG['forbid'] = 'Close';
 $_LANG['display'] = 'Hiển thị';
-$_LANG['hidden'] = 'hidden';
+$_LANG['hidden'] = 'Ẩn đi';
 
 $_LANG['no_select_comment'] = 'You have no choice need to delete the comments!';
 
 $_LANG['reply_comment_success'] = 'Reply the comment successfully!';
-$_LANG['batch_drop_success'] = 'Command successfully!';
+$_LANG['batch_drop_success'] = 'Thao tác thành công!';
 
-$_LANG['back_list'] = 'Return to comment list.';
+$_LANG['back_list'] = 'Trở về danh sách nhận xét.';
 
 /* JS Prompting message */
-$_LANG['js_languages']['no_content'] = 'Please enter comment contents!';
+$_LANG['js_languages']['no_content'] = 'Vui lòng nhập nội dung nhận xét!';
 $_LANG['have_reply_content'] = 'TIP: The comment has replied, if you reply the message again, the old message will be losed!';
 
 

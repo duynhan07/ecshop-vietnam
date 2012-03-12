@@ -27,27 +27,27 @@
 {/if}
 <br/>--------------<br/>
 {if $best_num > 0}
-[精品推荐]&gt;&gt;<a href='goods_list.php?type=best'>更多</a><br/>
+[精品推荐]&gt;&gt;<a href='goods_list.php?type=best'>Xem thêm</a><br/>
   {foreach from=$best_goods item=best_data}
       <a href='goods.php?id={$best_data.id}'>{$best_data.name}</a>[{$best_data.shop_price}]<br/>
   {/foreach}
 {/if}
 <br/>--------------<br/>
 {if $promote_num > 0}
-[促销商品]&gt;&gt;<a href='goods_list.php?type=promote'>更多</a><br/>
+[促销商品]&gt;&gt;<a href='goods_list.php?type=promote'>Xem thêm</a><br/>
   {foreach from=$promote_goods item=promote_data}
       <a href='goods.php?id={$promote_data.id}'>{$promote_data.name}</a>[{$promote_data.shop_price}]<br/>
   {/foreach}
 {/if}
 <br/>--------------<br/>
 {if $hot_num > 0}
-[热门商品]&gt;&gt;<a href='goods_list.php?type=hot'>更多</a><br/>
+[热门商品]&gt;&gt;<a href='goods_list.php?type=hot'>Xem thêm</a><br/>
   {foreach from=$hot_goods item=hot_data}
       <a href='goods.php?id={$hot_data.id}'>{$hot_data.name}</a>[{$hot_data.shop_price}]<br/>
   {/foreach}
 {/if}
 <br/>--------------<br/>
-&gt;&gt;商品分类&gt;&gt;<a href='cat_all.php'>更多</a><br/><br/>
+&gt;&gt;商品分类&gt;&gt;<a href='cat_all.php'>Xem thêm</a><br/><br/>
 
 {foreach from=$pcat_array item=pcat_data}
 <a href='category.php?c_id={$pcat_data.id}'>{$pcat_data.name}</a>|&nbsp;&nbsp;
@@ -60,13 +60,13 @@
 {/foreach}
 <br/>--------------<br/>
 {if $brand_array}
-品牌专区&gt;&gt;<a href='brands.php'>更多</a><br/>
+品牌专区&gt;&gt;<a href='brands.php'>Xem thêm</a><br/>
 {foreach from=$brand_array item=brand_data}
 <a href='brands.php?b_id={$brand_data.brand_id}'>{$brand_data.brand_name}</a><br/>
 {/foreach}
 {/if}
 <br/>--------------<br/>
-[站内资讯]&gt;&gt;<a href='article.php'>更多</a><br/>
+[站内资讯]&gt;&gt;<a href='article.php'>Xem thêm</a><br/>
 {if $article_array}
 {foreach from=$article_array item=article_data}
 <a href='article.php?act=detail&amp;a_id={$article_data.article_id}'>{$article_data.title}</a><br/>

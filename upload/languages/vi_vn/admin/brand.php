@@ -1,25 +1,9 @@
 <?php
-
-/**
- * ECSHOP Brand management language item
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: brand.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
 $_LANG['brand_name'] = 'Thương hiệu';
 $_LANG['site_url'] = 'Website';
 $_LANG['brand_desc'] = 'Mô tả';
 $_LANG['brand_logo'] = 'LOGO';
-$_LANG['sort_order'] = 'Sort';
+$_LANG['sort_order'] = 'Thứ tự';
 $_LANG['is_show'] = 'Display';
 $_LANG['drop_brand_logo'] = 'Delete the logo';
 $_LANG['confirm_drop_logo'] = 'Are you sure delete the logo?';

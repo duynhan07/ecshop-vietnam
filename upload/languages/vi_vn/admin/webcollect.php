@@ -20,6 +20,6 @@ $_LANG['col_goods_num'] = 'merchandises';
 $_LANG['item'] = 'items';
 
 /* JS提示 */
-$_LANG['js_languages']['sev_stop'] = 'After you pause the service，your shop、commodity information will stop an update to the search engine，sure you want to pause?？';
+$_LANG['js_languages']['sev_stop'] = 'After you pause the service，your shop、commodity information will stop an update to the search engine, sure you want to pause?';
 
 ?>

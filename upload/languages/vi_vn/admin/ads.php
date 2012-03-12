@@ -96,13 +96,13 @@ $_LANG['flag'] = 'Trạng thái';
 $_LANG['enabled'] = 'Enabled';
 $_LANG['is_enabled'] = 'Enabled';
 $_LANG['no_enabled'] = 'Disabled';
-$_LANG['back_ads_list'] = 'Return to ADs list.';
-$_LANG['back_position_list'] = 'Return to AD position list.';
-$_LANG['continue_add_ad'] = 'Continue add AD.';
-$_LANG['continue_add_position'] = 'Continue add AD position.';
-$_LANG['show_ads_template'] = 'Show AD in template';
-$_LANG['ads_add'] = 'Add new advertisement';
-$_LANG['ads_edit'] = 'Edit advertisement';
+$_LANG['back_ads_list'] = 'Trở về danh sách quảng cáo.';
+$_LANG['back_position_list'] = 'Trở về danh sách vị trí quảng cáo.';
+$_LANG['continue_add_ad'] = 'Tiếp tục thêm quảng cáo.';
+$_LANG['continue_add_position'] = 'Tiếp tục thêm vị trí quảng cáo.';
+$_LANG['show_ads_template'] = 'Hiển thị q.cáo trong giao diện';
+$_LANG['ads_add'] = 'Thêm quảng cáo mới';
+$_LANG['ads_edit'] = 'Sửa quảng cáo';
 
 /* Description information */
 $_LANG['ad_img'] = 'Image';
@@ -110,26 +110,26 @@ $_LANG['ad_flash'] = 'Flash';
 $_LANG['ad_html'] = 'Code';
 $_LANG['ad_text'] = 'Text';
 
-$_LANG['upfile_flash'] = 'Upload Flash file';
-$_LANG['flash_url'] = 'Or Flash website';
-$_LANG['upfile_img'] = 'Upload AD image';
-$_LANG['img_url'] = 'Or image URL';
+$_LANG['upfile_flash'] = 'Upload tệp flash';
+$_LANG['flash_url'] = 'hoặc flash website';
+$_LANG['upfile_img'] = 'Upload hình quảng cáo';
+$_LANG['img_url'] = 'hoặc liên kết hình';
 $_LANG['enter_code'] = 'Please enter AD code.';
 
 /* JS language item */
-$_LANG['js_languages']['ad_name_empty'] = 'Please enter AD name!';
-$_LANG['js_languages']['ad_link_empty'] = 'Please enter AD link URL!';
-$_LANG['js_languages']['ad_text_empty'] = 'AD content can\'t be blank!';
-$_LANG['js_languages']['ad_photo_empty'] = 'Advertising images can not be empty!';
-$_LANG['js_languages']['ad_flash_empty'] = 'Flash ads can not be empty!';
-$_LANG['js_languages']['ad_code_empty'] = 'Ad code can not be empty!';
-$_LANG['js_languages']['empty_position_style'] = 'AD-position\'s template can\'t be blank!';
+$_LANG['js_languages']['ad_name_empty'] = 'Vui lòng nhập tên quảng cáo!';
+$_LANG['js_languages']['ad_link_empty'] = 'Vui lòng nhập URL quảng cáo!';
+$_LANG['js_languages']['ad_text_empty'] = 'Nội dung quảng cáo không được để trống!';
+$_LANG['js_languages']['ad_photo_empty'] = 'Hình quảng cáo không được để trống!';
+$_LANG['js_languages']['ad_flash_empty'] = 'Quảng cáo flash không được để trống!';
+$_LANG['js_languages']['ad_code_empty'] = 'Mã quảng cáo không được để trống!';
+$_LANG['js_languages']['empty_position_style'] = 'Vị trí quảng cáo trên giao diện không được để trống!';
 
 /* Prompting message */
-$_LANG['upfile_flash_type'] = 'Upload Flash file type is invalid!';
+$_LANG['upfile_flash_type'] = 'Định dạng tệp flash không hợp lệ!';
 $_LANG['ad_code_repeat'] = 'The AD image must be an uploaded file, or appoint a remote image.';
 $_LANG['ad_flash_repeat'] = 'The AD Flash must be an uploaded file, or appoint a remote Flash.';
-$_LANG['ad_name_exist'] = 'The AD name has existed!';
+$_LANG['ad_name_exist'] = 'Tên quảng cáo này đã tồn tại!';
 $_LANG['ad_name_notic'] = 'The AD name only discriminate other ADs, and conceal in the AD.';
 $_LANG['ad_code_img'] = 'Upload the AD image file, or appoint a remote URL address.';
 $_LANG['ad_code_flash'] = 'Upload the AD Flash file, or appoint a remote URL address.';

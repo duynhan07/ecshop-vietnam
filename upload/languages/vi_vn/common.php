@@ -108,7 +108,7 @@ $_LANG['kilogram'] = 'kilogram';
 $_LANG['goods_sn'] = 'NO.:';
 $_LANG['goods_brand'] = 'Thương hiệu:';
 $_LANG['goods_weight'] = 'Trọng lượng:';
-$_LANG['goods_number'] = 'Quantity:';
+$_LANG['goods_number'] = 'Trong kho:';
 $_LANG['goods_give_integral'] = 'gifts for buying:';
 $_LANG['goods_integral'] = 'Điểm cần để mua:';
 $_LANG['goods_free_shipping'] = 'This goods is Free shipping, it is not included in the total fee distribution when calculating the distribution amount';
@@ -164,9 +164,9 @@ $_LANG['tag_cloud_desc'] = 'A tag cloud or word cloud is a visual depiction of u
 
 /* AJAX 相关 */
 $_LANG['invalid_captcha'] = 'Vui lòng nhập đúng mã xác thực.';
-$_LANG['goods_exists'] = 'Sorry, the same product has existed in your cart.';
-$_LANG['fitting_goods_exists'] = 'Sorry，The accessories in your shopping cart already exists。';
-$_LANG['invalid_number'] = 'Please enter a valid number.';
+$_LANG['goods_exists'] = 'Xin lỗi, sản phẩm này đã có trong giỏ hàng rồi.';
+$_LANG['fitting_goods_exists'] = 'Xin lỗi, phụ kiện này đã có trong giỏ hàng rồi';
+$_LANG['invalid_number'] = 'Vui lòng nhập đúng số lượng.';
 $_LANG['not_on_sale'] = 'Sorry, the sales have been overdue.';
 $_LANG['no_basic_goods'] = 'Sorry, there is no basic goods for this product in the cart.';
 $_LANG['cannt_alone_sale'] = 'Sorry, the product is tie-in-sale.';
@@ -179,14 +179,14 @@ $_LANG['addto_cart_success_2'] = 'Add to the cart successfully, would you shoppi
 $_LANG['no_keywords'] = "Please enter keywords!";
 
 /* 分页排序 */
-$_LANG['exchange_sort']['goods_id'] = 'Sort by time';
+$_LANG['exchange_sort']['goods_id'] = 'Sắp xếp theo thời gian';
 $_LANG['exchange_sort']['exchange_integral'] = 'Sort by integral';
-$_LANG['exchange_sort']['last_update'] = 'Sort by update';
-$_LANG['sort']['goods_id'] = 'Sort by time';
-$_LANG['sort']['shop_price'] = 'Sort by price';
-$_LANG['sort']['last_update'] = 'Sort by update';
-$_LANG['order']['DESC'] = 'Descending';
-$_LANG['order']['ASC'] = 'Ascending';
+$_LANG['exchange_sort']['last_update'] = 'Sắp xếp theo cập nhật';
+$_LANG['sort']['goods_id'] = 'Sắp xếp theo thời gian';
+$_LANG['sort']['shop_price'] = 'Sắp xếp theo giá';
+$_LANG['sort']['last_update'] = 'Sắp xếp theo cập nhật';
+$_LANG['order']['DESC'] = 'Giảm dần';
+$_LANG['order']['ASC'] = 'Tăng dần';
 $_LANG['pager_1'] = 'Tổng cộng ';
 $_LANG['pager_2'] = ' bản ghi';
 $_LANG['pager_3'] = ', chia thành';
@@ -197,8 +197,8 @@ $_LANG['page_next'] = 'Sau';
 $_LANG['page_last'] = 'Cuối';
 $_LANG['btn_display'] = 'Hiển thị';
 
-/* 投票 */
-$_LANG['vote_times'] = 'Vote times';
+/* Bình chọn */
+$_LANG['vote_times'] = 'Lượt bình chọn';
 $_LANG['vote_ip_same'] = 'Xin lỗi, bạn đã bình chọn rồi!';
 $_LANG['submit_vote'] = 'Vote';
 $_LANG['submit_reset'] = 'Làm lại';
@@ -646,9 +646,9 @@ $_LANG['total'] = 'Tổng cộng ';
 $_LANG['user_comment_num'] = ' nhận xét';
 $_LANG['auction_goods'] = 'Sản phẩm đấu giá';
 $_LANG['auction_goods_info'] = 'Thông tin sản phẩm đấu giá';
-$_LANG['article_cat'] = 'Article Cat';
-$_LANG['online_vote'] = 'Online Vote';
-$_LANG['new_price'] = 'New Price';
+$_LANG['article_cat'] = 'Danh mục bài viết';
+$_LANG['online_vote'] = 'Bình chọn trực tuyến';
+$_LANG['new_price'] = 'Giá mới';
 $_LANG['promotion_info'] = 'Promotion Info';
 $_LANG['price_grade'] = 'Price Grade';
 $_LANG['your_choice'] = 'Choice';

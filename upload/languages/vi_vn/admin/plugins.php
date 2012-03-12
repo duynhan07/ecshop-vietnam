@@ -17,7 +17,7 @@
 
 $_LANG['plugin_name'] = 'Tên';
 $_LANG['plugin_desc'] = 'Mô tả';
-$_LANG['plugin_version'] = 'Version';
+$_LANG['plugin_version'] = 'Phiên bản';
 $_LANG['plugin_author'] = 'Author';
 
 $_LANG['upgrade'] = 'Upgrade';

@@ -43,7 +43,7 @@ $_LANG['please_select'] = 'Hãy chọn...';
 $_LANG['surplus_info'] = 'Balance information';
 $_LANG['check'] = 'Check';
 
-$_LANG['money_type'] = 'Payment mothod';
+$_LANG['money_type'] = 'Hình thức thanh toán';
 $_LANG['surplus_add'] = 'Add application';
 $_LANG['surplus_edit'] = 'Edit application';
 $_LANG['attradd_succed'] = 'Thực thi thao tác thành công!';
