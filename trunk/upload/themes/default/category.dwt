@@ -13,8 +13,7 @@
 <!-- {if $cat_style} -->
 <link href="{$cat_style}" rel="stylesheet" type="text/css" />
 <!-- {/if} -->
-{* Load các tệp js *}
-{insert_scripts files='common.js,global.js,compare.js'}
+
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
@@ -174,6 +173,8 @@
 </div>
 <div class="blank"></div>
 <!--Trợ giúp-->
+{* Load các tệp js *}
+{insert_scripts files='common.js,global.js,compare.js'}
 <!--Liên kết bạn bè start-->
 <!--{if $img_links  or $txt_links }-->
 <div id="bottomNav" class="box">
