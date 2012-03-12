@@ -51,7 +51,7 @@ $_LANG['edit_reply'] = 'Sửa';
 $_LANG['reply_content'] = 'Reply content';
 $_LANG['email'] = 'Email';
 
-$_LANG['batch_drop_success'] = 'Command successfully!';
+$_LANG['batch_drop_success'] = 'Thao tác thành công!';
 
 $_LANG['msg_for_order'] = 'Order %s on the Guest Book';
 $_LANG['order_detail'] = 'Chi tiết đơn hàngs';

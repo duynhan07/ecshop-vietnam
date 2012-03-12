@@ -16,7 +16,7 @@
 */
 
 $_LANG['integrate_name'] ='Tên';
-$_LANG['integrate_version'] ='Version';
+$_LANG['integrate_version'] ='Phiên bản';
 $_LANG['integrate_author'] ='Author';
 
 /* Hint an information*/

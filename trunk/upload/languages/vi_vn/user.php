@@ -96,7 +96,7 @@ $_LANG['confirm_submit'] = '　Gửi đi　';
 $_LANG['member_rank'] = 'Cấp độ';
 $_LANG['member_discount'] = 'Giảm giá thành viên';
 $_LANG['rank_integral'] = 'Rank points';
-$_LANG['consume_integral'] = 'Consume points';
+$_LANG['consume_integral'] = 'Điểm tiêu thụ';
 $_LANG['account_balance'] = 'Số dư tài khoản';
 $_LANG['user_bonus'] = 'User bonus';
 $_LANG['user_bonus_info'] = 'Tổng cộng %d, value %s';
@@ -334,7 +334,7 @@ $_LANG['use_more_surplus'] = 'Sử dụng số dư';
 $_LANG['max_surplus'] = '(Số dư tài khoản: %s)';
 $_LANG['button_submit'] = 'Ok';
 $_LANG['order_detail'] = 'Chi tiết đơn hàng';
-$_LANG['error_surplus_invalid'] = 'Please enter a valid number.';
+$_LANG['error_surplus_invalid'] = 'Vui lòng nhập đúng số lượng.';
 $_LANG['error_order_is_paid'] = 'The order is already paid.';
 $_LANG['error_surplus_not_enough'] = 'Số dư của bạn không đủ.';
 
@@ -454,8 +454,8 @@ $_LANG['rows_num_must_over_0'] = 'Order entry shows that the number should be gr
 $_LANG['last_month_order'] = 'Trong vòng 30 ngày qua, bạn đã gửi ';
 $_LANG['order_unit'] = ' đơn hàng';
 $_LANG['please_received'] = 'The oreders has shipped, please give attention to receive.';
-$_LANG['your_auction'] = 'You bid for <strong>%s</strong> ，go to <a href="auction.php?act=view&amp;id=%s"><span style="color:#06c;text-decoration:underline;"> to buy </span></a>';
-$_LANG['your_snatch'] = 'You bid in Dutch Auction for <strong>%s</strong> ，go to <a href="snatch.php?act=main&amp;id=%s"><span style="color:#06c;text-decoration:underline;"> to buy </span></a>';
+$_LANG['your_auction'] = 'You bid for <strong>%s</strong> , go to <a href="auction.php?act=view&amp;id=%s"><span style="color:#06c;text-decoration:underline;"> to buy </span></a>';
+$_LANG['your_snatch'] = 'You bid in Dutch Auction for <strong>%s</strong> , go to <a href="snatch.php?act=main&amp;id=%s"><span style="color:#06c;text-decoration:underline;"> to buy </span></a>';
 
 /* 我的标签 */
 $_LANG['no_tag'] = 'No tag';
@@ -633,7 +633,7 @@ $_LANG['exchange_action'] = 'Exchange';
 $_LANG['exchange_js']['deny'] = 'Prohibition of conversion';
 $_LANG['exchange_js']['balance'] = 'Your {%s} lack of balance, please re-enter';
 $_LANG['exchange_deny'] = 'The exchange does not allow points';
-$_LANG['exchange_success'] = 'Congratulations，exchange success';
+$_LANG['exchange_success'] = 'Congratulations, exchange success';
 $_LANG['exchange_error_1'] = 'Exchange Error';
 $_LANG['pay_points'] = 'Pay-point';
 $_LANG['rank_points'] = 'Rank-point ';

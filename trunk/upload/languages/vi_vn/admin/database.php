@@ -99,7 +99,7 @@ $_LANG['backup_notice'] = 'Please chick here ,if your browse has redirect automa
 $_LANG['backup_success'] = 'Success';
 
 $_LANG['name'] = 'File Name';
-$_LANG['ver'] = 'Version';
+$_LANG['ver'] = 'Phiên bản';
 $_LANG['add_time'] = 'Thời gian';
 $_LANG['file_size'] = 'Size';
 $_LANG['empty_upload'] = 'It is empty';

@@ -1,31 +1,15 @@
 <?php
-
-/**
- * ECSHOP
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: snatch.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
 $_LANG['snatch_id'] = 'ID';
 $_LANG['snatch_name'] = 'Tên';
 $_LANG['goodsid'] = 'Product ID';
 $_LANG['goods_name'] = 'Tên sản phẩm';
 $_LANG['start_time'] = 'Bắt đầu lúc';
 $_LANG['end_time'] = 'Hạn chót';
-$_LANG['min_price'] = 'Min price';
-$_LANG['max_price'] = 'Max price';
+$_LANG['min_price'] = 'Giá tối thiểu';
+$_LANG['max_price'] = 'Giá tối đa';
 $_LANG['price'] = 'Payment at most';
 $_LANG['short_price'] = 'Giá';
-$_LANG['integral'] = 'Consume points';
+$_LANG['integral'] = 'Điểm tiêu thụ';
 $_LANG['view_detail'] = 'Xem chi tiết';
 $_LANG['snatch_edit'] = 'Edit Dutch auction';
 $_LANG['desc'] = 'Mô tả';

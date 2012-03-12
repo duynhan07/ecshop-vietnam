@@ -10,13 +10,13 @@
     <a href='user.php?act=login'>用户登录</a><br/>
 {/if}
 {if $best_num > 0}
-[精品推荐]&gt;&gt;<a href='goods_list.php?type=best'>更多</a><br/>
+[精品推荐]&gt;&gt;<a href='goods_list.php?type=best'>Xem thêm</a><br/>
   {foreach from=$best_goods item=best_data}
       <a href='goods.php?id={$best_data.id}'>{$best_data.name}</a>[{$best_data.shop_price}]<br/>
   {/foreach}
 {/if}
 {if $promote_num > 0}
-[促销商品]&gt;&gt;<a href='goods_list.php?type=promote'>更多</a><br/>
+[促销商品]&gt;&gt;<a href='goods_list.php?type=promote'>Xem thêm</a><br/>
   {foreach from=$promote_goods item=promote_data}
       <a href='goods.php?id={$promote_data.id}'>{$promote_data.name}</a>[{$promote_data.shop_price}]<br/>
   {/foreach}
@@ -32,7 +32,7 @@
 <a href='brands.php?b_id={$brand_data.brand_id}'>{$brand_data.brand_name}</a><br/>
 {/foreach}
 {/if}
-[站内资讯]&gt;&gt;<a href='article.php'>更多</a><br/>
+[站内资讯]&gt;&gt;<a href='article.php'>Xem thêm</a><br/>
 {if $article_array}
 {foreach from=$article_array item=article_data}
 <a href='article.php?act=detail&amp;a_id={$article_data.article_id}'>{$article_data.title}</a><br/>

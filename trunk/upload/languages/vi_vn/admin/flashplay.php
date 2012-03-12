@@ -2,7 +2,7 @@
 $_LANG['schp_imgsrc'] = 'Carousel picture Address';
 $_LANG['schp_imgurl'] = 'Carousel Picture Link';
 $_LANG['schp_imgdesc'] = 'Photo Caption';
-$_LANG['schp_sort'] = 'Sort';
+$_LANG['schp_sort'] = 'Thứ tự';
 $_LANG['trash_img_confirm'] = 'You want to delete this Carousel picture it?';
 $_LANG['custom_del_confirm'] = 'You want to delete it?';
 $_LANG['tab_change_alert'] = 'Close all of custom ADS before click Default AD';

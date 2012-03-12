@@ -60,7 +60,7 @@
     <!--{/if}-->
     </li>
     <li class="action">
-    <a href="javascript:collect({$goods.goods_id});" class="abg f6">{$lang.favourable_goods}</a>
+    <a href="javascript:collect({$goods.goods_id});" class="abg f6"><img style="width:24px;" src="images/s_favo.png" alt="{$lang.favourable_goods}" /></a>
     <a href="javascript:addToCart({$goods.goods_id})"><img src="../images/bnt_buy_1.gif"></a>
     </li>
     </ul>

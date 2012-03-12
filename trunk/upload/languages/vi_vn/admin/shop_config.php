@@ -419,7 +419,7 @@ $_LANG['cfg_range']['smtp_ssl'][1] = 'Yes';
 
 $_LANG['mail_settings_note'] = 'If your server to support the Mail function (specific information please consult your space provider). We recommend that you use the Mail function system. <br /> When your server does not support Mail function when you can choose to use SMTP as a mail server.';
 
-$_LANG['save_success'] = 'Save shop setting successfully.';
+$_LANG['save_success'] = 'Lưu thiết lập cửa hàng thành công.';
 $_LANG['mail_save_success'] = 'Save mail setting successfully.';
 $_LANG['sendemail_success'] = 'Congratulations! Test mail has sent succeefully.';
 $_LANG['sendemail_false'] = 'The mail sends out failure, please check your mail server setting!';

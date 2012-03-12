@@ -16,11 +16,11 @@
 */
 
 $_LANG['cat_name'] = 'Tên';
-$_LANG['type'] = 'Category Type';
-$_LANG['type_name'][COMMON_CAT] = 'General classification';
-$_LANG['type_name'][SYSTEM_CAT] = 'Taxonomy';
+$_LANG['type'] = 'Loại danh mục';
+$_LANG['type_name'][COMMON_CAT] = 'Mục bình thường';
+$_LANG['type_name'][SYSTEM_CAT] = 'Hệ thống';
 $_LANG['type_name'][INFO_CAT]   = 'Thông tin gian hàng';
-$_LANG['type_name'][UPHELP_CAT] = 'Help Category';
+$_LANG['type_name'][UPHELP_CAT] = 'Mục trợ giúp';
 $_LANG['type_name'][HELP_CAT]   = 'Trợ giúp cửa hàng';
 
 $_LANG['cat_keywords'] = 'Từ khóa';

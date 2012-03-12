@@ -705,8 +705,8 @@ region.isAdmin=true;
     document.getElementById('goods_brand').innerHTML = result.brand_name;
 
     // 显示价格：包括市场价、本店价（促销价）、会员价
-    var priceHtml = '<input type="radio" name="add_price" value="' + result.market_price + '" />市场价 [' + result.market_price + ']<br />' +
-      '<input type="radio" name="add_price" value="' + result.goods_price + '" checked />本店价 [' + result.goods_price + ']<br />';
+    var priceHtml = '<input type="radio" name="add_price" value="' + result.market_price + '" />Giá t.trường [' + result.market_price + ']<br />' +
+      '<input type="radio" name="add_price" value="' + result.goods_price + '" checked />Giá shop [' + result.goods_price + ']<br />';
     for (var i = 0; i < result.user_price.length; i++)
     {
       priceHtml += '<input type="radio" name="add_price" value="' + result.user_price[i].user_price + '" />' + result.user_price[i].rank_name + ' [' + result.user_price[i].user_price + ']<br />';

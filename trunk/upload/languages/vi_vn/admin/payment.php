@@ -1,23 +1,7 @@
 <?php
-
-/**
- * ECSHOP Control panel payment mothod language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: payment.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
-$_LANG['payment'] = 'Payment mothod';
+$_LANG['payment'] = 'Hình thức thanh toán';
 $_LANG['payment_name'] = 'Tên';
-$_LANG['version'] = 'Version';
+$_LANG['version'] = 'Phiên bản';
 $_LANG['payment_desc'] = 'Mô tả';
 $_LANG['short_pay_fee'] = 'Money';
 $_LANG['payment_author'] = 'Author';
@@ -33,7 +17,7 @@ $_LANG['install_ok'] = 'Installed successfully.';
 $_LANG['edit_ok'] = 'Edited successfully.';
 $_LANG['uninstall_ok'] = 'Uninstall successfully.';
 
-$_LANG['invalid_pay_fee'] = 'Please enter a valid number of payment.';
+$_LANG['invalid_pay_fee'] = 'Vui lòng nhập đúng số tiền thanh toán.';
 $_LANG['decide_by_ship'] = 'Shipping decision';
 
 $_LANG['edit_after_install'] = 'You can\'t use the payment mothod until it is installed.';
