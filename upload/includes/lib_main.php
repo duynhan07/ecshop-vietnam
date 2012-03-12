@@ -1646,8 +1646,7 @@ function assign_template($ctype = '', $catlist = array())
     $smarty->assign('username',      !empty($_SESSION['user_name']) ? $_SESSION['user_name'] : '');
     $smarty->assign('category_list', cat_list(0, 0, true,  2, false));
     $smarty->assign('catalog_list',  cat_list(0, 0, false, 1, false));
-    $smarty->assign('navigator_list',        get_navigator($ctype, $catlist));  //自定义导航栏
-
+    $smarty->assign('navigator_list', get_navigator($ctype, $catlist));  //Lưu danh mục NAV
     if (!empty($GLOBALS['_CFG']['search_keywords']))
     {
         $searchkeywords = explode(',', trim($GLOBALS['_CFG']['search_keywords']));
