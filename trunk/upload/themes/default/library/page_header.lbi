@@ -2,6 +2,9 @@
 <script type="text/javascript">
 var process_request = "{$lang.process_request}";
 </script>
+<?php
+$GLOBALS['smarty']->assign('categories_nav',get_categories_tree());
+?>
 <div class="block clearfix">
  <div class="f_l"><a href="../index.php" name="top"><img src="../images/logo.gif" /></a></div>
  <div class="f_r log">
@@ -27,7 +30,7 @@ var process_request = "{$lang.process_request}";
 <div  class="blank"></div>
 <div class="menu">
 <ul id="topnav">
-<!--{foreach from=$categories item=cat}-->
+<!--{foreach from=$categories_nav item=cat}-->
 <li><a href="{$cat.url}">{$cat.name|escape:html}</a>
 <!-- {if $cat.cat_id} -->
 <ul class="children">
