@@ -142,7 +142,7 @@ $_LANG['comment_num'] = "%d nhận  xét";
 $_LANG['login_please'] = 'Bạn phải đăng nhập để thực hiện thao tác này.';
 $_LANG['collect_existed'] = 'Sản phẩm này đã được thêm vào sản phẩm quan tâm rồi.';
 $_LANG['collect_success'] = 'Đã thêm vào sản phẩm quan tâm thành công.';
-$_LANG['copyright'] = "&copy; 2005-%s %s Copyright, All Rights Reserved.";
+$_LANG['copyright'] = "&copy; 2009-%s %s bảo lưu mọi quyền.";
 $_LANG['no_ads_id'] = 'No appoint ID of advertisement and a jump URL address!';
 $_LANG['remove_collection_confirm'] = 'Are you sure delete the product from your favorite?';
 $_LANG['err_change_attr'] = 'No such product or no attribute is found.';
@@ -218,22 +218,22 @@ $_LANG['invalid_comments'] = 'Invalid commentary contents!';
 $_LANG['error_email'] = 'Vui lòng nhập địa chỉ email hợp lệ.';
 $_LANG['admin_username'] = 'Administrator';
 $_LANG['reply_comment'] = 'Trả lời';
-$_LANG['comment_captcha'] = 'Verification code';
-$_LANG['comment_login'] = 'Please login';
-$_LANG['comment_custom'] = 'No login or not a customer of the shop';
-$_LANG['comment_brought'] = 'No login or never brought the product you would like to comment';
+$_LANG['comment_captcha'] = 'Mã xác thực';
+$_LANG['comment_login'] = 'Vui lòng đăng nhập';
+$_LANG['comment_custom'] = 'Bạn chưa đăng nhập hoặc không phải là khách hàng';
+$_LANG['comment_brought'] = 'Bạn chưa đăng nhập hoặc chưa từng mua sản phẩm mà bạn muốn gửi nhận xét';
 $_LANG['anonymous'] = 'Ẩn danh';
 
 /* 其他信息 */
 $_LANG['js_languages']['goodsname_not_null'] = 'Vui lòng nhập tên sản phẩm!';
 
 /* 商品比较 */
-$_LANG['compare_remove'] = 'Remove';
-$_LANG['compare_no_goods'] = 'You didn\'t selected any products with comparative or the product number is less than 2.';
+$_LANG['compare_remove'] = 'Xóa bỏ';
+$_LANG['compare_no_goods'] = 'Bạn chưa chọn sản phẩm nào để so sánh hoặc số sản phẩm so sánh ít hơn hai.';
 
 $_LANG['no_user_name'] = 'Tài khoản này không tồn tại';
-$_LANG['undifine_rank'] = 'Undefined rank';
-$_LANG['not_login'] = 'No login';
+$_LANG['undifine_rank'] = 'Đánh giá';
+$_LANG['not_login'] = 'Chưa đăng nhập';
 $_LANG['half_info'] = 'Shortage of necessary information, please enter informations completely.';
 $_LANG['no_id'] = 'No ID';
 $_LANG['save_success'] = 'Đã lưu thành công';
@@ -246,8 +246,8 @@ $_LANG['snatch_list'] = 'Dutch auction list';
 $_LANG['not_in_range'] = 'The rang of Dutch auction is %d to %d.';
 $_LANG['also_bid'] = 'The price %s has been bid.';
 $_LANG['lack_pay_points'] = 'You can not join Dutch auction until you have sufficient points.';
-$_LANG['snatch'] = 'Dutch Auction';
-$_LANG['snatch_is_end'] = 'The Dutch auction is end.';
+$_LANG['snatch'] = 'Đấu giá ngược';
+$_LANG['snatch_is_end'] = 'Sự kiện đấu giá ngược đã kết thúc.';
 $_LANG['snatch_start_time'] = 'The Dutch auction start %s to %s ';
 $_LANG['price_extent'] = 'Bidding range:';
 $_LANG['user_to_use_up'] = 'The times of Dutch auction is unlimited, every bidding you have to spend';

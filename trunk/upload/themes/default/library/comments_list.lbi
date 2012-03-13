@@ -76,11 +76,11 @@
       <form action="javascript:;" onsubmit="submitComment(this)" method="post" name="commentForm" id="commentForm">
        <table width="710" border="0" cellspacing="5" cellpadding="0">
         <tr>
-          <td width="64" align="right">{$lang.username}: </td>
-          <td width="631"{if !$enabled_captcha}{/if}><!--{if $smarty.session.user_name}-->{$smarty.session.user_name}<!--{else}-->{$lang.anonymous}<!--{/if}--></td>
+          <td width="80" align="right">{$lang.username}: </td>
+          <td width="615"{if !$enabled_captcha}{/if}><!--{if $smarty.session.user_name}-->{$smarty.session.user_name}<!--{else}-->{$lang.anonymous}<!--{/if}--></td>
         </tr>
         <tr>
-          <td align="right">E-mail：</td>
+          <td align="right">E-mail:</td>
           <td>
           <input type="text" name="email" id="email"  maxlength="100" value="{$smarty.session.email|escape}" class="inputBorder"/>
           </td>

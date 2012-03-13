@@ -75,7 +75,7 @@
                         <a href="goods.php?id={$package_goods_list.goods_id}" target="_blank" class="f6">{$package_goods_list.goods_name}</a><br />
                       <!-- {/foreach} -->
                   </div>
-                <!-- {else} 优惠活动 -->
+                <!-- {else} Khuyến mại -->
                   {$goods.goods_name}
                 <!-- {/if} -->
               </td>
@@ -250,7 +250,7 @@
   <div class="blank5"></div>
   <!-- {/if} -->
 
-  <!-- {if $favourable_list} 优惠活动 -->
+  <!-- {if $favourable_list} Khuyến mại -->
   <div class="block">
     <div class="flowBox">
     <h6><span>{$lang.label_favourable}</span></h6>

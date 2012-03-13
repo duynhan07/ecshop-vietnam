@@ -71,7 +71,7 @@
 
 <!-- {if $wholesale_list} 如果有批发商品 -->
 <div class="block">
-  <h5><span>{$lang.wholesale_goods_list}</span>{$lang.btn_display}：
+  <h5><span>{$lang.wholesale_goods_list}</span>{$lang.btn_display}:
   <a href="javascript:void(0);" onClick="javascript:display_mode_wholesale('list')"><img align="middle" src="images/display_mode_list<!-- {if $pager.display == 'list'} -->_act<!-- {/if} -->.gif" alt="{$lang.display.list}"></a>
   <a href="javascript:void(0);" onClick="javascript:display_mode_wholesale('text')"><img align="middle" src="images/display_mode_text<!-- {if $pager.display == 'text'} -->_act<!-- {/if} -->.gif" alt="{$lang.display.text}"></a>&nbsp;&nbsp;<a href="wholesale.php?act=price_list" class="f6">{$lang.ws_price_list}</a></h5>
   <div class="blank"></div>

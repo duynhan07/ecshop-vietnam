@@ -3,7 +3,7 @@
 var process_request = "{$lang.process_request}";
 </script>
 <?php
-$GLOBALS['smarty']->assign('categories_nav',get_categories_tree());
+$GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,3));
 ?>
 <div class="block clearfix">
  <div class="f_l"><a href="../index.php" name="top"><img src="../images/logo.gif" /></a></div>

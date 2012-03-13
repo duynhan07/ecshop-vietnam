@@ -207,7 +207,7 @@ function reg(str){
      <!-- #BeginLibraryItem "/library/goods_gallery.lbi" --><!-- #EndLibraryItem -->
      <!--相册 END-->
          <div class="blank5"></div>
-         <!-- TemplateBeginEditable name="商品相册下广告（宽230px）" -->
+         <!-- TemplateBeginEditable name="Products Album Ads (Width:230px)" -->
 <!-- TemplateEndEditable -->
      </div>
      <!--商品图片和相册 end-->
@@ -227,7 +227,7 @@ function reg(str){
       <ul>
        <!-- {if $promotion} -->
       <li class="padd">
-      <!-- {foreach from=$promotion item=item key=key} 优惠活动-->
+      <!-- {foreach from=$promotion item=item key=key} Khuyến mại-->
       {$lang.activity}
       <!-- {if $item.type eq "snatch"} -->
       <a href="snatch.php" title="{$lang.snatch}" style="font-weight:100; color:#006bcd; text-decoration:none;">[{$lang.snatch}]</a>
@@ -295,8 +295,7 @@ function reg(str){
        <!--{/foreach}-->
        </dd>
        <dd style="width:48%; padding-left:7px;">
-       <strong>{$lang.goods_rank}</strong>
-      <img src="images/stars_{$goods.comment_rank}.png" alt="comment rank {$goods.comment_rank}" />
+       <strong>{$lang.goods_rank}</strong><strong><img style="position: absolute;" src="images/stars_{$goods.comment_rank}.png" alt="Đánh giá sản phẩm {$goods.comment_rank}" /></strong>
        </dd>
       </li>
 
