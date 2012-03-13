@@ -75,7 +75,7 @@ listTable.edit = function(obj, act, id)
 
       if(res.id && (res.act == 'goods_auto' || res.act == 'article_auto'))
       {
-          document.getElementById('del'+res.id).innerHTML = "<a href=""+ thisfile +"?goods_id="+ res.id +"&act=del\" onclick=\"return confirm('"+deleteck+"');\">"+deleteid+"</a>";
+          document.getElementById('del'+res.id).innerHTML = "<a href=\""+ thisfile +"?goods_id="+ res.id +"&act=del\" onclick=\"return confirm('"+deleteck+"');\">"+deleteid+"</a>";
       }
 
       obj.innerHTML = (res.error == 0) ? res.content : org;

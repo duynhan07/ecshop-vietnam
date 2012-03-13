@@ -262,7 +262,7 @@ $dyna_libs = array(
 //
 //while ($row = $db->fetchRow($res))
 //{
-//    include_once('../plugins' . $row['code'] . '/languages/common_' . $_CFG['lang'] . '.php');
+//    include_once('../plugins/' . $row['code'] . '/languages/common_' . $_CFG['lang'] . '.php');
 //
 //    $page_libs['index'][] = $row['library'];
 //}
