@@ -70,55 +70,6 @@ function get_categories_tree($cat_id = 0)
         return $cat_arr;
     }
 }
-//Mr.Điệp added for NAV cat
-function get_categories_tree_nav($cat_id = 0,$cat_numb)
-{
-    if ($cat_id > 0)
-    {
-        $sql = 'SELECT parent_id FROM ' . $GLOBALS['ecs']->table('category') . " WHERE cat_id = '$cat_id'";
-        $parent_id = $GLOBALS['db']->getOne($sql);
-    }
-    else
-    {
-        $parent_id = 0;
-    }
-
-    /*
-     判断当前分类中全是是否是底级分类，
-     如果是取出底级分类上级分类，
-     如果不是取当前分类及其下的子分类
-    */
-    $sql = 'SELECT count(*) FROM ' . $GLOBALS['ecs']->table('category') . " WHERE parent_id = '$parent_id' AND is_show = 1 ";
-    if ($GLOBALS['db']->getOne($sql) || $parent_id == 0)
-    {
-        /* 获取当前分类及其子分类 */
-        $sql = 'SELECT cat_id,cat_name ,parent_id,is_show ' .
-                'FROM ' . $GLOBALS['ecs']->table('category') .
-                "WHERE parent_id = '$parent_id' AND is_show = 1 ORDER BY sort_order ASC, cat_id ASC LIMIT $cat_numb";
-
-        $res = $GLOBALS['db']->getAll($sql);
-
-        foreach ($res AS $row)
-        {
-            if ($row['is_show'])
-            {
-                $cat_arr[$row['cat_id']]['id']   = $row['cat_id'];
-                $cat_arr[$row['cat_id']]['name'] = $row['cat_name'];
-                $cat_arr[$row['cat_id']]['url']  = build_uri('category', array('cid' => $row['cat_id']), $row['cat_name']);
-
-                if (isset($row['cat_id']) != NULL)
-                {
-                    $cat_arr[$row['cat_id']]['cat_id'] = get_child_tree($row['cat_id']);
-                }
-            }
-        }
-    }
-    if(isset($cat_arr))
-    {
-        return $cat_arr;
-    }
-}
-
 function get_child_tree($tree_id = 0)
 {
     $three_arr = array();
@@ -140,6 +91,82 @@ function get_child_tree($tree_id = 0)
                if (isset($row['cat_id']) != NULL)
                    {
                        $three_arr[$row['cat_id']]['cat_id'] = get_child_tree($row['cat_id']);
+
+            }
+        }
+    }
+    return $three_arr;
+}
+//Mr.Điệp added for NAV cat
+function get_categories_tree_nav($cat_id = 0,$cat_numb)
+{
+    if ($cat_id > 0)
+    {
+        $sql = 'SELECT parent_id FROM ' . $GLOBALS['ecs']->table('category') . " WHERE cat_id = '$cat_id' AND show_in_nav_x = 1";
+        $parent_id = $GLOBALS['db']->getOne($sql);
+    }
+    else
+    {
+        $parent_id = 0;
+    }
+
+    /*
+     判断当前分类中全是是否是底级分类，
+     如果是取出底级分类上级分类，
+     如果不是取当前分类及其下的子分类
+    */
+    $sql = 'SELECT count(*) FROM ' . $GLOBALS['ecs']->table('category') . " WHERE parent_id = '$parent_id' AND is_show = 1 AND show_in_nav_x = 1";//Chỉ lấy menu nào được hiển thị tại NAV
+    if ($GLOBALS['db']->getOne($sql) || $parent_id == 0)
+    {
+        /* 获取当前分类及其子分类 */
+        $sql = 'SELECT cat_id,cat_name ,parent_id,is_show ' .
+                'FROM ' . $GLOBALS['ecs']->table('category') .
+                "WHERE parent_id = '$parent_id' AND is_show = 1 AND show_in_nav_x = 1 ORDER BY sort_order ASC, cat_id ASC LIMIT $cat_numb";
+
+        $res = $GLOBALS['db']->getAll($sql);
+
+        foreach ($res AS $row)
+        {
+            if ($row['is_show'])
+            {
+                $cat_arr[$row['cat_id']]['id']   = $row['cat_id'];
+                $cat_arr[$row['cat_id']]['name'] = $row['cat_name'];
+                $cat_arr[$row['cat_id']]['url']  = build_uri('category', array('cid' => $row['cat_id']), $row['cat_name']);
+
+                if (isset($row['cat_id']) != NULL)
+                {
+                    $cat_arr[$row['cat_id']]['cat_id'] = get_child_tree_nav($row['cat_id']);
+                }
+            }
+        }
+    }
+    if(isset($cat_arr))
+    {
+        return $cat_arr;
+    }
+}
+
+function get_child_tree_nav($tree_id = 0)
+{
+    $three_arr = array();
+    $sql = 'SELECT count(*) FROM ' . $GLOBALS['ecs']->table('category') . " WHERE parent_id = '$tree_id' AND is_show = 1 AND show_in_nav_x = 1";
+    if ($GLOBALS['db']->getOne($sql) || $tree_id == 0)
+    {
+        $child_sql = 'SELECT cat_id, cat_name, parent_id, is_show ' .
+                'FROM ' . $GLOBALS['ecs']->table('category') .
+                "WHERE parent_id = '$tree_id' AND is_show = 1 AND show_in_nav_x = 1 ORDER BY sort_order ASC, cat_id ASC";
+        $res = $GLOBALS['db']->getAll($child_sql);
+        foreach ($res AS $row)
+        {
+            if ($row['is_show'])
+
+               $three_arr[$row['cat_id']]['id']   = $row['cat_id'];
+               $three_arr[$row['cat_id']]['name'] = $row['cat_name'];
+               $three_arr[$row['cat_id']]['url']  = build_uri('category', array('cid' => $row['cat_id']), $row['cat_name']);
+
+               if (isset($row['cat_id']) != NULL)
+                   {
+                       $three_arr[$row['cat_id']]['cat_id'] = get_child_tree_nav($row['cat_id']);
 
             }
         }

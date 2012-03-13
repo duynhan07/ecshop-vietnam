@@ -17,7 +17,7 @@ $_LANG['edit_picad'] = 'Edit Image AD';
 $_LANG['edit_ad'] = 'Edit Custom AD';
 $_LANG['title_flash_name'] = 'AD Name';
 $_LANG['title_flash_type'] = 'AD type';
-$_LANG['title_flash_time'] = 'Addtion time';
+$_LANG['title_flash_time'] = 'Ngày thêm';
 $_LANG['title_flash_status'] = 'Trạng thái';
 $_LANG['title_upload_notice'] = 'Upload a picture Or input a URL';
 

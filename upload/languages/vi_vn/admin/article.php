@@ -15,7 +15,7 @@
  * $Id: article.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
-$_LANG['title'] ='Title';
+$_LANG['title'] ='Tiêu đề';
 $_LANG['cat'] ='Danh mục';
 $_LANG['reserve'] = 'Reserve';
 $_LANG['article_type'] ='Importance';

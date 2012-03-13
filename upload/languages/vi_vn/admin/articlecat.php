@@ -1,20 +1,4 @@
 <?php
-
-/**
- * ECSHOP Article\'s Category management program language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: articlecat.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
 $_LANG['cat_name'] = 'Tên';
 $_LANG['type'] = 'Loại danh mục';
 $_LANG['type_name'][COMMON_CAT] = 'Mục bình thường';
@@ -26,11 +10,11 @@ $_LANG['type_name'][HELP_CAT]   = 'Trợ giúp cửa hàng';
 $_LANG['cat_keywords'] = 'Từ khóa';
 $_LANG['cat_desc'] = 'Mô tả';
 $_LANG['parent_cat'] = 'Superior Categories';
-$_LANG['cat_top'] = 'Top Categories';
+$_LANG['cat_top'] = 'Là mục gốc';
 $_LANG['not_allow_add'] = 'Classification does not allow you to add the selected sub-classification';
 $_LANG['not_allow_remove'] = 'System to retain the classification does not allow delete';
 $_LANG['is_fullcat'] = 'There are sub-classified under the classification, first delete its sub-classification';
-$_LANG['show_in_nav'] = 'Hiển thị tại NAV';
+$_LANG['show_in_nav'] = 'Cho vào NAV';
 
 $_LANG['isopen'] = 'Yes';
 $_LANG['isclose'] = 'No';

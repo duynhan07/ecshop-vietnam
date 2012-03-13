@@ -16,7 +16,7 @@
 */
 
 $_LANG['id'] = 'ID';
-$_LANG['title'] = 'Title';
+$_LANG['title'] = 'Tiêu đề';
 $_LANG['add_time'] = 'Add time';
 $_LANG['shopinfo_add'] = 'Add New Article';
 $_LANG['shopinfo_list'] = 'Articles List';

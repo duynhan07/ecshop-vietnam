@@ -89,6 +89,7 @@ if ($_REQUEST['act'] == 'insert')
     $cat['measure_unit'] = !empty($_POST['measure_unit']) ? trim($_POST['measure_unit']) : '';
     $cat['cat_name']     = !empty($_POST['cat_name'])     ? trim($_POST['cat_name'])     : '';
     $cat['show_in_nav']  = !empty($_POST['show_in_nav'])  ? intval($_POST['show_in_nav']): 0;
+	$cat['show_in_nav_x']  = !empty($_POST['show_in_nav_x'])  ? intval($_POST['show_in_nav_x']): 0;
     $cat['style']        = !empty($_POST['style'])        ? trim($_POST['style'])        : '';
     $cat['is_show']      = !empty($_POST['is_show'])      ? intval($_POST['is_show'])    : 0;
     $cat['grade']        = !empty($_POST['grade'])        ? intval($_POST['grade'])      : 0;
@@ -249,6 +250,9 @@ if ($_REQUEST['act'] == 'update')
     $cat['cat_name']     = !empty($_POST['cat_name'])     ? trim($_POST['cat_name'])     : '';
     $cat['is_show']      = !empty($_POST['is_show'])      ? intval($_POST['is_show'])    : 0;
     $cat['show_in_nav']  = !empty($_POST['show_in_nav'])  ? intval($_POST['show_in_nav']): 0;
+	//Mr.Điệp added
+	$cat['show_in_nav_x']  = !empty($_POST['show_in_nav_x'])  ? intval($_POST['show_in_nav_x']): 0;
+	//End
     $cat['style']        = !empty($_POST['style'])        ? trim($_POST['style'])        : '';
     $cat['grade']        = !empty($_POST['grade'])        ? intval($_POST['grade'])      : 0;
     $cat['filter_attr']  = !empty($_POST['filter_attr'])  ? implode(',', array_unique(array_diff($_POST['filter_attr'],array(0)))) : 0;
@@ -507,6 +511,25 @@ if ($_REQUEST['act'] == 'toggle_show_in_nav')
     }
 }
 
+//Mr.Điệp added function for Show/Hide category in NAV
+if ($_REQUEST['act'] == 'toggle_show_in_nav_x')
+{
+    check_authz_json('cat_manage');
+
+    $id = intval($_POST['id']);
+    $val = intval($_POST['val']);
+
+    if (cat_update($id, array('show_in_nav_x' => $val)) != false)
+    {
+        clear_cache_files();
+        make_json_result($val);
+    }
+    else
+    {
+        make_json_error($db->error());
+    }
+}
+//End function sho/hide category in NAV
 /*------------------------------------------------------ */
 //-- 切换是否显示
 /*------------------------------------------------------ */

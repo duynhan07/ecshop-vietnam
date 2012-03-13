@@ -3,7 +3,8 @@
 var process_request = "{$lang.process_request}";
 </script>
 <?php
-$GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,3));
+$GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,99));
+//Giá trị 0 là danh mục gốc, giá trị 99 mặc định ở đây là số lượng danh mục tối đa cho phép hiển thị
 ?>
 <div class="block clearfix">
  <div class="f_l"><a href="../index.php" name="top"><img src="../images/logo.gif" /></a></div>

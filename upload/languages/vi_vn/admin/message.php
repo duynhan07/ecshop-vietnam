@@ -21,7 +21,7 @@ $_LANG['send_date'] = 'Send date';
 $_LANG['read_date'] = 'Read date';
 $_LANG['readed'] = 'Readed';
 $_LANG['deleted'] = 'Deleted';
-$_LANG['title'] = 'Title';
+$_LANG['title'] = 'Tiêu đề';
 $_LANG['message'] = 'Content';
 
 $_LANG['view_msg'] = 'Xem';

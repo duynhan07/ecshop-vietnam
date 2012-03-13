@@ -2,16 +2,16 @@
 $_LANG['add_new'] = 'Add navigation';
 $_LANG['system_main'] = 'System Properties';
 $_LANG['item_name'] = 'Tên';
-$_LANG['item_ifshow'] = 'Hiển thị hay không?';
-$_LANG['item_opennew'] = 'Whether the new window';
-$_LANG['item_type'] = 'Location';
+$_LANG['item_ifshow'] = 'Hiển thị?';
+$_LANG['item_opennew'] = 'Mở trong cửa sổ mới';
+$_LANG['item_type'] = 'Vị trí';
 $_LANG['edit'] = 'Editor';
-$_LANG['item_url'] = 'Link Address';
+$_LANG['item_url'] = 'Địa chỉ url';
 $_LANG['item_vieworder'] = 'Thứ tự';
-$_LANG['top'] = 'top';
-$_LANG['middle'] = 'middle';
-$_LANG['bottom'] = 'bottom ';
-$_LANG['edit_ok'] = 'Successful operation';
+$_LANG['top'] = 'Trên cùng';
+$_LANG['middle'] = 'Thanh NAV';
+$_LANG['bottom'] = 'Chân website';
+$_LANG['edit_ok'] = 'Thực thi thao tác thành công';
 $_LANG['go_list'] = 'Return list';
 $_LANG['ckdel'] = 'Determine the delete?';
 

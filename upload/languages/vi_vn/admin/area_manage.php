@@ -22,9 +22,9 @@ $_LANG['region_type'] = 'Region type';
 
 $_LANG['area'] = 'Area';
 $_LANG['area_next'] = 'Following';
-$_LANG['country'] = 'Country';
-$_LANG['province'] = 'Province';
-$_LANG['city'] = 'City';
+$_LANG['country'] = 'Quốc gia';
+$_LANG['province'] = 'Tỉnh/Thành';
+$_LANG['city'] = 'Quận/Huyện';
 $_LANG['cantonal'] = 'Cantonal';
 $_LANG['back_page'] = 'Previous';
 $_LANG['manage_area'] = 'Manage';
@@ -40,9 +40,9 @@ $_LANG['js_languages']['option_name_empty'] = 'Please enter a option name of sur
 $_LANG['js_languages']['drop_confirm'] = 'Are you sure delete this record?';
 
 $_LANG['js_languages']['drop'] = 'Xóa';
-$_LANG['js_languages']['country'] = 'Country';
-$_LANG['js_languages']['province'] = 'Province';
-$_LANG['js_languages']['city'] = 'City';
+$_LANG['js_languages']['country'] = 'Quốc gia';
+$_LANG['js_languages']['province'] = 'Tỉnh/Thành';
+$_LANG['js_languages']['city'] = 'Quận/Huyện';
 $_LANG['js_languages']['cantonal'] = 'Cantonal';
 
 /* Prompting message */
