@@ -91,7 +91,7 @@ function reg(str)
         <!-- #BeginLibraryItem "/library/goods_gallery.lbi" --><!-- #EndLibraryItem -->
         <div class="blank5"></div>
         <!--相册 END-->
-        <!-- TemplateBeginEditable name="商品相册下广告（宽230px）" -->
+        <!-- TemplateBeginEditable name="Products Album Ads (Width:230px)" -->
         <!-- TemplateEndEditable -->
       </div>
       <!--商品图片和相册 end-->
