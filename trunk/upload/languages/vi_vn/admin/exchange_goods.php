@@ -5,7 +5,7 @@ $_LANG['goods_name'] ='Goods';
 $_LANG['exchange_integral'] = 'Using integral';
 $_LANG['is_exchange'] ='Exchange';
 $_LANG['is_hot'] ='Hot nhất';
-$_LANG['button_remove'] ='Batch delete';
+$_LANG['button_remove'] ='Xóa 1 loạt';
 
 $_LANG['keywords'] = 'Từ khóa';
 $_LANG['goodsid'] ='Goods';

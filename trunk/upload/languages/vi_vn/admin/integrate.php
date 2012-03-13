@@ -138,9 +138,9 @@ $_LANG['rule_name'] = 'Exchange rules';
 $_LANG['rule_rate'] = 'Exchange ratio';
 
 /* JS language item */
-$_LANG['js_languages']['no_host'] ='The database server host can\'t be blank.';
-$_LANG['js_languages']['no_user'] ='The database account number can\'t be blank.';
-$_LANG['js_languages']['no_name'] ='The database can\'t be blank.';
+$_LANG['js_languages']['no_host'] ='The database server host không được để trống.';
+$_LANG['js_languages']['no_user'] ='The database account number không được để trống.';
+$_LANG['js_languages']['no_name'] ='The database không được để trống.';
 $_LANG['js_languages']['no_integrate_url']='Please enter complete URL of conformity object.';
 $_LANG['js_languages']['install_confirm']="Please don\'t optional replace conformity objectt in the system. \\nAre you sure install the member data conformity plug-in?";
 $_LANG['js_languages']['num_invalid'] ='The synchronous data record a number isn\'t an integer';

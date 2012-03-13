@@ -8,6 +8,6 @@ $_LANG['pri'][1] = 'High';
 $_LANG['goods_edit'] = 'Editor merchandise';
 $_LANG['finish_list'] = 'Has been inserted into %s records, please later ~';
 $_LANG['finishing'] = 'Are generated later';
-$_LANG['edit_ok'] = 'Operation successful!';
+$_LANG['edit_ok'] = 'Thực thi thao tác thành công!';
 $_LANG['batch_note'] = 'After the date of this update all merchandise insert send queue:';
 ?>

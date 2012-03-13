@@ -32,7 +32,7 @@ $_LANG['num'] = 'Articles quantity';
 
 $_LANG['page'] = 'Articles quantity';
 
-$_LANG['cat_name_empty'] = 'Name of category can\'t be blank!';
+$_LANG['cat_name_empty'] = 'Name of category không được để trống!';
 
 $_LANG['article_list'] = 'Help articles list';
 $_LANG['cat_list'] = 'Help categories list';

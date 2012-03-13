@@ -51,8 +51,8 @@ $_LANG['js_languages']['check_your_db'] ='Checking the database of your system..
 $_LANG['js_languages']['act_ok'] ='Congratulations, operate successfully!';
 
 $_LANG['js_languages']['no_system'] ='There is no available convert program.';
-$_LANG['js_languages']['host_not_null'] ='The host name or address can\'t be blank.';
-$_LANG['js_languages']['db_not_null'] ='The database name can\'t be blank.';
-$_LANG['js_languages']['user_not_null'] ='Register ID can\'t be blank.';
-$_LANG['js_languages']['path_not_null'] ='Original shop root directory can\'t be blank.';
+$_LANG['js_languages']['host_not_null'] ='The host name or address không được để trống.';
+$_LANG['js_languages']['db_not_null'] ='The database name không được để trống.';
+$_LANG['js_languages']['user_not_null'] ='Register ID không được để trống.';
+$_LANG['js_languages']['path_not_null'] ='Original shop root directory không được để trống.';
 ?>

@@ -22,8 +22,8 @@ $_LANG['goods_booking'] = 'Reply to goods booking template';
 $_LANG['user_message'] = 'Reply to message template';
 $_LANG['recomment'] = 'Reply to comment template';
 
-$_LANG['subject_empty'] = 'Sorry, mail subject can\'t be blank.';
-$_LANG['content_empty'] = 'Sorry, mail content can\'t be blank.';
+$_LANG['subject_empty'] = 'Sorry, mail subject không được để trống.';
+$_LANG['content_empty'] = 'Sorry, mail content không được để trống.';
 
 $_LANG['js_languages']['save_confirm'] = 'You have modified template content, are you sure don\'t save it?';
 

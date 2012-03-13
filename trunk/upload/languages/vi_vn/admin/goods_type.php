@@ -24,8 +24,8 @@ $_LANG['goods_type_name'] = 'Tên loại';
 $_LANG['attribute_number'] = 'Số lượng t.tính';
 $_LANG['attribute'] = 'D.sách t.tính';
 
-$_LANG['arr_goods_status'][0] = 'Disabled';
-$_LANG['arr_goods_status'][1] = 'Enabled';
+$_LANG['arr_goods_status'][0] = 'Đã tắt';
+$_LANG['arr_goods_status'][1] = 'Đã bật';
 
 $_LANG['back_list'] = 'Return the type of merchandise list';
 
@@ -40,7 +40,7 @@ $_LANG['remove_confirm'] = "All attributes will be deleted if you delete the pro
 $_LANG['repeat_type_name'] = 'The product type already exists.';
 $_LANG['cannot_found_goodstype'] = 'Did not find the specified types of merchandise.';
 
-$_LANG['js_languages']['lang_enabled'] = 'Enabled';
+$_LANG['js_languages']['lang_enabled'] = 'Đã bật';
 $_LANG['js_languages']['lang_remove'] = 'Remove';
 $_LANG['js_languages']['attribute'] = 'Thuộc tính';
 $_LANG['js_languages']['remove_confirm'] = "All attributes will be deleted if you delete the product type. \\nAre you sure delete the product type?";

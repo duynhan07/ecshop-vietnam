@@ -1,19 +1,4 @@
 <?php
-
-/**
- * ECSHOP Bonus type/Bonus management program
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: bonus.php 17217 2011-01-19 06:29:08Z liubo $
-*/
 /* Bonus type feild information */
 $_LANG['bonus_type'] = 'Bonus Type';
 $_LANG['bonus_list'] = 'Bonus List';
@@ -36,11 +21,11 @@ $_LANG['param'] = 'Tham số';
 $_LANG['no_use'] = 'Chưa dùng';
 $_LANG['yuan'] = 'vnđ';
 $_LANG['user_list'] = 'Member list';
-$_LANG['type_name_empty'] = 'Bonus type name can\'t be blank!';
+$_LANG['type_name_empty'] = 'Bonus type name không được để trống!';
 $_LANG['type_money_empty'] = 'Số tiền tặng không được để trống!';
-$_LANG['min_amount_empty'] = 'Min limit of order of bonus type can\'t be blank!';
-$_LANG['max_amount_empty'] = 'Max limit of order of bonus type can\'t be blank!';
-$_LANG['send_count_empty'] = 'Quantity of bonus type can\'t be blank!';
+$_LANG['min_amount_empty'] = 'Min limit of order of bonus type không được để trống!';
+$_LANG['max_amount_empty'] = 'Max limit of order of bonus type không được để trống!';
+$_LANG['send_count_empty'] = 'Quantity of bonus type không được để trống!';
 
 $_LANG['send_by'][SEND_BY_USER] = 'Tặng theo người dùng';
 $_LANG['send_by'][SEND_BY_GOODS] = 'Tặng theo sản phẩm';
@@ -74,7 +59,7 @@ $_LANG['back_bonus_list'] = 'Return to bonus list';
 $_LANG['validated_email'] = 'Only to authenticated users through the mail issuance of red packets';
 
 /* Prompting message */
-$_LANG['attradd_succed'] = 'Operation successfully!';
+$_LANG['attradd_succed'] = 'Thực thi thao tác thành công!';
 $_LANG['js_languages']['type_name_empty'] = 'Please enter bonus type name!';
 $_LANG['js_languages']['type_money_empty'] = 'Please enter bonus type price!';
 $_LANG['js_languages']['order_money_empty'] = 'Please enter order money!';

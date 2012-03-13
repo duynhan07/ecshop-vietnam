@@ -45,12 +45,12 @@ $_LANG['no_select_act'] = 'Select Article Categories！';
 $_LANG['display'] = 'Display the article content.';
 $_LANG['download'] = 'Download';
 $_LANG['both'] = 'Both display content and download files.';
-$_LANG['button_remove'] ='Batch delete';
+$_LANG['button_remove'] ='Xóa 1 loạt';
 $_LANG['button_hide'] ='Batch hidden';
 $_LANG['button_show'] ='Batch show';
 $_LANG['move_to'] = 'Transfer to the classification';
 
-$_LANG['button_remove'] ='Batch delete';
+$_LANG['button_remove'] ='Xóa 1 loạt';
 
 $_LANG['article_edit'] = 'Edit article content';
 $_LANG['tab_general'] = 'Common information';
