@@ -349,7 +349,7 @@ var Transport =
     {
       try
       {
-        legalParams = "JSON=" + params.toJSONString();
+        legalParams = "JSON=" + params.objToJSONString();
       }
       catch (ex)
       {
@@ -405,7 +405,7 @@ var Transport =
         result = this.preFilter(xhr.responseText);
         try
         {
-          result = result.parseJSON();
+          result = result.parseObjectToJSON();
         }
         catch (ex)
         {
