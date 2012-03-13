@@ -1,20 +1,4 @@
 <?php
-
-/**
- * ECSHOP Commodity category management language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: category.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
 /* Commodity category field information */
 $_LANG['cat_id'] = 'ID';
 $_LANG['cat_name'] = 'Tên';
@@ -29,17 +13,19 @@ $_LANG['delete_info'] = 'Xóa đã chọn';
 $_LANG['category_edit'] = 'Edit category';
 $_LANG['move_goods'] = 'Chuyển s.phẩm';
 $_LANG['cat_top'] = 'Root';
-$_LANG['show_in_nav'] = 'Hiển thị tại NAV';
+$_LANG['show_in_nav'] = 'Cho vào NAV';
+$_LANG['show_in_nav_x'] = 'Hiển thị tại NAV';
 $_LANG['cat_style'] = 'Tệp css riêng biệt';
-$_LANG['is_show'] = 'Hiển thị hay không?';
+$_LANG['is_show'] = 'Hiển thị?';
 $_LANG['show_in_index'] = 'Hiển thị trên index?';
 $_LANG['notice_show_in_index'] = 'This setting can be the latest in the home, hot, Department recommend that the classification of merchandise under Recommend';
-$_LANG['goods_number'] = 'Số lượng sản phẩm';
+$_LANG['goods_number'] = 'Số s.phẩm';
 $_LANG['grade'] = 'Dải giá sản phẩm';
 $_LANG['notice_grade'] = 'This option indicates that the classification of merchandise under the lowest and the highest price level of the division between the number of express no grading fill 0';
 $_LANG['short_grade'] = 'Price classification';
 
-$_LANG['nav'] = 'Navigation';
+$_LANG['nav'] = 'Cho vào NAV';
+$_LANG['nav_x'] = 'Hiển thị NAV';
 $_LANG['index_new'] = 'Mới nhất';
 $_LANG['index_best'] = 'Tốt nhất';
 $_LANG['index_hot'] = 'Hot nhất';

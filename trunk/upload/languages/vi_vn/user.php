@@ -154,9 +154,9 @@ $_LANG['default'] = 'Default';
 $_LANG['default_address'] = 'Default address';
 $_LANG['yes'] = 'Yes';
 $_LANG['no'] = 'No';
-$_LANG['country'] = 'Country';
-$_LANG['province'] = 'Province';
-$_LANG['city'] = 'City';
+$_LANG['country'] = 'Quốc gia';
+$_LANG['province'] = 'Tỉnh/Thành';
+$_LANG['city'] = 'Quận/Huyện';
 $_LANG['area'] = 'Area';
 
 $_LANG['search_ship'] = 'Search shipping methods';
@@ -194,7 +194,7 @@ $_LANG['password_js']['confirm_password_empty'] = 'Re-enter the password!';
 $_LANG['password_js']['both_password_error'] = 'Mật khẩu mà bạn vừa nhập không trùng khớp, hãy nhập lại!';
 
 /* 会员留言 */
-$_LANG['message_title'] = 'Title';
+$_LANG['message_title'] = 'Tiêu đề';
 $_LANG['message_time'] = 'Message time';
 $_LANG['reply_time'] = 'Reply time';
 $_LANG['shopman_reply'] = 'Reply of the shop owner';

@@ -1,5 +1,5 @@
 <?php
-$_LANG['title'] ='Title';
+$_LANG['title'] ='Tiêu đề';
 $_LANG['goods_id'] ='No.';
 $_LANG['goods_name'] ='Goods';
 $_LANG['exchange_integral'] = 'Using integral';

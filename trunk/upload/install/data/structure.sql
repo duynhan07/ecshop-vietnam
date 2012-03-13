@@ -353,6 +353,7 @@ CREATE TABLE `ecs_category` (
   `template_file` varchar(50) NOT NULL default '',
   `measure_unit` varchar(15) NOT NULL default '',
   `show_in_nav` tinyint(1) NOT NULL default '0',
+  `show_in_nav_x` tinyint(1) NOT NULL default '0',
   `style` varchar( 150 ) NOT NULL,
   `is_show` tinyint(1) unsigned NOT NULL default '1',
   `grade` tinyint(4) NOT NULL default '0',

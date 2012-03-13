@@ -17,7 +17,7 @@ $_LANG['item_vieworder'] = 'Thứ tự';
 $_LANG['top'] = 'Top';
 $_LANG['middle'] = 'Between';
 $_LANG['bottom'] = 'Bottom';
-$_LANG['edit_ok'] = 'Successful operation';
+$_LANG['edit_ok'] = 'Thực thi thao tác thành công';
 $_LANG['go_list'] = 'Return list';
 $_LANG['ckdel'] = 'Determine the delete?';
 

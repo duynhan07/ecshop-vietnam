@@ -1,6 +1,6 @@
 <?php
 
-$_LANG['msg_title'] = 'Title';
+$_LANG['msg_title'] = 'Tiêu đề';
 $_LANG['list_all'] = 'View all messages';
 $_LANG['msg_id'] = 'ID';
 $_LANG['msg_time'] = 'Thời gian';

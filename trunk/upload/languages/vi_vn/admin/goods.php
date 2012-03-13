@@ -141,7 +141,7 @@ $_LANG['lab_is_alone_sale'] ='Common product:';
 $_LANG['lab_is_free_shipping'] = 'Free shipping：';
 
 
-$_LANG['compute_by_mp'] ='Calculate';
+$_LANG['compute_by_mp'] ='Tính toán';
 
 $_LANG['notice_goods_sn'] ='Nếu bạn không nhập mã sản phẩm, hệ thống sẽ tự thêm tiền tố No. vào.';
 $_LANG['notice_integral'] ='(Đây là bắt buộc) có thể dùng số dư để thanh toán.';
@@ -158,20 +158,20 @@ $_LANG['alone_sale'] ='Checked means it can be sold as common product, otherwise
 $_LANG['free_shipping'] = 'Checked means it can shipped free, otherwise as regular.';
 
 $_LANG['invalid_goods_img'] ='Định dạng hình sản phẩm không hợp lệ!';
-$_LANG['invalid_goods_thumb']='Product thumbnail format inaccuracy!';
+$_LANG['invalid_goods_thumb']='Định dạng hình thu nhỏ không hợp lệ!';
 $_LANG['invalid_img_url'] ='Product gallery the %s picture format inaccuracy!';
 
 $_LANG['goods_img_too_big'] ='Kích cỡ hình sản phẩm quá lớn(tối đa hỗ trợ là: %s), không thể upload.';
-$_LANG['goods_thumb_too_big']='Product thumbnail file is too big(tối đa hỗ trợ là: %s), không thể upload.';
-$_LANG['img_url_too_big'] ='Product gallery in the %s picture file is too big(tối đa hỗ trợ là: %s), không thể upload.';
+$_LANG['goods_thumb_too_big']='Hình thu nhỏ sản phẩm quá lớn(tối đa hỗ trợ là: %s), không thể upload.';
+$_LANG['img_url_too_big'] ='Hình ảnh sản phẩm %s trong thư viện có kích cỡ quá lớn(tối đa hỗ trợ là: %s), không thể upload.';
 
-$_LANG['integral_market_price']='Take integral';
-$_LANG['upload_images'] ='Upload a picture';
-$_LANG['spec_price'] = 'Attribute price';
-$_LANG['drop_img_confirm'] = 'Are you sure delete the picture?';
+$_LANG['integral_market_price']='Tính giá';
+$_LANG['upload_images'] ='Upload hình ảnh';
+$_LANG['spec_price'] = 'Giá phụ kiện';
+$_LANG['drop_img_confirm'] = 'Bạn có muốn xóa hình này?';
 
-$_LANG['select_font'] = 'Font Style';
-$_LANG['font_styles'] = array('strong' => 'Bold', 'em' => 'Italic', 'u' => 'Underline', 'strike' => 'Strike Through');
+$_LANG['select_font'] = 'Kiểu font';
+$_LANG['font_styles'] = array('strong' => 'In đậm', 'em' => 'Nghiêng', 'u' => 'Gạch chân', 'strike' => 'Gạch ngang');
 
 $_LANG['rapid_add_cat'] = 'Thêm danh mục';
 $_LANG['rapid_add_brand'] = 'Thêm thương hiệu';
@@ -200,7 +200,7 @@ $_LANG['single'] ='Single';
 $_LANG['double'] ='Double';
 $_LANG['all_article'] ='Chọn sản phẩm';
 $_LANG['goods_article'] ='Bài viết liên quan';
-$_LANG['top_cat'] = 'Top Categories';
+$_LANG['top_cat'] = 'Là mục gốc';
 
 /*------------------------------------------------------ */
 //-- Combine a product
@@ -214,7 +214,7 @@ $_LANG['price'] ='Giá';
 /*------------------------------------------------------ */
 
 $_LANG['img_desc'] ='Mô tả';
-$_LANG['img_url'] ='Upload a file';
+$_LANG['img_url'] ='Upload tệp';
 $_LANG['img_file'] = 'or input the url of the image';
 
 /*------------------------------------------------------ */
@@ -245,7 +245,7 @@ $_LANG['js_languages']['promote_not_lt'] = 'Sales start date can not be greater 
 $_LANG['js_languages']['promote_start_not_null'] = 'Promotions start time should not be empty';
 $_LANG['js_languages']['promote_end_not_null'] = 'Ending time promotions should not be empty';
 
-$_LANG['js_languages']['drop_img_confirm'] = 'Are you sure delete the picture?';
+$_LANG['js_languages']['drop_img_confirm'] = 'Bạn có muốn xóa hình này?';
 $_LANG['js_languages']['batch_no_on_sale'] = 'Are you sure stop sale the checked product?';
 $_LANG['js_languages']['batch_trash_confirm'] = 'Are you sure move the checked product to recycle bin?';
 $_LANG['js_languages']['go_category_page'] = "This page's data will lost, are you sure to go to adding category page？";

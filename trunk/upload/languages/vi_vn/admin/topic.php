@@ -12,7 +12,7 @@ $_LANG['publish_to_player'] = 'Publish to Flash playlist';
 $_LANG['publish_to_ads'] = 'Posted to ads';
 
 /* 提示信息 */
-$_LANG['succed'] = 'Successful operation!';
+$_LANG['succed'] = 'Thực thi thao tác thành công!';
 $_LANG['notice_template_file'] = 'Fill in the current topic template file name, template file should be uploaded to the current template directory mall, do not fill in will call the default template.';
 $_LANG['notice_css'] = 'Fill in the current topic of CSS style code, do not fill in the template default CSS file called';
 $_LANG['js_languages']['topic_name_empty'] = 'Please enter the topic name!';

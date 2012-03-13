@@ -17,7 +17,7 @@
 $_LANG['shophelp_add'] = 'Add new help';
 $_LANG['cat_add'] = 'Add new category';
 $_LANG['cat_name'] = 'Category name';
-$_LANG['title'] = 'Title';
+$_LANG['title'] = 'Tiêu đề';
 $_LANG['article_type'] = 'Article type';
 $_LANG['add_time'] = 'Add time';
 $_LANG['sort'] = 'Thứ tự';
