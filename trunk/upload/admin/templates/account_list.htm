@@ -4,7 +4,7 @@
 {insert_scripts files="../js/utils.js,listtable.js"}
 
 <div class="form-div">
-<form method="post" action="account_log.php?act=list&user_id={$smarty.get.user_id}" name="searchForm">
+<form method="post" action="account_log.php?act=list&amp;user_id={$smarty.get.user_id}" name="searchForm">
   <select name="account_type" onchange="document.forms['searchForm'].submit()">
     <option value="" {if $account_type eq ''}selected="selected"{/if}>{$lang.all_account}</option>
     <option value="user_money" {if $account_type eq 'user_money'}selected="selected"{/if}>{$lang.user_money}</option>

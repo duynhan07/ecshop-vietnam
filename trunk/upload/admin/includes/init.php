@@ -36,7 +36,7 @@ if (file_exists('../data/config.php'))
 }
 else
 {
-    include('../includes/config.php');
+    include('config.php');
 }
 
 /* 取得当前ecshop所在的根目录 */

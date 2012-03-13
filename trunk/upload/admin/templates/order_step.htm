@@ -7,7 +7,7 @@
 {/if}
 
 {if $step eq "user"}
-<form name="theForm" action="order.php?act=step_post&step={$step}&order_id={$order_id}&step_act={$step_act}" method="post" onsubmit="return checkUser()">
+<form name="theForm" action="order.php?act=step_post&amp;step={$step}&amp;order_id={$order_id}&amp;step_act={$step_act}" method="post" onsubmit="return checkUser()">
 <div class="main-div" style="padding: 15px">
   <label><input type="radio" name="anonymous" value="1" checked /> {$lang.anonymous}</label><br />
   <label><input type="radio" name="anonymous" value="0" id="user_useridname" /> {$lang.by_useridname}</label>
@@ -25,7 +25,7 @@
 </form>
 
 {elseif $step eq "goods"}
-<form name="theForm" action="order.php?act=step_post&step=edit_goods&order_id={$order_id}&step_act={$step_act}" method="post">
+<form name="theForm" action="order.php?act=step_post&amp;step=edit_goods&amp;order_id={$order_id}&amp;step_act={$step_act}" method="post">
 <div class="list-div">
 <table cellpadding="3" cellspacing="1">
   <tr>
@@ -66,7 +66,7 @@
 </div>
 </form>
 
-<form name="goodsForm" action="order.php?act=step_post&step=add_goods&order_id={$order_id}&step_act={$step_act}" method="post" onsubmit="return addToOrder()">
+<form name="goodsForm" action="order.php?act=step_post&amp;step=add_goods&amp;order_id={$order_id}&amp;step_act={$step_act}" method="post" onsubmit="return addToOrder()">
 <p>
   {$lang.search_goods}
   <input type="text" name="keyword" value="" />
@@ -109,7 +109,7 @@
 </table>
 </div>
 </form>
-<form action="order.php?act=step_post&step=goods&order_id={$order_id}&step_act={$step_act}" method="post" onsubmit="return checkGoods()">
+<form action="order.php?act=step_post&amp;step=goods&amp;order_id={$order_id}&amp;step_act={$step_act}" method="post" onsubmit="return checkGoods()">
   <p align="center">
     <input name="{if $step_act eq 'add'}next{else}finish{/if}" type="submit" class="button" value="{if $step_act eq 'add'}{$lang.button_next}{else}{$lang.button_submit}{/if}" />
     <input type="button" value="{$lang.button_cancel}" class="button" onclick="location.href='order.php?act=process&func=cancel_order&order_id={$order_id}&step_act={$step_act}'" />
@@ -121,7 +121,7 @@
 <script type="text/javascript">
 region.isAdmin=true;
 </script>
-<form name="theForm" action="order.php?act=step_post&step={$step}&order_id={$order_id}&step_act={$step_act}" method="post" onsubmit="return checkConsignee()">
+<form name="theForm" action="order.php?act=step_post&amp;step={$step}&amp;order_id={$order_id}&amp;step_act={$step_act}" method="post" onsubmit="return checkConsignee()">
 <div class="list-div">
 <table cellpadding="3" cellspacing="1">
   {if $address_list}
@@ -213,7 +213,7 @@ region.isAdmin=true;
 </form>
 
 {elseif $step eq "shipping"}
-<form name="theForm" action="order.php?act=step_post&step={$step}&order_id={$order_id}&step_act={$step_act}" method="post" onsubmit="return checkShipping()">
+<form name="theForm" action="order.php?act=step_post&amp;step={$step}&amp;order_id={$order_id}&amp;step_act={$step_act}" method="post" onsubmit="return checkShipping()">
 <div class="list-div">
 <table cellpadding="3" cellspacing="1">
   <tr>
@@ -248,7 +248,7 @@ region.isAdmin=true;
 </form>
 
 {elseif $step eq "payment"}
-<form name="theForm" action="order.php?act=step_post&step={$step}&order_id={$order_id}&step_act={$step_act}" method="post" onsubmit="return checkPayment()">
+<form name="theForm" action="order.php?act=step_post&amp;step={$step}&amp;order_id={$order_id}&amp;step_act={$step_act}" method="post" onsubmit="return checkPayment()">
 <div class="list-div">
 <table cellpadding="3" cellspacing="1">
   <tr>
@@ -275,7 +275,7 @@ region.isAdmin=true;
 </form>
 
 {elseif $step eq "other"}
-<form name="theForm" action="order.php?act=step_post&step={$step}&order_id={$order_id}&step_act={$step_act}" method="post">
+<form name="theForm" action="order.php?act=step_post&amp;step={$step}&amp;order_id={$order_id}&amp;step_act={$step_act}" method="post">
 <div class="list-div">
 {if $exist_real_goods and ($pack_list or $card_list)}
 <table cellpadding="3" cellspacing="1">
@@ -376,7 +376,7 @@ region.isAdmin=true;
 </form>
 
 {elseif $step eq "money"}
-<form name="theForm" action="order.php?act=step_post&step={$step}&order_id={$order_id}&step_act={$step_act}" method="post">
+<form name="theForm" action="order.php?act=step_post&amp;step={$step}&amp;order_id={$order_id}&amp;step_act={$step_act}" method="post">
 <div class="list-div">
 <table cellpadding="3" cellspacing="1">
   <tr>
@@ -449,7 +449,7 @@ region.isAdmin=true;
 </form>
 
 {elseif $step eq "invoice"}
-<form name="theForm" action="order.php?act=step_post&step={$step}&order_id={$order_id}&step_act={$step_act}" method="post" onsubmit="return checkShipping()">
+<form name="theForm" action="order.php?act=step_post&amp;step={$step}&amp;order_id={$order_id}&amp;step_act={$step_act}" method="post" onsubmit="return checkShipping()">
 <div class="list-div">
 <table cellpadding="3" cellspacing="1">
   <tr>

@@ -40,8 +40,8 @@
     <td align="center" valign="top" nowrap="nowrap">{$back.return_time}</td>
     <td align="center" valign="top" nowrap="nowrap">{$back.action_user}</td>
     <td align="center" valign="top"  nowrap="nowrap">
-     <a href="order.php?act=back_info&back_id={$back.back_id}">{$lang.detail}</a>
-     <a onclick="{if(confirm('{$lang.confirm_delete}')){return true;}return false;}" href="order.php?act=operate&remove_back=1&back_id={$back.back_id}">{$lang.remove}</a>
+     <a href="order.php?act=back_info&amp;back_id={$back.back_id}">{$lang.detail}</a>
+     <a onclick="{if(confirm('{$lang.confirm_delete}')){return true;}return false;}" href="order.php?act=operate&amp;remove_back=1&amp;back_id={$back.back_id}">{$lang.remove}</a>
     </td>
   </tr>
   {/foreach}

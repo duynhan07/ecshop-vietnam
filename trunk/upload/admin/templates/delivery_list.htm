@@ -47,8 +47,8 @@
     <td align="center" valign="top" nowrap="nowrap">{$delivery.status_name}</td>
     <td align="center" valign="top" nowrap="nowrap">{$delivery.action_user}</td>
     <td align="center" valign="top"  nowrap="nowrap">
-     <a href="order.php?act=delivery_info&delivery_id={$delivery.delivery_id}">{$lang.detail}</a>
-     <a onclick="{if(confirm('{$lang.confirm_delete}')){return true;}return false;}" href="order.php?act=operate&remove_invoice=1&delivery_id={$delivery.delivery_id}">{$lang.remove}</a>
+     <a href="order.php?act=delivery_info&amp;delivery_id={$delivery.delivery_id}">{$lang.detail}</a>
+     <a onclick="{if(confirm('{$lang.confirm_delete}')){return true;}return false;}" href="order.php?act=operate&amp;remove_invoice=1&amp;delivery_id={$delivery.delivery_id}">{$lang.remove}</a>
     </td>
   </tr>
   {/foreach}

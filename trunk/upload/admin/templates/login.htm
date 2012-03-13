@@ -49,14 +49,14 @@ if (window.parent != window)
         <td><input type="text" name="captcha" class="capital" /></td>
       </tr>
       <tr>
-      <td colspan="2" align="right"><img src="index.php?act=captcha&{$random}" width="145" height="20" alt="CAPTCHA" border="1" onclick= this.src="index.php?act=captcha&"+Math.random() style="cursor: pointer;" title="{$lang.click_for_another}" />
+      <td colspan="2" align="right"><img src="index.php?act=captcha&amp;{$random}" width="145" height="20" alt="CAPTCHA" border="1" onclick= this.src="index.php?act=captcha&"+Math.random() style="cursor: pointer;" title="{$lang.click_for_another}" />
       </td>
       </tr>
       {/if}
       <tr><td colspan="2"><input type="checkbox" value="1" name="remember" id="remember" /><label for="remember">{$lang.remember}</label></td></tr>
       <tr><td>&nbsp;</td><td><input type="submit" value="{$lang.signin_now}" class="button" /></td></tr>
       <tr>
-        <td colspan="2" align="right">&raquo; <a href="../" style="color:white">{$lang.back_home}</a> &raquo; <a href="get_password.php?act=forget_pwd" style="color:white">{$lang.forget_pwd}</a></td>
+        <td colspan="2" align="right">&raquo; <a href="../../admin" style="color:white">{$lang.back_home}</a> &raquo; <a href="get_password.php?act=forget_pwd" style="color:white">{$lang.forget_pwd}</a></td>
       </tr>
       </table>
     </td>

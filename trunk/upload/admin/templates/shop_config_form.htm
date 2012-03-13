@@ -42,7 +42,7 @@
           {elseif $var.type eq "file"}
           <input name="{$var.code}" type="file" size="40" />
           {if ($var.code eq "shop_logo" or $var.code eq "no_picture" or $var.code eq "watermark" or $var.code eq "shop_slagon" or $var.code eq "wap_logo") and $var.value}
-            <a href="?act=del&code={$var.code}"><img src="images/no.gif" alt="Delete" border="0" /></a> <img src="images/yes.gif" border="0" onmouseover="showImg('{$var.code}_layer', 'show')" onmouseout="showImg('{$var.code}_layer', 'hide')" />
+            <a href="./?act=del&amp;code={$var.code}"><img src="images/no.gif" alt="Delete" border="0" /></a> <img src="images/yes.gif" border="0" onmouseover="showImg('{$var.code}_layer', 'show')" onmouseout="showImg('{$var.code}_layer', 'hide')" />
             <div id="{$var.code}_layer" style="position:absolute; width:100px; height:100px; z-index:1; visibility:hidden" border="1">
               <img src="{$var.value}" border="0" />
             </div>

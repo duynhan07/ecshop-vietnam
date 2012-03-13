@@ -25,9 +25,9 @@
     <td align="right"><span onclick="javascript:listTable.edit(this, 'edit_ad_height', {$list.position_id})">{$list.ad_height}</span></td>
     <td align="left"><span>{$list.position_desc|escape:html}</span></td>
     <td align="center">
-      <a href="ads.php?act=list&pid={$list.position_id}" title="{$lang.view}{$lang.ad_content}">
+      <a href="ads.php?act=list&amp;pid={$list.position_id}" title="{$lang.view}{$lang.ad_content}">
       <img src="images/icon_view.gif" border="0" height="16" width="16" /></a>
-      <a href="ad_position.php?act=edit&id={$list.position_id}" title="{$lang.edit}">
+      <a href="ad_position.php?act=edit&amp;id={$list.position_id}" title="{$lang.edit}">
       <img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>
       <a href="javascript:;" onclick="listTable.remove({$list.position_id}, '{$lang.drop_confirm}')" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16" /></a>
     </td>

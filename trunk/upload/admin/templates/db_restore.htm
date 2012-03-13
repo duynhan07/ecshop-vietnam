@@ -49,7 +49,7 @@
    <td>{$item.add_time}</td>
    <td>{$item.file_size}</td>
    <td>vol:{$item.vol}</td>
-   <td align="center">{if $item.mark neq 2}<a href="database.php?act=import&file_name={$item.name}">[{$lang.import}]</a>{else}&nbsp;{/if}</td>
+   <td align="center">{if $item.mark neq 2}<a href="database.php?act=import&amp;file_name={$item.name}">[{$lang.import}]</a>{else}&nbsp;{/if}</td>
   </tr>
   {/foreach}
   <tr>

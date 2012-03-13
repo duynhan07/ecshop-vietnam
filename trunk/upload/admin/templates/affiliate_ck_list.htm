@@ -8,9 +8,9 @@
 <form action="affiliate_ck.php?act=list">
   {$lang.sch_stats.info}
   <a href="affiliate_ck.php?act=list">{$lang.sch_stats.all}</a>
-  <a href="affiliate_ck.php?act=list&status=0">{$lang.sch_stats.0}</a>
-  <a href="affiliate_ck.php?act=list&status=1">{$lang.sch_stats.1}</a>
-  <a href="affiliate_ck.php?act=list&status=2">{$lang.sch_stats.2}</a>
+  <a href="affiliate_ck.php?act=list&amp;status=0">{$lang.sch_stats.0}</a>
+  <a href="affiliate_ck.php?act=list&amp;status=1">{$lang.sch_stats.1}</a>
+  <a href="affiliate_ck.php?act=list&amp;status=2">{$lang.sch_stats.2}</a>
 {$lang.sch_order}
 
 <input type="hidden" name="act" value="list" />
@@ -32,7 +32,7 @@
 </tr>
 <!-- {foreach from=$logdb item=val} -->
 <tr>
-  <td align="center"><a href="order.php?act=info&order_id={$val.order_id}">{$val.order_sn}</a></td>
+  <td align="center"><a href="order.php?act=info&amp;order_id={$val.order_id}">{$val.order_sn}</a></td>
   <td>{$lang.order_stats[$val.order_status]}</td>
   <td>{$lang.sch_stats[$val.is_separate]}</td>
   <td>{$val.info}</td>

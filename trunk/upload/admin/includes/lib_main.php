@@ -300,7 +300,7 @@ function create_html_editor($input_name, $input_value = '')
 
     $editor = new FCKeditor($input_name);
     $editor->BasePath   = '../includes/fckeditor/';
-    $editor->ToolbarSet = 'Normal';
+    $editor->ToolbarSet = 'Normal';//Có thể đặt Normal hay Default
     $editor->Width      = '100%';
     $editor->Height     = '320';
     $editor->Value      = $input_value;

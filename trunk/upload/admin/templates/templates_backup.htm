@@ -41,7 +41,7 @@
   {/if}
   <tr><th>{$lang.cur_backup}</th></tr>
   {foreach from=$list item=remarks}
-  <tr><td><span style="float:right"><a href="template.php?act=restore_backup&remarks={$remarks.url}">{$lang.restore}</a>&nbsp;&nbsp;<a href="template.php?act=del_backup&remarks={$remarks.url}">{$lang.remove}</a></span>{$remarks.content}</td></tr>
+  <tr><td><span style="float:right"><a href="template.php?act=restore_backup&amp;remarks={$remarks.url}">{$lang.restore}</a>&nbsp;&nbsp;<a href="template.php?act=del_backup&amp;remarks={$remarks.url}">{$lang.remove}</a></span>{$remarks.content}</td></tr>
   {foreachelse}
   <tr><td colspan="2" align="center">{$lang.no_backup}</td></tr>
   {/foreach}

@@ -26,7 +26,7 @@
       <td>{$suppliers.suppliers_desc|nl2br}</td>
 			<td align="center"><img src="images/{if $suppliers.is_check eq 1}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'is_check', {$suppliers.suppliers_id})" style="cursor:pointer;"/></td>
       <td align="center">
-        <a href="suppliers.php?act=edit&id={$suppliers.suppliers_id}" title="{$lang.edit}">{$lang.edit}</a> |
+        <a href="suppliers.php?act=edit&amp;id={$suppliers.suppliers_id}" title="{$lang.edit}">{$lang.edit}</a> |
         <a href="javascript:void(0);" onclick="listTable.remove({$suppliers.suppliers_id}, '{$lang.drop_confirm}')" title="{$lang.remove}">{$lang.remove}</a>      </td>
     </tr>
     {foreachelse}
