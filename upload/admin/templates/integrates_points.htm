@@ -18,7 +18,7 @@
         </select>
       </td>
       <td style="padding-left:8px;"><input type="text" style="width:50px;"  name="from_val" value="{$from_val}" /> : <input type="text" style="width:50px;" name="to_val" value="{$to_val}" /></td>
-      <td align="center"><input type="hidden" name="old_rule_index" value="{$rule_index}" /><input type="submit" value="{$lang.button_submit}" /> <a href="integrate.php?act=edit_points&rule_index={$key}">{$lang.remove}</a></td>
+      <td align="center"><input type="hidden" name="old_rule_index" value="{$rule_index}" /><input type="submit" value="{$lang.button_submit}" /> <a href="integrate.php?act=edit_points&amp;rule_index={$key}">{$lang.remove}</a></td>
     </tr>
     {else}
     <tr>
@@ -26,7 +26,7 @@
         {$exist_rule.$key}
       </td>
       <td style="padding-left:8px;">{$val}</td>
-      <td align="center"><a href="integrate.php?act=points_set&rule_index={$key}">{$lang.modify}</a> <a href="integrate.php?act=edit_points&rule_index={$key}">{$lang.remove}</a></td>
+      <td align="center"><a href="integrate.php?act=points_set&amp;rule_index={$key}">{$lang.modify}</a> <a href="integrate.php?act=edit_points&amp;rule_index={$key}">{$lang.remove}</a></td>
     </tr>
     {/if}
   {/foreach}

@@ -43,7 +43,7 @@
     <td align="center"><span>{$list.date}</span></td>
     <td align="center" nowrap="true"><span>
       <a href="../article.php?id={$list.article_id}" target="_blank" title="{$lang.view}"><img src="images/icon_view.gif" border="0" height="16" width="16" /></a>&nbsp;
-      <a href="article.php?act=edit&id={$list.article_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
+      <a href="article.php?act=edit&amp;id={$list.article_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
      <!-- {if $list.cat_id > 0} --><a href="javascript:;" onclick="listTable.remove({$list.article_id}, '{$lang.drop_confirm}')" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a><!-- {/if} --></span>
     </td>
    </tr>

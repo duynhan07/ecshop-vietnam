@@ -21,7 +21,7 @@
     <td align="center" valign="top" nowrap="nowrap">{$lang.os[$order.order_status]},{$lang.ps[$order.pay_status]},{$lang.ss[$order.shipping_status]}</td>
     <td align="center" valign="top" nowrap="nowrap">{$order.operable}</td>
     <td align="center" valign="top"  nowrap="nowrap">
-     <a href="order.php?act=info&order_id={$order.order_id}">{$lang.detail}</a>
+     <a href="order.php?act=info&amp;order_id={$order.order_id}">{$lang.detail}</a>
     </td>
   </tr>
   {/foreach}

@@ -25,7 +25,7 @@
       <td align="right"><span onclick="listTable.edit(this, 'edit_free_money', {$pack.pack_id})">{$pack.free_money}</span></td>
       <td>{$pack.pack_desc|truncate:50|escape:"html"}</td>
       <td align="center" nowrap="true" valign="top">
-        <a href="?act=edit&amp;id={$pack.pack_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16"></a>
+        <a href="./?act=edit&amp;id={$pack.pack_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16"></a>
         <a href="javascript:;" onclick="listTable.remove({$pack.pack_id}, '{$lang.drop_confirm}')" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a>
       </td>
     </tr>

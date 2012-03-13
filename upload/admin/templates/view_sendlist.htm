@@ -28,7 +28,7 @@
   <td align="center">{$lang.type[$val.type]}</td>
   <td align="center">{$val.error}</td>
   <td align="center">{$val.last_send}</td>
-  <td align="center"><a href="view_sendlist.php?act=del&id={$val.id}" onclick="return confirm('{$lang.ckdelete}');">{$lang.delete}</a></td>
+  <td align="center"><a href="view_sendlist.php?act=del&amp;id={$val.id}" onclick="return confirm('{$lang.ckdelete}');">{$lang.delete}</a></td>
 </tr>
 {foreachelse}
   <tr><td class="no-records" colspan="10">{$lang.no_records}</td></tr>

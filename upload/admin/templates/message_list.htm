@@ -39,7 +39,7 @@
       <td align="right">{$msg.sent_time}</td>
       <td align="right">{$msg.read_time|default:N/A}</td>
       <td align="center">
-        <a href="message.php?act=view&id={$msg.message_id}" title="{$lang.view_msg}">{$lang.view}</a>
+        <a href="message.php?act=view&amp;id={$msg.message_id}" title="{$lang.view_msg}">{$lang.view}</a>
          <a href="javascript:;" onclick="listTable.remove({$msg.message_id}, '{$lang.drop_confirm}')">{$lang.remove}</a>
       </td>
     </tr>

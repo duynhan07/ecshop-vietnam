@@ -24,7 +24,7 @@
         <span onclick="javascript:listTable.edit(this, 'edit_agency_name', {$agency.agency_id})">{$agency.agency_name|escape:html}      </span></td>
       <td>{$agency.agency_desc|nl2br}</td>
       <td align="center">
-        <a href="agency.php?act=edit&id={$agency.agency_id}" title="{$lang.edit}">{$lang.edit}</a> |
+        <a href="agency.php?act=edit&amp;id={$agency.agency_id}" title="{$lang.edit}">{$lang.edit}</a> |
         <a href="javascript:;" onclick="listTable.remove({$agency.agency_id}, '{$lang.drop_confirm}')" title="{$lang.remove}">{$lang.remove}</a>      </td>
     </tr>
     {foreachelse}

@@ -44,7 +44,7 @@ var deleteid = '{$lang.delete}';
   </td>
   <td align="center"><span id="del{$val.goods_id}">
   {if $val.endtime || $val.starttime}
-    <a href="{$thisfile}?goods_id={$val.goods_id}&act=del" onclick="return confirm('{$lang.deleteck}');">{$lang.delete}</a>
+    <a href="{$thisfile}?goods_id={$val.goods_id}&amp;act=del" onclick="return confirm('{$lang.deleteck}');">{$lang.delete}</a>
   {else}
     -
   {/if}</span>

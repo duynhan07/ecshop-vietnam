@@ -27,7 +27,7 @@
         <input type="submit" value="{$lang.button_submit}" class="button" />
     </form>
     </td>
-    <td align="center"><a href="magazine_list.php?act=edit&id={$val.template_id}">{$lang.magazine_edit}</a> <a href="magazine_list.php?act=del&id={$val.template_id}" onclick="return confirm('{$lang.ck_del}');">{$lang.magazine_del}</a></td>
+    <td align="center"><a href="magazine_list.php?act=edit&amp;id={$val.template_id}">{$lang.magazine_edit}</a> <a href="magazine_list.php?act=del&amp;id={$val.template_id}" onclick="return confirm('{$lang.ck_del}');">{$lang.magazine_del}</a></td>
 </tr>
     {foreachelse}
     <tr><td class="no-records" colspan="10">{$lang.no_records}</td></tr>

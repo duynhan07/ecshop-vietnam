@@ -19,11 +19,11 @@
     <td align="center" valign="top" nowrap="true">
       {if $module.setup eq 1}
       <a href="javascript:confirm_redirect('{$lang.uninstall_confirm}', 'plugins.php?act=uninstall&code={$module.code}')">{$lang.uninstall}</a>
-      <a href="plugins.php?act=upgrade&code={$module.code}">{$lang.upgrade}</a>
+      <a href="plugins.php?act=upgrade&amp;code={$module.code}">{$lang.upgrade}</a>
       {elseif $module.setup eq 0}
       <a href="javascript:confirm_redirect('{$lang.uninstall_confirm}', 'plugins.php?act=uninstall&code={$module.code}')" >{$lang.uninstall}</a>
       {else}
-      <a href="plugins.php?act=install&code={$module.code}">{$lang.install}</a>
+      <a href="plugins.php?act=install&amp;code={$module.code}">{$lang.install}</a>
       {/if}
     </td>
   </tr>
