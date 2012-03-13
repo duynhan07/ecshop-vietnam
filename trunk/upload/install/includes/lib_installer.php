@@ -317,7 +317,7 @@ function create_config_file($db_host, $db_port, $db_user, $db_pass, $db_name, $p
     $content .= "\$session = \"1440\";\n\n";
     $content .= "define('EC_CHARSET','".EC_CHARSET."');\n\n";
     $content .= "define('ADMIN_PATH','admin');\n\n";
-    $content .= "define('AUTH_KEY', 'this is a key');\n\n";
+    $content .= "define('AUTH_KEY', 'ecms2012');\n\n";
     $content .= "define('OLD_AUTH_KEY', '');\n\n";
     $content .= "define('API_TIME', '');\n\n";
     $content .= '?>';
