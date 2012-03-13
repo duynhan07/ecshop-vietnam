@@ -4,7 +4,7 @@ $_LANG['msg_title'] = 'Tiêu đề';
 $_LANG['list_all'] = 'View all messages';
 $_LANG['msg_id'] = 'ID';
 $_LANG['msg_time'] = 'Thời gian';
-$_LANG['msg_content'] = 'Contents';
+$_LANG['msg_content'] = 'Nội dung';
 $_LANG['user_name'] = 'Tài khoản';
 $_LANG['msg_type'] = 'Type';
 $_LANG['msg_status'] = 'Trạng thái';
@@ -47,9 +47,9 @@ $_LANG['cfm_remove'] = 'Are you sure you want to delete the selected comments?';
 $_LANG['cfm_deny'] = 'Are you sure you want to ban shows the selected comments?';
 
 /* js */
-$_LANG['js_languages']['no_content'] = 'The content can\'t be blank.';
-$_LANG['js_languages']['no_reply_content'] = 'The reply content can\'t be blank.';
-$_LANG['js_languages']['no_title'] = 'The title can\'t be blank.';
+$_LANG['js_languages']['no_content'] = 'The content không được để trống.';
+$_LANG['js_languages']['no_reply_content'] = 'The reply content không được để trống.';
+$_LANG['js_languages']['no_title'] = 'The title không được để trống.';
 
 $_LANG['mail_send_fail'] = 'Mail sent failed, please check the e-mail server settings and try again.';
 $_LANG['remail'] = 'Re-issued e-mail';

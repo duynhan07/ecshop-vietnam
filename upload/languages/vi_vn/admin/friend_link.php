@@ -31,7 +31,7 @@ $_LANG['cur_link_logo'] = 'Current link LOGO';
 $_LANG['list_link'] = 'Links List';
 $_LANG['add_link'] = 'Add New Link';
 $_LANG['edit_link'] = 'Edit links';
-$_LANG['link_name_empty'] = 'Link name can\'t be blank!';
+$_LANG['link_name_empty'] = 'Link name không được để trống!';
 $_LANG['no_links'] = 'There is no friendly link.';
 
 $_LANG['back_list'] = 'Return to friend link list.';
@@ -42,11 +42,11 @@ $_LANG['js_languages']['link_name_empty'] = 'Please enter link name!';
 $_LANG['js_languages']['link_url_empty'] = 'Please enter link URL!';
 $_LANG['js_languages']['show_order_type'] = 'Display the order must be a figure!';
 
-$_LANG['link_name_empty'] = 'Link name can\'t be blank!';
-$_LANG['link_url_empty'] = 'Link URL can\'t be blank!';
+$_LANG['link_name_empty'] = 'Link name không được để trống!';
+$_LANG['link_url_empty'] = 'Link URL không được để trống!';
 
-$_LANG['link_logo_empty'] = 'Link LOGO can\'t be blank!';
-$_LANG['link_img_empty'] = 'Link image can\'t be blank!';
+$_LANG['link_logo_empty'] = 'Link LOGO không được để trống!';
+$_LANG['link_img_empty'] = 'Link image không được để trống!';
 
 $_LANG['link_url_exist'] = 'Links URL already exists.';
 $_LANG['link_name_exist'] = 'Links name already exists.';

@@ -67,8 +67,8 @@ $_LANG['filter_attr_notic'] = 'Filter property page to the previous classificati
 $_LANG['filter_attr_not_repeated'] = 'Filter property can`t be repeated';
 
 /*JS language item*/
-$_LANG['js_languages']['catname_empty'] = 'Category name can\'t be blank!';
-$_LANG['js_languages']['unit_empyt'] = 'Unit of quantity can\'t be blank!';
+$_LANG['js_languages']['catname_empty'] = 'Category name không được để trống!';
+$_LANG['js_languages']['unit_empyt'] = 'Unit of quantity không được để trống!';
 $_LANG['js_languages']['is_leafcat'] ="You selected category is a bottom class category. \\nThe higher category of new category can\'t be a bottom class category.";
 $_LANG['js_languages']['not_leafcat'] =" You selected category isn\'t a bottom class category. \\nThe category of product transfer can just be operated between the bottom class categories.";
 $_LANG['js_languages']['filter_attr_not_repeated'] = 'Filter property can`t be repeated';

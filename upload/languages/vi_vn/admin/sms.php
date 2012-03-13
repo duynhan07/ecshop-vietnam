@@ -92,7 +92,7 @@ $_LANG['msg_price'] = '<span style="color:green;">0.1 yuan(RMB) every message</s
 
 /* API return error information */
 //--register
-$_LANG['api_errors']['register'][1] = 'Domain name can\'t be blank.';
+$_LANG['api_errors']['register'][1] = 'Domain name không được để trống.';
 $_LANG['api_errors']['register'][2] = 'Mailbox is invalid.';
 $_LANG['api_errors']['register'][3] = 'Username already exists.';
 $_LANG['api_errors']['register'][4] = 'Unknown error.';
@@ -132,7 +132,7 @@ $_LANG['server_errors'][10] = 'error cant store.';//ERROR_CANT_STORE
 $_LANG['js_languages']['password_empty_error'] = 'Vui lòng nhập mật khẩu.';
 $_LANG['js_languages']['username_empty_error'] = 'Vui lòng nhập tên tài khoản.';
 $_LANG['js_languages']['username_format_error'] = 'Username format is invalid.';
-$_LANG['js_languages']['domain_empty_error'] = 'Domain can\'t be blank.';
+$_LANG['js_languages']['domain_empty_error'] = 'Domain không được để trống.';
 $_LANG['js_languages']['domain_format_error'] = 'Domain format is invalid.';
 $_LANG['js_languages']['send_empty_error'] = 'Send phone number and send at least fill out a rating！';
 

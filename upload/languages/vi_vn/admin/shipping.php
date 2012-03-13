@@ -63,12 +63,12 @@ $_LANG['lable_box']['pigeon'] = '√-Pigeon';
 //$_LANG['lable_box']['custom_content'] = 'Custom content';
 
 /* Prompting message */
-$_LANG['no_shipping_name'] = 'Sorry, shipping method name can\'t be blank.';
-$_LANG['no_shipping_desc'] = 'Sorry, shipping method description can\'t be blank.';
+$_LANG['no_shipping_name'] = 'Sorry, shipping method name không được để trống.';
+$_LANG['no_shipping_desc'] = 'Sorry, shipping method description không được để trống.';
 $_LANG['repeat_shipping_name'] = 'Sorry, the shipping method already exists.';
 $_LANG['uninstall_success'] = 'Shipping method %s has uninstall successfully.';
 $_LANG['add_shipping_area'] = 'Creat new shipping area for shipping method';
-$_LANG['no_shipping_insure'] = 'Sorry, insurance money can\'t be blank, if you don\'t use it please config as 0.';
+$_LANG['no_shipping_insure'] = 'Sorry, insurance money không được để trống, if you don\'t use it please config as 0.';
 $_LANG['not_support_insure'] = 'The shipping method isn\t support insure, config insure cost has failed.';
 $_LANG['invalid_insure'] = 'Shipping insurance money is invalid.';
 $_LANG['no_shipping_install'] = 'Distribution means that you have not installed temporarily can not edit template';

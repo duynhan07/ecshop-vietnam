@@ -144,7 +144,7 @@ $_LANG['js_languages']['reinstall'] = 'Reinstall current template';
 $_LANG['backup'] =  'Back-up current template';
 $_LANG['js_languages']['selectPlease'] = 'Hãy chọn...';
 $_LANG['js_languages']['removeConfirm'] = 'Are you sure delete the selected contents?';
-$_LANG['js_languages']['empty_content'] = 'Sorry, library content can\'t be blank.';
+$_LANG['js_languages']['empty_content'] = 'Sorry, library content không được để trống.';
 $_LANG['js_languages']['save_confirm'] = 'You have edit template, are you sure don\'t save it?';
 
 ?>

@@ -38,7 +38,7 @@ $_LANG['warn_packimg'] = 'You have upload an image, the old image will be covere
 
 /* Prompting message */
 $_LANG['packname_exist'] ='Packing name %s has existed.';
-$_LANG['packadd_succed'] ='Add successfully';
+$_LANG['packadd_succed'] ='Đã thêm mới thành công';
 $_LANG['packedit_succed'] ='Edit packing %s successfully.';
 $_LANG['packedit_falure'] ='Edit packing %s has failed.';
 $_LANG['packremove_falure'] ='Đã xóa thành công!';

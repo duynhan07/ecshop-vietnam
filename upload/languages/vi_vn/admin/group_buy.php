@@ -63,10 +63,10 @@ $_LANG['notice_mail'] = '(Notice customer pay the rest money for shipping)';
 $_LANG['mail_result'] = 'There are %s availably orders, send %s mails successfully.';
 $_LANG['invalid_time'] = 'You have entered an invalid buy time.';
 
-$_LANG['add_success'] = 'Add successfully';
-$_LANG['edit_success'] = 'Edit successfully';
+$_LANG['add_success'] = 'Đã thêm mới thành công';
+$_LANG['edit_success'] = 'Chỉnh sửa thành công';
 $_LANG['back_list'] = 'Quay lại';
-$_LANG['continue_add'] = 'Continue add';
+$_LANG['continue_add'] = 'Tiếp tục thêm';
 
 /* Add/Edit associates submit */
 $_LANG['error_goods_null'] = 'Please select product of associates!';

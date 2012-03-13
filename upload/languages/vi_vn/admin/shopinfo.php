@@ -31,7 +31,7 @@ $_LANG['articleedit_succeed'] = 'Article %s has edited successfully.';
 $_LANG['back_list'] = 'Return to shop\'s information list.';
 $_LANG['edit_fail'] = 'Edit name failed.';
 $_LANG['remove_fail'] = 'Delete failed.';
-$_LANG['title_empty'] = 'Title can\'t be blank!';
+$_LANG['title_empty'] = 'Title không được để trống!';
 
 /*JS language item*/
 $_LANG['js_languages']['no_title'] = 'Please enter a title.';
