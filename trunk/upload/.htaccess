@@ -12,7 +12,7 @@ RewriteEngine On
 #Tạm thời kết thúc tại đây
 
 RewriteRule ^index\.html$    index\.php [L]
-RewriteRule ^tim-kiem\.html$    search\.php [L]
+RewriteRule ^tim-kiem\.html$    search\.php [nc]
 RewriteRule ^gio-hang\.html$    flow\.php [L]
 RewriteRule ^category$      index\.php [L]
 

@@ -72,7 +72,8 @@ if (empty($cat_id))
     $sql = "SELECT DISTINCT goods_id FROM " .$ecs->table('goods_attr');
     $in_goods = $db->GetCol($sql);
     $in_goods = 'AND g.goods_id ' . db_create_in(implode(',', $in_goods));
-    $url = "search.php?pickout=1";
+	$search_link = build_uri('search', array(null));
+    $url = $search_link."?pickout=1";
 }
 else
 {
@@ -163,7 +164,8 @@ else
     }
 
     /* 生成更多商品的url */
-    $url = "search.php?pickout=1&amp;cat_id=".$cat_id.search_url($attr_picks);
+	$search_link = build_uri('search', array(null));
+    $url = $search_link."?pickout=1&amp;cat_id=".$cat_id.search_url($attr_picks);
 
 }
 

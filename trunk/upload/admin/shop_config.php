@@ -90,7 +90,6 @@ elseif ($_REQUEST['act'] == 'mail_settings')
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'post')
 {
-	echo "Lỗi chỗ nào đây?";
     $type = empty($_POST['type']) ? '' : $_POST['type'];
 
     /* 检查权限 */

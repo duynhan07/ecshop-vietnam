@@ -685,7 +685,8 @@ function color_tag(&$tags)
         }
         else
         {
-            $tags[$key]['url'] = 'search.php?keywords=' . urlencode($val['tag_words']);
+			//search.php
+            $tags[$key]['url'] = 'search.html?keywords=' . urlencode($val['tag_words']);
         }
     }
     shuffle($tags);
