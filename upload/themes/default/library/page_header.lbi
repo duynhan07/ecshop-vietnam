@@ -5,6 +5,7 @@ var process_request = "{$lang.process_request}";
 <?php
 $GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,99));
 //Giá trị 0 là danh mục gốc, giá trị 99 mặc định ở đây là số lượng danh mục tối đa cho phép hiển thị
+$GLOBALS['smarty']->assign('search_link',build_uri('search', array(null))); 
 ?>
 <div class="block clearfix">
  <div class="f_l"><a href="../index.php" name="top"><img src="../images/logo.gif" /></a></div>
@@ -90,18 +91,18 @@ $GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,99));
     {if $searchkeywords}
    {$lang.hot_search} ：
    {foreach from=$searchkeywords item=val}
-   <a href="search.php?keywords={$val|escape:url}">{$val}</a>
+   <a href="{$search_link}?keywords={$val|escape:url}">{$val}</a>
    {/foreach}
    {/if}
   </div>
-  <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" class="f_r"  style="_position:relative; top:5px;">
+  <form id="searchForm" name="searchForm" method="get" action="{$search_link}" onSubmit="return checkSearchForm()" class="f_r"  style="_position:relative; top:5px;">
    <select name="category" id="category" class="B_input">
       <option value="0">{$lang.all_category}</option>
       {$category_list}
     </select>
    <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="B_input" style="width:110px;"/>
    <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;" />
-   <a href="search.php?act=advanced_search">{$lang.advanced_search}</a>
+   <a href="{$search_link}?act=advanced_search">{$lang.advanced_search}</a>
    </form>
 </div>
 <!--search end-->

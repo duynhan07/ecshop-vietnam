@@ -1,6 +1,5 @@
 <?php
 define('IN_ECS', true);
-
 if (!function_exists("htmlspecialchars_decode"))
 {
     function htmlspecialchars_decode($string, $quote_style = ENT_COMPAT)
@@ -14,15 +13,14 @@ if (empty($_GET['encode']))
     $string = array_merge($_GET, $_POST);
     if (get_magic_quotes_gpc())
     {
-        require(dirname(__FILE__) . '/includes/lib_base.php');
-        //require(dirname(__FILE__) . '/includes/lib_common.php');
+        require(dirname(__FILE__) . '/includes/init.php');
 
         $string = stripslashes_deep($string);
     }
     $string['search_encode_time'] = time();
     $string = str_replace('+', '%2b', base64_encode(serialize($string)));
-
-    header("Location: search.php?encode=$string\n");
+	$search_link = build_uri('search', array(null));
+    header("Location: ".$search_link."?encode=".$string."\n");
 
     exit;
 }
@@ -480,7 +478,6 @@ else
         'outstock'   => $_REQUEST['outstock']
     );
     $pager['search'] = array_merge($pager['search'], $attr_arg);
-
     $pager = get_pager('search.php', $pager['search'], $count, $page, $size);
     $pager['display'] = $display;
 
