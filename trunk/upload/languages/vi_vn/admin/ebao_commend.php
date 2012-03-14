@@ -42,7 +42,7 @@ $_LANG['shop_price'] = 'Giá';
 $_LANG['is_on_sale'] = 'Shelves';
 $_LANG['goods_number'] = 'Kho hàng';
 
-$_LANG['copy'] = 'Copy';
+$_LANG['copy'] = 'Sao chép';
 
 $_LANG['integral'] = 'Integral limit';
 $_LANG['on_sale'] = 'Shelves';

@@ -1,20 +1,4 @@
 <?php
-
-/**
- * ECSHOP Vote management
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: goods_export.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
 $_LANG['user_guide'] =
         '<br/>Help:' .
         '<ol>' .
@@ -41,9 +25,9 @@ $_LANG['ems_not_null'] = 'EMS price must be greater than 0';
 
 
 /* 淘宝 */
-$_LANG['taobao']['goods_name'] = '宝贝名称';
-$_LANG['taobao']['goods_class'] = '宝贝类目';
-$_LANG['taobao']['shop_class'] = '店铺类目';
+$_LANG['taobao']['goods_name'] = 'Tên sản phẩm';
+$_LANG['taobao']['goods_class'] = 'Mục hệ thống';
+$_LANG['taobao']['shop_class'] = 'Danh mục shop';
 $_LANG['taobao']['new_level'] = '新旧程度';
 $_LANG['taobao']['province'] = '省';
 $_LANG['taobao']['city'] = '城市';
@@ -197,12 +181,12 @@ $_LANG['paipai4']['shopWindow'] = '橱窗';
 
 // 批量上传商品的字段
 $_LANG['export_ecshop'] = 'Export theo định dạng của ECMS';
-$_LANG['ecshop']['goods_name'] = '商品名称';
-$_LANG['ecshop']['goods_sn'] = '商品货号';
-$_LANG['ecshop']['brand_name'] = '商品品牌';   // 需要转换成brand_id
-$_LANG['ecshop']['market_price'] = '市场售价';
-$_LANG['ecshop']['shop_price'] = '本店售价';
-$_LANG['ecshop']['integral'] = '积分购买额度';
+$_LANG['ecshop']['goods_name'] = 'Tên sản phẩm';
+$_LANG['ecshop']['goods_sn'] = 'Mã sản phẩm';
+$_LANG['ecshop']['brand_name'] = 'Thương hiệu';   // 需要转换成brand_id
+$_LANG['ecshop']['market_price'] = 'Giá t.trường';
+$_LANG['ecshop']['shop_price'] = 'Giá bán';
+$_LANG['ecshop']['integral'] = 'Điểm tặng';
 $_LANG['ecshop']['original_img'] = '商品原始图';
 $_LANG['ecshop']['goods_img'] = '商品图片';
 $_LANG['ecshop']['goods_thumb'] = '商品缩略图';

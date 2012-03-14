@@ -1,20 +1,4 @@
 <?php
-
-/**
- * ECSHOP Batch upload products,modification language item
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it mean that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: goods_batch.php 17217 2011-01-19 06:29:08Z liubo $
- */
-
 $_LANG['select_method'] ='Product method:';
 $_LANG['by_cat'] ='Basis product category, brand.';
 $_LANG['by_sn'] ='Basis product NO.';
@@ -44,18 +28,18 @@ $_LANG['give_integral'] = 'Free points';
 $_LANG['goods_number'] ='Kho hàng';
 $_LANG['brand'] ='Thương hiệu';
 
-$_LANG['export_format'] = 'Data formats';
-$_LANG['export_ecshop'] = 'ecshop to support data formats';
-$_LANG['export_taobao'] = 'taobao Assistant to support data formats';
-$_LANG['export_taobao46'] = 'taobao Assistant4.6 to support data formats';
-$_LANG['export_paipai'] = 'paipai Assistant to support data formats';
-$_LANG['export_paipai3'] = 'paipai 3.0 Assistant to support data formats';
-$_LANG['batch_edit_ok'] ='Batch modify successfully.';
+$_LANG['export_format'] = 'Định dạng dữ liệu';
+$_LANG['export_ecshop'] = 'Định dạng dữ liệu ECMS';
+$_LANG['export_taobao'] = 'Định dạng Taobao';
+$_LANG['export_taobao46'] = 'Định dạng Taobao 4.6';
+$_LANG['export_paipai'] = 'Định dạng paipai';
+$_LANG['export_paipai3'] = 'Định dạng paipai 3.0';
+$_LANG['batch_edit_ok'] ='Chỉnh sửa loạt sản phẩm thành công.';
 
 $_LANG['goods_cat'] ='Danh mục:';
-$_LANG['csv_file'] ='Upload csv files:';
+$_LANG['csv_file'] ='Upload tệp csv:';
 $_LANG['notice_file'] ='(The product quantity once upload had better be less than 1000 in CSV file, the CSV file size had better be less than 500K.)';
-$_LANG['file_charset'] ='Character set:';
+$_LANG['file_charset'] ='Encoding tệp:';
 $_LANG['download_file'] ='Download batch CSV files(%s).';
 $_LANG['use_help'] ='Help:' .
         '<ol>' .
@@ -70,14 +54,14 @@ $_LANG['use_help'] ='Help:' .
         '</ol>';
 
 $_LANG['js_languages']['please_select_goods'] ='Please select product.';
-$_LANG['js_languages']['please_input_sn'] ='Please enter product NO..';
+$_LANG['js_languages']['please_input_sn'] ='Vui lòng nhập mã sản phẩm.';
 $_LANG['js_languages']['goods_cat_not_leaf'] ='Please select bottom class category.';
 $_LANG['js_languages']['please_select_cat'] ='Please select belong category.';
 $_LANG['js_languages']['please_upload_file'] ='Please upload batch csv files.';
 
 // Batch upload field of product
 $_LANG['upload_goods']['goods_name'] ='Tên';
-$_LANG['upload_goods']['goods_sn'] ='NO.';
+$_LANG['upload_goods']['goods_sn'] ='Mã s.phẩm';
 $_LANG['upload_goods']['brand_name'] ='Thương hiệu';   // Need to be convert brand_id
 $_LANG['upload_goods']['market_price'] ='Market price';
 $_LANG['upload_goods']['shop_price'] ='Shop price';
@@ -88,16 +72,16 @@ $_LANG['upload_goods']['goods_thumb'] ='Thumbnail';
 $_LANG['upload_goods']['keywords'] ='Từ khóa';
 $_LANG['upload_goods']['goods_brief'] ='Tóm lược';
 $_LANG['upload_goods']['goods_desc'] ='Chi tiết';
-$_LANG['upload_goods']['goods_weight'] ='Weight(kg)';
-$_LANG['upload_goods']['goods_number'] ='Stock quantity';
-$_LANG['upload_goods']['warn_number'] ='Stock warning quantity';
+$_LANG['upload_goods']['goods_weight'] ='Trọng lượng(kg)';
+$_LANG['upload_goods']['goods_number'] ='Hàng trong kho';
+$_LANG['upload_goods']['warn_number'] ='S.lượng cảnh báo';
 $_LANG['upload_goods']['is_best'] ='Tốt nhất';
 $_LANG['upload_goods']['is_new'] ='Mới nhất';
 $_LANG['upload_goods']['is_hot'] ='Hot nhất';
-$_LANG['upload_goods']['is_on_sale'] ='On sale';
+$_LANG['upload_goods']['is_on_sale'] ='Đang bán';
 $_LANG['upload_goods']['is_alone_sale'] ='Can be a common product sale?';
 $_LANG['upload_goods']['is_real'] ='Entity';
 
-$_LANG['batch_upload_ok'] ='Batch upload successfully.';
+$_LANG['batch_upload_ok'] ='Upload một loạt thành công.';
 $_LANG['goods_upload_confirm']='Batch upload confirmation.';
 ?>
