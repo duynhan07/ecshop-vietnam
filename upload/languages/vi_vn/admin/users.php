@@ -29,7 +29,7 @@ $_LANG['is_validated'] = 'Xác thực?';
 $_LANG['reg_date'] = 'Register date';
 $_LANG['button_remove'] = 'Xóa';
 $_LANG['users_edit'] = 'Sửa';
-$_LANG['goto_list'] = 'Return list';
+$_LANG['goto_list'] = 'Trở về trang danh sách';
 $_LANG['username_empty'] = 'Vui lòng nhập tên tài khoản!';
 
 /* List relative language item */

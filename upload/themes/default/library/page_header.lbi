@@ -30,12 +30,19 @@ $GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,99));
  </div>
 </div>
 <div  class="blank"></div>
+<!--
+<div id="mainNav" class="clearfix">
+</div>
+-->
 <div class="menu">
 <ul id="topnav">
+<li><a href="../index.php"{if $navigator_list.config.index eq 1} class="cur"{/if}>{$lang.home}<span></span></a></li>
+<li><a href="#Mr.Điệp">{$lang.catalog}</a>
+<ul class="children">
 <!--{foreach from=$categories_nav item=cat}-->
 <li><a href="{$cat.url}">{$cat.name|escape:html}</a>
 <!-- {if $cat.cat_id} -->
-<ul class="children">
+<ul class="children2">
 <!--{foreach from=$cat.cat_id item=child}-->
  
 <li><a href="{$child.url}">{$child.name|escape:html}</a>
@@ -52,6 +59,11 @@ $GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,99));
 <!-- {/if} -->
 </li>
 <!--{/foreach}-->
+</ul>
+</li>
+<!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+<li><a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if} {if $nav.active eq 1} class="cur"{/if}>{$nav.name}<span></span></a></li>
+ <!-- {/foreach} -->
 </ul>
 </div>
 <!--search start-->

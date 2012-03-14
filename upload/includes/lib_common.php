@@ -1718,13 +1718,16 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
             break;
         case 'search':
 		if ($rewrite){
-			$uri = 'search';
+			$uri = 'search.html';
 			//Phần này cần nghiên cứu thêm
 			}
+			else{
+				$uri = 'search.php';
+				}
             break;
         case 'flow':
 		if ($rewrite){
-			$uri = 'gio-hang';
+			$uri = 'gio-hang.html';
 			}else{
 				$uri = 'flow.php';
 				}//Cần nghiên cứu, chỉnh lý thêm!

@@ -18,11 +18,11 @@ $_LANG['top'] = 'Top';
 $_LANG['middle'] = 'Between';
 $_LANG['bottom'] = 'Bottom';
 $_LANG['edit_ok'] = 'Thực thi thao tác thành công';
-$_LANG['go_list'] = 'Return list';
-$_LANG['ckdel'] = 'Determine the delete?';
+$_LANG['go_list'] = 'Trở về trang danh sách';
+$_LANG['ckdel'] = 'Bạn có chắc bạn muốn xóa?';
 
-$_LANG['namecannotnull'] = 'Please enter the name of the navigation bar!';
-$_LANG['linkcannotnull'] = 'Please enter the link!';
+$_LANG['namecannotnull'] = 'Vui lòng nhập tên thanh định hướng!';
+$_LANG['linkcannotnull'] = 'Vui lòng nhập liên kết!';
 
 $_LANG['notice_url'] = 'If this site are the Web site may be the initials for the root directory of the relative address Shopping Mall，Such as index.php；<br>Other circumstances should enter the full URL, such as http://www.ecshop.com/';
 ?>
