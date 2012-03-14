@@ -7,6 +7,10 @@ RewriteEngine On
 #RewriteBase /
 
 # direct one-word access
+#Rewrite tệp php sang html
+#RewriteRule ^(.*)\.html$ $1.php [nc]
+#Tạm thời kết thúc tại đây
+
 RewriteRule ^index\.html$    index\.php [L]
 RewriteRule ^tim-kiem\.html$    search\.php [L]
 RewriteRule ^gio-hang\.html$    flow\.php [L]
