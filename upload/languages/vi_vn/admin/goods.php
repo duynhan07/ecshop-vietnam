@@ -39,7 +39,7 @@ $_LANG['safe_mode_warning'] ='Máy chủ của bạn đang hiện hành dưới 
 $_LANG['not_writable_warning']='Không thể ghi dữ liệu vào thư mục %s, bạn cần cấu hình CHMOD thư mục này được phép ghi thì mới có thể upload hình.';
 
 /*------------------------------------------------------ */
-//-- Product list
+//-- Danh sách sản phẩm
 /*------------------------------------------------------ */
 $_LANG['goods_cat'] ='Tất cả danh mục';
 $_LANG['goods_brand'] ='Tất cả thương hiệu';
@@ -48,22 +48,22 @@ $_LANG['keyword'] ='Từ khóa';
 $_LANG['is_best'] ='Tốt nhất';
 $_LANG['is_new'] ='Mới nhất';
 $_LANG['is_hot'] ='Hot nhất';
-$_LANG['is_promote'] ='Sales promotion';
-$_LANG['all_type'] = 'All recommend';
-$_LANG['sort_order'] = 'Recommend to sort';
+$_LANG['is_promote'] ='Hàng k.mại';
+$_LANG['all_type'] = 'Tất cả ưu tiên';
+$_LANG['sort_order'] = 'Thứ tự ưu tiên';
 
 $_LANG['goods_name'] ='Tên';
-$_LANG['goods_sn'] ='NO.';
+$_LANG['goods_sn'] ='Mã s.phẩm';
 $_LANG['shop_price'] ='Giá';
-$_LANG['is_on_sale'] ='On sale';
+$_LANG['is_on_sale'] ='Đang bán';
 $_LANG['goods_number'] ='Kho hàng';
 
-$_LANG['copy'] ='Copy';
+$_LANG['copy'] ='Sao chép';
 $_LANG['item_list'] = 'Item List';
 
 $_LANG['integral'] ='Điểm giới hạn';
-$_LANG['on_sale'] ='On sale';
-$_LANG['not_on_sale'] ='Not on sale';
+$_LANG['on_sale'] ='Đăng bán';
+$_LANG['not_on_sale'] ='Hủy bán sản phẩm';
 $_LANG['best'] ='S.phẩm tốt nhất';
 $_LANG['not_best'] ='Hủy là s.phẩm tốt nhất';
 $_LANG['new'] ='S.phẩm mới';
@@ -74,13 +74,13 @@ $_LANG['move_to'] ='Chuyển tới d.mục';
 
 // ajax
 $_LANG['goods_name_null'] ='Vui lòng nhập tên sản phẩm.';
-$_LANG['goods_sn_null'] ='Please enter product NO..';
-$_LANG['shop_price_not_number']='Price must be a figure.';
+$_LANG['goods_sn_null'] ='Vui lòng nhập mã sản phẩm.';
+$_LANG['shop_price_not_number']='Giá bạn nhập phải là số.';
 $_LANG['shop_price_invalid'] = 'Bạn đã nhập giá thị trường không hợp lệ.';
 $_LANG['goods_sn_exists'] ='Mã sản phẩm này đã tồn tại, hãy chọn mã khác.';
 
 /*------------------------------------------------------ */
-//-- Add /edit a product information
+//-- Thêm/Sửa thông tin sản phẩm
 /*------------------------------------------------------ */
 $_LANG['tab_general'] ='Tóm lược';
 $_LANG['tab_detail'] ='Chi tiết';
@@ -133,13 +133,13 @@ $_LANG['notice_give_integral'] = 'Purchase the merchandise when presented fracti
 $_LANG['notice_rank_integral'] = 'Purchase the merchandise when presented fraction grading, express -1 presented by commodity prices';
 $_LANG['notice_seller_note'] ='Only provide information for shop owner.';
 $_LANG['notice_storage'] = 'Inventories of goods for the virtual goods or commodities when there is non-editable state of goods, inventory value depends on its quantity or volume of goods virtual goods';
-$_LANG['notice_keywords'] ='Divided by blank character.';
+$_LANG['notice_keywords'] ='Phân tách bằng ký tự trống (dấu cách).';
 $_LANG['notice_user_price'] = 'Member price is -1, said member prices Member grade discount rate. You can also specify a hierarchy for each fixed-price';
-$_LANG['notice_goods_type'] = 'Please select the type of the goods, then complete the attributes of the goods';
+$_LANG['notice_goods_type'] = 'Vui lòng chọn loại sản phẩm, sau đó nhập đủ thông số sản phẩm';
 
-$_LANG['on_sale_desc'] ='Checked means it can be allowed to sale, otherwise can be disallowed to sale.';
-$_LANG['alone_sale'] ='Checked means it can be sold as common product, otherwise can be sold as accessories or gifts.';
-$_LANG['free_shipping'] = 'Checked means it can shipped free, otherwise as regular.';
+$_LANG['on_sale_desc'] ='Chọn mục này sản phẩm sẽ được đăng bán, nếu không sẽ tạm ngưng bán.';
+$_LANG['alone_sale'] ='Chọn mục này sản phẩm sẽ được bán như sản phẩm thường, nếu không sẽ được bán theo dạng phụ kiện đi kèm hoặc quà tặng.';
+$_LANG['free_shipping'] = 'Chọn mục này phí vận chuyển sẽ bằng không, nếu không áp phí như bình thường.';
 
 $_LANG['invalid_goods_img'] ='Định dạng hình sản phẩm không hợp lệ!';
 $_LANG['invalid_goods_thumb']='Định dạng hình thu nhỏ không hợp lệ!';
@@ -187,65 +187,65 @@ $_LANG['goods_article'] ='Bài viết liên quan';
 $_LANG['top_cat'] = 'Là mục gốc';
 
 /*------------------------------------------------------ */
-//-- Combine a product
+//-- Cộng gộp sản phẩm
 /*------------------------------------------------------ */
 
 $_LANG['group_goods'] ='Phụ kiện';
 $_LANG['price'] ='Giá';
 
 /*------------------------------------------------------ */
-//-- Product gallery
+//-- Thư viện hình cho sản phẩm
 /*------------------------------------------------------ */
 
 $_LANG['img_desc'] ='Mô tả';
 $_LANG['img_url'] ='Upload tệp';
-$_LANG['img_file'] = 'or input the url of the image';
+$_LANG['img_file'] = 'hoặc nhập url của hình';
 
 /*------------------------------------------------------ */
 //-- Connection article
 /*------------------------------------------------------ */
-$_LANG['article_title'] ='Article title';
+$_LANG['article_title'] ='Tiêu đề bài viết';
 
-$_LANG['goods_not_exist'] = 'The product doesn\'t exist. ';
-$_LANG['goods_not_in_recycle_bin'] = 'The product can\'t be deleted until it is removed to recycle bin.';
+$_LANG['goods_not_exist'] = 'Sản phẩm này không tồn tại.';
+$_LANG['goods_not_in_recycle_bin'] = 'Không thể xóa sản phẩm này khi chưa xóa khỏi thùng rác.';
 
-$_LANG['js_languages']['goods_name_not_null']='Product name không được để trống.';
-$_LANG['js_languages']['goods_cat_not_null'] ='Please select product category.';
-$_LANG['js_languages']['category_cat_not_null'] = 'Category name can not null';
-$_LANG['js_languages']['brand_cat_not_null'] = 'Brand name can not null';
-$_LANG['js_languages']['goods_cat_not_leaf'] ='You selected product category isn\'t a bottom class category, please select a bottom class category.';
+$_LANG['js_languages']['goods_name_not_null']='Tên sản phẩm không được để trống.';
+$_LANG['js_languages']['goods_cat_not_null'] ='Vui lòng chọn danh mục sản phẩm.';
+$_LANG['js_languages']['category_cat_not_null'] = 'Tên danh mục không được để trống';
+$_LANG['js_languages']['brand_cat_not_null'] = 'Tên thương hiệu không được để trống';
+$_LANG['js_languages']['goods_cat_not_leaf'] ='Bạn đã chọn danh mục không phải là lớp con, vui lòng chọn đúng lớp danh mục.';
 $_LANG['js_languages']['shop_price_not_null']='The shop selling price không được để trống.';
 $_LANG['js_languages']['shop_price_not_number']='The shop selling price isn\'t a figure.';
 
 $_LANG['js_languages']['select_please'] ='Hãy chọn...';
 $_LANG['js_languages']['button_add'] ='Thêm';
 $_LANG['js_languages']['button_del'] ='Xóa';
-$_LANG['js_languages']['spec_value_not_null'] ='The specification không được để trống.';
+$_LANG['js_languages']['spec_value_not_null'] ='Thông số kỹ thuật không được để trống.';
 $_LANG['js_languages']['spec_price_not_number'] ='The price markup isn\'t a fugure.';
-$_LANG['js_languages']['market_price_not_number']='The market price isn\'t a figure.';
+$_LANG['js_languages']['market_price_not_number']='Giá thị trường không phải là số.';
 $_LANG['js_languages']['goods_number_not_int'] ='The product stock isn\'t an integer.';
-$_LANG['js_languages']['warn_number_not_int'] ='The stock warning isn\'t an integer.';
+$_LANG['js_languages']['warn_number_not_int'] ='Số lượng cảnh báo hết hàng không phải là số.';
 $_LANG['js_languages']['promote_not_lt'] = 'Sales start date can not be greater than the end date';
 $_LANG['js_languages']['promote_start_not_null'] = 'Promotions start time should not be empty';
 $_LANG['js_languages']['promote_end_not_null'] = 'Ending time promotions should not be empty';
 
 $_LANG['js_languages']['drop_img_confirm'] = 'Bạn có muốn xóa hình này?';
-$_LANG['js_languages']['batch_no_on_sale'] = 'Are you sure stop sale the checked product?';
-$_LANG['js_languages']['batch_trash_confirm'] = 'Are you sure move the checked product to recycle bin?';
-$_LANG['js_languages']['go_category_page'] = "This page's data will lost, are you sure to go to adding category page？";
-$_LANG['js_languages']['go_brand_page'] = "This page's data will lost, are you sure to go to adding brand page？";
+$_LANG['js_languages']['batch_no_on_sale'] = 'Bạn có chắc bạn muốn ngưng bán các sản phẩm đã chọn?';
+$_LANG['js_languages']['batch_trash_confirm'] = 'Bạn có chắc bạn muốn di chuyển các sản phẩm đã chọn tới thùng rác?';
+$_LANG['js_languages']['go_category_page'] = "Dữ liệu trên trang này sẽ bị mất, bạn có chắc bạn muốn tiếp tục thêm trang danh mục?";
+$_LANG['js_languages']['go_brand_page'] = "Dữ liệu trên trang này sẽ bị mất, bạn có chắc bạn muốn tiếp tục thêm trang thương hiệu?";
 
 $_LANG['js_languages']['volume_num_not_null'] = 'Vui lòng nhập số lượng giảm giá';
 $_LANG['js_languages']['volume_num_not_number'] = 'Số lượng giảm giá không phải là số';
 $_LANG['js_languages']['volume_price_not_null'] = 'Please enter at preferential prices';
 $_LANG['js_languages']['volume_price_not_number'] = 'Discounted prices not figure';
 
-$_LANG['js_languages']['cancel_color'] = 'no font';
+$_LANG['js_languages']['cancel_color'] = 'Hủy font';
 
 /* 虚拟卡 */
-$_LANG['card'] = 'See the virtual card information';
-$_LANG['replenish'] = 'Replenishment';
-$_LANG['batch_card_add'] = 'Batch Replenishment';
+$_LANG['card'] = 'Xem thông tin thẻ ảo';
+$_LANG['replenish'] = 'Bổ sung';
+$_LANG['batch_card_add'] = 'Bổ sung một loạt';
 $_LANG['add_replenish'] = 'Add virtual Kaka Micronesia';
 
 $_LANG['goods_number_error'] = 'Merchandise inventory quantity errors';

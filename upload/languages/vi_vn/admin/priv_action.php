@@ -95,7 +95,7 @@ $_LANG['client_flow_stats'] = 'Thống kê số lượng khách hàng';
 $_LANG['delivery_view'] = 'Ghi chú hóa đơn';
 $_LANG['back_view'] = 'Ghi chú hoàn tiền';
 
-//Sales promotion management
+//Hàng k.mại management
 $_LANG['snatch_manage'] = 'Quản lý đấu giá ngược';
 $_LANG['bonus_manage'] = 'Quản lý quà tặng';
 $_LANG['card_manage'] = 'Greetings card';

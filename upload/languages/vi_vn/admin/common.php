@@ -109,7 +109,7 @@ $_LANG['kilogram'] = 'Kilogram';
 
 /* Menu category */
 $_LANG['02_cat_and_goods'] = 'Sản phẩm';
-$_LANG['03_promotion'] = 'Sales promotion';
+$_LANG['03_promotion'] = 'Hàng k.mại';
 $_LANG['04_order'] = 'Đơn hàng';
 $_LANG['05_banner'] = 'Quảng cáo';
 $_LANG['06_stats'] = 'Báo cáo thống kê';
@@ -153,7 +153,7 @@ $_LANG['goods_auto'] = 'Tự động đẩy s.phẩm';
 $_LANG['article_auto'] = 'Tự động đẩy bài';
 $_LANG['navigator'] = 'Tùy chọn NAV';
 
-/* Sales promotion management */
+/* Hàng k.mại management */
 $_LANG['02_snatch_list'] = 'Đấu giá ngược';
 $_LANG['snatch_add'] = 'Thêm đấu giá';
 $_LANG['04_bonustype_list'] = 'Loại quà tặng';

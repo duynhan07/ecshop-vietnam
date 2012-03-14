@@ -35,7 +35,7 @@ $_LANG['generate'] = 'Create code';
 $_LANG['intro']['is_best'] = 'Tốt nhất';
 $_LANG['intro']['is_new'] = 'Mới nhất';
 $_LANG['intro']['is_hot'] = 'Hot nhất';
-$_LANG['intro']['is_promote'] = 'Sales promotion';
+$_LANG['intro']['is_promote'] = 'Hàng k.mại';
 $_LANG['intro']['is_random'] = 'Random';
 
 $_LANG['js_languages']['goods_num_must_be_int'] = 'Product quantity should be an integer.';
