@@ -422,14 +422,14 @@ visibility:hidden;
    .pagebar .page_now{display:block; float:left; margin:0 5px; color:#ff5a6a; font-weight:bold; background:#fff;}
    #pager a{color:#cb0f26; text-decoration:none;}
 
-   /*底部导航+Liên kết bạn bè*/
+   /*Bottom NAV+Liên kết bạn bè*/
    #bottomNav{width:958px;}
    .bNavList{border:1px solid #fff; background:#fef7f9; height:27px; line-height:27px; padding:0 12px;}
    .links{border:1px solid #fff; background:#fef7f9; padding:0 12px;}
    .bNavList a,.links a{color:#cb0f26; text-decoration:none;}
    .bNavList img{_position:relative; top:8px;}
    .links img{width:88px; height:30px; margin:5px;}
-   /*版权*/
+   /*Copyright*/
    #footer{background:url(images/logo1.gif) no-repeat 5% 50%; padding-left:200px; width:760px; margin:10px auto;}
    #footer .text{background:url(images/footerLine.gif) no-repeat left center; padding-left:50px; *padding-bottom:20px;}
    #footer .text a{color:#404040; text-decoration:none;}

@@ -1,5 +1,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!--底部导航 start-->
+<!--Bottom NAV start-->
 <div id="bottomNav" class="box">
  <div class="box_1">
   <div class="bNavList clearfix">
@@ -19,9 +19,9 @@
   </div>
  </div>
 </div>
-<!--底部导航 end-->
+<!--Bottom NAV end-->
 <div class="blank"></div>
-<!--版权 start-->
+<!--Copyright start-->
 <div id="footer">
  <div class="text">
  {$copyright}<br />
