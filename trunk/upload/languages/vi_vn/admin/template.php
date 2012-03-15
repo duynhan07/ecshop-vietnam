@@ -39,7 +39,7 @@ $_LANG['update_lib_success'] = 'Library item content has uploaded successfully.'
 $_LANG['update_lib_failed'] = 'Edit library item content has failed. Please check %s directory whether can be read-in.';
 $_LANG['backup_success'] = "All template files has copied to the directory (templates/backup). \nAre you download the backup files now?";
 $_LANG['backup_failed'] = 'Backup template files has failed, please check the directory (template/backup) whether can be wrote.';
-$_LANG['not_editable'] = 'Libs in no-editable region have no options.';
+$_LANG['not_editable'] = 'Thư viện nằm trong khu vực không có tùy chọn.';
 
 /* Every template file corresponding to language */
 $_LANG['template_files']['article'] = 'Article content template';

@@ -23,10 +23,10 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['desc']    = 'auto_manage_desc';
 
     /* 作者 */
-    $modules[$i]['author']  = 'ECSHOP TEAM';
+    $modules[$i]['author']  = 'ECMS.ASIA';
 
     /* 网址 */
-    $modules[$i]['website'] = 'http://www.ecshop.com';
+    $modules[$i]['website'] = 'http://www.ecms.asia';
 
     /* 版本号 */
     $modules[$i]['version'] = '1.0.0';
