@@ -11,7 +11,7 @@ $_LANG['remail'] = 'Re-issued e-mail';
 
 $_LANG['comment_type'] = 'Type';
 $_LANG['comment_obj'] = 'Comment object';
-$_LANG['content'] = 'Content';
+$_LANG['content'] = 'Nội dung';
 $_LANG['comment_time'] = 'Thời gian';
 $_LANG['reply_content'] = 'Trả lời';
 $_LANG['comment_flag'] = 'Flag';
@@ -39,8 +39,8 @@ $_LANG['comment_list'] = 'List';
 $_LANG['drop_select'] = 'Xóa nhận xét';
 $_LANG['reply'] = 'Trả lời';
 $_LANG['check'] = 'Check';
-$_LANG['allow'] = 'Open';
-$_LANG['forbid'] = 'Close';
+$_LANG['allow'] = 'Mở';
+$_LANG['forbid'] = 'Đóng';
 $_LANG['display'] = 'Hiển thị';
 $_LANG['hidden'] = 'Ẩn đi';
 

@@ -25,12 +25,12 @@ $_LANG['add_wholesale_ok'] = 'Add a wholesale program successfully';
 $_LANG['edit_wholesale_ok'] = 'Editor wholesale program successfully';
 
 /* list */
-$_LANG['goods_name'] = 'Trade names';
+$_LANG['goods_name'] = 'Tên sản phẩm';
 $_LANG['rank_name'] = 'Applicable to the Member grade';
 $_LANG['wholesale_not_exist'] = 'You want to operate the wholesale program does not exist';
 $_LANG['js_languages']['batch_drop_confirm'] = 'Are you sure you want to delete the selected wholesale program it?';
 $_LANG['batch_drop_ok'] = 'Bulk delete successful';
-$_LANG['no_record_selected'] = 'Record no choice';
+$_LANG['no_record_selected'] = 'Bạn chưa chọn bản ghi nào';
 
 /* info */
 $_LANG['label_search_goods'] = 'According to the merchandise code, merchandise name, or Item Search';
@@ -38,7 +38,7 @@ $_LANG['label_goods_name'] = 'Wholesale trade names:';
 $_LANG['label_rank_name'] = 'Applicable Member Level:';
 $_LANG['label_enabled'] = 'Is enabled:';
 $_LANG['js_languages']['pls_search_goods'] = 'Please search and select wholesale merchandise';
-$_LANG['pls_search_goods'] = 'Please search for merchandise';
+$_LANG['pls_search_goods'] = 'Vui lòng chọn sản phẩm';
 $_LANG['search_result_empty'] = 'Did not find merchandise, please re-english';
 $_LANG['quantity'] = 'quantity';
 $_LANG['price'] = 'price';

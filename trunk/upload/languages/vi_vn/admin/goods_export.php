@@ -227,7 +227,7 @@ $_LANG['custom']['is_on_sale'] = 'is_on_sale';
 $_LANG['custom']['is_alone_sale'] = 'is_alone_sale';
 $_LANG['custom']['is_real'] = 'is_real';
 
-$_LANG['custom_keyword'] = 'Keyword';
+$_LANG['custom_keyword'] = 'Từ khóa';
 $_LANG['custom_goods_cat'] = 'Tất cả danh mục';
 $_LANG['custom_goods_brand'] = 'Tất cả thương hiệu';
 $_LANG['custom_goods_list'] = 'Select merchandise data columns';

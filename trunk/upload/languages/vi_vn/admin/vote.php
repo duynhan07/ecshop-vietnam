@@ -6,8 +6,8 @@ $_LANG['show_position'] = 'Display the position.';
 $_LANG['begin_date'] = 'Ngày bắt đầu';
 $_LANG['end_date'] = 'Hạn chót';
 $_LANG['can_multi'] = 'Multiple-select';
-$_LANG['is_multi'] = 'Yes';
-$_LANG['no_multi'] = 'No';
+$_LANG['is_multi'] = 'Có';
+$_LANG['no_multi'] = 'Không';
 $_LANG['show_index'] = 'Home';
 $_LANG['goodslist'] = 'Product list page.';
 

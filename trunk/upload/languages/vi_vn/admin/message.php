@@ -22,7 +22,7 @@ $_LANG['read_date'] = 'Read date';
 $_LANG['readed'] = 'Readed';
 $_LANG['deleted'] = 'Deleted';
 $_LANG['title'] = 'Tiêu đề';
-$_LANG['message'] = 'Content';
+$_LANG['message'] = 'Nội dung';
 
 $_LANG['view_msg'] = 'Xem';
 $_LANG['reply_msg'] = 'Trả lời';

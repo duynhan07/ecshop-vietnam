@@ -1,6 +1,6 @@
 <?php
-$_LANG['on'] = 'Open';
-$_LANG['off'] = 'Close';
+$_LANG['on'] = 'Mở';
+$_LANG['off'] = 'Đóng';
 
 $_LANG['separate_by'][0] = 'Recommend register is divided into';
 $_LANG['separate_by'][1] = 'Recommend orders into';

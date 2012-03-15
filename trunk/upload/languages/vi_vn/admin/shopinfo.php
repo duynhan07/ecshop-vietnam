@@ -26,7 +26,7 @@ $_LANG['continue_add'] = 'Tiếp tục';
 $_LANG['articleadd_succeed']= 'Succeed';
 
 /* Prompting message */
-$_LANG['title_exist'] = '%s already exists.';
+$_LANG['title_exist'] = '%s đã tồn tại trong hệ thống.';
 $_LANG['articleedit_succeed'] = 'Article %s has edited successfully.';
 $_LANG['back_list'] = 'Return to shop\'s information list.';
 $_LANG['edit_fail'] = 'Edit name failed.';

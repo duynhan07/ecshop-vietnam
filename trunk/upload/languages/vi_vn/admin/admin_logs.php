@@ -1,45 +1,30 @@
 <?php
-
-/**
- * ECSHOP Control panel operate language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: admin_logs.php 17217 2011-01-19 06:29:08Z liubo $
-*/
 /* Field information */
 $_LANG['log_id'] = 'NO.';
 $_LANG['log_time'] = 'Thời gian';
 $_LANG['user_id'] = 'Thao tác';
-$_LANG['log_info'] = 'Operation log';
+$_LANG['log_info'] = 'Log thao tác';
 $_LANG['ip_address'] = 'IP';
 
 $_LANG['drop_logs'] = 'Xóa';
 
 $_LANG['view_ip'] = 'IP';
 $_LANG['select_ip'] = 'Hãy chọn...';
-$_LANG['drop_logs'] = 'Delete logs';
+$_LANG['drop_logs'] = 'Xóa log thao thao tác';
 $_LANG['select_date'] = 'Hãy chọn...';
 $_LANG['comfrom'] = 'OK';
 
-$_LANG['week_date'] = 'One week ago';
-$_LANG['month_date'] = 'One month ago';
-$_LANG['three_month'] = 'Three month ago';
-$_LANG['six_month'] = 'Six month ago';
-$_LANG['a_yaer'] = 'One year ago';
-$_LANG['back_list'] = 'Return to logs list.';
+$_LANG['week_date'] = 'Một tuần trước';
+$_LANG['month_date'] = 'Một tháng trước';
+$_LANG['three_month'] = 'Ba tháng trước';
+$_LANG['six_month'] = 'Sáu tháng trước';
+$_LANG['a_yaer'] = 'Một tháng trước';
+$_LANG['back_list'] = 'Trở về danh sách log thao tác.';
 
-$_LANG['js_languages']['select_date_value'] = 'If you will delete the log, please select date of deletion.';
+$_LANG['js_languages']['select_date_value'] = 'Nếu bạn xóa log thao tác, vui lòng chọn ngày để xóa.';
 
 /* Prompting message */
 $_LANG['drop_sueeccud'] = 'Thực thi thao tác thành công!';
-$_LANG['batch_drop_success'] = 'Delete %d records successfully.';
+$_LANG['batch_drop_success'] = 'Đã xóa %s bản ghi thành công.';
 
 ?>

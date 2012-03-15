@@ -3,9 +3,9 @@ $_LANG['id'] = 'id';
 
 $_LANG['starttime'] = 'Was added to our catalog';
 $_LANG['endtime'] = 'Under the time frame';
-$_LANG['select_time'] = 'Please select the time';
-$_LANG['goods_name'] = 'Trade names';
-$_LANG['ok'] = 'Determine';
+$_LANG['select_time'] = 'Vui lòng chọn thời gian';
+$_LANG['goods_name'] = 'Tên sản phẩm';
+$_LANG['ok'] = 'Xác nhận';
 $_LANG['edit_ok'] = 'Thực thi thao tác thành công';
 $_LANG['delete'] = 'Revocation';
 $_LANG['deleteck'] = 'Delete this merchandise to determine the automatic shelves shelves deal with it? This action will not affect the product itself';

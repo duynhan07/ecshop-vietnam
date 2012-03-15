@@ -1,9 +1,9 @@
 <?php
-/* 菜单 */
+/* Trình đơn */
 $_LANG['add_account'] = 'Adjustment Member Account';
 $_LANG['account_list'] = 'Member account details change';
 
-/* 列表页 */
+/* Trang danh sách */
 $_LANG['user_not_exist'] = 'Tài khoản này không tồn tại';
 $_LANG['all_account'] = 'Tất cả tài khoản';
 $_LANG['label_user_name'] = 'Current members:';
@@ -20,8 +20,8 @@ $_LANG['frozen_money'] = 'The freezing of funds accounts';
 $_LANG['rank_points'] = 'Grade points account';
 $_LANG['pay_points'] = 'Consumption points account';
 
-$_LANG['add'] = 'Increase';
-$_LANG['subtract'] = 'Reduce';
+$_LANG['add'] = 'Tăng';
+$_LANG['subtract'] = 'Giảm';
 $_LANG['current_value'] = 'Current value:';
 $_LANG['no_account_change'] = 'Changes do not have an account';
 $_LANG['log_account_change_ok'] = 'Record account changes in the success of';

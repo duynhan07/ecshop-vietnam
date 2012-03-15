@@ -26,21 +26,21 @@ $_LANG['add_favourable_ok'] = 'Add concessionary success';
 $_LANG['edit_favourable_ok'] = 'Edit the success of preferential Events';
 
 /* list */
-$_LANG['act_is_going'] = 'Show only the ongoing activities';
+$_LANG['act_is_going'] = 'Chỉ hiển thị hoạt động đang diễn ra';
 $_LANG['act_name'] = 'Activity Name Offers';
-$_LANG['goods_name'] = 'Trade names';
-$_LANG['start_time'] = 'Start Time';
-$_LANG['end_time'] = 'The End Time';
+$_LANG['goods_name'] = 'Tên sản phẩm';
+$_LANG['start_time'] = 'Bắt đầu';
+$_LANG['end_time'] = 'Kết thúc';
 $_LANG['min_amount'] = 'The amount of the minimum';
 $_LANG['max_amount'] = 'The upper limit';
 $_LANG['favourable_not_exist'] = 'You want to operate the concession does not exist Events';
 $_LANG['js_languages']['batch_drop_confirm'] = 'Are you sure you want to delete the selected concession activities?';
 $_LANG['batch_drop_ok'] = 'Bulk delete successful';
-$_LANG['no_record_selected'] = 'Record no choice';
+$_LANG['no_record_selected'] = 'Bạn chưa chọn bản ghi nào';
 
 /* info */
 $_LANG['label_act_name'] = 'Events Offers Name:';
-$_LANG['label_start_time'] = 'Offer Start Time:';
+$_LANG['label_start_time'] = 'Offer Bắt đầu:';
 $_LANG['label_end_time'] = 'Offers End time:';
 $_LANG['label_user_rank'] = 'To enjoy the preferential treatment of members rating:';
 $_LANG['not_user'] = 'Non-Member';

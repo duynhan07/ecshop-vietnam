@@ -28,7 +28,7 @@ $_LANG['back_list'] = 'Return to user rank list.';
 $_LANG['show_price_short'] = 'Display the price.';
 $_LANG['notice_discount'] = 'Please fill in for the 0-100 integer, such as fill in 80, said the initial discount rate of 8 packs';
 
-$_LANG['rank_name_exists'] = 'The user rank name %s already exists.';
+$_LANG['rank_name_exists'] = 'The user rank name %s đã tồn tại trong hệ thống.';
 $_LANG['add_rank_success'] = 'The user rank has added successfully.';
 $_LANG['integral_min_exists'] = 'The user rank has existed, and min limit of points is %d.';
 $_LANG['integral_max_exists'] = 'The user rank has existed, and max limit of points is %d.';

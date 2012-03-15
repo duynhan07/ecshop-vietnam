@@ -9,41 +9,41 @@ $_LANG['type_name'][HELP_CAT]   = 'Trợ giúp cửa hàng';
 
 $_LANG['cat_keywords'] = 'Từ khóa';
 $_LANG['cat_desc'] = 'Mô tả';
-$_LANG['parent_cat'] = 'Superior Categories';
+$_LANG['parent_cat'] = 'Mục chính';
 $_LANG['cat_top'] = 'Là mục gốc';
-$_LANG['not_allow_add'] = 'Classification does not allow you to add the selected sub-classification';
-$_LANG['not_allow_remove'] = 'System to retain the classification does not allow delete';
-$_LANG['is_fullcat'] = 'There are sub-classified under the classification, first delete its sub-classification';
+$_LANG['not_allow_add'] = 'Danh mục này không được phép thêm danh mục con';
+$_LANG['not_allow_remove'] = 'Danh mục hệ thống tạo không được phép xóa';
+$_LANG['is_fullcat'] = 'Hiện có danh mục con nằm trong danh mục này, bạn phải xóa danh mục con trước';
 $_LANG['show_in_nav'] = 'Cho vào NAV';
 
-$_LANG['isopen'] = 'Yes';
-$_LANG['isclose'] = 'No';
-$_LANG['add_article'] = 'Add new article';
+$_LANG['isopen'] = 'Có';
+$_LANG['isclose'] = 'Không';
+$_LANG['add_article'] = 'Gửi bài mới';
 
-$_LANG['articlecat_edit'] = 'Edit article category';
+$_LANG['articlecat_edit'] = 'Sửa danh mục bài viết';
 
 
 /* Prompting message */
-$_LANG['catname_exist'] = '%s already exists.';
-$_LANG['parent_id_err'] = 'Category name %s parent classification should not set itself or its own sub-classification';
-$_LANG['back_list'] = 'Return to category list';
-$_LANG['continue_add'] = 'Continue add new category';
+$_LANG['catname_exist'] = '%s đã tồn tại trong hệ thống.';
+$_LANG['parent_id_err'] = 'Danh mục có danh mục gốc không thể là chính id danh mục đó, hoặc danh mục đã có mục con?';
+$_LANG['back_list'] = 'Trở về danh sách danh mục';
+$_LANG['continue_add'] = 'Tiếp tục thêm danh mục mới';
 $_LANG['catadd_succed'] = 'Đã thêm mới thành công!';
-$_LANG['catedit_succed'] = 'Edit category %s successfully!';
-$_LANG['back_list'] = 'Return to category list';
-$_LANG['continue_add'] = 'Continue add new category';
-$_LANG['no_catname'] = 'Please enter a category name.';
-$_LANG['edit_fail'] = 'Edit failed.';
-$_LANG['enter_int'] = 'Please enter an integer';
-$_LANG['not_emptycat'] = 'Wrong, there are articles in the category.';
+$_LANG['catedit_succed'] = 'Chỉnh sửa danh mục %s thành công!';
+$_LANG['back_list'] = 'Trở về danh sách danh mục';
+$_LANG['continue_add'] = 'Tiếp tục thêm danh mục mới';
+$_LANG['no_catname'] = 'Vui lòng nhập tên danh mục.';
+$_LANG['edit_fail'] = 'Chỉnh sửa không thành công.';
+$_LANG['enter_int'] = 'Vui lòng nhập giá trị là số nguyên';
+$_LANG['not_emptycat'] = 'Có lỗi, hiện có bài viết trong danh mục này.';
 
 /* Help */
-$_LANG['notice_keywords'] ='The keywords is optional, for search conveniently.';
-$_LANG['notice_isopen'] ='Whether display the category in navigation.';
+$_LANG['notice_keywords'] ='Từ khóa bài viết là tùy chọn, chỉ dùng cho SE.';
+$_LANG['notice_isopen'] ='Hiển thị danh mục trong thanh NAV.';
 
 /* JS language item */
-$_LANG['js_languages']['no_catname'] = 'Please enter article category name.';
-$_LANG['js_languages']['sys_hold'] = 'Retain the classification system is not permitted to add sub-categories';
-$_LANG['js_languages']['remove_confirm'] = 'Are you sure delete the selected category?';
+$_LANG['js_languages']['no_catname'] = 'Vui lòng nhập tên danh mục.';
+$_LANG['js_languages']['sys_hold'] = 'Danh mục hệ thống không cho phép thêm danh mục con';
+$_LANG['js_languages']['remove_confirm'] = 'Bạn có chắc bạn muốn xóa thư mục đã chọn?';
 
 ?>

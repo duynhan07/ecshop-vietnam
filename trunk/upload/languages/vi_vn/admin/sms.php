@@ -77,7 +77,7 @@ $_LANG['log_date'] = 'Recharge date';
 
 /* Send logs */
 $_LANG['sent_phones'] = 'Sent cellphone number';
-$_LANG['content'] = 'Content';
+$_LANG['content'] = 'Nội dung';
 $_LANG['charge_num'] = 'Payments';
 $_LANG['sent_date'] = 'Sent date';
 $_LANG['send_status'] = 'Send status';
