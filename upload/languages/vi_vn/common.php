@@ -594,7 +594,7 @@ $_LANG['message_time'] = 'Date';
 $_LANG['reply_time'] = 'Replay Date';
 $_LANG['shop_owner_reply'] = 'Admin Replay';
 $_LANG['message_board_type'] = 'Message Type';
-$_LANG['message_content'] = 'Content';
+$_LANG['message_content'] = 'Nội dung';
 $_LANG['message_anonymous'] = 'Anonymous';
 $_LANG['message_type'][M_MESSAGE] = 'Message';
 $_LANG['message_type'][M_COMPLAINT] = 'Complaint';
@@ -677,7 +677,7 @@ $_LANG['top10'] = 'Top 10';
 
 /* Events */
 $_LANG['label_act_name'] = 'Events Offers Name:';
-$_LANG['label_start_time'] = 'Offer Start Time:';
+$_LANG['label_start_time'] = 'Offer Bắt đầu:';
 $_LANG['label_end_time'] = 'Offers End time:';
 $_LANG['label_user_rank'] = 'To enjoy the preferential treatment of members rating:';
 $_LANG['not_user'] = 'Non-Member';

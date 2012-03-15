@@ -1,20 +1,4 @@
 <?php
-
-/**
- * ECSHOP Convert a program language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: convert.php 17217 2011-01-19 06:29:08Z liubo $
- */
-
 $_LANG['confirm_convert'] ='Attention: To convert program will lose the existing data, please operate with caution.';
 $_LANG['backup_data'] ='If the existing data still has value probably to you, please backup first.';
 $_LANG['backup'] ='Backup now.';

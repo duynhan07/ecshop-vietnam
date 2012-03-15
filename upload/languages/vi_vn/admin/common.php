@@ -235,7 +235,7 @@ $_LANG['suppliers_list'] = 'Nhà cung cấp';
 $_LANG['01_shop_config'] = 'Cấu hình';
 $_LANG['shop_authorized'] = 'Authorized';
 $_LANG['shp_webcollect'] = 'Webcollect';
-$_LANG['02_payment_list'] = 'Payment';
+$_LANG['02_payment_list'] = 'H.thức t.toán';
 $_LANG['03_shipping_list'] = 'Shipping';
 $_LANG['04_mail_settings'] = 'Mail Settings';
 $_LANG['05_area_list'] = 'Danh sách khu vực';
@@ -257,7 +257,7 @@ $_LANG['04_template_library'] = 'Library Item';
 $_LANG['mail_template_manage'] = 'Mẫu email';
 $_LANG['05_edit_languages'] = 'Language Item';
 $_LANG['06_template_backup'] = 'Sao lưu t.lập g.diện';
-/* Database management */
+/* Quản lý dữ liệu */
 $_LANG['02_db_manage'] = 'Backup';
 $_LANG['03_db_optimize'] = 'Tối ưu dữ liệu';
 $_LANG['04_sql_query'] = 'Truy vấn SQL';

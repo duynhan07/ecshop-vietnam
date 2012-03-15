@@ -4,13 +4,13 @@ $_LANG['package_name'] = 'name';
 $_LANG['goodsid'] = 'Events related merchandise';
 $_LANG['goods_name'] = 'Associated trade names';
 $_LANG['start_time'] = 'Activity start time';
-$_LANG['end_time'] = 'The End Time Events';
+$_LANG['end_time'] = 'Kết thúc Events';
 $_LANG['package_price'] = 'Package price';
 $_LANG['package_edit'] = 'Edit Value Package Events';
 $_LANG['desc'] = 'Activity Description Value Package';
-$_LANG['make_option'] = 'Please search for merchandise to generate a list of options';
+$_LANG['make_option'] = 'Vui lòng chọn sản phẩm to generate a list of options';
 $_LANG['keywords'] = 'Commodity keywords';
-$_LANG['search_goods'] = 'Merchandise search';
+$_LANG['search_goods'] = 'Tìm sản phẩm';
 $_LANG['all_goods'] = 'Optional merchandise';
 $_LANG['package_goods'] = 'The gift of merchandise';
 $_LANG['goods_number'] = 'Amount';
@@ -18,7 +18,7 @@ $_LANG['saving'] = 'Saving';
 
 /* 提示信息 */
 $_LANG['no_goods'] = 'Merchandise you entered does not exist, please check before importation';
-$_LANG['package_exist'] = 'Value Package %s already exists';
+$_LANG['package_exist'] = 'Value Package %s đã tồn tại trong hệ thống';
 $_LANG['back_list'] = 'Return a list of Events';
 $_LANG['continue_add'] = 'Continue to add new activities';
 $_LANG['add_succeed'] = 'Add success';

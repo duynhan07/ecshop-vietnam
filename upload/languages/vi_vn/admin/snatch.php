@@ -27,7 +27,7 @@ $_LANG['min_union_price'] = 'Min union price';
 
 /* Prompting message */
 $_LANG['no_goods'] = 'The product is nonexistence, please check it firstly.';
-$_LANG['snatch_name_exist'] = '%s already exists.';
+$_LANG['snatch_name_exist'] = '%s đã tồn tại trong hệ thống.';
 $_LANG['goods_detail'] = 'View %s detail';
 $_LANG['back_list'] = 'Return to Dutch auction list';
 $_LANG['continue_add'] = 'Continue add a new Dutch auction';
@@ -36,7 +36,7 @@ $_LANG['edit_succeed'] = 'Edit succeed';
 $_LANG['edit_fail'] = 'Edit fail';
 $_LANG['no_name'] = 'Please enter Dutch auction name';
 $_LANG['enter_num'] = 'Please enter a figure';
-$_LANG['enter_int'] = 'Please enter an integer';
+$_LANG['enter_int'] = 'Vui lòng nhập giá trị là số nguyên';
 
 /* Help */
 $_LANG['notice_goodsid'] = 'You need search the product, create product list and to select.';

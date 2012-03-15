@@ -1,7 +1,7 @@
 <?php
 $_LANG['cron_name'] = 'Tên lịch trình';
 $_LANG['cron_code'] = 'Chương trình sử dụng';
-$_LANG['if_open'] = 'Open';
+$_LANG['if_open'] = 'Mở';
 $_LANG['version'] = 'Phiên bản';
 $_LANG['cron_desc'] = 'Plan Task Description';
 $_LANG['cron_author'] = 'Plug-Author';

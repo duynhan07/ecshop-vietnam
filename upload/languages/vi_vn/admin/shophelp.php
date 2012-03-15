@@ -21,7 +21,7 @@ $_LANG['title'] = 'Tiêu đề';
 $_LANG['article_type'] = 'Article type';
 $_LANG['add_time'] = 'Add time';
 $_LANG['sort'] = 'Thứ tự';
-$_LANG['article_add'] = 'Add new article';
+$_LANG['article_add'] = 'Gửi bài mới';
 $_LANG['cat'] = 'Danh mục bài viết';
 $_LANG['article_list'] = 'Help information management.';
 $_LANG['back_list'] = 'Return to help information manegement.';
@@ -40,16 +40,16 @@ $_LANG['cat_list'] = 'Help categories list';
 $_LANG['select_plz'] = 'Hãy chọn...';
 
 /* Prompting message */
-$_LANG['catname_exist'] = '%s already exists.';
-$_LANG['title_exist'] = '%s already exists.';
+$_LANG['catname_exist'] = '%s đã tồn tại trong hệ thống.';
+$_LANG['title_exist'] = '%s đã tồn tại trong hệ thống.';
 $_LANG['catadd_fail'] = 'Add new category has failed';
 $_LANG['catedit_fail'] = 'Edit category has failed';
 $_LANG['remove_fail'] = 'Delete failed';
-$_LANG['edit_fail'] = 'Edit failed';
-$_LANG['enter_int'] = 'Please enter an integer';
+$_LANG['edit_fail'] = 'Chỉnh sửa không thành công';
+$_LANG['enter_int'] = 'Vui lòng nhập giá trị là số nguyên';
 $_LANG['articleadd_succeed'] = 'Add article successfully';
 $_LANG['articleedit_succeed'] = 'Edit %s successfully';
-$_LANG['articlename_exist'] = '%s already exists.';
+$_LANG['articlename_exist'] = '%s đã tồn tại trong hệ thống.';
 $_LANG['not_emptycat'] = 'The category can\'t be deleted ,because there are articles in the category.';
 
 /*JS language item*/

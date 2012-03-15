@@ -4,7 +4,7 @@ $_LANG['site_url'] = 'Website';
 $_LANG['brand_desc'] = 'Mô tả';
 $_LANG['brand_logo'] = 'LOGO';
 $_LANG['sort_order'] = 'Thứ tự';
-$_LANG['is_show'] = 'Display';
+$_LANG['is_show'] = 'Hiển thị';
 $_LANG['drop_brand_logo'] = 'Delete the logo';
 $_LANG['confirm_drop_logo'] = 'Are you sure delete the logo?';
 $_LANG['drop_brand_logo_success'] = 'Delete the logo successfully!';
@@ -22,13 +22,13 @@ $_LANG['upload_failure'] = 'Upload image has failed!';
 $_LANG['brandedit_fail'] = 'Edit brand %s has failed!';
 $_LANG['brandadd_succed'] = 'Add new brand successsfully!';
 $_LANG['brandedit_succed'] = 'Edit brand %s successfully!';
-$_LANG['brandname_exist'] = '%s already exists.';
+$_LANG['brandname_exist'] = '%s đã tồn tại trong hệ thống.';
 $_LANG['drop_confirm'] = 'Are you sure delete this brand?';
 $_LANG['drop_succeed'] = 'Đã xóa thành công!';
 $_LANG['drop_fail'] = 'Delete has failed!';
 
 $_LANG['no_brandname'] = 'Please enter a brand name!';
-$_LANG['enter_int'] = 'Please enter an integer!';
+$_LANG['enter_int'] = 'Vui lòng nhập giá trị là số nguyên!';
 
 $_LANG['back_list'] = 'Return to brand list';
 $_LANG['continue_add'] = 'Continue add new brand';

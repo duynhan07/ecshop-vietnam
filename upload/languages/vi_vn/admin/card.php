@@ -37,7 +37,7 @@ $_LANG['notice_cardfreemoney'] = 'When user\'s money amount more than this value
 $_LANG['warn_cardimg'] = 'You have uploaded a image. Reupload will cover the old image.';
 
 /* Prompting message*/
-$_LANG['cardname_exist'] ='%s already exists.';
+$_LANG['cardname_exist'] ='%s đã tồn tại trong hệ thống.';
 $_LANG['cardadd_succeed'] ='Added successfully.';
 $_LANG['carddrop_fail'] ='Delete failed';
 $_LANG['carddrop_succeed'] ='Đã xóa thành công.';

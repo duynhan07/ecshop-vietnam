@@ -2,8 +2,8 @@
 /* Commodity category field information */
 $_LANG['cat_id'] = 'ID';
 $_LANG['cat_name'] = 'Tên';
-$_LANG['isleaf'] = 'Disallow';
-$_LANG['noleaf'] = 'Allow';
+$_LANG['isleaf'] = 'Không cho phép';
+$_LANG['noleaf'] = 'Cho phép';
 $_LANG['keywords'] = 'Từ khóa';
 $_LANG['cat_desc'] = 'Mô tả';
 $_LANG['parent_id'] = 'Parent';
@@ -30,13 +30,13 @@ $_LANG['index_new'] = 'Mới nhất';
 $_LANG['index_best'] = 'Tốt nhất';
 $_LANG['index_hot'] = 'Hot nhất';
 
-$_LANG['back_list'] = 'Return to category list.';
+$_LANG['back_list'] = 'Trở về danh sách danh mục.';
 $_LANG['continue_add'] = 'Continue add category.';
 
 $_LANG['notice_style'] = 'You can for each classification of merchandise to specify a style sheet document. For example, documents stored in the themes directory then enter:themes/style.css';
 
 /* Prompting message */
-$_LANG['catname_empty'] = 'Please enter a category name!';
+$_LANG['catname_empty'] = 'Vui lòng nhập tên danh mục!';
 $_LANG['catname_exist'] = 'The category name already exists.';
 $_LANG["parent_isleaf"] = 'The category can\'t be the bottom class category!';
 $_LANG["cat_isleaf"] = 'The category can\'t be deleted, because it isn\'t the bottom class category or some product already exists.';

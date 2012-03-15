@@ -1,55 +1,40 @@
 <?php
 
-/**
- * ECSHOP Region list management language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: area_manage.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
 /* Field information */
-$_LANG['region_id'] = 'Region id';
-$_LANG['region_name'] = 'Region name';
-$_LANG['region_type'] = 'Region type';
+$_LANG['region_id'] = 'Id khu vực';
+$_LANG['region_name'] = 'Tên khu vực';
+$_LANG['region_type'] = 'Loại khu vực';
 
-$_LANG['area'] = 'Area';
+$_LANG['area'] = 'Khu vực';
 $_LANG['area_next'] = 'Following';
 $_LANG['country'] = 'Quốc gia';
 $_LANG['province'] = 'Tỉnh/Thành';
 $_LANG['city'] = 'Quận/Huyện';
-$_LANG['cantonal'] = 'Cantonal';
-$_LANG['back_page'] = 'Previous';
-$_LANG['manage_area'] = 'Manage';
-$_LANG['region_name_empty'] = 'Please enter a region name!';
+$_LANG['cantonal'] = 'Phường/Xã';
+$_LANG['back_page'] = 'Trang trước';
+$_LANG['manage_area'] = 'Quản lý';
+$_LANG['region_name_empty'] = 'Vui lòng nhập tên khu vực!';
 $_LANG['add_country'] = 'Thêm quốc gia mới';
 $_LANG['add_province'] = 'Thêm tỉnh/thành mới';
 $_LANG['add_city'] = 'Thêm quận/huyện mới';
 $_LANG['add_cantonal'] = 'Thêm xã/t.trấn/đường/phố mới';
 
 /* JS language item */
-$_LANG['js_languages']['region_name_empty'] = 'Please enter a region name!';
-$_LANG['js_languages']['option_name_empty'] = 'Please enter a option name of survey!';
-$_LANG['js_languages']['drop_confirm'] = 'Are you sure delete this record?';
+$_LANG['js_languages']['region_name_empty'] = 'Vui lòng nhập tên khu vực!';
+$_LANG['js_languages']['option_name_empty'] = 'Vui lòng nhập tên tùy chọn của bình chọn!';
+$_LANG['js_languages']['drop_confirm'] = 'Bạn có chắc bạn muốn xóa bản ghi này?';
 
 $_LANG['js_languages']['drop'] = 'Xóa';
 $_LANG['js_languages']['country'] = 'Quốc gia';
 $_LANG['js_languages']['province'] = 'Tỉnh/Thành';
 $_LANG['js_languages']['city'] = 'Quận/Huyện';
-$_LANG['js_languages']['cantonal'] = 'Cantonal';
+$_LANG['js_languages']['cantonal'] = 'Phường/Xã';
 
 /* Prompting message */
-$_LANG['add_area_error'] = 'Add new region failed!';
-$_LANG['region_name_exist'] = 'The region name already exists.';
-$_LANG['parent_id_exist'] = 'You can\'t delete it, because the region contains subregions!';
-$_LANG['form_notic'] = 'View subregion';
-$_LANG['area_drop_confirm'] = 'If the default order or the user mode using the following distribution areas, where information will be displayed as empty. Are you sure you want to delete this record?';
+$_LANG['add_area_error'] = 'Thêm mới khu vực không thành công!';
+$_LANG['region_name_exist'] = 'Khu vực này đã tồn tại trong hệ thống rồi.';
+$_LANG['parent_id_exist'] = 'Bạn không thể xóa khu vực này vì bên trong có khu vực cấp dưới!';
+$_LANG['form_notic'] = 'Xem khu vực cấp dưới';
+$_LANG['area_drop_confirm'] = 'Nếu bạn chọn khu vực này là khu vực vận chuyển, thông tin vận chuyển tới khu vực này sẽ để trống, bạn có chắc bạn muốn xóa?';
 
 ?>

@@ -96,7 +96,7 @@ $_LANG['down_guest_stats']= 'Customers download statistics';
 $_LANG['guest_statistics']= 'Client statistics';
 
 /* Cấp độing */
-$_LANG['show_num'] = 'Display';
+$_LANG['show_num'] = 'Hiển thị';
 $_LANG['member_name'] = 'Tài khoản';
 $_LANG['order_amount'] = 'Order quantity(unit:unit)';
 $_LANG['buy_sum'] = 'Money of shopping';
