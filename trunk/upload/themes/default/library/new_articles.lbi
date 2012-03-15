@@ -2,7 +2,7 @@
 <ul>
 <!--{foreach from=$new_articles item=article}-->
   <li>
-	[<a href="{$article.cat_url}">{$article.cat_name}</a>] <a href="{$article.url}" title="{$article.title|escape:html}">{$article.short_title|truncate:10:"...":true}</a>
+	[<a href="{$article.cat_url}" title="{$article.cat_name}">{$article.cat_name|truncate:8:"...":true}</a>] <a href="{$article.url}" title="{$article.title|escape:html}">{$article.short_title|truncate:10:"...":true}</a>
 	</li>
 <!--{/foreach}-->
 </ul>
