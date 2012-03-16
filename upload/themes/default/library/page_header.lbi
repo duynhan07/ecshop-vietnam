@@ -7,6 +7,11 @@ $GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,99));
 //Giá trị 0 là danh mục gốc, giá trị 99 mặc định ở đây là số lượng danh mục tối đa cho phép hiển thị
 $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null))); 
 ?>
+<div id="topBar">
+<div style="position:relative; width:960px;" class="ecms_clearfix">
+Đỗ Tiến Điệp - Demo
+</div>
+</div>
 <div class="block clearfix">
  <div class="f_l"><a href="../index.php" name="top"><img src="../images/logo.gif" /></a></div>
  <div class="f_r log">
@@ -35,10 +40,12 @@ $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null)));
 <div id="mainNav" class="clearfix">
 </div>
 -->
+<div id="menu-navigation">
 <div class="menu">
 <ul id="topnav">
-<li><a href="../index.php"{if $navigator_list.config.index eq 1} class="cur"{/if}>{$lang.home}<span></span></a></li>
-<li><a href="#Mr.Điệp">{$lang.catalog}</a>
+<!--<li><a href="../index.php"{if $navigator_list.config.index eq 1} class="cur"{/if}>{$lang.home}<span></span></a></li>-->
+<li>&nbsp;</li>
+<li class="selected"><a href="#Mr.Điệp">{$lang.catalog} sản phẩm</a>
 <ul class="children">
 <!--{foreach from=$categories_nav item=cat}-->
 <li><a href="{$cat.url}">{$cat.name|escape:html}</a>
@@ -62,11 +69,14 @@ $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null)));
 <!--{/foreach}-->
 </ul>
 </li>
+<li>&nbsp;</li>
 <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
 <li><a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if} {if $nav.active eq 1} class="cur"{/if}>{$nav.name}<span></span></a></li>
  <!-- {/foreach} -->
+<li style="float:right;"><a>Thử nghiệm</a></li>
+<li style="float:right;"><a>Thử nghiệm 2</a></li>
 </ul>
-</div>
+</div></div>
 <!--search start-->
 <div id="search"  class="clearfix">
   <div class="keys f_l">
