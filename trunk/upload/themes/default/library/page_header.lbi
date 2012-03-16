@@ -9,37 +9,68 @@ $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null)));
 ?>
 <div id="topBar">
 <div style="position:relative; width:960px;" class="ecms_clearfix">
-Đỗ Tiến Điệp - Demo
+<div class="topmenu">
+<ul id="ecms_topnav">
+<li><a>Hàng trong nước</a></li>
+<li><a>Hàng nhập</a></li>
+<li style="float:right"><a>Đăng tin</a></li>
+<li style="float:right"><a>Đăng ký</a></li>
+<li style="float:right"><a>Đăng nhập</a></li>
+</ul>
 </div>
+{insert_scripts files='transport.js,utils.js,jquery.js,menu.js'}
+<script type="text/javascript">var $$=jQuery.noConflict();</script>
 </div>
 <div class="block clearfix">
- <div class="f_l"><a href="../index.php" name="top"><img src="../images/logo.gif" /></a></div>
- <div class="f_r log">
-   <ul>
-   <li class="userInfo">
-   {insert_scripts files='transport.js,utils.js,jquery.js,menu.js'}
-   <script type="text/javascript">var $$=jQuery.noConflict();</script>
-   <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
-   </li>
-   <!--{if $navigator_list.top}-->
-   <li id="topNav" class="clearfix">
-    <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
-            <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
-            <!-- {if !$smarty.foreach.nav_top_list.last} -->
-             |
-            <!-- {/if} -->
-    <!-- {/foreach} -->
-    <div class="topNavR"></div>
-   </li>
-   <!-- {/if} -->
-   </ul>
- </div>
+ <div class="f_l" style="margin:0 40px 0 30px;"><a href="../index.php" name="top"><img src="../images/ecms_logo.png" /></a></div>
+<!--search start-->
+{insert_scripts files='suggest.js'}
+<!-- Sử dụng DIV này khi người dùng muốn tìm kiếm sản phẩm -->
+<div id="search_suggest" style="display:none;top:200px;left:757px;" onmouseover='javascript:_over();' onmouseout='javascript:_out();'></div>
+<!-- End -->
+<div id="ecms_search"  class="clearfix">
+   <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+    {if $searchkeywords}
+   {$lang.hot_search}: 
+   {foreach from=$searchkeywords item=val}
+   <a href="{$search_link}?keywords={$val|escape:url}">{$val}</a>
+   {/foreach}
+   {/if}
+  <form id="searchForm" name="searchForm" method="get" action="{$search_link}" onSubmit="return checkSearchForm()" class="f_l"  
+
+style="_position:relative; top:5px;">
+   <select name="category" id="category" class="B_input">
+      <option value="0">{$lang.all_category}</option>
+      {$category_list}
+    </select>
+   <!--
+   <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="B_input" style="width:110px;"/>
+   -->
+<input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="B_input" onkeyup="keyupdeal(event,this.value);" onkeydown="keydowndeal(event);" onclick="keyupdeal(event,this.value);" onblur="closediv();"  autocomplete="off"  style="vertical-align:top;"/>
+   <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;" />
+   <a href="{$search_link}?act=advanced_search">{$lang.advanced_search}</a>
+   </form>
 </div>
-<div  class="blank"></div>
-<!--
-<div id="mainNav" class="clearfix">
+<!--search end-->
 </div>
--->
+<!--<div  class="blank"></div>-->
 <div id="menu-navigation">
 <div class="menu">
 <ul id="topnav">
@@ -77,42 +108,3 @@ $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null)));
 <li style="float:right;"><a>Thử nghiệm 2</a></li>
 </ul>
 </div></div>
-<!--search start-->
-<div id="search"  class="clearfix">
-  <div class="keys f_l">
-   <script type="text/javascript">
-    {literal}
-    <!--
-    function checkSearchForm()
-    {
-        if(document.getElementById('keyword').value)
-        {
-            return true;
-        }
-        else
-        {
-            alert("{$lang.no_keywords}");
-            return false;
-        }
-    }
-    -->
-    {/literal}
-    </script>
-    {if $searchkeywords}
-   {$lang.hot_search} ：
-   {foreach from=$searchkeywords item=val}
-   <a href="{$search_link}?keywords={$val|escape:url}">{$val}</a>
-   {/foreach}
-   {/if}
-  </div>
-  <form id="searchForm" name="searchForm" method="get" action="{$search_link}" onSubmit="return checkSearchForm()" class="f_r"  style="_position:relative; top:5px;">
-   <select name="category" id="category" class="B_input">
-      <option value="0">{$lang.all_category}</option>
-      {$category_list}
-    </select>
-   <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="B_input" style="width:110px;"/>
-   <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;" />
-   <a href="{$search_link}?act=advanced_search">{$lang.advanced_search}</a>
-   </form>
-</div>
-<!--search end-->

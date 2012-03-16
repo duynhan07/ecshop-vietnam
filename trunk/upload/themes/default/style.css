@@ -147,7 +147,7 @@ display: block;
   #mainNav a:hover span,#mainNav .cur span{width:3px; height:26px; background:url(images/NavBg.gif) no-repeat 0 -59px;
   position:absolute; top:0px; right:0px;
   }
-  /*搜索*/
+  /*Phần tìm kiếm*/
   #search{border:1px solid #5cb4e6; background:url(images/searchBg.gif) repeat-x left top; width:918px;
   padding:0px 20px; height:36px; line-height:36px;
   }
@@ -156,6 +156,17 @@ display: block;
   color:#fff; padding-left:40px;
   }
   #search .go{background:url(images/bnt_search.gif); border:none; width:52px; height:19px;/* position:relative; top:2px; utf8下*/}
+  /*Phần tìm kiếm mới -------------------------------------------------- */
+  #ecms_search{border:1px solid #5cb4e6; background:url(images/searchBg.gif) repeat-x left top; width:588px;
+  padding:0px 30px; height:36px; line-height:36px;
+  margin-top:20px;
+  }
+  #ecms_search a{color:#fff; text-decoration:none;}
+  #ecms_search .keys{background:url(images/bg.gif) no-repeat 0 -28px;
+  color:#fff; padding-left:40px;
+  }
+  #ecms_search .go{background:url(images/bnt_search.gif); border:none; width:52px; height:19px;/* position:relative; top:2px; utf8下*/}
+  /*End tìm kiếm mới*/
   /*Trang hiện tại*/
   #ur_here{border:1px solid #c5e4ff; border-top:none; background:url(images/uh_bg.gif) repeat-x left top;
   height:36px; line-height:36px; padding:0 12px;
@@ -165,6 +176,79 @@ display: block;
 /* ====================
      模块
 ==================== */
+	/*CSS Ajax Search suggest*/
+#search_suggest
+{
+  position:absolute;
+    background:#ffffff;
+  text-align:left;
+    border:1px solid #91A8B4;
+    width:265px;
+    top:200px;
+    left:757px;
+    z-index:100001;
+    padding:0;
+    margin:0;
+    clear:left;
+}
+#search_suggest ol{
+margin:0;
+padding:0;    
+display:block;
+}
+
+#search_suggest ol li{
+margin:0;
+padding:0;
+clear:both;
+overflow:hidden;
+float:left;
+font-size:12px;
+line-height:18px;
+padding:0 5px;
+width:255px;
+display:list-item;
+}
+
+#search_suggest li.selected {
+background-color:#3366CC;
+color:white;
+cursor:default;
+}
+
+#search_suggest li.selected span {
+color:white;
+cursor:default;
+}
+
+#search_suggest li.selected span {
+color:white;
+cursor:default;
+}
+
+
+
+#search_suggest li {
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+display:list-item;
+}
+
+
+.suggest-key {
+float:left;
+padding-left:5px;
+text-align:left;
+}
+
+.suggest-result{
+color:green;
+float:right;
+padding-right:5px;
+text-align:right;
+}
+/*End Ajax search suggest*/
    /*购物车*/
    .cart{background:url(images/catBg.gif) no-repeat left top; padding:15px 10px 15px 50px;
    color:#006bcd; height:50px;  _padding:12px 10px 15px 50px;
@@ -501,9 +585,10 @@ display: block;
  width:300px;
 }
 /*Phần menu*/
+
 .menu {
 	width:960px;
-	height:70px;
+	height:40px;
 	clear:both;
 	position:relative;
 	z-index:299;
@@ -516,6 +601,49 @@ display: block;
 	margin:0;
 	padding:0;
 }
+/*Phần NAV trên cùng*/
+.topmenu {
+	width:960px;
+	height:40px;
+	clear:both;
+	position:relative;
+	z-index:299;
+}
+.topmenu ul#ecms_topnav {
+	margin:0;
+	padding:0;
+}
+.topmenu ul#ecms_topnav li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin:0;
+	position: relative;
+	z-index:1099;
+	height: 30px;
+	line-height: 30px;
+}
+.topmenu ul#ecms_topnav li:hover {
+	z-index:1600;
+	position:relative;
+}
+.topmenu ul#ecms_topnav li a {
+	color: #999;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height:30px;
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.topmenu ul#ecms_topnav li:hover a {
+	color:#d06464;
+	line-height:30px;
+	border-top:3px solid #f4a932;
+	background-color:#FFF;
+}
+/*End*/
 .menu ul#topnav li {
 	display: block;
 	float: left;
@@ -523,7 +651,7 @@ display: block;
 	margin:0;
 	position: relative;
 	z-index:1099;
-	height: 50px;
+	height: 40px;
 	line-height: 20px;
 	background:url(http://media.ichodientuvn.com/webskins/skins/global_new/images/linebreak-menu-navi.gif) no-repeat right 2px;
 }

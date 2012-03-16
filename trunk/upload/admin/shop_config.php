@@ -213,7 +213,7 @@ elseif ($_REQUEST['act'] == 'post')
     $shop_country   = $db->getOne("SELECT region_name FROM ".$ecs->table('region')." WHERE region_id='$_CFG[shop_country]'");
     $shop_province  = $db->getOne("SELECT region_name FROM ".$ecs->table('region')." WHERE region_id='$_CFG[shop_province]'");
     $shop_city      = $db->getOne("SELECT region_name FROM ".$ecs->table('region')." WHERE region_id='$_CFG[shop_city]'");
-
+/*
     $spt = '<script type="text/javascript" src="http://api.ecshop.com/record.php?';
     $spt .= "url=" .urlencode($ecs->url());
     $spt .= "&shop_name=" .urlencode($_CFG['shop_name']);
@@ -227,16 +227,16 @@ elseif ($_REQUEST['act'] == 'post')
     $spt .= "&version=".VERSION."&language=$_CFG[lang]&php_ver=" .PHP_VERSION. "&mysql_ver=" .$db->version();
     $spt .= "&charset=".EC_CHARSET;
     $spt .= '"></script>';
-
+*/
     if ($type == 'mail_setting')
     {
         $links[] = array('text' => $_LANG['back_mail_settings'], 'href' => 'shop_config.php?act=mail_settings');
-        sys_msg($_LANG['mail_save_success'].$spt, 0, $links);
+        sys_msg($_LANG['mail_save_success'], 0, $links);
     }
     else
     {
         $links[] = array('text' => $_LANG['back_shop_config'], 'href' => 'shop_config.php?act=list_edit');
-        sys_msg($_LANG['save_success'].$spt, 0, $links);
+        sys_msg($_LANG['save_success'], 0, $links);
     }
 }
 
