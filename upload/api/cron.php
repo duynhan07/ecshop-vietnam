@@ -56,7 +56,7 @@ foreach ($crondb AS $key => $cron_val)
     }
     else
     {
-        $error_log[] = make_error_arr('includes/modules/cron/' . $cron_val['cron_code'] . '.php not found!',__FILE__);
+        $error_log[] = make_error_arr('Không tìm thấy tệp '.'includes/modules/cron/' . $cron_val['cron_code'] . '.php trong hệ thống!',__FILE__);
     }
 
     $close = $cron_val['run_once'] ? 0 : 1;

@@ -53,18 +53,17 @@ $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null)));
    <a href="{$search_link}?keywords={$val|escape:url}">{$val}</a>
    {/foreach}
    {/if}
-  <form id="searchForm" name="searchForm" method="get" action="{$search_link}" onSubmit="return checkSearchForm()" class="f_l"  
+  <form id="searchForm" name="searchForm" method="get" action="{$search_link}" onSubmit="return checkSearchForm()" class="searchform"  
 
 style="_position:relative; top:5px;">
-   <select name="category" id="category" class="B_input">
+<div class="ecms_select">
+   <select name="category" id="category">
       <option value="0">{$lang.all_category}</option>
       {$category_list}
     </select>
-   <!--
-   <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="B_input" style="width:110px;"/>
-   -->
-<input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="B_input" onkeyup="keyupdeal(event,this.value);" onkeydown="keydowndeal(event);" onclick="keyupdeal(event,this.value);" onblur="closediv();"  autocomplete="off"  style="vertical-align:top;"/>
-   <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;" />
+</div>
+<input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="searchfield" onkeyup="keyupdeal(event,this.value);" onkeydown="keydowndeal(event);" onclick="keyupdeal(event,this.value);" onblur="closediv();"  autocomplete="off"  style="vertical-align:top;"/>
+   <input name="imageField" type="submit" value="{$lang.search}" class="searchbutton" style="cursor:pointer;" />
    <a href="{$search_link}?act=advanced_search">{$lang.advanced_search}</a>
    </form>
 </div>
