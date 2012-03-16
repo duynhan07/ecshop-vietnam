@@ -45,8 +45,12 @@ function insert_query_info()
 
     $online_count = $GLOBALS['db']->getOne("SELECT COUNT(*) FROM " . $GLOBALS['ecs']->table('sessions'));
 
-    /* 加入触发cron代码 */
+    /* Thêm mã kích hoạt cron định kỳ */
+	/*
+	// Không sử dụng lại vì sai mime type
     $cron_method = empty($GLOBALS['_CFG']['cron_method']) ? '<img src="api/cron.php?t=' . gmtime() . '" alt="" style="width:0px;height:0px;" />' : '';
+	*/
+	$cron_method = empty($GLOBALS['_CFG']['cron_method']) ? '<iframe width="0" height="0" frameborder="0" src="api/cron.php?t=' . gmtime() . '">' : '';
 
     return sprintf($GLOBALS['_LANG']['query_info'], $GLOBALS['db']->queryCount, $query_time, $online_count) . $gzip_enabled . $memory_usage . $cron_method;
 }
