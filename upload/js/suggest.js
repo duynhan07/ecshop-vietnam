@@ -15,7 +15,7 @@ function ajax_keyword(V)
 
 function search_response(result)
 {
-	var res = result.parseJSON();
+	var res = $.evalJSON(result);
 	var ele = document.getElementById("search_suggest");
 	if(res.content!="")
 	{

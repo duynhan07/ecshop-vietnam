@@ -511,7 +511,7 @@ elseif ($_REQUEST['act'] == 'main_api')
         $t = new transport;
         $api_comment = $t->request('http://api.ecshop.com/checkver.php', $apiget);
         $api_str = $api_comment["body"];
-        echo $api_str;
+        //echo $api_str;
         
         $f=ROOT_PATH . 'data/config.php'; 
         file_put_contents($f,str_replace("'API_TIME', '".API_TIME."'","'API_TIME', '".date('d-m-Y H:i:s',time())."'",file_get_contents($f)));
