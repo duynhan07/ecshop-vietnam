@@ -19,7 +19,7 @@ $GLOBALS['smarty']->assign('index_link',build_uri('ecms_index', array(null)));
 <li style="float:right"><a>Đăng nhập</a></li>
 </ul>
 </div>
-{insert_scripts files='transport.js,utils.js,jquery.js,menu.js'}
+{insert_scripts files='transport.js,utils.js,jquery-1.7.1.js,jquery.json-2.3.js,menu.js'}
 <!--<script type="text/javascript">var $$=jQuery.noConflict();</script>-->
 </div>
 <div class="block clearfix">

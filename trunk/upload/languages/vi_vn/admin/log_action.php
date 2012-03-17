@@ -60,16 +60,16 @@ $_LANG['log_action']['goods'] = 'Sản phẩm';
 $_LANG['log_action']['payment'] = 'H.thức t.toán';
 $_LANG['log_action']['order'] = 'Đơn hàng';
 $_LANG['log_action']['agency'] = 'Đại lý';
-$_LANG['log_action']['auction'] = 'Auction';
+$_LANG['log_action']['auction'] = 'Đấu giá';
 $_LANG['log_action']['favourable'] = 'Favourable Activity';
-$_LANG['log_action']['wholesale'] = 'Wholesale';
+$_LANG['log_action']['wholesale'] = 'Bán sỉ';
 
-$_LANG['log_action']['adminlog'] = 'Operation logs';
+$_LANG['log_action']['adminlog'] = 'Log thao tác';
 $_LANG['log_action']['admin_message'] = 'Administrator message';
 $_LANG['log_action']['users_comment'] = 'Nhận xét t.viêns';
-$_LANG['log_action']['ads_position'] = ' ADs position';
-$_LANG['log_action']['ads'] = 'Ads';
-$_LANG['log_action']['area'] = 'Area';
+$_LANG['log_action']['ads_position'] = 'Vị trí q.cáo';
+$_LANG['log_action']['ads'] = 'Quảng cáo';
+$_LANG['log_action']['area'] = 'Khu vực';
 
 $_LANG['log_action']['group_buy'] = 'Nhóm mua';
 $_LANG['log_action']['goods_type'] = 'Loại sản phẩm';

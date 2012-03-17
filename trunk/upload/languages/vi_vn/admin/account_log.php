@@ -1,28 +1,28 @@
 <?php
 /* Trình đơn */
-$_LANG['add_account'] = 'Adjustment Member Account';
-$_LANG['account_list'] = 'Member account details change';
+$_LANG['add_account'] = 'Chỉnh sửa tài khoản';
+$_LANG['account_list'] = 'Chi tiết thông tin tài khoản';
 
 /* Trang danh sách */
 $_LANG['user_not_exist'] = 'Tài khoản này không tồn tại';
 $_LANG['all_account'] = 'Tất cả tài khoản';
-$_LANG['label_user_name'] = 'Current members:';
+$_LANG['label_user_name'] = 'T.khoản h.tại:';
 $_LANG['label_user_money'] = 'Available funds account:';
 $_LANG['label_frozen_money'] = 'The freezing of funds accounts:';
 $_LANG['label_rank_points'] = 'Grade points account:';
 $_LANG['label_pay_points'] = 'Consumption points account:';
-$_LANG['label_change_desc'] = 'Account changes in the reasons:';
+$_LANG['label_change_desc'] = 'Lý do thay đổi số dư';
 
-$_LANG['change_time'] = 'Account changes in time';
-$_LANG['change_desc'] = 'Account changes in the reasons for';
-$_LANG['user_money'] = 'Available funds account';
-$_LANG['frozen_money'] = 'The freezing of funds accounts';
+$_LANG['change_time'] = 'Thời gian nạp tiền';
+$_LANG['change_desc'] = 'Lý do nạp tiền';
+$_LANG['user_money'] = 'Số dư tài khoản';
+$_LANG['frozen_money'] = 'Số dư phong tỏa';
 $_LANG['rank_points'] = 'Grade points account';
 $_LANG['pay_points'] = 'Consumption points account';
 
 $_LANG['add'] = 'Tăng';
 $_LANG['subtract'] = 'Giảm';
-$_LANG['current_value'] = 'Current value:';
+$_LANG['current_value'] = 'G.trị hiện tại:';
 $_LANG['no_account_change'] = 'Changes do not have an account';
 $_LANG['log_account_change_ok'] = 'Record account changes in the success of';
 

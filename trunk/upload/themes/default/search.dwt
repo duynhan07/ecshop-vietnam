@@ -11,6 +11,8 @@
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
 {* Load các tệp js *}
+{* Load các tệp js *}
+{insert_scripts files='jquery-1.7.1.js,jquery.json-2.3.js'}
 {insert_scripts files='utils.js,common.js,compare.js'}
 </head>
 <body>
