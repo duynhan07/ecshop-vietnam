@@ -1486,6 +1486,9 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
     $uri = '';
     switch ($app)
     {
+        case 'ecms_index':
+				$uri = $rewrite ? 'index' : 'index.php';
+            break;
         case 'category':
             if (empty($cid))
             {

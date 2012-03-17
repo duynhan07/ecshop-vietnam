@@ -6,7 +6,7 @@ require(dirname(__FILE__) . '/includes/init.php');
 /* 如果没登录，提示登录 */
 if ($_SESSION['user_rank'] <= 0)
 {
-    show_message($_LANG['ws_user_rank'], $_LANG['ws_return_home'], 'index.php');
+    show_message($_LANG['ws_user_rank'], $_LANG['ws_return_home'], $index_link);
 }
 
 /*------------------------------------------------------ */
@@ -414,7 +414,7 @@ elseif ($_REQUEST['act'] == 'submit_order')
     unset($_SESSION['wholesale_goods']);
 
     /* 提示 */
-    show_message(sprintf($_LANG['ws_order_submitted'], $order['order_sn']), $_LANG['ws_return_home'], 'index.php');
+    show_message(sprintf($_LANG['ws_order_submitted'], $order['order_sn']), $_LANG['ws_return_home'], $index_link);
 }
 
 /**

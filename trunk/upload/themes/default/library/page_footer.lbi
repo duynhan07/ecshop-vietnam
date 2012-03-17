@@ -14,7 +14,7 @@
   <!-- {/if} -->
    </div>
    <div class="f_r">
-   <a href="#top"><img src="images/bnt_top.gif" /></a> <a href="../index.php"><img src="images/bnt_home.gif" /></a>
+   <a href="#top"><img src="images/bnt_top.gif" /></a> <a href="../{$index_link}"><img src="images/bnt_home.gif" /></a>
    </div>
   </div>
  </div>

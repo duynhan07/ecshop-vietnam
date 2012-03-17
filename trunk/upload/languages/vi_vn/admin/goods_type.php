@@ -2,7 +2,7 @@
 $_LANG['goods_type_list'] = 'List the type of merchandise';
 $_LANG['edit_goods_type'] = 'Edit the type of merchandise';
 $_LANG['attr_groups'] = 'Property division';
-$_LANG['new_goods_type'] = 'Create new product type';
+$_LANG['new_goods_type'] = 'Tạo loại sản phẩm mới';
 $_LANG['goods_type_status'] = 'Trạng thái';
 $_LANG['goods_type_name'] = 'Tên loại';
 $_LANG['attribute_number'] = 'Số lượng t.tính';

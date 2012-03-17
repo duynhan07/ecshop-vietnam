@@ -28,7 +28,7 @@ $_LANG['notice_edit'] = 'Chú ý: Language item will be not update if there is b
 $_LANG['edit_languages_success'] = 'Congratulations! Edit language item successfully!';
 $_LANG['edit_languages_false'] = 'Sorry! Edit language item has failed!';
 
-$_LANG['js_languages']['keyword_empty_error'] = "Please enter keywords what you want to edit! \\nThe language item list related the keywords by search.";
+$_LANG['js_languages']['keyword_empty_error'] = "Vui lòng nhập từ khóa tìm kiếm what you want to edit! \\nThe language item list related the keywords by search.";
 
 /* language item */
 $_LANG['language_files']['common'] = 'Common language files';

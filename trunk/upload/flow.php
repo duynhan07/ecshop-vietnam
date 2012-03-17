@@ -217,7 +217,8 @@ elseif ($_REQUEST['step'] == 'login')
                 }
                 else
                 {
-                    ecs_header("Location:index.php\n");
+					$index_link = build_uri('ecms_index', array(null));
+					ecs_header("Location: ".$index_link."\n");
                 }
 
                 exit;

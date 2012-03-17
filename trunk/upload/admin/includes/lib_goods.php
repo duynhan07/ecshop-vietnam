@@ -639,7 +639,9 @@ function get_goods_type_specifications()
         {
             $return_arr[$value['cat_id']] = $value['cat_id'];
         }
-    }
+    }else{
+		$return_arr = false;
+		}
     return $return_arr;
 }
 

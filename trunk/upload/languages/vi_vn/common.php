@@ -176,7 +176,7 @@ $_LANG['oos_tips'] = 'Out-of-stock. Would you want to register stock?';
 
 $_LANG['addto_cart_success_1'] = 'Add to the cart successfully, would you shopping continue? \n If you want to check out, please click "Yes". \n If you want to continue shopping, please click "No".';
 $_LANG['addto_cart_success_2'] = 'Add to the cart successfully, would you shopping continue? \n If you want to continue shopping, please click "Yes". \n If you want to check out, please click "No". ';
-$_LANG['no_keywords'] = "Please enter keywords!";
+$_LANG['no_keywords'] = "Vui lòng nhập từ khóa tìm kiếm!";
 
 /* 分页排序 */
 $_LANG['exchange_sort']['goods_id'] = 'Sắp xếp theo thời gian';
@@ -210,13 +210,13 @@ $_LANG['cmt_submit_wait'] = 'Your comment have issued, please waiting for curren
 $_LANG['cmt_lang']['cmt_empty_username'] = 'Vui lòng nhập tên tài khoản.';
 $_LANG['cmt_lang']['cmt_empty_email'] = 'Vui lòng nhập địa chỉ email.';
 $_LANG['cmt_lang']['cmt_error_email'] = 'Vui lòng nhập địa chỉ email hợp lệ.';
-$_LANG['cmt_lang']['cmt_empty_content'] = 'Please enter content.';
+$_LANG['cmt_lang']['cmt_empty_content'] = 'Vui lòng nhập nội dung nhận xét.';
 $_LANG['cmt_spam_warning'] = 'You can pass an new opinion after 30 seconds!';
 $_LANG['cmt_lang']['captcha_not_null'] = 'Hãy nhập mã xác thực!';
-$_LANG['cmt_lang']['cmt_invalid_comments'] = 'Invalid commentary contents!';
-$_LANG['invalid_comments'] = 'Invalid commentary contents!';
+$_LANG['cmt_lang']['cmt_invalid_comments'] = 'Nội dung nhận xét không hợp lệ!';
+$_LANG['invalid_comments'] = 'Nội dung nhận xét không hợp lệ!';
 $_LANG['error_email'] = 'Vui lòng nhập địa chỉ email hợp lệ.';
-$_LANG['admin_username'] = 'Administrator';
+$_LANG['admin_username'] = 'Quản trị viên';
 $_LANG['reply_comment'] = 'Trả lời';
 $_LANG['comment_captcha'] = 'Mã xác thực';
 $_LANG['comment_login'] = 'Vui lòng đăng nhập';

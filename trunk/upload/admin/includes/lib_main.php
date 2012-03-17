@@ -54,7 +54,13 @@ function sys_msg($msg_detail, $msg_type = 0, $links = array(), $auto_redirect = 
     {
         $links[0]['text'] = $GLOBALS['_LANG']['go_back'];
         $links[0]['href'] = 'javascript:history.go(-1)';
-    }
+    }/*
+	//Không cần thiết nữa
+	else{
+		$links[0]['text'] = NULL;
+		$links[0]['href'] = NULL;
+		}
+		*/
 
     assign_query_info();
 
