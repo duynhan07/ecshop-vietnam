@@ -32,7 +32,7 @@ $_LANG['no_user'] = 'Anonymous buying';
 
 $_LANG['surplus_type_0'] = 'Saving';
 $_LANG['surplus_type_1'] = 'Drawing';
-$_LANG['admin_user'] = 'Administrator';
+$_LANG['admin_user'] = 'Quản trị viên';
 
 $_LANG['status'] = 'Trạng thái';
 $_LANG['confirm'] = 'Đã xác nhận';

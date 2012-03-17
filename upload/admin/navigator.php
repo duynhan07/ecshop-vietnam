@@ -406,7 +406,7 @@ function analyse_uri($uri)
             return array('type' => 'a', 'id' => $arr[1]);
         break;
         default:
-
+			return false;//toàn quên bẫy lỗi
         break;
     }
 
@@ -445,7 +445,7 @@ function analyse_uri($uri)
             }
         break;
         default:
-            //未知
+            //Không rõ
             return false;
         break;
     }

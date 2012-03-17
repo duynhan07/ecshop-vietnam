@@ -1,31 +1,16 @@
 <?php
 
-/**
- * ECSHOP Creat site map language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: sitemap.php 17217 2011-01-19 06:29:08Z liubo $
-*/
+$_LANG['homepage_changefreq'] = 'Tần suất cập nhật trang home';
+$_LANG['category_changefreq'] = 'Tần suất cập nhật danh mục';
+$_LANG['content_changefreq'] = 'Tần suất cập nhật nội dung';
 
-$_LANG['homepage_changefreq'] = 'Home page update frequency';
-$_LANG['category_changefreq'] = 'Category page update frequency';
-$_LANG['content_changefreq'] = 'Content page update frequency';
-
-$_LANG['priority']['always'] = 'Always';
-$_LANG['priority']['hourly'] = 'Hourly';
-$_LANG['priority']['daily'] = 'Daily';
-$_LANG['priority']['weekly'] = 'Weekly';
-$_LANG['priority']['monthly'] = 'Monthly';
-$_LANG['priority']['yearly'] = 'Yearly';
-$_LANG['priority']['never'] = 'Never';
+$_LANG['priority']['always'] = 'Luôn luôn';
+$_LANG['priority']['hourly'] = 'Mỗi giờ';
+$_LANG['priority']['daily'] = 'Hàng ngày';
+$_LANG['priority']['weekly'] = 'Hàng tuần';
+$_LANG['priority']['monthly'] = 'Hàng tháng';
+$_LANG['priority']['yearly'] = 'Hàng năm';
+$_LANG['priority']['never'] = 'Không bao giờ';
 
 $_LANG['generate_success'] = 'Creat sitemap to data directory. <br />Address : %s';
 $_LANG['generate_failed'] = 'Creat sitemap faied, please check /data/ directory whether can be wrote.';

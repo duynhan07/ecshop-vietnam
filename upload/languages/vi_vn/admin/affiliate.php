@@ -10,20 +10,20 @@ $_LANG['level_point_all'] = 'The total percentage of points is divided into:';
 $_LANG['level_money_all'] = 'The total percentage of the cash is divided into:';
 $_LANG['level_register_all'] = 'Registration is divided into a number of points:';
 $_LANG['level_register_up'] = 'Grade points are divided into the ceiling:';
-$_LANG['level_point'] = 'Divided into percentage points';
+$_LANG['level_point'] = 'Phần trăm hoa hồng';
 $_LANG['level_money'] = 'The percentage of cash into';
 $_LANG['edit_ok'] = 'Thực thi thao tác thành công';
 $_LANG['level_error'] = 'Set up to level 5!';
-$_LANG['levels'] = 'Recommend people level';
+$_LANG['levels'] = 'Cấp bậc người dùng';
 $_LANG['js_languages']['lang_removeconfirm'] = 'Are you sure you want to delete this grade it?';
-$_LANG['js_languages']['save'] = 'Save';
+$_LANG['js_languages']['save'] = 'Lưu lại';
 $_LANG['js_languages']['cancel'] = 'Hủy bỏ';
 
-$_LANG['unit']['hour'] = 'Hours';
-$_LANG['unit']['day'] = 'Days';
-$_LANG['unit']['week'] = 'Week';
+$_LANG['unit']['hour'] = 'Giờ';
+$_LANG['unit']['day'] = 'Ngày';
+$_LANG['unit']['week'] = 'Tuần';
 
-$_LANG['addrow'] = 'Increase';
+$_LANG['addrow'] = 'Thêm';
 
 $_LANG['all_null'] = 'Can not all space';
 

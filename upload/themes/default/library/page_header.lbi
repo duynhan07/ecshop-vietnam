@@ -6,6 +6,7 @@ var process_request = "{$lang.process_request}";
 $GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,99));
 //Giá trị 0 là danh mục gốc, giá trị 99 mặc định ở đây là số lượng danh mục tối đa cho phép hiển thị
 $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null))); 
+$GLOBALS['smarty']->assign('index_link',build_uri('ecms_index', array(null))); 
 ?>
 <div id="topBar">
 <div style="position:relative; width:960px;" class="ecms_clearfix">
@@ -19,10 +20,10 @@ $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null)));
 </ul>
 </div>
 {insert_scripts files='transport.js,utils.js,jquery.js,menu.js'}
-<script type="text/javascript">var $$=jQuery.noConflict();</script>
+<!--<script type="text/javascript">var $$=jQuery.noConflict();</script>-->
 </div>
 <div class="block clearfix">
- <div class="f_l" style="margin:0 40px 0 30px;"><a href="../index.php" name="top"><img src="../images/ecms_logo.png" /></a></div>
+ <div class="f_l" style="margin:0 40px 0 30px;"><a href="../{$index_link}" name="top"><img src="../images/ecms_logo.png" /></a></div>
 <!--search start-->
 {insert_scripts files='suggest.js'}
 <!-- Sử dụng DIV này khi người dùng muốn tìm kiếm sản phẩm -->
@@ -47,12 +48,6 @@ $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null)));
     -->
     {/literal}
     </script>
-    {if $searchkeywords}
-   {$lang.hot_search}: 
-   {foreach from=$searchkeywords item=val}
-   <a href="{$search_link}?keywords={$val|escape:url}">{$val}</a>
-   {/foreach}
-   {/if}
   <form id="searchForm" name="searchForm" method="get" action="{$search_link}" onSubmit="return checkSearchForm()" class="searchform"  
 
 style="_position:relative; top:5px;">

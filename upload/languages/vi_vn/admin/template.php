@@ -1,33 +1,17 @@
 <?php
-
-/**
- * ECSHOP Control panel template manage language file
- * ============================================================================
- * All right reserved (C) 2005-2011 Beijing Yi Shang Interactive Technology
- * Development Ltd.
- * Web site: http://www.ecshop.com
- * ----------------------------------------------------------------------------
- * This is a free/open source software；it means that you can modify, use and
- * republish the program code, on the premise of that your behavior is not for
- * commercial purposes.
- * ============================================================================
- * $Author: liubo $
- * $Id: template.php 17217 2011-01-19 06:29:08Z liubo $
-*/
-
-$_LANG['template_manage']='Template Management';
-$_LANG['current_template'] = 'Current Template';
+$_LANG['template_manage']='Quản lý giao diện';
+$_LANG['current_template'] = 'Giao diện hiện tại';
 $_LANG['available_templates'] = 'Available Templates';
 $_LANG['select_template'] = 'Hãy chọn giao diện:';
 $_LANG['select_library'] = 'Hãy chọn lib:';
 $_LANG['library_name'] = 'Tên lib';
-$_LANG['region_name'] = 'Region';
-$_LANG['sort_order'] = 'Serial number';
+$_LANG['region_name'] = 'Vị trí';
+$_LANG['sort_order'] = 'Mã số';
 $_LANG['contents'] = 'Nội dung';
 $_LANG['number'] = 'Số lượng';
 $_LANG['display'] = 'Hiển thị';
 $_LANG['select_plz'] = 'Hãy chọn...';
-$_LANG['button_restore'] = 'Repeal';
+$_LANG['button_restore'] = 'Khôi phục';
 
 /* Prompting message */
 $_LANG['library_not_written'] = 'Library file %s hasn\'t right to edit, so edit the library file has failed.';
@@ -132,10 +116,10 @@ $_LANG['cur_backup'] = 'Can be used to back up the template settings';
 $_LANG['no_backup'] = 'There is no template settings backup';
 $_LANG['remarks'] = 'Backup Notes';
 $_LANG['backup_setting'] = 'Backup template settings';
-$_LANG['select_all'] = 'Select All';
+$_LANG['select_all'] = 'Chọn tất';
 $_LANG['remarks_exist'] = 'Backup Notes %s has been used, please note the name change';
 $_LANG['backup_template_ok'] = 'The success of the backup set';
-$_LANG['del_backup_ok'] = 'Delete backup success';
+$_LANG['del_backup_ok'] = 'Xóa tệp sao lưu thành công';
 $_LANG['restore_backup_ok'] = 'The success of the restoration of the backup';
 
 /* JS language item */

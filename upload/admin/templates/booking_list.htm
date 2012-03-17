@@ -33,7 +33,7 @@
       <td align="right">{$booking.booking_time}</td>
       <td align="center"><img src="images/{if $booking.is_dispose}yes{else}no{/if}.gif" /></td>
       <td align="center">
-        <a href="./?act=detail&amp;id={$booking.rec_id}" title="{$lang.detail}"><img src="images/icon_view.gif" border="0" height="16" width="16" /></a>
+        <a href="?act=detail&amp;id={$booking.rec_id}" title="{$lang.detail}"><img src="images/icon_view.gif" border="0" height="16" width="16" /></a>
         <a href="javascript:;" onclick="listTable.remove({$booking.rec_id},'{$lang.drop_confirm}')" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16" /></a>
       </td>
     </tr>

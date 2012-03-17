@@ -2,7 +2,7 @@
 define('IN_ECS', true);
 
 require(dirname(__FILE__) . '/includes/init.php');
-
+$index_link = build_uri('ecms_index', array(null));
 /* 载入语言文件 */
 require_once(ROOT_PATH . 'languages/' .$_CFG['lang']. '/user.php');
 
@@ -99,7 +99,7 @@ if ($action == 'register')
 {
     if (!isset($back_act) && isset($GLOBALS['_SERVER']['HTTP_REFERER']))
     {
-        $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], 'user.php') ? './index.php' : $GLOBALS['_SERVER']['HTTP_REFERER'];
+        $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], 'user.php') ? './'.$index_link : $GLOBALS['_SERVER']['HTTP_REFERER'];
     }
 
     /* 取出注册扩展字段 */
@@ -291,7 +291,7 @@ elseif ($action == 'login')
     {
         if (empty($back_act) && isset($GLOBALS['_SERVER']['HTTP_REFERER']))
         {
-            $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], 'user.php') ? './index.php' : $GLOBALS['_SERVER']['HTTP_REFERER'];
+            $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], 'user.php') ? './'.$index_link : $GLOBALS['_SERVER']['HTTP_REFERER'];
         }
         else
         {
@@ -417,12 +417,12 @@ elseif ($action == 'logout')
 {
     if (!isset($back_act) && isset($GLOBALS['_SERVER']['HTTP_REFERER']))
     {
-        $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], 'user.php') ? './index.php' : $GLOBALS['_SERVER']['HTTP_REFERER'];
+        $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], 'user.php') ? './'.$index_link : $GLOBALS['_SERVER']['HTTP_REFERER'];
     }
 
     $user->logout();
     $ucdata = empty($user->ucdata)? "" : $user->ucdata;
-    show_message($_LANG['logout'] . $ucdata, array($_LANG['back_up_page'], $_LANG['back_home_lnk']), array($back_act, 'index.php'), 'info');
+    show_message($_LANG['logout'] . $ucdata, array($_LANG['back_up_page'], $_LANG['back_home_lnk']), array($back_act, $index_link), 'info');
 }
 
 /* 个人资料页面 */
@@ -2337,7 +2337,7 @@ elseif ($action =='email_list')
                 $info = $_LANG['hash_wrong'];
             }
         }
-        show_message($info, $_LANG['back_home_lnk'], 'index.php');
+        show_message($info, $_LANG['back_home_lnk'], $index_link);
     }
     elseif ($job == 'del_check')
     {
@@ -2362,7 +2362,7 @@ elseif ($action =='email_list')
         {
             $info = $_LANG['email_not_alive'];
         }
-        show_message($info, $_LANG['back_home_lnk'], 'index.php');
+        show_message($info, $_LANG['back_home_lnk'], $index_link);
     }
 }
 
