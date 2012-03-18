@@ -8,22 +8,49 @@ $GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,99));
 $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null))); 
 $GLOBALS['smarty']->assign('index_link',build_uri('ecms_index', array(null))); 
 ?>
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+<!--[if lt IE 8]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
 <div id="topBar">
 <div style="position:relative; width:960px;" class="ecms_clearfix">
 <div class="topmenu">
 <ul id="ecms_topnav">
 <li><a>Hàng trong nước</a></li>
 <li><a>Hàng nhập</a></li>
-<li style="float:right"><a>Đăng tin</a></li>
-<li style="float:right"><a>Đăng ký</a></li>
-<li style="float:right"><a>Đăng nhập</a></li>
+<div class="f_r log">
+   <ul>
+   <li class="userInfo">
+   <script type="text/javascript">var $$=jQuery.noConflict();</script>
+   <font id="ECS_MEMBERZONE">
+   {* Ghi chú: Khi hệ thống phát hiện cookies có id người dùng sẽ gọi tệp member_info.lbi *}
+   {insert name='member_info'}</font>
+   </li>
+   <!--{if $navigator_list.top}-->
+   <li>
+    <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+            <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
+            <!-- {if !$smarty.foreach.nav_top_list.last} -->
+             |
+            <!-- {/if} -->
+    <!-- {/foreach} -->
+    <div class="topNavR"></div>
+   </li>
+   <!-- {/if} -->
+   </ul>
+ </div>
 </ul>
 </div>
 {insert_scripts files='transport.js,utils.js,jquery-1.7.1.js,jquery.json-2.3.js,menu.js'}
 <!--<script type="text/javascript">var $$=jQuery.noConflict();</script>-->
 </div>
 <div class="block clearfix">
- <div class="f_l" style="margin:0 40px 0 30px;"><a href="../{$index_link}" name="top"><img src="../images/ecms_logo.png" /></a></div>
+ <div class="f_l" style="margin:0 40px 10px 30px;"><a href="../{$index_link}" name="top"><img width="138" src="../images/hkt_logo.png" /></a></div>
 <!--search start-->
 {insert_scripts files='suggest.js'}
 <!-- Sử dụng DIV này khi người dùng muốn tìm kiếm sản phẩm -->
@@ -59,7 +86,22 @@ style="_position:relative; top:5px;">
 </div>
 <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="searchfield" onkeyup="keyupdeal(event,this.value);" onkeydown="keydowndeal(event);" onclick="keyupdeal(event,this.value);" onblur="closediv();"  autocomplete="off"  style="vertical-align:top;"/>
    <input name="imageField" type="submit" value="{$lang.search}" class="searchbutton" style="cursor:pointer;" />
-   <a href="{$search_link}?act=advanced_search">{$lang.advanced_search}</a>
+   {insert_scripts files='stickytooltip.js'}
+   <a href="{$search_link}?act=advanced_search" data-tooltip="sticky1">{$lang.advanced_search}</a>
+<div id="mystickytooltip" class="stickytooltip">
+<div style="padding:5px">
+<div id="sticky1" class="atip" style="width:200px">
+{if $searchkeywords}
+   {$lang.hot_search}: 
+   {foreach from=$searchkeywords item=val}
+   <a href="{$search_link}?keywords={$val|escape:url}">{$val}</a>
+   {/foreach}
+   {/if}
+</div>
+</div>
+
+<div class="stickystatus"></div>
+</div>
    </form>
 </div>
 <!--search end-->
