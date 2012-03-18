@@ -44,7 +44,7 @@ $_LANG['later_bought_amounts'] = 'Khách mua mới nhất ';
 $_LANG['bought_time'] = 'Thời gian mua';
 $_LANG['turnover'] = 'Đã hoàn thành';
 $_LANG['no_notes'] = 'Chưa có ai mua sản phẩm này';
-$_LANG['shop_price'] = 'Giá tại shop:';
+$_LANG['shop_price'] = 'Giá bán:';
 $_LANG['market_price'] = 'Giá t.trường:';
 $_LANG['goods_brief'] = 'Tóm lược sản phẩm:';
 $_LANG['goods_album'] = 'Thư viện hình sản phẩm';
@@ -68,7 +68,7 @@ $_LANG['goods_name'] = 'Tên';
 $_LANG['goods_attr'] = 'Thuộc tính';
 $_LANG['goods_price_ladder'] = 'Price Ladder';
 $_LANG['ladder_price'] = 'Ladder price';
-$_LANG['shop_prices'] = 'Giá tại shop';
+$_LANG['shop_prices'] = 'Giá bán';
 $_LANG['market_prices'] = 'Giá t.trường';
 $_LANG['deposit'] = 'Associates bail';
 $_LANG['amount'] = 'Tổng cộng';
@@ -542,40 +542,40 @@ $_LANG['email_canceled'] = 'Email is canceled!';
 $_LANG['goods_click_count'] = 'Lượt xem';
 
 /* 虚拟卡 */
-$_LANG['card_sn'] = 'Card SN';
-$_LANG['card_password'] = 'Card password';
-$_LANG['end_date'] = 'End date';
-$_LANG['virtual_card_oos'] = 'Virtual card is out of stock';
+$_LANG['card_sn'] = 'Mã thẻ';
+$_LANG['card_password'] = 'Mật khẩu';
+$_LANG['end_date'] = 'Ngày hết hạn';
+$_LANG['virtual_card_oos'] = 'Thẻ ảo này đã hết hàng';
 
 /* 订单状态查询 */
-$_LANG['invalid_order_sn'] = 'Invalid order SN';
+$_LANG['invalid_order_sn'] = 'Mã đơn hàng không đúng';
 $_LANG['order_status'] = 'Tình trạng đơn hàng';
-$_LANG['shipping_date'] = 'Shipping date';
+$_LANG['shipping_date'] = 'Ngày chuyển';
 $_LANG['query_order'] = 'Truy vấn';
 $_LANG['order_query_toofast'] = 'Order queries too fast.';
 
-$_LANG['online_info'] = ' %s people online';
+$_LANG['online_info'] = ' %s người trực tuyến';
 
 /* 按钮 */
-$_LANG['btn_direct_buy'] = 'Buy directly';
-$_LANG['btn_buy'] = 'Buy';
+$_LANG['btn_direct_buy'] = 'Mua ngay';
+$_LANG['btn_buy'] = 'Mua';
 $_LANG['btn_collect'] = 'Quan tâm';
-$_LANG['btn_add_to_cart'] = 'Add to cart';
-$_LANG['btn_add_to_collect'] = 'Add to collect';
+$_LANG['btn_add_to_cart'] = 'Cho vào giỏ hàng';
+$_LANG['btn_add_to_collect'] = 'Thêm vào quan tâm';
 
 $_LANG['stock_up'] = 'Hết hàng';
 
 
-$_LANG['hot_search'] = 'Hot search';
+$_LANG['hot_search'] = 'Từ khóa hot';
 
 $_LANG['please_select_attr'] = 'There are differnt type of cart goods to choose, jump to goods attibutes?';
 
 /* 促销信息栏 */
 $_LANG['snatch_promotion'] = '[Snatch]';
-$_LANG['group_promotion'] = '[Groupbuy]';
-$_LANG['auction_promotion'] = '[Auction]';
+$_LANG['group_promotion'] = '[Nhóm mua]';
+$_LANG['auction_promotion'] = '[Đấu giá]';
 $_LANG['favourable_promotion'] = '[Favourable]';
-$_LANG['wholesale_promotion'] = '[Wholesale]';
+$_LANG['wholesale_promotion'] = '[Bán sỉ]';
 $_LANG['package_promotion'] = '[Package]';
 
 /* feed推送 */
@@ -625,7 +625,7 @@ $_LANG['specifications'] = 'products';
 
 
 /* 相册JS语言项 */
-$_LANG['gallery_js']['close_window'] = 'Close Window';
+$_LANG['gallery_js']['close_window'] = 'Bạn có muốn đóng cửa sổ này lại?';
 $_LANG['submit'] = 'Gửi đi';
 $_LANG['reset'] = 'Làm lại';
 $_LANG['order_query'] = 'Truy vấn đơn hàng';

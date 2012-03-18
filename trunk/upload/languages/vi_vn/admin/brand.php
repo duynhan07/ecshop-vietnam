@@ -5,20 +5,20 @@ $_LANG['brand_desc'] = 'Mô tả';
 $_LANG['brand_logo'] = 'LOGO';
 $_LANG['sort_order'] = 'Thứ tự';
 $_LANG['is_show'] = 'Hiển thị';
-$_LANG['drop_brand_logo'] = 'Delete the logo';
-$_LANG['confirm_drop_logo'] = 'Are you sure delete the logo?';
-$_LANG['drop_brand_logo_success'] = 'Delete the logo successfully!';
+$_LANG['drop_brand_logo'] = 'Xóa logo';
+$_LANG['confirm_drop_logo'] = 'Bạn có chắc bạn muốn xóa logo';
+$_LANG['drop_brand_logo_success'] = 'Đã xóa logo thành công!';
 
-$_LANG['brand_edit_lnk']='Re-edit that brand';
-$_LANG['brand_list_lnk'] = 'Return to the list page';
+$_LANG['brand_edit_lnk']='Tiếp tục sửa thương hiệu';
+$_LANG['brand_list_lnk'] = 'Trở về trang danh sách thương hiệu';
 
 /*Help information*/
-$_LANG['up_brandlogo'] = 'Please upload image as brand LOGO!';
+$_LANG['up_brandlogo'] = 'Vui lòng upload logo cho thương hiệu!';
 $_LANG['warn_brandlogo'] = 'You has uploaded the image. If upload again, the old image will be covered!';
 
 /*Prompting message*/
 $_LANG['brand_edit'] = 'Edit brand record';
-$_LANG['upload_failure'] = 'Upload image has failed!';
+$_LANG['upload_failure'] = 'Upload hình ảnh không thành công!';
 $_LANG['brandedit_fail'] = 'Edit brand %s has failed!';
 $_LANG['brandadd_succed'] = 'Add new brand successsfully!';
 $_LANG['brandedit_succed'] = 'Edit brand %s successfully!';
@@ -36,10 +36,10 @@ $_LANG['continue_add'] = 'Continue add new brand';
 $_LANG['upfile_type_error'] = "The uploaded image type must be jpg,gif or png.";
 $_LANG['upfile_error'] = "Wrong, please ensure files\' writability of data directory!";
 
-$_LANG['visibility_notes'] = 'When brand merchandise under no time and the breakdown of home pages of the brand areas will not be displayed to the brand.';
+$_LANG['visibility_notes'] = 'Khi thương hiệu không còn hiệu lực và không hiển thị, thương hiệu này sẽ không được hiển thị trong trang thương hiệu.';
 
 /*JS language item*/
-$_LANG['js_languages']['no_brandname'] = 'Please enter brand name!';
+$_LANG['js_languages']['no_brandname'] = 'Vui lòng nhập tên thương hiệu!';
 $_LANG['js_languages']['require_num']='The sort ordinal number must be a figure.';
 
 ?>
