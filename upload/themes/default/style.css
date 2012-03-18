@@ -720,6 +720,12 @@ text-align:right;
 	border-top:3px solid #f4a932;
 	background-color:#FFF;
 }
+.topmenu ul#ecms_topnav li.selected a {
+	color:#d06464;
+	line-height:30px;
+	border-top:3px solid #f4a932;
+	background-color:#FFF;
+}
 /*End*/
 .menu ul#topnav li {
 	display: block;

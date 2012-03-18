@@ -21,7 +21,7 @@ $GLOBALS['smarty']->assign('index_link',build_uri('ecms_index', array(null)));
 <div style="position:relative; width:960px;" class="ecms_clearfix">
 <div class="topmenu">
 <ul id="ecms_topnav">
-<li><a>Hàng trong nước</a></li>
+<li {if $navigator_list.config.index eq 1} class="selected"{/if}><a href="../{$index_link}">{$lang.home}<span></span></a></li>
 <li><a>Hàng nhập</a></li>
 <div class="f_r log">
    <ul>
@@ -47,15 +47,12 @@ $GLOBALS['smarty']->assign('index_link',build_uri('ecms_index', array(null)));
 </ul>
 </div>
 {insert_scripts files='transport.js,utils.js,jquery-1.7.1.js,jquery.json-2.3.js,menu.js'}
-<!--<script type="text/javascript">var $$=jQuery.noConflict();</script>-->
 </div>
 <div class="block clearfix">
  <div class="f_l" style="margin:0 40px 10px 30px;"><a href="../{$index_link}" name="top"><img width="138" src="../images/hkt_logo.png" /></a></div>
 <!--search start-->
 {insert_scripts files='suggest.js'}
-<!-- Sử dụng DIV này khi người dùng muốn tìm kiếm sản phẩm -->
 <div id="search_suggest" style="display:none;top:200px;left:757px;" onmouseover='javascript:_over();' onmouseout='javascript:_out();'></div>
-<!-- End -->
 <div id="ecms_search"  class="clearfix">
    <script type="text/javascript">
     {literal}
@@ -110,7 +107,6 @@ style="_position:relative; top:5px;">
 <div id="menu-navigation">
 <div class="menu">
 <ul id="topnav">
-<!--<li><a href="../index.php"{if $navigator_list.config.index eq 1} class="cur"{/if}>{$lang.home}<span></span></a></li>-->
 <li>&nbsp;</li>
 <li class="selected"><a href="#Mr.Điệp">{$lang.catalog} sản phẩm</a>
 <ul class="children">
