@@ -685,7 +685,6 @@ function color_tag(&$tags)
         }
         else
         {
-			//search.php
             $tags[$key]['url'] = 'search.html?keywords=' . urlencode($val['tag_words']);
         }
     }
