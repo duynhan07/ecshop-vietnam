@@ -8,15 +8,6 @@ $GLOBALS['smarty']->assign('categories_nav',get_categories_tree_nav(0,99));
 $GLOBALS['smarty']->assign('search_link',build_uri('search', array(null))); 
 $GLOBALS['smarty']->assign('index_link',build_uri('ecms_index', array(null))); 
 ?>
-<!--[if lt IE 7]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
-<![endif]-->
-<!--[if lt IE 8]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
-<![endif]-->
-<!--[if lt IE 9]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-<![endif]-->
 <div id="topBar">
 <div style="position:relative; width:960px;" class="ecms_clearfix">
 <div class="topmenu">
@@ -26,7 +17,6 @@ $GLOBALS['smarty']->assign('index_link',build_uri('ecms_index', array(null)));
 <div class="f_r log">
    <ul>
    <li class="userInfo">
-   <script type="text/javascript">var $$=jQuery.noConflict();</script>
    <font id="ECS_MEMBERZONE">
    {* Ghi chú: Khi hệ thống phát hiện cookies có id người dùng sẽ gọi tệp member_info.lbi *}
    {insert name='member_info'}</font>
@@ -81,8 +71,10 @@ style="_position:relative; top:5px;">
       {$category_list}
     </select>
 </div>
+<div class="a_search">
 <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="searchfield" onkeyup="keyupdeal(event,this.value);" onkeydown="keydowndeal(event);" onclick="keyupdeal(event,this.value);" onblur="closediv();"  autocomplete="off"  style="vertical-align:top;"/>
-   <input name="imageField" type="submit" value="{$lang.search}" class="searchbutton" style="cursor:pointer;" />
+   <input name="imageField" type="submit" value="{$lang.search}" class="searchbutton" />
+   </div>
    {insert_scripts files='stickytooltip.js'}
    <a href="{$search_link}?act=advanced_search" data-tooltip="sticky1">{$lang.advanced_search}</a>
 <div id="mystickytooltip" class="stickytooltip">

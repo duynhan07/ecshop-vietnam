@@ -75,12 +75,12 @@
            <a href="{$goods.url}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" class="goodsimg" /></a><br />
            <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.goods_name}</a></p>
            <!-- {if $show_marketprice} -->
-            {$lang.market_prices}<font class="market_s">{$goods.market_price}</font><br />
+            <font class="market_s" title="{$lang.market_prices}">{$goods.market_price}</font><br />
             <!-- {/if} -->
             <!--{if $goods.promote_price neq "" } -->
-            {$lang.promote_price}<font class="shop_s">{$goods.promote_price}</font><br />
+            <font class="shop_s" title="{$lang.promote_price}">{$goods.promote_price}</font><br />
             <!--{else}-->
-            {$lang.shop_prices}<font class="shop_s">{$goods.shop_price}</font><br />
+            <font class="shop_s" title="{$lang.shop_prices}">{$goods.shop_price}</font><br />
             <!--{/if}-->
            <a href="javascript:collect({$goods.goods_id});" title="{$lang.btn_collect}" class="f6"><img style="width:24px;" src="images/s_favo.png" alt="{$lang.btn_collect}" /></a> |
            <a href="javascript:addToCart({$goods.goods_id})" title="{$lang.btn_buy}" class="f6"><img style="width:24px;" src="images/s_cart.png" alt="{$lang.btn_buy}" /></a> |

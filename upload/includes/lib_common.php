@@ -1501,7 +1501,7 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
                     $uri = 'danh-muc-' . $cid;
                     if (isset($bid))
                     {
-                        $uri .= '-b' . $bid;
+                        $uri .= '-brand' . $bid;
                     }
                     if (isset($price_min))
                     {
