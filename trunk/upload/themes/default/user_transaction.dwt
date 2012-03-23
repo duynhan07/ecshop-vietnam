@@ -50,7 +50,7 @@
         </script>
       <h5><span>{$lang.profile}</span></h5>
       <div class="blank"></div>
-     <form name="formEdit" action="user.php" method="post" onSubmit="return userEdit()">
+     <form name="formEdit" action="{$user_link}" method="post" onSubmit="return userEdit()">
       <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
                 <tr>
                   <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.birthday}: </td>
@@ -102,7 +102,7 @@
                 </tr>
        </table>
     </form>
-     <form name="formPassword" action="user.php" method="post" onSubmit="return editPassword()" >
+     <form name="formPassword" action="{$user_link}" method="post" onSubmit="return editPassword()" >
      <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
         <tr>
           <td width="28%" align="right" bgcolor="#FFFFFF">{$lang.old_password}: </td>
@@ -164,7 +164,7 @@
       <div class="blank5"></div>
       <h5><span>{$lang.add_bonus}</span></h5>
       <div class="blank"></div>
-      <form name="addBouns" action="user.php" method="post" onSubmit="return addBonus()">
+      <form name="addBouns" action="{$user_link}" method="post" onSubmit="return addBonus()">
         <div style="padding: 15px;">
         {$lang.bonus_number}
           <input name="bonus_sn" type="text" size="30" class="inputBg" />
@@ -188,7 +188,7 @@
           </tr>
           <!--{foreach from=$orders item=item}-->
           <tr>
-            <td align="center" bgcolor="#ffffff"><a href="user.php?act=order_detail&order_id={$item.order_id}" class="f6">{$item.order_sn}</a></td>
+            <td align="center" bgcolor="#ffffff"><a href="{$user_link}?act=order_detail&order_id={$item.order_id}" class="f6">{$item.order_sn}</a></td>
             <td align="center" bgcolor="#ffffff">{$item.order_time}</td>
             <td align="right" bgcolor="#ffffff">{$item.total_fee}</td>
             <td align="center" bgcolor="#ffffff">{$item.order_status}</td>
@@ -206,7 +206,7 @@
           var {$key} = "{$item}";
         {/foreach}
         </script>
-        <form action="user.php" method="post" name="formOrder" onsubmit="return mergeOrder()">
+        <form action="{$user_link}" method="post" name="formOrder" onsubmit="return mergeOrder()">
           <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
             <tr>
               <td width="22%" align="right" bgcolor="#ffffff">{$lang.first_order}:</td>
@@ -245,7 +245,7 @@
         </tr>
         <!--{foreach from=$orders item=item}-->
         <tr>
-          <td align="center" bgcolor="#ffffff"><a href="user.php?act=order_detail&order_id={$item.order_id}">{$item.order_sn}</a></td>
+          <td align="center" bgcolor="#ffffff"><a href="{$user_link}?act=order_detail&order_id={$item.order_id}">{$item.order_sn}</a></td>
           <td align="center" bgcolor="#ffffff">{$item.query_link}</td>
         </tr>
         <!--{/foreach}-->
@@ -277,7 +277,7 @@
 					<!-- {elseif $order.extension_code eq "exchange_goods"} -->
 					<a href="./exchange.php?act=view&id={$order.extension_id}" class="f6"><strong>{$lang.order_is_exchange}</strong></a>
 					<!--{/if}-->  
-					<a href="user.php?act=message_list&order_id={$order.order_id}" class="f6">[{$lang.business_message}]</a>
+					<a href="{$user_link}?act=message_list&order_id={$order.order_id}" class="f6">[{$lang.business_message}]</a>
 					</td>
         </tr>
         <tr>
@@ -420,7 +420,7 @@
             <!-- {if $allow_edit_surplus} 如果可以编辑使用余额数 -->
           <tr>
             <td align="right" bgcolor="#ffffff">
-      <form action="user.php" method="post" name="formFee" id="formFee">{$lang.use_more_surplus}:
+      <form action="{$user_link}" method="post" name="formFee" id="formFee">{$lang.use_more_surplus}:
             <input name="surplus" type="text" size="8" value="0" style="border:1px solid #ccc;"/>{$max_surplus}
             <input type="submit" name="Submit" class="submit" value="{$lang.button_submit}" />
       <input type="hidden" name="act" value="act_edit_surplus" />
@@ -433,7 +433,7 @@
         <h5><span>{$lang.consignee_info}</span></h5>
         <div class="blank"></div>
          <!-- {if $order.allow_update_address gt 0} -->
-          <form action="user.php" method="post" name="formAddress" id="formAddress">
+          <form action="{$user_link}" method="post" name="formAddress" id="formAddress">
            <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
               <tr>
                 <td width="15%" align="right" bgcolor="#ffffff">{$lang.consignee_name}： </td>
@@ -523,7 +523,7 @@
                   <tr>
                   <td bgcolor="#ffffff" align="right">
                   <!--{if $payment_list}-->
-              <form name="payment" method="post" action="user.php">
+              <form name="payment" method="post" action="{$user_link}">
               {$lang.change_payment}:
               <select name="pay_id">
                 <!--{foreach from=$payment_list item=payment}-->
@@ -617,12 +617,12 @@
         <div class="blank"></div>
          <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
           <tr>
-            <td align="right" bgcolor="#ffffff"><a href="user.php?act=account_deposit" class="f6">{$lang.surplus_type_0}</a> | <a href="user.php?act=account_raply" class="f6">{$lang.surplus_type_1}</a> | <a href="user.php?act=account_detail" class="f6">{$lang.add_surplus_log}</a> | <a href="user.php?act=account_log" class="f6">{$lang.view_application}</a> </td>
+            <td align="right" bgcolor="#ffffff"><a href="{$user_link}?act=account_deposit" class="f6">{$lang.surplus_type_0}</a> | <a href="{$user_link}?act=account_raply" class="f6">{$lang.surplus_type_1}</a> | <a href="{$user_link}?act=account_detail" class="f6">{$lang.add_surplus_log}</a> | <a href="{$user_link}?act=account_log" class="f6">{$lang.view_application}</a> </td>
           </tr>
         </table>
         <!-- {/if} -->
         <!-- {if $action eq "account_raply"} -->
-        <form name="formSurplus" method="post" action="user.php" onSubmit="return submitSurplus()">
+        <form name="formSurplus" method="post" action="{$user_link}" onSubmit="return submitSurplus()">
         <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
           <tr>
             <td width="15%" bgcolor="#ffffff">{$lang.repay_money}:</td>
@@ -645,7 +645,7 @@
         </form>
         <!-- {/if} -->
         <!-- {if $action eq "account_deposit"} -->
-        <form name="formSurplus" method="post" action="user.php" onSubmit="return submitSurplus()">
+        <form name="formSurplus" method="post" action="{$user_link}" onSubmit="return submitSurplus()">
         <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
             <tr>
               <td width="15%" bgcolor="#ffffff">{$lang.deposit_money}:</td>
@@ -751,7 +751,7 @@
             <td align="center" bgcolor="#ffffff">{$item.pay_status}</td>
             <td align="right" bgcolor="#ffffff">{$item.handle}
               <!-- {if ($item.is_paid eq 0 && $item.process_type eq 1) || $item.handle} -->
-              <a href="user.php?act=cancel&id={$item.id}" onclick="if (!confirm('{$lang.confirm_remove_account}')) return false;">{$lang.is_cancel}</a>
+              <a href="{$user_link}?act=cancel&id={$item.id}" onclick="if (!confirm('{$lang.confirm_remove_account}')) return false;">{$lang.is_cancel}</a>
               <!-- {/if} -->
                             </td>
           </tr>
@@ -784,7 +784,7 @@
               {/literal}
             </script>
             <!-- {foreach from=$consignee_list item=consignee key=sn} -->
-            <form action="user.php" method="post" name="theForm" onsubmit="return checkConsignee(this)">
+            <form action="{$user_link}" method="post" name="theForm" onsubmit="return checkConsignee(this)">
               <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
                 <tr>
                   <td align="right" bgcolor="#ffffff">{$lang.country_province}: </td>
@@ -864,7 +864,7 @@
        <h5><span>{$lang.transform_points}</span></h5>
              <div class="blank"></div>
        <!--{if $exchange_type eq 'ucenter'}-->
-        <form action="user.php" method="post" name="transForm" onsubmit="return calcredit();">
+        <form action="{$user_link}" method="post" name="transForm" onsubmit="return calcredit();">
        <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
                 <tr>
                     <th width="120" bgcolor="#FFFFFF" align="right" valign="top">{$lang.cur_points}:</th>
@@ -987,7 +987,7 @@
           <!-- {/foreach} -->
         </ul>
 
-        <form action="user.php" method="post" name="theForm">
+        <form action="{$user_link}" method="post" name="theForm">
         <table width="100%" border="1" align="center" cellpadding="5" cellspacing="0" style="border-collapse:collapse;border:1px solid #DADADA;">
           <tr style="background:#F1F1F1;">
             <th>{$lang.rule}</th>

@@ -2,7 +2,6 @@
 define('IN_ECS', true);
 
 require(dirname(__FILE__) . '/includes/init.php');
-$index_link = build_uri('ecms_index', array(null));
 /* 载入语言文件 */
 require_once(ROOT_PATH . 'languages/' .$_CFG['lang']. '/user.php');
 
@@ -10,6 +9,8 @@ $user_id = $_SESSION['user_id'];
 $action  = isset($_REQUEST['act']) ? trim($_REQUEST['act']) : 'default';
 
 $affiliate = unserialize($GLOBALS['_CFG']['affiliate']);
+$index_link = build_uri('ecms_index', array(null));
+$user_link = build_uri('user', array(null));
 $smarty->assign('affiliate', $affiliate);
 $back_act='';
 
@@ -42,7 +43,7 @@ if (empty($_SESSION['user_id']))
             {}*/
             if (!empty($_SERVER['QUERY_STRING']))
             {
-                $back_act = 'user.php?' . strip_tags($_SERVER['QUERY_STRING']);
+                $back_act = $user_link.'?' . strip_tags($_SERVER['QUERY_STRING']);
             }
             $action = 'login';
         }
@@ -99,7 +100,7 @@ if ($action == 'register')
 {
     if (!isset($back_act) && isset($GLOBALS['_SERVER']['HTTP_REFERER']))
     {
-        $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], 'user.php') ? './'.$index_link : $GLOBALS['_SERVER']['HTTP_REFERER'];
+        $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], $user_link) ? './'.$index_link : $GLOBALS['_SERVER']['HTTP_REFERER'];
     }
 
     /* 取出注册扩展字段 */
@@ -175,7 +176,7 @@ elseif ($action == 'act_register')
         {
             if (empty($_POST['captcha']))
             {
-                show_message($_LANG['invalid_captcha'], $_LANG['sign_up'], 'user.php?act=register', 'error');
+                show_message($_LANG['invalid_captcha'], $_LANG['sign_up'], $user_link.'?act=register', 'error');
             }
 
             /* 检查验证码 */
@@ -184,7 +185,7 @@ elseif ($action == 'act_register')
             $validator = new captcha();
             if (!$validator->check_word($_POST['captcha']))
             {
-                show_message($_LANG['invalid_captcha'], $_LANG['sign_up'], 'user.php?act=register', 'error');
+                show_message($_LANG['invalid_captcha'], $_LANG['sign_up'], $user_link.'?act=register', 'error');
             }
         }
 
@@ -224,11 +225,11 @@ elseif ($action == 'act_register')
                 send_regiter_hash($_SESSION['user_id']);
             }
             $ucdata = empty($user->ucdata)? "" : $user->ucdata;
-            show_message(sprintf($_LANG['register_success'], $username . $ucdata), array($_LANG['back_up_page'], $_LANG['profile_lnk']), array($back_act, 'user.php'), 'info');
+            show_message(sprintf($_LANG['register_success'], $username . $ucdata), array($_LANG['back_up_page'], $_LANG['profile_lnk']), array($back_act, $user_link), 'info');
         }
         else
         {
-            $err->show($_LANG['sign_up'], 'user.php?act=register');
+            $err->show($_LANG['sign_up'], $user_link.'?act=register');
         }
     }
 }
@@ -247,7 +248,7 @@ elseif ($action == 'validate_email')
             $db->query($sql);
             $sql = 'SELECT user_name, email FROM ' . $ecs->table('users') . " WHERE user_id = '$id'";
             $row = $db->getRow($sql);
-            show_message(sprintf($_LANG['validate_ok'], $row['user_name'], $row['email']),$_LANG['profile_lnk'], 'user.php');
+            show_message(sprintf($_LANG['validate_ok'], $row['user_name'], $row['email']),$_LANG['profile_lnk'], $user_link);
         }
     }
     show_message($_LANG['validate_fail']);
@@ -291,11 +292,11 @@ elseif ($action == 'login')
     {
         if (empty($back_act) && isset($GLOBALS['_SERVER']['HTTP_REFERER']))
         {
-            $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], 'user.php') ? './'.$index_link : $GLOBALS['_SERVER']['HTTP_REFERER'];
+            $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], $user_link) ? './'.$index_link : $GLOBALS['_SERVER']['HTTP_REFERER'];
         }
         else
         {
-            $back_act = 'user.php';
+            $back_act = $user_link;
         }
 
     }
@@ -325,7 +326,7 @@ elseif ($action == 'act_login')
     {
         if (empty($_POST['captcha']))
         {
-            show_message($_LANG['invalid_captcha'], $_LANG['relogin_lnk'], 'user.php', 'error');
+            show_message($_LANG['invalid_captcha'], $_LANG['relogin_lnk'], $user_link, 'error');
         }
 
         /* 检查验证码 */
@@ -335,7 +336,7 @@ elseif ($action == 'act_login')
         $validator->session_word = 'captcha_login';
         if (!$validator->check_word($_POST['captcha']))
         {
-            show_message($_LANG['invalid_captcha'], $_LANG['relogin_lnk'], 'user.php', 'error');
+            show_message($_LANG['invalid_captcha'], $_LANG['relogin_lnk'], $user_link, 'error');
         }
     }
 
@@ -345,12 +346,12 @@ elseif ($action == 'act_login')
         recalculate_price();
 
         $ucdata = isset($user->ucdata)? $user->ucdata : '';
-        show_message($_LANG['login_success'] . $ucdata , array($_LANG['back_up_page'], $_LANG['profile_lnk']), array($back_act,'user.php'), 'info');
+        show_message($_LANG['login_success'] . $ucdata , array($_LANG['back_up_page'], $_LANG['profile_lnk']), array($back_act,$user_link), 'info');
     }
     else
     {
         $_SESSION['login_fail'] ++ ;
-        show_message($_LANG['login_failure'], $_LANG['relogin_lnk'], 'user.php', 'error');
+        show_message($_LANG['login_failure'], $_LANG['relogin_lnk'], $user_link, 'error');
     }
 }
 
@@ -417,7 +418,7 @@ elseif ($action == 'logout')
 {
     if (!isset($back_act) && isset($GLOBALS['_SERVER']['HTTP_REFERER']))
     {
-        $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], 'user.php') ? './'.$index_link : $GLOBALS['_SERVER']['HTTP_REFERER'];
+        $back_act = strpos($GLOBALS['_SERVER']['HTTP_REFERER'], $user_link) ? './'.$index_link : $GLOBALS['_SERVER']['HTTP_REFERER'];
     }
 
     $user->logout();
@@ -552,7 +553,7 @@ elseif ($action == 'act_edit_profile')
 
     if (edit_profile($profile))
     {
-        show_message($_LANG['edit_profile_success'], $_LANG['profile_lnk'], 'user.php?act=profile', 'info');
+        show_message($_LANG['edit_profile_success'], $_LANG['profile_lnk'], $user_link.'?act=profile', 'info');
     }
     else
     {
@@ -649,7 +650,7 @@ elseif ($action == 'check_answer')
     {
         if (empty($_POST['captcha']))
         {
-            show_message($_LANG['invalid_captcha'], $_LANG['back_retry_answer'], 'user.php?act=qpassword_name', 'error');
+            show_message($_LANG['invalid_captcha'], $_LANG['back_retry_answer'], $user_link.'?act=qpassword_name', 'error');
         }
 
         /* 检查验证码 */
@@ -659,13 +660,13 @@ elseif ($action == 'check_answer')
         $validator->session_word = 'captcha_login';
         if (!$validator->check_word($_POST['captcha']))
         {
-            show_message($_LANG['invalid_captcha'], $_LANG['back_retry_answer'], 'user.php?act=qpassword_name', 'error');
+            show_message($_LANG['invalid_captcha'], $_LANG['back_retry_answer'], $user_link.'?act=qpassword_name', 'error');
         }
     }
 
     if (empty($_POST['passwd_answer']) || $_POST['passwd_answer'] != $_SESSION['passwd_answer'])
     {
-        show_message($_LANG['wrong_passwd_answer'], $_LANG['back_retry_answer'], 'user.php?act=qpassword_name', 'info');
+        show_message($_LANG['wrong_passwd_answer'], $_LANG['back_retry_answer'], $user_link.'?act=qpassword_name', 'info');
     }
     else
     {
@@ -747,7 +748,7 @@ elseif ($action == 'act_edit_password')
 			$sql="UPDATE ".$ecs->table('users'). "SET `ec_salt`='0' WHERE user_id= '".$_SESSION['user_id']."'";
 			$db->query($sql);
             $user->logout();
-            show_message($_LANG['edit_password_success'], $_LANG['relogin_lnk'], 'user.php?act=login', 'info');
+            show_message($_LANG['edit_password_success'], $_LANG['relogin_lnk'], $user_link.'?act=login', 'info');
         }
         else
         {
@@ -770,11 +771,11 @@ elseif ($action == 'act_add_bonus')
 
     if (add_bonus($user_id, $bouns_sn))
     {
-        show_message($_LANG['add_bonus_sucess'], $_LANG['back_up_page'], 'user.php?act=bonus', 'info');
+        show_message($_LANG['add_bonus_sucess'], $_LANG['back_up_page'], $user_link.'?act=bonus', 'info');
     }
     else
     {
-        $err->show($_LANG['back_up_page'], 'user.php?act=bonus');
+        $err->show($_LANG['back_up_page'], $user_link.'?act=bonus');
     }
 }
 
@@ -787,7 +788,7 @@ elseif ($action == 'order_list')
 
     $record_count = $db->getOne("SELECT COUNT(*) FROM " .$ecs->table('order_info'). " WHERE user_id = '$user_id'");
 
-    $pager  = get_pager('user.php', array('act' => $action), $record_count, $page);
+    $pager  = get_pager($user_link, array('act' => $action), $record_count, $page);
 
     $orders = get_user_orders($user_id, $pager['size'], $pager['start']);
     $merge  = get_user_merge($user_id);
@@ -886,12 +887,12 @@ elseif ($action == 'cancel_order')
 
     if (cancel_order($order_id, $user_id))
     {
-        ecs_header("Location: user.php?act=order_list\n");
+        ecs_header("Location: ".$user_link."?act=order_list\n");
         exit;
     }
     else
     {
-        $err->show($_LANG['order_list_lnk'], 'user.php?act=order_list');
+        $err->show($_LANG['order_list_lnk'], $user_link.'?act=order_list');
     }
 }
 
@@ -973,7 +974,7 @@ elseif ($action == 'act_edit_address')
 
     if (update_address($address))
     {
-        show_message($_LANG['edit_address_success'], $_LANG['address_list_lnk'], 'user.php?act=address_list');
+        show_message($_LANG['edit_address_success'], $_LANG['address_list_lnk'], $user_link.'?act=address_list');
     }
 }
 
@@ -986,7 +987,7 @@ elseif ($action == 'drop_consignee')
 
     if (drop_consignee($consignee_id))
     {
-        ecs_header("Location: user.php?act=address_list\n");
+        ecs_header("Location: ".$user_link."?act=address_list\n");
         exit;
     }
     else
@@ -1005,7 +1006,7 @@ elseif ($action == 'collection_list')
     $record_count = $db->getOne("SELECT COUNT(*) FROM " .$ecs->table('collect_goods').
                                 " WHERE user_id='$user_id' ORDER BY add_time DESC");
 
-    $pager = get_pager('user.php', array('act' => $action), $record_count, $page);
+    $pager = get_pager($user_link, array('act' => $action), $record_count, $page);
     $smarty->assign('pager', $pager);
     $smarty->assign('goods_list', get_collection_goods($user_id, $pager['size'], $pager['start']));
     $smarty->assign('url',        $ecs->url());
@@ -1029,7 +1030,7 @@ elseif ($action == 'delete_collection')
         $db->query('DELETE FROM ' .$ecs->table('collect_goods'). " WHERE rec_id='$collection_id' AND user_id ='$user_id'" );
     }
 
-    ecs_header("Location: user.php?act=collection_list\n");
+    ecs_header("Location: ".$user_link."?act=collection_list\n");
     exit;
 }
 
@@ -1041,7 +1042,7 @@ elseif ($action == 'add_to_attention')
     {
         $db->query('UPDATE ' .$ecs->table('collect_goods'). "SET is_attention = 1 WHERE rec_id='$rec_id' AND user_id ='$user_id'" );
     }
-    ecs_header("Location: user.php?act=collection_list\n");
+    ecs_header("Location: ".$user_link."?act=collection_list\n");
     exit;
 }
 /* 取消关注商品 */
@@ -1052,7 +1053,7 @@ elseif ($action == 'del_attention')
     {
         $db->query('UPDATE ' .$ecs->table('collect_goods'). "SET is_attention = 0 WHERE rec_id='$rec_id' AND user_id ='$user_id'" );
     }
-    ecs_header("Location: user.php?act=collection_list\n");
+    ecs_header("Location: ".$user_link."?act=collection_list\n");
     exit;
 }
 /* 显示留言列表 */
@@ -1071,7 +1072,7 @@ elseif ($action == 'message_list')
         $sql = "SELECT COUNT(*) FROM " .$ecs->table('feedback').
                 " WHERE parent_id = 0 AND order_id = '$order_id' AND user_id = '$user_id'";
         $order_info = $db->getRow("SELECT * FROM " . $ecs->table('order_info') . " WHERE order_id = '$order_id' AND user_id = '$user_id'");
-        $order_info['url'] = 'user.php?act=order_detail&order_id=' . $order_id;
+        $order_info['url'] = $user_link.'?act=order_detail&order_id=' . $order_id;
     }
     else
     {
@@ -1087,7 +1088,7 @@ elseif ($action == 'message_list')
         $act['order_id'] = $order_id;
     }
 
-    $pager = get_pager('user.php', $act, $record_count, $page, 5);
+    $pager = get_pager($user_link, $act, $record_count, $page, 5);
 
     $smarty->assign('message_list', get_message_list($user_id, $_SESSION['user_name'], $pager['size'], $pager['start'], $order_id));
     $smarty->assign('pager',        $pager);
@@ -1106,7 +1107,7 @@ elseif ($action == 'comment_list')
     $sql = "SELECT COUNT(*) FROM " .$ecs->table('comment').
            " WHERE parent_id = 0 AND user_id = '$user_id'";
     $record_count = $db->getOne($sql);
-    $pager = get_pager('user.php', array('act' => $action), $record_count, $page, 5);
+    $pager = get_pager($user_link, array('act' => $action), $record_count, $page, 5);
 
     $smarty->assign('comment_list', get_comment_list($user_id, $pager['size'], $pager['start']));
     $smarty->assign('pager',        $pager);
@@ -1132,11 +1133,11 @@ elseif ($action == 'act_add_message')
 
     if (add_message($message))
     {
-        show_message($_LANG['add_message_success'], $_LANG['message_list_lnk'], 'user.php?act=message_list&order_id=' . $message['order_id'],'info');
+        show_message($_LANG['add_message_success'], $_LANG['message_list_lnk'], $user_link.'?act=message_list&order_id=' . $message['order_id'],'info');
     }
     else
     {
-        $err->show($_LANG['message_list_lnk'], 'user.php?act=message_list');
+        $err->show($_LANG['message_list_lnk'], $user_link.'?act=message_list');
     }
 }
 
@@ -1160,7 +1161,7 @@ elseif ($action == 'act_del_tag')
     $tag_words = isset($_GET['tag_words']) ? trim($_GET['tag_words']) : '';
     delete_tag($tag_words, $user_id);
 
-    ecs_header("Location: user.php?act=tag_list\n");
+    ecs_header("Location: ".$user_link."?act=tag_list\n");
     exit;
 
 }
@@ -1178,7 +1179,7 @@ elseif ($action == 'booking_list')
                      $ecs->table('goods') . " AS g " .
             "WHERE bg.goods_id = g.goods_id AND user_id = '$user_id'";
     $record_count = $db->getOne($sql);
-    $pager = get_pager('user.php', array('act' => $action), $record_count, $page);
+    $pager = get_pager($user_link, array('act' => $action), $record_count, $page);
 
     $smarty->assign('booking_list', get_booking_list($user_id, $pager['size'], $pager['start']));
     $smarty->assign('pager',        $pager);
@@ -1245,12 +1246,12 @@ elseif ($action == 'act_add_booking')
 
     if (add_booking($booking))
     {
-        show_message($_LANG['booking_success'], $_LANG['back_booking_list'], 'user.php?act=booking_list',
+        show_message($_LANG['booking_success'], $_LANG['back_booking_list'], $user_link.'?act=booking_list',
         'info');
     }
     else
     {
-        $err->show($_LANG['booking_list_lnk'], 'user.php?act=booking_list');
+        $err->show($_LANG['booking_list_lnk'], $user_link.'?act=booking_list');
     }
 }
 
@@ -1262,14 +1263,14 @@ elseif ($action == 'act_del_booking')
     $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
     if ($id == 0 || $user_id == 0)
     {
-        ecs_header("Location: user.php?act=booking_list\n");
+        ecs_header("Location: ".$user_link."?act=booking_list\n");
         exit;
     }
 
     $result = delete_booking($id, $user_id);
     if ($result)
     {
-        ecs_header("Location: user.php?act=booking_list\n");
+        ecs_header("Location: ".$user_link."?act=booking_list\n");
         exit;
     }
 }
@@ -1283,12 +1284,12 @@ elseif ($action == 'affirm_received')
 
     if (affirm_received($order_id, $user_id))
     {
-        ecs_header("Location: user.php?act=order_list\n");
+        ecs_header("Location: ".$user_link."?act=order_list\n");
         exit;
     }
     else
     {
-        $err->show($_LANG['order_list_lnk'], 'user.php?act=order_list');
+        $err->show($_LANG['order_list_lnk'], $user_link.'?act=order_list');
     }
 }
 
@@ -1327,7 +1328,7 @@ elseif ($action == 'account_detail')
     $record_count = $db->getOne($sql);
 
     //分页函数
-    $pager = get_pager('user.php', array('act' => $action), $record_count, $page);
+    $pager = get_pager($user_link, array('act' => $action), $record_count, $page);
 
     //获取剩余余额
     $surplus_amount = get_user_surplus($user_id);
@@ -1377,7 +1378,7 @@ elseif ($action == 'account_log')
     $record_count = $db->getOne($sql);
 
     //分页函数
-    $pager = get_pager('user.php', array('act' => $action), $record_count, $page);
+    $pager = get_pager($user_link, array('act' => $action), $record_count, $page);
 
     //获取剩余余额
     $surplus_amount = get_user_surplus($user_id);
@@ -1437,7 +1438,7 @@ elseif ($action == 'act_account')
         if ($surplus['rec_id'] > 0)
         {
             $content = $_LANG['surplus_appl_submit'];
-            show_message($content, $_LANG['back_account_log'], 'user.php?act=account_log', 'info');
+            show_message($content, $_LANG['back_account_log'], $user_link.'?act=account_log', 'info');
         }
         else
         {
@@ -1513,14 +1514,14 @@ elseif ($action == 'cancel')
     $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
     if ($id == 0 || $user_id == 0)
     {
-        ecs_header("Location: user.php?act=account_log\n");
+        ecs_header("Location: ".$user_link."?act=account_log\n");
         exit;
     }
 
     $result = del_user_account($id, $user_id);
     if ($result)
     {
-        ecs_header("Location: user.php?act=account_log\n");
+        ecs_header("Location: ".$user_link."?act=account_log\n");
         exit;
     }
 }
@@ -1538,14 +1539,14 @@ elseif ($action == 'pay')
 
     if ($surplus_id == 0)
     {
-        ecs_header("Location: user.php?act=account_log\n");
+        ecs_header("Location: ".$user_link."?act=account_log\n");
         exit;
     }
 
     //如果原来的支付方式已禁用或者已删除, 重新选择支付方式
     if ($payment_id == 0)
     {
-        ecs_header("Location: user.php?act=account_deposit&id=".$surplus_id."\n");
+        ecs_header("Location: ".$user_link."?act=account_deposit&id=".$surplus_id."\n");
         exit;
     }
 
@@ -1717,7 +1718,7 @@ elseif ($action == 'del_msg')
             $db->query($sql);
         }
     }
-    ecs_header("Location: user.php?act=message_list&order_id=$order_id\n");
+    ecs_header("Location: ".$user_link."?act=message_list&order_id=$order_id\n");
     exit;
 }
 
@@ -1730,7 +1731,7 @@ elseif ($action == 'del_cmt')
         $sql = "DELETE FROM " .$ecs->table('comment'). " WHERE comment_id = '$id' AND user_id = '$user_id'";
         $db->query($sql);
     }
-    ecs_header("Location: user.php?act=comment_list\n");
+    ecs_header("Location: ".$user_link."?act=comment_list\n");
     exit;
 }
 
@@ -1743,7 +1744,7 @@ elseif ($action == 'merge_order')
     $to_order   = isset($_POST['to_order']) ? trim($_POST['to_order']) : '';
     if (merge_user_order($from_order, $to_order, $user_id))
     {
-        show_message($_LANG['merge_order_success'],$_LANG['order_list_lnk'],'user.php?act=order_list', 'info');
+        show_message($_LANG['merge_order_success'],$_LANG['order_list_lnk'],$user_link.'?act=order_list', 'info');
     }
     else
     {
@@ -1832,7 +1833,7 @@ elseif ($action == 'act_edit_surplus')
     if ($surplus <= 0)
     {
         $err->add($_LANG['error_surplus_invalid']);
-        $err->show($_LANG['order_detail'], 'user.php?act=order_detail&order_id=' . $order_id);
+        $err->show($_LANG['order_detail'], $user_link.'?act=order_detail&order_id=' . $order_id);
     }
 
     include_once(ROOT_PATH . 'includes/lib_order.php');
@@ -1856,7 +1857,7 @@ elseif ($action == 'act_edit_surplus')
     if ($order['pay_status'] != PS_UNPAYED || $order['order_amount'] <= 0)
     {
         $err->add($_LANG['error_order_is_paid']);
-        $err->show($_LANG['order_detail'], 'user.php?act=order_detail&order_id=' . $order_id);
+        $err->show($_LANG['order_detail'], $user_link.'?act=order_detail&order_id=' . $order_id);
     }
 
     /* 计算应付款金额（减去支付费用） */
@@ -1875,7 +1876,7 @@ elseif ($action == 'act_edit_surplus')
     if ($surplus > $user['user_money'] + $user['credit_line'])
     {
         $err->add($_LANG['error_surplus_not_enough']);
-        $err->show($_LANG['order_detail'], 'user.php?act=order_detail&order_id=' . $order_id);
+        $err->show($_LANG['order_detail'], $user_link.'?act=order_detail&order_id=' . $order_id);
     }
 
     /* 修改订单，重新计算支付费用 */
@@ -1923,7 +1924,7 @@ elseif ($action == 'act_edit_surplus')
     log_account_change($user['user_id'], (-1) * $surplus, 0, 0, 0, $change_desc);
 
     /* 跳转 */
-    ecs_header('Location: user.php?act=order_detail&order_id=' . $order_id . "\n");
+    ecs_header('Location: '.$user_link.'?act=order_detail&order_id=' . $order_id . "\n");
     exit;
 }
 
@@ -1979,7 +1980,7 @@ elseif ($action == 'act_edit_payment')
     /* 检查订单是否未付款和未发货 以及订单金额是否为0 和支付id是否为改变*/
     if ($order['pay_status'] != PS_UNPAYED || $order['shipping_status'] != SS_UNSHIPPED || $order['goods_amount'] <= 0 || $order['pay_id'] == $pay_id)
     {
-        ecs_header("Location: user.php?act=order_detail&order_id=$order_id\n");
+        ecs_header("Location: ".$user_link."?act=order_detail&order_id=$order_id\n");
         exit;
     }
 
@@ -1993,7 +1994,7 @@ elseif ($action == 'act_edit_payment')
     $db->query($sql);
 
     /* 跳转 */
-    ecs_header("Location: user.php?act=order_detail&order_id=$order_id\n");
+    ecs_header("Location: ".$user_link."?act=order_detail&order_id=$order_id\n");
     exit;
 }
 
@@ -2015,12 +2016,12 @@ elseif ($action == 'save_order_address')
         );
     if (save_order_address($address, $user_id))
     {
-        ecs_header('Location: user.php?act=order_detail&order_id=' .$address['order_id']. "\n");
+        ecs_header('Location: '.$user_link.'?act=order_detail&order_id=' .$address['order_id']. "\n");
         exit;
     }
     else
     {
-        $err->show($_LANG['order_list_lnk'], 'user.php?act=order_list');
+        $err->show($_LANG['order_list_lnk'], $user_link.'?act=order_list');
     }
 }
 
@@ -2032,7 +2033,7 @@ elseif ($action == 'bonus')
     $page = isset($_REQUEST['page']) ? intval($_REQUEST['page']) : 1;
     $record_count = $db->getOne("SELECT COUNT(*) FROM " .$ecs->table('user_bonus'). " WHERE user_id = '$user_id'");
 
-    $pager = get_pager('user.php', array('act' => $action), $record_count, $page);
+    $pager = get_pager($user_link, array('act' => $action), $record_count, $page);
     $bonus = get_user_bouns_list($user_id, $pager['size'], $pager['start']);
 
     $smarty->assign('pager', $pager);
@@ -2186,7 +2187,7 @@ elseif ($action == 'affiliate')
             $logdb[] = $rt;
         }
 
-        $url_format = "user.php?act=affiliate&page=";
+        $url_format = $user_link."?act=affiliate&page=";
 
         $pager = array(
                     'page'  => $page,
@@ -2275,7 +2276,7 @@ elseif ($action =='email_list')
             $sql = "INSERT INTO " . $ecs->table('email_list') . " (email, stat, hash) VALUES ('$email', 0, '$hash')";
             $db->query($sql);
             $info = $_LANG['email_check'];
-            $url = $ecs->url() . "user.php?act=email_list&job=add_check&hash=$hash&email=$email";
+            $url = $ecs->url() . $user_link."?act=email_list&job=add_check&hash=$hash&email=$email";
             send_mail('', $email, $_LANG['check_mail'], sprintf($_LANG['check_mail_content'], $email, $_CFG['shop_name'], $url, $url, $_CFG['shop_name'], local_date('d-m-Y')), 1);
         }
         elseif ($ck['stat'] == 1)
@@ -2288,7 +2289,7 @@ elseif ($action =='email_list')
             $sql = "UPDATE " . $ecs->table('email_list') . "SET hash = '$hash' WHERE email = '$email'";
             $db->query($sql);
             $info = $_LANG['email_re_check'];
-            $url = $ecs->url() . "user.php?act=email_list&job=add_check&hash=$hash&email=$email";
+            $url = $ecs->url() . $user_link."?act=email_list&job=add_check&hash=$hash&email=$email";
             send_mail('', $email, $_LANG['check_mail'], sprintf($_LANG['check_mail_content'], $email, $_CFG['shop_name'], $url, $url, $_CFG['shop_name'], local_date('d-m-Y')), 1);
         }
         die($info);
@@ -2305,7 +2306,7 @@ elseif ($action =='email_list')
             $sql = "UPDATE " . $ecs->table('email_list') . "SET hash = '$hash' WHERE email = '$email'";
             $db->query($sql);
             $info = $_LANG['email_check'];
-            $url = $ecs->url() . "user.php?act=email_list&job=del_check&hash=$hash&email=$email";
+            $url = $ecs->url() . $user_link."?act=email_list&job=del_check&hash=$hash&email=$email";
             send_mail('', $email, $_LANG['check_mail'], sprintf($_LANG['check_mail_content'], $email, $_CFG['shop_name'], $url, $url, $_CFG['shop_name'], local_date('d-m-Y')), 1);
         }
         else
@@ -2429,7 +2430,7 @@ else if ($action == 'track_packages')
             $record_count += 1;
         }
     }
-    $pager  = get_pager('user.php', array('act' => $action), $record_count, $page);
+    $pager  = get_pager($user_link, array('act' => $action), $record_count, $page);
     $smarty->assign('pager',  $pager);
     $smarty->assign('orders', $orders);
     $smarty->display('user_transaction.dwt');
@@ -2602,7 +2603,7 @@ elseif ($action == 'act_transform_points')
 
     if ($num <= 0 || $num != floor($num))
     {
-        show_message($_LANG['invalid_points'], $_LANG['transform_points'], 'user.php?act=transform_points');
+        show_message($_LANG['invalid_points'], $_LANG['transform_points'], $user_link.'?act=transform_points');
     }
 
     $num = floor($num); //格式化为整数
@@ -2644,7 +2645,7 @@ elseif ($action == 'act_transform_points')
     /* 检查积分是否超过最大值 */
     if ($max_points <=0 || $num > $max_points)
     {
-        show_message($_LANG['overflow_points'], $_LANG['transform_points'], 'user.php?act=transform_points' );
+        show_message($_LANG['overflow_points'], $_LANG['transform_points'], $user_link.'?act=transform_points' );
     }
 
     switch ($rule_key)
@@ -2653,25 +2654,25 @@ elseif ($action == 'act_transform_points')
             $result_points = floor($num * $to / $from);
             $user->set_points($row['user_name'], array($bbs_key=>0 - $num)); //调整论坛积分
             log_account_change($row['user_id'], 0, 0, 0, $result_points, $_LANG['transform_points'], ACT_OTHER);
-            show_message(sprintf($_LANG['to_pay_points'],  $num, $points_name[$bbs_key]['title'], $result_points), $_LANG['transform_points'], 'user.php?act=transform_points');
+            show_message(sprintf($_LANG['to_pay_points'],  $num, $points_name[$bbs_key]['title'], $result_points), $_LANG['transform_points'], $user_link.'?act=transform_points');
 
         case TO_R :
             $result_points = floor($num * $to / $from);
             $user->set_points($row['user_name'], array($bbs_key=>0 - $num)); //调整论坛积分
             log_account_change($row['user_id'], 0, 0, $result_points, 0, $_LANG['transform_points'], ACT_OTHER);
-            show_message(sprintf($_LANG['to_rank_points'], $num, $points_name[$bbs_key]['title'], $result_points), $_LANG['transform_points'], 'user.php?act=transform_points');
+            show_message(sprintf($_LANG['to_rank_points'], $num, $points_name[$bbs_key]['title'], $result_points), $_LANG['transform_points'], $user_link.'?act=transform_points');
 
         case FROM_P :
             $result_points = floor($num * $to / $from);
             log_account_change($row['user_id'], 0, 0, 0, 0-$num, $_LANG['transform_points'], ACT_OTHER); //调整商城积分
             $user->set_points($row['user_name'], array($bbs_key=>$result_points)); //调整论坛积分
-            show_message(sprintf($_LANG['from_pay_points'], $num, $result_points,  $points_name[$bbs_key]['title']), $_LANG['transform_points'], 'user.php?act=transform_points');
+            show_message(sprintf($_LANG['from_pay_points'], $num, $result_points,  $points_name[$bbs_key]['title']), $_LANG['transform_points'], $user_link.'?act=transform_points');
 
         case FROM_R :
             $result_points = floor($num * $to / $from);
             log_account_change($row['user_id'], 0, 0, 0-$num, 0, $_LANG['transform_points'], ACT_OTHER); //调整商城积分
             $user->set_points($row['user_name'], array($bbs_key=>$result_points)); //调整论坛积分
-            show_message(sprintf($_LANG['from_rank_points'], $num, $result_points, $points_name[$bbs_key]['title']), $_LANG['transform_points'], 'user.php?act=transform_points');
+            show_message(sprintf($_LANG['from_rank_points'], $num, $result_points, $points_name[$bbs_key]['title']), $_LANG['transform_points'], $user_link.'?act=transform_points');
     }
 }
 elseif ($action == 'act_transform_ucenter_points')
@@ -2698,11 +2699,11 @@ elseif ($action == 'act_transform_ucenter_points')
 
     if ($exchange_amount <= 0)
     {
-        show_message($_LANG['invalid_points'], $_LANG['transform_points'], 'user.php?act=transform_points');
+        show_message($_LANG['invalid_points'], $_LANG['transform_points'], $user_link.'?act=transform_points');
     }
     if ($exchange_amount > $row[$shop_points[$fromcredits]])
     {
-        show_message($_LANG['overflow_points'], $_LANG['transform_points'], 'user.php?act=transform_points');
+        show_message($_LANG['overflow_points'], $_LANG['transform_points'], $user_link.'?act=transform_points');
     }
     foreach ($rule as $credit)
     {
@@ -2714,7 +2715,7 @@ elseif ($action == 'act_transform_ucenter_points')
     }
     if ($ratio == 0)
     {
-        show_message($_LANG['exchange_deny'], $_LANG['transform_points'], 'user.php?act=transform_points');
+        show_message($_LANG['exchange_deny'], $_LANG['transform_points'], $user_link.'?act=transform_points');
     }
     $netamount = floor($exchange_amount / $ratio);
     include_once(ROOT_PATH . './includes/lib_uc.php');
@@ -2725,11 +2726,11 @@ elseif ($action == 'act_transform_ucenter_points')
         $db->query($sql);
         $sql = "INSERT INTO " . $ecs->table('account_log') . "(user_id, {$shop_points[$fromcredits]}, change_time, change_desc, change_type)" . " VALUES ('{$row['user_id']}', '-$exchange_amount', '". gmtime() ."', '" . $cfg['uc_lang']['exchange'] . "', '98')";
         $db->query($sql);
-        show_message(sprintf($_LANG['exchange_success'], $exchange_amount, $_LANG['exchange_points'][$fromcredits], $netamount, $credit['title']), $_LANG['transform_points'], 'user.php?act=transform_points');
+        show_message(sprintf($_LANG['exchange_success'], $exchange_amount, $_LANG['exchange_points'][$fromcredits], $netamount, $credit['title']), $_LANG['transform_points'], $user_link.'?act=transform_points');
     }
     else
     {
-        show_message($_LANG['exchange_error_1'], $_LANG['transform_points'], 'user.php?act=transform_points');
+        show_message($_LANG['exchange_error_1'], $_LANG['transform_points'], $user_link.'?act=transform_points');
     }
 }
 /* 清除商品浏览历史 */

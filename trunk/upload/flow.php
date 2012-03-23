@@ -6,7 +6,7 @@ require(ROOT_PATH . 'includes/lib_order.php');
 
 require_once(ROOT_PATH . 'languages/' .$_CFG['lang']. '/user.php');
 require_once(ROOT_PATH . 'languages/' .$_CFG['lang']. '/shopping_flow.php');
-
+$cart_link = build_uri('flow', array(null));
 /*------------------------------------------------------ */
 //-- INPUT
 /*------------------------------------------------------ */
@@ -15,7 +15,6 @@ if (!isset($_REQUEST['step']))
 {
     $_REQUEST['step'] = "cart";
 }
-
 /*------------------------------------------------------ */
 //-- PROCESSOR
 /*------------------------------------------------------ */
@@ -152,7 +151,7 @@ elseif ($_REQUEST['step'] == 'link_buy')
     {
         addto_cart($goods_id);
     }
-    ecs_header("Location:./flow.php\n");
+    ecs_header("Location:./".$cart_link."\n");
     exit;
 }
 elseif ($_REQUEST['step'] == 'login')
@@ -213,7 +212,7 @@ elseif ($_REQUEST['step'] == 'login')
                 $sql = "SELECT COUNT(*) FROM " . $ecs->table('cart') . " WHERE session_id = '" . SESS_ID . "' ";
                 if ($db->getOne($sql) > 0)
                 {
-                    ecs_header("Location: flow.php?step=checkout\n");
+                    ecs_header("Location: ".$cart_link."?step=checkout\n");
                 }
                 else
                 {
@@ -226,7 +225,7 @@ elseif ($_REQUEST['step'] == 'login')
             else
             {
                 $_SESSION['login_fail']++;
-                show_message($_LANG['signin_failed'], '', 'flow.php?step=login');
+                show_message($_LANG['signin_failed'], '', $cart_link.'?step=login');
             }
         }
         elseif (!empty($_POST['act']) && $_POST['act'] == 'signup')
@@ -249,7 +248,7 @@ elseif ($_REQUEST['step'] == 'login')
 
             if (register(trim($_POST['username']), trim($_POST['password']), trim($_POST['email'])))
             {
-                ecs_header("Location: flow.php?step=consignee\n");
+                ecs_header("Location: ".$cart_link."?step=consignee\n");
                 exit;
             }
             else
@@ -350,7 +349,7 @@ elseif ($_REQUEST['step'] == 'consignee')
 
         $_SESSION['flow_consignee'] = stripslashes_deep($consignee);
 
-        ecs_header("Location: flow.php?step=checkout\n");
+        ecs_header("Location: ".$cart_link."?step=checkout\n");
         exit;
     }
 }
@@ -362,7 +361,7 @@ elseif ($_REQUEST['step'] == 'drop_consignee')
 
     if (drop_consignee($consignee_id))
     {
-        ecs_header("Location: flow.php?step=consignee\n");
+        ecs_header("Location: ".$cart_link."?step=consignee\n");
         exit;
     }
     else
@@ -398,7 +397,7 @@ elseif ($_REQUEST['step'] == 'checkout')
 
     if (empty($_SESSION['direct_shopping']) && $_SESSION['user_id'] == 0)
     {
-        ecs_header("Location: flow.php?step=login\n");
+        ecs_header("Location: ".$cart_link."?step=login\n");
         exit;
     }
 
@@ -406,7 +405,7 @@ elseif ($_REQUEST['step'] == 'checkout')
 
     if (!check_consignee_info($consignee, $flow_type))
     {
-        ecs_header("Location: flow.php?step=consignee\n");
+        ecs_header("Location: ".$cart_link."?step=consignee\n");
         exit;
     }
 
@@ -1112,7 +1111,7 @@ elseif ($_REQUEST['step'] == 'done')
 
     if (empty($_SESSION['direct_shopping']) && $_SESSION['user_id'] == 0)
     {
-        ecs_header("Location: flow.php?step=login\n");
+        ecs_header("Location: ".$cart_link."?step=login\n");
         exit;
     }
 
@@ -1120,7 +1119,7 @@ elseif ($_REQUEST['step'] == 'done')
 
     if (!check_consignee_info($consignee, $flow_type))
     {
-        ecs_header("Location: flow.php?step=consignee\n");
+        ecs_header("Location: ".$cart_link."?step=consignee\n");
         exit;
     }
 
@@ -1520,7 +1519,7 @@ elseif ($_REQUEST['step'] == 'update_cart')
         flow_update_cart($_POST['goods_number']);
     }
 
-    show_message($_LANG['update_cart_notice'], $_LANG['back_to_cart'], 'flow.php');
+    show_message($_LANG['update_cart_notice'], $_LANG['back_to_cart'], $cart_link);
     exit;
 }
 
@@ -1530,7 +1529,7 @@ elseif ($_REQUEST['step'] == 'drop_goods')
     $rec_id = intval($_GET['id']);
     flow_drop_cart_goods($rec_id);
 
-    ecs_header("Location: flow.php\n");
+    ecs_header("Location: ".$cart_link."\n");
     exit;
 }
 
@@ -1596,7 +1595,7 @@ elseif ($_REQUEST['step'] == 'add_favourable')
         add_favourable_to_cart($act_id, $favourable['act_name'], $favourable['act_type_ext']);
     }
 
-    ecs_header("Location: flow.php\n");
+    ecs_header("Location: ".$cart_link."\n");
     exit;
 }
 elseif ($_REQUEST['step'] == 'clear')
@@ -1622,7 +1621,7 @@ elseif ($_REQUEST['step'] == 'drop_to_collect')
         }
         flow_drop_cart_goods($rec_id);
     }
-    ecs_header("Location: flow.php\n");
+    ecs_header("Location: ".$cart_link."\n");
     exit;
 }
 
@@ -1771,7 +1770,7 @@ else
 
     if ($_CFG['one_step_buy'] == '1')
     {
-        ecs_header("Location: flow.php?step=checkout\n");
+        ecs_header("Location: ".$cart_link."?step=checkout\n");
         exit;
     }
 

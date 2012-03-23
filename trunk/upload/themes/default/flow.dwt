@@ -119,7 +119,7 @@
         <table width="99%" align="center" border="0" cellpadding="5" cellspacing="0" bgcolor="#dddddd">
           <tr>
             <td bgcolor="#ffffff"><a href="./"><img src="images/continue.gif" alt="continue" /></a></td>
-            <td bgcolor="#ffffff" align="right"><a href="flow.php?step=checkout"><img src="images/checkout.gif" alt="checkout" /></a></td>
+            <td bgcolor="#ffffff" align="right"><a href="{$cart_link}?step=checkout"><img src="images/checkout.gif" alt="checkout" /></a></td>
           </tr>
         </table>
        <!-- {if $smarty.session.user_id gt 0} -->
@@ -160,7 +160,7 @@
           }
           else
           {
-            location.href = 'flow.php';
+            location.href = '{$cart_link}';
           }
         }
       </script>
@@ -221,14 +221,14 @@
     }
     else
     {
-      location.href = 'flow.php';
+      location.href = '{$cart_link}';
     }
   }
   </script>
   <div class="block" >
     <div class="flowBox">
     <h6><span>{$lang.goods_fittings}</span></h6>
-    <form action="flow.php" method="post">
+    <form action="{$cart_link}" method="post">
         <div class="flowGoodsFittings clearfix">
           <!-- {foreach from=$fittings_list item=fittings} -->
             <ul class="clearfix">
@@ -255,7 +255,7 @@
     <div class="flowBox">
     <h6><span>{$lang.label_favourable}</span></h6>
         <!-- {foreach from=$favourable_list item=favourable} -->
-        <form action="flow.php" method="post">
+        <form action="{$cart_link}" method="post">
           <table width="99%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
             <tr>
               <td align="right" bgcolor="#ffffff">{$lang.favourable_name}</td>
@@ -321,20 +321,20 @@
         </script>
         <!-- 如果有收货地址，循环显示用户的收获地址 -->
         <!-- {foreach from=$consignee_list item=consignee key=sn} -->
-        <form action="flow.php" method="post" name="theForm" id="theForm" onsubmit="return checkConsignee(this)">
+        <form action="{$cart_link}" method="post" name="theForm" id="theForm" onsubmit="return checkConsignee(this)">
         <!-- #BeginLibraryItem "/Library/consignee.lbi" --><!-- #EndLibraryItem -->
         </form>
         <!-- {/foreach} -->
         <!-- {/if} -->
 
         <!-- {if $step eq "checkout"} 开始订单确认界面 -->
-        <form action="flow.php" method="post" name="theForm" id="theForm" onsubmit="return checkOrderForm(this)">
+        <form action="{$cart_link}" method="post" name="theForm" id="theForm" onsubmit="return checkOrderForm(this)">
         <script type="text/javascript">
         var flow_no_payment = "{$lang.flow_no_payment}";
         var flow_no_shipping = "{$lang.flow_no_shipping}";
         </script>
         <div class="flowBox">
-        <h6><span>{$lang.goods_list}</span><!--{if $allow_edit_cart} --><a href="flow.php" class="f6">{$lang.modify}</a><!--{/if} --></h6>
+        <h6><span>{$lang.goods_list}</span><!--{if $allow_edit_cart} --><a href="{$cart_link}" class="f6">{$lang.modify}</a><!--{/if} --></h6>
         <table width="99%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
             <tr>
               <th bgcolor="#ffffff">{$lang.goods_name}</th>
@@ -387,7 +387,7 @@
       </div>
       <div class="blank"></div>
       <div class="flowBox">
-      <h6><span>{$lang.consignee_info}</span><a href="flow.php?step=consignee" class="f6">{$lang.modify}</a></h6>
+      <h6><span>{$lang.consignee_info}</span><a href="{$cart_link}?step=consignee" class="f6">{$lang.modify}</a></h6>
       <table width="99%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
             <tr>
               <td bgcolor="#ffffff">{$lang.consignee_name}:</td>
@@ -761,7 +761,7 @@
           <tr>
             <td width="50%" valign="top" bgcolor="#ffffff">
             <h6><span>Thành viên đăng nhập:</span></h6>
-            <form action="flow.php?step=login" method="post" name="loginForm" id="loginForm" onsubmit="return checkLoginForm(this)">
+            <form action="{$cart_link}?step=login" method="post" name="loginForm" id="loginForm" onsubmit="return checkLoginForm(this)">
                 <table width="90%" border="0" cellpadding="8" cellspacing="1" bgcolor="#B0D8FF" class="table">
                   <tr>
                     <td bgcolor="#ffffff"><div align="right"><strong>{$lang.username}</strong></div></td>
@@ -788,7 +788,7 @@
                     <td bgcolor="#ffffff" colspan="2"><div align="center">
                         <input type="submit" class="bnt_blue" name="login" value="{$lang.forthwith_login}" />
                         <!-- {if $anonymous_buy eq 1} 是否允许未登录用户购物 -->
-                        <input type="button" class="bnt_blue_2" value="{$lang.direct_shopping}" onclick="location.href='flow.php?step=consignee&amp;direct_shopping=1'" />
+                        <input type="button" class="bnt_blue_2" value="{$lang.direct_shopping}" onclick="location.href='{$cart_link}?step=consignee&amp;direct_shopping=1'" />
                         <!-- {/if} -->
                         <input name="act" type="hidden" value="signin" />
                       </div></td>
@@ -799,7 +799,7 @@
               </td>
             <td valign="top" bgcolor="#ffffff">
             <h6><span>Đăng ký tài khoản:</span></h6>
-            <form action="flow.php?step=login" method="post" name="formUser" id="registerForm" onsubmit="return checkSignupForm(this)">
+            <form action="{$cart_link}?step=login" method="post" name="formUser" id="registerForm" onsubmit="return checkSignupForm(this)">
                <table width="98%" border="0" cellpadding="8" cellspacing="1" bgcolor="#B0D8FF" class="table">
                   <tr>
                     <td bgcolor="#ffffff" align="right" width="25%"><strong>{$lang.username}</strong></td>

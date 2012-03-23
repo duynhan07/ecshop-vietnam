@@ -28,7 +28,7 @@
 <div class="usBox clearfix">
   <div class="usBox_1 f_l">
    <div class="logtitle"></div>
-   <form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
+   <form name="formLogin" action="{$user_link}" method="post" onSubmit="return userLogin()">
         <table width="100%" border="0" align="left" cellpadding="3" cellspacing="5">
           <tr>
             <td width="30%" align="right">{$lang.label_username}</td>
@@ -58,7 +58,7 @@
             <input type="submit" name="submit" value="" class="us_Submit" />
             </td>
           </tr>
-	  <tr><td colspan="2"><a href="user.php?act=qpassword_name" class="f3">{$lang.get_password_by_question}</a><br /><a href="user.php?act=get_password" class="f3">{$lang.get_password_by_mail}</a></td></tr>
+	  <tr><td colspan="2"><a href="{$user_link}?act=qpassword_name" class="f3">{$lang.get_password_by_question}</a><br /><a href="{$user_link}?act=get_password" class="f3">{$lang.get_password_by_mail}</a></td></tr>
       </table>
     </form>
   </div>
@@ -76,7 +76,7 @@
     2. {$lang.user_reg_info[5]}<br />
     3. {$lang.user_reg_info[6]}<br />
     4. {$lang.user_reg_info[7]}  <br />
-    <a href="user.php?act=register"><img src="images/bnt_ur_reg.gif" /></a>
+    <a href="{$user_link}?act=register"><img src="images/bnt_ur_reg.gif" /></a>
   </div>
 </div>
 <!--{/if}-->
@@ -95,7 +95,7 @@
 <div class="usBox">
   <div class="usBox_2 clearfix">
    <div class="regtitle"></div>
-    <form action="user.php" method="post" name="formUser" onsubmit="return register();">
+    <form action="{$user_link}" method="post" name="formUser" onsubmit="return register();">
       <table width="100%"  border="0" align="left" cellpadding="5" cellspacing="3">
         <tr>
           <td width="13%" align="right">{$lang.label_username}</td>
@@ -190,8 +190,8 @@
         <tr>
           <td>&nbsp;</td>
           <td class="actionSub">
-          <a href="user.php?act=login">{$lang.want_login}</a><br />
-          <a href="user.php?act=get_password">{$lang.forgot_password}</a>
+          <a href="{$user_link}?act=login">{$lang.want_login}</a><br />
+          <a href="{$user_link}?act=get_password">{$lang.forgot_password}</a>
           </td>
         </tr>
       </table>
@@ -212,7 +212,7 @@
     </script>
 <div class="usBox">
   <div class="usBox_2 clearfix">
-    <form action="user.php" method="post" name="getPassword" onsubmit="return submitPwdInfo();">
+    <form action="{$user_link}" method="post" name="getPassword" onsubmit="return submitPwdInfo();">
         <br />
         <table width="70%" border="0" align="center">
           <tr>
@@ -244,7 +244,7 @@
     <!--{if $action eq 'qpassword_name'} -->
 <div class="usBox">
   <div class="usBox_2 clearfix">
-    <form action="user.php" method="post">
+    <form action="{$user_link}" method="post">
         <br />
         <table width="70%" border="0" align="center">
           <tr>
@@ -272,7 +272,7 @@
     <!--{if $action eq 'get_passwd_question'} -->
 <div class="usBox">
   <div class="usBox_2 clearfix">
-    <form action="user.php" method="post">
+    <form action="{$user_link}" method="post">
         <br />
         <table width="70%" border="0" align="center">
           <tr>
@@ -315,7 +315,7 @@
     </script>
 <div class="usBox">
   <div class="usBox_2 clearfix">
-    <form action="user.php" method="post" name="getPassword2" onSubmit="return submitPwd()">
+    <form action="{$user_link}" method="post" name="getPassword2" onSubmit="return submitPwd()">
       <br />
       <table width="80%" border="0" align="center">
         <tr>

@@ -1498,7 +1498,7 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
             {
                 if ($rewrite)
                 {
-                    $uri = 'danh-muc-' . $cid;
+                    $uri = 'pcat-' . $cid;
                     if (isset($bid))
                     {
                         $uri .= '-brand' . $bid;
@@ -1634,7 +1634,7 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
             {
                 if ($rewrite)
                 {
-                    $uri = 'article_cat-' . $acid;
+                    $uri = 'ncat-' . $acid;
                     if (!empty($page))
                     {
                         $uri .= '-' . $page;
@@ -1682,7 +1682,7 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
             }
             else
             {
-                $uri = $rewrite ? 'article-' . $aid : 'article.php?id=' . $aid;
+                $uri = $rewrite ? 'news-' . $aid : 'article.php?id=' . $aid;
             }
 
             break;
@@ -1724,6 +1724,9 @@ function build_uri($app, $params, $append = '', $page = 0, $keywords = '', $size
             break;
         case 'flow':
 		$uri = $rewrite ? 'gio-hang' : 'flow.php';
+            break;
+        case 'user':
+		$uri = $rewrite ? 'user-center' : 'user.php';
             break;
         case 'exchange':
             if ($rewrite)

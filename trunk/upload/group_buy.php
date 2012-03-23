@@ -283,7 +283,7 @@ elseif ($_REQUEST['act'] == 'buy')
     $_SESSION['extension_id'] = $group_buy_id;
 
     /* 进入收货人页面 */
-    ecs_header("Location: ./flow.php?step=consignee\n");
+    ecs_header("Location: ./".$cart_link."?step=consignee\n");
     exit;
 }
 

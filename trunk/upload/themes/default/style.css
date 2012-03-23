@@ -162,6 +162,7 @@ display: block;
   margin-top:20px;
   }
   #ecms_search a{color:#ccc; text-decoration:none;}
+  #ecms_search a img{}
   #ecms_search .keys{background:url(images/bg.gif) no-repeat 0 -28px;
   color:#fff; padding-left:40px;
   }
@@ -205,35 +206,34 @@ display: block;
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed'); /* ie7 */
 	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed'); /* ie8 */
 }
-
-/*Phần tìm kiếm mới*/
-.a_search{
-	width: 260px;
-	height:30px;
-	float: right;
-	}
-.a_search input {
-	margin-top:0px;
+.searchform input {
+	margin-top:5px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
 	border: 0px;
 }
-.a_search .searchfield {
+.searchform a img {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	border: 0px;
+}
+.searchform .searchfield {
 	height: 28px;
 	line-height: 28px;
     border: none;
 	color: #5b5b5b;
 	text-indent: 25px;
+	width:189px;
 	background: url(images/search_bg.png) repeat-x 0 0;
 }
-.a_search input.searchbutton {
+.searchform input.searchbutton {
 	width: 66px;
 	height: 30px;
 	color: #fff;
 	background: url(images/bt_search.png) repeat-x 0 0;	
 }
+
 /*End box tìm kiếm*/
-  /*End tìm kiếm mới*/
   /*Trang hiện tại*/
   #ur_here{border:1px solid #c5e4ff; border-top:none; background:url(images/uh_bg.gif) repeat-x left top;
   height:36px; line-height:36px; padding:0 12px;
@@ -445,7 +445,7 @@ text-align:right;
      商品详情页面部分模块
 ==================== */
    #goodsInfo{background:#f2f2f2; padding:8px; _height:1%;}
-   #goodsInfo .imgInfo{width:230px; float:left; margin-right:10px; overflow:hidden;}
+   #goodsInfo .imgInfo{width:230px; float:left; margin-right:10px;}
    #goodsInfo .imgInfo .thumb{width:230px; height:230px; display:block;}/*商品详情图片*/
    #goodsInfo span{width:4px; height:48px; background:url(images/bg.gif) no-repeat 0 -527px; float:left;}
    #goodsInfo span.spanR{width:4px; height:48px; background:url(images/bg.gif) no-repeat -5px -527px; float:right;}
