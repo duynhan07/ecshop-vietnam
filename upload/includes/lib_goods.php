@@ -786,7 +786,7 @@ function get_same_attribute_goods($attr)
  */
 function get_goods_gallery($goods_id)
 {
-    $sql = 'SELECT img_id, img_url, thumb_url, img_desc' .
+    $sql = 'SELECT img_id, img_url, thumb_url, img_original, img_desc' .
         ' FROM ' . $GLOBALS['ecs']->table('goods_gallery') .
         " WHERE goods_id = '$goods_id' LIMIT " . $GLOBALS['_CFG']['goods_gallery_number'];
     $row = $GLOBALS['db']->getAll($sql);
@@ -795,6 +795,7 @@ function get_goods_gallery($goods_id)
     {
         $row[$key]['img_url'] = get_image_path($goods_id, $gallery_img['img_url'], false, 'gallery');
         $row[$key]['thumb_url'] = get_image_path($goods_id, $gallery_img['thumb_url'], true, 'gallery');
+		$row[$key]['img_original'] = get_image_path($goods_id, $gallery_img['img_original'], true, 'gallery');
     }
     return $row;
 }

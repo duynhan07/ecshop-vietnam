@@ -1,4 +1,37 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--[if gte IE 7]>
+<style type="text/css">
+.ecms_select{
+	margin-top: 5px;
+	margin-left:10px;
+	display: inline-block;
+	width:168px;
+	height:30px;
+	overflow:hidden;
+	background: url(images/select.png) no-repeat #FFF;
+	}
+.ecms_select select{
+	background: transparent;
+	width:168px;
+	height:30px;
+	overflow:hidden;
+	-webkit-appearance: none;
+	color:#666666;
+	border:none;
+	cursor:pointer;
+	}
+.searchform {
+	*display: inline;
+}
+.searchform input.searchbutton {
+margin-top: -50px;
+width: 66px;
+height: 30px;
+color: white;
+background: url(images/bt_search.png) repeat-x 0 0;
+}
+    </style>
+<![endif]-->
 <script type="text/javascript">
 var process_request = "{$lang.process_request}";
 </script>
@@ -64,22 +97,20 @@ $GLOBALS['smarty']->assign('index_link',build_uri('ecms_index', array(null)));
     </script>
   <form id="searchForm" name="searchForm" method="get" action="{$search_link}" onSubmit="return checkSearchForm()" class="searchform"  
 
-style="_position:relative; top:5px;">
+style="_position:relative;">
+   {insert_scripts files='stickytooltip.js'}
 <div class="ecms_select">
    <select name="category" id="category">
       <option value="0">{$lang.all_category}</option>
       {$category_list}
     </select>
 </div>
-<div class="a_search">
 <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="searchfield" onkeyup="keyupdeal(event,this.value);" onkeydown="keydowndeal(event);" onclick="keyupdeal(event,this.value);" onblur="closediv();"  autocomplete="off"  style="vertical-align:top;"/>
-   <input name="imageField" type="submit" value="{$lang.search}" class="searchbutton" />
-   </div>
-   {insert_scripts files='stickytooltip.js'}
-   <a href="{$search_link}?act=advanced_search" data-tooltip="sticky1">{$lang.advanced_search}</a>
+<input name="imageField" type="submit" value="{$lang.search}" class="searchbutton" />
+<a href="{$search_link}?act=advanced_search" data-tooltip="search_tip" title="{$lang.advanced_search}"><b> &radic;Chỉ dẫn</b></a>
 <div id="mystickytooltip" class="stickytooltip">
 <div style="padding:5px">
-<div id="sticky1" class="atip" style="width:200px">
+<div id="search_tip" class="atip" style="width:200px">
 {if $searchkeywords}
    {$lang.hot_search}: 
    {foreach from=$searchkeywords item=val}

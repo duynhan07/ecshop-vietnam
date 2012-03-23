@@ -7,7 +7,7 @@
           <div id="demo1" style="float:left">
             <ul>
              <!-- {foreach from=$pictures item=picture}-->
-            <li><a href="gallery.php?id={$id}&amp;img={$picture.img_id}" target="_blank"><img src="{if $picture.thumb_url}{$picture.thumb_url}{else}{$picture.img_url}{/if}" alt="{$goods.goods_name}" class="B_blue" /></a>
+            <li><a href="{$picture.img_original}" rel="zoom-id:Zoomer2" rev="ecm_image.php?f=/{$picture.img_url}&h=230&w=240" title="Red Yahama YZF-R1"><img src="{if $picture.thumb_url}{$picture.thumb_url}{else}{$picture.img_url}{/if}"/></a>
             </li>
             <!--{/foreach}-->
             </ul>

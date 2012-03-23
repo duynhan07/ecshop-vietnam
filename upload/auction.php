@@ -415,7 +415,8 @@ elseif ($_REQUEST['act'] == 'buy')
     $_SESSION['extension_id'] = $id;
 
     /* 进入收货人页面 */
-    ecs_header("Location: ./flow.php?step=consignee\n");
+	$cart_link = build_uri('flow', array(null));
+    ecs_header("Location: ./".$cart_link."?step=consignee\n");
     exit;
 }
 

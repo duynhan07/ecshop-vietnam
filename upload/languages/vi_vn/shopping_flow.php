@@ -137,7 +137,7 @@ $_LANG['select_shipping'] = 'Hình thức vận chuyển là';
 $_LANG['select_payment'] = 'Hình thức thanh toán là';
 $_LANG['order_amount'] = 'Số tiền thanh toán là';
 $_LANG['remember_order_number'] = 'Cảm ơn bạn đã mua hàng, đơn hàng của bạn đã được gửi đi, vui lòng ghi nhớ mã đơn hàng của bạn';
-$_LANG['back_home'] = '<a href="index.php">Về trang chủ</a>';
+$_LANG['back_home'] = '<a href="index.html">Về trang chủ</a>';
 $_LANG['goto_user_center'] = '<a href="user.php">Trung tâm thành viên</a>';
 $_LANG['order_submit_back'] = 'Bạn có thể %s hoặc đi tới %s';
 

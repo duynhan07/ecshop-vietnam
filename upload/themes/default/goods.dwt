@@ -10,8 +10,9 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="magiczoom.css" rel="stylesheet" type="text/css" />
 {* Load các tệp js *}
-{insert_scripts files='common.js'}
+{insert_scripts files='common.js,magiczoom.js'}
 <script type="text/javascript">
 function $id(element) {
   return document.getElementById(element);
@@ -196,9 +197,7 @@ function reg(str){
      <!--商品图片和相册 start-->
      <div class="imgInfo">
      <!-- {if $pictures}-->
-     <a href="javascript:;" onclick="window.open('gallery.php?id={$goods.goods_id}'); return false;">
-      <img src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}"/>
-     </a>
+        <a href="{$goods.original_img}" class="MagicZoom" id="Zoomer2" rel="selectors-effect: fade" title="{$goods.goods_name|escape:html}"><img src="{$goods.goods_img}"/></a>
          <!-- {else} -->
          <img src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}"/>
          <!-- {/if}-->

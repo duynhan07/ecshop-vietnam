@@ -6,9 +6,9 @@
          <!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
          {if $smarty.foreach.promotion_foreach.index <= 3}
            <div class="goodList">
-           <a href="{$goods.url}"><img src="{$goods.thumb}" border="0" alt="{$goods.name|escape:html}"/></a><br />
+           <a href="{$goods.url}" onMouseOver="toolTip('<img  src=\'{$goods.goods_img}\' width=260 height=260> <br />Sản phẩm : {$goods.name|escape:html}<br />Giá :{$goods.shop_price}<br />HKT Hà Nội')" onMouseOut="toolTip()"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" border="0" /></a>
 					 <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a></p>
-           {$lang.promote_price}<font class="f1">{$goods.promote_price}</font>
+           <font class="f1" onMouseOver="toolTip('{$lang.promote_price}{$goods.promote_price}', 200)" onMouseOut="toolTip()">{$goods.promote_price}</font>
            </div>
          {/if}
          <!--{/foreach}-->
